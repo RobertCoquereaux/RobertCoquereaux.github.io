@@ -1,0 +1,1605 @@
+
+\chapter{Calcul diff\'erentiel pour alg\`ebres non commutatives}
+\chaptermark{Calculs diff\'erentiels et GNC}
+
+\section{Remarques philosophico-math\'ematiques sur les espaces non 
+commutatifs}
+
+Lorsqu'on se donne un ``espace'' $M$ (techniquement, un ensemble dont 
+les \'el\'ements sont surnomm\'es ``points''), on sait construire l'alg\`ebre 
+des fonctions sur $M$ \`a valeurs r\'eelles ou complexes. Cette alg\`ebre 
+est commutative puisque multiplication et addition sont d\'efinies 
+ponctuellement comme suit: $(fg)[x] =  f[x]g[x]=g[x]f[x]=(gf)[x]$ 
+et $(f+g)[x] =  f[x]+g[x]=g[x]+f[x]=(g+f)[x]$. Lorsque notre 
+espace $M$ est \'equip\'e d'une structure topologique, on sait construire 
+l'alg\`ebre $C^{0}(M)$ des fonctions continues et lorsque $M$ est \'equip\'e d'une
+ structure diff\'erentiable, on sait construire  l'alg\`ebre
+$C^{\infty}(M)$ des fonctions diff\'erentiables.
+
+Il est possible de compl\`etement inverser cette d\'emarche: en d'autres termes, il 
+est possible de partir d'une alg\`ebre ${\mathcal A}$ commutative, abstraitement 
+d\'efinie, et de fabriquer une espace $M$, tel que  ${\mathcal A}$ 
+s'identifie avec l'alg\`ebre des fonctions sur $M$.
+Nous allons maintenant pr\'eciser cette construction.
+
+On se donne ${\mathcal A}$ une alg\`ebre de Banach, c'est \`a dire 
+une alg\`ebre associative sur $\CC$, munie d'une norme $\vert \, 
+\vert$ qui soit telle que $\vert \vert f g \vert\vert \leq \vert\vert f \vert\vert \, \vert\vert g 
+\vert\vert$ et telle que l'espace vectoriel sous-jacent soit un espace de 
+Banach (un espace vectoriel norm\'e complet).
+
+On appelle {\sl caract\`ere\/}\index{caract\`ere} de ${\mathcal A}$ tout homomorphisme 
+non nul de ${\mathcal A}$ vers le corps $\CC$ des complexes. 
+L'ensemble des caract\`eres $M$ s'appelle le {\sl 
+spectre\/} de ${\mathcal A}$. 
+
+On suppose maintenant l'alg\`ebre ${\mathcal A}$ {\sl commutative\/}.
+On appelle {\sl transformation de Gelfand \/} \index{transformation de 
+Gelfand} l'application
+${\mathcal  F}$ de ${\mathcal A}$ dans l'alg\`ebre commutative ${C^{0}(M)}$ 
+qui \`a $f \in {\mathcal A}$ associe $\hat f \in {C^{0}(M)}$, 
+d\'efini, pour tout caract\`ere $x \in M$ de ${\mathcal A}$ par
+$$
+\mbox{\fbox{$
+\hat f(x) = x(f)
+$}}
+$$
+
+R\'esultat (sans d\'emonstration) : ${\mathcal F}$ est un homomorphisme 
+d'alg\`ebre de Banach commutative.
+
+Encore quelques d\'efinitions : 
+
+Une alg\`ebre de Banach involutive \index{alg\`ebre de Banach involutive} est une alg\`ebre de Banach  munie d'une 
+{\sl \'etoile\/} c'est \`a dire une 
+involution ($f^{**} = f$), anti-lin\'eaire $(\lambda f)^{*} = 
+\overline{\lambda} f^{*}$ (pour $\lambda \in \CC$) et  
+anti-multiplicative ($(fg)^{*}=g^{*}f^{*}$), telle que l'\'etoile 
+soit isom\'etrique $\vert \vert f^{*} \vert \vert = \vert \vert f \vert \vert$.
+
+Une {\sl $C$ - \'etoile alg\`ebre\/}, \index{$C$ - \'etoile alg\`ebre} est une alg\`ebre de Banach involutive 
+telle que, $\forall f \in {\mathcal A}$ 
+$\vert \vert f^{*}f \vert \vert = \vert \vert f^{*} \vert \vert \, \vert 
+\vert f \vert \vert = \vert \vert f \vert \vert^{2}
+$
+
+Th\'eor\`eme de Gelfand  (sans d\'emonstration) : 
+Lorsque ${\mathcal A}$ est une $C$-\'etoile alg\`ebre \underline{commutative}, la 
+transformation de Gelfand entre ${\mathcal A}$ et l'alg\`ebre ${C^{0}(M)}$ des 
+fonctions continues sur le spectre de ${\mathcal A}$ est un isomorphisme.
+
+En fait, on peut pr\'eciser davantage: lorsque ${\mathcal A}$ est une 
+$C$-\'etoile alg\`ebre {commutative} unitale (c'est \`a dire 
+avec unit\'e), l'espace $M$ est compact. D'une certaine fa\c con, rajouter 
+une unit\'e \`a une alg\`ebre qui n'en a pas revient \`a compactifier 
+(via Alexandrov) son spectre.
+
+Ce qui ressort de cette discussion, c'est le fait que s'int\'eresser \`a un espace (un ensemble de points) 
+ou s'int\'eresser \`a une alg\`ebre  commutative sont deux activit\'es {\it grosso modo \/}
+essentiellement \'equivalentes. En langage savant, on dit que la 
+transformation de Gelfand ${\mathcal F}$ permet de d\'efinir un
+foncteur r\'ealisant une \'equivalence entre la cat\'egorie des espaces topologiques 
+(compacts) et celle des $\CC^{*}$ alg\`ebres commutatives (unitales).
+
+Une alg\`ebre non commutative ne peut pas \^etre consid\'er\'ee comme une alg\`ebre de 
+fonctions (\`a valeurs r\'eelles ou complexes) sur un espace, puisque 
+l'alg\`ebre serait alors commutative. 
+La ``g\'eom\'etrie non commutative'', au sens le plus large du terme, 
+consiste souvent \`a re-\'ecrire les diverses propri\'et\'es g\'eom\'etriques des 
+``espaces'' dans le langage des alg\`ebres commutatives, c'est \`a dire 
+sans utiliser la notion de point, puis \`a effacer, partout o\`u cela est 
+possible, le mot ```commutatif''. Ce faisant, on invente alors une 
+nouvelle g\'eom\'etrie, celle des alg\`ebres non commutatives. Les espaces 
+non commutatifs n'existent donc pas, mais les alg\`ebres qui les 
+d\'efinissent, elles, existent bel et bien.
+
+Du point de vue de la physique, il est pratique (et d'usage courant!) 
+de d\'ecrire notre environnement \`a l'aide de points (pensez \`a la t\^ete du 
+voyageur \`a qui on dirait ``Voyez-vous ce caract\`ere de la 
+$C$-\'etoile alg\`ebre $C^{0}(S^{2})$ ?'' au lieu de ``Voyez-vous ce 
+point \`a la surface de la Terre ?''). Cela dit, les deux points de vue 
+sont \'equivalents, et on passe d'un point de vue \`a l'autre \`a l'aide de la 
+superbe formule $\hat f(x) = x(f)$ sur laquelle il est bon 
+de m\'editer\ldots
+A ce sujet, nous invitons le lecteur \`a relire le paragraphe de 
+l'Introduction intitul\'e ``Du classique au quantique''.
+
+\section{Calculs diff\'erentiels} 
+\label{sec: calcdiffnoncom}
+\subsection{Remarques}
+Dans le cadre commutatif, \'etant donn\'e une vari\'et\'e $M$, nous avons 
+d\'ecrit, de fa\c con d\'etaill\'ee, {\sl une\/} alg\`ebre diff\'erentielle gradu\'ee, en l'occurence, 
+celle, not\'ee $\Lambda(M)$ des formes diff\'erentielles: le ``complexe de 
+De Rham''. Cette alg\`ebre est diff\'erentielle (puisque munie d'une 
+diff\'erentielle $d$) et diff\'erentielle gradu\'ee puisque $d$ envoie 
+$\Lambda^{p}(M)$ dans $\Lambda^{p+1}(M)$. 
+De plus, elle est telle que $\Lambda^{0}(M) = C^\infty(M)$.
+Comme nous le verrons un peu plus bas, le lecteur devrait se garder de croire 
+qu'il s'agit l\`a de la seule possibilit\'e.
+
+
+Dans le cadre non commutatif, nous supposons donn\'ee une alg\`ebre associative ${\mathcal A}$, 
+unitale pour simplifier, mais non n\'ecessairement commutative. ${\mathcal 
+A}$ va remplacer, dans la construction, l'alg\`ebre commutative 
+$C^\infty(M)$, c'est \`a dire, ``philosophiquement'', l'espace $M$ 
+lui-m\^eme. On veut pouvoir associer \`a ${\mathcal A}$ une alg\`ebre 
+diff\'erentielle gradu\'ee $\Omega$, qui co\"incide avec ${\mathcal A}$ en 
+degr\'e z\'ero. Les \'el\'ements de $\Omega$ vont remplacer les formes 
+diff\'erentielles usuelles. On pourrait dire que ce sont des {\sl formes 
+diff\'erentielles quantiques \/}\index{formes 
+diff\'erentielles quantiques }.
+
+Nous cherchons \`a fabriquer une alg\`ebre diff\'erentielle gradu\'ee qui, en 
+degr\'e z\'ero, co\"incide avec ${\mathcal A}$. En fait, il existe de 
+nombreuses possibilit\'es, chaque possibilit\'e d\'efinit ce qu'on  
+appelle un {\sl calcul diff\'erentiel sur l'alg\`ebre\/} ${\mathcal A}$.  
+Cependant, une de ces possibilit\'es est plus 
+g\'en\'erale que les autres, en un sens que nous allons pr\'eciser.  
+C'est celle qu'on d\'esigne sous le nom d'alg\`ebre $\Omega{\mathcal A}$ des  {\sl formes universelles}. 
+
+\subsection{L'alg\`ebre diff\'erentielle des formes universelles  $\Omega{\mathcal A}$}
+\index{formes diff\'erentielles universelles}
+
+
+	\subsubsection{Universalit\'e}  Soit $\mathcal A$ une alg\`ebre associative unitale. 
+	On veut construire une alg\`ebre diff\'erentielle $\ZZ$-gradu\'ee $(\Omega{\mathcal 
+	A},\delta)$ qui soit ``la plus g\'en\'erale possible'', et qui soit telle 
+	que $\Omega{\mathcal A}^{0} = {\mathcal A}$. Etre ``la plus g\'en\'erale 
+	possible'' signifie que tout autre alg\`ebre du m\^eme type pourra 
+	s'obtenir \`a partir de celle-ci en imposant des relations 
+	suppl\'ementaires. Techniquement, 
+	cela revient \`a dire que si $(\Xi, d)$ est une autre alg\`ebre 
+	diff\'erentielle $\ZZ$-gradu\'ee, avec $\Xi^{0} = {\mathcal A}$, alors, 
+	c'est qu'il existe un morphisme $\alpha$ (morphisme d'alg\`ebre diff\'erentielle 
+	gradu\'ee) de $\Omega{\mathcal A}$ {\sl sur\/} $\Xi$ tel que
+    l'alg\`ebre $(\Xi, d)$ apparaisse comme un quotient de l'alg\`ebre 
+    des formes universelles
+	$(\Omega{\mathcal A},\delta)$ : $$\Xi = \Omega{\mathcal A} / K$$ 
+	Ici, le noyau
+	$K$ de $\alpha$ est un id\'eal bilat\`ere gradu\'e diff\'erentiel de $\Omega{\mathcal 
+	A}$ (id\'eal bilat\`ere car $\Omega{\mathcal A}.K \subset K$, $K.\Omega{\mathcal 
+	A} \subset K$ et diff\'erentiel car $\delta K \subset K$).
+	En d'autres termes, $(\Omega{\mathcal A},\delta)$  est un objet 
+	universel dans la cat\'egorie des alg\`ebres diff\'erentielles 
+	$\ZZ$-gradu\'ees et on pourrait \'ecrire tout ceci \`a l'aide de 
+	diagrammes commutatifs\ldots
+	
+
+	\subsubsection{Construction de $\Omega{\mathcal A}$ par g\'en\'erateurs 
+	et relations}  \label{sec: Omega}
+	On part de ${\mathcal A}$. D\'esignons les \'el\'ements de ${\mathcal A}$ 
+	par des symboles $a_{p}$. On introduit alors de {\it nouveaux} 
+	symboles qu'on va d\'esigner par $\delta a_{p}$. Attention, pour 
+	l'instant, $\delta$ n'est pas (encore) un op\'erateur : le symbole $\delta 
+	a_{p}$ doit \^etre pris comme un tout : c'est une copie de l'\'el\'ement 
+	$a_{p}$. L'espace vectoriel engendr\'e par les symboles $\delta a_{p}$ est 
+	simplement une copie de l'espace vectoriel ${\mathcal A}$. Ensuite, on 
+	fabrique des {\sl mots}, en concat\'enant librement des \'el\'ements de ${\mathcal 
+	A}$ (donc des $a_{p}$)  et des \'el\'ements du type $\delta a_{q}$. 
+	Ainsi $a_{0} \, \delta a_{1} \, a_{2} \, a_{3} \, \delta a_{4}\, 
+	\delta a_{5} \, a_{6}$ est un mot. On d\'ecide alors d'additionner et 
+	de multiplier librement ces mots de fa\c con \`a ce que la structure 
+	obtenue soit une alg\`ebre. Jusque l\`a, on n'obtient rien de tr\`es 
+	palpitant : juste une alg\`ebre ``libre'' engendr\'ee par des symboles.
+	Pour finir, on va imposer des relations : celles de ${\mathcal A}$, 
+	tout d'abord, mais surtout, les deux suivantes (pour tout $a,b$ 
+	dans ${\mathcal A}$) :
+	$$
+	\mbox{\fbox{$
+	\delta ab = (\delta a) \,  b + a \, (\delta b)
+	$}}
+	$$
+	$$  
+	\mbox{\fbox{$
+	 \one \delta a = \delta a \, {\mbox et } 
+	\, \delta \one = 0
+	$}}
+	$$
+	La premi\`ere relation identifie deux \'el\'ements, jusque l\`a diff\'erents, de 
+	l'alg\`ebre libre. L'ensemble obtenu est, par construction, une alg\`ebre, qu'on note 
+	$\Omega{\mathcal A}$. La derni\`ere chose \`a faire consiste \`a introduire
+	l'op\'erateur not\'e $\delta$,  d\'efini pour tout \'el\'ement $a$ de ${\mathcal 
+	A}$ par $\delta(a) = \delta a$ et $\delta \delta a = 0$. L'alg\`ebre 
+	obtenue devient ainsi une alg\`ebre diff\'erentielle.
+	
+	On pourrait, bien entendu, formaliser la construction ci-dessus, en 
+	terme d'id\'eaux et de relations, mais, le r\'esultat est, somme toute, 
+	tr\`es simple : on part des \'el\'ements $a$ de ${\mathcal A}$ et on 
+	introduit des diff\'erentielles $\delta a$ (attention, ce ne sont pas 
+	des \'el\'ements de ${\mathcal A}$) de fa\c con \`a ce que la r\`egle de 
+	Leibniz (la r\`egle de d\'erivation d'un produit) soit v\'erifi\'ee.
+	
+	Les r\`egles ci-dessus permettent de re-\'ecrire n'importe quel \'el\'ement 
+	de $\Omega{\mathcal A}$ sous la forme d'une combinaison lin\'eaire de 
+	termes du type $a_{0} \, \delta a_{1} \,  \delta a_{2} \, \ldots \,  
+	\delta a_{p}$ o\`u tous les $a_{i}$ sont des \'el\'ements de ${\mathcal A}$ 
+	et o\`u le seul \'el\'ement qui n'est pas diff\'erenti\'e ($a_{0}$) se 
+	situe {\it \`a gauche}. En effet, par exemple 
+	\begin{eqnarray*}
+	a_{0} \, \delta a_{1} \, \delta a_{2} \, a_{3} & = &
+	a_{0} \, \delta a_{1} \delta (a_{2}a_{3}) - a_{0}\, \delta a_{1}\, 
+	a_{2} \, \delta a_{3} \\
+	{} & = & 
+		a_{0} \, \delta a_{1} \delta (a_{2}a_{3}) - a_{0}\, \delta 
+		(a_{1}a_{2}) \, \delta	a_{3} +
+		  a_{0} \, \delta a_{1} \, \delta a_{2} \, \delta a_{3}
+    \end{eqnarray*}
+    Cette remarque montre que $\Omega{\mathcal A} = 
+    \bigoplus_{p=0}^{\infty} \Omega^p{\mathcal A}$, o\`u $\Omega^p{\mathcal A}$ est 
+    l'espace vectoriel engendr\'e par les termes du type 
+    $a_{0} \, \delta a_{1} \,  \delta a_{2} \, \ldots \, 	\delta 
+    a_{p}$, avec $a_{i}\in {\mathcal A}$. Ainsi, $\Omega{\mathcal A}$ est 
+    donc bien $\ZZ$-gradu\'ee. Il est facile de v\'erifier, en utilisant 
+    les r\`egles pr\'ec\'edentes que, pour $\sigma \in \Omega^p{\mathcal 
+    A}$ et $\tau \in \Omega{\mathcal A}$
+    $$
+    \mbox{\fbox{$
+     \delta (\sigma \tau) = \delta(\sigma) \tau + (-1)^p \sigma 
+    \delta(\tau)
+    $}}
+    $$
+    
+    Le fait que l'alg\`ebre diff\'erentielle $\Omega{\mathcal A}$ soit 
+    universelle vient du fait que, dans sa construction, nous n'avons 
+    rien impos\'e d'autre que la r\`egle de Leibniz ainsi que les relations 
+    alg\'ebriques d\'ej\`a pr\'esentes dans $\mathcal A$. Tout autre alg\`ebre 
+    diff\'erentielle construite sur $\mathcal A$ contiendra donc 
+    automatiquement des relations suppl\'ementaires. Soit $(\Xi, d)$ 
+    une autre alg\`ebre diff\'erentielle, \'egalement associ\'ee \`a ${\mathcal 
+    A}$, on sait qu'il doit alors exister un morphisme $\alpha$ de 
+    $\Omega{\mathcal A}$ dans $\Xi$, ce morphisme est simplement 
+    d\'efini sur les \'el\'ements de base, par
+     $\alpha( a_{0} \, \delta a_{1} \,  \delta a_{2} \, \ldots \,  
+	\delta a_{p}) = a_{0} \, d a_{1} \,  d a_{2} \, \ldots \,  
+	d a_{p} $ et \'etendu par lin\'earit\'e sur toute l'alg\`ebre $\Xi$.
+	
+	\subsubsection{Construction explicite de $\Omega{\mathcal A}$ par produit 
+	tensoriel}  La construction pr\'ec\'edente est simple et, en principe 
+	suffisante. Cela dit, il est agr\'eable de pouvoir consid\'erer $\delta 
+	a$ comme un objet construit concr\`etement  ``\`a partir'' de $a$ et non comme un 
+	symbole abstrait. Voici donc une seconde construction de l'alg\`ebre 
+	des formes universelles qui r\'epond \`a ce souci.
+	
+	Soit $m : {\mathcal A} \otimes {\mathcal A} \mapsto {\mathcal A}$, 
+	l'op\'erateur de multiplication $m (a\otimes b) = ab$.
+	
+	Posons $\Omega^0{\mathcal A}  =  {\mathcal A}$
+	On d\'ecide de noter (prenons $a$ et $b$ dans ${\mathcal A}$):
+	$$
+	\mbox{\fbox{$
+	\delta b  =  \one \otimes b - b \otimes \one
+	$}}
+	$$
+	Ainsi, $\delta b$ apparait comme une sorte de diff\'erence discr\`ete 
+	(nous verrons un peu plus loin comment, dans l'exemple  o\`u ${\mathcal A}$ d\'esigne une 
+	alg\`ebre de fonctions sur une vari\'et\'e comment ceci est explicitement 
+	r\'ealis\'e). Plus g\'en\'eralement, nous poserons :
+	$$
+	\mbox{\fbox{$
+	a\delta b  =  a \otimes b - ab \otimes \one
+	$}}
+	$$
+	
+	Soit $\Omega^{1}{\mathcal A}$ l'espace vectoriel engendr\'e par les 
+	\'el\'ements de ${\mathcal A} \mapsto {\mathcal A}$ du type $a\delta b$.
+	Notons que $a \delta b$ appartient au noyau de l'op\'erateur de 
+	multiplication $m(a \delta b) = ab - ab \one = 0$. Plus 
+	g\'en\'eralement, il est \'evident que les \'el\'ements de $Ker(m)$ sont des 
+	combinaisons lin\'eaires d'\'el\'ements de ce type. En d'autres termes, on a
+	$$ \Omega^{1}{\mathcal A}  =  Ker(m)$$
+	
+	On pose alors
+	$$ \Omega^{2}{\mathcal A}  = 
+	 \Omega^{1}{\mathcal A} \otimes_{{\mathcal A}} \Omega^{1}{\mathcal A}$$
+	 et plus g\'en\'eralement
+	$$ \Omega^{p}{\mathcal A}  = 
+	 \Omega^{1}{\mathcal A} \otimes_{{\mathcal A}} \otimes_{{\mathcal A}} \ldots 
+	 \otimes_{{\mathcal A}} \Omega^{1}{\mathcal A}$$
+	 Notons que $ \Omega^{p}{\mathcal A}$ est inclus dans la $(p+1)$-i\`eme puissance 
+	 tensorielle de $\mathcal A$ (bien noter cette translation d'une unit\'e !).
+	 Attention : le produit tensoriel est pris {\it au dessus de }${\mathcal A}$ et non pas au dessus du corps 
+	 des scalaires~! Cela signifie, en clair, la chose suivante:
+	 Consid\'erons le produit de l'\'el\'ement 
+	 $(a_{0} \delta a_{1}) \in \Omega^{1}{\mathcal A} \subset {\mathcal 
+	 A} \otimes {\mathcal A} $ par 
+	 l'\'el\'ement $(\delta a_{2}) \in \Omega^{1}{\mathcal A} \subset {\mathcal 
+	 A} \otimes {\mathcal A}$.  Ce produit, pris dans $\Omega^{1}{\mathcal A} 
+	 \otimes \Omega^{1}{\mathcal A}$ est l'\'el\'ement 
+	 $$
+	 (a_{0}\otimes a_{1} - a_{0} a_{1} \otimes \one)\otimes
+	 (\one\otimes a_{2} - a_{2} \otimes 1)
+	 $$
+	 de  ${\mathcal A}\otimes {\mathcal A}\otimes {\mathcal A}\otimes{\mathcal A}\otimes{\mathcal A}$
+	 tandis que le produit dans $\Omega^{1}{\mathcal A} \otimes_{{{\mathcal 
+	 A}}} \Omega^{1}{\mathcal A}$ est un \'el\'ement de ${\mathcal A}\otimes 
+	 {\mathcal A}\otimes {\mathcal A}\otimes{\mathcal A}$, en 
+	 l'occurence, il s'agit de 
+	 \begin{eqnarray*}
+	 a_{0} \delta a_{1} \delta a_{2} & = & 
+	 	 (a_{0}\otimes a_{1} - a_{0} a_{1} \otimes \one)
+	 (\one\otimes a_{2} - a_{2} \otimes \one) \\
+	  {} & = & a_{0} \otimes a_{1} \otimes a_{2} - a_{0}a_{1}\otimes \one 
+	  \otimes a_{2} - a_{0} \otimes a_{1} a_{2} \otimes \one + a_{0} 
+	  a_{1}\otimes a_{2} \otimes \one
+	 \end{eqnarray*}
+      L'\'ecriture explicite de $ a_{0} \delta a_{1} \delta a_{2}$ en 
+      termes de produit tensoriels contient donc un unique terme $a_{0} 
+      \otimes a_{1} \otimes a_{2}$ et une somme altern\'ee d'autres 
+      termes, chacun d'entre eux contenant l'unit\'e de l'alg\`ebre ainsi 
+      qu'un unique produit du type  $a_{p}a_{p+1}$. On pourrait 
+      \'egalement  partir de cette derni\`ere \'ecriture 
+      explicite pour d\'efinir l'alg\`ebre $\Omega {\mathcal A}$. Noter 
+      que la multiplication, lorsqu'on \'ecrit 
+	  explicitement les \'el\'ements de cette alg\`ebre en termes de produits
+	  tensoriels, s'\'ecrit explicitement en concat\'enant les diff\'erents 
+	  termes et en effectuant la multiplication dans ${\mathcal A}$.
+	 
+	
+
+	\subsubsection{Formes universelles dans le cadre commutatif : le calcul diff\'erentiel 
+non local}
+\index{calcul diff\'erentiel non local}
+  Soit $M$ une vari\'et\'e diff\'erentiable, ou m\^eme, un ensemble 
+absolument quelconque. On peut alors construire l'alg\`ebre 
+{\it commutative} des fonctions sur $M$ (bien entendu, lorsque $M$ est un 
+espace topologique, ou une
+vari\'et\'e diff\'erentielle, on peut choisir les fonctions continues, les fonctions 
+diff\'erentiables etc). Notons 
+encore ${\mathcal A}$ cette alg\`ebre, sans pr\'eciser davantage.
+La construction de $\Omega{\mathcal A}$ reste valable, puisque nous 
+n'avons rien eu a supposer d'autre que l'associativit\'e de l'alg\`ebre ${\mathcal A}$.
+Consid\'erons l'\'el\'ement $$a \delta b =a\otimes b - ab \otimes \one \in 
+\Omega^{1}{\mathcal A} \subset {\mathcal A} \otimes {\mathcal A}$$
+Puisque les \'el\'ements de ${\mathcal A}$ sont des fonctions sur $M$ (des 
+fonctions d'une variable $x \in M$) les 
+\'el\'ements de ${\mathcal A} \otimes {\mathcal A}$ sont des fonctions 
+de {\it deux} variables: 
+$$
+\mbox{\fbox{$
+[a \delta b] (x,y) = a(x) b(y) - a(x) b(x) = a(x) (b(y) - b(x))
+$}}
+$$
+Cette fonction, comme, il se doit, s'annulle lorsqu'on pose $x=y$, 
+puisque l'op\'erateur de multiplication $m (a\otimes b) = ab$, dans le cas pr\'esent, 
+peut s'\'ecrire sous la forme $m(a(x)b(y))=a(x)b(x)$. Ainsi, 
+$\Omega^{1}{\mathcal A}$ est constitu\'e de l'ensemble des fonctions de 
+deux variables sur l'espace $M$, qui s'annulent sur la diagonale.
+
+Remarque : lorsque $M$ est discret, il est d'usage d'identifier, 
+comme nous venons de le faire,
+l'alg\`ebre des fonctions $Fun(M \times M \ldots \times M)$ du produit cart\'esien  
+de l'espace $M$ par lui-m\^eme avec l'alg\`ebre produit tensoriel $Fun(M) \otimes 
+Fun(M) \otimes \ldots Fun(M)$. Lorsque $M$ est un espace topologique 
+(en particulier une vari\'et\'e), on n'a, en g\'en\'eral, qu'une inclusion stricte
+ de $Fun(M) \otimes Fun(M) \otimes \ldots Fun(M)$ dans $Fun(M \times M \ldots 
+\times M)$, et il faudrait tenir compte de la topologie utilis\'ee pour 
+pouvoir pr\'eciser davantage. Nous ne tiendrons pas compte de cette 
+subtilit\'e topologique dans ce qui suit.
+
+
+Consid\'erons maintenant un \'el\'ement de $\Omega^{2}{\mathcal A}$:
+
+\begin{eqnarray*}
+a \delta b \delta c 
+& = & a \otimes b \otimes c - ab\otimes \one \otimes c - a \otimes b c \otimes \one + a  b\otimes c \otimes \one \cr	  
+[a \delta b \delta c] \, (x,y,z) & = & a(x) b(y) c(z) - 
+a(x) b(x) c(z) - a(x) b(y) c(y) + a(x)  b(x) c(y) \cr 
+& = & a(x)[b(y) - b(x)][c(z) - c(y)]
+\end{eqnarray*}
+
+Cet \'el\'ement peut donc s'interpr\'eter comme une fonction de trois 
+variables, qui s'annule lorsque $x = y$ ou lorsque $y = z$ (mais pas 
+lorsque $x = z$).
+
+Plus g\'en\'eralement, les \'elements de $\Omega^{p}{\mathcal A}$ peuvent 
+\^etre consid\'er\'es comme des fonctions de $p+1$ variables qui s'annulent lorsque deux arguments 
+successifs sont \'egaux.  
+ 
+On voit que $\delta b$  d\'esigne bien ici la diff\'erence 
+discr\`ete $b(y) - b(x)$. Lorsque $M$ est une vari\'et\'e diff\'erentiable, on 
+peut faire tendre $y$ vers $x$ et obtenir ainsi la forme 
+diff\'erentielle usuelle $db(x) = {\partial b \over \partial x^\mu} dx^\mu$.
+La th\'eorie g\'en\'erale s'applique \'evidemment dans ce cas particulier: 
+$\Omega^{p}{C^\infty (M)}$ est une alg\`ebre diff\'erentielle universelle 
+mais il existe par ailleurs une alg\`ebre de formes diff\'erentielles 
+$(\Lambda M,d)$ que nous connaissons bien (le complexe de De Rham),  
+il existe donc un morphisme $\alpha$ de la premi\`ere alg\`ebre sur la 
+seconde. Ce morphisme envoie $a_{0} \delta a_{1}\delta a_{2}\ldots $ 
+(dans le cas pr\'esent $a_{0}(x) (a_{1}(y)-a_{1}(x))( a_{2}(z)-a_{2}(y) )
+\ldots $) sur la forme diff\'erentielle $a_{0} da_{1}\wedge da_{2}\ldots $.
+
+Notons que le noyau de ce morphisme est tr\`es gros. D'une part, on 
+sait que lorsque $p > dim (M)$, $\Lambda^p M = 0$, alors que 
+$\Omega^{p}{C^\infty (M)}$ n'est jamais nul (quel que soit $p$). Par 
+ailleurs, m\^eme si $p \leq dim (M)$ il est facile de trouver des 
+\'el\'ements de $\Omega{C^\infty (M)}$ qui s'envoient sur z\'ero: par 
+exemple, l'\'el\'ement $a \, \delta (bc) - ab \, \delta c - ca \, \delta b$ n'est 
+certainement pas nul dans $\Omega^{1}{C^\infty (M)}$, alors que
+$a \,  d (bc) - ab \, d c - ca d b$ est nul dans 
+$\Lambda^{1}M$.
+
+
+	\subsubsection{L'exemple de $\CC \oplus \CC$}
+	
+	L'exemple qui nous venons de consid\'erer montre bien que cette alg\`ebre 
+	diff\'erentielle de De Rham, dont nous avons l'habitude, est loin 
+	d'\^etre la seule possible, m\^eme dans le cadre commutatif, lorsqu'on 
+	veut d\'efinir un calcul diff\'erentiel. L'inconv\'enient de l'alg\`ebre des 
+	formes universelles, c'est qu'elle est g\'en\'eralement tr\`es (trop) 
+	``grosse''  et peu maniable.
+	Cependant, il est des cas, m\^eme commutatifs, o\`u 
+	l'alg\`ebre de De Rham n'est pas utilisable --- par exemple lorsque $M$ 
+	n'est pas diff\'erentiable --- et il est bien pratique de pouvoir faire 
+	appel \`a la derni\`ere construction. Un autre cas interessant est celui d'une 
+	vari\'et\'e $M$ qui n'est pas connexe~: on peut alors, bien s\^ur, faire du 
+	calcul diff\'erentiel ``\`a la De Rham'' sur chaque composante connexe, 
+	mais, ce faisant, on perd de l'information, car les formes 
+	universelles non nulles du type $a \delta b [x,y]$ o\`u $x$ et $y$ 
+	appartiennent \`a deux composantes connexes distinctes n'ont aucune 
+	correspondance dans l'alg\`ebre de De Rham. Pour illustrer ce 
+	ph\'enom\`ene, qui se trouve poss\'eder une interpr\'etation physique aussi bien 
+	inattendue que capitale, nous allons choisir l'exemple d'un espace 
+	non connexe extr\^emement simple : celui fourni par la donn\'ee de deux 
+	points. Dans ce cas, les $1$-formes usuelles (celles de De Rham) 
+	n'existent pas. Par contre, on va pouvoir construire et utiliser 
+	l'alg\`ebre des formes universelles $\Omega  =  \Omega(\CC \oplus 
+	\CC)$.
+	
+	
+	Consid\'erons donc un ensemble discret $\{L,R\}$ constitu\'e de deux \'el\'ements
+	que nous d\'esignons par les lettres $L$ et $R$ (penser a {\it Left} 
+	et {\it Right}). Soit $x$ la fonction coordonn\'ee $x(L)  =  1,
+x(R)  =  0$ et  $y$ la fonction coordonn\'ee $y(L)  =  0, y(R)
+ =  1$. Remarque:  $xy=yx=0$, $x^2=x, y^2=y$ and $x + y = \one$
+o\`u $\one$ est la fonction unit\'e $\one(L)=1, \one(R)=1$. Un \'el\'ement quelconque 
+de cette alg\`ebre associative (et commutative)  ${\cal A}$ engendr\'ee 
+par
+$x$ et $y$ peut s'\'ecrire $\lambda x + \mu y$ (o\`u $\lambda$ et
+$\mu$ sont deux nombres complexes) et peut \^etre repr\'esent\'e par une 
+matrice diagonale $\begin{pmatrix} \lambda & 0 \\ 0 & \mu  \end{pmatrix}$. 
+On peut \'ecrire ${\cal A} = \CC x \oplus \CC y$. L'alg\`ebre est donc isomorphe \`a $\CC \oplus \CC$. 
+Nous introduisons maintenant deux symboles $\delta x , \delta y$, 
+ainsi qu'une diff\'erentielle $\delta$ qui 
+satisfait \`a $\delta^2=0$, qui doit satisfaire \`a
+$\delta \one = 0$ et \`a la r\`egle habituelle de d\'erivation d'un 
+produit (r\`egle de Leibniz).
+Il est \'evident que $\Omega^1$, l'espace des 
+diff\'erentielles de degr\'e $1$ est engendr\'e par les deux quantit\'es 
+ind\'ependantes $x\delta x$ and $y\delta y$. En effet, la relation $x+y=\one$
+implique $\delta x + \delta y = 0$; de plus, les relations $x^2=x$ and $y^2=y$
+impliquent $(\delta x)x+x(\delta x) = (\delta x)$, donc $(\delta x) x
+= (\one-x) \delta x$ and $(\delta y) y = (\one-y) \delta y$. Ceci implique 
+\'egalement, par exemple, $\delta x = \one \delta x = x \delta x + y \delta x$,
+$x \delta x = - x \delta y$, $y \delta x = (\one-x) \delta x$, $(\delta
+x)x = y\delta x = - y \delta y$ \etc. Plus g\'en\'eralement, d\'esignons par
+$\Omega^p$, l'espace des diff\'erentielles de degr\'e $p$; les relations 
+ci-dessus montrent qu'une base de cet espace vectoriel est fourni par 
+les \'el\'ements
+$\{x\delta x\delta x\ldots\delta x,y\delta y\delta y\ldots\delta y 
+\}$. Posons $\Omega^0 = {\cal A} $ et $\Omega = \bigoplus_p \Omega^p
+$. L'espace $\Omega$ est une alg\`ebre : on peut multiplier les formes 
+librement, mais il faut tenir compte de la r\`egle de Leibniz, par 
+exemple $x(\delta x) x(\delta x) = x(\one-x)(\delta x)^2$. 
+Attention: l'alg\`ebre $\Omega$ est de dimension infinie, comme il se 
+doit puisque $p$ parcourt toutes les valeurs de $0$ \`a l'infini.
+Bien entendu, la diff\'erentielle $\delta$ ob\'eit \`a la r\`egle de 
+Leibniz lorsqu'elle agit sur les \'el\'ements de ${\cal A}$ mais elle ob\'eit \`a la r\`egle de 
+Leibniz gradu\'ee lorsqu'elle agit sur les \'el\'ements de $\Omega$, en 
+l'occurence
+$\delta(\omega_1 \omega_2) = \delta(\omega_1) \omega_2 +
+(-1)^{\partial \omega_1} \omega_1 \delta(\omega_2)$ o\`u ${\partial
+\omega_1}$ d\'esigne $0$ ou $1$ suivant que $\omega_1$ est pair ou impair.\par
+
+Dans le cas particulier de la g\'eom\'etrie d'un ensemble \`a deux points, 
+ $\{L,R\}$ nous retrouvons le fait qu'un \'el\'ement $A$ de $\Omega^1$ 
+ consid\'er\'e comme fonction de deux variables doit ob\'eir aux contraintes 
+ $A(L,L)=A(R,R)= 0$ et peut donc \^etre \'ecrit comme une matrice $2 \times 
+ 2$ index\'ee par $L$ et $R$ dont les \'el\'ements non diagonaux sont 
+ nuls (``matrice hors diagonale''). Un \'element $F$ de $\Omega^2$ peut \^etre 
+ consid\'er\'e comme fonction de trois variables ob\'eissant aux contraintes
+$F(L,L,R)=F(R,R,L)=F(L,R,R)=F(R,L,L)=F(R,R,R)=F(L,L,L)=0$.
+ Les deux 
+seules composantes non nulles sont donc $F(L,R,L)$ and $F(R,L,R)$. Le 
+fait que
+$dim(\Omega^p) = 2$ pour tout $p$ sugg\`ere la possibilit\'e d'utiliser 
+des matrices de taille fixe (en l'occurence des matrices
+$2\times 2$) pour toutes valeurs de $p$.
+ Ceci ne serait pas le cas pour 
+une g\'eom\'etrie \`a plus de deux points. En effet,
+on peut ais\'ement g\'en\'eraliser la construction pr\'ec\'edente, par exemple 
+en partant de trois points au lieu de deux. Mais dans ce cas, $\Omega^1$
+est de dimension $6$ et
+$\Omega^2$ de dimension $12$. Avec $q$ points, la dimension de
+$\Omega^p$ est $q(q-1)^p$. Ce dernier r\'esultat vient du fait que 
+$dim({\mathcal A}\otimes{\mathcal A}) - dim (Ker(m)) = dim({\mathcal 
+A})$. On a donc $dim(\Omega^{1}) = q^{2} - q$.
+
+Pour revenir au cas de la g\'eom\'etrie \`a deux points, nous voyons qu'il est possible de
+ repr\'esenter $\lambda x
+(\delta x)^{2p} + \mu y (\delta y)^{2p}$ comme une matrice diagonale
+$\begin{pmatrix} \lambda & 0 \\ 0 & \mu  \end{pmatrix} $ et l'\'el\'ement $\alpha x
+(\delta x)^{2p+1} + \beta y (\delta y)^{2p+1}$ comme la matrice 
+``hors'' diagonale $\begin{pmatrix} 0 & i\alpha \\ i\beta & 0  \end{pmatrix}$  
+Autrement dit nous pouvons repr\'esenter les formes paires par des 
+matrices paires (i.e. diagonales) et les formes impaires
+par des matrices impaires (i.e. ``hors'' diagonales); 
+ceci est non seulement naturel mais obligatoire
+si on veut que la multiplication des matrices soit compatible
+ avec la multiplication dans $\Omega$. En effet, les relations $$
+\begin{array}{*2l} x (\delta x)^{2p} x &= x (\delta x)^{2p} \\ x
+(\delta x)^{2p} y &= 0 \\ x (\delta x)^{2p+1} x &= 0 \\ x (\delta
+x)^{2p+1} y &=x (\delta x)^{2p+1} \end{array} $$ montrent que cette
+repr\'esentation utilisant des matrices $2 \times 2$ 
+est effectivement un homomorphisme d'alg\`ebres  $\ZZ_2-$gradu\'ees, de $\Omega$
+ (gradu\'e par la parit\'e de $p$) dans l'alg\`ebre des marices complexes $2 \times 2$
+(avec graduation $\ZZ_2-$ associ\'ee avec la d\'ecomposition d'une matrice 
+en une partie diagonale et hors diagonale).
+La pr\'esence du facteur $i$ dans les matrices hors diagonales
+repr\'esentant les \'el\'ements impairs est n\'ecessaire pour que les deux 
+types de produits soient compatibles. L'alg\`ebre $\Omega$ 
+s'obtient en effectuant la {\it somme directe \/} des espaces 
+vectoriels $\Omega^p$. Comme on l'a dit, 
+l'alg\`ebre $\Omega$ est donc de dimension infinie 
+mais si nous repr\'esentons toute l'alg\`ebre
+$\Omega$ \`a l'aide de matrices $2\times 2$ agissant sur un espace 
+vectoriel fix\'e de dimension $2$, la $p$-graduation est perdue et seule 
+la graduation $\ZZ_{2}$ est conserv\'ee.
+
+Nous verrons un peu plus loin qu'il est possible, en g\'eom\'etrie 
+non commutative, de donner un sens \`a la notion de connexion.
+Dans le cas le plus simple, la forme de connexion $A$ n'est autre qu'une 
+forme de degr\'e $1$ appartenant \`a une alg\`ebre diff\'erentielle 
+$(\Xi, \delta)$ associ\'ee \`a l'alg\`ebre associative $\mathcal A$ choisie.
+On verra que la courbure $F$, dans ce cas, peut \'egalement 
+s'\'ecrire comme $F = \delta A + A^{2}$.
+
+Dans le cas pr\'esent, $\Xi = \Omega$. Une forme de degr\'e $1$ est un \'el\'ement de
+$\Omega^1$. Prenons $A  =  ( \varphi \, x \delta x + \bar  \varphi \,
+y \delta y)$. La repr\'esentation matricielle de $A$ se lit donc $$ A
+=  \begin{pmatrix} 0 & i  \varphi \\ i \bar  \varphi & 0 \end{pmatrix} $$ 
+La courbure correspondante est alors $F  =  \delta A + A^2$, mais $A^2 =
+- \varphi \bar  \varphi x^2 \, \delta x \delta x - \bar  \varphi
+ \varphi \, y^2 \delta y \delta y =  - \varphi \bar  \varphi x \,
+\delta x \delta x - \bar  \varphi
+ \varphi \, y \delta y \delta y$ et  $\delta A =  \varphi \delta x
+\delta x +  \bar  \varphi  \delta y \delta y = (\bar  \varphi + 
+\varphi)(x \delta x \delta x +  y \delta y \delta y)$. $F$ peut 
+donc s'\'ecrire aussi
+ $$ F =  ( \varphi + \bar  \varphi -  \varphi \bar  \varphi )(x
+\delta x \delta x + y \delta y \delta y)
+ = \begin{pmatrix}  \varphi + \bar  \varphi -  \varphi \bar  \varphi & 0
+\\ 0 &  \varphi + \bar  \varphi -  \varphi \bar  \varphi  \end{pmatrix} $$ 
+Nous pouvons choisir un produit hermitien sur $\Omega$ en d\'ecidant que
+la base $x(\delta
+x)^p,y(\delta y)^q$ est orthonormale. Alors $\vert F \vert^2 = \bar F
+F = ( \varphi + \bar
+ \varphi -  \varphi \bar  \varphi)^2$. Le lecteur familier des 
+ th\'eories de jauge avec brisure de symm\'etrie reconnaitra ici un 
+ potentiel de Higgs \index{Higgs} translat\'e $V[\phi]  =  \vert F \vert^2$.
+ (voir figure \ref{fig:Higgs}).
+\begin{figure}[htbp]
+\epsfxsize=8cm
+$$
+    \epsfbox{higgs.eps}
+$$
+\caption{Potentiel de Higgs $V[Re(\varphi),Im(\varphi)]$}
+\label{fig:Higgs}
+\end{figure}
+ 
+Notre calcul diff\'erentiel, dans le cas pr\'esent, est commutatif, puisque
+l'alg\`ebre des fonctions sur un espace \`a deux points est simplement 
+l'alg\`ebre des matrices diagonales $2\times 2$ avec des coefficients 
+complexes (ou r\'eels) mais notre calcul diff\'erentiel est, en un sens, 
+``non local'' puisque la ``distance'' entre les deux points \'etiquet\'es 
+par $L$ et $R$ ne peut pas tendre vers z\'ero\ldots
+Le lecteur aura sans doute remarqu\'e que ces r\'esultats peuvent 
+s'interpr\'eter en termes de champs de Higgs. Nous y reviendrons 
+(exemple poursuivi en 6.2.4).
+
+\subsection{L'alg\`ebre diff\'erentielle $\Omega_{Der}{\mathcal A}$}
+\index{formes diff\'erentielles associ\'ees aux d\'erivations}
+
+\subsubsection{Rappel sur les d\'erivations d'alg\`ebre}
+
+
+ Rappelons  (relire 1.10.1)  que
+ 
+ \begin{itemize}
+ 	\item $Der({\mathcal A})$ est une alg\`ebre de Lie  
+ 
+ 	\item  $Der({\mathcal A})$ n'est pas un module sur ${\mathcal A}$
+ 
+ 	\item  $Der({\mathcal A})$ est un module sur le centre de ${\mathcal A}$
+ 
+ 	\item  
+$Int({\mathcal A}) = \{ad_{a} / a\in {\mathcal A} \}$ avec 
+$ad_{a}(b) = [a,b]$ qu'on appelle {\sl ensemble des d\'erivations 
+int\'erieures\/} est un id\'eal d'alg\`ebre de Lie de $Der {\mathcal 
+A}$ (en effet soit $X_{a}  =  ad_{a} \in Int {\mathcal A}$ et $Y 
+\in Der {\mathcal A}$, alors $[Y,X_{a}] = ad_{Y(a)} \in {\mathcal A}$).
+ 
+ 	\item  On note $Out {\mathcal A} = Der {\mathcal A} / Int {\mathcal A}$
+ \end{itemize}
+ 
+\subsubsection{Formes diff\'erentielles}
+
+Classiquement, une forme diff\'erentielle $\omega$ est une $n$-forme 
+sur l'alg\`ebre de Lie des champs de vecteurs, antisym\'etrique, lin\'eaire par rapport aux 
+scalaires, bien s\^ur, mais aussi lin\'eaire par rapport aux fonctions, 
+et \`a valeur dans les fonctions.
+
+On va d\'efinir ici les formes diff\'erentielles comme des objets qui 
+soient des $n$-formes
+sur l'alg\`ebre de Lie des d\'erivations de ${\mathcal A}$, antisym\'etrique, lin\'eaire par rapport au 
+scalaires, bien sur, mais aussi lin\'eaire par rapport au centre ${\mathcal 
+Z(A)}$  de ${\mathcal A}$ et \`a valeurs dans l'alg\`ebre ${\mathcal A}$.
+
+En d'autres termes, on pose
+$${\underline{{\Omega}^{n}}_{Der}}({\mathcal A}) = {\mathcal C}^n_{{\mathcal Z(A)}}(Der {\mathcal 
+A}, {\mathcal A}) \,   \hbox{  avec  } \,  \underline{{\Omega}^0}_{Der}({\mathcal A}) = {\mathcal A}$$
+
+Cette d\'efinition est due \`a \cite{MDV-cras}
+
+C'est une alg\`ebre diff\'erentielle gradu\'ee avec un produit d\'efini par
+
+$$
+(\alpha \beta)(v_1, v_2, \dots, v_{m + n}) = \sum_{\sigma \in 
+{\mathcal S}_{m+n}}{ (-1)^{\vert \sigma \vert} \over m! n!} 
+\alpha(v_{\sigma_{1}}, v_{\sigma_{2}}, \dots, v_{\sigma_{m}})
+\beta(v_{\sigma_{m+1}}, v_{\sigma_{m+2}}, \dots, v_{\sigma_{m+n}})
+$$
+o\`u $\alpha \in {\underline{\Omega}_{Der}}^{m}({\mathcal A})$ et $\beta \in 
+{\underline{\Omega}_{Der}}^{n}({\mathcal A})$,
+et o\`u $d$ est une diff\'erentielle d\'efinie comme suit:  
+la forme diff\'erentielle 
+$d \omega$ peut se d\'efinir directement par son action sur tout
+$(k+1)$-uplet
+$\{ v_1, v_2, \dots, v_{k + 1} \}$ de d\'erivations, en posant 
+\begin{eqnarray*}
+ d \omega (v_1, v_2, \dots, v_{k + 1}) 
+& = & \sum_{i = 1}^{k + 1} (- 1)^{i + 1} v_i
+\Bigl[
+\omega (v_1, \dots, \widehat v_i, \dots, v_{k + 1})
+\Bigr]                                               \nonumber \\
+& & + 
+\sum_{i \le i \le j \le k+1 } (- 1)^{i + j} \omega
+\Bigl(
+[v_i, v_j], v_1, \dots, 
+\widehat v_i, \dots, 
+\widehat v_j, \dots, v_{k + 1}
+\Bigr) 
+\end{eqnarray*}
+o\`u le symbole $\, \widehat{} \,$ d\'esigne l'omission de l'argument correspondant.
+ 
+ En particulier, pour une $1$-forme $da$ (agissant sur la d\'erivation 
+ $v$) on a simplement
+ $$
+ \mbox{\fbox{$ 
+ da(v)=v(a)
+ $}}
+ $$
+ 
+ On peut imm\'ediatement v\'erifier que $d$ est alors une d\'erivation 
+ gradu\'ee de degr\'e $1$ sur l'alg\`ebre ${\underline{\Omega}_{Der}}({\mathcal A})$ et 
+ que $d^{2}=0.$
+
+Les d\'efinitions qui pr\'ec\`edent sont tout \`a fait naturelles puisque ce 
+sont exactement les m\^emes que pour les diff\'erentielles habituelles 
+(rappelons encore une fois que, dans le cas usuel de la g\'eom\'etrie 
+"commutative", les d\'erivations d'alg\`ebres $v_{k}$ de l'alg\`ebre 
+${\mathcal A} = C^\infty(M)$ ne sont autres que 
+les champs de vecteurs).
+
+\subsubsection{Distinction entre $\underline{\Omega}_{Der}$ et 
+$\Omega_{Der}$}
+
+En utilisant la r\`egle de Leibniz, on voit qu'un produit quelconque 
+d'\'el\'ements de $a$ et de diff\'erentielles (du type $da$) peut se 
+r\'eordonner sous la forme d'une somme de termes du type 
+$a_{0}da_{1}\ldots da_{n}$. Cela dit, il y a une petite subtilit\'e : 
+avec la d\'efinition que nous avons adopt\'ee, il n'est pas clair que 
+tout \'el\'ement de $\underline{\Omega}_{Der}{\mathcal A}$ puisse s'\'ecrire comme une 
+somme {\it finie \/} d'\'el\'ements de ce type. Ceci conduit \`a 
+introduire la d\'efinition suivante : on pose $\Omega_{Der} {\mathcal A}= 
+\bigoplus_{n=0}^{\infty} {\Omega_{Der}}^n {\mathcal A}$ o\`u 
+${\Omega_{Der}}^n {\mathcal A}$ est le sous-espace vectoriel de 
+$\underline{{\Omega_{Der}}}^n {\mathcal A}$ constitu\'e des sommes 
+finies du type $a_{0}da_{1}\ldots da_{n}$. On d\'emontre alors 
+\cite{MDV-cras} que $\Omega_{Der} {\mathcal A}$ est la plus petite 
+sous alg\`ebre diff\'erentielle gradu\'ee de $\underline{{\Omega_{Der}}}{\mathcal 
+A}$ contenant ${\mathcal A}$.
+
+
+En g\'en\'eral, on peut oublier cette distinction entre  $\underline{\Omega}_{Der}$ et 
+$\Omega_{Der}$. Dans le cas de la g\'eom\'etrie des vari\'et\'es (vari\'et\'es connexes ou r\'eunion d\'enombrables de 
+vari\'et\'es connexes), on peut d\'emontrer
+que les deux notions co\"incident lorsque la vari\'et\'e $M$ est 
+paracompacte. Cela qui revient \`a dire que la vari\'et\'e admet une base 
+topogique d\'enombrable\ldots (et dans ce cas elle admet \'egalement un atlas 
+comprenant au plus une infinit\'e d\'enombrable de cartes). Pour des 
+vari\'et\'es paracompactes, donc (hypoth\`ese qu'on fait presque toujours!),
+les deux notions co\"incident et co\"incident \'evidemment avec l'alg\`ebre 
+des formes diff\'erentielles usuelles (ceci d\'ecoulant imm\'ediatement de 
+l'identit\'e entre les d\'efinitions ci-dessus et celles qu'on peut 
+trouver en \ref{sec:diffext}). Lorsque l'alg\`ebre ${\mathcal A}$ n'est pas 
+commutative, on aura  \'egalement les deux possibilites: 
+$\underline{\Omega}_{Der}{\mathcal A}$ et  
+$\Omega_{Der}{\mathcal A}$ qui peuvent co\"incider ou non. Le cas le moins 
+``sauvage'' est \'evidemment celui o\`u les deux notions co\"incident 
+(analogue non commutatif du cas paracompact). Dans la suite de cette 
+section, on supposera que c'est le cas.
+
+\subsubsection{Exemples}
+
+\begin{itemize}
+	\item  Cas des vari\'et\'es. On sait d\'eja que ${\mathcal A}=C^\infty(M)$, 
+	que $Der{\mathcal A} = \Gamma TM$ (champs de vecteurs) et que
+	${\Omega}_{Der}{\mathcal A} = \Lambda M = \Gamma T^{*}M$ (formes 
+	diff\'erentielles usuelles).
+
+	\item  Cas des matrices. ${\mathcal A}=M(n,\CC)$. Il est bien connu 
+	que toutes les d\'erivations de cette alg\`ebre sont int\'erieures, c'est 
+	\`a dire qu'elles sont obtenues en calculant des commutateurs avec une 
+	matrice donn\'ee. Cela dit, prendre un commutateur avec une matrice $X$ 
+	ou prendre un commutateur avec une matrice $X + k \one$ donne le 
+	m\^eme r\'esultat. On peut donc d\'ecider de normaliser en fixant la trace de 
+	$X$ \`a z\'ero. L'ensemble des matrices $n\times n$ de trace nulle 
+	co\"incide, on le sait (cf chapitre 2) avec l'alg\`ebre de Lie de 
+	$SL(n,\CC)$. 
+	On voit que $Der{\mathcal A} = Lie(SL(n,\CC))$. Les \'el\'ements de 
+	${\Omega}_{Der}^n{\mathcal A}$ sont donc les $n$ formes 
+	(antisym\'etriques) sur $Lie(SL(n,\CC)$ \`a valeurs dans l'alg\`ebre ${\mathcal 
+	A}$ elle-m\^eme, c'est \`a dire dans $M(n,\CC)$. On peut finalement \'ecrire
+	$${\Omega}_{Der}M(n,\CC) = M(n,\CC) \otimes \land (Lie(SL(n,\CC)))^{*}$$
+
+	\item  Cas des matrices \`a \'el\'ements fonctions sur une vari\'et\'e. On 
+	prend  ${\mathcal A}=M(n,\CC) \otimes C^\infty(M)$. Nous ne 
+	d\'etaillerons pas cet exemple (voir \cite{MDV-cras}). Le r\'esultat est assez 
+	intuitif  et s'obtient \`a partir des deux cas pr\'ec\'edents :
+	 $Der{\mathcal A} = Der(C^\infty(M)) \otimes \one \oplus 
+	 C^\infty(M) \otimes Der(M(n,\CC))$ et 
+	 $\Omega_{Der}(M(n,\CC) \otimes C^\infty(M)) = \Lambda(M) \otimes 
+	 \Omega_{Der}M(n,\CC)$. Cet exemple a \'et\'e utilis\'e pour la construction 
+	 de certains mod\`eles physiques g\'en\'eralisant les th\'eories de jauges usuelles 
+	 (voir \cite{MDVKernerMadore})
+	 
+\end{itemize}
+
+Remarque: il existe des alg\`ebres tr\`es simples qui n'admettent pas de 
+d\'erivations\ldots par exemple l'alg\`ebre des nombres complexes!
+Dans ce cas, la construction qu'on vient d'exposer ne donne rien 
+(bien que l'alg\`ebre des formes universelles soit n\'eanmoins non triviale).
+
+
+
+\subsection{Alg\`ebres diff\'erentielles pour espaces non connexes}
+\index{formes diff\'erentielles pour espaces non connexes}
+Soient ${\mathcal A}$ et ${\mathcal B}$ deux alg\`ebres associatives 
+(commutatives ou non). Il est certain que l'alg\`ebre des formes 
+universelles pour l'alg\`ebre ${\mathcal A} \otimes {\mathcal B}$  n'est pas 
+isomorphe au produit tensoriel gradu\'e des alg\`ebres universelles de  
+${\mathcal A}$ et ${\mathcal B}$ s\'epar\'ement. 
+$$
+\Omega({\mathcal A} \otimes {\mathcal B}) \neq \Omega{\mathcal A} \otimes 
+\Omega{\mathcal B}
+$$
+En effet, par exemple,  $\Omega^{1}({\mathcal A} \otimes {\mathcal B}) 
+\subset {\mathcal A} \otimes {\mathcal B} \otimes {\mathcal A} \otimes 
+{\mathcal B}$ alors que 
+$$
+(\Omega{\mathcal A}\otimes\Omega{\mathcal B})^{1} = 
+\Omega^{0}{\mathcal A}\otimes \Omega^{1}{\mathcal B} \oplus
+\Omega^{1}{\mathcal A}\otimes \Omega^{0}{\mathcal B}
+\subset
+{\mathcal A} \otimes {\mathcal B}\otimes {\mathcal B} \oplus
+{\mathcal A} \otimes {\mathcal A}\otimes {\mathcal B}
+$$
+Cependant, $\Omega({\mathcal A} \otimes {\mathcal B})$ et $\Omega{\mathcal A} \otimes 
+\Omega{\mathcal B}$ sont toutes deux des alg\`ebres diff\'erentielles 
+$\ZZ$-gradu\'ees dont le terme de degr\'e z\'ero co\"incide avec ${\mathcal A} \otimes {\mathcal B}$.
+La premi\`ere \'etant universelle, il existe donc un morphisme 
+surjectif de la premi\`ere sur la seconde.
+
+Supposons maintenant que qu'on s'int\'eresse \`a une vari\'et\'e non connexe 
+obtenue comme r\'eunion (disjointe) de plusieurs copies (deux pour 
+simplifier) d'une m\^eme vari\'et\'e connexe $M$. On se retrouve donc dans la 
+situation pr\'ec\'edente avec ${\mathcal A} = C^\infty(M)$ et 
+${\mathcal B} = \CC \oplus \CC$. En effet 
+${\mathcal A} \otimes {\mathcal B} = C^\infty(M) \oplus C^\infty(M).$
+L'alg\`ebre diff\'erentielle $\Omega(C^\infty(M)) \otimes \Omega(\CC 
+\oplus \CC)$ est encore peu commode \`a utiliser (on se souvient que 
+les \'el\'ements de $\Omega(C^\infty(M))$ sont des fonctions de plusieurs 
+variables qui s'annulent lorsque deux arguments successifs sont 
+\'egaux). Par contre, rien ne nous interdit de  remplacer cette 
+derni\`ere par l'alg\`ebres des formes diff\'erentielles usuelles $\Lambda M$. 
+On obtient ainsi le diagramme suivant, o\`u chaque fl\`eche d\'esigne 
+un morphisme surjectif d'alg\`ebres diff\'erentielles gradu\'ees :
+$$
+\Omega(C^\infty(M) \oplus C^\infty(M)) \mapsto \Omega(C^\infty(M)) \otimes \Omega(\CC 
+\oplus \CC) \mapsto \Lambda M \otimes \Omega (\CC \oplus \CC)
+$$
+
+L'alg\`ebre $$\Xi  =  \Lambda M \otimes \Omega (\CC \oplus \CC)$$
+produit tensoriel gradu\'e du complexe de De Rham usuel par l'alg\`ebre 
+des formes universelles sur l'espace \`a deux points $\CC \oplus \CC$, 
+constitue une alg\`ebre diff\'erentielle int\'eressante \`a plus d'un titre et tr\`es 
+facile \`a utiliser. Elle a \'et\'e \'etudi\'ee dans \cite{CHS} et utilis\'ee auparavant dans \cite{CEV}.
+Sa structure s'obtient imm\'ediatement \`a partir de notre \'etude de 
+$\Omega (\CC \oplus \CC)$. On se souvient que 
+$\Omega^p (\CC \oplus \CC)$ est toujours de dimension $2$ et 
+repr\'esentable, soit \`a l'aide de matrices $2\times 2$ diagonales 
+(lorsque $p$ est pair) soit \`a l'aide de matrices $2\times 2$ hors 
+diagonales (lorsque $p$ est impair). Les \'el\'ements de 
+$$\Xi^n = \sum_{p=0}^n \Lambda^p M \otimes \Omega^{n-p}(\CC \oplus \CC)$$
+peuvent donc s'\'ecrire \`a l'aide de matrices $2 \times 2$ dont les 
+\'el\'ements sont des formes diff\'erentielles usuelles sur la vari\'et\'e $M$ (de degr\'e $p$ 
+variant de $0$ \`a $n$) et positionn\'ees soit sur la diagonale (quand 
+$p$ est pair) soit en dehors de la diagonale (lorsque $p$ est impair). 
+Le produit dans $\Xi$ s'obtient imm\'ediatement \`a partir du produit 
+ext\'erieur dans $\Lambda M$ et du produit d\'ej\`a \'etudi\'e dans $\Omega 
+(\CC \oplus \CC)$.
+$$ (\rho \otimes \alpha)(\sigma \otimes \beta)  = 
+(-1)^{\vert \alpha \vert \, \vert \sigma \vert}(\rho \land \sigma)\otimes 
+(\alpha \beta) $$
+On peut finalement encore g\'en\'eraliser la construction pr\'ec\'edente en 
+rempla\c cant l'alg\`ebre des 
+formes diff\'erentielles sur la vari\'et\'e $M$ par l'alg\`ebre des 
+formes diff\'erentielles sur $M$ \`a valeurs dans l'alg\`ebre (associative) 
+des matrices $n \times n$ complexes.
+
+On pourrait ici continuer notre exemple des connexions sur $\CC 
+\oplus \CC$, en choisissant cette fois-ci pour forme de connexion un 
+\'element quelconque de $\Xi^{1}$. La norme carr\'e de la courbure 
+s'interpr\`ete alors physiquement comme le lagrangien d'un mod\`ele de 
+jauge $U(1) \times U(1)$, avec potentiel de Higgs \index{Higgs} et symm\'etrie 
+bris\'ee. Un des deux champs de jauge devient massif (le boson 
+$Z_{0}$) et l'autre reste sans masse (le photon).
+
+\subsection{L'alg\`ebre diff\'erentielle $\Omega_{D}{\mathcal A}$}
+\index{formes diff\'erentielles associ\'ees au choix d'un op\'erateur 
+de Dirac}
+La construction qui suit est un peu plus \'elabor\'ee que les pr\'ec\'edentes, 
+en ce sens qu'elle utilise un plus grand nombre d'ingr\'edients. On 
+a vu que la construction de l'alg\`ebre des formes diff\'erentielle universelle
+$\Omega({\mathcal A})$ \'etait 
+possible, pour une alg\`ebre associative quelconque ${\mathcal A}$. L'alg\`ebre 
+diff\'erentielle $\Omega_{Der}({\mathcal A})$, quant \`a elle, fait jouer un r\^ole 
+particulier aux d\'erivations de ${\mathcal A}$ (pour autand qu'elles 
+existent). L'alg\`ebre diff\'erentielle que nous allons pr\'esenter 
+maintenant, et dont la construction est due \`a A. Connes, repose sur la 
+donn\'ee d'un ``triplet spectral'', donn\'ee qui englobe, non seulement 
+l'alg\`ebre associative ${\mathcal A}$ elle-m\^eme, mais \'egalement 
+d'autres donn\'ees qui peuvent \^etre consid\'er\'ees comme le codage d'une 
+structure riemannienne non commutative. Certains rappels et/ou 
+constructions annexes sont n\'ecessaires.
+
+Dans l'approche traditionnelle de la g\'eom\'etrie diff\'erentielle, on commence 
+par se donner un espace $M$ (on peut alors parler de l'alg\`ebre des 
+fonctions sur $M$), on le munit tout d'abord d'une 
+topologie (on peut alors parler de l'alg\`ebre $C^{0}(M)$ des fonctions continues 
+sur $M$), puis d'une structure diff\'erentiable (ce qui revient \`a 
+choisir une sous-alg\`ebre particuli\`ere  $C^{\infty}(M)$  incluse dans 
+dans $C^{0}(M)$),
+puis d'une structure riemannienne (choix d'une m\'etrique), puis d'une 
+structure spinorielle (si la vari\'et\'e le permet), on construit alors
+le fibr\'e des spineurs, puis l'op\'erateur de Dirac relatif \`a la m\'etrique 
+choisie et agissant sur les champs de spineurs (sections du fibr\'e 
+des spineurs). Dans le cas d'une vari\'et\'e compacte et d'une m\'etrique 
+proprement riemannienne, on peut alors fabriquer un produit scalaire 
+global et un espace de spineurs (l'espace $L^{2}$ des champs de 
+spineurs de carr\'e int\'egrable). Dans le cas o\`u la vari\'et\'e est de 
+dimension paire, on peut \'egalement d\'ecomposer cet espace de Hilbert en 
+deux sous-espaces suppl\'ementaires correspondant \`a des demi-spineurs de 
+chiralit\'es oppos\'ees, l'op\'erateur de Dirac allant d'un sous-espace \`a 
+l'autre (on rappelle que cet op\'erateur anti-commute avec l'op\'erateur 
+de chiralit\'e).
+
+Tout ceci est maintenant bien connu du lecteur (voir chapitres 
+pr\'ec\'edents). L'approche ``\`a la A. Connes'' \cite{ACbook} de la g\'eom\'etrie non commutative consiste \`a 
+``renverser la vapeur'' en \'ecrivant tout ceci \`a l'envers, et sous forme alg\'ebrique 
+(en utilisant des alg\`ebres commutatives), 
+puis de promouvoir l'essentiel de ces transcriptions au rang de 
+d\'efinitions, en effa\c cant l'adjectif ``commutatif''. 
+
+La th\'eorie se 
+divise alors en deux : il existe un cas dit ``pair''  et un cas dit 
+``impair''. Nous allons simplement \'ebaucher la discussion du cas 
+pair, cas qui g\'en\'eralise au cas non commutatif la g\'eom\'etrie associ\'ee \`a 
+la donn\'ee d'un op\'erateur de Dirac sur une vari\'et\'e de dimension paire.
+On se donne un triplet $({\mathcal A}, {\mathcal H}, D)$ 
+poss\'edant les propri\'et\'es suivantes : ${\mathcal H}$ est un espace de 
+Hilbert $\ZZ_{2}$ gradu\'e (l'op\'erateur de graduation est alors appel\'e 
+op\'erateur de chiralit\'e),  ${\mathcal A}$ est une alg\`ebre associative munie d'une involution ($*$) et 
+repr\'esent\'ee fid\`element dans ${\mathcal H}$ \`a l'aide d'op\'erateurs born\'es 
+pairs, et $D$ est un op\'erateur auto-adjoint tel que les commutateurs 
+$[D,a], a \in {\mathcal A}$ soient born\'es; on impose \'egalement \`a la r\'esolvente  $(D+i)^{-1}$  d'\^etre un 
+op\'erateur compact. 
+
+
+Un tel triplet est appel\'e {\sl triplet spectral} \index{triplet 
+spectral}
+mais on pourrait peut-\^etre, de fa\c con plus imag\'ee, le d\'esigner sous le 
+nom d'{\sl espace riemannien quantique\/}\index{espace riemannien quantique}. Dans le cas de la g\'eom\'etrie 
+commutative, ${\mathcal A}$ co\"inciderait avec la
+complexifi\'ee de l'alg\`ebre 
+$C^\infty(M)$, ${\mathcal H}$ avec l'espace de Hilbert $L^{2}(\mathcal 
+S)$ des champs de spineurs de carr\'e int\'egrable, et $D$ avec 
+l'op\'erateur de Dirac lui-m\^eme.
+
+Dans le cas classique (commutatif), si on n'impose pas de propri\'et\'e 
+de compacit\'e pour la r\'esolvente de $D$, l'alg\`ebre ${\mathcal A}$ (qui est telle que les commutateurs de ses \'el\'ements avec $D$ 
+soient born\'es) n'est autre que l'alg\`ebre des fonctions  
+Lipschitziennes sur $M$, c'est \`a dire celle dont les \'el\'ements sont 
+tels que  $\vert f(x) - f(y) \vert 
+\leq c \, d(x,y), \, \forall x,y \in M$.
+
+Dans ce cadre commutatif, il se trouve 
+qu'il est en fait possible de retrouver la distance riemannienne 
+$d(x,y)$ entre deux points quelconques $x$ et $y$ de $M$ \`a partir de ces 
+donn\'ees. En effet, on montre que
+$$
+d(x,y) = Sup\{\vert f(x) - f(y) \vert, f\in {\mathcal A}, 
+\vert[D,f]\vert \leq 1 \}
+$$
+Le concept de distance, qu'on relie d'habitude \`a un proc\'ed\'e de 
+minimisation entre diff\'erents points est alors obtenu gr\^ace \`a un 
+proc\'ed\'e de maximisation pour les fonctions d\'efinies sur ces points.
+
+Nous avons maintenant tout ce qu'il nous faut pour construire l'alg\`ebre 
+diff\'erentielle $\Omega_{D}({\mathcal A})$.  Nous savons d\'ej\`a 
+construire l'alg\`ebre des formes universelles $\Omega({\mathcal A})$. 
+Soit $\omega = a_{0}\delta a_{1}\delta a_{2}\ldots \delta a_{n}$, une $n$-forme 
+universelle (un \'el\'ement de $\Omega^n({\mathcal A})$). Nous lui 
+associons l'op\'erateur born\'e  $$
+\mbox{\fbox{$
+\pi[\omega] = a_{0}[D,a_{1}][D,a_{2}]\ldots [D,a_{n}]
+$}}
+$$
+Il est facile de v\'erifier que cette application est une repr\'esentation 
+de l'alg\`ebre $\Omega({\mathcal A})$ dans l'alg\`ebre des op\'erateurs 
+born\'es sur l'espace de Hilbert ${\mathcal H}$ (on se souvient que ${\mathcal 
+A}$ est, par hypoth\`ese, repr\'esent\'e dans ${\mathcal H}$). Ceci vient 
+du fait que la d\'erivation d'alg\'ebre $d$ est repr\'esent\'ee par l'op\'eration 
+$[D,\,.\,]$ qui est elle-m\^eme une d\'erivation. 
+La premi\`ere est de carr\'e nul, mais ce n'est malheureusement pas le cas 
+de la seconde. En d'autres termes, la repr\'esentation $\pi$ n'est pas 
+une repr\'esentation d'alg\`ebre {\it diff\'erentielle\/}. Il est cependant 
+facile de rem\'edier \`a cela. Soit $K$ le noyau de $\pi$; c'est un id\'eal 
+de $\Omega({\mathcal A})$, puisque $\pi$ est une repr\'esentation 
+d'alg\`ebre. Mais $K$ n'est pas en g\'en\'eral un id\'eal diff\'erentiel : $\delta K$ 
+n'est pas dans $K$. On pose alors $J  =  K \oplus \delta K$. Par 
+construction $J$ est alors un id\'eal diff\'erentiel. On pose alors
+$$ 
+\Omega_{D}({\mathcal A})   =  \Omega({\mathcal A}) / J
+$$
+Par construction, l'alg\`ebre obtenue $\Omega_{D}({\mathcal A})$ est bien une alg\`ebre 
+diff\'erentielle. On peut finalement la regraduer en consid\'erant les 
+intersections de $Ker(\pi)$ avec l'alg\`ebre universelle.
+La construction est donc achev\'ee et on d\'emontre que, dans le cas classique 
+(o\`u ${\mathcal A} = C^\infty(M)$), l'alg\`ebre diff\'erentielle 
+$\ZZ$-gradu\'ee $\Omega_{D}({\mathcal A}) $ obtenue est isomorphe au complexe de De Rham $\Lambda(M)$, c'est \`a dire 
+\`a l'alg\`ebre des formes diff\'erentielles usuelles.
+
+Nous n'irons pas plus avant dans cette direction. Le lecteur interess\'e 
+pourra consulter une lit\'erature plus sp\'ecialis\'ee. Cela dit, il est 
+peut-\^etre important de signaler ici que les constructions math\'ematiques 
+pr\'esent\'ees dans cette section --- et m\^eme dans le pr\'esent chapitre --- 
+sont souvent r\'ecentes, ce qui signifie que les d\'efinitions et 
+constructions propos\'ees n'ont peut \^etre pas encore suffisemment b\'en\'efici\'e 
+du m\^urissement n\'ecessaire. 
+Cela ne signifie pas qu'elles sont erron\'ees mais elles n'ont peut \^etre
+pas atteint le m\^eme degr\'e de stabilit\'e temporelle que les autres concepts 
+pr\'esent\'es auparavant dans cet ouvrage.
+
+\section{Excursion au pays des math\'ematiques non commutatives}
+\sectionmark{Excursion en GNC}
+\subsection{Remarques et pr\'esentation g\'en\'erale}
+En vertu de la dualit\'e existant entre un espace $M$ et l'alg\`ebre 
+commutative $C(M)$ des fonctions sur cet espace (la correspondance 
+pr\'ecise a \'et\'e donn\'ee plus haut), on peut essayer de re-\'ecrire toutes 
+les math\'ematiques traitant des propri\'et\'es des ``espaces'' dans le 
+langage purement alg\'ebrique de la th\'eorie des alg\`ebres commutatives. 
+On peut essayer, \'egalement, de re-exprimer tous ces concepts d'une 
+fa\c con qui ne fasse pas explicitement appel \`a la commutativit\'e de 
+l'alg\`ebre. Bien entendu, ce n'est pas toujours possible, mais, lorsque 
+c'est le cas, on peut alors effacer l'adjectif ``commutatif'' et 
+promouvoir le concept en question au niveau (par exemple) d'une d\'efinition, valable 
+pour les alg\`ebres non commutatives, en g\'en\'eral. 
+D'une certaine fa\c con, on pourrait voir les {\sl 
+math\'ematiques non commutatives\/} simplement comme  une \'etude des 
+alg\`ebres associatives non commutatives. Un tel point de vue ne 
+correspondrait cependant pas \`a la d\'emarche psychologique adopt\'ee : c'est 
+en effet la g\'eom\'etrie ordinaire --- plus pr\'ecisemment la notion de 
+point ---  qui est souvent choisie comme support de 
+notre intuition;  les th\`emes qui int\'eressent la {\sl g\'eom\'etrie non 
+commutative\/} sont pr\'ecisemment les propri\'et\'es des alg\`ebres non 
+commutatives qui g\'en\'eralisent les propri\'et\'es des espaces 
+``ordinaires'', m\^eme si les points n'existent plus. De cette fa\c con, on peut 
+alors construire une th\'eorie de la mesure non commutative, une 
+topologie non commutative, un calcul diff\'erentiel pour les alg\`ebres 
+non commutatives (voir {\it supra\/}), une th\'eorie des connexions, des 
+espaces fibr\'es (non 
+commutatifs) et m\^eme une g\'en\'eralisation de la th\'eorie des groupes (la 
+th\'eorie des {\sl groupes quantiques\/}). Notre propos n'est pas ici de 
+d\'etailler et d'\'etudier toutes ces th\'eories, mais simplement 
+d'illustrer les consid\'erations qui pr\'ec\`edent et d'effectuer un tour rapide de ce 
+zoo non commutatif, en esp\'erant que le lecteur aura plaisir \`a y 
+retourner en consultant la litt\'erature sp\'ecialis\'ee. L'ouvrage pr\'esent \'etant essentiellement d\'edi\'e \`a l'\'etude de 
+certains aspects de la g\'eom\'etrie diff\'erentielle, nous avons d\'ecid\'e de consacrer 
+n\'eanmoins la section pr\'ec\'edente \`a une \'etude un peu plus d\'etaill\'ee des notions relatives aux 
+calculs diff\'erentiels non commutatifs. Pour le reste, notre \'etude ne 
+sera gu\`ere plus qu'une \'ebauche.
+
+
+\subsection{Topologie non commutative et th\'eorie de la mesure non commutative}
+
+Nous avons d\'ej\`a parl\'e de la transformation de Gelfand \'etablissant une 
+correspondance entre espaces topologiques compacts et $C^{*}$-alg\`ebres 
+commutatives unitales (l'existence d'une unit\'e est li\'ee \`a l'hypoth\`ese de compacit\'e).
+ On voit donc, en enlevant l'adjectif ``commutatif''  que la topologie non commutative n'est autre que l'\'etude des 
+$C^{*}$-alg\`ebres non commutatives.
+
+Passons \`a la th\'eorie de la mesure. Classiquement, au lieu de d\'emarrer 
+avec un espace topologique $M$, on peut partir de l'alg\`ebre $C(M)$ des 
+fonctions continues sur $M$ et d\'efinir les mesures \index{mesures} (positives) comme 
+les formes lin\'eaires continues (positives) sur l'alg\`ebre $C(M)$, c'est 
+\`a dire comme des fonctionnelles $\mu$ telles que $\mu[\overline{f}f] 
+\geq 0, \forall f \in C(M)$. La correspondance avec la notion 
+\'el\'ementaire de mesure se fait gr\^ace au th\'eor\`eme de Riesz, c'est \`a 
+dire en \'ecrivant $\mu[f] = \int_{X} f \, d\mu$. A partir de 
+$C(M)$, nous d\'efinissons les mesures; pour une mesure $\mu$ donn\'eee, 
+nous pouvons fabriquer l'espace de Hilbert ${\mathcal H} = 
+L^{2}(M,\mu)$ des fonctions de carr\'e int\'egrable pour cette mesure.
+$C(M)$ agit dans cet espace de Hilbert ${\mathcal H}$ par 
+multiplication: nous avons une repr\'esentation $\pi$ d\'efinie par $\pi(f)  
+g = fg$, avec $f\in C(M)$ et $g \in {\mathcal H}$.
+A partir de ${\mathcal H}$, nous pouvons fabriquer l'alg\`ebre 
+$L^\infty(M,\mu)$ des fonctions mesurables essentiellement born\'ees 
+sur $M$. Soit ${\mathcal L(H)}$ l'alg\`ebre des op\'erateurs 
+born\'es sur $\mathcal H$. Rappelons que l'alg\`ebre $L^\infty(M,\mu)$ peut \^etre construite comme le 
+commutant de l'action $\pi$ de $C(M)$ dans ${\mathcal L(H)}.$
+$$L^\infty(M,\mu) = \{ T \in {\mathcal L(H)} \,  \mbox{t.q.} \,  T \pi(f) = 
+\pi(f) T, \,  \forall f \in C(M) \}$$
+La mesure $\mu$ peut alors \^etre \'etendue \`a l'alg\`ebre $L^\infty(M,\mu)$ 
+tout enti\`ere.
+Cette derni\`ere alg\`ebre  poss\`ede la propri\'et\'e 
+remarquable d'\^etre \'egale \`a son propre commutant dans ${\mathcal 
+L(H)}$ (cette propri\'et\'e  caract\'erise pr\'ecisemment un type de 
+sous-alg\`ebres de ${\mathcal L(H)}$ qu'on appelle {\sl alg\`ebres de Von 
+Neumann \/}\index{alg\`ebres de Von Neumann}). 
+
+Tout ce qu'on vient de rappeler figure --- peut \^etre dans un ordre 
+diff\'erent --- dans un cours standard de 
+th\'eorie de la mesure. Le trait essentiel, dans la pr\'esentation qui 
+pr\'ec\`ede est de ne pas faire intervenir les points de l'espace $M$.
+En recopiant tout ceci, mais en effa\c cant l'adjectif 
+``commutatif'', on peut alors {\it inventer\/} une version non 
+commutative de la th\'eorie de la 
+mesure\ldots Soit dit en passant, les physiciens 
+th\'eoriciens ont invent\'e la plupart de ces diff\'erents concepts, dans le cadre de la m\'ecanique 
+statistique quantique, bien avant qu'ils aient \'et\'e formalis\'es par 
+des  math\'ematiciens!
+Reprenons donc rapidement ce qui pr\'ec\`ede, en partant d'une $C^{*}$-alg\`ebre non 
+commutative ${\mathcal A}$, rempla\c cant la donn\'ee de $C(M)$.
+On d\'efinit les {\sl \'etats \/} \index{\'etats} (ce sont pr\'ecisemment des mesures non 
+commutatives) \index{mesures non commutatives}comme ci-dessus : un \'etat $\mu$ est une forme lin\'eaire 
+positive continue sur ${\mathcal A}$, c'est \`a dire $\mu \in {\mathcal 
+A}^{*}$ et $\mu[\overline{f}f] \geq 0, \forall f \in {\mathcal A}$. On 
+peut supposer $\mu$ norm\'e : $\mu[\one]=1$. On construit alors un 
+espace de Hilbert ${\mathcal H}$ en d\'efinissant tout d'abord le 
+produit scalaire $(f,g)  =  \mu[f^{*}g]$ sur l'espace ${\mathcal A}$ 
+lui-m\^eme (on n'a alors qu'une structure pre-Hilbertienne) puis en 
+fabriquant l'espace de Hilbert correspondant (compl\'et\'e et s\'epar\'e). 
+Cette construction bien connue porte le nom --- en math\'ematiques non 
+commutatives --- de {\sl construction GNS\/} 
+(Gelfand-Naimark-Segal)\index{construction GNS}. 
+Comme dans le cas commutatif, ${\mathcal A}$ agit dans ${\mathcal H}$ 
+par multiplication, ce qui fournit une repr\'esentation $\pi$ de ${\mathcal 
+A}$  dans l'espace des op\'erateurs born\'es ${\mathcal L(H)}$. On 
+consid\`ere alors ${\mathcal M}$,  le {\it bi \/}-commutant de ${\mathcal 
+A}$ dans ${\mathcal L(H)}$. Ce bi-commutant est une alg\`ebre de Von 
+Neumann (il est \'egal \`a son propre bi-commutant); c'est donc l'analogue non 
+commutatif de $L^\infty(M,\mu)$. \footnote{Remarque: dans le cas non commutatif, 
+il faut effectivement construire ${\mathcal M}$ comme le bi-commutant ${\mathcal A}''$
+de ${\mathcal A}$ (qui, dans le cas non commutatif, diff\`ere du 
+commutant ${\mathcal A}'.$)} Rappel: lorsque ${\mathcal A}$ est une alg\`ebre 
+d'op\'erateurs, ${\mathcal A}$, ${\mathcal A}'$ et ${\mathcal A}''$ 
+sont d'ordinaire diff\'erents, mais ${\mathcal A}' = {\mathcal A}'''$.
+La derni\`ere \'etape consiste \`a \'etendre la d\'efinition de l'\'etat $\mu$ \`a 
+l'alg\`ebre de Von Neumann ${\mathcal M}$ tout enti\`ere (on a \'evidemment ${\mathcal 
+A} \subset {\mathcal M}$). 
+
+La th\'eorie que l'on vient d'\'ebaucher est \`a 
+la base de tr\`es nombreux d\'eveloppements, aussi bien en math\'ematiques (th\'eorie 
+des facteurs), qu'en physique (m\'ecanique quantique statistique des 
+syst\`emes avec nombre fini ou infini de degr\'es de libert\'e). Notre but, 
+comme nous l'avions anonc\'e plus haut, n'\'etait que d'attirer 
+l'attention du lecteur sur le parall\`ele \'evident existant entre ces 
+deux th\'eories : th\'eorie de la mesure (en fait mesures de Radon) et 
+th\'eorie des alg\`ebres de Von Neumann; l'un \'etant en quelque sorte la g\'en\'eralisation non 
+commutative de l'autre. 
+
+\subsection{Calcul diff\'erentiel non commutatif}
+
+Comme on l'a vu en \ref{sec: calcdiffnoncom}, \'etant donn\'e une alg\`ebre 
+associative  ${\mathcal A}$, on peut toujours fabriquer une alg\`ebre 
+diff\'erentielle $\ZZ$-gradu\'ee qui co\"incide avec ${\mathcal A}$ en 
+degr\'e $0$. Le choix d'une telle alg\`ebre diff\'erentielle n'est pas, en 
+g\'en\'eral, unique: on dit qu'on fait alors le choix d'un calcul 
+diff\'erentiel pour l'alg\`ebre ${\mathcal A}$. On peut faire un choix 
+qui soit plus ``g\'en\'eral'' que les autres (formes diff\'erentielles 
+universelles). Les diff\'erentes alg\`ebres diff\'erentielles possibles (les autres 
+calculs diff\'erentiels associables \`a une alg\`ebre associative donn\'ee) sont des quotients de l'alg\`ebre 
+des formes universelles. Nous renvoyons le lecteur \`a la section 
+pr\'ec\'edente pour une analyse plus d\'etaill\'ee de ces diff\'erents choix.
+
+\subsection{Espaces fibr\'es non commutatifs et modules projectifs}
+
+En g\'eom\'etrie diff\'erentielle ordinaire, un espace fibr\'e 
+principal peut \^etre consid\'er\'e comme un  outil servant \`a 
+la fabrication de fibr\'es associ\'es, de la m\^eme fa\c con que les 
+groupes eux-m\^emes servent \`a fabriquer des
+repr\'esentations. En g\'eom\'etrie non commutative, on
+pourrait, bien sur,  tenter de g\'en\'eraliser dans un premier
+temps la structure de groupe  elle-m\^eme (c'est la th\'eorie
+des {\sl groupes quantiques\/}),  puis la structure de fibr\'e
+principal, et enfin celle de  fibr\'e associ\'e. Ces
+g\'en\'eralisations existent. Cependant la  d\'efinition et
+l'\'etude des groupes quantiques (ou {\sl alg\`ebres de
+Hopf\/}) nous  entrainerait trop loin. Nous pr\'ef\'erons donc
+suivre ici une approche plus  directe, qui n'utilise pas cette
+notion.
+
+Nous partons de la constatation suivante : en g\'eom\'etrie diff\'erentielle 
+ordinaire, l'ensemble $\Gamma E$ des sections 
+d'un fibr\'e associ\'e $E$ (les {\it champs de mati\`ere\/} de la 
+physique) constitue un module sur l'alg\`ebre $C^\infty(M)$ des fonctions sur la base.
+Par exemple, si $x \in M \mapsto V(x) \in \Gamma E$ est un champ de tenseurs (ou 
+de spineurs \ldots), et si $x \in M \mapsto f(x) \in \RR $ (ou $\CC$) est 
+une fonction, alors $ [fV](x) = f(x) \, V(x)$ est aussi un champ de 
+tenseurs (ou de spineurs etc\ldots).
+
+Ce n'est pas la notion d'espace fibr\'e vectoriel associ\'e que nous allons 
+g\'en\'eraliser, mais celle de l'ensemble de ses sections.
+Etant donn\'e une alg\`ebre associative ${\mathcal A}$, possiblement 
+non commutative, nous allons donc consid\'erer tout module $\Gamma$ sur ${\mathcal 
+A}$ comme l'analogue non commutatif d'un fibr\'e vectoriel associ\'e.
+En fait, dans le cas commutatif, les modules obtenus par 
+construction de fibr\'e associ\'e sont d'un type un peu particulier. On dit 
+qu'ils sont projectifs de type fini (th\'eor\`eme de Serre-Swann). 
+Sans rentrer dans les d\'etails, cela signifie la chose suivante.
+L'ensemble des sections d'un fibr\'e vectoriel trivial dont la fibre 
+type est de dimension $n$ est 
+manifestement isomorphe au module ${(C^\infty(M))}^n$. Lorsque le fibr\'e 
+n'est pas trivial, il suffit de se placer dans un espace un peu plus grand 
+(c'est \`a dire de rajouter un certain nombre de dimensions \`a la fibre) pour le trivialiser.
+Le fibr\'e de d\'epart est alors obtenu comme $p {(C^\infty(M))}^n$, 
+$p$ d\'esignant un projecteur 
+($p^{2}=p$) de l'alg\`ebre des matrices $n \times n$ sur $C^\infty(M)$.
+
+Dans le cadre non commutatif, on remplacera donc la notion d'``espace 
+des sections d'un fibr\'e vectoriel''  (physiquement l'espace des 
+champs de mati\`ere d'un certain type) par la notion de module 
+projectif fini sur une alg\`ebre associative ${\mathcal A}$. L'espace 
+vectoriel $p {\mathcal A}^n$, $p$ d\'esignant un projecteur, est manifestement un module (\`a droite) sur ${\mathcal 
+A}$.
+
+ Si ${\mathcal A}$ n'est pas commutative, il faut \'evidemment faire la distinction 
+entre les modules \`a droite et les modules \`a gauche.
+
+Notons, pour finir, qu'un cas int\'eressant de module sur ${\mathcal A}$ 
+est celui o\`u on choisit un module particulier \'egal \`a l'alg\`ebre 
+elle-m\^eme op\'erant sur elle-m\^eme par multiplication (c'est l'analogue non commutatif d'un fibr\'e en droites). 
+
+ 
+\subsection{Connections g\'en\'eralis\'ees en  geometrie non commutative}
+
+Soit $\Xi$ un calcul diff\'erentiel sur une alg\`ebre $\mathcal A$, 
+c'est \`a dire une alg\`ebre diff\'erentielle $\ZZ$-gradu\'ee, avec 
+$\Xi^{0}  = \mathcal A$. Soit $\mathcal M$ un module \`a droite sur 
+$\mathcal A$.
+Une diff\'erentielle covariante $\nabla$ sur $\mathcal M$ est une 
+application
+ ${\mathcal M} \otimes_{\mathcal A} \Xi^{p} \mapsto {\mathcal M} 
+\otimes 
+ _{\mathcal A} \Xi^{p+1}$ telle que
+ $$ 
+ \mbox{\fbox{$
+ \nabla( \psi \lambda) = (\nabla \psi) \lambda + (-1)^s \psi \, d \lambda 
+$}}
+$$
+lorsque $\psi \in {\mathcal M} \otimes_{\mathcal A} \Xi^{s}$ et
+ $\lambda \in \Xi^{t}$. L'op\'erateur
+ $\nabla$ n'est certainement pas lin\'eaire par rapport \`a l'alg\`ebre $\mathcal 
+A$ mais il est facile de constater que la courbure $\nabla^{2}$ est 
+un op\'erateur lin\'eaire par rapport \`a  $\mathcal A$. 
+
+Dans le cas particulier o\`u l'on choisit le  module  $\mathcal M$ 
+comme l'alg\`ebre  $\mathcal A$ elle-m\^eme, toute $1$-forme $\Xi$ 
+(tout \'el\'ement de 
+$\Xi^{1}$) permet de d\'efinir une diff\'erentielle covariante: on pose 
+simplement
+$$
+\mbox{\fbox{$
+\nabla \one = \omega
+$}}
+$$
+ o\`u $\one$ est l'unit\'e de l'alg\`ebre
+$\mathcal A$.
+Lorsque $f \in \mathcal A$, on obtient $$\nabla f = \nabla (\one f) = 
+(\nabla \one) f + \one df = df + \omega f$$
+De plus, $\nabla^{2} f = \nabla (df + \omega f) = d^{2}f + \omega 
+df + (\nabla \omega) f - \omega df = (\nabla  \omega) f$. La 
+courbure, dans ce cas, est \'egale \`a
+$$\rho  =  \nabla \omega = \nabla \one \omega = (\nabla \one) 
+\omega + 
+\one d \omega = d \omega + \omega ^{2}.$$
+
+Choisissons $u$, un \'el\'ement inversible de $\mathcal A$ et agissons 
+avec $d$ sur l'equation $u^{-1} u = \one$. On obtient (utilisant le fait que 
+$d\one = 0$) l'equation 
+$$du^{-1} = - u^{-1} du u^{-1}.$$
+
+D\'efinissons \'egalement $\omega' = u^{-1} 
+\omega u + u^{-1} du$ et calculons la nouvelle courbure $\rho' = d\omega' 
++  
+{\omega'}^2$. On obtient imm\'ediatement $\rho' = u^{-1} ( d \omega + 
+\omega^2) u = u^{-1} \rho u$ o\`u $$
+\mbox{\fbox{$ \rho = d \omega +
+\omega^2.
+$}}$$ Ceci montre que les formules usuelles sont valables,
+sans qu'il soit  besoin de supposer la commutativit\'e de
+l'alg\`ebre  $\mathcal A$.
+
+Remarque : Ici nous avons choisi un module $\mathcal M$ (un ingr\'edient 
+n\'ecessaire pour construire n'importe quelle th\'eorie de jauge)
+\'egal \`a l'alg\`ebre ${\mathcal A}$ elle-m\^eme. Plus g\'en\'eralement, nous 
+aurions pu choisir un module libre ${\mathcal A}^n$, ou m\^eme,  un 
+module projectif $p{\mathcal A}^n$ sur $\mathcal A$. 
+Dans ce dernier cas, le formalisme pr\'ec\'edent doit \^etre 
+l\'eg\'erement modifi\'e. En effet, le projecteur $p$ va intervenir dans 
+le calcul de la courbure (c'est un peu comme si nous faisions de la 
+g\'eom\'etrie diff\'erentielle classique de fa\c con extrins\`eque, 
+en plongeant notre espace dans un espace ``plus grand''). Comme 
+toujours, la courbure est $\rho  =  \nabla \nabla$. La 
+diff\'erentielle covariante est $$ \nabla = p \, d + \omega$$ o\`u 
+$\omega$ est un \'el\'ement de $\Xi^{1}$ tel que $p \, \omega \, p = \omega$. En effet, si $X \in 
+{\mathcal M}$, $\nabla X = p \, dX + \omega \, X$ et il est facile de 
+v\'erifier que cela d\'efinit bien une connexion : prenons $f \in 
+{\mathcal A}$, alors
+\begin{eqnarray*}
+\nabla(Xf) &=& p \, d(Xf) + \omega \, X \, f \cr
+{} &=& p \, (dX) \, f + \omega \, X \, f + p \, X \, df \cr
+{} &=& \nabla(X) \, f + X \, df
+\end{eqnarray*}
+Nous avons utilis\'e le fait que $p \, X = X$.
+La courbure $\rho = \nabla^{2}$ se calcule alors comme suit:
+\begin{eqnarray*}
+\nabla^{2}(X) &=& pd(pdX + \omega X) + \omega(p dX + \omega X) \cr
+{} &=& pd(pdX + \omega X) + \omega  (dX + \omega X) \cr
+{} &=& p(dp) \, dX + pd^{2}X + (d\omega ) X - \omega (dX) + \omega  dX + \omega ^{2} X \cr
+{} &=& p(dp\,  dX + (d\omega ) X) + \omega ^{2} X = [p dp dp + d\omega  + \omega ^{2}] X
+\end{eqnarray*}
+Nous avons utilis\'e les propri\'et\'es $\omega p=p$, $dX=d(pX)=(dp)X+pdX$ 
+ainsi que $p(dp)p = pd(p^{2)}-pdp=0$, ce qui entraine 
+$pdpdX=pdpdpX+p(dp)pX=pdpdpX.$ En conclusion, la courbure, dans le cas 
+o\`u le projecteur ne se r\'eduit pas \`a l'identit\'e est \'egale \`a
+$$
+\mbox{\fbox{$
+\rho = pdpdp + d\omega  + \omega ^{2}
+$}}
+$$
+Il faut remarquer le fait que la courbure s'obtient \`a partir de 
+$\nabla^{2}$ (ce qui en fait bien un op\'erateur lin\'eaire par 
+rapport aux \'el\'ements de $\mathcal A$) et non pas en recopiant servilement la
+formule classique $d\omega + \omega^{2}$, ce qui serait faux!
+
+\subsection{Cohomologie des espaces non commutatifs}
+
+\subsubsection{La cohomologie de Hochschild} \index{cohomologie de Hochschild}
+
+\begin{itemize}
+
+
+	\item  Nous savons que la diff\'erentielle  $\delta $   sur  $\Omega {\mathcal A} $   
+est presque triviale, du point de vue cohomologique. Le ``presque'' 
+vient du fait que  $\delta \one = 0 $ et on rappelle qu'il est 
+n\'ecessaire de supposer que  ${\mathcal A}$ poss\`ede une 
+unit\'e pour construire $\Omega {\mathcal A}$ (on
+verra un peu plus  loin comment faire si ce n'est
+pas le cas). Il est donc  raisonnable de chercher
+\`a d\'efinir une autre th\'eorie  cohomologique
+ou homologique qui se restreigne, dans le cas 
+classique, \`a celle d\'ej\`a connue (celle de De
+Rham). En fait,  nous allons voir que ceci se
+fait en deux temps : on d\'efinit tout  d'abord
+la {\sl cohomologie de Hochschild\/}, puis la
+{\sl cohomologie  cyclique\/}, \index{cohomologie cyclique} et c'est cette
+derni\`ere qui va nous fournir un  analogue non
+commutatif de la cohomologie de De Rham.  
+
+
+	\item   Nous avons d\'ej\`a mentionn\'e le fait que, dans le cas classique (le cas 
+ de la g\'eom\'etrie ``commutative'' usuelle o\`u ${\mathcal A} = 
+ C^\infty(X)$), l'alg\`ebre $  \Omega {\mathcal A} $  des formes universelles \'etait 
+ ``bien plus grande'' que celle des formes diff\'erentielles usuelles $\Lambda(X) $.
+ Nous allons voir que, dans le cas classique, il existe une fa\c con purement (co)homologique de 
+r\'ecup\'erer l'alg\`ebre des formes diff\'erentielles usuelles, ou plut\^ot, en 
+travaillant de fa\c con duale, l'espace des courants de De Rham.
+ Le but de cette section est donc d'\'ebaucher une construction qui 
+conduise aux courants de De Rham dans le cas usuel, mais qui soit, bien 
+entendu, valable pour une alg\`ebre associative quelconque.
+
+
+\item 
+On d\'efinit  l'op\'erateur co-bord de Hochschild $b$ (aussi appel\'e {\sl 
+diff\'erentielle de Hochschild\/}) comme suit 
+\index{diff\'erentielle de Hochschild}: \par
+Soit $\phi$ une $(n+1)$-forme lin\'eaire $  \phi(a_0,a_1,\ldots,a_n) $ 
+sur l'alg\`ebre ${\mathcal A}$.  Alors
+\begin{eqnarray*}
+     [b\phi](a_0,a_1,\ldots,a_{n+1})&=&
+\sum_{j=0}^n \phi(a_0,\ldots,a_ja_{j+1},\ldots,a_n) + \cr
+{} & {} & (-1)^{n+1} \phi(a_{n+1}a_0,a_1,\ldots,a_n)  
+\end{eqnarray*}
+Par exemple, 
+ \begin{eqnarray*}
+[b\phi](a_0,a_1,a_2,a_3]&=&\phi(a_0a_1,a_2,a_3)-\phi(a_0,a_1a_2,a_3)+\phi(a_0,a_1,a_2a_3)\cr
+{} & {} & -\phi(a_3a_0,a_1,a_2)
+\end{eqnarray*}
+L'\'etape suivante consiste \`a montrer que  $  b^2=0 ,$   ce qui est \`a la 
+fois imm\'ediat, et p\'enible$\ldots $  
+\par  
+
+Puisque nous avons un op\'erateur cobord (il est de carr\'e nul et envoie bien les $n$ formes dans 
+les $n+1$ formes), nous pouvons d\'efinir  l'espace des cocycles de 
+Hochschild  $  Z^n=\{\phi \in C^n / b\phi = 0\},$ l'espace des 
+cobords de
+Hochschild $  B^n=\{\phi \in C^n / \phi = b\psi \, \rm{for} \, \psi \in C^{n-1} \}$  
+et les groupes de cohomologie (de Hochschild) correspondants  $  H^n 
+ =  Z^n/B^n .$  
+Ci-dessus,  la notation $  C^n $, l'espace des cochaines de 
+Hochschild,  d\'esigne l'espace des formes
+ $ n+1 $   multilin\'eaires sur  $  {\mathcal A} $ (attention \`a la translation 
+ d'une unit\'e). \par 
+ 
+Remarque terminologique : un lecteur curieux, qui chercherait la d\'efinition 
+de la cohomologie de Hochschild dans un ouvrage d'alg\`ebre 
+homologique pourrait \^etre surpris car celle-ci fait 
+d'ordinaire r\'ef\'erence au choix d'un certain bimodule. Ici, le bimodule 
+en question n'est autre que le
+dual de  $ {\mathcal A} $. Nous n'avions pas besoin de mentionner ceci plus 
+haut mais il est bon de savoir que c'est pr\'ecisemment ce choix 
+particulier de bimodule (ainsi que l'existence d'un accouplement naturel entre ${\mathcal A}$ et son dual 
+${\mathcal A}^{*}$) qui est \`a l'origine de la d\'efinition pr\'ec\'edente de $b$.
+
+
+	\item  Dans le cas classique (celui de la g\'eom\'etrie diff\'erentielle ``commutative'' 
+ habituelle), nous savons que les courants de De Rham (voir 
+ \ref{sec: courants de De Rham}) sont d\'efinis comme distributions sur les formes 
+ diff\'erentielles de De Rham. En d'autres termes,  si  $  C $   is
+un  $  p $-courant et  $  \omega $   est une  $  p $-forme, alors$  \langle 
+C,\omega \rangle $ est un nombre.
+Nous allons montrer qu'il existe une correspondance entre courants 
+arbitraires et cocycles de Hochschild, dans le cas particulier des 
+$2$-formes, en laissant au lecteur le soin de g\'en\'eraliser cette 
+propri\'et\'e au cas $p>2.$
+ \par 
+
+Des courants de De Rham aux cocycles de Hochschild : \'etant 
+donn\'e  $  C $, nous construisons  $  \phi(f,g,h)  =  \langle C,f dg \wedge dh \rangle .$   
+on peut alors v\'erifier que  $  b\phi = 0.$   \par
+ 
+Des cocycles de Hochschild aux courants de De Rham :   \'etant donn\'e $  \phi ,$
+nous construisons  $  \langle C, f dg \wedge dh \rangle   =  \phi(f,g,h)-\phi(f,h,g). $  \par
+
+ Les deux formules ci-dessus sont diff\'erentes car il n'y a aucune 
+ raison de supposer qu'un cocycle de Hochschild donn\'e  $\phi $  soit antisym\'etrique.
+ \par
+ Si $  \phi $   est un cobord de Hochschild, il reste \`a v\'erifier que le 
+ courant de De Rham correspondant s'annule. Ceci est une cons\'equence 
+ imm\'ediate de la d\'efinition de $b$ et de l'antisymm\'etrie du produit 
+ ext\'erieur.\par 
+ 
+De fa\c con g\'en\'erale, le $p$-i\`eme groupe de cohomologie de Hochschild co\"incide 
+avec l'espace des courants de De Rham en degr\'e  $ p .$ 
+On peut en particulier v\'erifier que la dimensionalit\'e de l'espace $  
+H^p $ est triviale d\`es que  $  p $   est plus grand que la dimension de la 
+vari\'et\'e $X$ elle - m\^eme.
+
+
+
+\item
+Il peut \^etre int\'eressant de comparer l'expression  de $[b\phi](a_0,a_1,a_2,a_3]$ avec le 
+calcul de $  a_0\delta (a_1) \delta (a_2)  a_3 $  effectu\'e dans la 
+section consacr\'ee \`a la d\'efinition de $\Omega {\mathcal A}$ 
+(\ref{sec: Omega}).
+On voit que le fait de calculer $b\phi $  revient, dans cet exemple, 
+\`a \'evaluer $\phi$ sur un type particulier de 
+commutateurs (dans $\Omega {\mathcal A} $), en l'occurence $  \phi([a_0\delta a_1\delta a_2,a_3]).$  
+
+Cette remarque peut \^etre g\'en\'eralis\'ee, en ce sens qu'on peut 
+\^etre tent\'e de consid\'erer les $p$ formes sur ${\mathcal A}$ comme des 
+formes lin\'eaires sur l'alg\`ebre $ \Omega{\mathcal A}$ et de 
+d\'efinir $b$ non pas sur les formes $p$-lin\'eaires sur ${\mathcal A}$ 
+mais sur les formes lin\'eaires sur $ \Omega{\mathcal A}$.  En fait, on 
+se heurte alors \`a un probl\`eme un peu subtil li\'e au r\^ole 
+particulier jou\'e par l'unit\'e dans la construction de l'alg\`ebre 
+des formes universelles.
+
+Notons $\tilde {\mathcal A}$ l'alg\`ebre obtenue en rajoutant une 
+unit\'e $\one$ \`a ${\mathcal A}$, que celle-ci en poss\`ede d\'ej\`a une ou non. Les \'el\'ements de cette 
+augmentation sont, par d\'efinition, des paire $(a,c)$, avec $a \in {\mathcal A}$ et $c 
+\in \CC$. La nouvelle unit\'e est $\one  =  (0,1)$. 
+On identifie $a \in {\mathcal A}$ avec $(a,0) \in \tilde{\mathcal 
+A}$. Les \'el\'ements $(a,c)$ de l'alg\`ebre augment\'ee sont not\'es 
+simplement
+$a + c \one$. La multiplication est telle que $ (a_{1} + c_{1} 
+\one)(a_{2} + c_{2} \one) = a_{1}a_{2} + c_{1}a_{2} + a_{1}c_{2} + 
+c_{1} c_{2}\one $; elle doit donc \^etre formellement d\'efinie par
+$$(a_{1},c_{1})(a_{2},c_{2})  =  (a_{1}a_{2} + c_{1}a_{2} + 
+a_{1}c_{2}, c_{1} c_{2})$$
+Si ${\mathcal A}$ ne poss\'ede pas  d'unit\'e, il n'y a pas de confusion possible. Si ${\mathcal A}$ en 
+poss\'ede d\'ej\`a une, nous la d\'esignons par $e  =  (e,0)$ et il est certain que 
+$e$ n'est plus l'unit\'e de $\tilde {\mathcal A}$, mais seulement un 
+projecteur ($e^{2}=e$). 
+Notons que, avec $a \in {\mathcal A}$ et $c \in \CC$,  $\delta (a + c \one) = 
+\delta a$ dans $ \Omega \tilde {\mathcal A}$.
+On peut donc identifier les formes multilin\'eaires sur ${\mathcal A}$ 
+avec certaines formes lin\'eaires sur  $ \Omega \tilde {\mathcal A}$, en 
+l'occurence avec les formes $\phi$ qui sont telles que
+$\phi(\one \delta a_{1} \delta a_{2} \ldots \delta a_{n} ) = 0$ en 
+posant, pour $a_{i} \in  {\mathcal A}$ 
+$$ \phi(a_{0},a_{1},\ldots,a_{n})  =  \phi(a_{0} \, \delta a_{1} \ldots \delta a_{n}) $$
+
+Gr\^ace \`a cette identification, on peut effectuer toutes les 
+constructions de nature cohomologique en utilisant comme cochaines ce type 
+particulier de formes lin\'eaires sur  $\Omega \tilde {\mathcal A}$ plut\^ot 
+que de faire appel \`a des formes multilin\'eaires sur ${\mathcal A}$.
+Nous n'irons cependant pas plus loin dans cette direction.
+
+\par 
+
+
+\end{itemize}
+
+
+\subsubsection{La cohomologie cyclique : une cohomologie de De Rham non 
+commutative} \index{cohomologie cyclique}
+
+\begin{itemize}
+	\item  Dans le cas non commutatif, nous n'avons pas encore pr\'esent\'e 
+	de construction qui g\'en\'eralise la cohomologie de De Rham 
+	(section \ref{sec: cohomologie de De Rham}). 
+	 En fait, puisque nous travaillons maintenant sur les alg\`ebres 
+	elle-m\^emes (dans le cas commutatif on consid\`ere l'alg\`ebre 
+	commutative $C^\infty(X)$ des fonctions et non pas les points de $X$ 
+	eux-m\^emes), 
+	c'est d'un analogue de l'op\'erateur d'homologie $  \partial $ sur les courants dont nous avons besoin.
+	 Rappelons que, classiquement, cet op\'erateur agit sur les courants de De 
+	  Rham de la fa\c con suivante (th\'eor\`eme de Stokes): 
+	  $$  \langle \partial C, \omega \rangle  = \langle C, d\omega \rangle  ,$$
+	  Ici $  \omega$ est une forme diff\'erentielle quelconque sur $X$.
+	  
+	  \item 
+La d\'efinition la plus simple  (mais c'est peut-\^etre une question de go\^ut) est 
+celle qui suit.
+On d\'efinit tout d'abord la notion de cyclicit\'e pour une forme 
+multilin\'eaire  $$ 
+\mbox{\fbox{$  
+\phi \rm{\ est \ cyclique} \Leftrightarrow \phi(a_0,a_1,\ldots,a_n)=(-1)^n
+\phi(a_n,a_0,a_1,\ldots,a_{n-1}).
+$}} $$    
+On fait alors la remarque suivante \cite{ConnesIHES} :
+Si  $  \phi $  est cyclique, alors  $  b \phi $ l'est aussi. \par 
+Il devient alors naturel de consid\'erer le sous complexe cyclique du 
+complexe de Hochschild, c'est \`a dire de restreindre l'op\'erateur $b$ 
+(le m\^eme que pr\'ec\'edemment) aux cochaines de Hochschild cycliques.
+On d\'efinit alors les espaces $  Z_\lambda^n ,$  $  B_\lambda^n $  des 
+cocycles et cobords cycliques, ainsi que leurs quotients, les groupes 
+de cohomologie cyclique $ H_\lambda^n .$ \par 
+
+\item
+Dans le cadre classique, \ie  avec  $ {\mathcal
+A}=C^\infty(X) ,$ on montre \cite{ConnesIHES}
+que  $$H_\lambda^k= Ker \partial \oplus H_{k-2}
+\oplus H_{k-4} \ldots  $$     o\`u
+ $ Ker \partial $   est le noyau de l'op\'erateur $  \partial $  
+ agissant dans l'espace des courants de De Rham de degr\'e $k$ et o\`u  $  
+ H_p $   d\'esigne le groupe d' \underbar {homo}logie
+de degr\'e $  p $   (pour les courants). 
+
+Ainsi, nous n'obtenons pas une correspondance bi-univoque entre les 
+groupes de cohomologie cyclique et les groupes d'homologie de De 
+Rham; n\'eanmoins, l'information contenue est la m\^eme, puisque, 
+en choisissant $k$ assez grand, les groupes de cohomologie cycliques 
+pairs ou impairs seront respectivement \'egaux \`a la somme directe des 
+groupes d'homologie de De Rham (pairs ou impairs). \par 
+ 
+  Ce r\'esultat sugg\`ere qu'il existe une fa\c con canonique d'envoyer
+ $  H_\lambda^p $  dans  $  H_\lambda^{p+2},$ et c'est effectivement le 
+ cas (pour une alg\`ebre ${\mathcal A}$ quelconque, d'ailleurs).
+ En fait, on peut d\'emontrer un r\'esultat encore plus fort: pour toute 
+ alg\`ebre, on peut d\'efinir un op\'erateur  $  S ,$ souvent d\'esign\'e sous 
+ le nom de ``op\'erateur de p\'eriodicit\'e de Connes'', qui envoie  $  
+ C_\lambda^p $   dans
+ $  C_\lambda^{p+2} $   -- le symbole $  C_\lambda^*$ se r\'eferrant aux 
+ cochaines cycliques. 
+ 
+ \item Cette fa\c con de d\'efinir la cohomologie cyclique (comme sous 
+ complexe de celle de Hochschid), se fait donc sans qu'il soit besoin 
+ d'introduire une 
+ g\'en\'eralisation non commutative de l'op\'erateur $\partial $. Cela dit, 
+ un tel op\'erateur existe (il est not\'e $B_{0}$, ou $B$ --- voir 
+ ci-dessous ---) et on peut aussi d\'efinir la cohomologie cyclique 
+ gr\^ace \`a lui. La d\'efinition de cette cohomologie, en utilisant 
+ les op\'erateurs en question, est un peu plus subtile, et nous nous 
+ contenterons de donner la d\'efinition des op\'erateurs $B_{0}$ et 
+ $B$.
+ Le lecteur interess\'e pourra consulter \cite{ConnesIHES}, \cite{ACbook} et les 
+ r\'ef\'erences indiqu\'ees dans cet ouvrage.
+ 
+ \item
+ 
+Outre l'op\'erateur de p\'eriodicit\'e d\'ej\`a mentionn\'e,  $  S : C_{\lambda}^p
+\rightarrow C_\lambda^{p+2} $,  on  consid\`ere aussi les 
+op\'erateurs suivants :\par
+ \begin{itemize}
+ 	\item  L'op\'erateur d'antisym\'etrisation cyclique.
+ 	 \begin{eqnarray*}
+   [A \phi](a_0,a_1,\ldots, a_n)  &=& \, \phi(a_0,a_1,\ldots,a_n) + (-1)^n
+\phi(a_n,a_0,\ldots, a_{n-1}) + \cr 
+{} & + &\phi(a_{n-1},a_n,a_0,\ldots) + (-1)^n\phi(a_{n-2},a_{n-1},a_n ,a_0,a_1,\ldots) + \ldots 
+\end{eqnarray*}
+ 
+ 	\item  L'op\'erateur bord non antisym\'etris\'e $B_0$ d\'efini comme
+ 	 $$     [B_0 \phi](a_0,a_1,\ldots,a_n) = \phi(e,a_0,\ldots,a_n) - 
+\phi(a_0,\ldots,a_n,e) $$   Ici,  $e$  d\'esigne l'unit\'e de l'alg\`ebre ${\mathcal A}$ (et il faut 
+effectivement supposer que l'alg\`ebre est unitale).
+ 
+ 	\item  L'op\'erateur bord cyclique $ B  =  A B_0.$ (ou {\sl 
+ 	diff\'erentielle de Connes\/}). \index{diff\'erentielle de Connes}
+ 	
+ \end{itemize}
+ 
+On montre alors que  $B$ envoie $ C^n $ sur $ C^{n-1}  $, que
+$   B^2 = 0$ et que   $bB+Bb=0.$  En utilisant ces deux derni\`eres 
+propri\'et\'es, ainsi que  $b^2=0 $,    on peut construire un bi-complexe 
+(puisque $  b $   and  $  B $  agissent dans des directions oppos\'ees) 
+\`a partir duquel on peut \'egalement d\'efinir la cohomologie cyclique.
+
+\item 
+
+ En utilisant ce dernier bi-complexe on d\'efinit aussi la  ``cohomologie 
+ cyclique enti\`ere'' de la fa\c con suivante. Les cocycles entiers sont des 
+ \underbar{suites}  $  (\phi_{2n}) $  
+ou $  (\phi_{2n+1}) $   de fonctionnelles paires ou impaires  $  \phi $   
+qui doivent satisfaire \`a la contrainte suivante (nous ne l'\'ecrivons 
+que pour le cas impair) :   $$      b \phi_{2n-1} +
+B\phi_{2n+1} = 0  .$$    A l'aide de tels cocycles (techniquement, il 
+faut aussi supposer qu'une certaine condition de croissance est 
+satisfaite), on peut d\'efinir des fonctions enti\`eres sur l'alg\`ebre $  
+{\mathcal A} $,  $$     F_\phi(x) =
+\sum_{n=0}^\infty {(-1)^n \over n!} \phi_{2n}(x,x,\ldots,x) .$$    
+
+La cohomologie cyclique enti\`ere fournit un formalisme 
+appropri\'e pour l'\'etude de certaines alg\`ebres non commutatives de 
+dimension infinie apparaissant en th\'eorie quantique des champs.
+
+\end{itemize}
+
+\subsection{ Remarque finale}
+Comme nous l'avons signal\'e plus haut, 
+notre propos, dans cette derni\`ere section \'etait simplement d'effectuer un tour rapide dans certains secteurs du 
+zoo non commutatif, en esp\'erant que le lecteur aura plaisir \`a y 
+retourner en consultant la litt\'erature sp\'ecialis\'ee. 
+Le pr\'esent ouvrage est en effet essentiellement d\'edi\'e \`a l'\'etude de 
+plusieurs aspects de la g\'eom\'etrie diff\'erentielle;  en 
+l'occurence, la th\'eorie des connexions et des espaces fibr\'es.
+Cependant, la physique du vingti\`eme si\`ecle n'est  (n'\'etait !)  pas seulement courbe : elle est (\'etait) aussi quantique.
+Il e\^ut donc \'et\'e  dommage de passer sous silence ces quelques 
+d\'eveloppements r\'ecents --- et passionnants --- des 
+math\'ematiques, qui g\'en\'eralisent les notions habituelles et quasi intuitives de la g\'eom\'etrie 
+``ordinaire'' (celle des espaces) au monde, encore un peu 
+myst\'erieux, des espaces non commutatifs.
+

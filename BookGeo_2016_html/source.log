@@ -1,0 +1,2428 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=latex 2016.9.6)  19 SEP 2016 11:43
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx"\HCode\def\HCo
+de"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.
+{\g@addto@macro\@documentclasshook{\RequirePackage[#1,html]{tex4ht}}\let\HCode\
+documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname
+ tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{
+\HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode .a.b.c.\input  source.tex
+(./source.tex (/usr/local/texlive/2016/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/tex4ht.sty
+version 2016-07-18-16:08
+Package: tex4ht 
+--------------------------------------
+--- Note --- for _ at preamble, use the command line option `early_'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ at preamble, use the command line option `early^'
+--------------------------------------
+\tmp:toks=\toks14
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/usepackage.4ht
+version 2016-07-01-09:18
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+
+
+Package auxhook Warning: Cannot patch \document,
+(auxhook)                using \AtBeginDocument instead.
+
+) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen103
+\Hy@linkcounter=\count88
+\Hy@pagecounter=\count89
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count90
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4362.
+Package hyperref Info: Hyper figures OFF on input line 4486.
+Package hyperref Info: Link nesting OFF on input line 4491.
+Package hyperref Info: Hyper index ON on input line 4494.
+Package hyperref Info: Plain pages OFF on input line 4501.
+Package hyperref Info: Backreferencing OFF on input line 4506.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4735.
+\c@Hy@tempcnt=\count91
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5088.
+\XeTeXLinkMargin=\dimen104
+\Fld@menulength=\count92
+\Field@Width=\dimen105
+\Fld@charsize=\dimen106
+\Field@toks=\toks16
+Package hyperref Info: Hyper figures OFF on input line 6342.
+Package hyperref Info: Link nesting OFF on input line 6347.
+Package hyperref Info: Hyper index ON on input line 6350.
+Package hyperref Info: backreferencing OFF on input line 6357.
+Package hyperref Info: Link coloring ON on input line 6360.
+Package hyperref Info: Link coloring with OCG OFF on input line 6367.
+Package hyperref Info: PDF/A mode OFF on input line 6372.
+LaTeX Info: Redefining \ref on input line 6412.
+LaTeX Info: Redefining \pageref on input line 6416.
+\Hy@abspage=\count93
+
+
+Package hyperref Message: Stopped early.
+
+)
+
+Package hyperref Message: Driver: htex4ht.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/htex4ht.def
+File: htex4ht.def 2016/06/24 v6.83q Hyperref driver for TeX4ht
+Package hyperref Info: tex4ht is already loaded.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/minitoc/mtcoff.sty
+Package: mtcoff 2015/07/13 v61 The mtcoff package
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/minitoc/mtcmess.sty
+Package: mtcmess 2006/03/14
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup4
+)
+\scrfam=\mathgroup5
+\eufmfam=\mathgroup6
+\c@nc=\count94
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/06/28 v2.15d AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen107
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen108
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count95
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count96
+\leftroot@=\count97
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count98
+\DOTSCASE@=\count99
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen109
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\macc@depth=\count100
+\c@MaxMatrixCols=\count101
+\dotsspace@=\muskip11
+\c@parentequation=\count102
+\dspbrk@lvl=\count103
+\tag@help=\toks18
+\row@=\count104
+\column@=\count105
+\maxfields@=\count106
+\andhelp@=\toks19
+\eqnshift@=\dimen110
+\alignsep@=\dimen111
+\tagshift@=\dimen112
+\tagwidth@=\dimen113
+\totwidth@=\dimen114
+\lineht@=\dimen115
+\@envbody=\toks20
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup7
+\symAMSb=\mathgroup8
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+LaTeX Info: Redefining \frak on input line 111.
+))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2016/04/23 3.9r The Babel package
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/babel-french/frenchb.ldf
+Language: frenchb 2016/05/14 v3.2c French support from the babel system
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2016/04/23 3.9r Babel common definitions
+\babel@savecnt=\count107
+\U@D=\dimen116
+)
+\l@acadian = a dialect from \language\l@french 
+\l@canadien = a dialect from \language\l@french 
+\FB@nonchar=\count108
+\FBcolonskip=\skip46
+\FBthinskip=\skip47
+Package babel Info: Making : an active character on input line 365.
+Package babel Info: Making ; an active character on input line 366.
+Package babel Info: Making ! an active character on input line 367.
+Package babel Info: Making ? an active character on input line 368.
+\FBguillskip=\skip48
+\FBguill@level=\count109
+\FB@everypar=\toks22
+\FB@Mht=\dimen117
+\std@mcc=\count110
+\dec@mcc=\count111
+\listindentFB=\skip49
+\labelwidthFB=\skip50
+\leftmarginFB=\skip51
+\parindentFFN=\dimen118
+\FBfnindent=\skip52
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks23
+\inpenc@posthook=\toks24
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/applemac.def
+File: applemac.def 2015/03/17 v1.2c Input encoding file
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvips.def on input line 99.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2016/07/10 v3.1a Driver-dependent file (DPC,SPQR)
+))
+(/Users/robert/Library/texmf/tex/latex/epsfig.sty
+Package: epsfig 1996/10/04 v1.7 (e)psfig emulation (SPQR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+\Gin@req@height=\dimen119
+\Gin@req@width=\dimen120
+)
+\epsfxsize=\dimen121
+\epsfysize=\dimen122
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+
+Package epstopdf Warning: Drivers other than `pdftex' and `luatex' are not supp
+orted.
+
+)) (/usr/local/texlive/2016/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+\@indexfile=\write3
+\openout3 = `source.idx'.
+
+
+Writing index file source.idx
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/tex4ht.4ht
+version 2009-01-07-07:11
+--------------------------------------
+--- Note --- for additional information, use the command line option `info'
+--------------------------------------
+
+::::::::::::::::::::::::::::::::::::::::::
+ TeX4ht info is available in the log file 
+::::::::::::::::::::::::::::::::::::::::::
+) (/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/tex4ht.sty
+version 2016-07-18-16:08
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: dvips.def on input line 147.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+--- needs --- tex4ht source ---
+\tmp:cnt=\count112
+\openout15 = `source.tmp'.
+
+(./source.tmp)
+\tmp:dim=\skip53
+--------------------------------------
+--- Note --- for XML code, use the command line option `xml' or `xhtml'
+--------------------------------------
+ (./source.xref)
+\:refout=\write4
+\openout4 = `source.xref'.
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+--------------------------------------
+--- Note --- to remove the <?xml version=...?> processing instruction use the c
+ommand line option `no-VERSION'
+--------------------------------------
+--------------------------------------
+--- Note --- to remove the DOCTYPE declaration use the command line option `no-
+DOCTYPE'
+--------------------------------------
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+--------------------------------------
+--- Note --- for marking of the base font, use the command line option `fonts+'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for non active _, use the command line option `no_'
+--------------------------------------
+--------------------------------------
+--- Note --- for _ of catcode 13, use the command line option `_13'
+--------------------------------------
+--------------------------------------
+--- Note --- for non active ^, use the command line option `no^'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ of catcode 13, use the command line option `^13'
+--------------------------------------
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+--------------------------------------
+--- Note --- for alternative charset, use the command line option `charset=...'
+
+--------------------------------------
+--------------------------------------
+--- Note --- to ignore CSS font decoration, use the `NoFonts' command line opti
+on
+--------------------------------------
+--------------------------------------
+--- Note --- for jpg bitmaps of pictures, use the `jpg' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for gif bitmaps of pictures, use the `gif' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for content and toc in 2 frames, use the command line option `fram
+es'
+--------------------------------------
+--------------------------------------
+--- Note --- for content, toc, and footnotes in 3 frames, use the command line 
+option `frames-fn'
+--------------------------------------
+--------------------------------------
+--- Note --- for file extension name xht, use the command line option `xht'
+--------------------------------------
+TeX4ht package options: html
+--------------------------------------
+--- Note --- To print a timestamp, use the command line option timestamp
+--------------------------------------
+--------------------------------------
+--- Note --- to ignore CSS code, use the command line option `-css
+--------------------------------------
+--------------------------------------
+--- Note --- for inline CSS code, use the command line option `css-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for pop ups on mouse over, use the command line option `mouseover'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for addressing images in a subdirectory, use the command line opti
+on `imgdir:.../'
+--------------------------------------
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+\:tokwrite=\toks25
+\:tokpage=\toks26
+--------------------------------------
+--- Note --- for back links to toc, use the command line option `sections+'
+--------------------------------------
+--------------------------------------
+--- Note --- for linear crosslinks of pages, use the command line option `next'
+
+--------------------------------------
+\openout15 = `source.4ct'.
+
+\:tocout=\write5
+\openout5 = `source.4tc'.
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/latex.4ht
+version 2016-08-11-16:11
+LaTeX Info: Redefining \_ on input line 168.
+--------------------------------------
+--- Note --- for links into captions, instead of float heads, use the command l
+ine option `refcaption'
+--------------------------------------
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+--------------------------------------
+--- Note --- For mini tocs immediately aftter the header use the command line o
+ption `minitoc<'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements with valued data, use the command lin
+e option `enumerate+'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements li's with value attributes, use the c
+ommand line option `enumerate-'
+--------------------------------------
+--------------------------------------
+--- Note --- for CSS2 code, use the command line option `css2'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial tabular, use the command line option `pic-tabular'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap fbox'es, use the command line option `pic-fbox'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap framebox'es, use the command line option `pic-framebox'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for inline footnotes use command line option `fn-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for tracing of latex font commands, use the command line option `f
+onts'
+--------------------------------------
+--------------------------------------
+--- Note --- for width specifications of tabular p entries, use the `p-width' c
+ommand line option or a configuration similar to \Configure{HColWidth}{\HCode{ 
+style="width:\HColWidth"}}
+--------------------------------------
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- for pictorial eqnarray, use the command line option `pic-eqnarray'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ environments, use the command line option `pic
+-m' (not recommended!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ and $$...$$ environments with latex alt, use t
+he command line option `pic-m+' (not safe!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/fontmath.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/book.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+--------------------------------------
+--- Note --- for automatic sectioning pagination, use the command line option `
+1', `2', `3', '4', '5', '6', or '7'
+--------------------------------------
+--------------------------------------
+--- Note --- for files named derived from section titles, use the command line 
+option `sec-filename'
+--------------------------------------
+--------------------------------------
+--- Note --- for i-columns index, use the command line option `index=i' (e.g., 
+index=2)
+--------------------------------------
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/hyperref.4ht
+version 2016-01-12-16:05
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count113
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/nameref.4ht
+version 2013-06-28-15:01
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+LaTeX Info: Redefining \autoref on input line 95.
+\Hy@SectionHShift=\skip54
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/pd1enc.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/url.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+--------------------------------------
+--- Note --- for URL encoding within href use the command line option `url-enc'
+
+--------------------------------------
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/amsmath.4ht
+version 2009-05-21-09:32
+\tmp:muskip=\muskip12
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/amstext.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/amsbsy.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/amsopn.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/amssymb.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/amsfonts.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/babel.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/frenchb.4ht
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+\tmp:bx=\box28
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/inputenc.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/graphics.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+--------------------------------------
+--- Note --- if included graphics are of degraded quality, try the command line
+ options `graphics-num' or `graphics-'. The `num' should provide the density of
+ pixels in the bitmaps (e.g., 110). 
+--------------------------------------
+--------------------------------------
+--- Note --- for key dimensions try the option `Gin-dim'; for key dimensions wh
+en bounding box is unavailable try `Gin-dim+'; neither is recommended
+--------------------------------------
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/dvips.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/epsfig.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/graphicx.4ht
+version 2015-08-05-15:37
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/makeidx.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/color.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/dvipsnam.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/dvipsnam.def)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2016-07-01-08:29
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(./source.aux)
+\openout1 = `source.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+\AtBeginShipoutBox=\box29
+Package hyperref Info: Link coloring ON on input line 133.
+LaTeX Info: Redefining \ref on input line 133.
+LaTeX Info: Redefining \pageref on input line 133.
+LaTeX Info: Redefining \nameref on input line 133.
+LaTeX Info: Redefining \degres on input line 133.
+
+
+Package frenchb.ldf Warning: Figures' and tables' captions might look like
+(frenchb.ldf)                `Figure 1:{}' which is wrong in French.
+(frenchb.ldf)                Check your class or packages to change this;
+(frenchb.ldf)                reported on input line 133.
+
+LaTeX Info: Redefining \dots on input line 133.
+LaTeX Info: Redefining \up on input line 133.
+
+Package frenchb.ldf Warning: OT1 encoding should not be used for French.
+(frenchb.ldf)                Add \usepackage[T1]{fontenc} to the preamble
+(frenchb.ldf)                of your document, on input line 133.
+
+--- file source.css ---
+[1
+
+] [2
+
+] [3] [1] [2
+
+]
+l. 137 Writing source.idv[1] (source0x.png)
+
+l.137 --- TeX4ht warning --- Cannot determine size of graphic in noeudRDA.eps (
+no BoundingBox) ---
+File: noeudRDA.eps Graphic file (type eps)
+<noeudRDA.eps> [3
+
+] [4
+
+] [5] [6
+
+] [7]
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 161.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 161.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 161.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 161.
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 161.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 161.
+ [1] [2] [3]
+[4
+
+] [1] [2
+
+] (./source.4ct [3] [4] [5] [6] [7]) [8] [9] [10
+
+] (./preface.tex
+[11] [12
+
+] [13]) [14] [15] [16
+
+] (./introduction.tex [17] [18
+
+] [19] [20] [21]
+[22] [23] [24]
+--- file source2.html ---
+ [25
+
+] [26] [27]) (./source.bbl [28] [29
+
+]) [30] [31] [32
+
+]
+(./varietes.tex [1] [2
+
+]
+Chapitre 1.
+---------------------------------------------------------
+l.10 --- TeX4ht warning --- If not done so, the index is to be processed by 
+  tex '\def\filename{{source}{idx}{4dx}{ind}} \input  idxmake.4ht' 
+  makeindex -o source.ind source.4dx 
+instead of 
+  makeindex -o source.ind source.idx 
+On some platforms, the quotation marks ' should be 
+ replaced by double quotation marks " or eliminated. 
+---------------------------------------------------------  ---
+[3] [4]
+l. 158 Writing source.idv[2] (source1x.png)
+ [5] [6] [7]
+
+Package amsmath Warning: Foreign command \over;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 322.
+
+[8] [9] [10]
+l. 455 Writing source.idv[3] (source2x.png)
+--- file source3.html ---
+l. 470 Writing source.idv[4] (source3x.png)
+l. 478 Writing source.idv[5] (source4x.png)
+ [11
+
+]
+l. 501 Writing source.idv[6] (source5x.png)
+l. 519 Writing source.idv[7] (source6x.png)
+ [12] [13]
+l. 581 Writing source.idv[8] (source7x.png)
+l. 585 Writing source.idv[9] (source8x.png)
+ [14]
+l. 617 Writing source.idv[10] (source9x.png)
+l. 625 Writing source.idv[11] (source10x.png)
+l. 634 Writing source.idv[12] (source11x.png)
+ [15]
+l. 636 Writing source.idv[13] (source12x.png)
+l. 656 Writing source.idv[14] (source13x.png)
+l. 667 Writing source.idv[15] (source14x.png)
+ [16]
+l. 675 Writing source.idv[16] (source15x.png)
+l. 682 Writing source.idv[17] (source16x.png)
+l. 687 Writing source.idv[18] (source17x.png)
+ [17]
+l. 742 Writing source.idv[19] (source18x.png)
+ [18]
+l. 744 Writing source.idv[20] (source19x.png)
+ [19]
+l. 783 Writing source.idv[21] (source20x.png)
+l. 810 Writing source.idv[22] (source21x.png)
+ [20]
+l. 838 Writing source.idv[23] (source22x.png)
+l. 841 Writing source.idv[24] (source23x.png)
+ [21]
+l. 880 Writing source.idv[25] (source24x.png)
+l. 893 Writing source.idv[26] (source25x.png)
+ [22]
+l. 901 Writing source.idv[27] (source26x.png)
+l. 910 Writing source.idv[28] (source27x.png)
+l. 913 Writing source.idv[29] (source28x.png)
+
+[23]
+l. 937 Writing source.idv[30] (source29x.png)
+l. 941 Writing source.idv[31] (source30x.png)
+ [24]
+l. 962 Writing source.idv[32] (source31x.png)
+l. 984 Writing source.idv[33] (source32x.png)
+l. 993 Writing source.idv[34] (source33x.png)
+ [25]
+l. 996 Writing source.idv[35] (source34x.png)
+l. 1012 Writing source.idv[36] (source35x.png)
+ [26]
+l. 1048 Writing source.idv[37] (source36x.png)
+ [27]
+l. 1060 Writing source.idv[38] (source37x.png)
+l. 1083 Writing source.idv[39] (source38x.png)
+l. 1099 Writing source.idv[40] (source39x.png)
+ [28]
+l. 1117 Writing source.idv[41] (source40x.png)
+l. 1124 Writing source.idv[42] (source41x.png)
+ [29]
+l. 1133 Writing source.idv[43] (source42x.png)
+l. 1141 Writing source.idv[44] (source43x.png)
+l. 1149 Writing source.idv[45] (source44x.png)
+ [30]
+l. 1178 Writing source.idv[46] (source45x.png)
+l. 1182 Writing source.idv[47] (source46x.png)
+l. 1194 Writing source.idv[48] (source47x.png)
+l. 1194 Writing source.idv[49] (source48x.png)
+ [31]
+l. 1255 Writing source.idv[50] (source49x.png)
+l. 1257 Writing source.idv[51] (source50x.png)
+ [32]
+l. 1334 Writing source.idv[52] (source51x.png)
+ [33]
+l. 1354 Writing source.idv[53] (source52x.png)
+l. 1365 Writing source.idv[54] (source53x.png)
+l. 1374 Writing source.idv[55] (source54x.png)
+ [34]
+l. 1385 Writing source.idv[56] (source55x.png)
+l. 1412 Writing source.idv[57] (source56x.png)
+ [35]
+l. 1453 Writing source.idv[58] (source57x.png)
+l. 1458 Writing source.idv[59] (source58x.png)
+ [36]
+l. 1483 Writing source.idv[60] (source59x.png)
+l. 1494 Writing source.idv[61] (source60x.png)
+l. 1501 Writing source.idv[62] (source61x.png)
+ [37]
+l. 1559 Writing source.idv[63] (source62x.png)
+l. 1566 Writing source.idv[64] (source63x.png)
+
+[38]
+l. 1582 Writing source.idv[65] (source64x.png)
+l. 1602 Writing source.idv[66] (source65x.png)
+ [39]
+l. 1612 Writing source.idv[67] (source66x.png)
+l. 1629 Writing source.idv[68] (source67x.png)
+ [40]
+l. 1666 Writing source.idv[69] (source68x.png)
+l. 1687 Writing source.idv[70] (source69x.png)
+ [41]
+l. 1739 Writing source.idv[71] (source70x.png)
+l. 1752 Writing source.idv[72] (source71x.png)
+l. 1753 Writing source.idv[73] (source72x.png)
+l. 1756 Writing source.idv[74] (source73x.png)
+l. 1759 Writing source.idv[75] (source74x.png)
+l. 1760 Writing source.idv[76] (source75x.png)
+l. 1770 Writing source.idv[77] (source76x.png)
+l. 1771 Writing source.idv[78] (source77x.png)
+l. 1777 Writing source.idv[79] (source78x.png)
+l. 1777 Writing source.idv[80] (source79x.png)
+ [42]
+l. 1793 Writing source.idv[81] (source80x.png)
+l. 1804 Writing source.idv[82] (source81x.png)
+l. 1805 Writing source.idv[83] (source82x.png)
+l. 1809 Writing source.idv[84] (source83x.png)
+l. 1809 Writing source.idv[85] (source84x.png)
+l. 1819 Writing source.idv[86] (source85x.png)
+l. 1820 Writing source.idv[87] (source86x.png)
+l. 1821 Writing source.idv[88] (source87x.png)
+l. 1823 Writing source.idv[89] (source88x.png)
+l. 1831 Writing source.idv[90] (source89x.png)
+l. 1854 Writing source.idv[91] (source90x.png)
+l. 1855 Writing source.idv[92] (source91x.png)
+ [43]
+l. 1857 Writing source.idv[93] (source92x.png)
+l. 1862 Writing source.idv[94] (source93x.png)
+l. 1870 Writing source.idv[95] (source94x.png)
+l. 1870 Writing source.idv[96] (source95x.png)
+l. 1872 Writing source.idv[97] (source96x.png)
+l. 1872 Writing source.idv[98] (source97x.png)
+l. 1874 Writing source.idv[99] (source98x.png)
+l. 1882 Writing source.idv[100] (source99x.png)
+l. 1882 Writing source.idv[101] (source100x.png)
+l. 1883 Writing source.idv[102] (source101x.png)
+l. 1885 Writing source.idv[103] (source102x.png)
+ [44]
+l. 1892 Writing source.idv[104] (source103x.png)
+l. 1893 Writing source.idv[105] (source104x.png)
+l. 1898 Writing source.idv[106] (source105x.png)
+l. 1899 Writing source.idv[107] (source106x.png)
+ [45]
+l. 1905 Writing source.idv[108] (source107x.png)
+l. 1929 Writing source.idv[109] (source108x.png)
+ [46]
+l. 1954 Writing source.idv[110] (source109x.png)
+l. 1969 Writing source.idv[111] (source110x.png)
+l. 1973 Writing source.idv[112] (source111x.png)
+ [47]
+l. 1976 Writing source.idv[113] (source112x.png)
+l. 1983 Writing source.idv[114] (source113x.png)
+l. 1997 Writing source.idv[115] (source114x.png)
+ [48]
+l. 2008 Writing source.idv[116] (source115x.png)
+l. 2023 Writing source.idv[117] (source116x.png)
+l. 2024 Writing source.idv[118] (source117x.png)
+ [49]
+l. 2030 Writing source.idv[119] (source118x.png)
+l. 2046 Writing source.idv[120] (source119x.png)
+l. 2058 Writing source.idv[121] (source120x.png)
+ [50]
+l. 2064 Writing source.idv[122] (source121x.png)
+l. 2078 Writing source.idv[123] (source122x.png)
+l. 2078 Writing source.idv[124] (source123x.png)
+l. 2080 Writing source.idv[125] (source124x.png)
+ [51]
+l. 2116 Writing source.idv[126] (source125x.png)
+l. 2121 Writing source.idv[127] (source126x.png)
+ [52]
+l. 2189 Writing source.idv[128] (source127x.png)
+l. 2190 Writing source.idv[129] (source128x.png)
+
+[53]
+l. 2210 Writing source.idv[130] (source129x.png)
+l. 2211 Writing source.idv[131] (source130x.png)
+l. 2213 Writing source.idv[132] (source131x.png)
+l. 2216 Writing source.idv[133] (source132x.png)
+l. 2225 Writing source.idv[134] (source133x.png)
+ [54]
+l. 2229 Writing source.idv[135] (source134x.png)
+l. 2238 Writing source.idv[136] (source135x.png)
+l. 2244 Writing source.idv[137] (source136x.png)
+l. 2249 Writing source.idv[138] (source137x.png)
+l. 2251 Writing source.idv[139] (source138x.png)
+ [55]
+l. 2280 Writing source.idv[140] (source139x.png)
+ [56]
+l. 2344 Writing source.idv[141] (source140x.png)
+l. 2374 Writing source.idv[142] (source141x.png)
+ [57]
+l. 2405 Writing source.idv[143] (source142x.png)
+l. 2406 Writing source.idv[144] (source143x.png)
+l. 2406 Writing source.idv[145] (source144x.png)
+l. 2407 Writing source.idv[146] (source145x.png)
+l. 2407 Writing source.idv[147] (source146x.png)
+l. 2409 Writing source.idv[148] (source147x.png)
+l. 2409 Writing source.idv[149] (source148x.png)
+l. 2409 Writing source.idv[150] (source149x.png)
+l. 2409 Writing source.idv[151] (source150x.png)
+l. 2412 Writing source.idv[152] (source151x.png)
+l. 2413 Writing source.idv[153] (source152x.png)
+l. 2424 Writing source.idv[154] (source153x.png)
+l. 2425 Writing source.idv[155] (source154x.png)
+l. 2425 Writing source.idv[156] (source155x.png)
+l. 2428 Writing source.idv[157] (source156x.png)
+l. 2428 Writing source.idv[158] (source157x.png)
+l. 2429 Writing source.idv[159] (source158x.png)
+l. 2429 Writing source.idv[160] (source159x.png)
+ [58]
+l. 2430 Writing source.idv[161] (source160x.png)
+l. 2448 Writing source.idv[162] (source161x.png)
+l. 2448 Writing source.idv[163] (source162x.png)
+l. 2450 Writing source.idv[164] (source163x.png)
+l. 2451 Writing source.idv[165] (source164x.png)
+l. 2460 Writing source.idv[166] (source165x.png)
+--- file source4.html ---
+ [59]
+l. 2486 Writing source.idv[167] (source166x.png)
+l. 2501 Writing source.idv[168] (source167x.png)
+l. 2503 Writing source.idv[169] (source168x.png)
+l. 2505 Writing source.idv[170] (source169x.png)
+ [60
+
+] [61]
+l. 2619 Writing source.idv[171] (source170x.png)
+l. 2629 Writing source.idv[172] (source171x.png)
+l. 2641 Writing source.idv[173] (source172x.png)
+l. 2646 Writing source.idv[174] (source173x.png)
+l. 2646 Writing source.idv[175] (source174x.png)
+ [62]
+l. 2648 Writing source.idv[176] (source175x.png)
+l. 2650 Writing source.idv[177] (source176x.png)
+l. 2653 Writing source.idv[178] (source177x.png)
+l. 2659 Writing source.idv[179] (source178x.png)
+l. 2667 Writing source.idv[180] (source179x.png)
+ [63]
+l. 2674 Writing source.idv[181] (source180x.png)
+l. 2678 Writing source.idv[182] (source181x.png)
+l. 2682 Writing source.idv[183] (source182x.png)
+ [64]
+l. 2696 Writing source.idv[184] (source183x.png)
+ [65]
+l. 2759 Writing source.idv[185] (source184x.png)
+ [66]
+l. 2784 Writing source.idv[186] (source185x.png)
+l. 2803 Writing source.idv[187] (source186x.png)
+l. 2809 Writing source.idv[188] (source187x.png)
+ [67]
+[68]
+l. 2911 Writing source.idv[189] (source188x.png)
+l. 2919 Writing source.idv[190] (source189x.png)
+l. 2919 Writing source.idv[191] (source190x.png)
+l. 2919 Writing source.idv[192] (source191x.png)
+l. 2924 Writing source.idv[193] (source192x.png)
+ [69] [70]
+l. 3034 Writing source.idv[194] (source193x.png)
+l. 3048 Writing source.idv[195] (source194x.png)
+ [71]
+l. 3070 Writing source.idv[196] (source195x.png)
+l. 3083 Writing source.idv[197] (source196x.png)
+l. 3085 Writing source.idv[198] (source197x.png)
+ [72]
+l. 3099 Writing source.idv[199] (source198x.png)
+l. 3106 Writing source.idv[200] (source199x.png)
+ [73]
+l. 3113 Writing source.idv[201] (source200x.png)
+) [74] [75] [76
+
+] (./groupes.tex [77] [78
+
+]
+Chapitre 2.
+[79]
+--- file source5.html ---
+ [80
+
+] [81
+
+]
+l. 96 Writing source.idv[202] (source201x.png)
+File: groupe-Lie.eps Graphic file (type eps)
+ <groupe-Lie.eps> [82
+
+]
+l. 163 Writing source.idv[203] (source202x.png)
+ [83
+
+]
+
+Package amsfonts Warning: Obsolete command \frak; \mathfrak should be used inst
+ead on input line 172.
+
+LaTeX Font Info:    Try loading font information for U+euf on input line 172.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+) [84]
+l. 204 Writing source.idv[204] (source203x.png)
+l. 225 Writing source.idv[205] (source204x.png)
+ [85]
+l. 235 Writing source.idv[206] (source205x.png)
+l. 259 Writing source.idv[207] (source206x.png)
+
+[86]
+l. 294 Writing source.idv[208] (source207x.png)
+l. 306 Writing source.idv[209] (source208x.png)
+l. 308 Writing source.idv[210] (source209x.png)
+ [87]
+l. 334 Writing source.idv[211] (source210x.png)
+l. 343 Writing source.idv[212] (source211x.png)
+l. 349 Writing source.idv[213] (source212x.png)
+ [88]
+l. 400 Writing source.idv[214] (source213x.png)
+l. 401 Writing source.idv[215] (source214x.png)
+l. 413 Writing source.idv[216] (source215x.png)
+l. 415 Writing source.idv[217] (source216x.png)
+ [89] [90]
+l. 486 Writing source.idv[218] (source217x.png)
+ [91]
+l. 521 Writing source.idv[219] (source218x.png)
+l. 528 Writing source.idv[220] (source219x.png)
+l. 533 Writing source.idv[221] (source220x.png)
+ [92]
+l. 537 Writing source.idv[222] (source221x.png)
+l. 543 Writing source.idv[223] (source222x.png)
+ [93]
+l. 552 Writing source.idv[224] (source223x.png)
+l. 559 Writing source.idv[225] (source224x.png)
+l. 562 Writing source.idv[226] (source225x.png)
+ [94] [95]
+l. 676 Writing source.idv[227] (source226x.png)
+l. 704 Writing source.idv[228] (source227x.png)
+ [96] [97] [98]
+l. 817 Writing source.idv[229] (source228x.png)
+l. 819 Writing source.idv[230] (source229x.png)
+l. 819 Writing source.idv[231] (source230x.png)
+l. 820 Writing source.idv[232] (source231x.png)
+l. 820 Writing source.idv[233] (source232x.png)
+l. 830 Writing source.idv[234] (source233x.png)
+l. 834 Writing source.idv[235] (source234x.png)
+l. 836 Writing source.idv[236] (source235x.png)
+l. 837 Writing source.idv[237] (source236x.png)
+l. 839 Writing source.idv[238] (source237x.png)
+l. 840 Writing source.idv[239] (source238x.png)
+ [99]
+l. 898 Writing source.idv[240] (source239x.png)
+ [100]
+l. 907 Writing source.idv[241] (source240x.png)
+l. 918 Writing source.idv[242] (source241x.png)
+
+[101]
+l. 920 Writing source.idv[243] (source242x.png)
+ [102] [103]
+l. 1018 Writing source.idv[244] (source243x.png)
+ [104]
+l. 1090 Writing source.idv[245] (source244x.png)
+ [105]
+l. 1125 Writing source.idv[246] (source245x.png)
+ [106]
+l. 1161 Writing source.idv[247] (source246x.png)
+ [107] [108]
+l. 1267 Writing source.idv[248] (source247x.png)
+l. 1279 Writing source.idv[249] (source248x.png)
+ [109] [110]
+l. 1372 Writing source.idv[250] (source249x.png)
+l. 1377 Writing source.idv[251] (source250x.png)
+ [111]
+l. 1379 Writing source.idv[252] (source251x.png)
+l. 1401 Writing source.idv[253] (source252x.png)
+l. 1408 Writing source.idv[254] (source253x.png)
+ [112]
+l. 1426 Writing source.idv[255] (source254x.png)
+l. 1443 Writing source.idv[256] (source255x.png)
+l. 1447 Writing source.idv[257] (source256x.png)
+
+[113]
+l. 1466 Writing source.idv[258] (source257x.png)
+l. 1487 Writing source.idv[259] (source258x.png)
+ [114]
+l. 1495 Writing source.idv[260] (source259x.png)
+l. 1499 Writing source.idv[261] (source260x.png)
+l. 1507 Writing source.idv[262] (source261x.png)
+l. 1512 Writing source.idv[263] (source262x.png)
+l. 1515 Writing source.idv[264] (source263x.png)
+l. 1515 Writing source.idv[265] (source264x.png)
+l. 1516 Writing source.idv[266] (source265x.png)
+l. 1521 Writing source.idv[267] (source266x.png)
+l. 1523 Writing source.idv[268] (source267x.png)
+l. 1523 Writing source.idv[269] (source268x.png)
+l. 1523 Writing source.idv[270] (source269x.png)
+ [115]
+l. 1527 Writing source.idv[271] (source270x.png)
+l. 1529 Writing source.idv[272] (source271x.png)
+l. 1529 Writing source.idv[273] (source272x.png)
+l. 1529 Writing source.idv[274] (source273x.png)
+l. 1549 Writing source.idv[275] (source274x.png)
+l. 1552 Writing source.idv[276] (source275x.png)
+ [116]
+l. 1560 Writing source.idv[277] (source276x.png)
+l. 1591 Writing source.idv[278] (source277x.png)
+ [117]
+l. 1620 Writing source.idv[279] (source278x.png)
+l. 1630 Writing source.idv[280] (source279x.png)
+ [118]
+l. 1640 Writing source.idv[281] (source280x.png)
+l. 1650 Writing source.idv[282] (source281x.png)
+l. 1651 Writing source.idv[283] (source282x.png)
+l. 1652 Writing source.idv[284] (source283x.png)
+l. 1660 Writing source.idv[285] (source284x.png)
+l. 1660 Writing source.idv[286] (source285x.png)
+l. 1661 Writing source.idv[287] (source286x.png)
+l. 1662 Writing source.idv[288] (source287x.png)
+l. 1663 Writing source.idv[289] (source288x.png)
+l. 1663 Writing source.idv[290] (source289x.png)
+l. 1664 Writing source.idv[291] (source290x.png)
+l. 1665 Writing source.idv[292] (source291x.png)
+l. 1666 Writing source.idv[293] (source292x.png)
+l. 1666 Writing source.idv[294] (source293x.png)
+l. 1667 Writing source.idv[295] (source294x.png)
+l. 1668 Writing source.idv[296] (source295x.png)
+ [119]
+l. 1704 Writing source.idv[297] (source296x.png)
+l. 1716 Writing source.idv[298] (source297x.png)
+ [120]
+l. 1735 Writing source.idv[299] (source298x.png)
+l. 1745 Writing source.idv[300] (source299x.png)
+l. 1754 Writing source.idv[301] (source300x.png)
+ [121]
+l. 1759 Writing source.idv[302] (source301x.png)
+l. 1766 Writing source.idv[303] (source302x.png)
+l. 1779 Writing source.idv[304] (source303x.png)
+l. 1780 Writing source.idv[305] (source304x.png)
+l. 1781 Writing source.idv[306] (source305x.png)
+l. 1783 Writing source.idv[307] (source306x.png)
+l. 1783 Writing source.idv[308] (source307x.png)
+l. 1784 Writing source.idv[309] (source308x.png)
+l. 1784 Writing source.idv[310] (source309x.png)
+l. 1785 Writing source.idv[311] (source310x.png)
+l. 1785 Writing source.idv[312] (source311x.png)
+l. 1789 Writing source.idv[313] (source312x.png)
+ [122]
+l. 1800 Writing source.idv[314] (source313x.png)
+l. 1811 Writing source.idv[315] (source314x.png)
+l. 1814 Writing source.idv[316] (source315x.png)
+ [123]
+l. 1834 Writing source.idv[317] (source316x.png)
+l. 1846 Writing source.idv[318] (source317x.png)
+ [124]
+l. 1854 Writing source.idv[319] (source318x.png)
+l. 1863 Writing source.idv[320] (source319x.png)
+l. 1867 Writing source.idv[321] (source320x.png)
+l. 1876 Writing source.idv[322] (source321x.png)
+
+[125]
+l. 1878 Writing source.idv[323] (source322x.png)
+l. 1891 Writing source.idv[324] (source323x.png)
+ [126]
+l. 1939 Writing source.idv[325] (source324x.png)
+ [127]
+l. 1948 Writing source.idv[326] (source325x.png)
+l. 1954 Writing source.idv[327] (source326x.png)
+l. 1978 Writing source.idv[328] (source327x.png)
+l. 1989 Writing source.idv[329] (source328x.png)
+ [128]
+l. 1998 Writing source.idv[330] (source329x.png)
+l. 2017 Writing source.idv[331] (source330x.png)
+l. 2025 Writing source.idv[332] (source331x.png)
+ [129]
+l. 2033 Writing source.idv[333] (source332x.png)
+l. 2049 Writing source.idv[334] (source333x.png)
+ [130] [131]
+l. 2156 Writing source.idv[335] (source334x.png)
+ [132]
+l. 2179 Writing source.idv[336] (source335x.png)
+l. 2182 Writing source.idv[337] (source336x.png)
+l. 2206 Writing source.idv[338] (source337x.png)
+ [133]
+l. 2228 Writing source.idv[339] (source338x.png)
+l. 2238 Writing source.idv[340] (source339x.png)
+ [134]
+l. 2252 Writing source.idv[341] (source340x.png)
+l. 2266 Writing source.idv[342] (source341x.png)
+l. 2270 Writing source.idv[343] (source342x.png)
+ [135]
+l. 2274 Writing source.idv[344] (source343x.png)
+l. 2291 Writing source.idv[345] (source344x.png)
+l. 2294 Writing source.idv[346] (source345x.png)
+ [136]
+l. 2296 Writing source.idv[347] (source346x.png)
+l. 2298 Writing source.idv[348] (source347x.png)
+l. 2299 Writing source.idv[349] (source348x.png)
+l. 2304 Writing source.idv[350] (source349x.png)
+
+[137]
+l. 2309 Writing source.idv[351] (source350x.png)
+ [138]
+l. 2341 Writing source.idv[352] (source351x.png)
+l. 2362 Writing source.idv[353] (source352x.png)
+l. 2365 Writing source.idv[354] (source353x.png)
+ [139]
+l. 2371 Writing source.idv[355] (source354x.png)
+l. 2379 Writing source.idv[356] (source355x.png)
+l. 2386 Writing source.idv[357] (source356x.png)
+l. 2387 Writing source.idv[358] (source357x.png)
+l. 2393 Writing source.idv[359] (source358x.png)
+ [140]
+l. 2436 Writing source.idv[360] (source359x.png)
+ [141]
+l. 2479 Writing source.idv[361] (source360x.png)
+ [142]
+l. 2509 Writing source.idv[362] (source361x.png)
+ [143]
+l. 2540 Writing source.idv[363] (source362x.png)
+l. 2541 Writing source.idv[364] (source363x.png)
+l. 2544 Writing source.idv[365] (source364x.png)
+ [144]
+l. 2553 Writing source.idv[366] (source365x.png)
+l. 2561 Writing source.idv[367] (source366x.png)
+ [145]
+l. 2578 Writing source.idv[368] (source367x.png)
+l. 2583 Writing source.idv[369] (source368x.png)
+l. 2584 Writing source.idv[370] (source369x.png)
+ [146]
+l. 2593 Writing source.idv[371] (source370x.png)
+l. 2601 Writing source.idv[372] (source371x.png)
+ [147]
+l. 2693 Writing source.idv[373] (source372x.png)
+ [148]
+l. 2695 Writing source.idv[374] (source373x.png)
+l. 2696 Writing source.idv[375] (source374x.png)
+l. 2700 Writing source.idv[376] (source375x.png)
+
+[149]
+l. 2732 Writing source.idv[377] (source376x.png)
+ [150] [151] [152]
+l. 2878 Writing source.idv[378] (source377x.png)
+l. 2881 Writing source.idv[379] (source378x.png)
+ [153]
+l. 2942 Writing source.idv[380] (source379x.png)
+l. 2971 Writing source.idv[381] (source380x.png)
+ [154]
+l. 2973 Writing source.idv[382] (source381x.png)
+ [155]) [156] [157] [158
+
+] (./fibres.tex
+[159] [160
+
+]
+Chapitre 3.
+[161] [162
+
+]
+l. 35 Writing source.idv[383] (source382x.png)
+File: espace-fibre.eps Graphic file (type eps)
+ <espace-fibre.eps> [163
+
+]
+l. 51 Writing source.idv[384] (source383x.png)
+l. 79 Writing source.idv[385] (source384x.png)
+l. 88 Writing source.idv[386] (source385x.png)
+ [164
+
+] [165
+
+]
+l. 94 Writing source.idv[387] (source386x.png)
+File: exponentielle.eps Graphic file (type eps)
+ <exponentielle.eps> [166
+
+]
+[167
+
+] [168
+
+]
+l. 137 Writing source.idv[388] (source387x.png)
+File: cylindre.eps Graphic file (type eps)
+ <cylindre.eps> [169
+
+] [170
+
+]
+l. 195 Writing source.idv[389] (source388x.png)
+ [171] [172
+
+]
+l. 217 Writing source.idv[390] (source389x.png)
+File: trivialisation.eps Graphic file (type eps)
+ <trivialisation.eps>
+[173
+
+] [174
+
+] [175
+
+]
+l. 264 Writing source.idv[391] (source390x.png)
+File: action-fibre.eps Graphic file (type eps)
+ <action-fibre.eps> [176
+
+]
+l. 274 Writing source.idv[392] (source391x.png)
+l. 286 Writing source.idv[393] (source392x.png)
+l. 287 Writing source.idv[394] (source393x.png)
+l. 289 Writing source.idv[395] (source394x.png)
+ [177
+
+] [178
+
+]
+l. 306 Writing source.idv[396] (source395x.png)
+File: origine.eps Graphic file (type eps)
+ <origine.eps> [179
+
+]
+l. 326 Writing source.idv[397] (source396x.png)
+l. 360 Writing source.idv[398] (source397x.png)
+l. 361 Writing source.idv[399] (source398x.png)
+
+[180
+
+] [181] [182]
+l. 505 Writing source.idv[400] (source399x.png)
+l. 512 Writing source.idv[401] (source400x.png)
+ [183] [184]
+l. 565 Writing source.idv[402] (source401x.png)
+l. 572 Writing source.idv[403] (source402x.png)
+ [185]
+l. 587 Writing source.idv[404] (source403x.png)
+l. 595 Writing source.idv[405] (source404x.png)
+l. 605 Writing source.idv[406] (source405x.png)
+ [186]
+l. 640 Writing source.idv[407] (source406x.png)
+ [187]
+l. 671 Writing source.idv[408] (source407x.png)
+File: entiersmod3.eps Graphic file (type eps)
+ <entiersmod3.eps> [188]
+l. 711 Writing source.idv[409] (source408x.png)
+File: HopfS3.eps Graphic file (type eps)
+
+<HopfS3.eps> [189]
+l. 727 Writing source.idv[410] (source409x.png)
+l. 728 Writing source.idv[411] (source410x.png)
+l. 740 Writing source.idv[412] (source411x.png)
+ [190]
+l. 753 Writing source.idv[413] (source412x.png)
+File: fibration-homogene.eps Graphic file (type eps)
+ <fibration-homogene.eps>
+l. 767 Writing source.idv[414] (source413x.png)
+ [191]
+l. 770 Writing source.idv[415] (source414x.png)
+l. 774 Writing source.idv[416] (source415x.png)
+l. 792 Writing source.idv[417] (source416x.png)
+ [192]
+l. 809 Writing source.idv[418] (source417x.png)
+l. 813 Writing source.idv[419] (source418x.png)
+ [193]
+l. 817 Writing source.idv[420] (source419x.png)
+l. 822 Writing source.idv[421] (source420x.png)
+l. 830 Writing source.idv[422] (source421x.png)
+ [194]
+l. 866 Writing source.idv[423] (source422x.png)
+l. 866 Writing source.idv[424] (source423x.png)
+
+[195]
+l. 872 Writing source.idv[425] (source424x.png)
+l. 873 Writing source.idv[426] (source425x.png)
+l. 876 Writing source.idv[427] (source426x.png)
+l. 876 Writing source.idv[428] (source427x.png)
+l. 881 Writing source.idv[429] (source428x.png)
+l. 882 Writing source.idv[430] (source429x.png)
+l. 888 Writing source.idv[431] (source430x.png)
+File: revetement.eps Graphic file (type eps)
+ <revetement.eps> [196]
+l. 903 Writing source.idv[432] (source431x.png)
+l. 924 Writing source.idv[433] (source432x.png)
+ [197]
+l. 952 Writing source.idv[434] (source433x.png)
+ [198] [199
+
+]
+l. 961 Writing source.idv[435] (source434x.png)
+File: normalisateur.eps Graphic file (type eps)
+ <normalisateur.eps> [200
+
+]
+[201
+
+] [202
+
+]
+l. 1012 Writing source.idv[436] (source435x.png)
+File: Hopf.eps Graphic file (type eps)
+ <Hopf.eps> [203
+
+]
+l. 1042 Writing source.idv[437] (source436x.png)
+l. 1060 Writing source.idv[438] (source437x.png)
+ [204
+
+] [205]
+l. 1108 Writing source.idv[439] (source438x.png)
+ [206] [207
+
+]
+l. 1142 Writing source.idv[440] (source439x.png)
+File: fibre-associe.eps Graphic file (type eps)
+ <fibre-associe.eps>
+[208
+
+] [209
+
+] [210] [211
+
+]
+l. 1200 Writing source.idv[441] (source440x.png)
+File: fibre-homogeneII.eps Graphic file (type eps)
+ <fibre-homogeneII.eps> [212
+
+] [213
+
+] [214
+
+]
+l. 1214 Writing source.idv[442] (source441x.png)
+File: exemples-homogenes.eps Graphic file (type eps)
+
+<exemples-homogenes.eps> [215
+
+]
+l. 1229 Writing source.idv[443] (source442x.png)
+l. 1233 Writing source.idv[444] (source443x.png)
+ [216
+
+] [217
+
+]
+l. 1242 Writing source.idv[445] (source444x.png)
+File: double-fibration.eps Graphic file (type eps)
+ <double-fibration.eps> [218
+
+]
+[219
+
+]
+l. 1321 Writing source.idv[446] (source445x.png)
+ [220]
+l. 1348 Writing source.idv[447] (source446x.png)
+l. 1352 Writing source.idv[448] (source447x.png)
+l. 1353 Writing source.idv[449] (source448x.png)
+l. 1355 Writing source.idv[450] (source449x.png)
+l. 1358 Writing source.idv[451] (source450x.png)
+ [221] [222
+
+]
+l. 1367 Writing source.idv[452] (source451x.png)
+File: fibre-vectoriel.eps Graphic file (type eps)
+ <fibre-vectoriel.eps> [223
+
+]
+l. 1399 Writing source.idv[453] (source452x.png)
+ [224
+
+]
+l. 1465 Writing source.idv[454] (source453x.png)
+ [225]
+l. 1502 Writing source.idv[455] (source454x.png)
+ [226] [227]
+[228]
+l. 1627 Writing source.idv[456] (source455x.png)
+l. 1628 Writing source.idv[457] (source456x.png)
+l. 1628 Writing source.idv[458] (source457x.png)
+l. 1629 Writing source.idv[459] (source458x.png)
+l. 1630 Writing source.idv[460] (source459x.png)
+l. 1635 Writing source.idv[461] (source460x.png)
+l. 1640 Writing source.idv[462] (source461x.png)
+l. 1640 Writing source.idv[463] (source462x.png)
+l. 1640 Writing source.idv[464] (source463x.png)
+ [229]
+l. 1646 Writing source.idv[465] (source464x.png)
+l. 1646 Writing source.idv[466] (source465x.png)
+l. 1647 Writing source.idv[467] (source466x.png)
+l. 1647 Writing source.idv[468] (source467x.png)
+l. 1651 Writing source.idv[469] (source468x.png)
+l. 1651 Writing source.idv[470] (source469x.png)
+l. 1652 Writing source.idv[471] (source470x.png)
+l. 1653 Writing source.idv[472] (source471x.png)
+l. 1653 Writing source.idv[473] (source472x.png)
+ [230] [231] [232]
+l. 1771 Writing source.idv[474] (source473x.png)
+l. 1771 Writing source.idv[475] (source474x.png)
+l. 1777 Writing source.idv[476] (source475x.png)
+l. 1778 Writing source.idv[477] (source476x.png)
+l. 1779 Writing source.idv[478] (source477x.png)
+l. 1781 Writing source.idv[479] (source478x.png)
+l. 1782 Writing source.idv[480] (source479x.png)
+l. 1798 Writing source.idv[481] (source480x.png)
+l. 1798 Writing source.idv[482] (source481x.png)
+l. 1809 Writing source.idv[483] (source482x.png)
+l. 1809 Writing source.idv[484] (source483x.png)
+l. 1811 Writing source.idv[485] (source484x.png)
+l. 1812 Writing source.idv[486] (source485x.png)
+l. 1812 Writing source.idv[487] (source486x.png)
+l. 1812 Writing source.idv[488] (source487x.png)
+l. 1813 Writing source.idv[489] (source488x.png)
+l. 1813 Writing source.idv[490] (source489x.png)
+l. 1813 Writing source.idv[491] (source490x.png)
+l. 1814 Writing source.idv[492] (source491x.png)
+l. 1815 Writing source.idv[493] (source492x.png)
+ [233]
+l. 1817 Writing source.idv[494] (source493x.png)
+l. 1828 Writing source.idv[495] (source494x.png)
+l. 1828 Writing source.idv[496] (source495x.png)
+l. 1834 Writing source.idv[497] (source496x.png)
+File: extension-fibre.eps Graphic file (type eps)
+ <extension-fibre.eps> [234]
+l. 1841 Writing source.idv[498] (source497x.png)
+l. 1843 Writing source.idv[499] (source498x.png)
+l. 1848 Writing source.idv[500] (source499x.png)
+l. 1850 Writing source.idv[501] (source500x.png)
+l. 1850 Writing source.idv[502] (source501x.png)
+l. 1853 Writing source.idv[503] (source502x.png)
+l. 1853 Writing source.idv[504] (source503x.png)
+l. 1858 Writing source.idv[505] (source504x.png)
+l. 1859 Writing source.idv[506] (source505x.png)
+l. 1862 Writing source.idv[507] (source506x.png)
+l. 1862 Writing source.idv[508] (source507x.png)
+l. 1872 Writing source.idv[509] (source508x.png)
+l. 1872 Writing source.idv[510] (source509x.png)
+ [235] [236]
+l. 1935 Writing source.idv[511] (source510x.png)
+l. 1944 Writing source.idv[512] (source511x.png)
+l. 1945 Writing source.idv[513] (source512x.png)
+l. 1947 Writing source.idv[514] (source513x.png)
+l. 1947 Writing source.idv[515] (source514x.png)
+l. 1949 Writing source.idv[516] (source515x.png)
+l. 1959 Writing source.idv[517] (source516x.png)
+l. 1963 Writing source.idv[518] (source517x.png)
+
+[237] [238]
+l. 2036 Writing source.idv[519] (source518x.png)
+ [239]
+l. 2053 Writing source.idv[520] (source519x.png)
+l. 2066 Writing source.idv[521] (source520x.png)
+ [240]
+l. 2090 Writing source.idv[522] (source521x.png)
+l. 2094 Writing source.idv[523] (source522x.png)
+l. 2098 Writing source.idv[524] (source523x.png)
+ [241]
+l. 2111 Writing source.idv[525] (source524x.png)
+l. 2112 Writing source.idv[526] (source525x.png)
+l. 2147 Writing source.idv[527] (source526x.png)
+l. 2148 Writing source.idv[528] (source527x.png)
+ [242] [243] [244
+
+]
+l. 2153 Writing source.idv[529] (source528x.png)
+File: automorphismes-fibre.eps Graphic file (type eps)
+ <automorphismes-fibre.eps>
+[245
+
+]
+l. 2175 Writing source.idv[530] (source529x.png)
+l. 2183 Writing source.idv[531] (source530x.png)
+) [246
+
+] [247] [248] (./connexions.tex [249
+
+] [250
+
+]
+Chapitre 4.
+[251] [252] [253]
+l. 197 Writing source.idv[532] (source531x.png)
+ [254] [255
+
+]
+l. 215 Writing source.idv[533] (source532x.png)
+File: connexion.eps Graphic file (type eps)
+ <connexion.eps> [256
+
+]
+l. 240 Writing source.idv[534] (source533x.png)
+l. 244 Writing source.idv[535] (source534x.png)
+l. 251 Writing source.idv[536] (source535x.png)
+ [257
+
+]
+l. 268 Writing source.idv[537] (source536x.png)
+l. 288 Writing source.idv[538] (source537x.png)
+l. 288 Writing source.idv[539] (source538x.png)
+l. 299 Writing source.idv[540] (source539x.png)
+ [258]
+l. 310 Writing source.idv[541] (source540x.png)
+l. 321 Writing source.idv[542] (source541x.png)
+l. 325 Writing source.idv[543] (source542x.png)
+ [259] [260]
+l. 407 Writing source.idv[544] (source543x.png)
+l. 412 Writing source.idv[545] (source544x.png)
+l. 413 Writing source.idv[546] (source545x.png)
+l. 419 Writing source.idv[547] (source546x.png)
+
+[261]
+l. 425 Writing source.idv[548] (source547x.png)
+l. 428 Writing source.idv[549] (source548x.png)
+ [262]
+l. 472 Writing source.idv[550] (source549x.png)
+l. 481 Writing source.idv[551] (source550x.png)
+--- file source6.html ---
+ [263]
+l. 497 Writing source.idv[552] (source551x.png)
+l. 507 Writing source.idv[553] (source552x.png)
+ [264
+
+]
+l. 527 Writing source.idv[554] (source553x.png)
+l. 540 Writing source.idv[555] (source554x.png)
+ [265] [266]
+l. 604 Writing source.idv[556] (source555x.png)
+l. 608 Writing source.idv[557] (source556x.png)
+l. 628 Writing source.idv[558] (source557x.png)
+ [267]
+l. 633 Writing source.idv[559] (source558x.png)
+l. 636 Writing source.idv[560] (source559x.png)
+l. 640 Writing source.idv[561] (source560x.png)
+l. 644 Writing source.idv[562] (source561x.png)
+ [268]
+l. 665 Writing source.idv[563] (source562x.png)
+l. 688 Writing source.idv[564] (source563x.png)
+ [269]
+l. 693 Writing source.idv[565] (source564x.png)
+l. 699 Writing source.idv[566] (source565x.png)
+ [270]
+l. 714 Writing source.idv[567] (source566x.png)
+l. 716 Writing source.idv[568] (source567x.png)
+l. 720 Writing source.idv[569] (source568x.png)
+l. 727 Writing source.idv[570] (source569x.png)
+ [271]
+l. 735 Writing source.idv[571] (source570x.png)
+l. 751 Writing source.idv[572] (source571x.png)
+l. 759 Writing source.idv[573] (source572x.png)
+l. 764 Writing source.idv[574] (source573x.png)
+ [272]
+l. 775 Writing source.idv[575] (source574x.png)
+l. 788 Writing source.idv[576] (source575x.png)
+
+[273]
+l. 797 Writing source.idv[577] (source576x.png)
+l. 799 Writing source.idv[578] (source577x.png)
+l. 804 Writing source.idv[579] (source578x.png)
+ [274]
+l. 829 Writing source.idv[580] (source579x.png)
+l. 833 Writing source.idv[581] (source580x.png)
+l. 840 Writing source.idv[582] (source581x.png)
+ [275]
+l. 876 Writing source.idv[583] (source582x.png)
+l. 883 Writing source.idv[584] (source583x.png)
+l. 890 Writing source.idv[585] (source584x.png)
+ [276]
+l. 896 Writing source.idv[586] (source585x.png)
+l. 902 Writing source.idv[587] (source586x.png)
+l. 905 Writing source.idv[588] (source587x.png)
+ [277]
+l. 946 Writing source.idv[589] (source588x.png)
+ [278]
+l. 962 Writing source.idv[590] (source589x.png)
+l. 985 Writing source.idv[591] (source590x.png)
+ [279]
+l. 987 Writing source.idv[592] (source591x.png)
+l. 999 Writing source.idv[593] (source592x.png)
+l. 1009 Writing source.idv[594] (source593x.png)
+ [280]
+l. 1027 Writing source.idv[595] (source594x.png)
+ [281] [282]
+l. 1136 Writing source.idv[596] (source595x.png)
+l. 1147 Writing source.idv[597] (source596x.png)
+l. 1153 Writing source.idv[598] (source597x.png)
+ [283]
+l. 1159 Writing source.idv[599] (source598x.png)
+l. 1168 Writing source.idv[600] (source599x.png)
+l. 1175 Writing source.idv[601] (source600x.png)
+ [284]
+l. 1185 Writing source.idv[602] (source601x.png)
+l. 1203 Writing source.idv[603] (source602x.png)
+
+[285]
+l. 1218 Writing source.idv[604] (source603x.png)
+l. 1237 Writing source.idv[605] (source604x.png)
+l. 1240 Writing source.idv[606] (source605x.png)
+l. 1242 Writing source.idv[607] (source606x.png)
+ [286]
+l. 1249 Writing source.idv[608] (source607x.png)
+l. 1262 Writing source.idv[609] (source608x.png)
+l. 1266 Writing source.idv[610] (source609x.png)
+ [287]
+l. 1272 Writing source.idv[611] (source610x.png)
+ [288]
+l. 1354 Writing source.idv[612] (source611x.png)
+ [289]
+l. 1369 Writing source.idv[613] (source612x.png)
+l. 1374 Writing source.idv[614] (source613x.png)
+l. 1382 Writing source.idv[615] (source614x.png)
+ [290]
+l. 1409 Writing source.idv[616] (source615x.png)
+l. 1421 Writing source.idv[617] (source616x.png)
+ [291]
+l. 1430 Writing source.idv[618] (source617x.png)
+l. 1433 Writing source.idv[619] (source618x.png)
+ [292]
+l. 1469 Writing source.idv[620] (source619x.png)
+l. 1500 Writing source.idv[621] (source620x.png)
+ [293]
+l. 1504 Writing source.idv[622] (source621x.png)
+l. 1507 Writing source.idv[623] (source622x.png)
+l. 1508 Writing source.idv[624] (source623x.png)
+ [294]
+l. 1514 Writing source.idv[625] (source624x.png)
+l. 1525 Writing source.idv[626] (source625x.png)
+l. 1543 Writing source.idv[627] (source626x.png)
+ [295]
+l. 1588 Writing source.idv[628] (source627x.png)
+ [296]
+l. 1593 Writing source.idv[629] (source628x.png)
+l. 1602 Writing source.idv[630] (source629x.png)
+l. 1611 Writing source.idv[631] (source630x.png)
+l. 1614 Writing source.idv[632] (source631x.png)
+l. 1615 Writing source.idv[633] (source632x.png)
+l. 1616 Writing source.idv[634] (source633x.png)
+l. 1616 Writing source.idv[635] (source634x.png)
+l. 1618 Writing source.idv[636] (source635x.png)
+l. 1623 Writing source.idv[637] (source636x.png)
+l. 1626 Writing source.idv[638] (source637x.png)
+l. 1628 Writing source.idv[639] (source638x.png)
+l. 1629 Writing source.idv[640] (source639x.png)
+
+[297]
+l. 1631 Writing source.idv[641] (source640x.png)
+l. 1638 Writing source.idv[642] (source641x.png)
+l. 1639 Writing source.idv[643] (source642x.png)
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 1642.
+
+l. 1645 Writing source.idv[644] (source643x.png)
+ [298]
+l. 1655 Writing source.idv[645] (source644x.png)
+l. 1661 Writing source.idv[646] (source645x.png)
+l. 1661 Writing source.idv[647] (source646x.png)
+l. 1674 Writing source.idv[648] (source647x.png)
+ [299]
+l. 1690 Writing source.idv[649] (source648x.png)
+l. 1708 Writing source.idv[650] (source649x.png)
+ [300]
+l. 1718 Writing source.idv[651] (source650x.png)
+l. 1736 Writing source.idv[652] (source651x.png)
+l. 1739 Writing source.idv[653] (source652x.png)
+ [301]
+l. 1749 Writing source.idv[654] (source653x.png)
+l. 1769 Writing source.idv[655] (source654x.png)
+l. 1772 Writing source.idv[656] (source655x.png)
+ [302]
+l. 1773 Writing source.idv[657] (source656x.png)
+l. 1774 Writing source.idv[658] (source657x.png)
+l. 1783 Writing source.idv[659] (source658x.png)
+l. 1785 Writing source.idv[660] (source659x.png)
+l. 1787 Writing source.idv[661] (source660x.png)
+l. 1792 Writing source.idv[662] (source661x.png)
+l. 1793 Writing source.idv[663] (source662x.png)
+ [303]
+l. 1808 Writing source.idv[664] (source663x.png)
+ [304]
+l. 1850 Writing source.idv[665] (source664x.png)
+l. 1853 Writing source.idv[666] (source665x.png)
+l. 1856 Writing source.idv[667] (source666x.png)
+l. 1860 Writing source.idv[668] (source667x.png)
+ [305]
+l. 1872 Writing source.idv[669] (source668x.png)
+l. 1886 Writing source.idv[670] (source669x.png)
+ [306]
+l. 1888 Writing source.idv[671] (source670x.png)
+l. 1904 Writing source.idv[672] (source671x.png)
+ [307]
+l. 1926 Writing source.idv[673] (source672x.png)
+ [308]
+l. 1971 Writing source.idv[674] (source673x.png)
+l. 1981 Writing source.idv[675] (source674x.png)
+
+[309] [310] [311]
+l. 2121 Writing source.idv[676] (source675x.png)
+ [312]
+l. 2130 Writing source.idv[677] (source676x.png)
+ [313]
+l. 2176 Writing source.idv[678] (source677x.png)
+l. 2184 Writing source.idv[679] (source678x.png)
+l. 2191 Writing source.idv[680] (source679x.png)
+ [314]
+l. 2196 Writing source.idv[681] (source680x.png)
+l. 2211 Writing source.idv[682] (source681x.png)
+l. 2235 Writing source.idv[683] (source682x.png)
+ [315]
+l. 2240 Writing source.idv[684] (source683x.png)
+l. 2248 Writing source.idv[685] (source684x.png)
+l. 2257 Writing source.idv[686] (source685x.png)
+ [316]
+l. 2289 Writing source.idv[687] (source686x.png)
+l. 2304 Writing source.idv[688] (source687x.png)
+ [317]
+l. 2310 Writing source.idv[689] (source688x.png)
+l. 2318 Writing source.idv[690] (source689x.png)
+l. 2326 Writing source.idv[691] (source690x.png)
+l. 2334 Writing source.idv[692] (source691x.png)
+ [318]
+l. 2348 Writing source.idv[693] (source692x.png)
+ [319]
+l. 2387 Writing source.idv[694] (source693x.png)
+l. 2391 Writing source.idv[695] (source694x.png)
+l. 2396 Writing source.idv[696] (source695x.png)
+ [320]
+l. 2432 Writing source.idv[697] (source696x.png)
+l. 2436 Writing source.idv[698] (source697x.png)
+
+[321]
+l. 2442 Writing source.idv[699] (source698x.png)
+l. 2444 Writing source.idv[700] (source699x.png)
+l. 2469 Writing source.idv[701] (source700x.png)
+ [322]
+l. 2504 Writing source.idv[702] (source701x.png)
+ [323]
+l. 2511 Writing source.idv[703] (source702x.png)
+l. 2530 Writing source.idv[704] (source703x.png)
+ [324]
+l. 2534 Writing source.idv[705] (source704x.png)
+l. 2542 Writing source.idv[706] (source705x.png)
+l. 2547 Writing source.idv[707] (source706x.png)
+l. 2557 Writing source.idv[708] (source707x.png)
+ [325]
+l. 2560 Writing source.idv[709] (source708x.png)
+l. 2570 Writing source.idv[710] (source709x.png)
+ [326]
+l. 2576 Writing source.idv[711] (source710x.png)
+l. 2582 Writing source.idv[712] (source711x.png)
+l. 2584 Writing source.idv[713] (source712x.png)
+l. 2599 Writing source.idv[714] (source713x.png)
+ [327]
+l. 2608 Writing source.idv[715] (source714x.png)
+l. 2618 Writing source.idv[716] (source715x.png)
+l. 2625 Writing source.idv[717] (source716x.png)
+ [328]
+l. 2642 Writing source.idv[718] (source717x.png)
+l. 2660 Writing source.idv[719] (source718x.png)
+ [329]
+l. 2669 Writing source.idv[720] (source719x.png)
+l. 2682 Writing source.idv[721] (source720x.png)
+ [330]
+l. 2701 Writing source.idv[722] (source721x.png)
+l. 2713 Writing source.idv[723] (source722x.png)
+l. 2724 Writing source.idv[724] (source723x.png)
+ [331]
+l. 2736 Writing source.idv[725] (source724x.png)
+l. 2739 Writing source.idv[726] (source725x.png)
+ [332]
+l. 2755 Writing source.idv[727] (source726x.png)
+l. 2764 Writing source.idv[728] (source727x.png)
+l. 2781 Writing source.idv[729] (source728x.png)
+
+[333]
+l. 2783 Writing source.idv[730] (source729x.png)
+l. 2804 Writing source.idv[731] (source730x.png)
+l. 2806 Writing source.idv[732] (source731x.png)
+ [334]
+l. 2850 Writing source.idv[733] (source732x.png)
+ [335]
+l. 2854 Writing source.idv[734] (source733x.png)
+l. 2857 Writing source.idv[735] (source734x.png)
+ [336]
+l. 2936 Writing source.idv[736] (source735x.png)
+l. 2940 Writing source.idv[737] (source736x.png)
+l. 2942 Writing source.idv[738] (source737x.png)
+ [337]
+l. 2955 Writing source.idv[739] (source738x.png)
+l. 2961 Writing source.idv[740] (source739x.png)
+l. 2965 Writing source.idv[741] (source740x.png)
+ [338]
+l. 2967 Writing source.idv[742] (source741x.png)
+l. 2977 Writing source.idv[743] (source742x.png)
+l. 2985 Writing source.idv[744] (source743x.png)
+ [339]
+l. 2987 Writing source.idv[745] (source744x.png)
+l. 3012 Writing source.idv[746] (source745x.png)
+ [340]
+l. 3022 Writing source.idv[747] (source746x.png)
+l. 3030 Writing source.idv[748] (source747x.png)
+l. 3053 Writing source.idv[749] (source748x.png)
+ [341]
+l. 3085 Writing source.idv[750] (source749x.png)
+l. 3110 Writing source.idv[751] (source750x.png)
+ [342]
+l. 3129 Writing source.idv[752] (source751x.png)
+l. 3140 Writing source.idv[753] (source752x.png)
+ [343] [344]
+l. 3217 Writing source.idv[754] (source753x.png)
+
+[345]
+l. 3226 Writing source.idv[755] (source754x.png)
+l. 3236 Writing source.idv[756] (source755x.png)
+l. 3246 Writing source.idv[757] (source756x.png)
+ [346]
+l. 3247 Writing source.idv[758] (source757x.png)
+l. 3270 Writing source.idv[759] (source758x.png)
+ [347]
+l. 3282 Writing source.idv[760] (source759x.png)
+l. 3289 Writing source.idv[761] (source760x.png)
+l. 3300 Writing source.idv[762] (source761x.png)
+ [348]
+l. 3314 Writing source.idv[763] (source762x.png)
+l. 3323 Writing source.idv[764] (source763x.png)
+l. 3331 Writing source.idv[765] (source764x.png)
+ [349]
+l. 3338 Writing source.idv[766] (source765x.png)
+l. 3363 Writing source.idv[767] (source766x.png)
+ [350]
+l. 3371 Writing source.idv[768] (source767x.png)
+l. 3385 Writing source.idv[769] (source768x.png)
+l. 3392 Writing source.idv[770] (source769x.png)
+ [351]
+l. 3399 Writing source.idv[771] (source770x.png)
+l. 3408 Writing source.idv[772] (source771x.png)
+l. 3414 Writing source.idv[773] (source772x.png)
+ [352]
+l. 3421 Writing source.idv[774] (source773x.png)
+l. 3446 Writing source.idv[775] (source774x.png)
+ [353]
+l. 3455 Writing source.idv[776] (source775x.png)
+l. 3484 Writing source.idv[777] (source776x.png)
+ [354]
+l. 3494 Writing source.idv[778] (source777x.png)
+l. 3496 Writing source.idv[779] (source778x.png)
+l. 3509 Writing source.idv[780] (source779x.png)
+ [355]
+l. 3520 Writing source.idv[781] (source780x.png)
+l. 3533 Writing source.idv[782] (source781x.png)
+ [356]
+l. 3535 Writing source.idv[783] (source782x.png)
+l. 3540 Writing source.idv[784] (source783x.png)
+l. 3551 Writing source.idv[785] (source784x.png)
+
+[357]
+l. 3559 Writing source.idv[786] (source785x.png)
+ [358]
+l. 3613 Writing source.idv[787] (source786x.png)
+l. 3628 Writing source.idv[788] (source787x.png)
+l. 3629 Writing source.idv[789] (source788x.png)
+l. 3637 Writing source.idv[790] (source789x.png)
+ [359]
+l. 3645 Writing source.idv[791] (source790x.png)
+l. 3657 Writing source.idv[792] (source791x.png)
+ [360]
+l. 3684 Writing source.idv[793] (source792x.png)
+ [361]
+l. 3725 Writing source.idv[794] (source793x.png)
+l. 3732 Writing source.idv[795] (source794x.png)
+ [362]
+l. 3745 Writing source.idv[796] (source795x.png)
+l. 3753 Writing source.idv[797] (source796x.png)
+l. 3761 Writing source.idv[798] (source797x.png)
+ [363]
+l. 3769 Writing source.idv[799] (source798x.png)
+l. 3779 Writing source.idv[800] (source799x.png)
+l. 3788 Writing source.idv[801] (source800x.png)
+ [364]
+l. 3799 Writing source.idv[802] (source801x.png)
+l. 3830 Writing source.idv[803] (source802x.png)
+ [365]
+l. 3839 Writing source.idv[804] (source803x.png)
+l. 3846 Writing source.idv[805] (source804x.png)
+l. 3850 Writing source.idv[806] (source805x.png)
+l. 3852 Writing source.idv[807] (source806x.png)
+ [366]
+l. 3864 Writing source.idv[808] (source807x.png)
+l. 3868 Writing source.idv[809] (source808x.png)
+l. 3874 Writing source.idv[810] (source809x.png)
+l. 3877 Writing source.idv[811] (source810x.png)
+ [367]
+l. 3886 Writing source.idv[812] (source811x.png)
+l. 3894 Writing source.idv[813] (source812x.png)
+ [368]
+l. 3919 Writing source.idv[814] (source813x.png)
+l. 3933 Writing source.idv[815] (source814x.png)
+
+[369]
+l. 3943 Writing source.idv[816] (source815x.png)
+l. 3953 Writing source.idv[817] (source816x.png)
+l. 3971 Writing source.idv[818] (source817x.png)
+ [370]
+l. 3996 Writing source.idv[819] (source818x.png)
+l. 4009 Writing source.idv[820] (source819x.png)
+ [371]
+l. 4047 Writing source.idv[821] (source820x.png)
+l. 4051 Writing source.idv[822] (source821x.png)
+ [372]
+l. 4058 Writing source.idv[823] (source822x.png)
+ [373]
+l. 4073 Writing source.idv[824] (source823x.png)
+l. 4076 Writing source.idv[825] (source824x.png)
+l. 4080 Writing source.idv[826] (source825x.png)
+ [374]
+l. 4082 Writing source.idv[827] (source826x.png)
+l. 4082 Writing source.idv[828] (source827x.png)
+l. 4085 Writing source.idv[829] (source828x.png)
+l. 4085 Writing source.idv[830] (source829x.png)
+l. 4085 Writing source.idv[831] (source830x.png)
+l. 4086 Writing source.idv[832] (source831x.png)
+ [375]
+l. 4098 Writing source.idv[833] (source832x.png)
+l. 4103 Writing source.idv[834] (source833x.png)
+ [376]
+l. 4108 Writing source.idv[835] (source834x.png)
+l. 4113 Writing source.idv[836] (source835x.png)
+l. 4119 Writing source.idv[837] (source836x.png)
+l. 4124 Writing source.idv[838] (source837x.png)
+ [377]
+l. 4136 Writing source.idv[839] (source838x.png)
+l. 4136 Writing source.idv[840] (source839x.png)
+l. 4160 Writing source.idv[841] (source840x.png)
+l. 4163 Writing source.idv[842] (source841x.png)
+ [378]
+l. 4177 Writing source.idv[843] (source842x.png)
+l. 4180 Writing source.idv[844] (source843x.png)
+l. 4187 Writing source.idv[845] (source844x.png)
+l. 4191 Writing source.idv[846] (source845x.png)
+l. 4191 Writing source.idv[847] (source846x.png)
+l. 4191 Writing source.idv[848] (source847x.png)
+l. 4191 Writing source.idv[849] (source848x.png)
+l. 4191 Writing source.idv[850] (source849x.png)
+l. 4192 Writing source.idv[851] (source850x.png)
+l. 4192 Writing source.idv[852] (source851x.png)
+ [379]
+l. 4193 Writing source.idv[853] (source852x.png)
+l. 4199 Writing source.idv[854] (source853x.png)
+l. 4202 Writing source.idv[855] (source854x.png)
+ [380]
+l. 4210 Writing source.idv[856] (source855x.png)
+l. 4216 Writing source.idv[857] (source856x.png)
+l. 4221 Writing source.idv[858] (source857x.png)
+
+[381]
+l. 4228 Writing source.idv[859] (source858x.png)
+l. 4229 Writing source.idv[860] (source859x.png)
+l. 4236 Writing source.idv[861] (source860x.png)
+ [382]
+l. 4251 Writing source.idv[862] (source861x.png)
+l. 4259 Writing source.idv[863] (source862x.png)
+l. 4262 Writing source.idv[864] (source863x.png)
+l. 4275 Writing source.idv[865] (source864x.png)
+l. 4278 Writing source.idv[866] (source865x.png)
+ [383]
+l. 4293 Writing source.idv[867] (source866x.png)
+l. 4296 Writing source.idv[868] (source867x.png)
+l. 4299 Writing source.idv[869] (source868x.png)
+) [384] [385] [386] (./infini.tex [387
+
+] [388
+
+]
+Chapitre 5.
+l. 20 Writing source.idv[870] (source869x.png)
+l. 39 Writing source.idv[871] (source870x.png)
+[389]
+l. 47 Writing source.idv[872] (source871x.png)
+ [390] [391]
+l. 117 Writing source.idv[873] (source872x.png)
+) [392] [393] [394
+
+] (./geononcom.tex [395] [396
+
+]
+Chapitre 6.
+l. 40 Writing source.idv[874] (source873x.png)
+l. 42 Writing source.idv[875] (source874x.png)
+[397]
+l. 102 Writing source.idv[876] (source875x.png)
+ [398] [399]
+l. 157 Writing source.idv[877] (source876x.png)
+l. 187 Writing source.idv[878] (source877x.png)
+ [400]
+l. 192 Writing source.idv[879] (source878x.png)
+l. 218 Writing source.idv[880] (source879x.png)
+ [401]
+l. 235 Writing source.idv[881] (source880x.png)
+l. 263 Writing source.idv[882] (source881x.png)
+l. 268 Writing source.idv[883] (source882x.png)
+ [402]
+l. 277 Writing source.idv[884] (source883x.png)
+l. 284 Writing source.idv[885] (source884x.png)
+l. 289 Writing source.idv[886] (source885x.png)
+l. 292 Writing source.idv[887] (source886x.png)
+ [403]
+l. 295 Writing source.idv[888] (source887x.png)
+l. 308 Writing source.idv[889] (source888x.png)
+l. 317 Writing source.idv[890] (source889x.png)
+ [404]
+l. 351 Writing source.idv[891] (source890x.png)
+l. 357 Writing source.idv[892] (source891x.png)
+ [405]
+l. 382 Writing source.idv[893] (source892x.png)
+ [406] [407]
+l. 459 Writing source.idv[894] (source893x.png)
+ [408]
+l. 520 Writing source.idv[895] (source894x.png)
+l. 522 Writing source.idv[896] (source895x.png)
+l. 528 Writing source.idv[897] (source896x.png)
+
+[409]
+l. 558 Writing source.idv[898] (source897x.png)
+l. 568 Writing source.idv[899] (source898x.png)
+ [410] [411
+
+]
+l. 582 Writing source.idv[900] (source899x.png)
+File: higgs.eps Graphic file (type eps)
+ <higgs.eps> [412
+
+] [413
+
+]
+l. 638 Writing source.idv[901] (source900x.png)
+l. 645 Writing source.idv[902] (source901x.png)
+l. 658 Writing source.idv[903] (source902x.png)
+ [414]
+l. 676 Writing source.idv[904] (source903x.png)
+ [415] [416]
+l. 753 Writing source.idv[905] (source904x.png)
+l. 782 Writing source.idv[906] (source905x.png)
+ [417]
+l. 789 Writing source.idv[907] (source906x.png)
+l. 817 Writing source.idv[908] (source907x.png)
+l. 822 Writing source.idv[909] (source908x.png)
+ [418]
+l. 833 Writing source.idv[910] (source909x.png)
+l. 841 Writing source.idv[911] (source910x.png)
+
+[419] [420]
+l. 940 Writing source.idv[912] (source911x.png)
+ [421]
+l. 953 Writing source.idv[913] (source912x.png)
+l. 972 Writing source.idv[914] (source913x.png)
+ [422] [423] [424]
+l. 1061 Writing source.idv[915] (source914x.png)
+--- file source7.html ---
+ [425
+
+]
+l. 1157 Writing source.idv[916] (source915x.png)
+l. 1158 Writing source.idv[917] (source916x.png)
+ [426]
+l. 1203 Writing source.idv[918] (source917x.png)
+ [427]
+l. 1206 Writing source.idv[919] (source918x.png)
+l. 1222 Writing source.idv[920] (source919x.png)
+l. 1229 Writing source.idv[921] (source920x.png)
+l. 1234 Writing source.idv[922] (source921x.png)
+ [428]
+l. 1241 Writing source.idv[923] (source922x.png)
+l. 1247 Writing source.idv[924] (source923x.png)
+ [429]
+l. 1265 Writing source.idv[925] (source924x.png)
+l. 1270 Writing source.idv[926] (source925x.png)
+l. 1277 Writing source.idv[927] (source926x.png)
+ [430]
+l. 1287 Writing source.idv[928] (source927x.png)
+
+[431]
+l. 1340 Writing source.idv[929] (source928x.png)
+l. 1346 Writing source.idv[930] (source929x.png)
+ [432] [433]
+l. 1430 Writing source.idv[931] (source930x.png)
+l. 1435 Writing source.idv[932] (source931x.png)
+l. 1440 Writing source.idv[933] (source932x.png)
+l. 1444 Writing source.idv[934] (source933x.png)
+l. 1447 Writing source.idv[935] (source934x.png)
+l. 1449 Writing source.idv[936] (source935x.png)
+ [434]
+l. 1453 Writing source.idv[937] (source936x.png)
+l. 1457 Writing source.idv[938] (source937x.png)
+l. 1481 Writing source.idv[939] (source938x.png)
+ [435]
+l. 1488 Writing source.idv[940] (source939x.png)
+l. 1505 Writing source.idv[941] (source940x.png)
+ [436]
+l. 1549 Writing source.idv[942] (source941x.png)
+ [437]
+l. 1556 Writing source.idv[943] (source942x.png)
+l. 1578 Writing source.idv[944] (source943x.png)
+ [438]
+l. 1582 Writing source.idv[945] (source944x.png)
+) (./source.ind [439] [440
+
+]
+[441] [442] [443] [444] [445])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 188.
+ [446] [447]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
+ (./source.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 188.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 188.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
+ )
+(\end occurred when \ifx on line 161 was incomplete) 
+Here is how much of TeX's memory you used:
+ 12816 strings out of 493014
+ 178015 string characters out of 6133370
+ 388008 words of memory out of 5000000
+ 16009 multiletter control sequences out of 15000+600000
+ 20941 words of font info for 84 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 37i,16n,36p,1266b,1192s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on source.dvi (493 pages, 2022904 bytes).

@@ -1,0 +1,1347 @@
+ <?xml version="1.0"?> 
+ <!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" 
+"http://www.daisy.org/z3986/2005/ncx-2005-1.dtd"> 
+ <ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">                                    <head> 
+ <meta name="dtb:uid" content="http://example.com/source"/> 
+ <meta name="dtb:depth" content="3"/> 
+ <meta name="dtb:totalPageCount" content="0"/> 
+ <meta name="dtb:maxPageNumber" content="0"/> 
+ </head> 
+ <docTitle> 
+<text>Espaces fibrés<br 
+class="newline" />et<br 
+class="newline" />Connexions</text> 
+</docTitle> 
+  <navMap>     
+<navPoint id="navPoint-1" playOrder="1"> 
+<navLabel> 
+<text>    Préface</text> 
+</navLabel> 
+<content src="sourceli2.html#Q1-3-3" />  </navPoint> 
+     
+<navPoint id="navPoint-2" playOrder="2"> 
+<navLabel> 
+<text>    Introduction</text> 
+</navLabel> 
+<content src="sourceli3.html#Q1-4-5" />      
+<navPoint id="navPoint-3" playOrder="3"> 
+<navLabel> 
+<text>    Modèles
+mathématiques et réalité</text> 
+</navLabel> 
+<content src="sourceli3.html#Q1-4-7" />  </navPoint> 
+     
+<navPoint id="navPoint-4" playOrder="4"> 
+<navLabel> 
+<text>    Du classique au quantique</text> 
+</navLabel> 
+<content src="sourceli3.html#Q1-4-9" />  </navPoint> 
+     
+<navPoint id="navPoint-5" playOrder="5"> 
+<navLabel> 
+<text>
+Guide de lecture, autocritique et perspectives</text> 
+</navLabel> 
+<content src="sourceli3.html#Q1-4-11" />  </navPoint> 
+</navPoint> 
+    
+<navPoint id="navPoint-6" playOrder="6"> 
+<navLabel> 
+<text>   </text> 
+</navLabel> 
+<content src="sourceli4.html#Q1-6-15" />  </navPoint> 
+    
+<navPoint id="navPoint-7" playOrder="7"> 
+<navLabel> 
+<text>  1  Variétés
+différentiables</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-100001" />      
+<navPoint id="navPoint-8" playOrder="8"> 
+<navLabel> 
+<text>  1.1  Variétés topologiques</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-110001.1" />      
+<navPoint id="navPoint-9" playOrder="9"> 
+<navLabel> 
+<text>  1.1.1  Définition</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-120001.1.1" />  </navPoint> 
+
+ 
+<navPoint id="navPoint-10" playOrder="10"> 
+<navLabel> 
+<text>  1.1.2  Variétés à bord</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-130001.1.2" />  </navPoint> 
+    
+<navPoint id="navPoint-11" playOrder="11"> 
+<navLabel> 
+<text>  1.1.3  Contre-exemples</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-140001.1.3" />  </navPoint> 
+</navPoint> 
+    
+<navPoint id="navPoint-12" playOrder="12"> 
+<navLabel> 
+<text>  1.2
+Variétés différentiables</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-150001.2" />      
+<navPoint id="navPoint-13" playOrder="13"> 
+<navLabel> 
+<text>  1.2.1  Variétés, cartes, atlas</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-160001.2.1" />  </navPoint> 
+    
+<navPoint id="navPoint-14" playOrder="14"> 
+<navLabel> 
+<text>  1.2.2
+Atlas maximal</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-170001.2.2" />  </navPoint> 
+    
+<navPoint id="navPoint-15" playOrder="15"> 
+<navLabel> 
+<text>  1.2.3  Variétés et calcul différentiel “intrinsèque”</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-180001.2.3" />  </navPoint> 
+</navPoint> 
+
+ 
+<navPoint id="navPoint-16" playOrder="16"> 
+<navLabel> 
+<text>  1.3  Applications différentiables, difféomorphismes</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-190001.3" />      
+<navPoint id="navPoint-17" playOrder="17"> 
+<navLabel> 
+<text>  1.3.1
+Définition</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-200001.3.1" /> </navPoint> 
+    
+<navPoint id="navPoint-18" playOrder="18"> 
+<navLabel> 
+<text> 1.3.2  Difféomorphismes et changements de coordonnées</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-210001.3.2" /> </navPoint> 
+
+ 
+<navPoint id="navPoint-19" playOrder="19"> 
+<navLabel> 
+<text>  1.3.3  Fonctions différentiables</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-220001.3.3" />  </navPoint> 
+</navPoint> 
+    
+<navPoint id="navPoint-20" playOrder="20"> 
+<navLabel> 
+<text>  1.4  Champs de vecteurs</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-230001.4" />
+ 
+<navPoint id="navPoint-21" playOrder="21"> 
+<navLabel> 
+<text> 1.4.1  Notions élémentaires et intuitives</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-240001.4.1" /> </navPoint> 
+    
+<navPoint id="navPoint-22" playOrder="22"> 
+<navLabel> 
+<text> 1.4.2  Vecteurs, espace
+tangent et champs de vecteurs</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-250001.4.2" /> </navPoint> 
+    
+<navPoint id="navPoint-23" playOrder="23"> 
+<navLabel> 
+<text> 1.4.3  Règle de Leibniz</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-260001.4.3" /> </navPoint> 
+    
+<navPoint id="navPoint-24" playOrder="24"> 
+<navLabel> 
+<text> 1.4.4
+Crochet de deux champs de vecteurs</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-270001.4.4" />  </navPoint> 
+    
+<navPoint id="navPoint-25" playOrder="25"> 
+<navLabel> 
+<text>  1.4.5  Repère naturel associé
+à une carte</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-280001.4.5" />  </navPoint> 
+    
+<navPoint id="navPoint-26" playOrder="26"> 
+<navLabel> 
+<text>  1.4.6  Changement de carte</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-290001.4.6" />  </navPoint> 
+    
+<navPoint id="navPoint-27" playOrder="27"> 
+<navLabel> 
+<text>  1.4.7  Repères
+mobiles (repères quelconques)</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-300001.4.7" />  </navPoint> 
+</navPoint> 
+    
+<navPoint id="navPoint-28" playOrder="28"> 
+<navLabel> 
+<text>  1.5  Tenseurs et formes extérieures</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-310001.5" />
+ 
+<navPoint id="navPoint-29" playOrder="29"> 
+<navLabel> 
+<text> 1.5.1  Algèbre tensorielle d&#x2019;un espace vectoriel</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-320001.5.1" /> </navPoint> 
+    
+<navPoint id="navPoint-30" playOrder="30"> 
+<navLabel> 
+<text> 1.5.2  Algèbre
+extérieure d&#x2019;un espace vectoriel. Produit extérieur</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-330001.5.2" />  </navPoint> 
+    
+<navPoint id="navPoint-31" playOrder="31"> 
+<navLabel> 
+<text>  1.5.3  Produit
+intérieur d&#x2019;une forme par un vecteur</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-340001.5.3" />  </navPoint> 
+    
+<navPoint id="navPoint-32" playOrder="32"> 
+<navLabel> 
+<text>  1.5.4  Transformation du
+produit extérieur et du produit intérieur par endomorphismes</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-350001.5.4" />  </navPoint> 
+</navPoint> 
+    
+<navPoint id="navPoint-33" playOrder="33"> 
+<navLabel> 
+<text>  1.6
+Formes différentielles</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-360001.6" />     
+<navPoint id="navPoint-34" playOrder="34"> 
+<navLabel> 
+<text> 1.6.1 Définition</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-370001.6.1" /> </navPoint> 
+    
+<navPoint id="navPoint-35" playOrder="35"> 
+<navLabel> 
+<text> 1.6.2 La différentielle
+extérieure d</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-380001.6.2" /> </navPoint> 
+    
+<navPoint id="navPoint-36" playOrder="36"> 
+<navLabel> 
+<text>  1.6.3  L&#x2019;équation de Maurer-Cartan pour un repère
+mobile</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-390001.6.3" /> </navPoint> 
+    
+<navPoint id="navPoint-37" playOrder="37"> 
+<navLabel> 
+<text> 1.6.4 Produit intérieur d&#x2019;une forme par un champ ou vecteurs</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-400001.6.4" /> </navPoint> 
+</navPoint> 
+
+ 
+<navPoint id="navPoint-38" playOrder="38"> 
+<navLabel> 
+<text> 1.7 Application tangente et cotangente</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-410001.7" /> </navPoint> 
+    
+<navPoint id="navPoint-39" playOrder="39"> 
+<navLabel> 
+<text> 1.8 Dérivées de Lie</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-420001.8" /> </navPoint> 
+
+ 
+<navPoint id="navPoint-40" playOrder="40"> 
+<navLabel> 
+<text>  1.9  Flots</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-430001.9" />  </navPoint> 
+    
+<navPoint id="navPoint-41" playOrder="41"> 
+<navLabel> 
+<text>  1.10  Orientation et intégration</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-440001.10" />      
+<navPoint id="navPoint-42" playOrder="42"> 
+<navLabel> 
+<text>  1.10.1
+Orientation – Partition de l&#x2019;unité</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-450001.10.1" />  </navPoint> 
+</navPoint> 
+    
+<navPoint id="navPoint-43" playOrder="43"> 
+<navLabel> 
+<text>  1.11  Variétés riemanniennes
+(propriétés élémentaires)</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-460001.11" /> </navPoint> 
+    
+<navPoint id="navPoint-44" playOrder="44"> 
+<navLabel> 
+<text> 1.12 Divers</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-470001.12" />     
+<navPoint id="navPoint-45" playOrder="45"> 
+<navLabel> 
+<text> 1.12.1  Compléments
+sur les dérivations d&#x2019;algèbre</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-480001.12.1" />  </navPoint> 
+    
+<navPoint id="navPoint-46" playOrder="46"> 
+<navLabel> 
+<text>  1.12.2  Cohomologie de De Rham</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-490001.12.2" />  </navPoint> 
+
+ 
+<navPoint id="navPoint-47" playOrder="47"> 
+<navLabel> 
+<text> 1.12.3 Homologie de De Rham</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-500001.12.3" /> </navPoint> 
+    
+<navPoint id="navPoint-48" playOrder="48"> 
+<navLabel> 
+<text> 1.12.4 Espace des p-vecteurs</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-510001.12.4" /> </navPoint> 
+
+ 
+<navPoint id="navPoint-49" playOrder="49"> 
+<navLabel> 
+<text>  1.12.5  Espace des courants de De Rham</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-520001.12.5" />  </navPoint> 
+    
+<navPoint id="navPoint-50" playOrder="50"> 
+<navLabel> 
+<text>  1.12.6  Les algèbres
+de Frölicher – Nijenhuis et de Nijenhuis–Richardson</text> 
+</navLabel> 
+<content src="sourcech1.html#x7-530001.12.6" />  </navPoint> 
+</navPoint> 
+</navPoint> 
+    
+<navPoint id="navPoint-51" playOrder="51"> 
+<navLabel> 
+<text>  2  Groupes
+de Lie et espaces homogènes</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-540002" />      
+<navPoint id="navPoint-52" playOrder="52"> 
+<navLabel> 
+<text>  2.1  Généralités sur les groupes de
+                                                                          
+
+                                                                          
+Lie</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-550002.1" />      
+<navPoint id="navPoint-53" playOrder="53"> 
+<navLabel> 
+<text>  2.1.1  Généralités et définitions élémentaires</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-560002.1.1" />  </navPoint> 
+    
+<navPoint id="navPoint-54" playOrder="54"> 
+<navLabel> 
+<text>  2.1.2
+Exemples élémentaires de groupes classiques</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-570002.1.2" />  </navPoint> 
+</navPoint> 
+    
+<navPoint id="navPoint-55" playOrder="55"> 
+<navLabel> 
+<text>  2.2  Généralités sur
+les algèbres de Lie</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-580002.2" />      
+<navPoint id="navPoint-56" playOrder="56"> 
+<navLabel> 
+<text>  2.2.1  Application exponentielle et algèbres
+de Lie</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-590002.2.1" />  </navPoint> 
+    
+<navPoint id="navPoint-57" playOrder="57"> 
+<navLabel> 
+<text>  2.2.2  Correspondance entre groupes et algèbres de Lie</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-650002.2.2" />  </navPoint> 
+
+ 
+<navPoint id="navPoint-58" playOrder="58"> 
+<navLabel> 
+<text>  2.2.3  Classification des groupes et algèbres de Lie. Généralités.</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-680002.2.3" />  </navPoint> 
+
+ 
+<navPoint id="navPoint-59" playOrder="59"> 
+<navLabel> 
+<text>  2.2.4  Message</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-720002.2.4" />  </navPoint> 
+</navPoint> 
+    
+<navPoint id="navPoint-60" playOrder="60"> 
+<navLabel> 
+<text>  2.3  Actions de groupes et représentations</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-730002.3" />
+ 
+<navPoint id="navPoint-61" playOrder="61"> 
+<navLabel> 
+<text>  2.3.1  Généralités</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-740002.3.1" />  </navPoint> 
+    
+<navPoint id="navPoint-62" playOrder="62"> 
+<navLabel> 
+<text>  2.3.2  Groupe G opérant à gauche sur un
+ensemble E</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-750002.3.2" /> </navPoint> 
+   
+<navPoint id="navPoint-63" playOrder="63"> 
+<navLabel> 
+<text> 2.3.3 Action à droite (anti-action)</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-760002.3.3" /> </navPoint> 
+    
+<navPoint id="navPoint-64" playOrder="64"> 
+<navLabel> 
+<text> 2.3.4 Passage
+de la droite à la gauche (et inversement)</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-770002.3.4" />  </navPoint> 
+    
+<navPoint id="navPoint-65" playOrder="65"> 
+<navLabel> 
+<text>  2.3.5  Orbites, espace
+quotient</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-780002.3.5" />  </navPoint> 
+    
+<navPoint id="navPoint-66" playOrder="66"> 
+<navLabel> 
+<text>  2.3.6  Efficacité</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-790002.3.6" />  </navPoint> 
+    
+<navPoint id="navPoint-67" playOrder="67"> 
+<navLabel> 
+<text>  2.3.7  Liberté et stabilisateur</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-800002.3.7" />  </navPoint> 
+
+ 
+<navPoint id="navPoint-68" playOrder="68"> 
+<navLabel> 
+<text>  2.3.8  Transitivité</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-810002.3.8" />  </navPoint> 
+    
+<navPoint id="navPoint-69" playOrder="69"> 
+<navLabel> 
+<text>  2.3.9  Action d&#x2019;un sous-groupe H sur un
+groupe G, normalisateur, centralisateur</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-820002.3.9" />  </navPoint> 
+    
+<navPoint id="navPoint-70" playOrder="70"> 
+<navLabel> 
+<text>  2.3.10  Stratification</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-830002.3.10" />  </navPoint> 
+
+ 
+<navPoint id="navPoint-71" playOrder="71"> 
+<navLabel> 
+<text>  2.3.11  Remarques</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-840002.3.11" />  </navPoint> 
+</navPoint> 
+    
+<navPoint id="navPoint-72" playOrder="72"> 
+<navLabel> 
+<text>  2.4  Champs de vecteurs fondamentaux</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-850002.4" />
+ 
+<navPoint id="navPoint-73" playOrder="73"> 
+<navLabel> 
+<text>  2.4.1  Cas d&#x2019;un groupe de Lie agissant sur une variété</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-860002.4.1" />  </navPoint> 
+     
+<navPoint id="navPoint-74" playOrder="74"> 
+<navLabel> 
+<text>
+2.4.2  Exemple : le groupe euclidien agissant sur le plan ℝ<sup>2</sup></text> 
+</navLabel> 
+<content src="sourcech2.html#x10-870002.4.2" />  </navPoint> 
+     
+<navPoint id="navPoint-75" playOrder="75"> 
+<navLabel> 
+<text>  2.4.3
+Un cas particulier fondamental : le groupe G agissant sur lui-même par
+translations à gauche et à droite</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-880002.4.3" />  </navPoint> 
+    
+<navPoint id="navPoint-76" playOrder="76"> 
+<navLabel> 
+<text>  2.4.4  L&#x2019;action adjointe de G</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-890002.4.4" /> </navPoint> 
+
+ 
+<navPoint id="navPoint-77" playOrder="77"> 
+<navLabel> 
+<text>  2.4.5  Exemple : l&#x2019;algèbre de Lie du groupe euclidien</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-900002.4.5" />  </navPoint> 
+    
+<navPoint id="navPoint-78" playOrder="78"> 
+<navLabel> 
+<text>  2.4.6
+Exemple : champs invariants sur SU(2)</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-910002.4.6" />  </navPoint> 
+    
+<navPoint id="navPoint-79" playOrder="79"> 
+<navLabel> 
+<text>  2.4.7  Une remarque sur
+les constantes de structure</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-920002.4.7" />  </navPoint> 
+    
+<navPoint id="navPoint-80" playOrder="80"> 
+<navLabel> 
+<text>  2.4.8  La forme de Maurer-Cartan</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-930002.4.8" />  </navPoint> 
+</navPoint> 
+
+ 
+<navPoint id="navPoint-81" playOrder="81"> 
+<navLabel> 
+<text>  2.5  Représentations</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-940002.5" />  </navPoint> 
+    
+<navPoint id="navPoint-82" playOrder="82"> 
+<navLabel> 
+<text>  2.6  Espaces homogènes</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-950002.6" />  </navPoint> 
+    
+<navPoint id="navPoint-83" playOrder="83"> 
+<navLabel> 
+<text>  2.7
+Algèbres de Clifford et groupes Spin</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-960002.7" />      
+<navPoint id="navPoint-84" playOrder="84"> 
+<navLabel> 
+<text>  2.7.1  Définitions générales</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-970002.7.1" />  </navPoint> 
+
+ 
+<navPoint id="navPoint-85" playOrder="85"> 
+<navLabel> 
+<text> 2.7.2 Le groupe Spin</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-980002.7.2" /> </navPoint> 
+   
+<navPoint id="navPoint-86" playOrder="86"> 
+<navLabel> 
+<text> 2.7.3 Structure des algèbres de Clifford
+réelles</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-990002.7.3" />  </navPoint> 
+    
+<navPoint id="navPoint-87" playOrder="87"> 
+<navLabel> 
+<text>  2.7.4  La structure des algèbres de Clifford complexes</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-1030002.7.4" />  </navPoint> 
+
+ 
+<navPoint id="navPoint-88" playOrder="88"> 
+<navLabel> 
+<text>  2.7.5  Type des représentations</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-1040002.7.5" />  </navPoint> 
+    
+<navPoint id="navPoint-89" playOrder="89"> 
+<navLabel> 
+<text>  2.7.6  Spineurs</text> 
+</navLabel> 
+<content src="sourcech2.html#x10-1050002.7.6" />  </navPoint> 
+</navPoint> 
+</navPoint> 
+    
+<navPoint id="navPoint-90" playOrder="90"> 
+<navLabel> 
+<text>  3
+Espaces Fibrés</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1060003" />     
+<navPoint id="navPoint-91" playOrder="91"> 
+<navLabel> 
+<text> 3.1 Généralités</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1070003.1" />     
+<navPoint id="navPoint-92" playOrder="92"> 
+<navLabel> 
+<text> 3.1.1 Le langage des fibrés</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1080003.1.1" /> </navPoint> 
+
+ 
+<navPoint id="navPoint-93" playOrder="93"> 
+<navLabel> 
+<text>  3.1.2  Fibrations. Fibrés différentiables localement triviaux</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1090003.1.2" />  </navPoint> 
+</navPoint> 
+    
+<navPoint id="navPoint-94" playOrder="94"> 
+<navLabel> 
+<text>
+3.2  Espaces fibrés principaux</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1160003.2" />      
+<navPoint id="navPoint-95" playOrder="95"> 
+<navLabel> 
+<text>  3.2.1  La structure d&#x2019;espace fibré
+principal</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1170003.2.1" />  </navPoint> 
+    
+<navPoint id="navPoint-96" playOrder="96"> 
+<navLabel> 
+<text>  3.2.2  Sections locales et trivialisations locales</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1180003.2.2" />  </navPoint> 
+    
+<navPoint id="navPoint-97" playOrder="97"> 
+<navLabel> 
+<text>
+3.2.3  Exemple fondamental : le fibré des repères linéaires</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1190003.2.3" />  </navPoint> 
+    
+<navPoint id="navPoint-98" playOrder="98"> 
+<navLabel> 
+<text>  3.2.4
+Sous-espace des vecteurs verticaux en un point z d&#x2019;un espace fibré</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1200003.2.4" />  </navPoint> 
+    
+<navPoint id="navPoint-99" playOrder="99"> 
+<navLabel> 
+<text>
+3.2.5  Fibré principal trivial</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1210003.2.5" />  </navPoint> 
+    
+<navPoint id="navPoint-100" playOrder="100"> 
+<navLabel> 
+<text>  3.2.6  Formes basiques, invariantes
+et horizontales</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1220003.2.6" />  </navPoint> 
+    
+<navPoint id="navPoint-101" playOrder="101"> 
+<navLabel> 
+<text>  3.2.7  Exemples</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1230003.2.7" />  </navPoint> 
+</navPoint> 
+    
+<navPoint id="navPoint-102" playOrder="102"> 
+<navLabel> 
+<text>  3.3  Fibrés associés</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1290003.3" />
+ 
+<navPoint id="navPoint-103" playOrder="103"> 
+<navLabel> 
+<text> 3.3.1 Introduction</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1300003.3.1" /> </navPoint> 
+    
+<navPoint id="navPoint-104" playOrder="104"> 
+<navLabel> 
+<text> 3.3.2 Espaces fibrés associés généraux</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1310003.3.2" />
+</navPoint> 
+   
+<navPoint id="navPoint-105" playOrder="105"> 
+<navLabel> 
+<text>  3.3.3  Espaces fibrés en espaces homogènes, associés à un fibré
+principal de groupe structural G</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1320003.3.3" /> </navPoint> 
+    
+<navPoint id="navPoint-106" playOrder="106"> 
+<navLabel> 
+<text>  3.3.4  Fibration principale
+relative à un fibré quotient</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1330003.3.4" />  </navPoint> 
+    
+<navPoint id="navPoint-107" playOrder="107"> 
+<navLabel> 
+<text>  3.3.5  Espaces fibrés en … espaces
+fibrés</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1340003.3.5" /> </navPoint> 
+    
+<navPoint id="navPoint-108" playOrder="108"> 
+<navLabel> 
+<text> 3.3.6 Le fibré adjoint E = Ad<span style="margin-left:0.3em" class="thinspace"></span>P</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1350003.3.6" /> </navPoint> 
+   
+<navPoint id="navPoint-109" playOrder="109"> 
+<navLabel> 
+<text> 3.3.7 Le rôle du
+normalisateur</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1360003.3.7" /> </navPoint> 
+    
+<navPoint id="navPoint-110" playOrder="110"> 
+<navLabel> 
+<text> 3.3.8 Les espaces fibrés vectoriels</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1370003.3.8" /> </navPoint> 
+    
+<navPoint id="navPoint-111" playOrder="111"> 
+<navLabel> 
+<text> 3.3.9
+Trivialité des fibrés vectoriels, variétés parallélisables</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1380003.3.9" />  </navPoint> 
+    
+<navPoint id="navPoint-112" playOrder="112"> 
+<navLabel> 
+<text>  3.3.10
+Sections de fibrés associés et champs</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1390003.3.10" /> </navPoint> 
+</navPoint> 
+    
+<navPoint id="navPoint-113" playOrder="113"> 
+<navLabel> 
+<text> 3.4 Elargissement et réduction</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1400003.4" />
+                                                                          
+
+                                                                          
+ 
+<navPoint id="navPoint-114" playOrder="114"> 
+<navLabel> 
+<text> 3.4.1 Définitions</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1410003.4.1" /> </navPoint> 
+    
+<navPoint id="navPoint-115" playOrder="115"> 
+<navLabel> 
+<text> 3.4.2 Elargissement (passage de H à G
+avec H ⊂ G)</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1420003.4.2" />  </navPoint> 
+    
+<navPoint id="navPoint-116" playOrder="116"> 
+<navLabel> 
+<text>  3.4.3  Réduction (passage de G à H avec H ⊂ G)</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1430003.4.3" />  </navPoint> 
+</navPoint> 
+
+ 
+<navPoint id="navPoint-117" playOrder="117"> 
+<navLabel> 
+<text>  3.5  Extension et quotient</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1440003.5" />      
+<navPoint id="navPoint-118" playOrder="118"> 
+<navLabel> 
+<text>  3.5.1  Extension (passage
+de G à ^ G avec G ∼ ^ G|H)</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1450003.5.1" />  </navPoint> 
+    
+<navPoint id="navPoint-119" playOrder="119"> 
+<navLabel> 
+<text>  3.5.2  Quotient (passage de G à K
+avec K ∼ G|H, H sous-groupe distingué de G)</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1460003.5.2" />  </navPoint> 
+</navPoint> 
+    
+<navPoint id="navPoint-120" playOrder="120"> 
+<navLabel> 
+<text>  3.6  Groupe des
+automorphismes. Groupe de jauge</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1470003.6" />     
+<navPoint id="navPoint-121" playOrder="121"> 
+<navLabel> 
+<text> 3.6.1 Remarque terminologique</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1480003.6.1" />
+</navPoint> 
+   
+<navPoint id="navPoint-122" playOrder="122"> 
+<navLabel> 
+<text>  3.6.2  Automorphismes verticaux d&#x2019;un espace fibré principal
+(définition)</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1490003.6.2" />  </navPoint> 
+    
+<navPoint id="navPoint-123" playOrder="123"> 
+<navLabel> 
+<text>  3.6.3  Ecriture locale des transformations de jauge</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1500003.6.3" />
+</navPoint> 
+    
+<navPoint id="navPoint-124" playOrder="124"> 
+<navLabel> 
+<text>  3.6.4  Deux autres définitions des transformations de jauge</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1510003.6.4" />  </navPoint> 
+
+ 
+<navPoint id="navPoint-125" playOrder="125"> 
+<navLabel> 
+<text>  3.6.5  Automorphismes quelconques d&#x2019;un espace fibré principal</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1520003.6.5" />  </navPoint> 
+
+ 
+<navPoint id="navPoint-126" playOrder="126"> 
+<navLabel> 
+<text>  3.6.6  Action des automorphismes sur les espaces fibrés associés</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1530003.6.6" />  </navPoint> 
+
+ 
+<navPoint id="navPoint-127" playOrder="127"> 
+<navLabel> 
+<text> 3.6.7 Le cas des espaces vectoriels (un cas trivial mais instructif<span class="frenchb-thinspace"> </span>!)</text> 
+</navLabel> 
+<content src="sourcech3.html#x12-1540003.6.7" /> </navPoint> 
+</navPoint> 
+</navPoint> 
+
+ 
+<navPoint id="navPoint-128" playOrder="128"> 
+<navLabel> 
+<text>  4  Connexions</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1550004" />      
+<navPoint id="navPoint-129" playOrder="129"> 
+<navLabel> 
+<text>  4.1  Connexions dans un fibré principal</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1560004.1" />
+ 
+<navPoint id="navPoint-130" playOrder="130"> 
+<navLabel> 
+<text>  4.1.1  Motivations</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1570004.1.1" />  </navPoint> 
+    
+<navPoint id="navPoint-131" playOrder="131"> 
+<navLabel> 
+<text>  4.1.2  Distributions horizontales
+équivariantes</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1580004.1.2" /> </navPoint> 
+    
+<navPoint id="navPoint-132" playOrder="132"> 
+<navLabel> 
+<text> 4.1.3 Relèvement horizontal</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1590004.1.3" /> </navPoint> 
+    
+<navPoint id="navPoint-133" playOrder="133"> 
+<navLabel> 
+<text> 4.1.4 Forme
+de connexion</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1600004.1.4" />  </navPoint> 
+    
+<navPoint id="navPoint-134" playOrder="134"> 
+<navLabel> 
+<text>  4.1.5  Ecriture locale de la forme de connexion: le
+potentiel de jauge</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1610004.1.5" /> </navPoint> 
+</navPoint> 
+    
+<navPoint id="navPoint-135" playOrder="135"> 
+<navLabel> 
+<text> 4.2 Connexions dans les fibrés vectoriels associés</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1620004.2" />
+ 
+<navPoint id="navPoint-136" playOrder="136"> 
+<navLabel> 
+<text>  4.2.1  Matrice de connexion A<sub>j</sub><sup>i</sup>, coefficients de connexion A<sub>
+jμ</sub><sup>i</sup></text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1630004.2.1" />  </navPoint> 
+
+ 
+<navPoint id="navPoint-137" playOrder="137"> 
+<navLabel> 
+<text>  4.2.2  Différentielle covariante des sections ∇, dérivée covariante
+∇<sub>μ</sub>, parallélisme</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1640004.2.2" />  </navPoint> 
+    
+<navPoint id="navPoint-138" playOrder="138"> 
+<navLabel> 
+<text>  4.2.3  Remarques concernant les notations</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1650004.2.3" />
+</navPoint> 
+    
+<navPoint id="navPoint-139" playOrder="139"> 
+<navLabel> 
+<text>  4.2.4  Loi de transformation des coefficients de connexion</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1680004.2.4" />  </navPoint> 
+
+ 
+<navPoint id="navPoint-140" playOrder="140"> 
+<navLabel> 
+<text>  4.2.5  Dérivation covariante des sections du fibré dual</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1690004.2.5" />  </navPoint> 
+    
+<navPoint id="navPoint-141" playOrder="141"> 
+<navLabel> 
+<text>
+4.2.6  Dérivation covariante dans les puissances tensorielles d&#x2019;un fibré
+vectoriel</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1700004.2.6" />  </navPoint> 
+    
+<navPoint id="navPoint-142" playOrder="142"> 
+<navLabel> 
+<text>  4.2.7  L&#x2019;opérateur D</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1710004.2.7" />  </navPoint> 
+    
+<navPoint id="navPoint-143" playOrder="143"> 
+<navLabel> 
+<text>  4.2.8  Différentielle
+extérieure covariante d<sup>∇</sup></text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1720004.2.8" /> </navPoint> 
+   
+<navPoint id="navPoint-144" playOrder="144"> 
+<navLabel> 
+<text>  4.2.9  Différentielles et dérivées
+covariantes généralisées ∇</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1760004.2.9" /> </navPoint> 
+</navPoint> 
+  
+<navPoint id="navPoint-145" playOrder="145"> 
+<navLabel> 
+<text>  4.3  Courbure</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1800004.3" />      
+<navPoint id="navPoint-146" playOrder="146"> 
+<navLabel> 
+<text>  4.3.1
+Linéarité de (d<sup>∇</sup>)<sup>2</sup></text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1810004.3.1" />  </navPoint> 
+     
+<navPoint id="navPoint-147" playOrder="147"> 
+<navLabel> 
+<text>  4.3.2  Expression de l&#x2019;opérateur de courbure
+dans les fibrés vectoriels associes</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1820004.3.2" />  </navPoint> 
+    
+<navPoint id="navPoint-148" playOrder="148"> 
+<navLabel> 
+<text>  4.3.3  Equation de structure
+pour la courbure</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1830004.3.3" />  </navPoint> 
+    
+<navPoint id="navPoint-149" playOrder="149"> 
+<navLabel> 
+<text>  4.3.4  Identité de Bianchi pour la courbure</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1840004.3.4" />  </navPoint> 
+
+ 
+<navPoint id="navPoint-150" playOrder="150"> 
+<navLabel> 
+<text>  4.3.5  Transformation de jauge pour la courbure</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1850004.3.5" />  </navPoint> 
+    
+<navPoint id="navPoint-151" playOrder="151"> 
+<navLabel> 
+<text>  4.3.6
+Forme de connexion, différentielle covariante et courbure dans les fibrés
+principaux (compléments)</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1860004.3.6" /> </navPoint> 
+    
+<navPoint id="navPoint-152" playOrder="152"> 
+<navLabel> 
+<text> 4.3.7 Ecritures diverses de la courbure
+F (récapitulatif)</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1980004.3.7" />  </navPoint> 
+    
+<navPoint id="navPoint-153" playOrder="153"> 
+<navLabel> 
+<text>  4.3.8  Connexions et opérations de Cartan</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-1990004.3.8" />  </navPoint> 
+
+ 
+<navPoint id="navPoint-154" playOrder="154"> 
+<navLabel> 
+<text>  4.3.9  Groupe d&#x2019;holonomie d&#x2019;une connexion, fibré d&#x2019;holonomie</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-2000004.3.9" />  </navPoint> 
+
+ 
+<navPoint id="navPoint-155" playOrder="155"> 
+<navLabel> 
+<text>  4.3.10  Réduction des connexions</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-2010004.3.10" />  </navPoint> 
+</navPoint> 
+    
+<navPoint id="navPoint-156" playOrder="156"> 
+<navLabel> 
+<text>  4.4  Cas particulier
+des connexions linéaires</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-2020004.4" />      
+<navPoint id="navPoint-157" playOrder="157"> 
+<navLabel> 
+<text>  4.4.1  Définition et généralités</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-2030004.4.1" />  </navPoint> 
+
+ 
+<navPoint id="navPoint-158" playOrder="158"> 
+<navLabel> 
+<text>  4.4.2  Potentiel de jauge et courbure des connexions linéaires</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-2040004.4.2" />  </navPoint> 
+
+ 
+<navPoint id="navPoint-159" playOrder="159"> 
+<navLabel> 
+<text>  4.4.3  Différentielle extérieure covariante (cas des connexions
+linéaires)</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-2050004.4.3" />  </navPoint> 
+     
+<navPoint id="navPoint-160" playOrder="160"> 
+<navLabel> 
+<text>  4.4.4  Forme canonique (ou forme de soudure)</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-2060004.4.4" />  </navPoint> 
+
+ 
+<navPoint id="navPoint-161" playOrder="161"> 
+<navLabel> 
+<text>  4.4.5  Torsion</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-2070004.4.5" />  </navPoint> 
+    
+<navPoint id="navPoint-162" playOrder="162"> 
+<navLabel> 
+<text>  4.4.6  Equation de structure pour la
+                                                                          
+
+                                                                          
+torsion</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-2080004.4.6" />  </navPoint> 
+    
+<navPoint id="navPoint-163" playOrder="163"> 
+<navLabel> 
+<text>  4.4.7  Identités de Bianchi pour les connexions linéaires</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-2090004.4.7" />  </navPoint> 
+
+ 
+<navPoint id="navPoint-164" playOrder="164"> 
+<navLabel> 
+<text>  4.4.8  Dérivées covariantes secondes, hessien et identités de Ricci</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-2120004.4.8" />  </navPoint> 
+
+ 
+<navPoint id="navPoint-165" playOrder="165"> 
+<navLabel> 
+<text>  4.4.9  Tenseur de Ricci</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-2130004.4.9" />  </navPoint> 
+    
+<navPoint id="navPoint-166" playOrder="166"> 
+<navLabel> 
+<text>  4.4.10  Courbes autoparallèles</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-2140004.4.10" />  </navPoint> 
+
+ 
+<navPoint id="navPoint-167" playOrder="167"> 
+<navLabel> 
+<text>  4.4.11  Connexions linéaires sur les groupes et espaces homogènes</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-2150004.4.11" />  </navPoint> 
+</navPoint> 
+
+ 
+<navPoint id="navPoint-168" playOrder="168"> 
+<navLabel> 
+<text>  4.5  Connexions métriques</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-2160004.5" />      
+<navPoint id="navPoint-169" playOrder="169"> 
+<navLabel> 
+<text>  4.5.1  La métrique</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-2170004.5.1" />  </navPoint> 
+    
+<navPoint id="navPoint-170" playOrder="170"> 
+<navLabel> 
+<text>
+4.5.2 Compatibilité avec la métrique</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-2180004.5.2" /> </navPoint> 
+    
+<navPoint id="navPoint-171" playOrder="171"> 
+<navLabel> 
+<text> 4.5.3 Calcul des coefficients
+de connexion</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-2190004.5.3" />  </navPoint> 
+    
+<navPoint id="navPoint-172" playOrder="172"> 
+<navLabel> 
+<text>  4.5.4  Compléments sur le tenseur de Riemann.
+Propriétés de symétrie.</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-2200004.5.4" /> </navPoint> 
+    
+<navPoint id="navPoint-173" playOrder="173"> 
+<navLabel> 
+<text> 4.5.5 Equation des géodésiques</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-2210004.5.5" /> </navPoint> 
+    
+<navPoint id="navPoint-174" playOrder="174"> 
+<navLabel> 
+<text>
+4.5.6  Tenseur de Ricci, courbure scalaire et tenseur d&#x2019;Einstein, courbures
+sectionelles</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-2220004.5.6" /> </navPoint> 
+    
+<navPoint id="navPoint-175" playOrder="175"> 
+<navLabel> 
+<text> 4.5.7 Dualité de Hodge et laplaciens</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-2230004.5.7" /> </navPoint> 
+    
+<navPoint id="navPoint-176" playOrder="176"> 
+<navLabel> 
+<text> 4.5.8
+Connexions spinorielles et opérateur de Dirac</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-2320004.5.8" />  </navPoint> 
+    
+<navPoint id="navPoint-177" playOrder="177"> 
+<navLabel> 
+<text>  4.5.9  Métriques
+sur les groupes et espaces homogènes</text> 
+</navLabel> 
+<content src="sourcech4.html#x13-2380004.5.9" />  </navPoint> 
+</navPoint> 
+</navPoint> 
+    
+<navPoint id="navPoint-178" playOrder="178"> 
+<navLabel> 
+<text>  5  Un saut dans l&#x2019;infini</text> 
+</navLabel> 
+<content src="sourcech5.html#x15-2390005" />
+ 
+<navPoint id="navPoint-179" playOrder="179"> 
+<navLabel> 
+<text>  5.0.1  Action du groupe de jauge sur l&#x2019;espace des connexions</text> 
+</navLabel> 
+<content src="sourcech5.html#x15-2400005.0.1" />  </navPoint> 
+
+ 
+<navPoint id="navPoint-180" playOrder="180"> 
+<navLabel> 
+<text>  5.0.2  L&#x2019;espace des orbites</text> 
+</navLabel> 
+<content src="sourcech5.html#x15-2410005.0.2" />  </navPoint> 
+    
+<navPoint id="navPoint-181" playOrder="181"> 
+<navLabel> 
+<text>  5.0.3  Conclusion</text> 
+</navLabel> 
+<content src="sourcech5.html#x15-2420005.0.3" />  </navPoint> 
+</navPoint> 
+    
+<navPoint id="navPoint-182" playOrder="182"> 
+<navLabel> 
+<text>
+6  Calcul différentiel pour algèbres non commutatives</text> 
+</navLabel> 
+<content src="sourcech6.html#x16-2430006" />      
+<navPoint id="navPoint-183" playOrder="183"> 
+<navLabel> 
+<text>  6.1
+Remarques philosophico-mathématiques sur les espaces non commutatifs</text> 
+</navLabel> 
+<content src="sourcech6.html#x16-2440006.1" />  </navPoint> 
+
+ 
+<navPoint id="navPoint-184" playOrder="184"> 
+<navLabel> 
+<text>  6.2  Calculs différentiels</text> 
+</navLabel> 
+<content src="sourcech6.html#x16-2450006.2" />      
+<navPoint id="navPoint-185" playOrder="185"> 
+<navLabel> 
+<text>  6.2.1  Remarques</text> 
+</navLabel> 
+<content src="sourcech6.html#x16-2460006.2.1" />  </navPoint> 
+    
+<navPoint id="navPoint-186" playOrder="186"> 
+<navLabel> 
+<text>
+6.2.2  L&#x2019;algèbre différentielle des formes universelles ΩA</text> 
+</navLabel> 
+<content src="sourcech6.html#x16-2470006.2.2" /> </navPoint> 
+  
+<navPoint id="navPoint-187" playOrder="187"> 
+<navLabel> 
+<text>  6.2.3
+L&#x2019;algèbre différentielle Ω<sub>Der</sub>A</text> 
+</navLabel> 
+<content src="sourcech6.html#x16-2530006.2.3" /> </navPoint> 
+  
+<navPoint id="navPoint-188" playOrder="188"> 
+<navLabel> 
+<text>  6.2.4  Algèbres différentielles
+pour espaces non connexes</text> 
+</navLabel> 
+<content src="sourcech6.html#x16-2580006.2.4" />  </navPoint> 
+    
+<navPoint id="navPoint-189" playOrder="189"> 
+<navLabel> 
+<text>  6.2.5  L&#x2019;algèbre différentielle Ω<sub>D</sub>A</text> 
+</navLabel> 
+<content src="sourcech6.html#x16-2590006.2.5" /> </navPoint> 
+</navPoint> 
+
+ 
+<navPoint id="navPoint-190" playOrder="190"> 
+<navLabel> 
+<text>  6.3  Excursion au pays des mathématiques non commutatives</text> 
+</navLabel> 
+<content src="sourcech6.html#x16-2600006.3" />
+ 
+<navPoint id="navPoint-191" playOrder="191"> 
+<navLabel> 
+<text>  6.3.1  Remarques et présentation générale</text> 
+</navLabel> 
+<content src="sourcech6.html#x16-2610006.3.1" />  </navPoint> 
+     
+<navPoint id="navPoint-192" playOrder="192"> 
+<navLabel> 
+<text>  6.3.2
+Topologie non commutative et théorie de la mesure non commutative</text> 
+</navLabel> 
+<content src="sourcech6.html#x16-2620006.3.2" />
+</navPoint> 
+    
+<navPoint id="navPoint-193" playOrder="193"> 
+<navLabel> 
+<text>  6.3.3  Calcul différentiel non commutatif</text> 
+</navLabel> 
+<content src="sourcech6.html#x16-2630006.3.3" />  </navPoint> 
+     
+<navPoint id="navPoint-194" playOrder="194"> 
+<navLabel> 
+<text>  6.3.4
+Espaces fibrés non commutatifs et modules projectifs</text> 
+</navLabel> 
+<content src="sourcech6.html#x16-2640006.3.4" />  </navPoint> 
+    
+<navPoint id="navPoint-195" playOrder="195"> 
+<navLabel> 
+<text>  6.3.5
+Connections généralisées en geometrie non commutative</text> 
+</navLabel> 
+<content src="sourcech6.html#x16-2650006.3.5" />  </navPoint> 
+    
+<navPoint id="navPoint-196" playOrder="196"> 
+<navLabel> 
+<text>  6.3.6
+Cohomologie des espaces non commutatifs</text> 
+</navLabel> 
+<content src="sourcech6.html#x16-2660006.3.6" /> </navPoint> 
+    
+<navPoint id="navPoint-197" playOrder="197"> 
+<navLabel> 
+<text> 6.3.7  Remarque finale</text> 
+</navLabel> 
+<content src="sourcech6.html#x16-2690006.3.7" />
+   </navPoint> 
+</navPoint> 
+</navPoint> 
+</navMap>
+   </ncx> 

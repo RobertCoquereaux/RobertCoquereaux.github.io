@@ -1,0 +1,1209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>Tenseurs et formes exterieures sur les espaces vectoriels</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<!-- html,index=2,3,next --> 
+<meta name="src" content="source.tex"> 
+<link rel="stylesheet" type="text/css" href="source.css"> 
+</head><body 
+>
+   <!--l. 766--><div class="crosslinks"><p class="noindent">[<a 
+href="sourcese6.html" >next</a>] [<a 
+href="sourcese4.html" >prev</a>] [<a 
+href="sourcese4.html#tailsourcese4.html" >prev-tail</a>] [<a 
+href="#tailsourcese5.html">tail</a>] [<a 
+href="sourcech1.html#sourcese5.html" >up</a>] </p></div>
+   <h3 class="sectionHead"><span class="titlemark">1.5   </span> <a 
+ id="x17-300001.5"></a>Tenseurs et formes extérieures sur les espaces vectoriels</h3>
+<!--l. 768--><p class="noindent" >Avant de passer au cas des variétés, il convient d&#8217;effectuer quelques rappels
+d&#8217;algèbre linéaire puisque le passage du cas vectoriel au cas des variétés s&#8217;effectue
+essentiellement en remplaçant un espace vectoriel unique par une famille d&#8217;espaces
+vectoriels &#8220;de même nature&#8221;, paramètrisée par les points de la variété.
+   <h4 class="subsectionHead"><span class="titlemark">1.5.1   </span> <a 
+ id="x17-310001.5.1"></a> Algèbre tensorielle d&#8217;un espace vectoriel</h4>
+<!--l. 777--><p class="noindent" >Soit <span 
+class="cmmi-12">E </span>un espace vectoriel de dimension finie <span 
+class="cmmi-12">n </span>sur un corps <span 
+class="cmmi-12">K</span>. On note <span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup> son
+dual, c&#8217;est à dire l&#8217;ensemble des formes <span 
+class="cmmi-12">K</span>-linéaires sur <span 
+class="cmmi-12">E </span>(applications linéaires
+sur <span 
+class="cmmi-12">E </span>à valeurs dans le corps de base, qu&#8217;on suppose commutatif). En terme de
+composantes, soit <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub><span 
+class="cmsy-10x-x-120">} </span>une base de <span 
+class="cmmi-12">E</span>, et <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmsy-10x-x-120">} </span>la base duale correspondante de
+<span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup>, on a
+   <center class="math-display" >
+<img 
+src="source20x.png" alt="e&#x03BC;[e  ] = &#x03B4;&#x03BC;
+    &#x03BD;    &#x03BD;  " class="math-display" ></center> où
+<span 
+class="cmmi-12">&#x03B4;</span><sub><span 
+class="cmmi-8">&#x03BD;</span></sub><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> désigne le symbole de Kronecker (1 si <span 
+class="cmmi-12">&#x03BC; </span>= <span 
+class="cmmi-12">&#x03BD; </span>et 0 si <span 
+class="cmmi-12">&#x03BC;</span><span 
+class="cmmi-12">&#x2260;</span><span 
+class="cmmi-12">&#x03BD;</span>).
+<!--l. 787--><p class="indent" >   L&#8217;espace vectoriel <span 
+class="cmmi-12">E </span>de référence étant choisi, on écrira (comme le font
+toujours les physiciens) les vecteurs de base avec des &#8220;indices en bas&#8221; et les
+composantes avec des &#8220;indices en haut&#8221;. Bien entendu, la convention est
+opposée pour ce qui concerne l&#8217;espace vectoriel dual. Par ailleurs nous
+adoptons également la &#8220;convention d&#8217;Einstein&#8221;, c&#8217;est à dire que nous
+effectuons toujours une sommation (le signe somme étant sous-entendu)
+sur les indices répétés, lorsque l&#8217;un des indices est en position haute et
+l&#8217;autre en position basse. Nous avons déjà utilisé cette convention dans les
+sous-sections précédentes. Cette convention allège considérablement l&#8217;écriture des
+                                                                          
+
+                                                                          
+formules.
+<!--l. 799--><p class="indent" >   Nous n&#8217;adopterons pas, dans cet ouvrage, la notation dyadique chère à Dirac
+utilisant des <span 
+class="cmsl-12">bra</span><a 
+ id="dx17-31001"></a> et des <span 
+class="cmsl-12">ket </span>car elle est peu usuelle en géométrie mais il est
+peut-être utile d&#8217;y consacrer quelques lignes. Avec cette notation, les
+éléments d&#8217;un certain espace vectoriel <span 
+class="cmmi-12">E </span>choisi une fois pour toutes sont
+notés avec des &#8220;kets&#8221;, par exemple <span 
+class="cmsy-10x-x-120">|</span><span 
+class="cmmi-12">v</span><span 
+class="cmsy-10x-x-120">&#x27E9; </span>et les éléments du dual avec des
+&#8220;bras&#8221;, par exemple <span 
+class="cmsy-10x-x-120">&#x27E8;</span><span 
+class="cmmi-12">&#x03C3;</span><span 
+class="cmsy-10x-x-120">|</span>. L&#8217;évaluation d&#8217;une forme sur un vecteur se note
+ainsi naturellement sous forme de &#8220;bracket&#8221; <span 
+class="cmsy-10x-x-120">&#x27E8;</span><span 
+class="cmmi-12">&#x03C3;</span><span 
+class="cmsy-10x-x-120">|</span><span 
+class="cmmi-12">v</span><span 
+class="cmsy-10x-x-120">&#x27E9;</span>. La relation précédente
+caractérisant la dualité entre une base de <span 
+class="cmmi-12">E </span>et une base de <span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup> s&#8217;écrira
+donc
+   <center class="math-display" >
+<img 
+src="source21x.png" alt="  &#x03BC;        &#x03BC;
+&#x27E8;e |e&#x03BD;&#x27E9; = &#x03B4;&#x03BD;  " class="math-display" ></center> On
+évalue ici une forme sur un vecteur et on obtient donc un nombre.
+<!--l. 813--><p class="indent" >   Par contre, la quantité <span 
+class="cmsy-10x-x-120">|</span><span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03BD;</span></sub><span 
+class="cmsy-10x-x-120">&#x27E9;&#x27E8;</span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmsy-10x-x-120">| </span>désigne une application linéaire de <span 
+class="cmmi-12">E </span>dans <span 
+class="cmmi-12">E</span>
+puisque <span 
+class="cmsy-10x-x-120">|</span><span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03BD;</span></sub><span 
+class="cmsy-10x-x-120">&#x27E9;&#x27E8;</span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmsy-10x-x-120">|</span><span 
+class="cmmi-12">e</span><sub>
+<span 
+class="cmmi-8">&#x03C1;</span></sub><span 
+class="cmsy-10x-x-120">&#x27E9; </span>= <span 
+class="cmsy-10x-x-120">|</span><span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03BD;</span></sub><span 
+class="cmsy-10x-x-120">&#x27E9;</span><span 
+class="cmmi-12">&#x03B4;</span><sub><span 
+class="cmmi-8">&#x03C1;</span></sub><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> = <span 
+class="cmsy-10x-x-120">|</span><span 
+class="cmmi-12">e</span><sub>
+<span 
+class="cmmi-8">&#x03C1;</span></sub><span 
+class="cmsy-10x-x-120">&#x27E9;</span>. Ainsi, en prenant <span 
+class="cmsy-10x-x-120">|</span><span 
+class="cmmi-12">v</span><span 
+class="cmsy-10x-x-120">&#x27E9; </span>= <span 
+class="cmmi-12">v</span><sup><span 
+class="cmmi-8">&#x03C1;</span></sup><span 
+class="cmsy-10x-x-120">|</span><span 
+class="cmmi-12">e</span><sub>
+<span 
+class="cmmi-8">&#x03C1;</span></sub><span 
+class="cmsy-10x-x-120">&#x27E9;</span>, on obtient
+<span 
+class="cmsy-10x-x-120">|</span><span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03BD;</span></sub><span 
+class="cmsy-10x-x-120">&#x27E9;&#x27E8;</span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmsy-10x-x-120">|</span><span 
+class="cmmi-12">v</span><span 
+class="cmsy-10x-x-120">&#x27E9; </span>= <span 
+class="cmmi-12">v</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmsy-10x-x-120">|</span><span 
+class="cmmi-12">e</span><sub>
+<span 
+class="cmmi-8">&#x03BD;</span></sub><span 
+class="cmsy-10x-x-120">&#x27E9;</span>. Pour les mêmes raisons, l&#8217;écriture <span 
+class="cmsy-10x-x-120">|</span><span 
+class="cmmi-12">v</span><span 
+class="cmsy-10x-x-120">&#x27E9;&#x27E8;</span><span 
+class="cmmi-12">&#x03C3;</span><span 
+class="cmsy-10x-x-120">| </span>désigne un opérateur
+(alors que <span 
+class="cmsy-10x-x-120">&#x27E8;</span><span 
+class="cmmi-12">&#x03C3;</span><span 
+class="cmsy-10x-x-120">|</span><span 
+class="cmmi-12">v</span><span 
+class="cmsy-10x-x-120">&#x27E9; </span>désigne un nombre).
+<!--l. 826--><p class="indent" >   L&#8217;identification des vecteurs de <span 
+class="cmmi-12">E </span>avec des applications de <span 
+class="cmmi-12">K </span>dans <span 
+class="cmmi-12">E </span>(à <span 
+class="cmmi-12">v </span><span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="cmmi-12">E</span>
+on associe l&#8217;application <span 
+class="cmmi-12">&#x03BB; </span><span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="cmmi-12">K </span><span 
+class="cmsy-10x-x-120">&#x2192; </span><span 
+class="cmmi-12">&#x03BB;v </span><span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="cmmi-12">E</span>) permet de bien comprendre cette
+dualité et l&#8217;intérêt de la notation dyadique.
+<!--l. 833--><p class="indent" >   Si on se souvient &#8220;qui est qui&#8221;, et si on fait attention à l&#8217;ordre des termes, on
+peut simplifier les notations à l&#8217;extrême et ne noter ni les produits tensoriels, ni
+les symboles <span 
+class="cmsy-10x-x-120">&#x27E8;</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmsy-10x-x-120">| </span>ou <span 
+class="cmsy-10x-x-120">|</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmsy-10x-x-120">&#x27E9;</span>. On écrira ainsi parfois de façon un peu provocante les
+éléments de <span 
+class="cmmi-12">E </span>sous la forme
+   <center class="math-display" >
+<img 
+src="source22x.png" alt="       &#x03BC;
+v = e&#x03BC;v  " class="math-display" ></center>
+                                                                          
+
+                                                                          
+(avec <span 
+class="cmmi-12">v</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> <span 
+class="cmsy-10x-x-120">&#x2208;</span> I R) et les composantes <span 
+class="cmti-12">à droite </span>des vecteurs. On écrira parfois de même
+les éléments du dual <span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup> sous la forme
+   <center class="math-display" >
+<img 
+src="source23x.png" alt="&#x03C3; = &#x03C3;&#x03BC;e&#x03BC;  " class="math-display" ></center>
+(avec <span 
+class="cmmi-12">&#x03C3;</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub> <span 
+class="cmsy-10x-x-120">&#x2208;</span> I R) et les composantes <span 
+class="cmti-12">à gauche </span>des formes linéaires. Si on ne note
+explicitement ni les produits tensoriels ni les évaluations des formes sur les
+vecteurs, on voit que <span 
+class="cmmi-12">&#x03C3;v </span>= <span 
+class="cmmi-12">&#x03C3;</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub>(<span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmmi-12">e</span><sub>
+<span 
+class="cmmi-8">&#x03BD;</span></sub>)<span 
+class="cmmi-12">v</span><sup><span 
+class="cmmi-8">&#x03BD;</span></sup> = <span 
+class="cmmi-12">&#x03C3;</span><sub>
+<span 
+class="cmmi-8">&#x03BC;</span></sub><span 
+class="cmmi-12">&#x03B4;</span><sub><span 
+class="cmmi-8">&#x03BD;</span></sub><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmmi-12">v</span><sup><span 
+class="cmmi-8">&#x03BD;</span></sup> = <span 
+class="cmmi-12">&#x03C3;</span><sub>
+<span 
+class="cmmi-8">&#x03BC;</span></sub><span 
+class="cmmi-12">v</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> est un nombre. Par
+contre <span 
+class="cmmi-12">v&#x03C3; </span>est un opérateur (on pourrait l&#8217;écrire <span 
+class="cmmi-12">v </span><span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">&#x03C3; </span><span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="cmmi-12">E </span><span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup>), plus
+précisément <span 
+class="cmmi-12">v&#x03C3; </span>= <span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub>(<span 
+class="cmmi-12">v</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmmi-12">&#x03C3;</span><sub>
+<span 
+class="cmmi-8">&#x03BD;</span></sub>)<span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BD;</span></sup>.
+<!--l. 852--><p class="indent" >   L&#8217;ordre adopté ci-dessus (le fait d&#8217;écrire les composantes &#8212;qui sont pourtant
+des nombres<span class="frenchb-thinspace">&#x00A0;</span>!&#8212; à droite des vecteurs, etc) est particulièrement adapté aux
+généralisations non commutatives de la géométrie différentielle &#8211; cela vient du
+fait qu&#8217;en Occident, nous écrivons de gauche à droite<span class="frenchb-thinspace">&#x00A0;</span>!&#8211; mais rappelons nous que,
+bien entendu, en géométrie ordinaire &#8220;commutative&#8221; (celle qui nous intéresse ici),
+on peut toujours écrire <span 
+class="cmmi-12">v </span>= <span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub><span 
+class="cmmi-12">v</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> = <span 
+class="cmmi-12">v</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmmi-12">e</span><sub>
+<span 
+class="cmmi-8">&#x03BC;</span></sub>. Un dernier mot de mise en garde<span class="frenchb-nbsp">&#x00A0;</span>:
+lorsqu&#8217;on veut insister sur le fait que le vecteur <span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub> désigne une dérivation <span 
+class="cmmi-12">&#x2202;</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub>, il est
+préférable &#8211; pour ne pas se tromper<span class="frenchb-thinspace">&#x00A0;</span>! &#8211; d&#8217;écrire les composantes du côté
+gauche. Il en va de même en géométrie non commutative où champs
+de vecteurs et dérivations d&#8217;algèbre sont de toute façon des concepts
+différents puisque les premiers forment un module sur l&#8217;algèbre associative des
+&#8220;fonctions&#8221; alors que les dérivations ne forment un module que sur le centre de
+cette algèbre. Aucune ambiguïté n&#8217;est donc possible dans ce cadre plus
+général.
+<!--l. 876--><p class="indent" >   On note <span 
+class="cmex-10x-x-120">&#x2297;</span>
+  <span 
+class="cmmi-12">E </span>l&#8217;algèbre tensorielle sur <span 
+class="cmmi-12">E </span>c&#8217;est à dire la somme directe
+<span 
+class="cmsy-10x-x-120">&#x2295;</span><sub><span 
+class="cmmi-8">p</span><span 
+class="cmr-8">=0</span></sub><sup><span 
+class="cmsy-8">&#x221E;</span></sup><span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">&#x2297;</span><span 
+class="cmmi-8">p</span></sup> où <span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">&#x2297;</span><span 
+class="cmmi-8">p</span></sup> désigne la puissance tensorielle d&#8217;ordre <span 
+class="cmmi-12">p </span>de <span 
+class="cmmi-12">E</span>, c&#8217;est à dire
+encore l&#8217;ensemble des applications multilinéaires d&#8217;ordre <span 
+class="cmmi-12">p </span>sur <span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup>. Soit <span 
+class="cmmi-12">T </span><span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">&#x2297;</span><span 
+class="cmmi-8">p</span></sup>
+alors on peut écrire
+   <center class="math-display" >
+                                                                          
+
+                                                                          
+<img 
+src="source24x.png" alt="T = T &#x03BC;1&#x03BC;2...&#x03BC;pe&#x03BC;1 &#x2297; e&#x03BC;2 &#x2297; ...&#x2297; e &#x03BC;p  " class="math-display" ></center> Les
+éléments de <span 
+class="cmex-10x-x-120">&#x2297;</span>
+  <span 
+class="cmmi-12">E </span>sont encore appelés tenseurs contravariants (d&#8217;ordre <span 
+class="cmmi-12">p </span>s&#8217;ils
+appartiennent à <span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">&#x2297;</span><span 
+class="cmmi-8">p</span></sup>). Bien entendu, cet ensemble est non seulement un espace
+vectoriel (de dimension infinie, les <span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">&#x2297;</span><span 
+class="cmmi-8">p</span></sup> étant de dimension (<span 
+class="cmmi-12">dim</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">E</span>)<sup><span 
+class="cmmi-8">p</span></sup> mais encore
+une algèbre pour le produit tensoriel. On peut ne pas écrire le symbole <span 
+class="cmsy-10x-x-120">&#x2297;</span>
+explicitement dans l&#8217;expression précédente du tenseur <span 
+class="cmmi-12">T</span>, car<span 
+class="cmmi-12">&#x2026;</span> &#8220;what else could it
+be<span class="frenchb-thinspace">&#x00A0;</span>?&#8221;, auquel cas,
+   <center class="math-display" >
+<img 
+src="source25x.png" alt="T  = T &#x03BC;1&#x03BC;2...&#x03BC;pe &#x03BC;1e&#x03BC;2 ...e&#x03BC;p  " class="math-display" ></center> De
+la même façon, on note <span 
+class="cmex-10x-x-120">&#x2297;</span>
+  <span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup> l&#8217;<span 
+class="cmsl-12">alg</span><span 
+class="cmsl-12">èbre tensorielle</span> <a 
+ id="dx17-31002"></a>sur <span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup> c&#8217;est à dire la somme
+directe <span 
+class="cmsy-10x-x-120">&#x2295;</span><sub><span 
+class="cmmi-8">p</span><span 
+class="cmr-8">=0</span></sub><sup><span 
+class="cmsy-8">&#x221E;</span></sup><span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup><sup><span 
+class="cmsy-8">&#x2297;</span><span 
+class="cmmi-8">p</span></sup> où <span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup><sup><span 
+class="cmsy-8">&#x2297;</span><span 
+class="cmmi-8">p</span></sup> désigne la puissance tensorielle d&#8217;ordre <span 
+class="cmmi-12">p </span>de <span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup>, c&#8217;est
+à dire encore l&#8217;ensemble des applications multilinéaires d&#8217;ordre <span 
+class="cmmi-12">p </span>sur <span 
+class="cmmi-12">E</span>. Soit
+<span 
+class="cmmi-12">T </span><span 
+class="cmsy-10x-x-120">&#x2208;</span> <span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup><sup><span 
+class="cmsy-8">&#x2297;</span><span 
+class="cmmi-8">p</span></sup> alors on peut écrire
+   <center class="math-display" >
+<img 
+src="source26x.png" alt="T = T &#x03BC;1&#x03BC;2...&#x03BC;pe&#x03BC;1e&#x03BC;2 ...e &#x03BC;p  " class="math-display" ></center> Les
+éléments de <span 
+class="cmex-10x-x-120">&#x2297;</span>
+  <span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup> sont encore appelés tenseurs covariants (d&#8217;ordre <span 
+class="cmmi-12">p </span>s&#8217;ils
+appartiennent à <span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup><sup><span 
+class="cmsy-8">&#x2297;</span><span 
+class="cmmi-8">p</span></sup>).
+<!--l. 906--><p class="indent" >   Bien entendu, nous pourrons considérer des tenseurs <span 
+class="cmmi-12">p</span>-fois contravariants et
+<span 
+class="cmmi-12">q</span>-fois covariants (éléments <span 
+class="cmmi-12">T </span>de <span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">&#x2297;</span><span 
+class="cmmi-8">p</span></sup> <span 
+class="cmsy-10x-x-120">&#x2297;</span> <span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup><sup><span 
+class="cmsy-8">&#x2297;</span><span 
+class="cmmi-8">q</span></sup>) et pour rester cohérents avec nos
+notations, nous écrirons les produits tensoriels des vecteurs de <span 
+class="cmmi-12">E </span>à gauche de ceux
+de <span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup>, c&#8217;est à dire
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source27x.png" alt="T = T &#x03BC;&#x03BD;11&#x03BD;&#x03BC;22......&#x03BD;&#x03BC;qpe&#x03BC;1e&#x03BC;2 ...e&#x03BC;pe&#x03BD;1e&#x03BD;2 ...e&#x03BD;q  " class="math-display" ></center> ou
+même encore
+   <center class="math-display" >
+<img 
+src="source28x.png" alt="                  &#x03BC; &#x03BC; ...&#x03BC;  &#x03BD;  &#x03BD;     &#x03BD;
+T = e&#x03BC;1e&#x03BC;2 ...e &#x03BC;pT &#x03BD;11&#x03BD;22...&#x03BD;qpe 1e2 ...eq  " class="math-display" ></center> On
+pose <span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup><sup><span 
+class="cmsy-8">&#x2297;</span><span 
+class="cmr-8">0</span></sup> = <span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">&#x2297;</span><span 
+class="cmr-8">0</span></sup> = I R.
+   <h4 class="subsectionHead"><span class="titlemark">1.5.2   </span> <a 
+ id="x17-320001.5.2"></a> Algèbre extérieure d&#8217;un espace vectoriel. Produit extérieur</h4>
+<!--l. 921--><p class="noindent" >On notera &#x039B;<sup><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup>) l&#8217;espace vectoriel des formes <span 
+class="cmmi-12">k</span>-linéaires alternées sur <span 
+class="cmmi-12">E</span>.
+Rappelons que <span 
+class="cmmi-12">T </span><span 
+class="cmsy-10x-x-120">&#x2208;</span> <span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup><sup><span 
+class="cmsy-8">&#x2297;</span><span 
+class="cmmi-8">k</span></sup> est alternée lorsque <span 
+class="cmmi-12">T</span>(<span 
+class="cmmi-12">v</span><sub>
+<span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,v</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,v</span><sub><span 
+class="cmmi-8">j</span></sub><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,v</span><sub><span 
+class="cmmi-8">k</span></sub>) = 0
+dès que <span 
+class="cmmi-12">v</span><sub><span 
+class="cmmi-8">i</span></sub> = <span 
+class="cmmi-12">v</span><sub><span 
+class="cmmi-8">j</span></sub><span 
+class="cmmi-12">,i</span><span 
+class="cmmi-12">&#x2260;</span><span 
+class="cmmi-12">j</span>. Il est équivalent de dire (si le corps de base n&#8217;est
+pas de caractéristique 2) que <span 
+class="cmmi-12">T </span>est antisymétrique, c&#8217;est à dire que
+<span 
+class="cmmi-12">T</span>(<span 
+class="cmmi-12">v</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,v</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,v</span><sub><span 
+class="cmmi-8">j</span></sub><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,v</span><sub><span 
+class="cmmi-8">k</span></sub>) = <span 
+class="cmsy-10x-x-120">-</span><span 
+class="cmmi-12">T</span>(<span 
+class="cmmi-12">v</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,v</span><sub><span 
+class="cmmi-8">j</span></sub><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,v</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,v</span><sub><span 
+class="cmmi-8">k</span></sub>)<span 
+class="cmmi-12">. </span>On dit aussi que <span 
+class="cmmi-12">T </span>est une <span 
+class="cmsl-12">forme</span>
+<span 
+class="cmsl-12">ext</span><span 
+class="cmsl-12">érieure</span><a 
+ id="dx17-32001"></a> d&#8217;ordre <span 
+class="cmmi-12">k </span>et que &#x039B;(<span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup>) est l&#8217;algèbre extérieure construite sur
+<span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup>.
+       <dl class="description"><dt class="description">
+   <span 
+class="cmbx-12">L&#8217;antisym</span><span 
+class="cmbx-12">étriseur</span> <span 
+class="cmmi-12">Alt</span> </dt><dd 
+class="description">
+       <!--l. 934--><p class="noindent" >Le groupe symétrique <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-53.png" alt="S" class="10-120x-x-53" /></span><sub><span 
+class="cmmi-8">k</span></sub> des substitutions sur <span 
+class="cmmi-12">k </span>éléments opère de
+       façon évidente sur les <span 
+class="cmmi-12">k</span>-uplets de vecteurs. Soit <span 
+class="cmmi-12">s </span><span 
+class="cmsy-10x-x-120">&#x2208;<img 
+src="cmsy10-c-53.png" alt="S" class="10-120x-x-53" /></span><sub><span 
+class="cmmi-8">k</span></sub>
+       <center class="math-display" >
+                                                                          
+
+                                                                          
+       <img 
+src="source29x.png" alt="s.(v1,v2,...,vk) = (vs(1),vs(2),...,vs(k))
+       " class="math-display" ></center> Grâce à cette action, on peut définir un opérateur <span 
+class="cmmi-12">Alt </span>qui projette les
+       tenseurs covariants d&#8217;ordre <span 
+class="cmmi-12">k </span>sur les formes <span 
+class="cmmi-12">k</span>-linéaires antisymétriques
+       <center class="math-display" >
+       <img 
+src="source30x.png" alt="|----------&#x2211;-----------|
+|AltT =  1k!  s&#x2208;S &#x03F5;sT os|
+----------------k-------
+       " class="math-display" ></center> où  <span 
+class="cmmi-12">&#x03F5; </span>désigne  la  parité  de  la  substitution  <span 
+class="cmmi-12">s</span>.  On  peut  vérifier  les
+       propriétés suivantes du projecteur <span 
+class="cmmi-12">Alt</span>. Tout d&#8217;abord, c&#8217;est effectivement
+       un projecteur de <span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup><sup><span 
+class="cmsy-8">&#x2297;</span><span 
+class="cmmi-8">p</span></sup> sur &#x039B;<sup><span 
+class="cmmi-8">p</span></sup>(<span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup>), par ailleurs, si <span 
+class="cmmi-12">&#x03C9;,&#x03B7; </span>et <span 
+class="cmmi-12">&#x03B8; </span>désignent
+       trois tenseurs de <span 
+class="cmex-10x-x-120">&#x2297;</span>
+  <span 
+class="cmmi-12">E</span>, alors <span 
+class="cmmi-12">Alt</span>(<span 
+class="cmmi-12">Alt</span>(<span 
+class="cmmi-12">&#x03C9; </span><span 
+class="cmsy-10x-x-120">&#x2297;</span><span 
+class="cmmi-12">&#x03B7;</span>) <span 
+class="cmsy-10x-x-120">&#x2297;</span><span 
+class="cmmi-12">&#x03B8;</span>) = <span 
+class="cmmi-12">Alt</span>(<span 
+class="cmmi-12">&#x03C9; </span><span 
+class="cmsy-10x-x-120">&#x2297;</span><span 
+class="cmmi-12">Alt</span>(<span 
+class="cmmi-12">&#x03B7; </span><span 
+class="cmsy-10x-x-120">&#x2297;</span><span 
+class="cmmi-12">&#x03B8;</span>)
+       et on peut donc écrire cette quantité sous la forme <span 
+class="cmmi-12">Alt</span>(<span 
+class="cmmi-12">&#x03C9; </span><span 
+class="cmsy-10x-x-120">&#x2297;</span><span 
+class="cmmi-12">&#x03B7; </span><span 
+class="cmsy-10x-x-120">&#x2297;</span><span 
+class="cmmi-12">&#x03B8;</span>)<span 
+class="cmmi-12">. </span>La
+       présence du <span 
+class="cmmi-12">k</span>! dans la définition de <span 
+class="cmmi-12">Alt </span>est indispensable pour que la
+       propriété précédente d&#8217;associativité soit vérifiée.
+       </dd><dt class="description">
+   <span 
+class="cmbx-12">Le produit ext</span><span 
+class="cmbx-12">érieur </span><span 
+class="cmsy-10x-x-120">&#x2227;</span> </dt><dd 
+class="description">
+       <!--l. 960--><p class="noindent" >Soient <span 
+class="cmmi-12">&#x03C9; </span><span 
+class="cmsy-10x-x-120">&#x2208; </span>&#x039B;<sup><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup>) et <span 
+class="cmmi-12">&#x03B7; </span><span 
+class="cmsy-10x-x-120">&#x2208; </span>&#x039B;<sup><span 
+class="cmmi-8">p</span></sup>(<span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup>). On définit <span 
+class="cmsl-12">Le produit ext</span><span 
+class="cmsl-12">érieur</span> <a 
+ id="dx17-32002"></a><span 
+class="cmsy-10x-x-120">&#x2227;</span>,
+       <center class="math-display" >
+       <img 
+src="source31x.png" alt="|------------------------------------|
+|&#x03C9; &#x2227; &#x03B7; = (kk+!pp)!! Alt(&#x03C9; &#x2297;  &#x03B7;) &#x2208; &#x039B;k+p (E *)
+-------------------------------------
+       " class="math-display" ></center>
+       <!--l. 969--><p class="noindent" >Propriétés<span class="frenchb-nbsp">&#x00A0;</span>:
+       <!--l. 971--><p class="noindent" ><span 
+class="cmsy-10x-x-120">&#x2227; </span>est associatif et distributif à droite et à gauche sur +
+       <!--l. 973--><p class="noindent" ><span 
+class="cmmi-12">a&#x03C9; </span><span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">&#x03B7; </span>= <span 
+class="cmmi-12">&#x03C9; </span><span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">a&#x03B7; </span>= <span 
+class="cmmi-12">a</span>(<span 
+class="cmmi-12">&#x03C9; </span><span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">&#x03B7;</span>) avec <span 
+class="cmmi-12">a </span><span 
+class="cmsy-10x-x-120">&#x2208;</span> I R
+       <!--l. 976--><p class="noindent" ><span 
+class="cmmi-12">&#x03C9; </span><span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">&#x03B7; </span>= (<span 
+class="cmsy-10x-x-120">-</span>1)<sup><span 
+class="cmr-8">(</span><span 
+class="cmmi-8">pk</span><span 
+class="cmr-8">)</span></sup><span 
+class="cmmi-12">&#x03B7; </span><span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">&#x03C9; </span>En particulier, si <span 
+class="cmmi-12">&#x03C9; </span>est impaire, <span 
+class="cmmi-12">&#x03C9; </span><span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">&#x03C9; </span>= 0
+                                                                          
+
+                                                                          
+       <!--l. 979--><p class="noindent" >Ces  propriétés  font  de  &#x039B;(<span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup>)   =   <span 
+class="cmex-10x-x-120">&#x2295;</span><sub>
+<span 
+class="cmmi-8">k</span><span 
+class="cmr-8">=0</span></sub><sup><span 
+class="cmmi-8">n</span></sup>&#x039B;<sup><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup>)  une  algèbre
+       super-commutative (une algèbre commutative Z Z<sub><span 
+class="cmr-8">2</span></sub>-graduée).
+       <!--l. 983--><p class="noindent" >De plus, si <span 
+class="cmmi-12">&#x03C9; </span><span 
+class="cmsy-10x-x-120">&#x2208; </span>&#x039B;<sup><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup>), <span 
+class="cmmi-12">&#x03B7; </span><span 
+class="cmsy-10x-x-120">&#x2208; </span>&#x039B;<sup><span 
+class="cmmi-8">p</span></sup>(<span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup>) et <span 
+class="cmmi-12">&#x03B8; </span><span 
+class="cmsy-10x-x-120">&#x2208; </span>&#x039B;<sup><span 
+class="cmmi-8">q</span></sup>(<span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup>), alors
+       <center class="math-display" >
+       <img 
+src="source32x.png" alt="            (k +-p +-q)!
+&#x03C9; &#x2227; &#x03B7; &#x2227; &#x03B8; =    k!p!q!   Alt (&#x03C9; &#x2297;  &#x03B7; &#x2297; &#x03B8;)
+       " class="math-display" ></center>
+       <!--l. 988--><p class="noindent" >La présence des diverses factorielles dans les expressions ci-dessus,
+       aussi bien dans la définition de <span 
+class="cmmi-12">Alt </span>que dans celle du produit extérieur,
+       disparaît  dans  bien  des  cas<span class="frenchb-thinspace">&#x00A0;</span>;  par  exemple,  le  lecteur  pourra  se
+       convaincre que si <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">&#x03B8;</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmsy-10x-x-120">} </span>désigne une base de 1<span 
+class="cmsy-10x-x-120">-</span><span 
+class="cmmi-12">formes</span>, les définitions
+       précédentes conduisent aux expressions suivantes<span class="frenchb-nbsp">&#x00A0;</span>:
+       <center class="math-display" >
+       <img 
+src="source33x.png" alt="&#x03B8;1 &#x2227; &#x03B8;2 = &#x03B8;1 &#x2297; &#x03B8;2 - &#x03B8;2 &#x2297; &#x03B8;1   " class="math-display" ></center>
+       et <div class="eqnarray">
+       <center class="math-display" >
+       <img 
+src="source34x.png" alt="  1   2    3    1    2    3   2    3    1    3   1    2
+&#x03B8;  &#x2227; &#x03B8;  &#x2227; &#x03B8; =  &#x03B8; &#x2297;  &#x03B8; &#x2297; &#x03B8;  + &#x03B8;  &#x2297; &#x03B8;  &#x2297; &#x03B8; +  &#x03B8; &#x2297; &#x03B8;  &#x2297; &#x03B8;
+               - &#x03B8;2 &#x2297; &#x03B8;1 &#x2297; &#x03B8;3 - &#x03B8;1 &#x2297; &#x03B8;3 &#x2297; &#x03B8;2 - &#x03B8;3 &#x2297; &#x03B8;2 &#x2297; &#x03B8;1
+                                                                          
+
+                                                                          
+       " class="math-display" ></center>
+       </div>
+       <!--l. 1007--><p class="noindent" >Il faut signaler ici qu&#8217;il existe une autre définition du produit extérieur où
+       les membres de droite des expressions précédentes sont respectivement
+       multipliés par 1<span 
+class="cmmi-12">&#x2215;</span>2! et 1<span 
+class="cmmi-12">&#x2215;</span>3! La définition adoptée ici est telle que si <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub><span 
+class="cmsy-10x-x-120">}</span>
+       désigne une base de l&#8217;espace vectoriel considéré et <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">&#x03B8;</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmsy-10x-x-120">} </span>la base duale
+       correspondante, nous avons
+       <center class="math-display" >
+       <img 
+src="source35x.png" alt="&#x03B8;1 &#x2227; &#x03B8;2 &#x2227; ...&#x2227; &#x03B8;n(e1,e2,...,en) = 1
+       " class="math-display" ></center>
+       </dd><dt class="description">
+   <span 
+class="cmbx-12">D</span><span 
+class="cmbx-12">épendance et ind</span><span 
+class="cmbx-12">épendance lin</span><span 
+class="cmbx-12">éaire des formes ext</span><span 
+class="cmbx-12">érieures</span> </dt><dd 
+class="description">
+       <!--l. 1018--><p class="noindent" >Désignons par <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">&#x03B8;</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmsy-10x-x-120">}</span><sub>
+<span 
+class="cmmi-8">&#x03BC;</span><span 
+class="cmsy-8">&#x2208;{</span><span 
+class="cmr-8">1</span><span 
+class="cmmi-8">,</span><span 
+class="cmr-8">2</span><span 
+class="cmmi-8">&#x2026;</span><span 
+class="cmmi-8">n</span><span 
+class="cmsy-8">}</span></sub> une base de <span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup>. Considérons un monôme tel
+       que <span 
+class="cmmi-12">&#x03B8;</span><sup><span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmr-6">1</span></sub></sup> <span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">&#x03B8;</span><sup><span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmr-6">2</span></sub></sup> <span 
+class="cmsy-10x-x-120">&#x2227;</span><span 
+class="cmmi-12">&#x2026;</span> <span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">&#x03B8;</span><sup><span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmmi-6">k</span></sub></sup>. Par suite de l&#8217;antisymétrie du produit extérieur, il
+       est clair qu&#8217;une telle expression est nulle dès qu&#8217;un vecteur de base est
+       répété deux fois (c&#8217;est une autre façon de dire qu&#8217;un tenseur complètement
+       antisymétrique est nul dès que deux indices sont répétés). Par ailleurs,
+       deux monômes de ce type qui ne diffèrent que par l&#8217;ordre des termes sont
+       soit égaux, soit opposés. On peut donc supposer que les indices sont
+       ordonnés de la façon suivante<span class="frenchb-nbsp">&#x00A0;</span>: 1 <span 
+class="cmsy-10x-x-120">&#x2264; </span><span 
+class="cmmi-12">&#x03BC;</span><sub><span 
+class="cmr-8">1</span></sub> <span 
+class="cmmi-12">&#x003C; &#x03BC;</span><sub><span 
+class="cmr-8">2</span></sub> <span 
+class="cmmi-12">&#x003C;</span> <span 
+class="cmmi-12">&#x2026;</span> <span 
+class="cmmi-12">&#x003C; &#x03BC;</span><sub><span 
+class="cmmi-8">k</span></sub> <span 
+class="cmsy-10x-x-120">&#x2264; </span><span 
+class="cmmi-12">n</span>. Enfin, il est
+       facile de voir que toute forme extérieure d&#8217;ordre <span 
+class="cmmi-12">k</span>, c&#8217;est à dire tout
+       élément de &#x039B;<sup><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup>) peut se décomposer sur des monômes de ce
+       type. La dimension de l&#8217;espace vectoriel &#x039B;<sup><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup>) est donc (<sub>
+<span 
+class="cmmi-8">k</span></sub><sup><span 
+class="cmmi-8">n</span></sup>). Bien
+       entendu, lorsque <span 
+class="cmmi-12">k &#x003E; n</span>, toute forme extérieure est nulle (deux indices
+       sont alors automatiquement répétés<span class="frenchb-thinspace">&#x00A0;</span>!). La dimension de l&#8217;algèbre
+       extérieure est donc &#x03A3;<sub><span 
+class="cmmi-8">k</span><span 
+class="cmr-8">=0</span></sub><sup><span 
+class="cmmi-8">n</span></sup><sub>
+<span 
+class="cmmi-8">k</span></sub><sup><span 
+class="cmmi-8">n</span></sup> = 2<sup><span 
+class="cmmi-8">n</span></sup>. Pour conclure ce paragraphe, citons
+       sans démonstration (mais elle est facile) le petit résultat bien utile
+       suivant<span class="frenchb-nbsp">&#x00A0;</span>: Les formes linéaires <span 
+class="cmmi-12">&#x03C9;</span><sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmmi-12">,&#x03C9;</span><sup><span 
+class="cmr-8">2</span></sup><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,&#x03C9;</span><sup><span 
+class="cmmi-8">p</span></sup> sont indépendantes si
+       et seulement si leur produit extérieur <span 
+class="cmmi-12">&#x03C9;</span><sup><span 
+class="cmr-8">1</span></sup> <span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">&#x03C9;</span><sup><span 
+class="cmr-8">2</span></sup> <span 
+class="cmsy-10x-x-120">&#x2227;</span><span 
+class="cmmi-12">&#x2026;</span> <span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">&#x03C9;</span><sup><span 
+class="cmmi-8">p</span></sup> est non
+       nul.
+       </dd><dt class="description">
+   <span 
+class="cmbx-12">Ecriture des formes ext</span><span 
+class="cmbx-12">érieures</span> </dt><dd 
+class="description">
+                                                                          
+
+                                                                          
+       <!--l. 1044--><p class="noindent" >Une forme extérieure <span 
+class="cmmi-12">&#x03C9; </span>d&#8217;ordre <span 
+class="cmmi-12">k </span>peut s&#8217;écrire de trois façons possibles.
+       Tout d&#8217;abord, on peut la considérer comme un tenseur <span 
+class="cmmi-12">k </span>fois covariant, et ,
+       à ce titre, on peut la décomposer (existence et unicité) sur la base des
+       tenseurs d&#8217;ordre <span 
+class="cmmi-12">k</span>. On peut donc écrire
+       <center class="math-display" >
+       <img 
+src="source36x.png" alt="|-------------&#x03BC;-----&#x03BC;----------&#x03BC;--|
+&#x03C9;-=--&#x03C9;&#x03BC;1&#x03BC;2...&#x03BC;k&#x03B8;-1-&#x2297;-&#x03B8;-1 &#x2297;-...&#x2297;-&#x03B8;-k-|  " class="math-display" ></center>
+       On peut aussi la décomposer sur la base des formes extérieures
+       <span 
+class="cmmi-12">&#x03B8;</span><sup><span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmr-6">1</span></sub></sup> <span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">&#x03B8;</span><sup><span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmr-6">2</span></sub></sup> <span 
+class="cmsy-10x-x-120">&#x2227;</span><span 
+class="cmmi-12">&#x2026;</span> <span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">&#x03B8;</span><sup><span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmmi-6">k</span></sub></sup>, à condition d&#8217;ordonner les indices (sinon, la famille
+       précédente est génératrice mais n&#8217;est pas libre et donc n&#8217;est pas une
+       base<span class="frenchb-thinspace">&#x00A0;</span>!). <div class="eqnarray">
+       <center class="math-display" >
+       <img 
+src="source37x.png" alt="         &#x2211;
+&#x03C9; =             &#x03C9;&#x03BC;1&#x03BC;2...&#x03BC;k&#x03B8;&#x03BC;1 &#x2227; &#x03B8;&#x03BC;2 &#x2227; ...&#x2227; &#x03B8;&#x03BC;k
+     &#x03BC;1&#x003C;&#x03BC;2&#x003C;...&#x003C; &#x03BC;k
+  =  &#x03C9;        &#x03B8;&#x03BC;1 &#x2227; &#x03B8;&#x03BC;2 &#x2227; ...&#x2227; &#x03B8;&#x03BC;k
+      |&#x03BC;1&#x03BC;2...&#x03BC;k|
+       " class="math-display" ></center>
+       </div>La deuxième égalité utilise une notation <span 
+class="cmsy-10x-x-120">|</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmsy-10x-x-120">| </span>qui signifie que non seulement
+       on utilise la convention d&#8217;Einstein (sommation sur les indices répétés) mais
+       qu&#8217;on décide d&#8217;ordonner les indices.
+       <!--l. 1074--><p class="noindent" >La troisième écriture &#8212; de loin, la plus utilisée &#8212; est celle où on
+       décompose la forme <span 
+class="cmmi-12">&#x03C9; </span>(toujours la même) sur la famille génératrice des
+       formes extérieures <span 
+class="cmmi-12">&#x03B8;</span><sup><span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmr-6">1</span></sub></sup> <span 
+class="cmsy-10x-x-120">&#x2227;</span><span 
+class="cmmi-12">&#x03B8;</span><sup><span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmr-6">1</span></sub></sup> <span 
+class="cmsy-10x-x-120">&#x2227;</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmsy-10x-x-120">&#x2227;</span><span 
+class="cmmi-12">&#x03B8;</span><sup><span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmmi-6">k</span></sub></sup> mais sans ordonner les indices<span class="frenchb-thinspace">&#x00A0;</span>! Bien
+       entendu, pour un ensemble d&#8217;indices donnés (pour un ensemble de vecteurs
+       de base donné), <span 
+class="cmmi-12">k</span>! des monômes précédents vont être égaux (ou opposés)
+       et il faudra &#8220;corriger&#8221; le développement de <span 
+class="cmmi-12">&#x03C9; </span>en rajoutant un 1<span 
+class="cmmi-12">&#x2215;k</span>! devant
+                                                                          
+
+                                                                          
+       l&#8217;expression. Ainsi donc,
+       <center class="math-display" >
+       <img 
+src="source38x.png" alt="|--------------------------------------|
+|&#x03C9; = k1!  &#x03C9; &#x03BC;1&#x03BC;2...&#x03BC;k   &#x03B8;&#x03BC;1 &#x2227; &#x03B8;&#x03BC;2 &#x2227; ...&#x2227; &#x03B8;&#x03BC;k
+----------------------------------------  " class="math-display" ></center>
+       Notons que la première écriture contient <span 
+class="cmmi-12">n</span><sup><span 
+class="cmmi-8">k</span></sup> termes (et il y a unicité de la
+       décomposition), la seconde contient    <span 
+class="cmmi-8">n</span><span 
+class="cmr-8">!</span> ____
+<span 
+class="cmmi-8">k</span><span 
+class="cmr-8">!(</span><span 
+class="cmmi-8">n</span><span 
+class="cmsy-8">-</span><span 
+class="cmmi-8">k</span><span 
+class="cmr-8">)!</span>  termes (et il y a unicité de la
+       décomposition), la troisième contient <span 
+class="cmmi-12">n</span><sup><span 
+class="cmmi-8">k</span></sup> termes (mais il n&#8217;y a pas
+       unicité de la décomposition). Il est quelquefois utile, pour alléger les
+       notations, d&#8217;introduire des multi-indices <span 
+class="cmmi-12">M </span>= (<span 
+class="cmmi-12">&#x03BC;</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">&#x03BC;</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">&#x03BC;</span><sub><span 
+class="cmmi-8">k</span></sub>). Alors, les deux
+       décompositions précédentes s&#8217;écrivent
+       <center class="math-display" >
+       <img 
+src="source39x.png" alt="               &#x03C9;M
+&#x03C9; =  &#x03C9;|M|&#x03B8;M =  ---&#x03B8;M
+                k!
+       " class="math-display" ></center>
+       </dd></dl>
+<!--l. 1103--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">1.5.3   </span> <a 
+ id="x17-330001.5.3"></a> Produit intérieur d&#8217;une forme par un vecteur</h4>
+<a 
+ id="dx17-33001"></a>
+<!--l. 1106--><p class="noindent" >Soit <span 
+class="cmmi-12">E </span>un espace vectoriel et &#x039B;(<span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup>) l&#8217;algèbre extérieure sur son dual. Nous avons
+défini précédemment le produit <span 
+class="cmti-12">ext</span><span 
+class="cmti-12">érieur</span>, qui est une loi de composition interne à
+l&#8217;algèbre extérieure. Au contraire, l&#8217;opération que nous allons maintenant définir,
+le produit <span 
+class="cmti-12">int</span><span 
+class="cmti-12">érieur </span>n&#8217;est pas un produit au sens usuel du terme, en effet, il
+associe, à la donnée d&#8217;une forme extérieure <span 
+class="cmmi-12">&#x03C9; </span>d&#8217;ordre <span 
+class="cmmi-12">k </span>(un élément de &#x039B;<sup><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup>))
+et d&#8217;un vecteur <span 
+class="cmmi-12">v </span>(un élément de <span 
+class="cmmi-12">E</span>) une autre forme différentielle, mais
+                                                                          
+
+                                                                          
+maintenant d&#8217;ordre <span 
+class="cmmi-12">k </span><span 
+class="cmsy-10x-x-120">- </span>1, c&#8217;est à dire un élément de &#x039B;<sup><span 
+class="cmmi-8">k</span><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sup>(<span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup>). Cette nouvelle
+forme est simplement obtenue en &#8220;contractant&#8221; <span 
+class="cmmi-12">&#x03C9; </span>et <span 
+class="cmmi-12">v</span>, plus précisément, en
+écrivant
+   <center class="math-display" >
+<img 
+src="source40x.png" alt="---------------------------------------------
+|                                           |
+-[iv&#x03C9;](v1,v2,...,vk-1)-=-&#x03C9;(v,v1,v2,...,vk--1)-  " class="math-display" ></center>
+c&#8217;est à dire encore, en terme de composantes et en notant <span 
+class="cmmi-12">&#x03B1; </span>= <span 
+class="cmmi-12">i</span><sub><span 
+class="cmmi-8">v</span></sub><span 
+class="cmmi-12">&#x03C9;</span>,
+   <center class="math-display" >
+<img 
+src="source41x.png" alt="                &#x03BC;
+&#x03B1; &#x03BC;1,&#x03BC;2,...,&#x03BC;k-1 = v &#x03C9;&#x03BC;,&#x03BC;1,&#x03BC;2,...,&#x03BC;k-1   " class="math-display" ></center>
+Cette opération est quelquefois notée <span 
+class="cmmi-12">v</span><span 
+class="cmsy-10x-x-120">&#x230A;</span><span 
+class="cmmi-12">&#x03C9; </span>au lieu de <span 
+class="cmmi-12">i</span><sub><span 
+class="cmmi-8">v</span></sub><span 
+class="cmmi-12">&#x03C9;</span>.
+<!--l. 1128--><p class="indent" >   Il résulte de l&#8217;antisymétrie des formes extérieures que deux opérations <span 
+class="cmmi-12">i</span><sub><span 
+class="cmmi-8">v</span></sub> et <span 
+class="cmmi-12">i</span><sub><span 
+class="cmmi-8">w</span></sub>
+anticommutent, en particulier, le carré de l&#8217;opération <span 
+class="cmmi-12">i</span><sub><span 
+class="cmmi-8">v</span></sub> est nul<span class="frenchb-nbsp">&#x00A0;</span>:<span 
+class="cmmi-12">i</span><sub><span 
+class="cmmi-8">v</span></sub><span 
+class="cmmi-12">i</span><sub><span 
+class="cmmi-8">w</span></sub><span 
+class="cmmi-12">&#x03C9; </span>= <span 
+class="cmsy-10x-x-120">-</span><span 
+class="cmmi-12">i</span><sub><span 
+class="cmmi-8">w</span></sub><span 
+class="cmmi-12">i</span><sub><span 
+class="cmmi-8">v</span></sub><span 
+class="cmmi-12">&#x03C9;</span>
+et <span 
+class="cmmi-12">i</span><sub><span 
+class="cmmi-8">v</span></sub><span 
+class="cmmi-12">i</span><sub><span 
+class="cmmi-8">v</span></sub><span 
+class="cmmi-12">&#x03C9; </span>= 0, ce qu&#8217;on écrit simplement
+   <center class="math-display" >
+<img 
+src="source42x.png" alt="|---------------------------|
+-iviw-=--- iwiv-et---iviv-=-0-|  " class="math-display" ></center> Le
+produit intérieur est une antidérivation de l&#8217;algèbre extérieure, c&#8217;est à dire que
+pour <span 
+class="cmmi-12">&#x03C9;</span><sub><span 
+class="cmr-8">1</span></sub> <span 
+class="cmsy-10x-x-120">&#x2208; </span>&#x039B;<sup><span 
+class="cmmi-8">k</span><sub><span 
+class="cmr-6">1</span></sub></sup>(<span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup>) et <span 
+class="cmmi-12">&#x03C9;</span><sub>
+<span 
+class="cmr-8">2</span></sub> <span 
+class="cmsy-10x-x-120">&#x2208; </span>&#x039B;<sup><span 
+class="cmmi-8">k</span><sub><span 
+class="cmr-6">2</span></sub></sup>(<span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup>), nous avons un analogue Z Z<sub>
+<span 
+class="cmr-8">2</span></sub>-gradué de la
+règle de Leibniz
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source43x.png" alt="|---------------------------------------------|
+|iv(&#x03C9;1 &#x2227; &#x03C9;2 ) = iv(&#x03C9;1 ) &#x2227; &#x03C9;2 + (- 1)k1&#x03C9;1 &#x2227; iv(&#x03C9;2)
+----------------------------------------------  " class="math-display" ></center> En
+particulier, si <span 
+class="cmmi-12">v </span>= <span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmmi-6">i</span></sub></sub> est un vecteur de base et si <span 
+class="cmmi-12">&#x03C9; </span>est égal au produit extérieur
+d&#8217;un certain nombre de vecteurs de la base duale, l&#8217;expression précédente donne
+simplement<span class="frenchb-nbsp">&#x00A0;</span>: <div class="eqnarray">
+   <center class="math-display" >
+<img 
+src="source44x.png" alt="i(e )&#x03C3;&#x03BC;1 &#x2227; ...&#x2227; &#x03C3;&#x03BC;j &#x2227; &#x22C5;&#x22C5;&#x22C5; &#x2227; &#x03C3;&#x03BC;k = (- 1)j-1&#x03C3;&#x03BC;1 &#x2227; ...&#x2227; ^&#x03C3;&#x03BC;j &#x2227; ...&#x03C3;&#x03BC;k si  i = j
+   &#x03BC;i
+                               = 0   si  i &#x2044;&#x2208; {&#x03BC;1, &#x03BC;2,...,&#x03BC;k}
+" class="math-display" ></center>
+</div>où le symbole <span style="margin-left:3.26288pt" class="tmspace"></span><span 
+class="cmex-10x-x-120">^</span> <span style="margin-left:3.26288pt" class="tmspace"></span>désigne l&#8217;omission du symbole au dessus duquel il est situé.
+<!--l. 1163--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">1.5.4   </span> <a 
+ id="x17-340001.5.4"></a> Transformation du produit extérieur et du produit intérieur par
+endomorphismes</h4>
+<!--l. 1170--><p class="noindent" >Soit <span 
+class="cmmi-12">f</span><sub><span 
+class="cmsy-8">~</span></sub> un endomorphisme de l&#8217;espace vectoriel <span 
+class="cmmi-12">E </span>et soit <span 
+class="cmmi-12">f</span><sup><span 
+class="cmsy-8">~</span></sup> l&#8217;endomorphisme
+dual (aussi appelé transposé). Rappelons ce que cela signifie<span class="frenchb-nbsp">&#x00A0;</span>: <span 
+class="cmmi-12">f</span><sub><span 
+class="cmsy-8">~</span></sub> est une
+application linéaire de <span 
+class="cmmi-12">E </span>dans <span 
+class="cmmi-12">E </span>et <span 
+class="cmmi-12">f</span><sup><span 
+class="cmsy-8">~</span></sup> est une application linéaire du dual
+<span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup> dans lui-même définie comme suit<span class="frenchb-nbsp">&#x00A0;</span>: soient <span 
+class="cmmi-12">v </span><span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="cmmi-12">E </span>et <span 
+class="cmmi-12">&#x03B8; </span><span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="cmmi-12">E</span><sup><span 
+class="cmsy-8">*</span></sup>, alors
+<span 
+class="cmmi-12">f</span><sup><span 
+class="cmsy-8">~</span></sup>(<span 
+class="cmmi-12">&#x03B8;</span>)(<span 
+class="cmmi-12">v</span>) = <span 
+class="cmmi-12">&#x03B8;</span>(<span 
+class="cmmi-12">f</span><sub>
+<span 
+class="cmsy-8">~</span></sub>(<span 
+class="cmmi-12">v</span>)), c&#8217;est à dire encore <span 
+class="cmmi-12">f</span><sup><span 
+class="cmsy-8">~</span></sup>(<span 
+class="cmmi-12">&#x03B8;</span>) = <span 
+class="cmmi-12">&#x03B8;of</span><sub>
+<span 
+class="cmsy-8">~</span></sub>. On peut alors vérifier
+aisément que
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source45x.png" alt=" ~            ~       ~
+f (&#x03C9; &#x2227; &#x03B7;) = f  (&#x03C9;) &#x2227; f (&#x03B7; )  " class="math-display" ></center> et
+que
+   <center class="math-display" >
+<img 
+src="source46x.png" alt="if~(v)(&#x03C9; ) = ivf ~(&#x03C9; )  " class="math-display" ></center>
+Remarque sur les notations<span class="frenchb-nbsp">&#x00A0;</span>: celle utilisant <span 
+class="cmsy-10x-x-120">* </span>et non <span 
+class="cmsy-10x-x-120">~</span> est beaucoup plus
+utilisée<span class="frenchb-thinspace">&#x00A0;</span>; cela dit, le symbole <span 
+class="cmsy-10x-x-120">* </span>est &#8220;trop&#8221; utilisé et peut quelquefois prêter à
+confusion puisqu&#8217;il peut aussi bien désigner la conjugaison complexe, la dualité de
+Hodge, qu&#8217;une involution quelconque... Par ailleurs le &#8220;tilde&#8221; est sous-employé (il
+désigne traditionnellement l&#8217;expression matricielle de <span 
+class="cmmi-12">f</span><sup><span 
+class="cmsy-8">~</span></sup>), il en va de même de la
+&#8220;flèche&#8221;. Dans le cadre de cet ouvrage, nous écrirons indifféremment
+<span 
+class="cmmi-12">f</span><sub><span 
+class="cmsy-8">*</span></sub> = <span 
+class="cmmi-12">f</span><sub><span 
+class="cmsy-8">~</span></sub> = <img 
+src="source47x.png" alt="-&#x2192;
+ f"  class="mathpalette" > et <span 
+class="cmmi-12">f</span><sup><span 
+class="cmsy-8">*</span></sup> = <span 
+class="cmmi-12">f</span><sup><span 
+class="cmsy-8">~</span></sup> = <img 
+src="source48x.png" alt="&#x2190;-
+f"  class="mathpalette" >. Notons pour finir que la notation <span 
+class="cmmi-12">f</span><sub>
+<span 
+class="cmsy-8">~</span></sub> est en
+général inutile dans le cas des espaces vectoriels puisqu&#8217;on peut écrire tout
+simplement <span 
+class="cmmi-12">f </span>= <span 
+class="cmmi-12">f</span><sub><span 
+class="cmsy-8">~</span></sub>, mais dans le cas des variétés, nous verrons que <span 
+class="cmmi-12">f</span><span 
+class="cmmi-12">&#x2260;</span><span 
+class="cmmi-12">f</span><sub><span 
+class="cmsy-8">~</span></sub><span 
+class="cmmi-12">&#x2260;</span><span 
+class="cmmi-12">f</span><sup><span 
+class="cmsy-8">~</span></sup><span class="frenchb-thinspace">&#x00A0;</span>!
+                                                                          
+
+                                                                          
+   <!--l. 1206--><div class="crosslinks"><p class="noindent">[<a 
+href="sourcese6.html" >next</a>] [<a 
+href="sourcese4.html" >prev</a>] [<a 
+href="sourcese4.html#tailsourcese4.html" >prev-tail</a>] [<a 
+href="sourcese5.html" >front</a>] [<a 
+href="sourcech1.html#sourcese5.html" >up</a>] </p></div>
+<!--l. 1206--><p class="indent" >   <a 
+ id="tailsourcese5.html"></a>   
+</body></html> 

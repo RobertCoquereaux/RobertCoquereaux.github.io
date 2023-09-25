@@ -1,0 +1,519 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>Orientation &#8211; Element de volume
+Determinant &#8211; Integration</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<!-- html,index=2,3,next --> 
+<meta name="src" content="source.tex"> 
+<link rel="stylesheet" type="text/css" href="source.css"> 
+</head><body 
+>
+   <!--l. 2090--><div class="crosslinks"><p class="noindent">[<a 
+href="sourcese11.html" >next</a>] [<a 
+href="sourcese9.html" >prev</a>] [<a 
+href="sourcese9.html#tailsourcese9.html" >prev-tail</a>] [<a 
+href="#tailsourcese10.html">tail</a>] [<a 
+href="sourcech1.html#sourcese10.html" >up</a>] </p></div>
+   <h3 class="sectionHead"><span class="titlemark">1.10   </span> <a 
+ id="x22-430001.10"></a>Orientation &#8211; Elément de volume <br 
+class="newline" />Déterminant &#8211; Intégration</h3>
+<!--l. 2092--><p class="noindent" >En géométrie élémentaire, l&#8217;orientation d&#8217;un espace vectoriel réel est spécifiée par
+le choix d&#8217;une base <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-42.png" alt="B" class="10-120x-x-42" /> </span>(choix <span 
+class="cmti-12">ordonn</span><span 
+class="cmti-12">é </span>d&#8217;un système libre et générateur). Le
+choix d&#8217;une autre base <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-42.png" alt="B" class="10-120x-x-42" />&#x2032;</span> détermine un isomorphisme <span 
+class="cmmi-12">g </span>qui envoie les
+vecteurs de <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-42.png" alt="B" class="10-120x-x-42" /> </span>sur les vecteurs de <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-42.png" alt="B" class="10-120x-x-42" />&#x2032;</span>. On dit que <span 
+class="cmmi-12">g </span>préserve l&#8217;orientation si
+det <span 
+class="cmmi-12">g &#x003E; </span>0 et renverse l&#8217;orientation si det <span 
+class="cmmi-12">g &#x003C; </span>0. Dans le premier cas on dit
+que <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-42.png" alt="B" class="10-120x-x-42" /> </span>et <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-42.png" alt="B" class="10-120x-x-42" />&#x2032;</span> ont la même orientation<span class="frenchb-thinspace">&#x00A0;</span>; dans le second cas, <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-42.png" alt="B" class="10-120x-x-42" /> </span>et <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-42.png" alt="B" class="10-120x-x-42" />&#x2032;</span> ont
+des orientations opposées. On peut alors répartir les bases de l&#8217;espace
+vectoriel en question en deux classes d&#8217;équivalence correspondant aux deux
+orientations possibles. Afin de généraliser cette discussion au cadre des
+variétés, il est utile de reformuler ce qui précède en terme de formes
+extérieures. Nous allons donc travailler avec les bases duales et poser
+<span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BC;</span><span 
+class="cmsy-8">&#x2032;</span></sup> = <span 
+class="cmmi-12">f</span>(<span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup>).
+<!--l. 2114--><p class="indent" >   Soit <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-42.png" alt="B" class="10-120x-x-42" /></span><sup><span 
+class="cmsy-8">*</span></sup> = <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmmi-12">,e</span><sup><span 
+class="cmr-8">2</span></sup><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,e</span><sup><span 
+class="cmmi-8">n</span></sup><span 
+class="cmsy-10x-x-120">} </span>et <span 
+class="cmmi-12">&#x03C9; </span>= <span 
+class="cmmi-12">e</span><sup><span 
+class="cmr-8">1</span></sup> <span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmr-8">2</span></sup> <span 
+class="cmsy-10x-x-120">&#x2227;</span><img 
+src="source125x.png" alt="&#x22C5;&#x22C5;&#x22C5;"  class="@cdots" ><span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">n</span></sup>.
+<!--l. 2118--><p class="indent" >   Soit <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-42.png" alt="B" class="10-120x-x-42" />&#x2032;</span><sup><span 
+class="cmsy-8">*</span></sup> = <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmr-8">1</span><span 
+class="cmsy-8">&#x2032;</span></sup><span 
+class="cmmi-12">,e</span><sup><span 
+class="cmr-8">2</span><span 
+class="cmsy-8">&#x2032;</span></sup><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,e</span><sup><span 
+class="cmmi-8">n</span><span 
+class="cmsy-8">&#x2032;</span></sup><span 
+class="cmsy-10x-x-120">} </span>avec <span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BC;</span><span 
+class="cmsy-8">&#x2032;</span></sup> = <span 
+class="cmmi-12">f</span>(<span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup>) et <span 
+class="cmmi-12">&#x03C9;</span><span 
+class="cmsy-10x-x-120">&#x2032; </span>= <span 
+class="cmmi-12">f</span>(<span 
+class="cmmi-12">e</span><sup><span 
+class="cmr-8">1</span></sup>) <span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">f</span>(<span 
+class="cmmi-12">e</span><sup><span 
+class="cmr-8">2</span></sup>) <span 
+class="cmsy-10x-x-120">&#x2227;</span><img 
+src="source126x.png" alt="&#x22C5; &#x22C5;&#x22C5;"  class="@cdots" ><span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">f</span>(<span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">n</span></sup>).
+L&#8217;espace des formes extérieures de degré <span 
+class="cmmi-12">n </span>sur un espace vectoriel de dimension
+<span 
+class="cmmi-12">n </span>est un espace vectoriel de dimension 1. Les formes <span 
+class="cmmi-12">&#x03C9; </span>et <span 
+class="cmmi-12">&#x03C9;</span><span 
+class="cmsy-10x-x-120">&#x2032; </span>sont donc
+proportionnelles et le coefficient de proportionnalité n&#8217;est autre que le
+déterminant de <span 
+class="cmmi-12">f</span><span class="frenchb-nbsp">&#x00A0;</span>: <span 
+class="cmmi-12">&#x03C9;</span><span 
+class="cmsy-10x-x-120">&#x2032; </span>= (det <span 
+class="cmmi-12">f</span>)<span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03C9;</span>. Nous laissons au lecteur le soin de retrouver la
+définition élémentaire des déterminants en écrivant <span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BC;</span><span 
+class="cmsy-8">&#x2032;</span></sup> = &#x039B;<sub>
+<span 
+class="cmmi-8">&#x03BC;</span></sub><sup><span 
+class="cmmi-8">&#x03BC;</span><span 
+class="cmsy-8">&#x2032;</span></sup><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup>.
+<!--l. 2133--><p class="indent" >   L&#8217;orientation de l&#8217;espace vectoriel qui était définie par le choix de <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-42.png" alt="B" class="10-120x-x-42" /> </span>peut tout
+aussi bien se définir par le choix de la <span 
+class="cmmi-12">n</span>-forme <span 
+class="cmmi-12">&#x03C9;</span>. Deux <span 
+class="cmmi-12">n</span>-formes <span 
+class="cmmi-12">&#x03C9; </span>et <span 
+class="cmmi-12">&#x03C9;</span><span 
+class="cmsy-10x-x-120">&#x2032;</span>
+(obligatoirement proportionnelles) définissent la même orientation si le coefficient
+de proportionnalité est positif et deux orientations de sens contraire si le
+coefficient en question est négatif. Nous pouvons maintenant passer au cas des
+variétés. Nous venons de voir que l&#8217;orientation, en chaque point <span 
+class="cmmi-12">P </span>de <span 
+class="cmmi-12">M</span>, de
+l&#8217;espace tangent <span 
+class="cmmi-12">T</span><sub><span 
+class="cmmi-8">P</span> </sub><span 
+class="cmmi-12">M</span>, est équivalente au (ou définie par le) choix d&#8217;une <span 
+class="cmmi-12">n</span>-forme
+extérieure en ce point. On pourrait donc naïvement penser que, pour définir une
+orientation globale de la variété <span 
+class="cmmi-12">M</span>, il suffit de choisir une <span 
+class="cmmi-12">n</span>-forme différentiable
+<span 
+class="cmmi-12">&#x03C9;</span>. Le problème est que, si <span 
+class="cmmi-12">&#x03C9; </span>s&#8217;annule en un point, l&#8217;orientation cesse d&#8217;être définie
+en ce point<span class="frenchb-thinspace">&#x00A0;</span>! Pour pouvoir parler d&#8217;orientation de façon globale, il faut
+donc qu&#8217;il soit possible de choisir une <span 
+class="cmmi-12">n</span>-forme différentielle sur <span 
+class="cmmi-12">M </span>qui
+                                                                          
+
+                                                                          
+ne s&#8217;annule nulle part. Ceci n&#8217;est pas toujours possible<span class="frenchb-nbsp">&#x00A0;</span>: on dit que la
+variété est orientable ou non orientable suivant les cas. Tout le monde
+connaît l&#8217;exemple fameux du ruban de Moebius ou de la bouteille de
+Klein.
+<!--l. 2163--><p class="indent" >   On appelle &#8220;élément de volume&#8221; sur <span 
+class="cmmi-12">M </span>le choix d&#8217;une <span 
+class="cmmi-12">n</span>-forme <span 
+class="cmmi-12">&#x03C9; </span>sur <span 
+class="cmmi-12">M </span>qui ne
+s&#8217;annule nulle part (ce qui suppose, par définition, que <span 
+class="cmmi-12">M </span>soit orientable). On
+note [<span 
+class="cmmi-12">&#x03C9;</span>] l&#8217;ensemble des éléments de volume proportionnels à <span 
+class="cmmi-12">&#x03C9;</span>, avec un coefficient
+de proportionnalité positif et [<span 
+class="cmsy-10x-x-120">-</span><span 
+class="cmmi-12">&#x03C9;</span>] l&#8217;ensemble des éléments de volume
+proportionnels à <span 
+class="cmmi-12">&#x03C9;</span>, avec un coefficient de proportionnalité négatif. Une variété
+orientable possède donc deux orientations possibles, l&#8217;une quelconque d&#8217;entre elles
+étant caractérisée par le choix d&#8217;un élément de volume appartenant à l&#8217;une des
+deux classes possibles. Soient maintenant <span 
+class="cmmi-12">M </span>et <span 
+class="cmmi-12">N </span>deux variétés différentiables de
+même dimension <span 
+class="cmmi-12">n </span>et <span 
+class="cmmi-12">f </span>un difféomorphisme de <span 
+class="cmmi-12">M </span>dans <span 
+class="cmmi-12">N</span><span class="frenchb-thinspace">&#x00A0;</span>; on suppose <span 
+class="cmmi-12">M </span>et <span 
+class="cmmi-12">N</span>
+orientables et orientées par le choix des éléments de volume <span 
+class="cmmi-12">&#x03C9;</span><sub><span 
+class="cmmi-8">M</span></sub> et <span 
+class="cmmi-12">&#x03C9;</span><sub><span 
+class="cmmi-8">N</span></sub>. On dit que
+<span 
+class="cmmi-12">f </span>préserve l&#8217;orientation si et seulement si <img 
+src="source127x.png" alt="&#x2190;-
+ f"  class="mathpalette" >(<span 
+class="cmmi-12">&#x03C9;</span><sub><span 
+class="cmmi-8">N</span></sub>) <span 
+class="cmsy-10x-x-120">&#x2208; </span>[<span 
+class="cmmi-12">&#x03C9;</span><sub><span 
+class="cmmi-8">M</span></sub>] et renverse l&#8217;orientation
+si <img 
+src="source128x.png" alt="&#x2190;-
+f"  class="mathpalette" >(<span 
+class="cmmi-12">&#x03C9;</span><sub><span 
+class="cmmi-8">N</span></sub>) <span 
+class="cmsy-10x-x-120">&#x2208; </span>[<span 
+class="cmsy-10x-x-120">-</span><span 
+class="cmmi-12">&#x03C9;</span><sub><span 
+class="cmmi-8">M</span></sub>].
+<!--l. 2192--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">1.10.1   </span> <a 
+ id="x22-440001.10.1"></a>Orientation &#8211; Partition de l&#8217;unité</h4>
+<!--l. 2194--><p class="noindent" >Notre but, dans ce paragraphe, est d&#8217;introduire la notion d&#8217;intégration des formes
+différentielles. Comme d&#8217;habitude, on va commencer par définir cette notion
+pour l&#8217;espace numérique I R<sup><span 
+class="cmmi-8">n</span></sup>, puis, grâce à un système de cartes, on va
+pouvoir généraliser la construction au cas des variétés. On suppose le
+lecteur familier avec la notion d&#8217;intégrale (de Riemann) sur I R<sup><span 
+class="cmmi-8">n</span></sup>. Soit <span 
+class="cmmi-12">f</span>
+une fonction (numérique) c&#8217;est-à-dire une fonction &#8211; que nous supposons
+différentiable &#8211; de I R<sup><span 
+class="cmmi-8">n</span></sup> à valeurs réelles. Nous supposons, de plus, que <span 
+class="cmmi-12">f </span>est à
+support compact. Son intégrale est notée <span 
+class="cmex-10x-x-120">&#x222B;</span>
+  <sub>I R<sup><span 
+class="cmmi-6">n</span></sup></sub><span 
+class="cmmi-12">f </span>ou <span 
+class="cmex-10x-x-120">&#x222B;</span>
+  <sub>I R<sup><span 
+class="cmmi-6">n</span></sup></sub><span 
+class="cmmi-12">f</span>(<span 
+class="cmmi-12">x</span>)<span 
+class="cmmi-12">d</span><sup><span 
+class="cmmi-8">n</span></sup><span 
+class="cmmi-12">x</span>, comme
+d&#8217;habitude. Choisissons maintenant une orientation sur I R<sup><span 
+class="cmmi-8">n</span></sup> et considérons la
+<span 
+class="cmmi-12">n</span>-forme
+   <center class="math-display" >
+<img 
+src="source129x.png" alt="            1     2          n
+&#x03C9; =  f(x)dx  &#x2227; dx  &#x2227; &#x22C5;&#x22C5;&#x22C5; &#x2227; dx  " class="math-display" ></center> où
+                                                                          
+
+                                                                          
+<span 
+class="cmmi-12">dx</span><sup><span 
+class="cmr-8">1</span></sup> <span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">dx</span><sup><span 
+class="cmr-8">2</span></sup> <span 
+class="cmsy-10x-x-120">&#x2227;</span><img 
+src="source130x.png" alt="&#x22C5;&#x22C5;&#x22C5;"  class="@cdots" ><span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">dx</span><sup><span 
+class="cmmi-8">n</span></sup> est une <span 
+class="cmmi-12">n</span>-forme positive pour l&#8217;orientation choisie. On pose
+simplement
+   <center class="math-display" >
+<img 
+src="source131x.png" alt="&#x222B;      &#x222B;
+  &#x03C9; =       fdnx
+        IRn  " class="math-display" ></center>
+Notons que la définition du membre de gauche dépend de l&#8217;orientation choisie<span class="frenchb-thinspace">&#x00A0;</span>;
+en d&#8217;autres termes, on peut identifier les deux notations et concepts en
+posant
+   <center class="math-display" >
+<img 
+src="source132x.png" alt=" n      1     2          n
+d x = dx  &#x2227; dx  &#x2227; &#x22C5;&#x22C5;&#x22C5; &#x2227; dx  " class="math-display" ></center>
+mais il faut bien noter que l&#8217;identification des notations dépend du choix d&#8217;une
+orientation car l&#8217;intégrale d&#8217;une <span 
+class="cmmi-12">n</span>-forme dépend de l&#8217;ordre <span 
+class="cmmi-12">x</span><sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmmi-12">,x</span><sup><span 
+class="cmr-8">2</span></sup><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,x</span><sup><span 
+class="cmmi-8">n</span></sup>
+alors que l&#8217;intégrale de Riemann d&#8217;une fonction <span 
+class="cmmi-12">f </span>n&#8217;en dépend pas. Soit
+<span 
+class="cmmi-12">T </span>un difféomorphisme de I R<sup><span 
+class="cmmi-8">n</span></sup>, c&#8217;est-à-dire un changement de variables
+<span 
+class="cmmi-12">x</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><img 
+src="source133x.png" alt=" T
+&#x2192;" class="stackrel"><span 
+class="cmmi-12">y</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup>.
+<!--l. 2227--><p class="indent" >   Notre étude générale des formes différentielles implique en particulier
+   <center class="math-display" >
+<img 
+src="source134x.png" alt="  1     2          n          1     2          n
+dx  &#x2227; dx  &#x2227; &#x22C5;&#x22C5;&#x22C5; &#x2227; dx = J (T)dy  &#x2227; dy  &#x2227; &#x22C5;&#x22C5;&#x22C5; &#x2227; dy  " class="math-display" ></center> où
+                                                                          
+
+                                                                          
+<span 
+class="cmmi-12">J</span>(<span 
+class="cmmi-12">T</span>) = <span 
+class="cmmi-12">det</span>(<span 
+class="cmmi-12">&#x2202;x</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmmi-12">&#x2215;&#x2202;y</span><sup><span 
+class="cmmi-8">&#x03BD;</span></sup>) est le jacobien (le déterminant de la matrice jacobienne) de
+l&#8217;application <span 
+class="cmmi-12">T</span>. On a donc
+   <center class="math-display" >
+<img 
+src="source135x.png" alt="&#x222B;                       &#x222B;
+   f(x)dx1 &#x2227; &#x22C5;&#x22C5;&#x22C5; &#x2227; dxn =   f (T -1(y))J(T )dy1 &#x2227; &#x22C5;&#x22C5;&#x22C5; &#x2227; dyn  " class="math-display" ></center>
+Mais on sait bien que
+   <center class="math-display" >
+<img 
+src="source136x.png" alt="&#x222B;             &#x222B;
+   f(x)dnx =    f (T- 1(y ))|J(T )|dny  " class="math-display" ></center>
+Donc si <img 
+src="source137x.png" alt="&#x2190;-
+T"  class="mathpalette" ><span 
+class="cmmi-12">&#x03C9; </span>désigne l&#8217;image réciproque de <span 
+class="cmmi-12">&#x03C9;</span>, on voit que <img 
+src="source138x.png" alt="&#x2190;-
+T"  class="mathpalette" ><span 
+class="cmmi-12">&#x03C9; </span>= <span 
+class="cmsy-10x-x-120">±</span><span 
+class="cmex-10x-x-120">&#x222B;</span>
+ <span 
+class="cmmi-12">&#x03C9; </span>suivant que
+<span 
+class="cmmi-12">T </span>préserve ou non l&#8217;orientation<span class="frenchb-nbsp">&#x00A0;</span>: l&#8217;intégrale d&#8217;une <span 
+class="cmmi-12">n</span>-forme est invariante sous le
+groupe des difféomorphismes qui préservent l&#8217;orientation.
+   Passons maintenant au cas des variétés. Soit <span 
+class="cmmi-12">M </span>une variété de dimension <span 
+class="cmmi-12">n </span>et
+<span 
+class="cmmi-12">&#x03C9; </span>une <span 
+class="cmmi-12">n</span>-forme à support compact. Supposant la variété orientable, on choisit une
+orientation [<span 
+class="cmmi-12">M</span>] et une <span 
+class="cmsl-12">partition de l&#8217;unit</span><span 
+class="cmsl-12">é</span> <a 
+ id="dx22-44001"></a><span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">&#x03C1;</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub><span 
+class="cmsy-10x-x-120">}</span><sub><span 
+class="cmmi-8">&#x03B1;</span><span 
+class="cmsy-8">&#x2208;</span><span 
+class="cmmi-8">I</span></sub> subordonnée à un atlas
+<span 
+class="cmsy-10x-x-120">{</span>(<span 
+class="cmmi-12">U</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub><span 
+class="cmmi-12">,&#x03C6;</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub>)<span 
+class="cmsy-10x-x-120">}</span><sub><span 
+class="cmmi-8">&#x03B1;</span><span 
+class="cmsy-8">&#x2208;</span><span 
+class="cmmi-8">I</span></sub>, c&#8217;est-à-dire qu&#8217;on se donne une famille de fonctions différentielles
+non négatives <span 
+class="cmmi-12">&#x03C1;</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub> telles que le support de <span 
+class="cmmi-12">&#x03C1;</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub> soit contenu dans <span 
+class="cmmi-12">U</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub> et
+telles que <span 
+class="cmex-10x-x-120">&#x2211;</span>
+  <span 
+class="cmmi-12">&#x03C1;</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub> = 1 (chaque point de <span 
+class="cmmi-12">M </span>doit posséder un voisinage dans
+lequel la somme précédente est une somme finie). L&#8217;existence d&#8217;une telle
+partition de l&#8217;unité, pour une variété différentiable, est un théorème
+(que nous ne démontrons pas) qui permet, dans de nombreux cas, de
+passer des résultats locaux (valables dans une carte) aux résultats globaux
+(valables pour toute la variété <span 
+class="cmmi-12">M</span>). On définit l&#8217;intégrale de <span 
+class="cmmi-12">&#x03C9; </span>sur [<span 
+class="cmmi-12">M</span>] par
+l&#8217;égalité
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source139x.png" alt="&#x222B;        &#x2211;  &#x222B;
+    &#x03C9; =         &#x03C1;&#x03B1; &#x03C9;
+ [M]      &#x03B1;   U&#x03B1;  " class="math-display" ></center> où
+la quantité <span 
+class="cmex-10x-x-120">&#x222B;</span>
+  <sub><span 
+class="cmmi-8">U</span><sub><span 
+class="cmmi-6">&#x03B1;</span></sub></sub><span 
+class="cmmi-12">&#x03C1;</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub><span 
+class="cmmi-12">&#x03C9; </span>signifie en fait <span 
+class="cmex-10x-x-120">&#x222B;</span>
+  <sub>I R<sup><span 
+class="cmmi-6">n</span></sup></sub>(<span 
+class="cmmi-12">&#x03C6;</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub><sup><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sup>)<sup><span 
+class="cmsy-8">*</span></sup>(<span 
+class="cmmi-12">&#x03C1;</span><sub>
+<span 
+class="cmmi-8">&#x03B1;</span></sub><span 
+class="cmmi-12">&#x03C9;</span>) pour une trivialisation
+locale <span 
+class="cmmi-12">&#x03C6;</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub> : <span 
+class="cmmi-12">U</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub> <span 
+class="cmsy-10x-x-120">&#x2192;</span> I R<sup><span 
+class="cmmi-8">n</span></sup> préservant l&#8217;orientation. On se ramène ainsi au cas de
+IR<sup><span 
+class="cmmi-8">n</span></sup>.
+<!--l. 2292--><p class="indent" >   L&#8217;orientation étant choisie une fois pour toutes, on note <span 
+class="cmex-10x-x-120">&#x222B;</span>
+  <sub><span 
+class="cmmi-8">M</span></sub> et non plus <span 
+class="cmex-10x-x-120">&#x222B;</span>
+  <sub><span 
+class="cmr-8">[</span><span 
+class="cmmi-8">M</span><span 
+class="cmr-8">]</span></sub>
+l&#8217;intégrale correspondante. Il reste alors à démontrer que la définition adoptée ne
+dépend pas des cartes choisies. . .
+<!--l. 2298--><p class="indent" >   On appelle <span 
+class="cmsl-12">él</span><span 
+class="cmsl-12">ément de volume</span> <a 
+ id="dx22-44002"></a>sur <span 
+class="cmmi-12">M </span>(de dimension <span 
+class="cmmi-12">n</span>) ou <span 
+class="cmsl-12">forme volume</span> <a 
+ id="dx22-44003"></a>un
+élément quelconque <span 
+class="cmmi-12">&#x03F5; </span>de &#x03A9;<sup><span 
+class="cmmi-8">n</span></sup><span 
+class="cmmi-12">M</span>. Le <span 
+class="cmsl-12">volume</span> <a 
+ id="dx22-44004"></a>de <span 
+class="cmmi-12">M</span>, supposée compacte, est alors
+égal, par définition, à <span 
+class="cmex-10x-x-120">&#x222B;</span>
+  <sub><span 
+class="cmmi-8">M</span></sub><span 
+class="cmmi-12">&#x03F5;</span>. Il faut bien noter que sur une variété quelconque
+(orientée), on intègre des <span 
+class="cmmi-12">n</span>-formes, et non des fonctions, à moins, précisément,
+d&#8217;avoir choisi un élément de volume <span 
+class="cmmi-12">&#x03F5; </span>une fois pour toutes, auquel cas on peut
+évidemment poser <span 
+class="cmex-10x-x-120">&#x222B;</span>
+  <sub><span 
+class="cmmi-8">M</span></sub><span 
+class="cmmi-12">f </span>= <span 
+class="cmex-10x-x-120">&#x222B;</span>
+  <sub><span 
+class="cmmi-8">M</span></sub><span 
+class="cmmi-12">f&#x03F5; </span>où <span 
+class="cmmi-12">f </span><span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">&#x221E;</span></sup>(<span 
+class="cmmi-12">M</span>). Un cas particulièrement
+important à considérer est celui où la forme volume est associée canoniquement
+au choix d&#8217;une structure riemannienne (voir section&#x00A0;1.11) sur la variété en
+question.
+                                                                          
+
+                                                                          
+   <!--l. 2318--><div class="crosslinks"><p class="noindent">[<a 
+href="sourcese11.html" >next</a>] [<a 
+href="sourcese9.html" >prev</a>] [<a 
+href="sourcese9.html#tailsourcese9.html" >prev-tail</a>] [<a 
+href="sourcese10.html" >front</a>] [<a 
+href="sourcech1.html#sourcese10.html" >up</a>] </p></div>
+<!--l. 2318--><p class="indent" >   <a 
+ id="tailsourcese10.html"></a>   
+</body></html> 

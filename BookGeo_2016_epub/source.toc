@@ -1,0 +1,268 @@
+\select@language {french}
+\select@language {french}
+\contentsline {chapter}{Pr\'eface}{vii}{chapter*.2}
+\contentsline {chapter}{Introduction}{ix}{chapter*.3}
+\contentsline {section}{Mod\`eles math\'ematiques et r\'ealit\'e}{ix}{section*.4}
+\contentsline {section}{Du classique au quantique}{xii}{section*.5}
+\contentsline {section}{Guide de lecture, autocritique et perspectives}{xiv}{section*.6}
+\contentsline {chapter}{}{1}{chapter*.9}
+\contentsline {chapter}{\numberline {1}Vari\'et\'es diff\'erentiables}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Vari\'et\'es topologiques}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}D\'efinition}{1}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Vari\'et\'es \`a bord}{1}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Contre-exemples}{2}{subsection.1.1.3}
+\contentsline {section}{\numberline {1.2} Vari\'et\'es diff\'erentiables}{3}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1} Vari\'et\'es, cartes, atlas}{3}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2} Atlas maximal}{4}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3} Vari\'et\'es et calcul diff\'erentiel ``intrins\`eque''}{5}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.3}Applications diff\'erentiables, \\ diff\'eomorphismes}{6}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1} D\'efinition}{6}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2} Diff\'eomorphismes et changements de coordonn\'ees}{6}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3} Fonctions diff\'erentiables}{8}{subsection.1.3.3}
+\contentsline {section}{\numberline {1.4} Champs de vecteurs}{8}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1} Notions \'el\'ementaires et intuitives}{8}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2} Vecteurs, espace tangent et champs de vecteurs}{9}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3} R\`egle de Leibniz}{11}{subsection.1.4.3}
+\contentsline {subsection}{\numberline {1.4.4} Crochet de deux champs de vecteurs}{11}{subsection.1.4.4}
+\contentsline {subsection}{\numberline {1.4.5} Rep\`ere naturel associ\'e \`a une carte}{12}{subsection.1.4.5}
+\contentsline {subsection}{\numberline {1.4.6} Changement de carte}{12}{subsection.1.4.6}
+\contentsline {subsection}{\numberline {1.4.7} Rep\`eres mobiles (rep\`eres quelconques)}{13}{subsection.1.4.7}
+\contentsline {section}{\numberline {1.5}Tenseurs et formes ext\'erieures}{14}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1} Alg\`ebre tensorielle d'un espace vectoriel}{14}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2} Alg\`ebre ext\'erieure d'un espace vectoriel. Produit ext\'erieur}{17}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {1.5.3} Produit int\'erieur d'une forme par un vecteur}{20}{subsection.1.5.3}
+\contentsline {subsection}{\numberline {1.5.4} Transformation du produit ext\'erieur et du produit int\'erieur par endomorphismes}{21}{subsection.1.5.4}
+\contentsline {section}{\numberline {1.6}Formes diff\'erentielles}{21}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}D\'efinition}{21}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.6.2}La diff\'erentielle ext\'erieure $d$}{23}{subsection.1.6.2}
+\contentsline {subsection}{\numberline {1.6.3}L'\'equation de Maurer-Cartan pour un rep\`ere mobile}{26}{subsection.1.6.3}
+\contentsline {subsection}{\numberline {1.6.4}Produit int\'erieur d'une forme par un champ ou vecteurs}{26}{subsection.1.6.4}
+\contentsline {section}{\numberline {1.7}Application tangente et cotangente}{27}{section.1.7}
+\contentsline {section}{\numberline {1.8}D\'eriv\'ees de Lie}{30}{section.1.8}
+\contentsline {section}{\numberline {1.9}Flots}{32}{section.1.9}
+\contentsline {section}{\numberline {1.10}Orientation et int\'egration}{33}{section.1.10}
+\contentsline {subsection}{\numberline {1.10.1}Orientation -- Partition de l'unit\'e}{34}{subsection.1.10.1}
+\contentsline {section}{\numberline {1.11}Vari\'et\'es riemanniennes\\ (propri\'et\'es \'el\'ementaires)}{36}{section.1.11}
+\contentsline {section}{\numberline {1.12}Divers}{40}{section.1.12}
+\contentsline {subsection}{\numberline {1.12.1} Compl\'ements sur les d\'erivations d'alg\`ebre}{41}{subsection.1.12.1}
+\contentsline {subsection}{\numberline {1.12.2}Cohomologie de De Rham}{42}{subsection.1.12.2}
+\contentsline {subsection}{\numberline {1.12.3}Homologie de De Rham}{42}{subsection.1.12.3}
+\contentsline {subsection}{\numberline {1.12.4}Espace des $p$-vecteurs}{43}{subsection.1.12.4}
+\contentsline {subsection}{\numberline {1.12.5}Espace des courants de De Rham}{44}{subsection.1.12.5}
+\contentsline {subsection}{\numberline {1.12.6}Les alg\`ebres de Fr\"olicher -- Nijenhuis et de Nijenhuis--Richardson}{44}{subsection.1.12.6}
+\contentsline {chapter}{\numberline {2}Groupes de Lie et espaces homog\`enes}{47}{chapter.2}
+\contentsline {section}{\numberline {2.1}G\'en\'eralit\'es sur les groupes de Lie}{47}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}G\'en\'eralit\'es et d\'efinitions \'el\'ementaires}{47}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Exemples \'el\'ementaires de groupes classiques}{49}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}G\'en\'eralit\'es sur les alg\`ebres de Lie}{49}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Application exponentielle et alg\`ebres de Lie}{49}{subsection.2.2.1}
+\contentsline {subsubsection}{D\'efinition}{49}{section*.10}
+\contentsline {subsubsection}{Exemple fondamental}{50}{section*.11}
+\contentsline {subsubsection}{Constantes de structure d'une alg\`ebre de Lie ${\mathfrak g}$}{50}{section*.12}
+\contentsline {subsubsection}{Application exponentielle dans $M(n,\mathbb {C})$}{50}{section*.13}
+\contentsline {subsubsection}{Cas des groupes de matrices: Correspondance entre groupes et alg\`ebres de Lie}{51}{section*.14}
+\contentsline {subsection}{\numberline {2.2.2}Correspondance entre groupes et alg\`ebres de Lie}{52}{subsection.2.2.2}
+\contentsline {subsubsection}{Alg\`ebres de Lie des groupes classiques}{52}{section*.15}
+\contentsline {subsubsection}{Isomorphisme local: comparaison entre $SU(2)$ et $SO(3)$}{55}{section*.16}
+\contentsline {subsection}{\numberline {2.2.3}Classification des groupes et alg\`ebres de Lie. G\'en\'eralit\'es.}{58}{subsection.2.2.3}
+\contentsline {subsubsection}{Un peu de terminologie}{58}{section*.17}
+\contentsline {subsubsection}{Id\'ees fondamentales de la classification}{58}{section*.18}
+\contentsline {subsubsection}{Remarques diverses}{60}{section*.19}
+\contentsline {subsection}{\numberline {2.2.4}Message}{62}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3}Actions de groupes et repr\'esentations}{62}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}G\'en\'eralit\'es}{62}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Groupe $G$ op\'erant \`a gauche sur un ensemble $E$}{63}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Action \`a droite (anti-action)}{63}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Passage de la droite \`a la gauche (et inversement)}{63}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Orbites, espace quotient}{64}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}Efficacit\'e}{64}{subsection.2.3.6}
+\contentsline {subsection}{\numberline {2.3.7}Libert\'e et stabilisateur}{65}{subsection.2.3.7}
+\contentsline {subsection}{\numberline {2.3.8}Transitivit\'e}{66}{subsection.2.3.8}
+\contentsline {subsection}{\numberline {2.3.9}Action d'un sous-groupe $H$ sur un groupe $G$, normalisateur, centralisateur}{66}{subsection.2.3.9}
+\contentsline {subsection}{\numberline {2.3.10}Stratification}{67}{subsection.2.3.10}
+\contentsline {subsection}{\numberline {2.3.11}Remarques}{67}{subsection.2.3.11}
+\contentsline {section}{\numberline {2.4}Champs de vecteurs fondamentaux}{68}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Cas d'un groupe de Lie agissant sur une vari\'et\'e}{68}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Exemple~: le groupe euclidien agissant sur le plan $\mathbb {R}^2$}{70}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Un cas particulier fondamental~: le groupe $G$ agissant sur lui-m\^eme par translations \`a gauche et \`a droite}{71}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}L'action adjointe de $G$}{73}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {2.4.5}Exemple : l'alg\`ebre de Lie du groupe euclidien}{73}{subsection.2.4.5}
+\contentsline {subsection}{\numberline {2.4.6}Exemple : champs invariants sur $SU(2)$}{74}{subsection.2.4.6}
+\contentsline {subsection}{\numberline {2.4.7}Une remarque sur les constantes de structure}{76}{subsection.2.4.7}
+\contentsline {subsection}{\numberline {2.4.8}La forme de Maurer-Cartan}{76}{subsection.2.4.8}
+\contentsline {section}{\numberline {2.5}Repr\'esentations}{78}{section.2.5}
+\contentsline {section}{\numberline {2.6}Espaces homog\`enes}{78}{section.2.6}
+\contentsline {section}{\numberline {2.7}Alg\`ebres de Clifford et groupes Spin}{79}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}D\'efinitions g\'en\'erales}{79}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Le groupe $Spin$}{80}{subsection.2.7.2}
+\contentsline {subsection}{\numberline {2.7.3}Structure des alg\`ebres de Clifford r\'eelles}{83}{subsection.2.7.3}
+\contentsline {subsubsection}{Cas $n=p+q$ pair}{84}{section*.20}
+\contentsline {subsubsection}{Cas $n=p+q$ impair}{84}{section*.21}
+\contentsline {subsubsection}{Structure des alg\`ebres de Clifford r\'eelles et p\'eriodicit\'e modulo $8$}{85}{section*.22}
+\contentsline {subsection}{\numberline {2.7.4}La structure des alg\`ebres de Clifford complexes}{88}{subsection.2.7.4}
+\contentsline {subsection}{\numberline {2.7.5}Type des repr\'esentations}{89}{subsection.2.7.5}
+\contentsline {subsection}{\numberline {2.7.6}Spineurs}{90}{subsection.2.7.6}
+\contentsline {chapter}{\numberline {3}Espaces Fibr\'es}{93}{chapter.3}
+\contentsline {section}{\numberline {3.1}G\'en\'eralit\'es}{93}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Le langage des fibr\'es}{93}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Fibrations. Fibr\'es diff\'erentiables localement triviaux}{95}{subsection.3.1.2}
+\contentsline {subsubsection}{Fibration}{95}{section*.23}
+\contentsline {subsubsection}{Fibr\'e localement trivial}{96}{section*.24}
+\contentsline {subsubsection}{Remarques}{96}{section*.25}
+\contentsline {subsubsection}{Fibr\'e trivial}{97}{section*.26}
+\contentsline {subsubsection}{Trivialisations locales}{97}{section*.27}
+\contentsline {subsubsection}{Sous-fibr\'es}{98}{section*.28}
+\contentsline {section}{\numberline {3.2}Espaces fibr\'es principaux}{98}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}La structure d'espace fibr\'e principal}{98}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Sections locales et trivialisations locales}{99}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Exemple fondamental~: le fibr\'{e} des rep\`eres lin\'eaires}{101}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Sous-espace des vecteurs verticaux en un point $z$ d'un espace fibr\'{e}}{102}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Fibr\'e principal trivial}{104}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Formes basiques, invariantes et horizontales}{105}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}Exemples}{106}{subsection.3.2.7}
+\contentsline {subsubsection}{Le fibr\'{e} des rep\`eres lin\'eaires}{106}{section*.29}
+\contentsline {subsubsection}{Fibration d'un groupe $G$ en sous groupes $H$ au dessus de $G/H$}{106}{section*.30}
+\contentsline {subsubsection}{Fibration d'un espace homog\`ene $G/H_1$ en groupes $H_2$ au dessus de $G/(H_1 \times H_2)$}{112}{section*.31}
+\contentsline {subsubsection}{Fibration principale de $G/H$ en groupes $N\delimiter "026A30C H$ au dessus de $G/N$, $N$ \'etant le normalisateur de $H$ dans $G$}{113}{section*.32}
+\contentsline {subsubsection}{Fibrations exceptionnelles des sph\`eres et des espaces projectifs}{114}{section*.33}
+\contentsline {section}{\numberline {3.3}Fibr\'es associ\'es}{115}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Introduction}{115}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Espaces fibr\'{e}s associ\'es g\'en\'eraux}{116}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Espaces fibr\'{e}s en espaces homog\`enes, associ\'es \`a un fibr\'{e} principal de groupe structural $G$}{118}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Fibration principale relative \`a un fibr\'{e} quotient}{118}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Espaces fibr\'{e}s en $\ldots $ espaces fibr\'{e}s}{119}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Le fibr\'{e} adjoint $E=Ad \tmspace +\thinmuskip {.1667em} P$}{120}{subsection.3.3.6}
+\contentsline {subsection}{\numberline {3.3.7}Le r\^ole du normalisateur}{120}{subsection.3.3.7}
+\contentsline {subsection}{\numberline {3.3.8}Les espaces fibr\'{e}s vectoriels}{121}{subsection.3.3.8}
+\contentsline {subsection}{\numberline {3.3.9}Trivialit\'e des fibr\'{e}s vectoriels, vari\'et\'es parall\'elisables}{123}{subsection.3.3.9}
+\contentsline {subsection}{\numberline {3.3.10}Sections de fibr\'{e}s associ\'es et champs}{124}{subsection.3.3.10}
+\contentsline {section}{\numberline {3.4}Elargissement et r\'eduction}{126}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}D\'efinitions}{126}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Elargissement (passage de $H$ \`a $G$ avec $H\subset G$)}{126}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}R\'eduction (passage de $G$ \`a $H$ avec $H\subset G$)}{127}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}Extension et quotient}{130}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Extension (passage de $G$ \`a $\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle G$}\mathaccent "0362{G}$ avec $G \sim {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle G$}\mathaccent "0362{G}}\delimiter "026A30C H$)}{130}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Quotient (passage de $G$ \`a $K$ avec $K \sim G\delimiter "026A30C H$, $H$ sous-groupe distingu\'e de $G$)}{134}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.6}Groupe des automorphismes. Groupe de jauge}{135}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Remarque terminologique}{135}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Automorphismes verticaux d'un espace fibr\'{e} principal (d\'efinition)}{135}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Ecriture locale des transformations de jauge}{136}{subsection.3.6.3}
+\contentsline {subsection}{\numberline {3.6.4}Deux autres d\'efinitions des transformations de jauge}{137}{subsection.3.6.4}
+\contentsline {subsection}{\numberline {3.6.5}Automorphismes quelconques d'un espace fibr\'{e} principal}{137}{subsection.3.6.5}
+\contentsline {subsection}{\numberline {3.6.6}Action des automorphismes sur les espaces fibr\'{e}s associ\'es}{138}{subsection.3.6.6}
+\contentsline {subsection}{\numberline {3.6.7}Le cas des espaces vectoriels (un cas trivial mais instructif!)}{139}{subsection.3.6.7}
+\contentsline {chapter}{\numberline {4}Connexions}{141}{chapter.4}
+\contentsline {section}{\numberline {4.1}Connexions dans un fibr\'e principal}{141}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Motivations}{141}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Distributions horizontales \'equivariantes}{142}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Rel\`evement horizontal}{143}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Forme de connexion}{144}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5} Ecriture locale de la forme de connexion: le potentiel de jauge}{145}{subsection.4.1.5}
+\contentsline {section}{\numberline {4.2}Connexions dans les fibr\'es vectoriels associ\'es}{147}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Matrice de connexion $A^i_j$, coefficients de connexion $A^i_{j\mu }$}{147}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Diff\'erentielle covariante des sections $\nabla $, d\'eriv\'ee covariante $\nabla _\mu $, parall\'elisme}{148}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Remarques concernant les notations}{149}{subsection.4.2.3}
+\contentsline {subsubsection}{Mise en garde concernant la notation $\nabla _\mu $}{149}{section*.34}
+\contentsline {subsubsection}{Remarque sur les produits tensoriels}{150}{section*.35}
+\contentsline {subsection}{\numberline {4.2.4}Loi de transformation des coefficients de connexion}{151}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}D\'erivation covariante des sections du fibr\'e dual}{151}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}D\'erivation covariante dans les puissances tensorielles d'un fibr\'e vectoriel}{152}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.7}L'op\'erateur D}{153}{subsection.4.2.7}
+\contentsline {subsection}{\numberline {4.2.8}Diff\'erentielle ext\'erieure covariante $d^\nabla $}{154}{subsection.4.2.8}
+\contentsline {subsubsection}{D\'efinition}{154}{section*.36}
+\contentsline {subsubsection}{ Les op\'erateurs $D$ et $d^\nabla $}{154}{section*.37}
+\contentsline {subsubsection}{ Autre exemple}{155}{section*.38}
+\contentsline {subsection}{\numberline {4.2.9}Diff\'erentielles et d\'eriv\'ees covariantes g\'en\'eralis\'ees~$\nabla $}{157}{subsection.4.2.9}
+\contentsline {subsubsection}{Remarques}{157}{section*.39}
+\contentsline {subsubsection}{Exemple}{158}{section*.40}
+\contentsline {subsubsection}{Comparaison entre $\nabla $ et $d^\nabla $}{159}{section*.41}
+\contentsline {section}{\numberline {4.3}Courbure}{160}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Lin\'earit\'e de $(d^\nabla )^2$}{160}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Expression de l'op\'erateur de courbure dans les fibr\'es vectoriels associes}{160}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Equation de structure pour la courbure}{162}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Identit\'e de Bianchi pour la courbure}{163}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}Transformation de jauge pour la courbure}{164}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.6}Forme de connexion, diff\'erentielle covariante et courbure dans les fibr\'es principaux (compl\'ements)}{165}{subsection.4.3.6}
+\contentsline {subsubsection}{Remarque g\'en\'erale}{165}{section*.42}
+\contentsline {subsubsection}{Forme de connexion}{165}{section*.43}
+\contentsline {subsubsection}{Diff\'erentielle covariante}{166}{section*.44}
+\contentsline {subsubsection}{L'op\'erateur de courbure dans les fibr\'es principaux}{166}{section*.45}
+\contentsline {subparagraph}{Aspect global}{166}{section*.46}
+\contentsline {subparagraph}{Aspect local}{167}{section*.47}
+\contentsline {subsubsection}{Passage aux fibr\'es associ\'es}{167}{section*.48}
+\contentsline {subparagraph}{Aspect global}{167}{section*.49}
+\contentsline {subparagraph}{Aspect local}{167}{section*.50}
+\contentsline {subparagraph}{L'op\'erateur $D^2$}{168}{section*.51}
+\contentsline {subsubsection}{Mise en garde concernant l'utilisation de la notation $D$}{169}{section*.52}
+\contentsline {subsection}{\numberline {4.3.7}Ecritures diverses de la courbure $F$ (r\'ecapitulatif)}{169}{subsection.4.3.7}
+\contentsline {subsection}{\numberline {4.3.8}Connexions et op\'erations de Cartan}{170}{subsection.4.3.8}
+\contentsline {subsection}{\numberline {4.3.9}Groupe d'holonomie d'une connexion, fibr\'e d'holonomie}{171}{subsection.4.3.9}
+\contentsline {subsection}{\numberline {4.3.10}R\'eduction des connexions}{172}{subsection.4.3.10}
+\contentsline {section}{\numberline {4.4}Cas particulier des connexions lin\'eaires}{174}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}D\'efinition et g\'en\'eralit\'es}{174}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Potentiel de jauge et courbure des connexions lin\'eaires}{175}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Diff\'erentielle ext\'erieure covariante (cas des connexions lin\'eaires)}{177}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Forme canonique (ou forme de soudure)}{180}{subsection.4.4.4}
+\contentsline {subsection}{\numberline {4.4.5}Torsion}{181}{subsection.4.4.5}
+\contentsline {subsection}{\numberline {4.4.6}Equation de structure pour la torsion}{183}{subsection.4.4.6}
+\contentsline {subsection}{\numberline {4.4.7}Identit\'es de Bianchi pour les connexions lin\'eaires}{183}{subsection.4.4.7}
+\contentsline {subsubsection}{Premi\`ere identit\'e (relative \`a la torsion)}{184}{section*.53}
+\contentsline {subsubsection}{Deuxi\`eme identit\'e (relative \`a la courbure)}{185}{section*.54}
+\contentsline {subsection}{\numberline {4.4.8}D\'eriv\'ees covariantes secondes, hessien et identit\'es de Ricci}{185}{subsection.4.4.8}
+\contentsline {subsection}{\numberline {4.4.9}Tenseur de Ricci}{190}{subsection.4.4.9}
+\contentsline {subsection}{\numberline {4.4.10}Courbes autoparall\`eles}{191}{subsection.4.4.10}
+\contentsline {subsection}{\numberline {4.4.11}Connexions lin\'eaires sur les groupes et espaces homog\`enes}{191}{subsection.4.4.11}
+\contentsline {section}{\numberline {4.5}Connexions m\'etriques}{192}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}La m\'etrique}{192}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Compatibilit\'e avec la m\'etrique}{193}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Calcul des coefficients de connexion}{195}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.4}Compl\'ements sur le tenseur de Riemann. Propri\'et\'es de sym\'etrie.}{197}{subsection.4.5.4}
+\contentsline {subsection}{\numberline {4.5.5}Equation des g\'eod\'esiques}{198}{subsection.4.5.5}
+\contentsline {subsection}{\numberline {4.5.6}Tenseur de Ricci, courbure scalaire et tenseur d'Einstein, courbures sectionelles}{199}{subsection.4.5.6}
+\contentsline {subsection}{\numberline {4.5.7}Dualit\'e de Hodge et laplaciens}{201}{subsection.4.5.7}
+\contentsline {subsubsection}{Appariement entre $\Omega ^k(M)$ et $\Omega ^{n-k}(M)$}{201}{section*.55}
+\contentsline {subsubsection}{L'isomorphisme $\star $ : La dualit\'e de Hodge}{201}{section*.56}
+\contentsline {subsubsection}{Le produit $<<,>>$ dans l'espace des $k$-formes}{202}{section*.57}
+\contentsline {subsubsection}{La codiff\'erentielle $\delta $ sur les formes}{203}{section*.58}
+\contentsline {subsubsection}{La divergence $div$ sur les tenseurs quelconques}{204}{section*.59}
+\contentsline {subsubsection}{Le laplacien de De Rham sur les formes}{204}{section*.60}
+\contentsline {subsubsection}{Hessiens et Laplaciens na\"\i fs}{205}{section*.61}
+\contentsline {subsubsection}{Equations de Maxwell et \'equations de Yang-Mills}{206}{section*.62}
+\contentsline {subsection}{\numberline {4.5.8}Connexions spinorielles et op\'erateur de Dirac}{208}{subsection.4.5.8}
+\contentsline {subsubsection}{Compl\'ement sur l'alg\`ebre de Lie du groupe $Spin$}{208}{section*.63}
+\contentsline {subsubsection}{Connexion spinorielle}{209}{section*.64}
+\contentsline {subsubsection}{D\'eriv\'ee covariante sur les champs de spineurs}{210}{section*.65}
+\contentsline {subsubsection}{L'op\'erateur de Dirac}{211}{section*.66}
+\contentsline {subsubsection}{Le fibr\'e de Clifford}{211}{section*.67}
+\contentsline {subsection}{\numberline {4.5.9}M\'etriques sur les groupes et espaces homog\`enes}{212}{subsection.4.5.9}
+\contentsline {chapter}{\numberline {5}Un saut dans l'infini}{213}{chapter.5}
+\contentsline {subsection}{\numberline {5.0.1}Action du groupe de jauge sur l'espace des connexions}{213}{subsection.5.0.1}
+\contentsline {subsection}{\numberline {5.0.2}L'espace des orbites}{214}{subsection.5.0.2}
+\contentsline {subsection}{\numberline {5.0.3}Conclusion}{215}{subsection.5.0.3}
+\contentsline {chapter}{\numberline {6}Calcul diff\'erentiel pour alg\`ebres non commutatives}{217}{chapter.6}
+\contentsline {section}{\numberline {6.1}Remarques philosophico-math\'ematiques sur les espaces non commutatifs}{217}{section.6.1}
+\contentsline {section}{\numberline {6.2}Calculs diff\'erentiels}{219}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Remarques}{219}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}L'alg\`ebre diff\'erentielle des formes universelles $\Omega {\mathcal A}$}{219}{subsection.6.2.2}
+\contentsline {subsubsection}{Universalit\'e}{219}{section*.68}
+\contentsline {subsubsection}{Construction de $\Omega {\mathcal A}$ par g\'en\'erateurs et relations}{220}{section*.69}
+\contentsline {subsubsection}{Construction explicite de $\Omega {\mathcal A}$ par produit tensoriel}{221}{section*.70}
+\contentsline {subsubsection}{Formes universelles dans le cadre commutatif : le calcul diff\'erentiel non local}{222}{section*.71}
+\contentsline {subsubsection}{L'exemple de $\mathbb {C}\oplus \mathbb {C}$}{224}{section*.72}
+\contentsline {subsection}{\numberline {6.2.3}L'alg\`ebre diff\'erentielle $\Omega _{Der}{\mathcal A}$}{227}{subsection.6.2.3}
+\contentsline {subsubsection}{Rappel sur les d\'erivations d'alg\`ebre}{227}{section*.73}
+\contentsline {subsubsection}{Formes diff\'erentielles}{228}{section*.74}
+\contentsline {subsubsection}{Distinction entre $\relax $\@@underline {\hbox {\Omega }}\mathsurround \z@ $\relax _{Der}$ et $\Omega _{Der}$}{229}{section*.75}
+\contentsline {subsubsection}{Exemples}{229}{section*.76}
+\contentsline {subsection}{\numberline {6.2.4}Alg\`ebres diff\'erentielles pour espaces non connexes}{230}{subsection.6.2.4}
+\contentsline {subsection}{\numberline {6.2.5}L'alg\`ebre diff\'erentielle $\Omega _{D}{\mathcal A}$}{231}{subsection.6.2.5}
+\contentsline {section}{\numberline {6.3}Excursion au pays des math\'ematiques non commutatives}{234}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Remarques et pr\'esentation g\'en\'erale}{234}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Topologie non commutative et th\'eorie de la mesure non commutative}{235}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Calcul diff\'erentiel non commutatif}{236}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Espaces fibr\'es non commutatifs et modules projectifs}{237}{subsection.6.3.4}
+\contentsline {subsection}{\numberline {6.3.5}Connections g\'en\'eralis\'ees en geometrie non commutative}{238}{subsection.6.3.5}
+\contentsline {subsection}{\numberline {6.3.6}Cohomologie des espaces non commutatifs}{240}{subsection.6.3.6}
+\contentsline {subsubsection}{La cohomologie de Hochschild}{240}{section*.77}
+\contentsline {subsubsection}{La cohomologie cyclique : une cohomologie de De Rham non commutative}{242}{section*.78}
+\contentsline {subsection}{\numberline {6.3.7} Remarque finale}{245}{subsection.6.3.7}

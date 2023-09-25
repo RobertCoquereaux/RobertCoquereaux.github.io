@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>index.html</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Sélecteurs d'éléments/balises ~~ */
+ul, ol, dl { /* En raison des variations entre les navigateurs, il est conseillé d'attribuer une valeur de zéro aux marges intérieures et aux marges des listes. A des fins de cohérence, vous pouvez définir les valeurs désirées dans cette zone ou dans les éléments de liste (LI, DT, DD) qu'elle contient. N'oubliez pas que les paramètres que vous définissez ici se répercuteront sur la liste .nav, sauf si vous rédigez un sélecteur plus spécifique. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* la suppression de la marge supérieure résout un problème où les marges sortent de leur div conteneur. La marge inférieure restante l'éloignera de tout élément qui suit. */
+	padding-right: 15px;
+	padding-left: 15px; /* l'ajout de la marge intérieure aux côtés des éléments à l'intérieur des divs, et non aux divs proprement dit, évite le recours à des calculs de modèle de boîte. Une autre méthode consiste à employer une div imbriquée avec marge intérieure latérale. */
+	color: #333;
+}
+a img { /* ce sélecteur élimine la bordure bleue par défaut affichée dans certains navigateurs autour d'une image lorsque celle-ci est entourée d'un lien. */
+	border: none;
+}
+/* ~~ La définition du style des liens de votre site doit respecter cet ordre, y compris le groupe de sélecteurs qui créent l'effet de survol. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* à moins que vous ne définissiez un style particulièrement exclusif pour vos liens, mieux vaut prévoir un soulignement, qui garantit une identification visuelle rapide. */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* ce groupe de sélecteurs offrira à un navigateur au clavier la même expérience de survol que celle d'une personne employant la souris. */
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* ~~ ce conteneur à largeur fixe entoure les autres divs ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* la valeur automatique sur les côtés, associée à la largeur, permet de centrer la mise en page */
+}
+
+/* ~~ aucune largeur n'est attribuée à l'en-tête. Il occupera toute la largeur de votre mise en page. Il contient un espace réservé pour une image, qui doit être remplacé par votre logo lié. ~~ */
+.header {
+	background-color: #ADB96E;
+}
+
+/* ~~ Informations de mise en page. ~~ 
+
+1) La marge intérieure n'est placée qu'en haut et/ou en bas de la div. Les éléments à l'intérieur de cette div posséderont une marge intérieure sur les côtés. Vous évitez ainsi de devoir recourir à des « calculs de modèle de boîte ». N'oubliez pas que si vous ajoutez une marge intérieure latérale ou une bordure à la div proprement dite, elle sera ajoutée à la largeur que vous définissez pour créer la largeur totale. Vous pouvez également supprimer la marge intérieure de l'élément dans la div et placer une seconde div à l'intérieur, sans largeur et possédant une marge intérieure appropriée pour votre concept.
+
+*/
+
+.content {
+
+	padding: 10px 0;
+}
+
+/* ~~ Pied de page ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #CCC49F;
+}
+
+/* ~~ classes flottant/effacement diverses ~~ */
+.fltrt {  /* cette classe peut servir à faire flotter un élément depuis la droite sur votre page. L'élément flottant doit précéder l'élément à côté duquel il doit apparaître sur la page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* cette classe peut servir à faire flotter un élément depuis la gauche sur votre page. L'élément flottant doit précéder l'élément à côté duquel il doit apparaître sur la page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* cette classe peut être placée sur une div <br /> ou vide, en tant qu'élément final suivant la dernière div flottante (dans le #container) si le paramètre #footer est supprimé ou retiré du #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="" alt="Insérer un logo ici" name="Insert_logo" width="180" height="90" id="Insert_logo" style="background-color: #C6D580; display:block;" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <h1>Comments</h1>
+    <p>
+    This directory contains Mathematica programs of various types: 
+    Packages (.m or .wl), Computable Data Format documents (.cdf), Notebooks (.nb) and links to deployed documents in the Wolfram Cloud.</p>
+    <p> The same given entry (see the list below) may give rise to various files : a package that you can download and run locally with your own version of Mathematica, a pedagogical (hope so) notebook that you can also download and run locally or read with a desktop or mobile version of the CDF Player, a cdf demo that you can download and run with your CDF Player, a web based cdf demo if you are using a compatible web browser together with the wolfram cdf player plug-in (but this seems to be a dying technology), and hyperlinks to deployed documents in the Wolfram Cloud.</p>
+    <p> Usually interactive cdf documents incorporate limits on the length of the generated output, or limits on the computing time. Deployed documents in the cloud incorporate more drastic limits because they cost me Wolfram credits every time you run them (this is what I have understood...). Notebooks and Packages do not suffer from these limitations, of course. </p>
+          <p>
+     Typically the code behind an interactive program consists of two parts: 1) the code for the command of interest (you can download the notebook or the package and run it with Mathematica on your machine), 2) the code for an interactive interface.
+The first part is more or less stable. The second part, if it exists, may give rise to a cdf interactive file that can also be run with Mathematica, but also with a CDF Player. However there are are various versions of the Player (different platforms): the various versions do not all behave in the same way and some commands do not run at all in the Player (for instance, as of September 2017, most versions do not accept nested Manipulate commands). For this reason the code for the interactive interface is sometimes a bit convoluted because it is supposed to run not only in Mathematica but also with the various versions of the CDF Player; this part should be simplified if the functionalities of the Player are improved. </p> 
+   <p> The code O-blades for the CDF player is now (> 2020) the same for the computer and for the iPad tablet (IOS)</p>
+      <p> The cdf plugin for browsers, which used to be called CDF Player (it should have been given another name since it has nothing to do with the "other" CDF Player... and this is really confusing!) seems to be incompatible with most recent browsers. Even when it is, and even if you  downloaded the plugin, depending of the location of the web page you want to look at, there is often a problem at the level of granting access to the plugin. So if this does not work, do not waste time: forget the browser, download the cdf file to your machine or to your mobile device, and run it locally with your CDF Player. If you download the .nb or .cdf files, and if your browser adds a .txt extension to the name of the file, just erase manually the extension.</p>
+           <p> All the files of this directory have been uploaded to GitHub (MIT licence, open source). 
+           <!-- At some point a few notebooks or packages will be sent to Mathsource and selected cdf demos will be sent to the Wolfram Demonstration Project.</p> -->
+      
+  <h1>Available programs</h1>
+  
+  <h2> <font color="blue"> Dimensions of irreducible representations of SU(n). </font> </h2>
+   <h3> <font color="goldenrod"> Notebook and Package </font></h3>
+   <p> This very short program (<a href="../Computer_programs/nb/dimensionsOfIrrepsSUn.nb" title="dimensionsOfIrrepsSUn" target="new"><font color="red">here</font></a>) contains  the source code (one line of Mathematica) and the code for the interactive interface </p>
+   <h3> <font color="goldenrod"> Interactive documents </font> </h3>
+   <p> Interactive cdf for the CDF Player (<a href="../Computer_programs/cdf/dimensionsOfIrrepsSUn.cdf" title="dimensionsOfIrrepsSUn" target="new"><font color="red">file</font></a></a>), computer or tablet</p>
+
+   
+  <h2> <font color="blue"> Product of irreducible representations of SU(n) and decomposition into a direct sum. </font> </h2>
+   <h3> <font color="goldenrod"> Notebook and Package </font></h3>
+   <p> The notebook (<a href="../Computer_programs/nb/tensorProdIrrep.nb" title="tensorProdIrrep" target="new"><font color="red">here</font></a>) contains  the main source code (Mathematica package) and the code for the interactive interface </p>
+   <h3> <font color="goldenrod"> Interactive documents </font> </h3>
+   <p> Interactive cdf for the CDF Player (<a href="../Computer_programs/cdf/tensorProdIrrep.cdf" title="tensorProdIrrep" target="new"><font color="red">file</font></a></a>), computer or tablet</p>
+   <p> Interactive cdf for the WEB plugin player (<a href="../Computer_programs/call_plugin/tensorProdIrrep_callcdfplugin.html" title="tensorProdIrrep_html" target="new"><font color="red">web page</font></a>) </p>
+   
+ <h2> <font color="blue"> Pictographs for SU(n) intertwiners: honeycombs.</font></h2>
+ <p><font color="goldenrod">Notebook and Package </font></p>
+ <p>The notebook (<a href="../Computer_programs/nb/honeycombsSUn.nb" title="honeycombsSUn" target="new"><font color="red">here</font></a>) contains  the main source code (Mathematica packages) and the code for the interactive interface </p>
+ <p><font color="goldenrod">Interactive documents</font></p>
+ <p>Interactive cdf for the CDF Player (<a href="../Computer_programs/cdf/honeycombsSUn.cdf" title="honeycombsSUn" target="new"><font color="red">file</font></a></a>) , computer or tablet</p>
+ <p> Interactive cdf for the WEB plugin player (<a href="../Computer_programs/call_plugin/honeycombsSUn_callcdfplugin.html" title="honeycombsSUn_html" target="new"><font color="red">web page</font></a>) </p>
+ <h2> <font color="blue">Pictographs for SU(n) intertwiners: oblades. </font> </h2>
+ <p><font color="goldenrod">Notebook and Package </font></p>
+ <p>The notebook (<a href="../Computer_programs/nb/obladesSUn.nb" title="obladesSUn" target="new"><font color="red">here</font></a>) contains  the main source code (Mathematica packages) and the code for the interactive interface </p>
+ <p><font color="goldenrod">Interactive documents</font></p>
+ <p>Interactive cdf for the CDF Player (<a href="../Computer_programs/cdf/obladesSUn.cdf" title="obladesSUn" target="new"><font color="red">file</font></a>) , computer or tablet (IOS)</p>
+<!-- <p>Interactive cdf for the IOS Player (<a href="../Computer_programs/cdf/obladesSUnForIOS.cdf" title="obladesSUn" target="new"><font color="red">file</font></a>) , tablet (IOS)</p> -->
+ <p> Interactive cdf for the WEB plugin player (old version) (<a href="../Computer_programs/call_plugin/obladesSUn_callcdfplugin.html" title="obladesSUn_html" target="new"><font color="red">web page</font></a>) </p>
+    
+    <h2> <font color="blue">SymPol$Package : a package for 
+    symmetric polynomials (General, Jack, Zonal, Quaternionic, Schur, etc). </font> </h2>
+    <p> <em>To download: Option click (Alt-click on a Mac) on the link!</em></font></p>
+      <p> <em>To use a menu: Right click (Control-click on a Mac) on the link!</em></font></p>
+     <p><font color="goldenrod">The package </font></p>
+     <p>The package SymPol$Package (<a href="../Computer_programs/wl/SymPol$Package.wl" title="SymPol$Package" target="new"><font color="red">here</font></a>) contains  the source code </p>
+     <p><font color="goldenrod">Documentation and examples </font></p>
+     <p>The notebook SymPol$Examples (<a href="../Computer_programs/wl/SymPol$Examples.nb" title="SymPol$Package" target="new"><font color="red">here</font></a>) contains many examples and illustrates the usage of most commands</p>
+     
+   <h1>Deployed documents in the Cloud</h1>
+   <h1>Comments and complements : see <a href="../Varia/index.html" title="linktovaria" target="new"><font color="red">Varia</font></a></h1>
+    
+    <!-- end .content --></div>
+  <div class="footer">
+    <p>Pied de page</p>
+    <!-- end .footer --></div>
+<!-- end .container --></div>
+
+
+
+</body>
+</html>

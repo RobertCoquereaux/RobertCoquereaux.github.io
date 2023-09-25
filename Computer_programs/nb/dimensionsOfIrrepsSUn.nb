@@ -1,0 +1,690 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     29421,        682]
+NotebookOptionsPosition[     27480,        641]
+NotebookOutlinePosition[     27839,        657]
+CellTagsIndexPosition[     27796,        654]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Dimensions of irreducible representations of SU(n)", "Title",
+ CellChangeTimes->{{3.714730238235168*^9, 3.7147302405786257`*^9}, {
+  3.714730298344377*^9, 3.7147303404471493`*^9}, {3.7148211386750317`*^9, 
+  3.714821186784458*^9}, {3.715075236375078*^9, 3.71507523841181*^9}, {
+  3.71733186628547*^9, 
+  3.7173318802831697`*^9}},ExpressionUUID->"a807309b-86c4-4cb2-a390-\
+f0ab223b08ea"],
+
+Cell[TextData[StyleBox["Version 1.0\nRobert Coquereaux\nCPT, CNRS, Luminy, \
+Marseille",
+ FontColor->RGBColor[0, 0, 1]]], "Text",
+ CellChangeTimes->{{3.7147354123356047`*^9, 3.714735427863287*^9}, {
+  3.714735679369712*^9, 3.714735729560059*^9}, {3.7147527318160877`*^9, 
+  3.7147527433504972`*^9}},ExpressionUUID->"8dcb2c39-71c5-4be3-9235-\
+7c36bd5008b6"],
+
+Cell[CellGroupData[{
+
+Cell["What the program does", "Subsubsection",
+ CellChangeTimes->{{3.714752999992799*^9, 3.714753001040763*^9}, {
+  3.714753242820286*^9, 
+  3.714753246859229*^9}},ExpressionUUID->"e8d17d1b-a92f-4913-abea-\
+7f2a21a04b05"],
+
+Cell["\<\
+Given an irreducible representation of SU(n) specified by the components of \
+its highest weight in the basis of fundamental weights, the program \
+determines its dimension.\
+\>", "Text",
+ CellChangeTimes->{{3.7147532749620543`*^9, 3.714753498933702*^9}, {
+  3.714753713592896*^9, 3.71475375512693*^9}, {3.7147538894453993`*^9, 
+  3.714753900371894*^9}, {3.714753933931295*^9, 3.7147539523946247`*^9}, {
+  3.717325816435582*^9, 3.71732587319693*^9}, {3.7173319162926826`*^9, 
+  3.717331957624803*^9}, {3.717332223482368*^9, 
+  3.717332229201867*^9}},ExpressionUUID->"5e56d1a3-3171-496c-ac45-\
+d283f67772ca"],
+
+Cell["\<\
+Note: this is a very simple (and short) program. It was written mostly to \
+test the Manipulate command and the code for the cdf file.
+More interesting programs (product decomposition, multiplicities, \
+intertwiners, pictographs, etc.) can be found by selecting one of the links, \
+below.\
+\>", "Text",
+ CellChangeTimes->{{3.717331964329423*^9, 
+  3.717332097366943*^9}},ExpressionUUID->"8e5d78f2-dff4-46a2-9d3a-\
+f7642ed89860"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Links", "Subsubsection",
+ CellChangeTimes->{{3.714754346954133*^9, 3.714754347752963*^9}, {
+   3.714821218320418*^9, 3.714821224168078*^9}, {3.7150139260070467`*^9, 
+   3.715013926829385*^9}, {3.717325682094337*^9, 3.717325682620654*^9}, 
+   3.7173310774878817`*^9},ExpressionUUID->"eabd4e8c-1bf0-43f9-a531-\
+7499a0f7548e"],
+
+Cell["Related programs:", "Text",
+ CellChangeTimes->{{3.7173317887519712`*^9, 
+  3.717331796070661*^9}},ExpressionUUID->"110a431e-f37a-48c8-8ed2-\
+fa44dde19493"],
+
+Cell[TextData[{
+ "Notebooks (nb files, they also include the source code for the cdf version) \
+\n",
+ Cell[BoxData[
+  TemplateBox[{
+   "\"Tensor product of SU(n) irreducible representations \
+(Littlewood-Richardson coefficients)\"",
+    "http://www.cpt.univ-mrs.fr/~coque/Computer_programs/nb/tensorProdIrrep.\
+nb"},
+   "HyperlinkURL"]],
+  CellChangeTimes->{3.717330933726313*^9},ExpressionUUID->
+  "8e76b760-0dc9-45dc-b3e3-4fb1ec5332e3"],
+ "\n",
+ Cell[BoxData[
+  TemplateBox[{
+   "\"Pictographs: oblades for SU(n)\"",
+    "http://www.cpt.univ-mrs.fr/~coque/Computer_programs/nb/obladesSUn.nb"},
+   "HyperlinkURL"]],
+  CellChangeTimes->{3.717330933866528*^9},ExpressionUUID->
+  "4fa48735-fa95-4ea4-969a-1a7df368b87b"],
+ "\n",
+ Cell[BoxData[
+  TemplateBox[{
+   "\"Pictographs: honeycombs for SU(n)\"",
+    "http://www.cpt.univ-mrs.fr/~coque/Computer_programs/nb/honeycombsSUn.nb"},
+   "HyperlinkURL"]],
+  CellChangeTimes->{3.7173309339813757`*^9},ExpressionUUID->
+  "8649aa72-da91-4b74-91fc-e1c6efd717d3"],
+ "\n",
+ Cell[BoxData[
+  TemplateBox[{
+   "\"Dimensions of irreps of SU(n)\"",
+    "http://www.cpt.univ-mrs.fr/~coque/Computer_programs/nb/\
+dimensionsOfIrrepsSUn.nb"},
+   "HyperlinkURL"]],
+  CellChangeTimes->{3.717330934093584*^9},ExpressionUUID->
+  "f4642c5d-253d-4b0f-9ce7-506908c34b4a"]
+}], "Text",
+ CellChangeTimes->{{3.7147980764567213`*^9, 3.714798080725765*^9}, {
+  3.714798181008444*^9, 3.7147981837123737`*^9}, {3.71732571921739*^9, 
+  3.717325734191794*^9}, {3.717327662909412*^9, 3.7173277231290073`*^9}, {
+  3.7173310879031477`*^9, 3.717331109531983*^9}},
+ FontSize->14,ExpressionUUID->"2306d747-6cd7-4b27-bd79-ba3e48d86877"],
+
+Cell[TextData[{
+ "CDF files (standalone)\nfor the Wolfram CDF Player\n",
+ Cell[BoxData[
+  TemplateBox[{
+   "\"Tensor product of SU(n) irreducible representations \
+(Littlewood-Richardson coefficients). CDF file\"",
+    "http://www.cpt.univ-mrs.fr/~coque/Computer_programs/cdf/tensorProdIrrep.\
+cdf"},
+   "HyperlinkURL"]],
+  CellChangeTimes->{3.717330934233543*^9},ExpressionUUID->
+  "69f97538-9134-4a17-af85-973bb427fef8"],
+ "\n",
+ Cell[BoxData[
+  TemplateBox[{
+   "\"Pictographs: oblades for SU(n). CDF file\"",
+    "http://www.cpt.univ-mrs.fr/~coque/Computer_programs/cdf/obladesSUn.cdf"},
+   
+   "HyperlinkURL"]],
+  CellChangeTimes->{3.7173309343648443`*^9},ExpressionUUID->
+  "46f9903d-0ecb-479e-a3ff-7bb58a1dc4f0"],
+ "\n",
+ Cell[BoxData[
+  TemplateBox[{
+   "\"Pictographs: honeycombs for SU(n). CDF file\"",
+    "http://www.cpt.univ-mrs.fr/~coque/Computer_programs/cdf/honeycombsSUn.\
+cdf"},
+   "HyperlinkURL"]],
+  CellChangeTimes->{3.71733093449816*^9},ExpressionUUID->
+  "9fa2147d-4003-44c2-8dce-6ea042d8f4e6"],
+ "\n",
+ Cell[BoxData[
+  TemplateBox[{
+   "\"Dimensions of irreps of SU(n). CDF file\"",
+    "http://www.cpt.univ-mrs.fr/~coque/Computer_programs/cdf/\
+dimensionsOfIrrepsSUn.cdf"},
+   "HyperlinkURL"]],
+  CellChangeTimes->{3.717330934666925*^9},ExpressionUUID->
+  "decc4a6a-89ca-49eb-9e32-6d50621f35fe"]
+}], "Text",
+ CellChangeTimes->{{3.7147980764567213`*^9, 3.714798080725765*^9}, {
+  3.714798135298925*^9, 3.714798137857419*^9}, {3.717326357815118*^9, 
+  3.717326361942574*^9}, {3.7173276244161663`*^9, 3.717327647078768*^9}, {
+  3.7173311174944277`*^9, 3.717331132684025*^9}, {3.717331483661833*^9, 
+  3.717331540675248*^9}},
+ FontSize->14,ExpressionUUID->"40ecd2bc-4f40-4bb0-9ccd-bbcdf636ad6e"],
+
+Cell[TextData[{
+ "CDF files adapted to the first version of the CDF Player on IOS \n(when the \
+latter is updated,  one should use the previous files instead):\n",
+ Cell[BoxData[
+  TemplateBox[{
+   "\"Pictographs: oblades for SU(n). CDF file, IOS.\"",
+    "http://www.cpt.univ-mrs.fr/~coque/Computer_programs/cdf/obladesSUnForIOS.\
+cdf"},
+   "HyperlinkURL"]],
+  CellChangeTimes->{3.717330935026126*^9},ExpressionUUID->
+  "862fcf8a-3913-4717-a378-efcb4d192e97"],
+ "\n",
+ Cell[BoxData[
+  TemplateBox[{
+   "\"Pictographs: honeycombs for SU(n). CDF file, IOS.\"",
+    "http://www.cpt.univ-mrs.fr/~coque/Computer_programs/cdf/\
+honeycombsSUnForIOS.cdf"},
+   "HyperlinkURL"]],
+  CellChangeTimes->{3.71733093514347*^9},ExpressionUUID->
+  "73b887d9-fb75-4e62-9595-2ea96cb2ee3f"]
+}], "Text",
+ CellChangeTimes->{{3.7147980764567213`*^9, 3.714798080725765*^9}, {
+  3.714798135298925*^9, 3.714798137857419*^9}, {3.717326357815118*^9, 
+  3.717326361942574*^9}, {3.717326415014511*^9, 3.717326440351885*^9}, {
+  3.717326534844376*^9, 3.717326559042148*^9}, {3.717327225292091*^9, 
+  3.71732727608911*^9}, {3.717327312367535*^9, 3.7173273423349323`*^9}, {
+  3.71732753929246*^9, 3.717327542556305*^9}, {3.7173277406169786`*^9, 
+  3.717327759744286*^9}, {3.717331140437326*^9, 3.717331155067089*^9}, {
+  3.717331628865539*^9, 3.717331642599052*^9}},
+ FontSize->14,ExpressionUUID->"c1e7e671-7674-40df-ad48-23f37298fdb5"],
+
+Cell[TextData[{
+ "Files for the cdf web plug-in \n(dying technology: the plug-in is \
+incompatible with most recent browsers, these files will not be updated):\n",
+ Cell[BoxData[
+  TemplateBox[{
+   "\"Tensor product of SU(n) irreducible representations \
+(Littlewood-Richardson coefficients). CDF file for web plug-in\"",
+    "http://www.cpt.univ-mrs.fr/~coque/Computer_programs/cdf/\
+tensorProdIrrepWeb.cdf"},
+   "HyperlinkURL"]],
+  CellChangeTimes->{3.717330935261869*^9},ExpressionUUID->
+  "fde0e533-03b8-4d71-97f7-f86212ffa13d"],
+ "\n",
+ Cell[BoxData[
+  TemplateBox[{
+   "\"Pictographs: oblades for SU(n). CDF file for web plug-in\"",
+    "http://www.cpt.univ-mrs.fr/~coque/Computer_programs/cdf/obladesSUnWeb.\
+cdf"},
+   "HyperlinkURL"]],
+  CellChangeTimes->{3.7173309353773527`*^9},ExpressionUUID->
+  "66d3ce39-d026-459a-ac3e-81be6bc0b761"],
+ "\n",
+ Cell[BoxData[
+  TemplateBox[{
+   "\"Pictographs: honeycombs for SU(n). CDF file for web plug-in\"",
+    "http://www.cpt.univ-mrs.fr/~coque/Computer_programs/cdf/honeycombsSUnWeb.\
+cdf"},
+   "HyperlinkURL"]],
+  CellChangeTimes->{3.7173309354937153`*^9},ExpressionUUID->
+  "e2b017de-42e2-4ea5-9d2a-64c9ed39397d"]
+}], "Text",
+ CellChangeTimes->{{3.7147980764567213`*^9, 3.714798080725765*^9}, {
+   3.714798135298925*^9, 3.714798137857419*^9}, {3.717326357815118*^9, 
+   3.717326361942574*^9}, {3.717326415014511*^9, 3.717326440351885*^9}, {
+   3.717326534844376*^9, 3.717326559042148*^9}, {3.7173267314741993`*^9, 
+   3.717326869780335*^9}, {3.7173269212036343`*^9, 3.717326935818603*^9}, 
+   3.717326974457333*^9, 3.717327010408465*^9, {3.7173273494309607`*^9, 
+   3.717327362198503*^9}, {3.7173275550117197`*^9, 3.7173275588914413`*^9}, {
+   3.717330802757317*^9, 3.717330828588565*^9}, {3.717331164235899*^9, 
+   3.717331176200223*^9}},
+ FontSize->14,ExpressionUUID->"2d08181e-eecd-46d8-837f-e58f38d474d4"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+DIMENSION OF AN IRREDUCIBLE REPRESENTATION OF SU(n)  -  Code -\
+\>", "Subsection",
+ CellFrame->{{0, 0}, {1, 0}},
+ CellFrameColor->RGBColor[0.87, 0.87, 0.87],
+ CellChangeTimes->{{3.7137748551806602`*^9, 3.7137748723468313`*^9}, {
+  3.713774967438409*^9, 3.713774973011396*^9}, {3.7142872926401167`*^9, 
+  3.714287341027368*^9}, {3.714307368370038*^9, 3.7143073704321327`*^9}, {
+  3.7147277876883373`*^9, 3.714727808190625*^9}, {3.714761820286049*^9, 
+  3.714761849203494*^9}, {3.717276987345737*^9, 3.717276993640172*^9}, {
+  3.717332172617098*^9, 3.7173321972723207`*^9}},
+ FontFamily->"Helvetica",
+ FontSize->12,
+ FontWeight->"Bold",
+ FontColor->RGBColor[
+  0.597406, 0, 
+   0.0527047],ExpressionUUID->"4e8060a0-9f97-4a42-a0a5-ebd9f184a6c2"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"dimensionIrrepSU", "[", "ruplet_", "]"}], ":=", 
+  "\[IndentingNewLine]", 
+  RowBox[{"With", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"rk", "=", 
+      RowBox[{"Length", "[", "ruplet", "]"}]}], "}"}], ",", 
+    RowBox[{
+     RowBox[{"Product", "[", 
+      RowBox[{
+       RowBox[{"With", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"p", "=", "pval"}], "}"}], ",", 
+         RowBox[{"Product", "[", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"p", "+", 
+             RowBox[{"Sum", "[", 
+              RowBox[{
+               RowBox[{"ruplet", "[", 
+                RowBox[{"[", "t", "]"}], "]"}], ",", 
+               RowBox[{"{", 
+                RowBox[{"t", ",", "s", ",", 
+                 RowBox[{"s", "+", "p", "-", "1"}]}], "}"}]}], "]"}]}], ")"}],
+            ",", 
+           RowBox[{"{", 
+            RowBox[{"s", ",", "1", ",", 
+             RowBox[{"rk", "-", 
+              RowBox[{"(", 
+               RowBox[{"p", "-", "1"}], ")"}]}]}], "}"}]}], "]"}]}], "]"}], 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{"pval", ",", "1", ",", "rk"}], "}"}]}], "]"}], "/", 
+     RowBox[{"Product", "[", 
+      RowBox[{
+       RowBox[{"x", "!"}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "1", ",", "rk"}], "}"}]}], "]"}]}]}], 
+   "]"}]}]], "Input",ExpressionUUID->"1ac36e23-d70a-4a8a-ae5c-8441256fa6d3"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+DIMENSION OF AN IRREDUCIBLE REPRESENTATION OF SU(n)  -  Code for CDF Interface\
+\>", "Subsection",
+ CellFrame->{{0, 0}, {1, 0}},
+ CellFrameColor->RGBColor[0.87, 0.87, 0.87],
+ CellChangeTimes->{{3.7137748551806602`*^9, 3.7137748723468313`*^9}, {
+  3.713774967438409*^9, 3.713774973011396*^9}, {3.7142872926401167`*^9, 
+  3.714287341027368*^9}, {3.714307368370038*^9, 3.7143073704321327`*^9}, {
+  3.7147277876883373`*^9, 3.714727808190625*^9}, {3.714761820286049*^9, 
+  3.714761849203494*^9}, {3.717276987345737*^9, 3.717276993640172*^9}, {
+  3.717332172617098*^9, 3.7173321816230297`*^9}},
+ FontFamily->"Helvetica",
+ FontSize->12,
+ FontWeight->"Bold",
+ FontColor->RGBColor[
+  0.597406, 0, 
+   0.0527047],ExpressionUUID->"9a202890-3b74-4911-b989-ef301c81a6c1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"With", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"fieldSize", "=", "3"}], ",", 
+     RowBox[{"n", "=", "4"}]}], "}"}], ",", 
+   RowBox[{"DynamicModule", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"rows", "=", "1"}], ",", 
+       RowBox[{"cols", "=", 
+        RowBox[{"n", "-", "1"}]}], ",", 
+       RowBox[{"mat", "=", 
+        RowBox[{"Table", "[", 
+         RowBox[{
+          RowBox[{"RandomInteger", "[", "3", "]"}], ",", 
+          RowBox[{"{", "1", "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"n", "-", "1"}], "}"}]}], "]"}]}], ",", "myRange"}], "}"}],
+      ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"myRange", "[", "s_", "]"}], ":=", " ", 
+       RowBox[{"Range", "[", "s", "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"Dynamic", "@", 
+       RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"Row", "[", 
+          RowBox[{"{", 
+           RowBox[{"\"\<Dimension of\>\"", ",", 
+            RowBox[{"MatrixForm", "[", "mat", "]"}], ",", "\"\< = \>\"", ",", 
+            
+            RowBox[{"dimensionIrrepSU", "[", 
+             RowBox[{"First", "@", "mat"}], "]"}]}], "}"}], "]"}], ",", 
+         RowBox[{"Evaluate", "@", 
+          RowBox[{"With", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"makeRow", "=", 
+              RowBox[{"Function", "[", 
+               RowBox[{
+                RowBox[{"{", "rowIndex", "}"}], ",", " ", 
+                RowBox[{"Map", "[", 
+                 RowBox[{
+                  RowBox[{"Function", "[", 
+                   RowBox[{
+                    RowBox[{"{", "colIndex", "}"}], ",", 
+                    RowBox[{"InputField", "[", 
+                    RowBox[{
+                    RowBox[{"Dynamic", "[", 
+                    RowBox[{"mat", "[", 
+                    RowBox[{"[", 
+                    RowBox[{"rowIndex", ",", "colIndex"}], "]"}], "]"}], 
+                    "]"}], ",", "Number", ",", 
+                    RowBox[{"FieldSize", "\[Rule]", "fieldSize"}]}], "]"}]}], 
+                   "]"}], ",", 
+                  RowBox[{"myRange", "[", "cols", "]"}]}], "]"}], ",", 
+                "HoldAll"}], "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"Row", "[", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"Grid", "[", 
+                RowBox[{"Map", "[", 
+                 RowBox[{"makeRow", ",", 
+                  RowBox[{"myRange", "[", "rows", "]"}]}], "]"}], "]"}], ",", 
+               
+               RowBox[{"Invisible", "[", "\"\<xxxxxx\>\"", "]"}], ",", 
+               RowBox[{"Column", "[", 
+                RowBox[{"{", 
+                 RowBox[{
+                 "\"\<Dimension of an irreducible representations specified \
+by its higest weight.\>\"", ",", 
+                  "\"\<Entries refer to the n-1 components of the chosen \
+highest weights in the basis of fundamental weights (Dynkin basis).\>\"", ",",
+                   " ", 
+                  RowBox[{"Style", "[", 
+                   RowBox[{
+                   "\"\<Use TAB or RETURN to update.\>\"", ",", "Brown"}], 
+                   "]"}], ",", "\[IndentingNewLine]", 
+                  RowBox[{"Style", "[", 
+                   RowBox[{
+                   "\"\<On IOS, use the Update button.\>\"", ",", "Brown"}], 
+                   "]"}]}], "}"}], "]"}]}], "}"}], "]"}]}], "]"}]}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"Row", "[", 
+          RowBox[{
+           RowBox[{"{", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"Column", "[", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"Panel", "[", 
+                 RowBox[{
+                  RowBox[{"Style", "[", 
+                   RowBox[{
+                    RowBox[{"cols", "+", "1"}], ",", 
+                    RowBox[{"FontSize", "\[Rule]", "14"}], ",", "Bold"}], 
+                   "]"}], ",", 
+                  RowBox[{"Style", "[", 
+                   RowBox[{"\"\<SU(n), with n =\>\"", ",", "Bold", ",", " ", 
+                    RowBox[{"FontSize", "\[Rule]", "12"}]}], "]"}], ",", 
+                  "Left", ",", 
+                  RowBox[{"BaselinePosition", "\[Rule]", "Bottom"}]}], "]"}], 
+                ",", "\[IndentingNewLine]", 
+                RowBox[{"Button", "[", 
+                 RowBox[{
+                  RowBox[{"Style", "[", 
+                   RowBox[{"\"\<Update\>\"", ",", " ", "Bold", ",", " ", 
+                    RowBox[{"FontSize", "\[Rule]", "12"}], ",", "Blue"}], 
+                   "]"}], ",", 
+                  RowBox[{
+                   RowBox[{"rows", "++"}], ";", 
+                   RowBox[{"rows", "--"}], ";"}]}], "]"}]}], "}"}], "]"}], 
+             ",", "\[IndentingNewLine]", 
+             RowBox[{"Panel", "[", 
+              RowBox[{"Style", "[", 
+               RowBox[{
+                RowBox[{"Column", "[", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{
+                   "\"\<Dimension of an irreducible\>\"", ",", 
+                    "\"\<representation of SU(n)\>\""}], "}"}], ",", 
+                  "Center"}], "]"}], ",", " ", "\"\<Title\>\""}], "]"}], 
+              "]"}]}], "}"}], ",", 
+           RowBox[{"Invisible", "[", "\"\<xxxxxx\>\"", "]"}]}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"Button", "[", 
+          RowBox[{"\"\<Decrease n\>\"", ",", "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"mat", "=", 
+             RowBox[{"Map", "[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"Drop", "[", 
+                  RowBox[{"#", ",", 
+                   RowBox[{"-", "1"}]}], "]"}], ")"}], "&"}], ",", "mat"}], 
+              "]"}]}], ";", "\[IndentingNewLine]", 
+            RowBox[{"cols", "--"}], ";"}]}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"Button", "[", 
+          RowBox[{"\"\<Increase n\>\"", ",", "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"AppendTo", "[", 
+              RowBox[{
+               RowBox[{"mat", "[", 
+                RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "]"}], ";"}], ";",
+             "\[IndentingNewLine]", 
+            RowBox[{"cols", "++"}], ";"}]}], "]"}]}], "]"}]}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"SaveDefinitions", "\[Rule]", "True"}], ",", 
+     RowBox[{"SynchronousUpdating", "\[Rule]", " ", "False"}]}], "]"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7142027243486977`*^9, 3.714202781357205*^9}, {
+   3.7142033263164797`*^9, 3.714203331466731*^9}, {3.7142034695842113`*^9, 
+   3.714203480278368*^9}, {3.714218235207041*^9, 3.7142182382032213`*^9}, {
+   3.714218522510765*^9, 3.714218570275992*^9}, {3.714218650946372*^9, 
+   3.714218655312098*^9}, {3.714218731273602*^9, 3.714218753439539*^9}, {
+   3.7142188028463707`*^9, 3.714218825236196*^9}, {3.714280258772736*^9, 
+   3.714280282819561*^9}, {3.714280362083795*^9, 3.7142803651942053`*^9}, 
+   3.714280475815928*^9, {3.71428051590768*^9, 3.7142805252452908`*^9}, {
+   3.714280675326707*^9, 3.71428069384521*^9}, {3.7142808667520237`*^9, 
+   3.7142809012650223`*^9}, {3.714280958015382*^9, 3.7142809779072723`*^9}, {
+   3.7142810459651413`*^9, 3.714281050933722*^9}, {3.714281092611594*^9, 
+   3.714281120199584*^9}, {3.714281758680984*^9, 3.714281770118452*^9}, {
+   3.714281813071787*^9, 3.714281840862068*^9}, {3.714281881805799*^9, 
+   3.714281882523239*^9}, {3.714282119043696*^9, 3.714282133682829*^9}, {
+   3.7142821710662937`*^9, 3.714282222058972*^9}, {3.714282470433599*^9, 
+   3.7142824949802837`*^9}, {3.714282753327894*^9, 3.714282958725857*^9}, {
+   3.714283051845131*^9, 3.714283077506287*^9}, 3.714283131611103*^9, {
+   3.714283173647296*^9, 3.7142831868470097`*^9}, {3.714283294286051*^9, 
+   3.714283304114008*^9}, {3.714283413097547*^9, 3.714283486804924*^9}, {
+   3.714283533052299*^9, 3.714283565792787*^9}, {3.714283625217565*^9, 
+   3.714283699532566*^9}, {3.714283820530031*^9, 3.714283823997362*^9}, {
+   3.714283862384122*^9, 3.7142838756623573`*^9}, {3.71428391571132*^9, 
+   3.7142839182770042`*^9}, {3.714284007293105*^9, 3.714284051416061*^9}, {
+   3.714284082249187*^9, 3.714284083751295*^9}, {3.714284118576737*^9, 
+   3.714284128253302*^9}, 3.714284183910643*^9, {3.7142842536983767`*^9, 
+   3.7142843899078827`*^9}, {3.714284439589101*^9, 3.714284500096161*^9}, {
+   3.714284563895082*^9, 3.714284609814064*^9}, {3.714284672187928*^9, 
+   3.714284692250187*^9}, {3.714284779832127*^9, 3.714284801261014*^9}, {
+   3.714284874324238*^9, 3.714284910985243*^9}, {3.714284947602707*^9, 
+   3.714285019855289*^9}, {3.714285057094283*^9, 3.714285206225048*^9}, {
+   3.714285259624009*^9, 3.714285391826089*^9}, {3.714285424761643*^9, 
+   3.714285495750597*^9}, {3.714285660745069*^9, 3.71428591852067*^9}, {
+   3.714285963671154*^9, 3.714285973525813*^9}, {3.714286004758993*^9, 
+   3.714286019372142*^9}, {3.7142862546701813`*^9, 3.7142862576810713`*^9}, {
+   3.714306628634398*^9, 3.714306634817274*^9}, {3.7143076169144897`*^9, 
+   3.714307617922814*^9}, {3.714308102167828*^9, 3.714308139519334*^9}, {
+   3.7143082416536922`*^9, 3.7143082436070642`*^9}, {3.7143083395529747`*^9, 
+   3.7143083667354593`*^9}, {3.714308471134122*^9, 3.7143084718274117`*^9}, {
+   3.7146428586256533`*^9, 3.714642898777729*^9}, {3.714643191492445*^9, 
+   3.714643201114842*^9}, {3.7146676791150703`*^9, 3.714667682357197*^9}, {
+   3.714727308177047*^9, 3.714727350244856*^9}, {3.7147281376901903`*^9, 
+   3.7147281420800743`*^9}, {3.7147282236128283`*^9, 3.714728273075984*^9}, {
+   3.714752018075118*^9, 3.7147520884883547`*^9}, 3.714756533003224*^9, {
+   3.714756928371455*^9, 3.714756929720087*^9}, {3.7147574699926023`*^9, 
+   3.7147574714089527`*^9}, {3.714757516719555*^9, 3.7147575173127728`*^9}, {
+   3.714757654854299*^9, 3.714757662140586*^9}, {3.71475805664957*^9, 
+   3.714758062473075*^9}, {3.714758104642375*^9, 3.7147581241284323`*^9}, {
+   3.714758826435007*^9, 3.714758827232389*^9}, {3.714758903989649*^9, 
+   3.714758978435812*^9}, {3.714759065122807*^9, 3.714759069433909*^9}, {
+   3.714759420723682*^9, 3.714759437210443*^9}, 3.7153345225383587`*^9, {
+   3.717275347767421*^9, 3.717275361525299*^9}, {3.717275415330447*^9, 
+   3.717275440801989*^9}, {3.717275474519153*^9, 3.7172754769511957`*^9}, {
+   3.7172755158312473`*^9, 3.717275550547998*^9}, {3.717275608859808*^9, 
+   3.717275651053694*^9}, {3.7172757214781437`*^9, 3.717275741109014*^9}, {
+   3.717276079566842*^9, 3.7172761116528597`*^9}, {3.7172765057402067`*^9, 
+   3.717276509761799*^9}, {3.7172766286603613`*^9, 3.717276632306229*^9}, {
+   3.717276664984956*^9, 3.7172766681369247`*^9}, {3.717276816262391*^9, 
+   3.71727681648547*^9}, {3.717277477028304*^9, 3.717277557629806*^9}, {
+   3.717332324901545*^9, 3.717332393714058*^9}, {3.717332440384809*^9, 
+   3.717332444760489*^9}, {3.7173332656510267`*^9, 3.717333299671125*^9}, 
+   3.717333400428516*^9},ExpressionUUID->"e4809084-9cc4-4734-93aa-\
+ee89d053256d"],
+
+Cell[BoxData[
+ DynamicModuleBox[{$CellContext`rows$$ = 1, $CellContext`cols$$ = 
+  3, $CellContext`mat$$ = {{2, 3, 4}}, $CellContext`myRange$$}, 
+  DynamicBox[ToBoxes[
+    Manipulate[
+     Row[{"Dimension of", 
+       MatrixForm[$CellContext`mat$$], " = ", 
+       $CellContext`dimensionIrrepSU[
+        First[$CellContext`mat$$]]}], 
+     Evaluate[
+      With[{$CellContext`makeRow$ = Function[{$CellContext`rowIndex$}, 
+          Map[
+           Function[{$CellContext`colIndex$}, 
+            InputField[
+             Dynamic[
+              
+              Part[$CellContext`mat$$, $CellContext`rowIndex$, \
+$CellContext`colIndex$]], Number, FieldSize -> 3]], 
+           $CellContext`myRange$$[$CellContext`cols$$]], HoldAll]}, 
+       Row[{
+         Grid[
+          Map[$CellContext`makeRow$, 
+           $CellContext`myRange$$[$CellContext`rows$$]]], 
+         Invisible["xxxxxx"], 
+         Column[{
+          "Dimension of an irreducible representations specified by its \
+higest weight.", 
+           "Entries refer to the n-1 components of the chosen highest weights \
+in the basis of fundamental weights (Dynkin basis).", 
+           Style["Use TAB or RETURN to update.", Brown], 
+           Style["On IOS, use the Update button.", Brown]}]}]]], 
+     Row[{
+       Column[{
+         Panel[
+          Style[$CellContext`cols$$ + 1, FontSize -> 14, Bold], 
+          Style["SU(n), with n =", Bold, FontSize -> 12], Left, 
+          BaselinePosition -> Bottom], 
+         Button[
+          Style["Update", Bold, FontSize -> 12, Blue], 
+          Increment[$CellContext`rows$$]; Decrement[$CellContext`rows$$]; 
+          Null]}], 
+       Panel[
+        Style[
+         Column[{"Dimension of an irreducible", "representation of SU(n)"}, 
+          Center], "Title"]]}, 
+      Invisible["xxxxxx"]], 
+     Button[
+     "Decrease n", $CellContext`mat$$ = 
+       Map[Drop[#, -1]& , $CellContext`mat$$]; Decrement[$CellContext`cols$$]; 
+      Null], 
+     Button["Increase n", (AppendTo[
+         Part[$CellContext`mat$$, 1], 0]; Null); 
+      Increment[$CellContext`cols$$]; Null]], StandardForm],
+   ImageSizeCache->{707., {158., 164.}}],
+  SynchronousUpdating -> False,
+  DynamicModuleValues:>{{DownValues[$CellContext`myRange$$] = {HoldPattern[
+         $CellContext`myRange$$[
+          Pattern[$CellContext`s, 
+           Blank[]]]] :> Range[$CellContext`s]}}},
+  Initialization:>{$CellContext`dimensionIrrepSU[
+      Pattern[$CellContext`ruplet, 
+       Blank[]]] := 
+    With[{$CellContext`rk = Length[$CellContext`ruplet]}, Product[
+        With[{$CellContext`p = $CellContext`pval}, 
+         Product[$CellContext`p + Sum[
+            
+            Part[$CellContext`ruplet, $CellContext`t], {$CellContext`t, \
+$CellContext`s, $CellContext`s + $CellContext`p - 1}], {$CellContext`s, 
+           1, $CellContext`rk - ($CellContext`p - 1)}]], {$CellContext`pval, 
+         1, $CellContext`rk}]/Product[
+       Factorial[$CellContext`x], {$CellContext`x, 1, $CellContext`rk}]], 
+    Attributes[$CellContext`makeRow$] = {Temporary}, 
+    Attributes[$CellContext`rowIndex$] = {Temporary}, 
+    Attributes[$CellContext`colIndex$] = {Temporary}}]], "Output",
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellChangeTimes->{
+  3.717277497538224*^9, {3.717277535126402*^9, 3.717277558188601*^9}, {
+   3.717332372341757*^9, 3.71733239532797*^9}, 3.717332434965721*^9, 
+   3.717332483891762*^9, 
+   3.7173333012085123`*^9},ExpressionUUID->"96386436-8c97-4eda-b1bc-\
+12bf0115043b"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1336, 702},
+WindowMargins->{{Automatic, 46}, {Automatic, 0}},
+FrontEndVersion->"11.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 392, 6, 98, "Title",ExpressionUUID->"a807309b-86c4-4cb2-a390-f0ab223b08ea"],
+Cell[975, 30, 356, 6, 81, "Text",ExpressionUUID->"8dcb2c39-71c5-4be3-9235-7c36bd5008b6"],
+Cell[CellGroupData[{
+Cell[1356, 40, 221, 4, 45, "Subsubsection",ExpressionUUID->"e8d17d1b-a92f-4913-abea-7f2a21a04b05"],
+Cell[1580, 46, 617, 11, 35, "Text",ExpressionUUID->"5e56d1a3-3171-496c-ac45-d283f67772ca"],
+Cell[2200, 59, 438, 9, 58, "Text",ExpressionUUID->"8e5d78f2-dff4-46a2-9d3a-f7642ed89860"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2675, 73, 329, 5, 45, "Subsubsection",ExpressionUUID->"eabd4e8c-1bf0-43f9-a531-7499a0f7548e"],
+Cell[3007, 80, 161, 3, 35, "Text",ExpressionUUID->"110a431e-f37a-48c8-8ed2-fa44dde19493"],
+Cell[3171, 85, 1643, 42, 113, "Text",ExpressionUUID->"2306d747-6cd7-4b27-bd79-ba3e48d86877"],
+Cell[4817, 129, 1716, 44, 134, "Text",ExpressionUUID->"40ecd2bc-4f40-4bb0-9ccd-bbcdf636ad6e"],
+Cell[6536, 175, 1403, 29, 94, "Text",ExpressionUUID->"c1e7e671-7674-40df-ad48-23f37298fdb5"],
+Cell[7942, 206, 1862, 40, 114, "Text",ExpressionUUID->"2d08181e-eecd-46d8-837f-e58f38d474d4"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[9841, 251, 752, 16, 34, "Subsection",ExpressionUUID->"4e8060a0-9f97-4a42-a0a5-ebd9f184a6c2"],
+Cell[10596, 269, 1410, 41, 73, "Input",ExpressionUUID->"1ac36e23-d70a-4a8a-ae5c-8441256fa6d3"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[12043, 315, 768, 16, 34, "Subsection",ExpressionUUID->"9a202890-3b74-4911-b989-ef301c81a6c1"],
+Cell[CellGroupData[{
+Cell[12836, 335, 11116, 218, 514, "Input",ExpressionUUID->"e4809084-9cc4-4734-93aa-ee89d053256d"],
+Cell[23955, 555, 3485, 81, 341, "Output",ExpressionUUID->"96386436-8c97-4eda-b1bc-12bf0115043b"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

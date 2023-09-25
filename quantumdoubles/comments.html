@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Character tables for Drinfeld doubles of finite groups</title>
+<style type="text/css">
+<!--
+.style1 {
+	color: #6C5035
+}
+.style2 {
+	font-size: 36px;
+	font-weight: bold;
+}
+.style3 {font-size: smaller}
+-->
+</style>
+</head>
+
+<body>
+
+
+
+<p align="center" class="style2">Character tables (modular data) for Drinfeld doubles of finite groups</p>
+<p>This file contains modular data, in particular the character table, for Drinfeld doubles of finite groups, also called (untwisted) quantum doubles of finite groups.</p>
+<p>The monoidal category of representations of a Drinfeld double is modular : 
+  a projective representation of SL(2,Z) is obtained from  two generators called S and T.</p>
+<p>These are two matrices that obey the relations: S^2 = (ST)^3 = C, C^2=1. <br />
+S and T are unitary. <br />
+S is symmetric.</p>
+<p>The matrix C = S^2 is called the conjugation matrix. </p>
+<p>Matrix elements of S and T are indexed by the irreducible representations of the Drinfeld double (the simple objects of the category).</p>
+<p> The S matrix is the analog of a character table, for the quantum double of a finite group.  </p>
+<p>Traditionally, a table of characters is written with conjugacy classes along the horizontal and irreducible representations along the vertical, moreover it is normalized in such a way that the first line is 1,1....1.
+  <br />
+  For this reason, a better analog of the character table of a finite group is not S itself but the table chi with elements chi(m,n) = S(n,m) / S(n,1).<br />
+  S is symmetric but chi, in general, is not. </p>
+<p>The character table of the finite group itself is a normalized (and small) non-contiguous submatrix of S.  </p>
+<p>The collection of fusion matrices Nm with matrix elements (Nm)_(n,p) encodes the ring structure: (m)  (n) = sum_p (Nm)_(n,p) p , where m,n,p are irreducible representations of the Drinfeld double.</p>
+<p>S matrices are given as  lists of lists. <br />
+  T matrices are usually sparse (Mathematica syntax). <br />
+  Fusion matrices are usually sparse (Mathematica syntax). <br />
+Each quantum double comes with a summary text file. </p>
+<p>The information about the conjugacy classes and their centralizers  usually comesfrom GAP. Calculations of S and T matrices are performed in Magma. <br />
+The results are then transferred to Mathematica. Calculations of fusion matrices (using the Verlinde formula) are done with Mathematica.<br />
+</p>
+<p class="style3">Warnings: <br />
+Matrix elements of S and T are exact complex numbers (ie symbolic, not numerical).<br />
+Matrix elements of fusion matrices are non negative integers.<br />
+The size of S can be rather big. For instance the 1080 elements subgroup of SU(3) has only 17 irreducible representations but its quantum double has 240 irreducible representations. So, the usual character table of the group is 17 x 17 but the table (S matrix) given here is 240 x 240.</p>
+<p class="style3">Note: The choice of a Lie group (level is infinite) and of one of its finite subgroups  determines what is called, in physics, an holomorphic orbifold (central charge c=0). It is a particular type of conformal field theory. Twisted holomorphic orbifolds are obtained by further introducing a 3-cocyle for the finite group (modular data for twisted Drinfled doubles is not given in the present files). 
+Even more general orbifolds are obtained by chosing a Lie group at level k (positive integer), such examples are not considered here. For a discussion of properties of holomorphic orbifolds associated with Drinfeld doubles of finite subgroups of SU(2) and SU(3), see the article <em>Quantum doubles for finite subgroups of SU(2) and SU(3) Lie groups</em>, R. Coquereaux, J.-B. Zuber, ArXiV XXX (2012).</p>
+<p class="style3">Correspondence with GAP smallgroups: <br />
+ Sigma36x3 is SmallGroup(108,15), Sigma72x3 is SmallGroup(216,88), Sigma216x3 is SmallGroup(648,532), Sigma360x3 is SmallGroup(1080,260)</p>
+<h1>Finite subgroups of SU(2)</h1> 
+
+<h2 class="style1">Cyclic groups (examples):</h2> 
+<h3>CyclicGroup(5)</h3>
+<a href="FiniteGroupsModularData/CyclicGroup(5)/Modular-S.m" title="S-matrix"> S</a>,
+  <a href="FiniteGroupsModularData/CyclicGroup(5)/Modular-T.m" title="T-matrix">T</a>,
+<a href="FiniteGroupsModularData/CyclicGroup(5)/quantumdoubledata" title="Summary">Summary</a>,
+  <a href="FiniteGroupsModularData/CyclicGroup(5)/Table-of-fusion-matrices.m" title="Fusion matrices">Fusion matrices</a></h3>
+<h3>CyclicGroup(6)</h3>
+<a href="FiniteGroupsModularData/CyclicGroup(6)/Modular-S.m" title="S-matrix">S</a>,
+<a href="FiniteGroupsModularData/CyclicGroup(6)/Modular-T.m" title="T-matrix">T</a>,
+<a href="FiniteGroupsModularData/CyclicGroup(6)/quantumdoubledata" title="Summary">Summary</a>,
+<a href="FiniteGroupsModularData/CyclicGroup(6)/Table-of-fusion-matrices.m" title="Fusion matrices">Fusion matrices</a>
+
+
+<h2 class="style1">Binary dihedral groups, also called dicyclic groups (examples):</h2>
+<h3>DicyclicGroup(2)</h3> 
+<a href="FiniteGroupsModularData/DicyclicGroup(2)/Modular-S.m" title="S-matrix">S</a>,
+<a href="FiniteGroupsModularData/DicyclicGroup(2)/Modular-T.m" title="T-matrix">T</a>,
+<a href="FiniteGroupsModularData/DicyclicGroup(2)/quantumdoubledata" title="Summary">Summary</a>,
+<a href="FiniteGroupsModularData/DicyclicGroup(2)/Table-of-fusion-matrices.m" title="Fusion matrices">Fusion matrices</a>
+
+<h3>DicyclicGroup(3)</h3>
+<a href="FiniteGroupsModularData/DicyclicGroup(3)/Modular-S.m" title="S-matrix">S</a>,
+<a href="FiniteGroupsModularData/DicyclicGroup(3)/Modular-T.m" title="T-matrix">T</a>,
+<a href="FiniteGroupsModularData/DicyclicGroup(3)/quantumdoubledata" title="Summary">Summary</a>,
+<a href="FiniteGroupsModularData/DicyclicGroup(3)/Table-of-fusion-matrices.m" title="Fusion matrices">Fusion matrices</a>
+
+<h3>DicyclicGroup(4)</h3>
+<a href="FiniteGroupsModularData/DicyclicGroup(4)/Modular-S.m" title="S-matrix">S</a>,
+<a href="FiniteGroupsModularData/DicyclicGroup(4)/Modular-T.m" title="T-matrix">T</a>,
+<a href="FiniteGroupsModularData/DicyclicGroup(4)/quantumdoubledata" title="Summary">Summary</a>,
+<a href="FiniteGroupsModularData/DicyclicGroup(4)/Table-of-fusion-matrices.m" title="Fusion matrices">Fusion matrices</a>
+
+
+<h3>DicyclicGroup(5)</h3>
+<a href="FiniteGroupsModularData/DicyclicGroup(5)/Modular-S.m" title="S-matrix">S</a>,
+<a href="FiniteGroupsModularData/DicyclicGroup(5)/Modular-T.m" title="T-matrix">T</a>,
+<a href="FiniteGroupsModularData/DicyclicGroup(5)/quantumdoubledata" title="Summary">Summary</a>,
+<a href="FiniteGroupsModularData/DicyclicGroup(5)/Table-of-fusion-matrices.m" title="Fusion matrices">Fusion matrices</a>
+
+
+<h2 class="style1">Exceptional binary polyhedral groups:</h2>
+<h3>BinaryTetrahedral</h3>
+<a href="FiniteGroupsModularData/BinaryTetrahedral/Modular-S.m" title="S-matrix">S</a>,
+<a href="FiniteGroupsModularData/BinaryTetrahedral/Modular-T.m" title="T-matrix">T</a>,
+<a href="FiniteGroupsModularData/BinaryTetrahedral/quantumdoubledata" title="Summary">Summary</a>,
+<a href="FiniteGroupsModularData/BinaryTetrahedral/Table-of-fusion-matrices.m" title="Fusion matrices">Fusion matrices</a>
+
+<h3>BinaryCubic</h3>
+<a href="FiniteGroupsModularData/BinaryCubic/Modular-S.m" title="S-matrix">S</a>,
+<a href="FiniteGroupsModularData/BinaryCubic/Modular-T.m" title="T-matrix">T</a>,
+<a href="FiniteGroupsModularData/BinaryCubic/quantumdoubledata" title="Summary">Summary</a>,
+<a href="FiniteGroupsModularData/BinaryCubic/Table-of-fusion-matrices.m" title="Fusion matrices">Fusion matrices</a>
+
+<h3>BinaryIcosahedral</h3>
+<a href="FiniteGroupsModularData/BinaryIcosahedral/Modular-S.m" title="S-matrix">S</a>,
+<a href="FiniteGroupsModularData/BinaryIcosahedral/Modular-T.m" title="T-matrix">T</a>,
+<a href="FiniteGroupsModularData/BinaryIcosahedral/quantumdoubledata" title="Summary">Summary</a>,
+<a href="FiniteGroupsModularData/BinaryIcosahedral/Table-of-fusion-matrices.m" title="Fusion matrices">Fusion matrices</a>
+
+<h1>Finite subgroups of SU(3)</h1>
+
+<h2 class="style1">The Delta(3 n^2) = (Zn x Zn):Z3 family and its subgroups (examples): </h2>
+
+<h3>Tetrahedral = Delta(3 . 2^2)</h3>
+<a href="FiniteGroupsModularData/Tetrahedral/Modular-S.m" title="S-matrix">S</a>,
+<a href="FiniteGroupsModularData/Tetrahedral/Modular-T.m" title="T-matrix">T</a>,
+<a href="FiniteGroupsModularData/Tetrahedral/quantumdoubledata" title="Summary">Summary</a>,
+<a href="FiniteGroupsModularData/Tetrahedral/Table-of-fusion-matrices.m" title="Fusion matrices">Fusion matrices</a>
+
+<h3>Frobenius F21 = Z3 : Z7</h3>
+<a href="FiniteGroupsModularData/Frobenius21/Modular-S.m" title="S-matrix">S</a>,
+<a href="FiniteGroupsModularData/Frobenius21/Modular-T.m" title="T-matrix">T</a>,
+<a href="FiniteGroupsModularData/Frobenius21/quantumdoubledata" title="Summary">Summary</a>,
+<a href="FiniteGroupsModularData/Frobenius21/Table-of-fusion-matrices.m" title="Fusion matrices">Fusion matrices</a>
+
+
+<h2 class="style1">The Delta(6 n^2) = = (Zn x Zn):S3 family and its subgroups (examples): </h2>
+
+<h3>Cubic = Delta(6 . 2^2)</h3>
+<a href="FiniteGroupsModularData/Cubic/Modular-S.m" title="S-matrix">S</a>,
+<a href="FiniteGroupsModularData/Cubic/Modular-T.m" title="T-matrix">T</a>,
+<a href="FiniteGroupsModularData/Cubic/quantumdoubledata" title="Summary">Summary</a>,
+<a href="FiniteGroupsModularData/Cubic/Table-of-fusion-matrices.m" title="Fusion matrices">Fusion matrices</a>
+
+<h2 class="style1">Exceptional subgroups</h2>
+
+<h3>Sigma36x3</h3>
+<a href="FiniteGroupsModularData/Sigma36x3/Modular-S.m" title="S-matrix">S</a>,
+<a href="FiniteGroupsModularData/Sigma36x3/Modular-T.m" title="T-matrix">T</a>,
+<a href="FiniteGroupsModularData/Sigma36x3/quantumdoubledata" title="Summary">Summary</a>,
+<a href="FiniteGroupsModularData/Sigma36x3/Table-of-fusion-matrices.m" title="Fusion matrices">Fusion matrices</a>
+
+<h3>Icosahedral = Sigma60 </h3>
+<a href="FiniteGroupsModularData/Sigma60/Modular-S.m" title="S-matrix">S</a>,
+<a href="FiniteGroupsModularData/Sigma60/Modular-T.m" title="T-matrix">T</a>,
+<a href="FiniteGroupsModularData/Sigma60/quantumdoubledata" title="Summary">Summary</a>,
+<a href="FiniteGroupsModularData/Sigma60/Table-of-fusion-matrices.m" title="Fusion matrices">Fusion matrices</a>
+
+<h3>Sigma60xZ3 </h3>
+<a href="FiniteGroupsModularData/Sigma60xZ3/Modular-S.m" title="S-matrix">S</a>,
+<a href="FiniteGroupsModularData/Sigma60xZ3/Modular-T.m" title="T-matrix">T</a>,
+<a href="FiniteGroupsModularData/Sigma60xZ3/quantumdoubledata" title="Summary">Summary</a>,
+<a href="FiniteGroupsModularData/Sigma60xZ3/Table-of-fusion-matrices.m" title="Fusion matrices">Fusion matrices</a>
+<h3>Sigma72x3</h3>
+<a href="FiniteGroupsModularData/Sigma72x3/Modular-S.m" title="S-matrix">S</a>,
+<a href="FiniteGroupsModularData/Sigma72x3/Modular-T.m" title="T-matrix">T</a>,
+<a href="FiniteGroupsModularData/Sigma72x3/quantumdoubledata" title="Summary">Summary</a>,
+<a href="FiniteGroupsModularData/Sigma72x3/Table-of-fusion-matrices.m" title="Fusion matrices">Fusion matrices</a>
+
+<h3>Sigma168</h3>
+<a href="FiniteGroupsModularData/Sigma168/Modular-S.m" title="S-matrix">S</a>,
+<a href="FiniteGroupsModularData/Sigma168/Modular-T.m" title="T-matrix">T</a>,
+<a href="FiniteGroupsModularData/Sigma168/quantumdoubledata" title="Summary">Summary</a>,
+<a href="FiniteGroupsModularData/Sigma168/Table-of-fusion-matrices.m" title="Fusion matrices">Fusion matrices</a>
+
+<h3>Sigma168xZ3</h3>
+<a href="FiniteGroupsModularData/Sigma168xZ3/Modular-S.m" title="S-matrix">S</a>,
+<a href="FiniteGroupsModularData/Sigma168xZ3/Modular-T.m" title="T-matrix">T</a>,
+<a href="FiniteGroupsModularData/Sigma168xZ3/quantumdoubledata" title="Summary">Summary</a>,
+<a href="FiniteGroupsModularData/Sigma168xZ3/Table-of-fusion-matrices.m" title="Fusion matrices">Fusion matrices</a>
+<h3>Sigma216x3</h3>
+<a href="FiniteGroupsModularData/Sigma216x3/Modular-S.m" title="S-matrix">S</a>, 
+<a href="FiniteGroupsModularData/Sigma216x3/Modular-T.m" title="T-matrix">T</a>, 
+<a href="FiniteGroupsModularData/Sigma216x3/quantumdoubledata" title="Summary">Summary</a>, 
+<a href="FiniteGroupsModularData/Sigma216x3/Table-of-fusion-matrices.m" title="Fusion matrices">Fusion matrices</a>
+
+
+<h3>Sigma360x3</h3>
+<a href="FiniteGroupsModularData/Sigma360x3/Modular-S.m" title="S-matrix">S</a>,
+<a href="FiniteGroupsModularData/Sigma360x3/Modular-T.m" title="T-matrix">T</a>,
+<a href="FiniteGroupsModularData/Sigma360x3/quantumdoubledata" title="Summary">Summary</a>,
+<a href="FiniteGroupsModularData/Sigma360x3/Table-of-fusion-matrices.m" title="Fusion matrices">Fusion matrices</a>
+
+
+<h1>Other examples of doubles of finite groups</h1>
+
+<h2>Various groups</h2>
+
+
+<h3>SmallGroup(16,6)</h3>
+<a href="FiniteGroupsModularData/SmallGroup(16,6)/Modular-S.m" title="S-matrix">S</a>,
+<a href="FiniteGroupsModularData/SmallGroup(16,6)/Modular-T.m" title="T-matrix">T</a>,
+<a href="FiniteGroupsModularData/SmallGroup(16,6)/quantumdoubledata" title="Summary">Summary</a>,
+<a href="FiniteGroupsModularData/SmallGroup(16,6)/Table-of-fusion-matrices.m" title="Fusion matrices">Fusion matrices</a>
+
+<h3>SmallGroup(648,531)</h3>
+<a href="FiniteGroupsModularData/SmallGroup(648,531)/Modular-S.m" title="S-matrix">S</a>,
+<a href="FiniteGroupsModularData/SmallGroup(648,531)/Modular-T.m" title="T-matrix">T</a>,
+<a href="FiniteGroupsModularData/SmallGroup(648,531)/quantumdoubledata" title="Summary">Summary</a>,
+<a href="FiniteGroupsModularData/SmallGroup(648,531)/Table-of-fusion-matrices.m" title="Fusion matrices">Fusion matrices</a>  The "fake Sigma216x3".
+
+<h2>Mathieu groups</h2>
+
+
+</body>
+</html>

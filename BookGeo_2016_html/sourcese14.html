@@ -1,0 +1,1722 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>Generalites sur les alg`ebres de Lie</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<!-- html,index=2,3,next --> 
+<meta name="src" content="source.tex"> 
+<link rel="stylesheet" type="text/css" href="source.css"> 
+</head><body 
+>
+   <!--l. 166--><div class="crosslinks"><p class="noindent">[<a 
+href="sourcese15.html" >next</a>] [<a 
+href="sourcese13.html" >prev</a>] [<a 
+href="sourcese13.html#tailsourcese13.html" >prev-tail</a>] [<a 
+href="#tailsourcese14.html">tail</a>] [<a 
+href="sourcech2.html#sourcese14.html" >up</a>] </p></div>
+   <h3 class="sectionHead"><span class="titlemark">2.2   </span> <a 
+ id="x29-570002.2"></a>Généralités sur les algèbres de Lie</h3>
+<!--l. 168--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">2.2.1   </span> <a 
+ id="x29-580002.2.1"></a>Application exponentielle et algèbres de Lie</h4>
+<!--l. 170--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x29-590002.2.1"></a>Définition</h5>
+<!--l. 172--><p class="noindent" >Une algèbre de Lie <span 
+class="eufm-10x-x-120">&#x1D524; </span>sur un corps commutatif I K est un ensemble qui est, d&#8217;une
+part un espace vectoriel sur I K (sa loi de groupe abélien est notée + et sa loi
+externe sur I K est notée multiplicativement), de dimension finie ou non, et qui,
+d&#8217;autre part, est muni d&#8217;une loi de composition interne &#8211;non associative&#8211;
+généralement notée [<span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">,</span><span style="margin-left:0.3em" class="thinspace"></span>] vérifiant les propriétés suivantes
+       <dl class="description"><dt class="description">
+   <span 
+class="cmtt-12">Anticommutativit</span><span 
+class="cmtt-12">é</span> </dt><dd 
+class="description"> <span 
+class="cmsy-10x-x-120">&#x2200;</span><span 
+class="cmmi-12">X,Y </span><span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="eufm-10x-x-120">&#x1D524;       </span>[<span 
+class="cmmi-12">X,Y </span>] = <span 
+class="cmsy-10x-x-120">-</span>[<span 
+class="cmmi-12">Y,X</span>]
+       </dd><dt class="description">
+   <span 
+class="cmtt-12">Identit</span><span 
+class="cmtt-12">é de Jacobi</span> </dt><dd 
+class="description">  <span 
+class="cmsy-10x-x-120">&#x2200;</span><span 
+class="cmmi-12">X,Y,Z   </span><span 
+class="cmsy-10x-x-120">&#x2208;  </span><span 
+class="eufm-10x-x-120">&#x1D524;   </span>[<span 
+class="cmmi-12">X, </span>[<span 
+class="cmmi-12">Y,Z</span>]]  +  [<span 
+class="cmmi-12">Z, </span>[<span 
+class="cmmi-12">X,Y </span>]]  +
+       [<span 
+class="cmmi-12">Y, </span>[<span 
+class="cmmi-12">Z,X</span>]] = <span 
+class="cmmi-12">&#x00A0;</span>0</dd></dl>
+<!--l. 188--><p class="noindent" >On suppose également vérifiée la linéarité par rapport aux scalaires, c&#8217;est à dire
+[<span 
+class="cmmi-12">&#x03B1;X,Y </span>] = [<span 
+class="cmmi-12">X,&#x03B1;Y </span>] = <span 
+class="cmmi-12">&#x03B1;</span>[<span 
+class="cmmi-12">X,Y </span>] si <span 
+class="cmmi-12">&#x03B1; </span><span 
+class="cmsy-10x-x-120">&#x2208;</span> I K. La loi [<span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">,</span><span style="margin-left:0.3em" class="thinspace"></span>] est généralement désignée sous
+le nom de &#8220;crochet de Lie&#8221;. Dans toute la suite, le corps I K coïncidera avec le
+corps lC des nombres complexes.
+<!--l. 196--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x29-600002.2.1"></a>Exemple fondamental</h5>
+<!--l. 198--><p class="noindent" >Soit <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>une algèbre associative<span class="frenchb-thinspace">&#x00A0;</span>; on peut lui associer canoniquement
+une algèbre de Lie en définissant le crochet de Lie de la façon suivante
+(auquel cas le crochet de Lie peut également être désigné sous le nom de
+commutateur)<span class="frenchb-nbsp">&#x00A0;</span>:
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source203x.png" alt="X, Y &#x2208; A  &#x2192;  [X, Y ] = XY  - Y X  " class="math-display" ></center> Le
+crochet obtenu est généralement non nul, sauf évidemment si <span 
+class="cmmi-12">X </span>et <span 
+class="cmmi-12">Y </span>commutent.
+Par ailleurs on vérifie aisément que les propriétés d&#8217;anticommutativité du crochet
+ainsi que l&#8217;identité de Jacobi sont automatiquement satisfaites. Les ensembles de
+matrices <span 
+class="cmmi-12">M</span>(<span 
+class="cmmi-12">n,</span> lC) et <span 
+class="cmmi-12">M</span>(<span 
+class="cmmi-12">n,</span> I R) sont donc automatiquement des algèbres de
+Lie.
+<!--l. 215--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x29-610002.2.1"></a>Constantes de structure d&#8217;une algèbre de Lie <span 
+class="eufm-10x-x-120">&#x1D524;</span></h5>
+<!--l. 217--><p class="noindent" >Supposons que <span 
+class="eufm-10x-x-120">&#x1D524;</span>, en tant qu&#8217;espace vectoriel sur le corps des complexes lC soit de
+dimension finie <span 
+class="cmmi-12">n </span>et soit <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">X</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub><span 
+class="cmsy-10x-x-120">}</span><sub><span 
+class="cmmi-8">&#x03B1;</span><span 
+class="cmsy-8">&#x2208;{</span><span 
+class="cmr-8">1</span><span 
+class="cmmi-8">&#x2026;</span><span 
+class="cmmi-8">n</span><span 
+class="cmsy-8">}</span></sub> une base de <span 
+class="eufm-10x-x-120">&#x1D524;</span>. Le crochet de Lie [<span 
+class="cmmi-12">X</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub><span 
+class="cmmi-12">,X</span><sub><span 
+class="cmmi-8">&#x03B2;</span></sub>] de
+deux vecteurs de base est <span 
+class="cmti-12">a priori </span>un élément de <span 
+class="eufm-10x-x-120">&#x1D524; </span>et peut donc se développer sur
+la base choisie<span class="frenchb-nbsp">&#x00A0;</span>:
+   <center class="math-display" >
+<img 
+src="source204x.png" alt="             &#x03B3;
+[X &#x03B1;,X &#x03B2;] = C &#x03B1;&#x03B2;X &#x03B3;  " class="math-display" ></center> Les
+<span 
+class="cmmi-12">n</span><sup><span 
+class="cmr-8">3</span></sup> nombres <span 
+class="cmmi-12">C</span><sub>
+<span 
+class="cmmi-8">&#x03B1;&#x03B2;</span></sub><sup><span 
+class="cmmi-8">&#x03B3;</span></sup> sont les constantes de structure de <span 
+class="eufm-10x-x-120">&#x1D524; </span>par rapport à la base
+choisie.
+<!--l. 230--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x29-620002.2.1"></a>Application exponentielle dans <span 
+class="cmmi-12">M</span>(<span 
+class="cmmi-12">n,</span> lC)</h5>
+<!--l. 232--><p class="noindent" >On désigne par exp : <span 
+class="cmmi-12">&#x03B1; </span><span 
+class="cmsy-10x-x-120">&#x2192;</span><span 
+class="cmex-10x-x-120">&#x2211;</span>
+  <sub><span 
+class="cmmi-8">p</span><span 
+class="cmr-8">=0</span></sub><sup><span 
+class="cmsy-8">&#x221E;</span></sup><span 
+class="cmmi-12">&#x03B1;</span><sup><span 
+class="cmmi-8">p</span></sup><span 
+class="cmmi-12">&#x2215;p</span>! l&#8217;application exponentielle définie sur
+<span 
+class="cmmi-12">M</span>(<span 
+class="cmmi-12">n,</span> lC). Posons <span 
+class="cmmi-12">g </span>= <span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">A</span></sup>. Il est facile de voir que
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source205x.png" alt="        T rA
+detg = e  " class="math-display" ></center>
+Cette relation est évidente si <span 
+class="cmmi-12">A </span>est diagonalisable (puisque <span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BB;</span><sub><span 
+class="cmr-6">1</span></sub></sup><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BB;</span><sub><span 
+class="cmmi-6">p</span></sub></sup> = <span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BB;</span><sub><span 
+class="cmr-6">1</span></sub><span 
+class="cmr-8">+</span><span 
+class="cmmi-8">&#x2026;</span><span 
+class="cmr-8">+</span><span 
+class="cmmi-8">&#x03BB;</span><sub><span 
+class="cmmi-6">p</span></sub></sup>). Si
+ce n&#8217;est pas le cas, on utilise pour démontrer cette propriété générale le fait que
+l&#8217;ensemble des matrices diagonalisables sur lC est dense. Cette relation est à la
+base d&#8217;une quantité de résultats dont voici le premier<span class="frenchb-nbsp">&#x00A0;</span>: si <span 
+class="cmmi-12">A </span><span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="cmmi-12">M</span>(<span 
+class="cmmi-12">n,</span> lC), alors
+<span 
+class="cmmi-12">g </span>= <span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">A</span></sup> <span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="cmmi-12">GL</span>(<span 
+class="cmmi-12">n,</span> lC)<span class="frenchb-thinspace">&#x00A0;</span>; en effet, <span 
+class="cmmi-12">det</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">g </span>n&#8217;est jamais nul puisque la fonction <span 
+class="cmmi-12">z </span><span 
+class="cmsy-10x-x-120">&#x2192; </span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">z</span></sup> ne
+s&#8217;annule pas.
+<!--l. 247--><p class="indent" >   <span 
+class="cmsy-10x-x-120">&#x25B3; </span><span 
+class="cmti-12">ATTENTION</span><span class="frenchb-nbsp">&#x00A0;</span>: On n&#8217;a pas dit que tout élément de <span 
+class="cmmi-12">GL</span>(<span 
+class="cmmi-12">n,</span> lC) pouvait être
+atteint par la fonction exp (c&#8217;est faux<span class="frenchb-thinspace">&#x00A0;</span>!).
+<!--l. 253--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x29-630002.2.1"></a>Cas des groupes de matrices<span class="frenchb-nbsp">&#x00A0;</span>: Correspondance entre groupes et algèbres de
+Lie</h5>
+<!--l. 255--><p class="noindent" >Soit <span 
+class="cmmi-12">G </span>un groupe de Lie défini comme sous-ensemble de <span 
+class="cmmi-12">M</span>(<span 
+class="cmmi-12">n,</span> lC). On définit son
+algèbre de Lie notée <span 
+class="eufm-10x-x-120">&#x1D524; </span>ou <span 
+class="cmmi-12">Lie</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">G </span>comme suit,
+   <center class="math-display" >
+<img 
+src="source206x.png" alt="                                 tA
+LieG  = {A &#x2208;  Mn (Cl) | &#x2200;t &#x2208; IR, e  &#x2208; G } " class="math-display" ></center> De
+façon un peu imagée, on peut dire que l&#8217;algèbre de Lie d&#8217;un groupe <span 
+class="cmmi-12">G</span>, c&#8217;est<span 
+class="cmmi-12">&#x2026;</span> son
+logarithme<span class="frenchb-thinspace">&#x00A0;</span>! De fait, l&#8217;utilisation de l&#8217;algèbre de Lie de <span 
+class="cmmi-12">G </span>permet de linéariser les
+propriétés des groupes, c&#8217;est à dire de transformer les multiplications en additions
+etc&#x00A0;.
+<!--l. 269--><p class="indent" >   La définition ci-dessus de l&#8217;algèbre de Lie d&#8217;un groupe <span 
+class="cmmi-12">G </span>semble un peu
+restrictive en ce sens qu&#8217;elle semble ne pouvoir s&#8217;appliquer qu&#8217;aux groupes de
+matrices, mais il existe une définition plus abstraite de la notion d&#8217;algèbre de Lie
+d&#8217;un groupe de Lie, définition ne faisant pas l&#8217;hypothèse d&#8217;une réalisation
+matricielle<span class="frenchb-thinspace">&#x00A0;</span>; nous y reviendrons plus loin.
+                                                                          
+
+                                                                          
+<!--l. 285--><p class="indent" >   Soient <span 
+class="cmmi-12">g </span>et <span 
+class="cmmi-12">h </span>deux éléments de <span 
+class="cmmi-12">G </span>et supposons qu&#8217;on puisse écrire <span 
+class="cmmi-12">g </span>= <span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">tA</span></sup> et
+<span 
+class="cmmi-12">h </span>= <span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">tB</span></sup> avec <span 
+class="cmmi-12">A,B </span><span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="eufm-10x-x-120">&#x1D524;</span>. Tout d&#8217;abord, notons que <span 
+class="cmmi-12">g</span><sup><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sup> = <span 
+class="cmmi-12">e</span><sup><span 
+class="cmsy-8">-</span><span 
+class="cmmi-8">tA</span></sup>. On peut alors
+considérer le commutateur de <span 
+class="cmmi-12">g </span>et <span 
+class="cmmi-12">h </span>au sens de la théorie des groupes,
+c&#8217;est à dire l&#8217;élément <span 
+class="cmmi-12">c </span>= <span 
+class="cmmi-12">ghg</span><sup><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sup><span 
+class="cmmi-12">h</span><sup><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sup> de <span 
+class="cmmi-12">G</span>. Au second ordre en <span 
+class="cmmi-12">t</span>, il vient
+<div class="eqnarray">
+   <center class="math-display" >
+<img 
+src="source207x.png" alt="     tA tB -tA - tB
+c = e  e  e   e
+  = (1 + tA + t2A2&#x2215;2! + ...)(1 + tB +  t2B2 &#x2215;2! + ...)
+                      2 2                    2  2
+           (1 - tA + t A &#x2215;2! + ...)(1 - tB +  tB  &#x2215;2! + ...)
+  = 1 + 0t + t2[A, B ] + O (t3)
+" class="math-display" ></center>
+</div>Il ne faudrait pas trop hâtivement en déduire que le commutateur dans <span 
+class="cmmi-12">G </span>est égal
+à l&#8217;exponentielle du commutateur dans <span 
+class="cmmi-12">Lie</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">G</span>, mais c&#8217;est &#8220;presque&#8221; vrai,
+comme on vient de le voir (<span 
+class="cmmi-12">c</span><span style="margin-left:0.3em" class="thinspace"></span> <img 
+src="source208x.png" alt=" ~
+t&#x2192;0"  class="oalign" > <span style="margin-left:0.3em" class="thinspace"></span>1 + <span 
+class="cmmi-12">t</span><sup><span 
+class="cmr-8">2</span></sup>[<span 
+class="cmmi-12">A,B</span>]). De plus, on peut démontrer
+que
+   <center class="math-display" >
+<img 
+src="source209x.png" alt=" t2[A,B]         tA&#x2215;n tB &#x2215;n -tA&#x2215;n -tB &#x2215;n n2
+e      = nli&#x2192;m&#x221E;(e    e    e     e     )   " class="math-display" ></center>
+C&#8217;est à l&#8217;aide de ces relations qu&#8217;on peut s&#8217;assurer que l&#8217;algèbre de Lie d&#8217;un
+groupe de Lie est bien<span 
+class="cmmi-12">&#x2026;</span> une algèbre de Lie (l&#8217;ensemble est bien stable par le
+commutateur).
+<!--l. 317--><p class="indent" >   Soit <span 
+class="cmmi-12">g </span><span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="cmmi-12">G </span>et supposons qu&#8217;on puisse écrire <span 
+class="cmmi-12">g </span>= <span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">A</span></sup><span class="frenchb-thinspace">&#x00A0;</span>; alors, en utilisant la
+structure d&#8217;espace vectoriel de <span 
+class="cmmi-12">LieG</span>, on voit qu&#8217;on peut décomposer <span 
+class="cmmi-12">A </span>sur une
+base <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">X</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub><span 
+class="cmsy-10x-x-120">}</span><span class="frenchb-thinspace">&#x00A0;</span>;ainsi, <span 
+class="cmmi-12">A </span>= <span 
+class="cmex-10x-x-120">&#x2211;</span>
+  <span 
+class="cmmi-12">a</span><sup><span 
+class="cmmi-8">&#x03B1;</span></sup><span 
+class="cmmi-12">X</span><sub>
+<span 
+class="cmmi-8">&#x03B1;</span></sub>. Les <span 
+class="cmmi-12">n </span>nombres <span 
+class="cmmi-12">a</span><sup><span 
+class="cmmi-8">&#x03B1;</span></sup> permettent donc de définir
+sur <span 
+class="cmmi-12">G </span>un système de coordonnées (une carte). Ceci montre également que la
+                                                                          
+
+                                                                          
+dimension de <span 
+class="cmmi-12">G</span>, en tant que variété, est égale à celle de <span 
+class="cmmi-12">Lie</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">G</span>, considéré comme
+espace vectoriel.
+<!--l. 329--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">2.2.2   </span> <a 
+ id="x29-640002.2.2"></a>Correspondance entre groupes et algèbres de Lie</h4>
+<!--l. 331--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x29-650002.2.2"></a>Algèbres de Lie des groupes classiques</h5>
+<!--l. 333--><p class="noindent" >Notons d&#8217;abord que, pour les groupes unitaires,
+   <center class="math-display" >
+<img 
+src="source210x.png" alt=" A               A A&#8224;                &#8224;
+e  &#x2208; U (n) &#x21D0; &#x21D2;  e e   = 1 &#x21D0; &#x21D2;  A + A  =  0  " class="math-display" ></center>
+ainsi la matrice <span 
+class="cmmi-12">A </span>est anti-hermitienne.
+<!--l. 339--><p class="indent" >   Nous avons déjà rencontré la relation <span 
+class="cmmi-12">det</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">A</span></sup> = <span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">TrA</span></sup><span class="frenchb-thinspace">&#x00A0;</span>; il s&#8217;ensuit que, si le
+déterminant de <span 
+class="cmmi-12">g </span>= <span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">A</span></sup> est égal à 1, la trace de <span 
+class="cmmi-12">A </span>est nulle. Ainsi,
+   <center class="math-display" >
+<img 
+src="source211x.png" alt="  A                     &#8224;
+e  &#x2208;  SU (n) &#x21D0;&#x21D2;  [A + A   = 0 et T rA = 0]  " class="math-display" ></center>
+Dans le cas des groupes orthogonaux, la définition implique immédiatement
+   <center class="math-display" >
+                                                                          
+
+                                                                          
+<img 
+src="source212x.png" alt="                     t
+eA &#x2208; O (n) &#x21D0; &#x21D2; [eAeA  = 1 et A r´eel] &#x21D0; &#x21D2; [A  + At = 0 et A r´eel]  " class="math-display" ></center> Les
+matrices <span 
+class="cmmi-12">A </span>de l&#8217;algèbre correspondante sont donc antisymétriques réelles, ce qui,
+en particulier, implique la nullité des éléments de matrice diagonaux et donc de la
+trace<span class="frenchb-thinspace">&#x00A0;</span>; mais le seul fait que <span 
+class="cmmi-12">trA </span>= 0 implique <span 
+class="cmmi-12">det</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">A</span></sup> = 1 et donc <span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">A</span></sup> <span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="cmmi-12">SO</span>(<span 
+class="cmmi-12">n</span>). Y
+aurait-il une contradiction<span class="frenchb-thinspace">&#x00A0;</span>? Comment donc obtenir une matrice orthogonale de
+déterminant différent de 1<span class="frenchb-thinspace">&#x00A0;</span>? Il est pourtant bien évident que la définition de
+<span 
+class="cmmi-12">O</span>(<span 
+class="cmmi-12">n</span>) est différente de celle de <span 
+class="cmmi-12">SO</span>(<span 
+class="cmmi-12">n</span>)<span class="frenchb-thinspace">&#x00A0;</span>! La seule conclusion possible est la
+suivante<span class="frenchb-nbsp">&#x00A0;</span>: les éléments de <span 
+class="cmmi-12">O</span>(<span 
+class="cmmi-12">n</span>) qui ne sont pas dans <span 
+class="cmmi-12">SO</span>(<span 
+class="cmmi-12">n</span>) ne sont
+pas atteints par la fonction exp (voir la remarque à la fin du présent
+paragraphe).
+<!--l. 371--><p class="indent" >   Pour calculer la dimension des groupes de Lie, le plus simple est en général de
+calculer la dimension des algèbres de Lie correspondantes. Voici un exemple que
+lecteur pourra généraliser sans peine<span class="frenchb-nbsp">&#x00A0;</span>: &#8220;Fabriquons&#8221; une matrice carrée
+antihermitienne. Une matrice <span 
+class="cmmi-12">n </span><span 
+class="cmsy-10x-x-120">&#x00D7; </span><span 
+class="cmmi-12">n </span>dépend, <span 
+class="cmti-12">a priori</span>, de <span 
+class="cmmi-12">n</span><sup><span 
+class="cmr-8">2</span></sup> paramètres
+complexes<span class="frenchb-thinspace">&#x00A0;</span>; nous enlevons d&#8217;abord la diagonale (donc il reste <span 
+class="cmmi-12">n</span><sup><span 
+class="cmr-8">2</span></sup> <span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">n</span>
+paramètres), puis nous fabriquons une matrice triangulaire inférieure stricte
+(donc (<span 
+class="cmmi-12">n</span><sup><span 
+class="cmr-8">2</span></sup> <span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">n</span>)<span 
+class="cmmi-12">&#x2215;</span>2 paramètres)<span class="frenchb-thinspace">&#x00A0;</span>; la partie triangulaire supérieure est
+alors complètement déterminée par la condition d&#8217;anti-hermiticité<span class="frenchb-thinspace">&#x00A0;</span>;
+finalement, cette même condition implique que les éléments diagonaux
+sont imaginaires purs<span class="frenchb-nbsp">&#x00A0;</span>: il nous faut donc rajouter <span 
+class="cmmi-12">n </span>paramètres réels.
+Au total, on a donc 2(<span 
+class="cmmi-12">n</span><sup><span 
+class="cmr-8">2</span></sup> <span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">n</span>)<span 
+class="cmmi-12">&#x2215;</span>2 + <span 
+class="cmmi-12">n </span>= <span 
+class="cmmi-12">n</span><sup><span 
+class="cmr-8">2</span></sup>paramètres réels. Ainsi donc
+<span 
+class="cmmi-12">dim</span><sub><span 
+class="cmmi-8">R</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">U</span>(<span 
+class="cmmi-12">n</span>) = <span 
+class="cmmi-12">dim</span><sub><span 
+class="cmmi-8">R</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">Lie</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">U</span>(<span 
+class="cmmi-12">n</span>) = <span 
+class="cmmi-12">n</span><sup><span 
+class="cmr-8">2</span></sup>.
+<!--l. 391--><p class="indent" >   Le lecteur pourra sans doute ainsi retrouver sans difficulté la dimension des
+algèbres de Lie suivantes. Remarque<span class="frenchb-nbsp">&#x00A0;</span>: La notation <span 
+class="cmmi-12">Sp</span>(<span 
+class="cmmi-12">n</span>) utilisée ci-dessous
+désigne le groupe unitaire-quaternionique (voir &#8220;remarques diverses&#8221; en
+fin de section 2 concernant les groupes symplectiques)<span class="frenchb-thinspace">&#x00A0;</span>; les matrices de
+l&#8217;algèbre de Lie correspondante sont du type <img 
+src="source213x.png" alt="(         )
+   A    B
+  - B&#8224; - ^A"  class="left" align="middle"> avec <span 
+class="cmmi-12">A</span><sup><span 
+class="cmsy-8">&#8224;</span></sup> = <span 
+class="cmsy-10x-x-120">-</span><span 
+class="cmmi-12">A </span>et
+<img 
+src="source214x.png" alt="B^"  class="widetilde" > = <span 
+class="cmmi-12">B</span>.
+                                                                          
+
+                                                                          
+   <div class="tabular"> <table id="TBL-2" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-2-1g"><col 
+id="TBL-2-1"><col 
+id="TBL-2-2"><col 
+id="TBL-2-3"></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-2-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-1"  
+class="td11"><span 
+class="cmmi-12">G        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-2-1-2"  
+class="td11">               <span 
+class="cmmi-12">Lie</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">G                    </span></td><td  style="white-space:nowrap; text-align:right;" id="TBL-2-1-3"  
+class="td11"><span 
+class="cmmi-12">dim</span><sub>I R</sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">G</span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-1"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:center;" id="TBL-2-2-2"  
+class="td11">                                  </td><td  style="white-space:nowrap; text-align:right;" id="TBL-2-2-3"  
+class="td11">       </td></tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-1"  
+class="td11"> </td> <td  style="white-space:nowrap; text-align:center;" id="TBL-2-3-2"  
+class="td11"> </td> <td  style="white-space:nowrap; text-align:right;" id="TBL-2-3-3"  
+class="td11"></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-1"  
+class="td11"><span 
+class="cmmi-12">GL</span>(<span 
+class="cmmi-12">n,</span> lC) </td><td  style="white-space:nowrap; text-align:center;" id="TBL-2-4-2"  
+class="td11">              <span 
+class="cmmi-12">M</span>(<span 
+class="cmmi-12">n,</span> lC)                      </td><td  style="white-space:nowrap; text-align:right;" id="TBL-2-4-3"  
+class="td11">    2<span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">n</span><sup><span 
+class="cmr-8">2</span></sup></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-5-1"  
+class="td11"><span 
+class="cmmi-12">GL</span>(<span 
+class="cmmi-12">n,</span> I R)</td><td  style="white-space:nowrap; text-align:center;" id="TBL-2-5-2"  
+class="td11">             <span 
+class="cmmi-12">M</span>(<span 
+class="cmmi-12">n,</span> I R)                     </td><td  style="white-space:nowrap; text-align:right;" id="TBL-2-5-3"  
+class="td11">     <span 
+class="cmmi-12">n</span><sup><span 
+class="cmr-8">2</span></sup></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-6-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-6-1"  
+class="td11"><span 
+class="cmmi-12">U</span>(<span 
+class="cmmi-12">n</span>)      </td><td  style="white-space:nowrap; text-align:center;" id="TBL-2-6-2"  
+class="td11">      Matrices anti-hermitiennes         </td><td  style="white-space:nowrap; text-align:right;" id="TBL-2-6-3"  
+class="td11">     <span 
+class="cmmi-12">n</span><sup><span 
+class="cmr-8">2</span></sup></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-7-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-7-1"  
+class="td11"><span 
+class="cmmi-12">SU</span>(<span 
+class="cmmi-12">n</span>)    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-2-7-2"  
+class="td11">Matrices anti-hermitiennes de trace nulle</td><td  style="white-space:nowrap; text-align:right;" id="TBL-2-7-3"  
+class="td11"> <span 
+class="cmmi-12">n</span><sup><span 
+class="cmr-8">2</span></sup> <span 
+class="cmsy-10x-x-120">- </span>1</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-8-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-8-1"  
+class="td11"><span 
+class="cmmi-12">SO</span>(<span 
+class="cmmi-12">n</span>)    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-2-8-2"  
+class="td11">    Matrices antisymétriques réelles      </td><td  style="white-space:nowrap; text-align:right;" id="TBL-2-8-3"  
+class="td11">  <img 
+src="source215x.png" alt="n(n-1)
+--2---"  class="frac" align="middle"></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-9-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-9-1"  
+class="td11"><span 
+class="cmmi-12">Sp</span>(<span 
+class="cmmi-12">n</span>)     </td><td  style="white-space:nowrap; text-align:center;" id="TBL-2-9-2"  
+class="td11">           Voir ci-dessus                  </td><td  style="white-space:nowrap; text-align:right;" id="TBL-2-9-3"  
+class="td11"><img 
+src="source216x.png" alt="2n(2n+1)
+   2"  class="frac" align="middle"></td> </tr></table></div>
+<!--l. 419--><p class="indent" >   <span 
+class="cmbx-12">Remarques</span>
+       <ul class="itemize1">
+       <li class="itemize">Si  nous  ne  précisons  pas  davantage,  c&#8217;est  que  les  algèbres  de  Lie
+       que nous considérons sont des algèbres de Lie <span 
+class="cmti-12">r</span><span 
+class="cmti-12">éelles</span>. Il y a là une
+       petite  subtilité  que  nous  allons  illustrer  en  considérant  le  cas  de
+       <span 
+class="eufm-10x-x-120">&#x1D532;</span>(<span 
+class="cmmi-12">n</span>) = <span 
+class="cmmi-12">Lie</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">U</span>(<span 
+class="cmmi-12">n</span>). Il s&#8217;agit d&#8217; un espace vectoriel sur I R de dimension
+       <span 
+class="cmmi-12">d  </span>=  <span 
+class="cmmi-12">n</span><sup><span 
+class="cmr-8">2</span></sup>,  ce  qui  signifie  qu&#8217;une  base  de  cet  espace  vectoriel  réel
+       possède <span 
+class="cmmi-12">d </span>= <span 
+class="cmmi-12">n</span><sup><span 
+class="cmr-8">2</span></sup> éléments (appelons les <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">X</span><sub>
+<span 
+class="cmmi-8">&#x03B1;</span></sub><span 
+class="cmsy-10x-x-120">}</span><sub><span 
+class="cmmi-8">&#x03B1;</span><span 
+class="cmr-8">=1</span><span 
+class="cmmi-8">&#x2026;</span><span 
+class="cmmi-8">d</span></sub>) et qu&#8217;un élément
+       quelconque  <span 
+class="cmmi-12">A </span>de  <span 
+class="eufm-10x-x-120">&#x1D532;</span>(<span 
+class="cmmi-12">n</span>)  peut  s&#8217;écrire  <span 
+class="cmmi-12">A  </span>=  <span 
+class="cmex-10x-x-120">&#x2211;</span>
+  <sub><span 
+class="cmmi-8">&#x03B1;</span><span 
+class="cmr-8">=1</span></sub><sup><span 
+class="cmmi-8">d</span></sup><span 
+class="cmmi-12">a</span><sup><span 
+class="cmmi-8">&#x03B1;</span></sup><span 
+class="cmmi-12">X</span><sub>
+<span 
+class="cmmi-8">&#x03B1;</span></sub>,  avec  des
+       composantes <span 
+class="cmmi-12">a</span><sup><span 
+class="cmmi-8">&#x03B1;</span></sup> qui sont des nombres réels. Par contre, les éléments
+       <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">X</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub><span 
+class="cmsy-10x-x-120">} </span>sont, dans le cas présent des matrices antihermitiennes dont
+       les éléments de matrice sont généralement complexes (comme ceux
+       de <span 
+class="cmmi-12">A</span>, d&#8217;ailleurs). Pour compliquer légèrement les choses, les éléments
+       <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">X</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub><span 
+class="cmsy-10x-x-120">} </span>qu&#8217;on appelle traditionnellement <span 
+class="cmsl-12">g</span><span 
+class="cmsl-12">én</span><span 
+class="cmsl-12">érateurs</span> <a 
+ id="dx29-65001"></a>de l&#8217;algèbre de
+       Lie <span 
+class="eufm-10x-x-120">&#x1D532;</span>(<span 
+class="cmmi-12">n</span>) ou encore <span 
+class="cmsl-12">g</span><span 
+class="cmsl-12">én</span><span 
+class="cmsl-12">érateurs infinit</span><span 
+class="cmsl-12">ésimaux</span>, sont souvent écrits
+       sous  la  forme  <span 
+class="cmmi-12">X</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub>  =  <span 
+class="cmmi-12">iY</span> <sub><span 
+class="cmmi-8">&#x03B1;</span></sub>  (dans  le  cas  de  <span 
+class="eufm-10x-x-120">&#x1D532;</span>(<span 
+class="cmmi-12">n</span>)  les  <span 
+class="cmmi-12">Y</span> <sub><span 
+class="cmmi-8">&#x03B1;</span></sub>  sont  donc
+       hermitiens)  et  le  développement  de  <span 
+class="cmmi-12">A </span>sur  la  base  <span 
+class="cmmi-12">X</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub>  se  re-écrit
+       <span 
+class="cmmi-12">A  </span>=  <span 
+class="cmex-10x-x-120">&#x2211;</span>
+  <sub><span 
+class="cmmi-8">&#x03B1;</span><span 
+class="cmr-8">=1</span></sub><sup><span 
+class="cmmi-8">d</span></sup><span 
+class="cmmi-12">a</span><sup><span 
+class="cmmi-8">&#x03B1;</span></sup><span 
+class="cmmi-12">iY</span> <sub>
+<span 
+class="cmmi-8">&#x03B1;</span></sub>,  de  sorte  que  si  on  pose  <span 
+class="cmmi-12">A  </span>=  <span 
+class="cmmi-12">iB  </span>on  obtient
+       simplement <span 
+class="cmmi-12">B </span>= <span 
+class="cmex-10x-x-120">&#x2211;</span>
+  <sub><span 
+class="cmmi-8">&#x03B1;</span><span 
+class="cmr-8">=1</span></sub><sup><span 
+class="cmmi-8">d</span></sup><span 
+class="cmmi-12">a</span><sup><span 
+class="cmmi-8">&#x03B1;</span></sup><span 
+class="cmmi-12">Y</span> <sub>
+<span 
+class="cmmi-8">&#x03B1;</span></sub><span class="frenchb-thinspace">&#x00A0;</span>;  dans  ce  cas,  il  y  a  des  facteurs  <span 
+class="cmmi-12">i</span>
+       au second membre des relations de commutation des <span 
+class="cmmi-12">Y</span> <sub><span 
+class="cmmi-8">&#x03B1;</span></sub> entre eux.
+       Pour couronner le tout les <span 
+class="cmmi-12">Y</span> <sub><span 
+class="cmmi-8">&#x03B1;</span></sub> sont eux-aussi quelquefois désignés sous
+       le nom de &#8220;générateurs infinitésimaux&#8221;, bien qu&#8217;ils n&#8217;appartiennent
+       même plus à l&#8217;algèbre de Lie si cette dernière est réelle<span class="frenchb-thinspace">&#x00A0;</span>!
+       </li>
+       <li class="itemize">L&#8217;application exp est continue. L&#8217;image continue d&#8217;un espace connexe
+       est un espace connexe. Une algèbre de Lie est un espace vectoriel
+       et  donc  un  espace  connexe.  L&#8217;ensemble  exp <span 
+class="eufm-10x-x-120">&#x1D524;  </span>=  <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">X</span></sup><span 
+class="cmsy-10x-x-120">|</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">X  </span><span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="eufm-10x-x-120">&#x1D524;</span><span 
+class="cmsy-10x-x-120">} </span>est
+       donc connexe. Conclusion<span class="frenchb-nbsp">&#x00A0;</span>: si un groupe de Lie <span 
+class="cmmi-12">G </span>n&#8217;est pas connexe,
+       les  éléments  qui  n&#8217;appartiennent  pas  à  la  composante  connexe  de
+       l&#8217;identité  ne  peuvent  pas  être  atteints  par  la  fonction  exp  (ils  ne
+                                                                          
+
+                                                                          
+       peuvent pas s&#8217;écrire sous la forme <span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">X</span></sup>). Ceci montre que, dans bien
+       des cas, l&#8217;application exp n&#8217;est pas surjective. Le calcul effectué plus
+       haut et concernant le groupe orthogonal <span 
+class="cmmi-12">O</span>(<span 
+class="cmmi-12">n</span>) reflète le fait que ce
+       dernier n&#8217;est pas connexe. Par contre les groupes <span 
+class="cmmi-12">U</span>(<span 
+class="cmmi-12">n</span>), <span 
+class="cmmi-12">SU</span>(<span 
+class="cmmi-12">n</span>), <span 
+class="cmmi-12">SO</span>(<span 
+class="cmmi-12">n</span>)
+       et <span 
+class="cmmi-12">Sp</span>(<span 
+class="cmmi-12">n</span>) sont connexes.
+       <!--l. 480--><p class="noindent" >Même si <span 
+class="cmmi-12">G </span>est connexe, l&#8217;application exp n&#8217;est pas nécessairement
+       surjective. Par contre, on démontre que si <span 
+class="cmmi-12">G </span>est compact et connexe,
+       cette application est surjective (c&#8217;est le cas de <span 
+class="cmmi-12">U</span>(<span 
+class="cmmi-12">n</span>), <span 
+class="cmmi-12">SU</span>(<span 
+class="cmmi-12">n</span>), <span 
+class="cmmi-12">SO</span>(<span 
+class="cmmi-12">n</span>) et
+       <span 
+class="cmmi-12">Sp</span>(<span 
+class="cmmi-12">n</span>)). Si <span 
+class="cmmi-12">G </span>est connexe mais non compact, on démontre que exp est
+       &#8220;presque&#8221; surjective, en ce sens que
+       <center class="math-display" >
+       <img 
+src="source217x.png" alt="&#x2200;g &#x2208; G, &#x2203;A1, A2 ...Ap &#x2208; &#x1D524;  p fini, tel que g = eA1eA2 ...eAp
+       " class="math-display" ></center>
+       </li>
+       <li class="itemize">Par définition, le <span 
+class="cmsl-12">rang</span><a 
+ id="dx29-65002"></a> d&#8217;un groupe de Lie compact est égal à à la
+       dimension  d&#8217;un  sous  groupe  abélien  maximal  contenu  dans  <span 
+class="cmmi-12">G </span>(on
+       dit  alors  souvent  &#8220;tore  maximal&#8221;  au  lieu  de  &#8220;sous  groupe  abélien
+       maximal&#8221;). <br 
+class="newline" />Cette définition sera suffisante pour nous, mais voici néanmoins une
+       définition valable dans un contexte plus général<span class="frenchb-nbsp">&#x00A0;</span>: le rang d&#8217;un groupe
+       de Lie est défini comme étant celui de l&#8217;algèbre de Lie correspondante,
+       lui-même  défini  comme  la  dimension  de  l&#8217;une  quelconque  de  ses
+       sous-algèbres de Cartan (si le corps de base est celui des complexes
+       et que l&#8217;algèbre de Lie est de dimension finie, toutes ses sous-algèbres
+       de Cartan sont isomorphes)<span class="frenchb-thinspace">&#x00A0;</span>; dans ce cadre général une sous-algèbre
+       de Cartan est une sous-algèbre de Lie nilpotente qui coincide avec
+       son propre normalisateur. Dans le cas semi-simple une sous-algèbre de
+       Cartan est simplement une sous-algèbre de Lie abélienne maximale.
+       </li></ul>
+<!--l. 505--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x29-660002.2.2"></a>Isomorphisme local<span class="frenchb-nbsp">&#x00A0;</span>: comparaison entre <span 
+class="cmmi-12">SU</span>(2) et <span 
+class="cmmi-12">SO</span>(3)</h5>
+                                                                          
+
+                                                                          
+<!--l. 507--><p class="noindent" >Nous avons déjà vu (dans le cas du groupe orthogonal <span 
+class="cmmi-12">O</span>(<span 
+class="cmmi-12">n</span>)) que les éléments
+d&#8217;un groupe n&#8217;appartenant pas à la composante connexe de l&#8217;identité ne
+pouvaient pas être atteints par la fonction exponentielle. Pour cette raison, nous
+supposerons que tous les groupes de Lie considérés dans la présente sous-section
+sont connexes (cas de <span 
+class="cmmi-12">SO</span>(<span 
+class="cmmi-12">n</span>)). Nous nous intéressons en effet ici à des
+phénomènes plus fins que la connexité.
+       <ul class="itemize1">
+       <li class="itemize">Soient
+       <center class="math-display" >
+       <img 
+src="source218x.png" alt="      (   )        (     )       (     )
+       0 1          0 - i          1 0
+&#x03C3;1 =   1 0  ,&#x03C3;2 =   i  0   ,&#x03C3;3 =   0 - 1
+       " class="math-display" ></center> les trois <span 
+class="cmsl-12">matrices de Pauli</span><a 
+ id="dx29-66001"></a>. <span 
+class="cmmi-12">Lie</span>(<span 
+class="cmmi-12">SU</span>(2)) est l&#8217;espace vectoriel engendré
+       par <span 
+class="cmmi-12">X</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">,X</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-12">,X</span><sub><span 
+class="cmr-8">3</span></sub>  avec <span 
+class="cmmi-12">X</span><sub><span 
+class="cmmi-8">j</span></sub>  = <span 
+class="cmmi-12">i&#x03C3;</span><sub><span 
+class="cmmi-8">j</span></sub><span 
+class="cmmi-12">&#x2215;</span>2 puisque <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">X</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">,X</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-12">,X</span><sub><span 
+class="cmr-8">3</span></sub><span 
+class="cmsy-10x-x-120">} </span>constituent
+       une base de l&#8217;algèbre des matrices antihermitiennes de trace nulle.
+       Notons que
+       <center class="math-display" >
+       <img 
+src="source219x.png" alt="[Xi, Xj] = - &#x03F5;ijkXk
+       " class="math-display" ></center> où <span 
+class="cmmi-12">&#x03F5; </span>est complètement antisymétrique et <span 
+class="cmmi-12">&#x03F5;</span><sub><span 
+class="cmr-8">123</span></sub> = 1. En développant la
+       fonction exponentielle en série et en utilisant les propriétés <span 
+class="cmmi-12">&#x03C3;</span><sub><span 
+class="cmr-8">3</span></sub><sup><span 
+class="cmr-8">2</span></sup> = 1,
+       <span 
+class="cmmi-12">&#x03C3;</span><sup><span 
+class="cmr-8">2</span><span 
+class="cmmi-8">p</span><span 
+class="cmr-8">+1</span></sup> = <span 
+class="cmmi-12">&#x03C3;</span><sub>
+<span 
+class="cmr-8">3</span></sub>, le lecteur montrera aisément que
+                                                                          
+
+                                                                          
+       <center class="math-display" >
+       <img 
+src="source220x.png" alt="                &#x03B8;-         &#x03B8;-
+exp (&#x03B8;X3 ) = cos 2 + i&#x03C3;3sin 2 &#x2208; SU (2)  " class="math-display" ></center>
+       Notons que <div class="eqnarray">
+       <center class="math-display" >
+       <img 
+src="source221x.png" alt="exp[(&#x03B8; + 2&#x03C0;)X3 ] = - exp[&#x03B8;X3 ]
+
+exp[(&#x03B8; + 4&#x03C0;)X3 ] = + exp[&#x03B8;X3 ]
+       " class="math-display" ></center>
+       </div>
+       </li>
+       <li class="itemize">Soient maintenant
+       <center class="math-display" >
+       <img 
+src="source222x.png" alt="        (        )          (        )          (        )
+          0  0  0              0  0 1              0  1 0
+X   = - ( 0  0  1) ,X   = - (  0  0 0) ,X   = - ( - 1 0 0)
+  1                   2                   3
+          0 - 1 0             - 1 0 0              0  0 0 " class="math-display" ></center>
+       L&#8217;espace vectoriel engendré par <span 
+class="cmmi-12">X</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">,X</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-12">,X</span><sub><span 
+class="cmr-8">3</span></sub> est constitué par l&#8217;ensemble des
+       matrices antisymétriques réelles 3 <span 
+class="cmsy-10x-x-120">&#x00D7; </span>3<span class="frenchb-thinspace">&#x00A0;</span>; il coïncide donc avec l&#8217;algèbre de
+       Lie <span 
+class="cmmi-12">Lie</span>(<span 
+class="cmmi-12">SO</span>(3)). Comme dans le cas précèdent, on peut vérifier que
+       que
+                                                                          
+
+                                                                          
+       <center class="math-display" >
+       <img 
+src="source223x.png" alt="[Xi, Xj] = - &#x03F5;ijkXk  " class="math-display" ></center>
+       Les deux algèbres <span 
+class="cmmi-12">Lie</span>(<span 
+class="cmmi-12">SO</span>(3)) et <span 
+class="cmmi-12">Lie</span>(<span 
+class="cmmi-12">SU</span>(2)) sont donc isomorphes. Par
+       ailleurs, en développant la fonction exp en série et en utilisant les
+       propriétés <span 
+class="cmmi-12">X</span><sub><span 
+class="cmr-8">3</span></sub><sup><span 
+class="cmr-8">2</span><span 
+class="cmmi-8">p</span></sup> = <span 
+class="cmmi-12">diag</span><span style="margin-left:0.3em" class="thinspace"></span>((<span 
+class="cmsy-10x-x-120">-</span>1)<sup><span 
+class="cmmi-8">p</span></sup><span 
+class="cmmi-12">, </span>(<span 
+class="cmsy-10x-x-120">-</span>1)<sup><span 
+class="cmmi-8">p</span></sup><span 
+class="cmmi-12">, </span>0), <span 
+class="cmmi-12">X</span><sub>
+<span 
+class="cmr-8">3</span></sub><sup><span 
+class="cmr-8">2</span><span 
+class="cmmi-8">p</span><span 
+class="cmr-8">+1</span></sup> = (<span 
+class="cmsy-10x-x-120">-</span>1)<sup><span 
+class="cmmi-8">p</span></sup><span 
+class="cmmi-12">X</span><sub>
+<span 
+class="cmr-8">3</span></sub>, il est facile de
+       voir que
+       <center class="math-display" >
+       <img 
+src="source224x.png" alt="exp [&#x03B8;X3 ] = diag(cos&#x03B8;, cos&#x03B8;,1) + X3 sin &#x03B8; &#x2208; SO (3)  " class="math-display" ></center>
+       Notons alors que <div class="eqnarray">
+       <center class="math-display" >
+       <img 
+src="source225x.png" alt="exp[(&#x03B8; + 2&#x03C0;)X3 ] = + exp[&#x03B8;X3 ]
+       " class="math-display" ></center>
+       </div>
+       </li>
+       <li class="itemize">Ainsi donc, lorsqu&#8217;&#8220;on fait un tour&#8221; dans <span 
+class="cmmi-12">SO</span>(3), on revient à l&#8217;identité &#8211;
+       chose qu&#8217;on savait déjà<span class="frenchb-thinspace">&#x00A0;</span>! &#8211; mais, dans <span 
+class="cmmi-12">SU</span>(2), pour revenir à l&#8217;identité, il
+       faut faire&#x00A0;<span 
+class="cmmi-12">&#x2026;</span><span style="margin-left:0.3em" class="thinspace"></span> deux tours<span class="frenchb-thinspace">&#x00A0;</span>! Cette différence de comportement entre les
+       deux groupes peut sembler assez surprenante à première vue. Il est
+       possible de l&#8217;illustrer de façon assez simple grâce à une expérience
+       élémentaire.
+                                                                          
+
+                                                                          
+       <!--l. 574--><p class="noindent" ><span 
+class="cmti-12">Exp</span><span 
+class="cmti-12">érience utilisant  </span><span 
+class="cmmi-12">SO</span>(3)<span class="frenchb-nbsp">&#x00A0;</span>: Prenez un objet quelconque, posez-le sur la
+       table et faites-lui subir une rotation de 360 degrés autour d&#8217;un axe
+       vertical<span class="frenchb-thinspace">&#x00A0;</span>; la configuration que vous obtenez est indiscernable de la
+       configuration initiale.
+       <!--l. 581--><p class="noindent" ><span 
+class="cmti-12">Exp</span><span 
+class="cmti-12">érience utilisant  </span><span 
+class="cmmi-12">SU</span>(2)<span class="frenchb-nbsp">&#x00A0;</span>: Prenez un objet quelconque, suspendez-le au
+       milieu de la pièce en utilisant huit élastiques reliés aux huit coins (haut
+       et bas) de la pièce (vous pouvez utiliser un moins grand nombre
+       d&#8217;élastiques<span class="frenchb-thinspace">&#x00A0;</span>!) et faites subir à votre objet une rotation de 360 degrés<span class="frenchb-thinspace">&#x00A0;</span>;
+       notez que les élastiques sont emmêlés<span class="frenchb-thinspace">&#x00A0;</span>; essayez de démêler les élastiques
+       sans faire tourner l&#8217;objet<span 
+class="cmmi-12">&#x2026;</span> vous n&#8217;y parvenez pas. Faites alors subir à votre
+       objet une seconde rotation de 360<sup><span 
+class="cmsy-8">&#x2218;</span></sup> (depuis la configuration initiale vous
+       aurez ainsi effectué une rotation de 4<span 
+class="cmmi-12">&#x03C0; </span>= 720<sup><span 
+class="cmsy-8">&#x2218;</span></sup>)<span class="frenchb-thinspace">&#x00A0;</span>; les élastiques semblent
+       être encore plus emmêlés<span class="frenchb-thinspace">&#x00A0;</span>; essayez de démêler ces élastiques (retrouver la
+       configuration initiale) sans faire tourner l&#8217;objet<span 
+class="cmmi-12">&#x2026;</span> A votre grande surprise
+       (même si vous avez fait cette expérience plusieurs fois) vous y
+       parvenez<span class="frenchb-thinspace">&#x00A0;</span>!
+       <!--l. 600--><p class="noindent" ><span 
+class="cmti-12">Remarque</span><span class="frenchb-nbsp">&#x00A0;</span>: Si vous avez vraiment des difficultés à démêler les élastiques,
+       ouvrez l&#8217;ouvrage <span class="cite">[<a 
+href="sourceli8.html#XMTW">5</a>]</span> où la suite des mouvements à effectuer est décrite en
+       détails.
+       <!--l. 604--><p class="noindent" >Il existe une autre expérience, encore plus simple, mais un peu plus difficile
+       à décrire &#8220;avec des mots&#8221;, qui illustre la même différence de comportement
+       entre les deux groupes et qui illustre donc la façon dont <span 
+class="cmmi-12">SU</span>(2) décrit les
+       &#8220;rotations d&#8217;objets attachés à leur environnement&#8221;. Prenez un verre
+       (rempli de votre vin favori) et essayez, par pivot du poignet, de lui
+       faire subir une rotation de 360<sup><span 
+class="cmsy-8">&#x2218;</span></sup><span 
+class="cmmi-12">&#x2026;</span> échec<span class="frenchb-nbsp">&#x00A0;</span>: à moins d&#8217;avoir des
+       articulations très spéciales, vous vous retrouvez tout tordu. Essayez
+       alors, à partir de cette position (tordue) de faire subir à votre verre
+       une seconde rotation, dans le même sens, de 360<sup><span 
+class="cmsy-8">&#x2218;</span></sup> (le coude doit
+       normalement s&#8217;abaisser) et ça marche<span class="frenchb-nbsp">&#x00A0;</span>: Vous vous retrouvez dans l&#8217;état
+       initial<span class="frenchb-thinspace">&#x00A0;</span>!
+       <!--l. 620--><p class="noindent" >Ce phénomène amusant est d&#8217;une importance physique capitale.
+       C&#8217;est lui qui, en définitive, explique la différence entre fermions
+       et bosons (rappelons que les électrons &#8212; et plus généralement
+       les particules de spin demi-entier &#8212; obéissent à la statistique de
+       Fermi-Dirac alors que les photons (ou les noyaux d&#8217;Hélium<span class="frenchb-thinspace">&#x00A0;</span>!) &#8212; et plus
+       généralement les particules de spin entier &#8212; obéissent à la statistique de
+       Bose-Einstein.
+       </li>
+       <li class="itemize">Revenons aux mathématiques. Nous avons un homomorphisme
+       de <span 
+class="cmmi-12">SU</span>(2) dans <span 
+class="cmmi-12">SO</span>(3)<span class="frenchb-nbsp">&#x00A0;</span>: l&#8217;image de exp(<span 
+class="cmmi-12">&#x03B8;</span><sup><span 
+class="cmmi-8">i</span></sup><span 
+class="cmmi-12">X</span><sub>
+<span 
+class="cmmi-8">i</span></sub>) <span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="cmmi-12">SU</span>(2) est, par
+       définition exp(<span 
+class="cmmi-12">&#x03B8;</span><sup><span 
+class="cmmi-8">i</span></sup><span 
+class="cmmi-12">X</span><sub>
+<span 
+class="cmmi-8">i</span></sub>) <span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="cmmi-12">SO</span>(3) où les <span 
+class="cmmi-12">X</span><sub><span 
+class="cmmi-8">i</span></sub> sont, bien entendu, définis de
+                                                                          
+
+                                                                          
+       deux façons différentes, comme précédemment. Ce morphisme
+       surjectif n&#8217;est pas injectif<span class="frenchb-thinspace">&#x00A0;</span>; en effet, les deux éléments distincts
+       exp(2<span 
+class="cmmi-12">&#x03C0;X</span><sub><span 
+class="cmr-8">3</span></sub>) = <span 
+class="cmsy-10x-x-120">-</span>1 et exp(4<span 
+class="cmmi-12">&#x03C0;X</span><sub><span 
+class="cmr-8">3</span></sub>) = 1 de <span 
+class="cmmi-12">SU</span>(2) se projettent tous deux sur
+       l&#8217;identité de <span 
+class="cmmi-12">SO</span>(3). Le noyau de cet homomorphisme est donc
+       ZZ<sub><span 
+class="cmr-8">2</span></sub> = <span 
+class="cmsy-10x-x-120">{-</span>1<span 
+class="cmmi-12">, </span>1<span 
+class="cmsy-10x-x-120">} </span>d&#8217;où il s&#8217;ensuit que <span 
+class="cmmi-12">SO</span>(3) = <span 
+class="cmmi-12">SU</span>(2)<span 
+class="cmmi-12">&#x2215;</span>Z Z<sub><span 
+class="cmr-8">2</span></sub>. En effet, un
+       théorème très élémentaire de théorie des groupes nous apprend que si
+       <span 
+class="cmmi-12">&#x2113; </span>est un homomorphisme du groupe <span 
+class="cmmi-12">G </span>dans le groupe <span 
+class="cmmi-12">K</span>, alors
+       l&#8217;image <span 
+class="cmmi-12">&#x2113;</span>(<span 
+class="cmmi-12">G</span>) est isomorphe au quotient de <span 
+class="cmmi-12">G </span>par le noyau de <span 
+class="cmmi-12">&#x2113;</span>
+       (dans le cadre commutatif, ce théorème généralise un résultat
+       bien connu et rencontré, par exemple, dans l&#8217;étude des espaces
+       vectoriels).
+       </li>
+       <li class="itemize">Deux groupes possédant des algèbres de Lie isomorphes sont dits
+       <span 
+class="cmsl-12">localement isomorphes</span> <a 
+ id="dx29-66004"></a>. Ainsi <span 
+class="cmmi-12">SU</span>(2) et <span 
+class="cmmi-12">SO</span>(3) sont localement isomorphes.
+       Ils ne sont cependant pas isomorphes.
+       <!--l. 662--><p class="noindent" >On admettra le résultat suivant. <span 
+class="cmss-12">Deux groupes compacts connexes non</span>
+       <span 
+class="cmss-12">isomorphes peuvent admettre des alg</span><span 
+class="cmss-12">èbres de Lie isomorphes (on dit qu&#8217;il s&#8217;agit</span>
+       <span 
+class="cmss-12">de groupes localement isomorphes). Les groupes de Lie qui admettent la m</span><span 
+class="cmss-12">ême</span>
+       <span 
+class="cmss-12">alg</span><span 
+class="cmss-12">èbre de Lie </span><span 
+class="eufm-10x-x-120">&#x1D524; </span><span 
+class="cmss-12">sont tous de la forme </span><span 
+class="cmmi-12">G</span><sub><span 
+class="cmmi-8">i</span></sub> = <span 
+class="cmmi-12">G&#x2215;D</span><sub><span 
+class="cmmi-8">i</span></sub> <span 
+class="cmss-12">o</span><span 
+class="cmss-12">ù </span><span 
+class="cmmi-12">D</span><sub><span 
+class="cmmi-8">i</span></sub> <span 
+class="cmss-12">est un sous-groupe</span>
+       <span 
+class="cmss-12">discret distingu</span><span 
+class="cmss-12">é de </span><span 
+class="cmmi-12">G</span><span 
+class="cmss-12">. Le sous-groupe </span><span 
+class="cmmi-12">D</span><sub><span 
+class="cmmi-8">i</span></sub> <span 
+class="cmss-12">est isomorphe au groupe</span>
+       <span 
+class="cmss-12">fondamental de </span><span 
+class="cmmi-12">G</span><sub><span 
+class="cmmi-8">i</span></sub> <span 
+class="cmss-12">(</span>i.e.<span 
+class="cmss-12">&#x00A0;au premier groupe d&#8217;homotopie </span><span 
+class="cmmi-12">&#x03C0;</span><sub><span 
+class="cmr-8">1</span></sub>(<span 
+class="cmmi-12">G</span><sub><span 
+class="cmmi-8">i</span></sub>)<span 
+class="cmss-12">) et le groupe</span>
+       <span 
+class="cmmi-12">G </span><span 
+class="cmss-12">est simplement connexe (ce qui signifie que son sous-groupe fondamental est</span>
+       <span 
+class="cmss-12">r</span><span 
+class="cmss-12">éduit </span><span 
+class="cmss-12">à l&#8217;identit</span><span 
+class="cmss-12">é). </span><span 
+class="cmmi-12">G </span><span 
+class="cmss-12">et est appel</span><span 
+class="cmss-12">é rev</span><span 
+class="cmss-12">êtement universel de </span><span 
+class="cmmi-12">G</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmss-12">. On note</span>
+       <span 
+class="cmss-12">quelquefois </span><span 
+class="cmmi-12">G </span>= <img 
+src="source226x.png" alt="^G"  class="widehat" ><sub><span 
+class="cmmi-8">i</span></sub>
+       </li>
+       <li class="itemize">Exemples de groupes de Lie localement isomorphes.
+       <div class="tabular"> <table id="TBL-3" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-3-1g"><col 
+id="TBL-3-1"><col 
+id="TBL-3-2"><col 
+id="TBL-3-3"></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-3-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-3-1-1"  
+class="td11"><span 
+class="cmmi-12">SU</span>(2) et <span 
+class="cmmi-12">SO</span>(3) = <span 
+class="cmmi-12">SU</span>(2)<span 
+class="cmmi-12">&#x2215;</span>Z Z<sub><span 
+class="cmr-8">2</span></sub></td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-1-2"  
+class="td11"><span 
+class="cmmi-12">&#x03C0;</span><sub><span 
+class="cmr-8">1</span></sub>(<span 
+class="cmmi-12">SU</span>(2)) = 1</td><td  style="white-space:nowrap; text-align:right;" id="TBL-3-1-3"  
+class="td11">   <span 
+class="cmmi-12">&#x03C0;</span><sub><span 
+class="cmr-8">1</span></sub>(<span 
+class="cmmi-12">SO</span>(3)) = Z Z<sub><span 
+class="cmr-8">2</span></sub></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-3-2-1"  
+class="td11"><span 
+class="cmmi-12">SU</span>(3) et <span 
+class="cmmi-12">SU</span>(3)<span 
+class="cmmi-12">&#x2215;</span>Z Z<sub><span 
+class="cmr-8">3</span></sub>                  </td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-2-2"  
+class="td11"><span 
+class="cmmi-12">&#x03C0;</span><sub><span 
+class="cmr-8">1</span></sub>(<span 
+class="cmmi-12">SU</span>(3)) = 1</td><td  style="white-space:nowrap; text-align:right;" id="TBL-3-2-3"  
+class="td11"><span 
+class="cmmi-12">&#x03C0;</span><sub><span 
+class="cmr-8">1</span></sub>(<span 
+class="cmmi-12">SU</span>(3)<span 
+class="cmmi-12">&#x2215;</span>Z Z<sub><span 
+class="cmr-8">3</span></sub>) = Z Z<sub><span 
+class="cmr-8">3</span></sub></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-3-3-1"  
+class="td11">I R et <span 
+class="cmmi-12">U</span>(1) = I R<span 
+class="cmmi-12">&#x2215;</span>Z Z               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-3-2"  
+class="td11">  <span 
+class="cmmi-12">&#x03C0;</span><sub><span 
+class="cmr-8">1</span></sub>(I R) = 1   </td><td  style="white-space:nowrap; text-align:right;" id="TBL-3-3-3"  
+class="td11">     <span 
+class="cmmi-12">&#x03C0;</span><sub><span 
+class="cmr-8">1</span></sub>(<span 
+class="cmmi-12">U</span>(1)) = Z Z</td></tr></table>
+       </div>
+       </li>
+       <li class="itemize">Les groupes <span 
+class="cmmi-12">SO</span>(<span 
+class="cmmi-12">n</span>) ne sont jamais simplement connexes.
+          <ul class="itemize2">
+          <li class="itemize">Lorsque <span 
+class="cmmi-12">n </span>= 2, <span 
+class="cmmi-12">SO</span>(2) = <span 
+class="cmmi-12">U</span>(1) = <span 
+class="cmmi-12">S</span><sup><span 
+class="cmr-8">1</span></sup> et on sait que <span 
+class="cmmi-12">&#x03C0;</span><sub>
+<span 
+class="cmr-8">1</span></sub>(<span 
+class="cmmi-12">S</span><sup><span 
+class="cmr-8">1</span></sup>) = Z Z<span class="frenchb-thinspace">&#x00A0;</span>;
+          le revêtement universel de <span 
+class="cmmi-12">U</span>(1) est I R, l&#8217;ensemble des réels<span class="frenchb-nbsp">&#x00A0;</span>: par
+          définition du cercle (périodicité) on sait que <span 
+class="cmmi-12">U</span>(1) = I R<span 
+class="cmmi-12">&#x2215;</span>Z Z.
+          </li>
+          <li class="itemize">Lorsque <span 
+class="cmmi-12">n </span>= 3, on a vu que le revêtement universel de <span 
+class="cmmi-12">SO</span>(3) est
+          <span 
+class="cmmi-12">SU</span>(2) et que <span 
+class="cmmi-12">&#x03C0;</span><sub><span 
+class="cmr-8">1</span></sub>(<span 
+class="cmmi-12">SO</span>(3)) = Z Z<sub><span 
+class="cmr-8">2</span></sub>.
+          </li>
+          <li class="itemize">Lorsque <span 
+class="cmmi-12">n </span><span 
+class="cmsy-10x-x-120">&#x2265; </span>3, on montre que <span 
+class="cmmi-12">&#x03C0;</span><sub><span 
+class="cmr-8">1</span></sub>(<span 
+class="cmmi-12">SO</span>(<span 
+class="cmmi-12">n</span>)) = Z Z<sub><span 
+class="cmr-8">2</span></sub>. Le revêtement
+                                                                          
+
+                                                                          
+          universel <img 
+src="source227x.png" alt=" ^
+SO (n)"  class="widehat" > de <span 
+class="cmmi-12">SO</span>(<span 
+class="cmmi-12">n</span>) se note <span 
+class="cmmi-12">Spin</span>(<span 
+class="cmmi-12">n</span>). Le fait que <span 
+class="cmmi-12">Spin</span>(3) =
+          <span 
+class="cmmi-12">SU</span>(2) est une coïncidence de basse dimension<span class="frenchb-thinspace">&#x00A0;</span>; on montre que
+          <span 
+class="cmmi-12">Spin</span>(4) = <span 
+class="cmmi-12">SU</span>(2)<span 
+class="cmsy-10x-x-120">&#x00D7;</span><span 
+class="cmmi-12">SU</span>(2), <span 
+class="cmmi-12">Spin</span>(5) = <span 
+class="cmmi-12">U</span>(2<span 
+class="cmmi-12">,</span> I H) <span 
+class="cmsy-10x-x-120">&#x2261; </span><span 
+class="cmmi-12">Sp</span>(2) <span 
+class="cmsy-10x-x-120">&#x2261; </span><span 
+class="cmmi-12">USp</span>(4),
+          <span 
+class="cmmi-12">Spin</span>(6) = <span 
+class="cmmi-12">SU</span>(4).
+          </li>
+          <li class="itemize">Lorsque <span 
+class="cmmi-12">n &#x003E; </span>6, <span 
+class="cmmi-12">Spin</span>(<span 
+class="cmmi-12">n</span>) n&#8217;est autre que<span 
+class="cmmi-12">&#x2026;</span> <span 
+class="cmmi-12">Spin</span>(<span 
+class="cmmi-12">n</span>) et ne coïncide
+          pas avec un autre groupe classique. Pour construire explicitement
+          <span 
+class="cmmi-12">Spin</span>(<span 
+class="cmmi-12">n</span>), le plus simple est d&#8217;utiliser les algèbres de Clifford (voir
+          la discussion en fin de chapitre).</li></ul>
+       </li></ul>
+<!--l. 719--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">2.2.3   </span> <a 
+ id="x29-670002.2.3"></a>Classification des groupes et algèbres de Lie. Généralités.</h4>
+<!--l. 721--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x29-680002.2.3"></a>Un peu de terminologie</h5>
+       <ul class="itemize1">
+       <li class="itemize">Une algèbre de Lie est <span 
+class="cmsl-12">ab</span><span 
+class="cmsl-12">élienne  </span>si elle est<span 
+class="cmmi-12">&#x2026;</span> commutative.
+       </li>
+       <li class="itemize">Une algèbre de Lie est <span 
+class="cmsl-12">simple</span> <a 
+ id="dx29-68001"></a>si elle n&#8217;est pas abélienne et si elle ne
+       possède aucun idéal bilatère non trivial.
+       </li>
+       <li class="itemize">Une algèbre de Lie est <span 
+class="cmsl-12">semi-simple</span> <a 
+ id="dx29-68002"></a>si elle peut s&#8217;écrire comme (si elle
+       est isomorphe à une) somme directe d&#8217;algèbres simples.
+       </li>
+       <li class="itemize">Une algèbre de Lie est <span 
+class="cmsl-12">non semi-simple </span>si elle n&#8217;est pas semi-simple.</li></ul>
+<!--l. 736--><p class="noindent" >On a bien entendu une terminologie analogue au niveau des groupes.
+       <ul class="itemize1">
+       <li class="itemize">Un groupe de Lie est <span 
+class="cmsl-12">ab</span><span 
+class="cmsl-12">élien  </span>s&#8217;il est<span 
+class="cmmi-12">&#x2026;</span> commutatif.
+       </li>
+       <li class="itemize">Un groupe de Lie est <span 
+class="cmsl-12">simple  </span>s&#8217;il n&#8217;est pas abélien et s&#8217;il ne possède
+       aucun sous groupe distingué (<span 
+class="cmsl-12">invariant </span>) non trivial.
+       </li>
+       <li class="itemize">Un groupe de Lie est <span 
+class="cmsl-12">semi-simple   </span>s&#8217;il peut s&#8217;écrire comme (s&#8217;il est
+       isomorphe à un) produit direct de groupes simples.
+       </li>
+       <li class="itemize">Un groupe de Lie est <span 
+class="cmsl-12">non semi-simple </span>s&#8217;il n&#8217;est pas semi-simple.</li></ul>
+                                                                          
+
+                                                                          
+<!--l. 749--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x29-690002.2.3"></a>Idées fondamentales de la classification</h5>
+       <ul class="itemize1">
+       <li class="itemize">On tente d&#8217;abord de classifier les algèbres de Lie. On en déduit la
+       classification des groupes de Lie. Nous supposerons toujours, dans
+       cette section, et sauf mention explicite du contraire, que nous sommes
+       en dimension finie.
+       </li>
+       <li class="itemize">On  montre  qu&#8217;une  algèbre  de  Lie  quelconque  peut  toujours  se
+       décomposer en une somme directe d&#8217;une algèbre de Lie semi-simple
+       et d&#8217;une algèbre de Lie non semi-simple particulière qu&#8217;on appelle son
+       radical (décomposition de Levi). Pour définir le radical d&#8217;une algèbre
+       de Lie <span 
+class="eufm-10x-x-120">&#x1D524;</span>, on procède comme suit<span class="frenchb-nbsp">&#x00A0;</span>: on commence par construire la
+       &#8220;série dérivée&#8221; (<span 
+class="eufm-10x-x-120">&#x1D524;</span><sup><span 
+class="cmr-8">(</span><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">)</span></sup>) de <span 
+class="eufm-10x-x-120">&#x1D524; </span>définie par <span 
+class="eufm-10x-x-120">&#x1D524;</span><sup><span 
+class="cmr-8">(</span><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">+1)</span></sup> = [<span 
+class="eufm-10x-x-120">&#x1D524;</span><sup><span 
+class="cmr-8">(</span><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">)</span></sup><span 
+class="cmmi-12">,</span><span 
+class="eufm-10x-x-120">&#x1D524;</span><sup><span 
+class="cmr-8">(</span><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">)</span></sup>]. Chaque terme
+       de cette suite est un idéal de <span 
+class="eufm-10x-x-120">&#x1D524; </span>contenant le terme suivant. Notons que
+       <span 
+class="eufm-10x-x-120">&#x1D524; </span>est abélienne lorsque le premier terme de cette suite (c&#8217;est à dire
+       <span 
+class="eufm-10x-x-120">&#x1D524;</span><sup><span 
+class="cmr-8">(1)</span></sup>) est nul. L&#8217;algèbre de Lie <span 
+class="eufm-10x-x-120">&#x1D524; </span>est dite <span 
+class="cmsl-12">r</span><span 
+class="cmsl-12">ésoluble </span>lorsque <span 
+class="eufm-10x-x-120">&#x1D524;</span><sup><span 
+class="cmr-8">(</span><span 
+class="cmmi-8">k</span><span 
+class="cmr-8">)</span></sup> = 0 pour
+       une certaine valeur de <span 
+class="cmmi-12">k</span>. Etre résoluble est ainsi, pour une algèbre
+       de Lie, une notion un peu plus faible que celle d&#8217;être abélienne. Le
+       <span 
+class="cmsl-12">radical </span>d&#8217;une algèbre de Lie quelconque est alors, par définition le
+       plus grand idéal résoluble de cette algèbre de Lie. Le radical d&#8217;une
+       algèbre de Lie semi-simple est, bien évidemment, nul. L&#8217;existence de
+       la décomposition de Levi montre qu&#8217;il faudrait classifier, pour bien
+       faire, d&#8217;une part les algèbres de Lie semi-simples et et d&#8217;autre part les
+       algèbres de Lie non semi-simples.
+       </li>
+       <li class="itemize">La classification des algèbres de Lie non semi-simples est difficile<span 
+class="cmmi-12">&#x2026;</span> (et
+       probablement impossible).
+       </li>
+       <li class="itemize">La classification des algèbres de Lie semi-simples (sur le corps lC) a été
+       effectuée par E. Cartan. Pour classer les algèbres de Lie semi-simples,
+       il suffit de classer les algèbres de Lie simples.
+       </li>
+       <li class="itemize">On classifie d&#8217;abord les algèbres de Lie simples complexes (i.e.&#x00A0;en tant
+       qu&#8217;espace vectoriel, le corps des complexes est lC). On démontre qu&#8217;il
+       existe quatre séries infinies <span 
+class="cmmi-12">A</span><sub><span 
+class="cmmi-8">n</span></sub>, <span 
+class="cmmi-12">B</span><sub><span 
+class="cmmi-8">n</span></sub>, <span 
+class="cmmi-12">C</span><sub><span 
+class="cmmi-8">n</span></sub> , <span 
+class="cmmi-12">D</span><sub><span 
+class="cmmi-8">n</span></sub> d&#8217;algèbres de Lie simples.
+       Le  symbole  <span 
+class="cmmi-12">n </span>apparaissant  en  indice  fournit  le  rang  de  l&#8217;algèbre
+       correspondante. Pour <span 
+class="cmmi-12">n </span>&#8220;suffisamment petit&#8221;, il peut se faire que des
+       individus appartenant à des séries différentes coïncident. Il peut se
+       faire aussi, pour <span 
+class="cmmi-12">n </span>petit, que les algèbres en question soient, non pas
+                                                                          
+
+                                                                          
+       simples, mais semi-simples (en fait cela n&#8217;arrive qu&#8217;une seule fois).
+       On y reviendra plus loin. On démontre aussi qu&#8217;il existe, en dehors
+       des algèbres de Lie classiques, qui sont, par définition, les membres
+       des quatre séries pré-citées, un nombre fini (cinq) d&#8217;algèbres de Lie
+       simples. On les appelle &#8220;exceptionnelles&#8221;<span class="frenchb-thinspace">&#x00A0;</span>; ce sont<span class="frenchb-nbsp">&#x00A0;</span>: <span 
+class="cmmi-12">G</span><sub><span 
+class="cmr-8">2</span></sub>,<span 
+class="cmmi-12">F</span><sub><span 
+class="cmr-8">4</span></sub>,<span 
+class="cmmi-12">E</span><sub><span 
+class="cmr-8">6</span></sub>,<span 
+class="cmmi-12">E</span><sub><span 
+class="cmr-8">7</span></sub> et
+       <span 
+class="cmmi-12">E</span><sub><span 
+class="cmr-8">8</span></sub>.
+       </li>
+       <li class="itemize">Pour une algèbre de Lie complexe donnée, on classifie les différentes
+       algèbres  de  Lie  réelles  admettant  la  même  extension  complexe<span class="frenchb-thinspace">&#x00A0;</span>;
+       techniquement, ceci se fait en classifiant les involutions. C&#8217;est ainsi
+       que  <span 
+class="cmmi-12">D</span><sub><span 
+class="cmmi-8">n</span></sub>,  par  exemple,  admet  les  formes  réelles  distinctes,  notées
+       <span 
+class="eufm-10x-x-120">&#x1D530;</span><span 
+class="cmmi-12">o</span>(<span 
+class="cmmi-12">p,q</span>)<span 
+class="cmmi-12">,p </span><span 
+class="cmsy-10x-x-120">&#x2265; </span>0<span 
+class="cmmi-12">,q </span><span 
+class="cmsy-10x-x-120">&#x2265; </span>0<span 
+class="cmmi-12">,p </span>+ <span 
+class="cmmi-12">q </span>= <span 
+class="cmmi-12">n</span>, et <span 
+class="eufm-10x-x-120">&#x1D530;</span><span 
+class="cmmi-12">o</span>(2<span 
+class="cmmi-12">n</span>)<sup><span 
+class="cmsy-8">*</span></sup>.
+       </li>
+       <li class="itemize">A chaque forme réelle (c&#8217;est à dire, à chaque algèbre de Lie réelle
+       correspondant à une algèbre de Lie complexe donnée) on associe un
+       groupe de Lie connexe et simplement connexe, à l&#8217;aide de l&#8217;application
+       exponentielle. On démontre que, pour une algèbre de Lie complexe
+       donnée (exemple <span 
+class="cmmi-12">D</span><sub><span 
+class="cmr-8">3</span></sub>), une seule forme réelle correspond à un groupe
+       de Lie compact (dans notre exemple, il s&#8217;agit de <img 
+src="source228x.png" alt=" ^
+SO (6)"  class="widehat" > = exp(<span 
+class="eufm-10x-x-120">&#x1D530;</span><span 
+class="cmmi-12">o</span>(6)).
+       Les autres groupes de Lie ainsi obtenus, à savoir <img 
+src="source229x.png" alt="SO^(5,1)"  class="widehat" >, <img 
+src="source230x.png" alt="SO^(4,2)"  class="widehat" >,
+       <img 
+src="source231x.png" alt="SO^(3,3)"  class="widehat" > et <img 
+src="source232x.png" alt="SO^ (6)*"  class="widehat" > sont non compacts. L&#8217;algèbre de Lie réelle unique
+       dont  l&#8217;exponentielle  constitue  un  groupe  de  Lie  compact  s&#8217;appelle
+       <span 
+class="cmsl-12">forme r</span><span 
+class="cmsl-12">éelle compacte  </span>de l&#8217;algèbre de Lie complexe donnée (bien que,
+       <span 
+class="cmti-12">stricto sensu  </span>cette algèbre possède évidemment une topologie non
+       compacte puisqu&#8217;il s&#8217;agit d&#8217;un espace vectoriel<span class="frenchb-thinspace">&#x00A0;</span>!).
+       </li>
+       <li class="itemize">A chaque groupe de Lie connexe et simplement connexe <img 
+src="source233x.png" alt="^
+G"  class="widehat" >, on associe
+       alors une famille de groupes de Lie <span 
+class="cmmi-12">G</span><sub><span 
+class="cmmi-8">i</span></sub> connexes, mais non simplement
+       connexes en quotientant <img 
+src="source234x.png" alt="^G"  class="widehat" > par un sous-groupe distingué discret <span 
+class="cmmi-12">K</span><sub><span 
+class="cmmi-8">i</span></sub>
+       (voir la sous-section précédente)<span class="frenchb-nbsp">&#x00A0;</span>: <span 
+class="cmmi-12">G</span><sub><span 
+class="cmmi-8">i</span></sub> = <img 
+src="source235x.png" alt="^G"  class="widehat" ><span 
+class="cmmi-12">&#x2215;K</span><sub><span 
+class="cmmi-8">i</span></sub>. On a <span 
+class="cmmi-12">&#x03C0;</span><sub><span 
+class="cmr-8">1</span></sub>(<span 
+class="cmmi-12">G</span><sub><span 
+class="cmmi-8">i</span></sub>) = <span 
+class="cmmi-12">K</span><sub><span 
+class="cmmi-8">i</span></sub> et
+       <img 
+src="source236x.png" alt="^
+G"  class="widehat" > est le revêtement universel des <span 
+class="cmmi-12">G</span><sub><span 
+class="cmmi-8">i</span></sub>. Par exemple, on obtient ainsi
+       <span 
+class="cmmi-12">SO</span>(6) = <img 
+src="source237x.png" alt="S^O (6)"  class="widehat" ><span 
+class="cmmi-12">&#x2215;</span>Z Z<sub><span 
+class="cmr-8">2</span></sub>  (rappelons la notation consacrée<span class="frenchb-nbsp">&#x00A0;</span>: <span 
+class="cmmi-12">Spin</span>(<span 
+class="cmmi-12">n</span>) =
+       <img 
+src="source238x.png" alt="S^O (n)"  class="widehat" >).
+       </li>
+       <li class="itemize">Les groupes de Lie compacts correspondant à la forme réelle compacte
+       des  algèbres  complexes  <span 
+class="cmmi-12">A</span><sub><span 
+class="cmmi-8">n</span></sub>,  <span 
+class="cmmi-12">B</span><sub><span 
+class="cmmi-8">n</span></sub>,  <span 
+class="cmmi-12">C</span><sub><span 
+class="cmmi-8">n</span></sub>  et  <span 
+class="cmmi-12">D</span><sub><span 
+class="cmmi-8">n</span></sub>  sont  les  groupes  déjà
+       rencontrés notés <span 
+class="cmmi-12">SU</span>(<span 
+class="cmmi-12">n </span>+ 1), <span 
+class="cmmi-12">Spin</span>(2<span 
+class="cmmi-12">n </span>+ 1), <span 
+class="cmmi-12">Sp</span>(<span 
+class="cmmi-12">n</span>) et <span 
+class="cmmi-12">Spin</span>(2<span 
+class="cmmi-12">n</span>) dont
+       nous  avons  déjà  donné  les  dimensions.  Ceux  correspondants  aux
+       algèbres de Lie exceptionnelles se notent généralement de la même
+       façon que les algèbres de Lie correspondantes. Les dimensions des
+                                                                          
+
+                                                                          
+       cinq  groupes  exceptionnels  <span 
+class="cmmi-12">G</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-12">,F</span><sub><span 
+class="cmr-8">4</span></sub><span 
+class="cmmi-12">,E</span><sub><span 
+class="cmr-8">6</span></sub><span 
+class="cmmi-12">,E</span><sub><span 
+class="cmr-8">7</span></sub><span 
+class="cmmi-12">,E</span><sub><span 
+class="cmr-8">8</span></sub>   sont  respectivement
+       14<span 
+class="cmmi-12">, </span>52<span 
+class="cmmi-12">, </span>78<span 
+class="cmmi-12">, </span>133<span 
+class="cmmi-12">, </span>248.</li></ul>
+<!--l. 855--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x29-700002.2.3"></a>Remarques diverses</h5>
+       <ul class="itemize1">
+       <li class="itemize">Tout le monde, ou presque, désigne par <span 
+class="cmmi-12">SO</span>(<span 
+class="cmmi-12">n</span>) le groupe <span 
+class="cmmi-12">SO</span>(<span 
+class="cmmi-12">n,</span> I R) et
+       par <span 
+class="cmmi-12">SU</span>(<span 
+class="cmmi-12">n</span>) le groupe <span 
+class="cmmi-12">SU</span>(<span 
+class="cmmi-12">n,</span> lC). Les groupes de Lie correspondant à la
+       série <span 
+class="cmmi-12">C</span><sub><span 
+class="cmmi-8">n</span></sub> se notent malheureusement de façons très diverses suivant
+       les auteurs. Nous avons décidé de noter <span 
+class="cmmi-12">Sp</span>(<span 
+class="cmmi-12">n</span>) le groupe compact
+       correspondant et de réserver la notation <span 
+class="cmmi-12">Sp</span>(2<span 
+class="cmmi-12">n,</span> I R) pour désigner &#8220;le&#8221;
+       groupe symplectique (la forme réelle non compacte de <span 
+class="cmmi-12">C</span><sub><span 
+class="cmmi-8">n</span></sub> qui définit la
+       géométrie de l&#8217;espace des phases en mécanique). La notation <span 
+class="cmmi-12">U</span>(<span 
+class="cmmi-12">n,</span> I H)
+       se référant aux groupes unitaires quaternioniques (I H est le corps non
+       commutatif des quaternions) est aussi assez en vogue pour désigner le
+       groupe compact <span 
+class="cmmi-12">Sp</span>(<span 
+class="cmmi-12">n</span>). Le même groupe est désigné quelquefois par
+       le symbole <span 
+class="cmmi-12">USp</span>(2<span 
+class="cmmi-12">n</span>). La raison d&#8217;être de cette dernière notation est
+       que ce groupe coïncide avec l&#8217;intersection des unitaires (les <span 
+class="cmmi-12">U</span>(<span 
+class="cmmi-12">n</span>)) et
+       des symplectiques complexes (les <span 
+class="cmmi-12">Sp</span>(<span 
+class="cmmi-12">n,</span> lC)) Pour cette raison on les
+       appelle aussi &#8220;les unitaires symplectiques&#8221;. Hélas, on peut également
+       trouver des auteurs désignant ce même groupe <span 
+class="cmmi-12">USp</span>(2<span 
+class="cmmi-12">n</span>) par <span 
+class="cmmi-12">USp</span>(<span 
+class="cmmi-12">n</span>)<span 
+class="cmmi-12">&#x2026;</span>
+       Bref, c&#8217;est la pagaille.
+       </li>
+       <li class="itemize">Toutes  les  algèbres  de  Lie,  membres  de  séries  <span 
+class="cmmi-12">A</span><sub><span 
+class="cmmi-8">n</span></sub>,  <span 
+class="cmmi-12">B</span><sub><span 
+class="cmmi-8">n</span></sub>,  <span 
+class="cmmi-12">C</span><sub><span 
+class="cmmi-8">n</span></sub>  et  <span 
+class="cmmi-12">D</span><sub><span 
+class="cmmi-8">n</span></sub>
+       &#8212; et tous les groupes correspondants &#8212; sont simples, à l&#8217;exception
+       de  <span 
+class="cmmi-12">D</span><sub><span 
+class="cmr-8">2</span></sub>   =  <span 
+class="cmmi-12">A</span><sub><span 
+class="cmr-8">1</span></sub>  <span 
+class="cmsy-10x-x-120">&#x2295; </span><span 
+class="cmmi-12">A</span><sub><span 
+class="cmr-8">1</span></sub>.  Au  niveau  des  groupes,  on  peut  donc  écrire
+       <span 
+class="cmmi-12">Spin</span>(4) = <span 
+class="cmmi-12">SU</span>(2)<span 
+class="cmsy-10x-x-120">&#x00D7;</span><span 
+class="cmmi-12">SU</span>(2) = <span 
+class="cmmi-12">Spin</span>(3)<span 
+class="cmsy-10x-x-120">&#x00D7;</span><span 
+class="cmmi-12">Spin</span>(3)<span class="frenchb-thinspace">&#x00A0;</span>; en d&#8217;autres termes,
+       <span 
+class="cmmi-12">SO</span>(4) et <span 
+class="cmmi-12">SO</span>(3) <span 
+class="cmsy-10x-x-120">&#x00D7; </span><span 
+class="cmmi-12">SO</span>(3) ont même algèbre de Lie.
+       </li>
+       <li class="itemize">Comme annoncé plus haut, il existe des isomorphismes exceptionnels entre
+       membres de séries différentes, lorsque <span 
+class="cmmi-12">n </span>est assez petit. Les voici
+       <div class="eqnarray">
+       <center class="math-display" >
+                                                                          
+
+                                                                          
+       <img 
+src="source239x.png" alt="A1 =  D1 =  C1                D2  = A1 &#x2295;  A1    (d&#x02CA;ej&#x02CB;a vu)
+A  =  D                       C  =  B
+  3     3                       2    2
+       " class="math-display" ></center>
+       </div>
+       <!--l. 904--><p class="noindent" >Au niveau des groupes compacts correspondants, on obtient donc les
+       isomorphismes
+       <!--l. 907--><p class="noindent" ><div class="eqnarray">
+       <center class="math-display" >
+       <img 
+src="source240x.png" alt="SU (2) = Spin(3) = Sp (1)           Spin(4) = SU  (2 ) &#x00D7; SU (2)
+SU (4) = Spin(6)                   Sp (2) = Spin (5 )
+       " class="math-display" ></center>
+       </div>
+       <!--l. 913--><p class="noindent" >Citons enfin quelques isomorphismes concernant les groupes non compacts.
+       <span 
+class="cmmi-12">Spin</span><sup><span 
+class="cmsy-8">&#x2191;</span></sup>(<span 
+class="cmmi-12">p,q</span>) désigne ici la composante connexe de l&#8217;identité dans
+       <span 
+class="cmmi-12">Spin</span>(<span 
+class="cmmi-12">p,q</span>)<span class="frenchb-nbsp">&#x00A0;</span>:
+       <center class="math-display" >
+       <img 
+src="source241x.png" alt="     &#x2191;                      &#x2191;                      &#x2191;
+Spin (2,1 ) = SL (2,IR ),Spin (3,1) = SL (2,lC),Spin  (4,1) = U (1, 1,IH )
+       " class="math-display" ></center>
+                                                                          
+
+                                                                          
+       <center class="math-display" >
+       <img 
+src="source242x.png" alt="     &#x2191;                       &#x2191;                      &#x2191;
+Spin  (5,1) = SL (2,IH ),Spin  (3,2) = Sp(4,IR),Spin  (4,2) = SU (2,2)
+       " class="math-display" ></center>
+       </li>
+       <li class="itemize">La classification des algèbres et groupes de Lie ainsi que l&#8217;étude des
+       problèmes qui s&#8217;y rattachent nécessiterait de décupler la taille de
+       ce chapitre. Nous ne prétendons donc pas, dans ce paragraphe,
+       expliquer quoi que ce soit et nous nous contentons de faire un
+       tour rapide du zoo<span 
+class="cmmi-12">&#x2026;</span> Il est difficile de parler de la classification des
+       groupes de Lie sans mentionner les diagrammes de Dynkin (dans un
+       contexte différent on parle aussi de graphes de Coxeter). Mentionnons
+       seulement que la classification de Cartan, pour les algèbres de Lie
+       simples, se réduit, en fin de compte, à un problème de combinatoire
+       admettant une interprétation graphique. A chaque algèbre de Lie simple
+       complexe, on associe donc un petit diagramme (voir n&#8217;importe traité de
+       classification des groupes de Lie). Nous recommandons au lecteur de
+       compléter sa culture en allant consulter la littérature appropriée.
+       Notons que ces diagrammes apparaissent absolument partout, c&#8217;est à
+       dire non seulement dans un contexte lié à l&#8217;étude des algèbres de
+       Lie, mais encore dans bien d&#8217; autres domaines<span class="frenchb-nbsp">&#x00A0;</span>: dans la théorie
+       des groupes engendrés par réflexions, en théorie des singularités,
+       dans la théorie des noeuds, dans la classification des inclusions
+       d&#8217;algèbres d&#8217;opérateurs (sous-facteurs), en arithmétique, dans la
+       géométrie des solides platoniques (en relation avec l&#8217;étude des
+       sous-groupes finis de <span 
+class="cmmi-12">SO</span>(3)), dans la théorie des carquois, dans celle des
+       systèmes intégrables (en mécanique), dans les théories conformes
+       bi-dimensionelles, en théorie des cordes<span 
+class="cmmi-12">&#x2026;</span> Bref, partout. Nous espérons
+       donc que le lecteur, curieux, sera tenté de vouloir comprendre
+       pourquoi ces quelques petits dessins contiennent une telle quantité
+       d&#8217;information.
+       </li>
+       <li class="itemize">Un dernier mot sur ces diagrammes<span class="frenchb-nbsp">&#x00A0;</span>: certains contiennent des
+       lignes doubles ou triples (exemple de <span 
+class="cmmi-12">G</span><sub><span 
+class="cmr-8">2</span></sub>), et d&#8217;autres non. Ceux
+       n&#8217;utilisant que des lignes simples (ce sont ceux des séries <span 
+class="cmmi-12">A</span><sub><span 
+class="cmmi-8">n</span></sub>, <span 
+class="cmmi-12">D</span><sub><span 
+class="cmmi-8">n</span></sub> et
+       <span 
+class="cmmi-12">E</span><sub><span 
+class="cmmi-8">n</span></sub>) sont souvent considérés, d&#8217;une certaine façon, comme plus
+                                                                          
+
+                                                                          
+       fondamentaux que les autres<span class="frenchb-thinspace">&#x00A0;</span>; les algèbres de Lie correspondantes (les
+       algèbres &#8220;ADE&#8221;) sont également appelées <span 
+class="cmsl-12">alg</span><span 
+class="cmsl-12">èbres simplement</span>
+       <span 
+class="cmsl-12">lac</span><span 
+class="cmsl-12">ées</span>.</li></ul>
+<!--l. 972--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">2.2.4   </span> <a 
+ id="x29-710002.2.4"></a>Message</h4>
+<!--l. 974--><p class="noindent" >Un tout dernier mot<span class="frenchb-nbsp">&#x00A0;</span>: passer en revue &#8220;l&#8217;essentiel&#8221; de la théorie des groupes de
+Lie en une seule section &#8211; même en se limitant aux généralités et aux
+problèmes de classification &#8211; est certainement une tâche impossible. Un
+ouvrage entier serait d&#8217;ailleurs insuffisant. Nous n&#8217;avons fait qu&#8217;aborder
+le sujet. Vouloir dresser la liste de ce qui n&#8217;a pas été effleuré serait à
+la fois inutile et<span 
+class="cmmi-12">&#x2026;</span> incomplet<span class="frenchb-thinspace">&#x00A0;</span>! Voici donc le message le plus important
+destiné à notre lecteur néophyte<span class="frenchb-nbsp">&#x00A0;</span>: La section qui s&#8217;achève ici ne doit
+pas être considérée comme un résumé, mais comme une invitation au
+voyage<span 
+class="cmmi-12">&#x2026;</span>
+                                                                          
+
+                                                                          
+   <!--l. 990--><div class="crosslinks"><p class="noindent">[<a 
+href="sourcese15.html" >next</a>] [<a 
+href="sourcese13.html" >prev</a>] [<a 
+href="sourcese13.html#tailsourcese13.html" >prev-tail</a>] [<a 
+href="sourcese14.html" >front</a>] [<a 
+href="sourcech2.html#sourcese14.html" >up</a>] </p></div>
+<!--l. 990--><p class="indent" >   <a 
+ id="tailsourcese14.html"></a>   
+</body></html> 

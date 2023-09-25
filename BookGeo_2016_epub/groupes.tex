@@ -1,0 +1,3040 @@
+
+\chapter{Groupes de Lie et espaces homog\`enes}
+
+\section{G\'en\'eralit\'es sur les groupes de Lie}
+
+\subsection{G\'en\'eralit\'es et d\'efinitions \'el\'ementaires}
+
+Les groupes de Lie et les espaces homog\`enes fournissent une multitude
+d'exemples particuli\`erement simples de vari\'et\'es diff\'erentiables et 
+c'est une des
+raisons pour lesquelles nous leur consacrons une section de cet 
+ouvrage. Une autre
+raison importante est que les groupes de Lie vont \^etre utilis\'es comme 
+``outils'' dans
+les chapitres suivants.
+
+Chacun est cens\'e \^etre d\'ej\`a familier avec la notion de structure de 
+groupe.
+L'introduction aux groupes et leur utilisation dans toutes les 
+branches de la
+physique est un th\`eme pr\'esent\'e et \'etudi\'e, suivant les ann\'ees et les 
+r\'eformes de
+l'enseignement secondaire, entre la classe de quatri\`eme et les ann\'ees 
+de Licence...
+Rappelons donc qu'un groupe est un ensemble (fini ou infini) muni 
+d'une loi de
+composition interne associative, poss\'edant un \'el\'ement neutre, et tel 
+que tout \'el\'ement
+poss\`ede un sym\'etrique pour la loi en question. Du point de vue du 
+calcul, notons que,
+dans un groupe, il est toujours possible de r\'esoudre une \'equation du 
+premier degr\'e (du
+type $a \, x = b,$ la solution \'etant $x = a^{-1} \, b$). Les exemples 
+les plus simples
+habituellement pr\'esent\'es aux \'el\`eves de nos lyc\'ees sont les suivants: 
+Le groupe $(\ZZ,
++)$ des entiers relatifs, les groupes (additif et multiplicatif) de 
+nombres rationnels
+$(Q,+)$ et $(Q-\{0\},\times)$ ainsi que leurs g\'en\'eralisations r\'eelles 
+et complexes,
+les groupes de congruence $\ZZ_p=\ZZ/p\ZZ$, les groupes de sym\'etrie 
+des solides
+platoniques, les groupes de transformations lin\'eaires, affines ou 
+projectives et les
+groupes de substitutions. Les groupes ne sont pas n\'ecessairement 
+commutatifs, comme
+les derniers exemples le montrent clairement. Les groupes peuvent 
+\^etre finis (comme
+$\ZZ/p\ZZ$), infinis mais discrets (comme $\ZZ$) ou infinis et 
+``continus'' (comme
+$\RR$ ou comme le groupe $U(1)$ des rotations autour d'un axe). 
+Regardons ce dernier
+exemple d'un peu plus pr\`es. Toute rotation autour d'un axe est 
+parfaitement
+caract\'eris\'ee par un angle $\theta$ compris entre $0$ et $2 \pi$~; de 
+surcro\^it, les
+rotations d'angle $0$ et $2 \pi$ sont identiques. En d'autres termes, 
+on peut
+consid\'erer les rotations en question comme les diff\'erents points d'un 
+cercle $S^1$
+de rayon quelconque, l'\'el\'ement neutre (c'est \`a dire la rotation 
+d'angle nul) \'etant
+un point marqu\'e de ce cercle $S^1$. Ceci nous fournit un image 
+``visuelle'' de ce
+groupe $U(1)$, image qui peut nous faire oublier momentan\'ement la 
+structure
+alg\'ebrique proprement dite de cet ensemble (un groupe) mais qui 
+attire notre
+attention sur sa structure topologique ou m\^eme diff\'erentiable (un 
+cercle).
+La notion de groupe de Lie g\'en\'eralise ce dernier exemple en 
+juxtaposant de fa\c con
+axiomatique la structure de groupe et celles de vari\'et\'e.
+
+Par d\'efinition, un groupe de Lie $G$ est donc une vari\'et\'e 
+diff\'erentiable munie d'une
+structure de groupe, de fa\c con \`a ce que les deux structures soient 
+compatibles, c'est
+\`a dire de fa\c con \`a ce que la multiplication \footnote{La loi de
+composition interne
+sera en effet, le plus souvent, not\'ee multiplicativement.} et le 
+passage \`a l'inverse
+soient des applications diff\'erentiables. Notons que la multiplication 
+est une
+application de $G\times G$ dans $G$ alors que le passage \`a l'inverse 
+est une
+application de $G$ dans $G$. Le lecteur pourra visuellement se 
+repr\'esenter un
+groupe de Lie comme un ``patato\"\i de'' avec multiplication (entre 
+points) et origine
+marqu\'ee (voir \ref{fig:groupe-Lie}).
+
+\begin{figure}[htbp]
+ %\def\epsfsize#1#2{0.5#1}
+\epsfxsize=8cm
+$$
+    \epsfbox{groupe-Lie.eps}
+$$
+\caption{Un groupe de Lie}
+\label{fig:groupe-Lie}
+\end{figure}
+
+
+La dimension d'un groupe de Lie est, par d\'efinition, sa dimension en 
+tant que vari\'et\'e
+(nous verrons de nombreux exemples un peu plus loin)~; notons d\`es \`a 
+pr\'esent que le
+groupe $U(1)$ pr\'esent\'e plus haut est de dimension $1$.
+
+\subsection{Exemples \'el\'ementaires de groupes classiques}
+
+On d\'esigne par $M(n,\CC)$ l'alg\`ebre (de dimension complexe $n^2$) des 
+matrices carr\'ees
+d'ordre $n$ \`a coefficients complexes et par $a^\dag$ l'adjointe d'une 
+matrice $a$ de
+$M(n,\CC)$ (si $a=(a_{ij})$, alors $a^\dag = (\overline{a_{ji}}) $). 
+L'ensemble
+pr\'ec\'edent n'est certes pas un groupe pour la loi de multiplication 
+des matrices
+puisqu'il contient de nombreux \'el\'ements non inversibles (toutes les 
+matrices de
+d\'eterminant nul) mais il contient plusieurs sous-ensembles 
+int\'eressants qui, eux, sont
+bien des groupes multiplicatifs, comme on pourra le v\'erifier ais\'ement.
+\begin{itemize}
+\item $GL(n,\CC) = \{a \in M(n,\CC) / \, \vert \, det \, a \neq 0 
+\}$, le groupe lin\'eaire complexe.
+\item $U(n) = \{a\in GL(n,\CC) / \, \vert \,  a^\dag = a^{-1}\}$, le 
+groupe unitaire.
+\item $SU(n) = \{a \in U(n,\CC) / \, \vert \, det \, a = 1\}$, le 
+groupe unitaire unimodulaire, aussi
+appel\'e groupe sp\'ecial unimodulaire.
+\end{itemize}
+Notons que les \'el\'ements de $U(n)$ ont automatiquement un d\'eterminant 
+(un nombre
+complexe) de module $1$, puisque $det  \, a^\dag = \overline{det  \, 
+a} = 1 / det  \, a$,
+mais pas n\'ecessairement \'egal \`a $1$.
+
+Les groupes pr\'ec\'edents sont d\'efinis comme groupes de matrices~; les 
+entr\'ees de ces
+matrices (les ``\'el\'ements de matrice'') sont des nombres qui peuvent 
+\^etre r\'eels mais
+sont g\'en\'eralement complexes. Si on impose \`a ces \'el\'ements de matrice 
+d'\^etre r\'eels, on
+obtient de nouveaux groupes. Soit $M(n,\RR)$ l'alg\`ebre (de dimension 
+r\'eelle $n^2$) des
+matrices carr\'ees d'ordre $n$ \`a coefficients r\'eels. Cet ensemble, 
+comme $M(n,\CC)$ est une
+alg\`ebre associative mais n'est pas un groupe multiplicatif. On d\'efinit
+\begin{itemize}
+\item $GL(n,\RR) = GL(n,\CC) \cap M(n,\RR)$, le groupe lin\'eaire r\'eel.
+\item $O(n,\RR) = U(n,\CC) \cap M(n,\RR)$, le groupe orthogonal, 
+encore appel\'e groupe
+des rotations.
+\item $SO(n,\RR) = SU(n) \cap M(n,\RR)$, le groupe sp\'ecial orthogonal.
+\end{itemize}
+Les \'el\'ements du groupe unitaire ayant un d\'eterminant de module $1$, 
+ceux de
+$O(n,\RR)$ auront un d\'eterminant \'egal \`a $-1$ ou \`a $1$~; ceux pour 
+lesquels il est
+pr\'ecis\'ement \'egal \`a $1$ constituent le groupe $SO(n,\RR)$.
+ On d\'esigne par ${\widetilde a}$ la
+transpos\'ee d'une matrice $a$ de $M(n,\RR)$.
+
+\section{G\'en\'eralit\'es sur les alg\`ebres de Lie}
+
+\subsection{Application exponentielle et alg\`ebres de Lie}
+
+\subsubsection{D\'efinition}
+
+Une alg\`ebre de Lie ${\frak g}$ sur un corps commutatif ${\KK }$ est un ensemble 
+qui est, d'une part
+un espace vectoriel sur ${\KK }$ (sa loi de groupe ab\'elien est not\'ee 
+$+$ et sa loi
+externe sur ${\KK }$ est not\'ee multiplicativement), de dimension finie ou non, et qui, d'autre 
+part, est muni d'une loi de
+composition interne --non associative-- g\'en\'eralement not\'ee $[\, ,\,]$ 
+v\'erifiant les
+propri\'et\'es suivantes
+\begin{description}
+\item[\tt Anticommutativit\'e] {\hskip 0.1cm} $\forall X, Y \in {\frak 
+g} {\hskip 1cm}  [X,Y]=-[Y,X] $
+\item[\tt Identit\'e de Jacobi] {\hskip 0.1cm} $\forall X,Y,Z \in 
+{\frak g}
+ {\hskip 0.4cm} [X,[Y,Z]]+[Z,[X,Y]]+[Y,[Z,X]]=~0$ 
+\end{description}
+On suppose \'egalement v\'erifi\'ee la lin\'earit\'e par rapport aux scalaires, 
+c'est \`a dire
+$[\alpha X,Y]=[X,\alpha Y]=\alpha [X,Y]$ si $\alpha \in {\KK }$.
+La loi $[\, ,\, ]$ est g\'en\'eralement d\'esign\'ee sous le nom de ``crochet 
+de Lie''.
+Dans toute la suite, le corps ${\KK }$ co\"incidera avec le corps $\CC$ 
+des nombres complexes.
+
+\subsubsection{Exemple fondamental}
+
+Soit ${\cal A}$ une alg\`ebre associative~; on peut lui associer 
+canoniquement une
+alg\`ebre de Lie en d\'efinissant le crochet de Lie de la fa\c con suivante 
+(auquel cas le
+crochet de Lie peut \'egalement \^etre d\'esign\'e sous le nom de 
+commutateur):
+$$X,Y \in {\cal A} \rightarrow [X,Y]  =  X Y - Y X $$
+Le crochet obtenu est g\'en\'eralement non nul, sauf \'evidemment si $X$ et 
+$Y$ commutent.
+Par ailleurs on v\'erifie ais\'ement que les propri\'et\'es 
+d'anticommutativit\'e du crochet
+ainsi que l'identit\'e de Jacobi sont automatiquement satisfaites. Les 
+ensembles de
+matrices $M(n,\CC)$ et $M(n,\RR)$ sont donc automatiquement des 
+alg\`ebres de Lie.
+
+\subsubsection{Constantes de structure d'une alg\`ebre de Lie ${\frak 
+g}$}
+
+Supposons que ${\frak g}$, en tant qu'espace vectoriel sur le corps 
+des complexes $\CC$
+soit de dimension finie $n$ et soit $\{X_\alpha\}_{\alpha \in \{1 
+\ldots n\}}$ une base
+de ${\frak g}$.
+Le crochet de Lie $[X_\alpha,X_\beta]$ de deux vecteurs de base est 
+{\it a priori} un
+\'el\'ement de ${\frak g}$ et peut donc se d\'evelopper sur la base choisie:
+$$ [X_\alpha,X_\beta] = C_{\alpha \beta}^\gamma X_\gamma $$
+Les $n^3$ nombres $ C_{\alpha \beta}^\gamma$ sont les constantes de 
+structure de
+${\frak g}$ par rapport \`a la base choisie.
+
+\subsubsection{Application exponentielle dans $M(n,\CC)$}
+
+On d\'esigne par $\exp: \alpha \rightarrow 
+\sum_{p=0}^{\infty}\alpha^p/p!$
+l'application exponentielle d\'efinie sur $M(n,\CC)$.
+Posons $g=e^A$. Il est facile de voir que $$det  \, g = e^{Tr \, A}$$
+Cette relation est \'evidente si $A$ est diagonalisable (puisque 
+$e^{\lambda_1} \ldots e^{\lambda_p}  =  
+e^{\lambda_1+\ldots+\lambda_p}$). Si ce n'est pas le cas, on 
+utilise pour d\'emontrer cette propri\'et\'e g\'en\'erale le fait que 
+l'ensemble des matrices diagonalisables sur $\CC$ est 
+dense.  Cette relation est \`a la 
+base d'une quantit\'e de r\'esultats dont voici le premier: si $A \in 
+M(n,\CC)$, alors $g = e^A \in GL(n,\CC)$~; en effet, $det  \, g$ 
+n'est 
+jamais nul puisque la fonction $z \rightarrow e^z$ ne s'annule pas.
+
+$\triangle$ {\it ATTENTION\/}: On n'a pas dit que tout \'el\'ement de 
+$GL(n,\CC)$ pouvait \^etre 
+atteint par la fonction $\exp$ (c'est faux!).
+
+\subsubsection{Cas des groupes de matrices: Correspondance entre 
+groupes 
+et alg\`ebres de Lie}
+
+Soit $G$ un groupe de Lie d\'efini comme sous-ensemble de $M(n,\CC)$. 
+On 
+d\'efinit son alg\`ebre de Lie not\'ee ${\frak g}$ ou $Lie\, G$ comme 
+suit,
+$$ Lie\, G = \{A\in M_n(\CC) {\hskip 0.2cm}\vert \,  {\hskip 0.2cm} 
+\forall t \in \RR,  {\hskip 0.2cm} e^{t A} \in G\}$$
+ De fa\c con un peu imag\'ee, on peut dire que l'alg\`ebre de Lie d'un 
+groupe 
+$G$, c'est$\ldots$ son logarithme! De fait, l'utilisation de 
+l'alg\`ebre 
+de Lie de $G$ permet de lin\'eariser les propri\'et\'es des groupes, c'est 
+\`a dire 
+de transformer les multiplications en additions \etc .
+
+La d\'efinition ci-dessus
+ de l'alg\`ebre de Lie d'un groupe $G$ semble un peu 
+restrictive en ce sens qu'elle semble ne pouvoir s'appliquer qu'aux 
+groupes de matrices,
+mais il 
+existe une d\'efinition plus abstraite de la notion d'alg\`ebre de Lie 
+d'un 
+groupe de Lie, d\'efinition ne
+ faisant pas l'hypoth\`ese d'une r\'ealisation 
+matricielle ; nous y reviendrons plus loin.
+
+%% En fait il est possible de d\'emontrer que tout groupe 
+%%de Lie de dimension finie est isomorphe \`a un groupe de matrices 
+%%$***$, 
+%% donc l'hypoth\`ese qui pr\'ec\`ede n'est pas une restriction. Par ailleurs,
+
+Soient $g$ et $h$ deux \'el\'ements de $G$ et supposons qu'on puisse 
+\'ecrire $g = e^{tA}$ 
+et $h=e^{tB}$ avec $A,B \in  {\frak g}$. Tout d'abord, notons que 
+$g^{-1}=e^{-tA}$.
+ On peut alors consid\'erer
+ le commutateur de $g$ et $h$ au 
+sens de la th\'eorie des groupes, c'est \`a dire l'\'el\'ement 
+$c=ghg^{-1}h^{-1}$ 
+de $G$. Au second ordre en $t$, il vient
+\begin{eqnarray*}
+c &  = & e^{tA}e^{tB}e^{-tA}e^{-tB} \\
+  &  = &
+(1 + tA + t^2 A^2/2! + \ldots)(1 + tB + t^2 B^2/2! + \ldots) \\
+  & {} & {\hskip 1.25cm}
+(1 - tA + t^2 A^2/2! + \ldots)(1 - tB + t^2 B^2/2! + \ldots) \\
+   &  = &
+1 + 0 \,  t + t^2 [A,B] + O(t^3)
+\end{eqnarray*}
+Il ne faudrait pas trop h\^ativement en d\'eduire que le commutateur dans 
+$G$ est \'egal \`a l'exponentielle du commutateur dans $ Lie\, G$, 
+mais c'est ``presque'' vrai, comme on vient de le voir
+ ($c \, \mathrel{\oalign{$\, \sim$\cr${\scriptstyle t\rightarrow 0}$}} \,  1 + 
+t^2[A,B]$). De plus, on peut d\'emontrer que 
+$$e^{t^2 [A,B]} ={\lim_{n \rightarrow \infty}}
+(e^{tA/n}e^{tB/n}e^{-tA/n}e^{-tB/n})^{n^2}$$
+ C'est \`a l'aide de ces 
+relations qu'on peut s'assurer que l'alg\`ebre de Lie 
+d'un groupe de Lie est bien$\ldots$ une alg\`ebre de Lie (l'ensemble 
+est 
+bien stable par le commutateur).
+%%%Remarques sur BCH$***$.
+
+Soit $g \in G$ et supposons qu'on puisse \'ecrire $g=e^A$~; alors, en 
+utilisant la structure d'espace vectoriel de $Lie G$, on voit qu'on 
+peut 
+d\'ecomposer $A$ sur une base $\{X_\alpha\}$~; ainsi, $A= \sum a^\alpha 
+X_\alpha$. Les $n$ nombres $a^\alpha$ permettent donc de d\'efinir sur 
+$G$ 
+un syst\`eme de coordonn\'ees (une carte). Ceci montre \'egalement que la 
+dimension de $G$, en tant que vari\'et\'e, est \'egale \`a celle de $ Lie\, 
+G$, consid\'er\'e comme espace vectoriel.
+
+
+
+\subsection{Correspondance entre groupes et alg\`ebres de Lie}
+
+\subsubsection{Alg\`ebres de Lie des groupes classiques}
+
+Notons d'abord que, pour les groupes unitaires,
+$$ e^A \in U(n) \Longleftrightarrow e^A e^{A^\dag} = 1 
+\Longleftrightarrow 
+A + A^\dag = 0$$
+ainsi la matrice $A$ est anti-hermitienne.
+
+Nous avons d\'ej\`a rencontr\'e la relation $ det  \, e^A = e^{Tr A}$~; il 
+s'ensuit que, si le d\'eterminant de $g=e^A$ est \'egal \`a $1$, la trace 
+de 
+$A$ est nulle. Ainsi,
+$$
+e^A \in SU(n) \Longleftrightarrow [A + A^\dag = 0 \mbox{ et } Tr A = 
+0 ]
+$$
+Dans le cas des groupes orthogonaux, la d\'efinition implique 
+imm\'ediatement
+$$
+e^A \in O(n) \Longleftrightarrow [e^A e^{A^t} = 1 \mbox{ et $A$ 
+r\'eel}] \Longleftrightarrow  [A + A^t = 0 
+\mbox{ et $A$ r\'eel}]
+$$
+Les matrices $A$ de l'alg\`ebre correspondante sont donc 
+antisym\'etriques 
+r\'eelles, ce qui, en particulier, implique la nullit\'e des \'el\'ements de 
+matrice diagonaux et donc de la trace~; mais le seul fait que $tr 
+A=0$ 
+implique $det \, e^A=1$ et donc $e^A \in SO(n)$. Y aurait-il une 
+contradiction? Comment donc obtenir une matrice orthogonale de 
+d\'eterminant diff\'erent de $1$?
+ Il est pourtant bien \'evident que la d\'efinition de $O(n)$ 
+est diff\'erente de celle de $SO(n)$! La seule conclusion possible est 
+la 
+suivante~: les \'el\'ements de $O(n)$ qui ne sont pas dans $SO(n)$  ne 
+sont 
+pas atteints par la fonction $\exp$ (voir la remarque \`a la fin du 
+pr\'esent 
+paragraphe).
+
+Pour calculer la dimension des groupes de Lie, le plus simple est en 
+g\'en\'eral de calculer la dimension des alg\`ebres de Lie correspondantes. 
+Voici un exemple que lecteur pourra g\'en\'eraliser sans peine: 
+``Fabriquons'' une matrice carr\'ee antihermitienne. Une matrice $n 
+\times 
+n$ d\'epend, {\it a priori}, de $n^2$ param\`etres complexes~; nous 
+enlevons 
+d'abord la diagonale (donc il reste $n^2 - n$ param\`etres), puis nous 
+fabriquons une matrice triangulaire inf\'erieure stricte (donc 
+$(n^2-n)/2$ 
+param\`etres)~; la partie triangulaire sup\'erieure est alors 
+compl\`etement 
+d\'etermin\'ee par la condition d'anti-hermiticit\'e~; finalement, cette 
+m\^eme 
+condition implique que les \'el\'ements diagonaux sont imaginaires purs: 
+il 
+nous faut donc rajouter $n$ param\`etres r\'eels. Au total, on a donc 
+$2(n^2-n)/2+n=n^2$param\`etres r\'eels.
+ Ainsi donc $dim_R \, U(n)= dim_R \,  Lie \, U(n)=n^2$.
+ 
+Le lecteur pourra sans doute ainsi retrouver sans difficult\'e la 
+dimension 
+des alg\`ebres de Lie suivantes. Remarque : La notation $Sp(n)$ 
+utilis\'ee 
+ci-dessous d\'esigne le groupe unitaire-quaternionique (voir 
+``remarques 
+diverses'' en fin de section 2 concernant les groupes symplectiques) 
+; les
+matrices de l'alg\`ebre de Lie correspondante sont du type
+$\begin{pmatrix} A & B \\ - B^\dag & -\widetilde A  \end{pmatrix}$ avec $A^\dag = -A$ et 
+$\widetilde B = B$.
+
+{\vskip 1.0 cm}
+\begin{tabular}{lcr}
+$G$ & $Lie \, G$ & $ dim_{\RR} \, G$  \\
+{} & {} & {} \\
+\hline
+{} & {} & {} \\
+$GL(n,\CC)$ & $M(n,\CC)$ & $2\, n^2$ \\
+$GL(n,\RR)$ & $M(n,\RR)$ & $n^2$ \\
+$U(n)$ & Matrices anti-hermitiennes & $n^2$ \\
+$SU(n)$ & Matrices anti-hermitiennes de trace nulle & $n^2-1$ \\
+$SO(n)$ & Matrices antisym\'etriques r\'eelles & $\frac{n(n-1)}{2}$ \\
+$Sp(n)$ & Voir ci-dessus 
+ & $\frac{2n(2n+1)}{2}$
+\end{tabular}
+{\vskip 1.0 cm}
+
+{\bf Remarques}
+
+\begin{itemize}
+
+\item Si nous ne pr\'ecisons pas davantage, c'est que les alg\`ebres de 
+Lie que nous 
+consid\'erons sont des alg\`ebres de Lie {\em r\'eelles}. Il y a l\`a une 
+petite 
+subtilit\'e que nous allons illustrer en consid\'erant le cas de
+ ${\frak u}(n) =  Lie\, U(n)$. Il s'agit d' un espace vectoriel 
+sur 
+$\RR$ de dimension $d=n^2$, ce qui signifie qu'une base de cet espace 
+vectoriel r\'eel poss\`ede $d=n^2$ \'el\'ements (appelons les 
+$\{X_\alpha\}_{\alpha 
+= 1 \ldots d}$) et qu'un \'el\'ement quelconque $A$ de ${\frak u}(n)$ 
+peut 
+s'\'ecrire $A = \sum_{\alpha = 1}^{d} a^\alpha X_\alpha$, avec des 
+composantes $a^\alpha$ qui sont des nombres r\'eels. Par contre, les 
+\'el\'ements $\{X_\alpha\}$ sont, dans le cas pr\'esent des matrices 
+antihermitiennes dont les \'el\'ements de matrice sont g\'en\'eralement 
+complexes 
+(comme ceux de $A$, d'ailleurs). Pour compliquer l\'eg\`erement les 
+choses, 
+les \'el\'ements $\{X_\alpha\}$ qu'on appelle traditionnellement {\sl  
+g\'en\'erateurs \/}\index{g\'en\'erateurs infinit\'esimaux}
+ de l'alg\`ebre de Lie ${\frak u}(n)$ ou encore {\sl g\'en\'erateurs 
+ infinit\'esimaux\/}, sont souvent \'ecrits sous la forme $X_\alpha= i 
+Y_\alpha$
+  (dans le cas de ${\frak u}(n)$ les $Y_\alpha$ sont donc hermitiens) 
+et 
+  le d\'eveloppement de $	A$ sur la base $X_\alpha$ se re-\'ecrit
+   $A = \sum_{\alpha = 1}^{d} a^\alpha i Y_\alpha$, de sorte que si 
+on 
+   pose $A = i B$ on obtient simplement $B=\sum_{\alpha = 1}^{d} 
+a^\alpha 
+   Y_\alpha$~; dans ce cas, il y a des facteurs $i$ au second membre 
+des 
+   relations de commutation des $Y_\alpha$ entre eux. Pour couronner 
+   le tout les $Y_\alpha$ sont eux-aussi quelquefois d\'esign\'es sous le 
+nom de 
+   ``g\'en\'erateurs infinit\'esimaux'', bien qu'ils 
+   n'appartiennent m\^eme plus \`a l'alg\`ebre de Lie si cette derni\`ere est r\'eelle !
+
+\item L'application $\exp$ est continue. L'image continue d'un espace 
+connexe est un espace connexe. Une alg\`ebre de Lie est un espace 
+vectoriel 
+et donc un espace connexe. L'ensemble $\exp {\frak g} = \{e^X \vert 
+\,  X \in {\frak 
+g}\}$ est donc connexe. Conclusion: si un groupe de Lie $G$ n'est pas 
+connexe, les \'el\'ements qui n'appartiennent pas \`a la composante connexe 
+de 
+l'identit\'e ne peuvent pas \^etre atteints par la fonction $\exp$ (ils 
+ne 
+peuvent pas s'\'ecrire sous la forme $e^X$). Ceci montre que, dans bien 
+des 
+cas, l'application $\exp$ n'est pas surjective. Le calcul effectu\'e 
+plus haut et concernant le groupe orthogonal $O(n)$ refl\`ete le fait 
+que 
+ce dernier n'est pas connexe. Par contre les 
+groupes $U(n)$, $SU(n)$, $SO(n)$ et $Sp(n)$ sont connexes.
+
+M\^eme si $G$ est connexe, l'application $\exp$ n'est pas 
+n\'ecessairement 
+surjective. Par contre, on d\'emontre que si $G$ est compact et 
+connexe, 
+cette application est surjective (c'est le cas de $U(n)$, $SU(n)$, 
+$SO(n)$ et $Sp(n)$). Si $G$ est connexe mais non compact, on d\'emontre 
+que $\exp$ est ``presque'' surjective, en ce sens que $$\forall g \in 
+G,\, 
+\exists A_1, A_2 \ldots A_p \in  {\frak g} {\hskip 0.3cm} p \mbox{ 
+fini, tel que } g = e^{A_1} e^{A_2} \ldots e^{A_p}$$
+
+\item Par d\'efinition, le {\sl rang}\index{rang} d'un groupe de Lie compact est 
+\'egal \`a 
+ \`a la dimension d'un sous groupe 
+ab\'elien maximal contenu dans $G$ (on dit alors souvent ``tore maximal'' au 
+lieu de
+``sous groupe ab\'elien maximal''). \\
+Cette d\'efinition sera suffisante pour nous, mais voici n\'eanmoins une d\'efinition valable dans un contexte plus g\'en\'eral: 
+le rang d'un groupe de Lie est d\'efini comme \'etant celui de l'alg\`ebre de Lie correspondante, lui-m\^eme d\'efini comme la dimension de l'une quelconque de ses sous-alg\`ebres de Cartan (si le corps de base est celui des complexes et que l'alg\`ebre de Lie est de dimension finie, toutes ses sous-alg\`ebres de Cartan sont isomorphes);  dans ce cadre g\'en\'eral une sous-alg\`ebre de Cartan est une sous-alg\`ebre de Lie nilpotente qui coincide avec son propre normalisateur. Dans le cas semi-simple une sous-alg\`ebre de Cartan est simplement une sous-alg\`ebre de Lie ab\'elienne maximale. 
+
+
+
+\end{itemize}
+
+\subsubsection{Isomorphisme local: comparaison entre $SU(2)$ et 
+$SO(3)$}
+
+Nous avons d\'ej\`a vu (dans le cas du groupe orthogonal $O(n)$) que les 
+\'el\'ements d'un groupe n'appartenant pas \`a la composante connexe de 
+l'identit\'e ne pouvaient pas \^etre atteints par la fonction 
+exponentielle. 
+Pour cette raison, nous supposerons que tous les groupes de Lie 
+consid\'er\'es dans la pr\'esente sous-section sont connexes (cas de 
+$SO(n)$). 
+Nous nous int\'eressons en effet ici \`a des ph\'enom\`enes plus fins que la 
+connexit\'e.
+
+\begin{itemize}
+
+\item
+Soient
+ $$\sigma_1 =  \begin{pmatrix} 0&1\\ 1&0 \end{pmatrix}, \,
+\sigma_2 = \begin{pmatrix}  0&-i\\ i&0\end{pmatrix}, \,
+\sigma_3 = \begin{pmatrix}  1&0\\ 0&-1\end{pmatrix} $$ les trois {\sl matrices 
+de Pauli\/}\index{matrices de Pauli}. 
+$Lie(SU(2))$ est l'espace vectoriel engendr\'e par $X_1,X_2,X_3$ avec 
+$X_j=i\sigma_j/2$ puisque $\{X_1,X_2,X_3\}$ constituent une base de 
+l'alg\`ebre des matrices antihermitiennes de trace nulle. Notons que 
+$$[X_i,X_j]=-\epsilon_{ijk}X_k$$ o\`u $\epsilon$ est compl\`etement 
+antisym\'etrique et $\epsilon_{123}=1$. En d\'eveloppant la fonction 
+exponentielle en  s\'erie et en utilisant les propri\'et\'es 
+$\sigma_3^2=1$, 
+$\sigma^{2p+1}=\sigma_3$, le lecteur montrera ais\'ement que 
+$$\exp(\theta 
+X_3)= \cos \frac{\theta}{2} + i \sigma_3 \sin \frac{\theta}{2} \in 
+SU(2)$$
+Notons que 
+\begin{eqnarray*}
+\exp[(\theta + 2 \pi)X_3] & = & - \exp[\theta X_3] \\
+\exp[(\theta + 4 \pi)X_3] & = & + \exp[\theta X_3] 
+\end{eqnarray*}
+
+\item
+Soient maintenant $$
+X_1 = -\begin{pmatrix}  0&0&0\\ 0&0&1\\ 0&-1&0\end{pmatrix},
+X_2 = -\begin{pmatrix}  0&0&1\\ 0&0&0\\ -1&0&0\end{pmatrix},
+X_3 = -\begin{pmatrix}  0&1&0\\ -1&0&0\\ 0&0&0\end{pmatrix} $$
+L'espace vectoriel engendr\'e par $X_1,X_2,X_3$ est constitu\'e par 
+l'ensemble des matrices antisym\'etriques r\'eelles $3\times 3$~; il 
+co\"incide 
+donc avec l'alg\`ebre de Lie $Lie(SO(3))$. Comme dans le cas pr\'ec\`edent, 
+on 
+peut v\'erifier que que $$[X_i,X_j]=-\epsilon_{ijk}X_k$$ Les deux 
+alg\`ebres
+ $Lie(SO(3))$ et  $Lie(SU(2))$ sont donc isomorphes. Par ailleurs, en 
+ d\'eveloppant la fonction $\exp$ en s\'erie et en utilisant les 
+propri\'et\'es 
+ $X_3^{2p}=diag\, ((-1)^p,(-1)^p,0)$, $X_3^{2p+1}=(-1)^{p}X_3$, il 
+est facile de voir que 
+$$\exp[\theta X_3] =  diag(\cos \theta,\cos \theta,1) + X_3 \sin 
+\theta \in SO(3)$$
+ Notons alors que
+ \begin{eqnarray*}
+ \exp[(\theta + 2 \pi)X_3] & = & + \exp[\theta X_3]
+ \end{eqnarray*}
+ 
+ \item
+ Ainsi donc, lorsqu'``on fait un tour'' dans $SO(3)$, on revient \`a 
+ l'identit\'e -- chose qu'on savait d\'ej\`a~! -- mais, dans $SU(2)$, pour 
+ revenir \`a l'identit\'e, il faut faire~$\dots$ deux tours~{ !} 
+ Cette diff\'erence de comportement entre les deux groupes peut sembler 
+ assez surprenante \`a premi\`ere vue. Il est possible de l'illustrer de 
+ fa\c con assez simple gr\^ace \`a une exp\'erience \'el\'ementaire. 
+ 
+ {\em Exp\'erience utilisant \/} $SO(3)$:
+ Prenez un objet quelconque, posez-le sur la table et faites-lui 
+subir 
+ une rotation de $360$ degr\'es autour d'un axe vertical~; la 
+configuration 
+ que vous obtenez est indiscernable de la configuration initiale.
+ 
+ {\em Exp\'erience utilisant \/} $SU(2)$: 
+ Prenez un objet quelconque, suspendez-le au milieu de la pi\`ece en 
+ utilisant huit \'elastiques reli\'es aux huit coins (haut et bas) de la 
+ pi\`ece (vous pouvez utiliser un moins grand nombre d'\'elastiques~!) et 
+ faites subir \`a votre objet une rotation de $360$ degr\'es~; notez 
+que les 
+ \'elastiques sont emm\^el\'es~; essayez de d\'em\^eler les \'elastiques sans 
+faire 
+ tourner l'objet$\ldots$ vous n'y parvenez pas. Faites alors subir \`a 
+ votre objet une seconde rotation de $360^\circ$ (depuis la 
+configuration 
+ initiale vous aurez ainsi effectu\'e une rotation de $4\pi=720^\circ 
+$)~; les 
+ \'elastiques semblent \^etre encore plus emm\^el\'es~; essayez de d\'em\^eler 
+ces 
+ \'elastiques (retrouver la configuration initiale) sans faire tourner 
+ l'objet$\ldots$ A votre grande surprise (m\^eme si vous avez fait 
+ cette exp\'erience plusieurs fois) vous y parvenez~! 
+ 
+{\em Remarque}: Si vous avez vraiment des difficult\'es \`a d\'em\^eler les 
+ \'elastiques, ouvrez l'ouvrage \cite{MTW} o\`u la suite des mouvements \`a 
+ effectuer est d\'ecrite en d\'etails.
+ 
+ Il existe une autre exp\'erience, encore plus simple, mais un peu plus 
+ difficile \`a d\'ecrire ``avec des mots'', qui illustre la m\^eme 
+diff\'erence 
+ de comportement entre les deux groupes et qui illustre donc la fa\c con 
+ dont $SU(2)$ d\'ecrit les ``rotations d'objets attach\'es \`a leur 
+ environnement''. Prenez un verre (rempli de votre vin favori) et 
+ essayez, par pivot du poignet, de lui faire subir une rotation de 
+$360 
+ ^\circ  \ldots$ \'echec~: \`a moins d'avoir des articulations tr\`es 
+sp\'eciales, 
+ vous vous retrouvez tout tordu. Essayez alors, \`a partir de cette 
+ position (tordue) de faire subir \`a votre verre une seconde rotation, 
+ dans le m\^eme sens, de $360 ^\circ $ (le coude doit normalement 
+s'abaisser) 
+ et \c ca marche~: Vous vous retrouvez dans l'\'etat initial~!
+ 
+ Ce ph\'enom\`ene amusant est d'une importance physique capitale. C'est 
+lui 
+ qui, en d\'efinitive, explique la diff\'erence entre fermions et 
+ bosons (rappelons que les \'electrons --- et plus g\'en\'eralement les 
+ particules de spin demi-entier --- ob\'eissent \`a la statistique de 
+ Fermi-Dirac alors que les photons (ou les noyaux d'H\'elium~!) --- et 
+plus 
+ g\'en\'eralement les particules de spin entier --- ob\'eissent \`a la 
+statistique de 
+ Bose-Einstein.
+ 
+ \item
+ Revenons aux math\'ematiques. Nous avons un homomorphisme de $SU(2)$ 
+dans 
+ $SO(3)$~: l'image de $\exp(\theta^i X_i) \in SU(2)$ est, par 
+d\'efinition 
+ $\exp(\theta^i X_i) \in SO(3)$ o\`u les $X_i$ sont, bien entendu, 
+d\'efinis de deux fa\c cons 
+ diff\'erentes, comme pr\'ec\'edemment. Ce morphisme surjectif n'est pas
+injectif~; en 
+ effet, les deux \'el\'ements distincts $\exp(2\pi X_3) = -1$ et 
+$\exp(4\pi 
+ X_3)=1$ de $SU(2)$ se projettent tous deux sur l'identit\'e de 
+$SO(3)$. Le 
+ noyau de cet homomorphisme est donc $\ZZ_2 = \{-1,1\}$ d'o\`u il 
+s'ensuit 
+ que $SO(3) = SU(2)/\ZZ_2$. En effet, un th\'eor\`eme tr\`es \'el\'ementaire de 
+ th\'eorie des groupes nous apprend que si $\ell$ est un homomorphisme 
+du 
+ groupe $G$ dans le groupe $K$, alors l'image $\ell(G)$ est isomorphe 
+au 
+ quotient de $G$ par le noyau de $\ell$ (dans le cadre commutatif, ce 
+ th\'eor\`eme g\'en\'eralise un r\'esultat bien connu et rencontr\'e, par 
+exemple, 
+ dans l'\'etude des espaces vectoriels).
+ 
+ \item
+ Deux groupes poss\'edant des alg\`ebres de Lie isomorphes sont dits {\sl 
+ localement isomorphes \/}\index{groupes localement isomorphes}.
+  Ainsi $SU(2)$ et $SO(3)$ sont localement 
+ isomorphes. Ils ne sont cependant pas isomorphes.
+ 
+ On admettra le r\'esultat suivant. 
+ {\sf Deux groupes compacts connexes non 
+ isomorphes peuvent admettre des alg\`ebres de Lie isomorphes
+ (on dit qu'il s'agit de groupes 
+ localement isomorphes). Les groupes de Lie qui admettent la m\^eme 
+alg\`ebre 
+ de Lie ${\frak g}$ sont tous de la forme $G_i=G/D_i$ o\`u $D_i$ est un 
+ sous-groupe discret distingu\'e de $G$. Le sous-groupe $D_i$ est 
+isomorphe au groupe 
+ fondamental de $G_i$ (\ie au premier groupe d'homotopie 
+$\pi_1(G_i)$) et le groupe $G$ est simplement connexe (ce qui 
+signifie que son 
+ sous-groupe fondamental est r\'eduit \`a l'identit\'e).
+ $G$ et est appel\'e 
+ rev\^etement universel de $G_i$. On note quelquefois $G=\widehat G_i$}
+ 
+ \item
+ Exemples de groupes de Lie localement isomorphes.
+
+
+ \begin{tabular}{lcr}
+ $SU(2)$ et $SO(3)=SU(2)/\ZZ_2$ & $\pi_1(SU(2))=1$ & 
+$\pi_1(SO(3))=\ZZ_2$ \\
+ $SU(3)$ et $SU(3)/\ZZ_3$  & $\pi_1(SU(3))=1$ & 
+$\pi_1(SU(3)/\ZZ_3)=\ZZ_3$ \\
+ $\RR$ et $U(1)=\RR/\ZZ$ & $\pi_1(\RR)=1$ & $\pi_1(U(1)) = \ZZ$
+ \end{tabular}
+ \item
+ Les groupes $SO(n)$ ne sont jamais simplement connexes.
+\begin{itemize}
+\item
+ Lorsque $n=2$, 
+ $SO(2) = U(1) = S^1$ et on sait que $\pi_1(S^1)=\ZZ$~; le rev\^etement 
+ universel de $U(1)$ est $\RR$, l'ensemble des r\'eels~: par 
+ d\'efinition du cercle (p\'eriodicit\'e) on sait que $U(1)=\RR/\ZZ$. 
+\item 
+Lorsque $n=3$, on a vu que le rev\^etement universel de $SO(3)$ est 
+$SU(2)$ 
+et que $\pi_1(SO(3))=\ZZ_2$.
+\item
+Lorsque $n\geq 3$, on montre que $\pi_1(SO(n)) = \ZZ_2$. Le 
+rev\^etement 
+universel $\widehat{SO(n)}$ de $SO(n)$ se note $Spin(n)$. Le fait que 
+$Spin(3)=SU(2)$ est une co\"incidence de basse dimension~; on montre 
+que 
+$Spin(4)=SU(2)\times SU(2)$, $Spin(5)=U(2,\HH)\equiv Sp(2) \equiv 
+USp(4)$, $Spin(6)=SU(4)$. 
+\item
+Lorsque $n>6$, $Spin(n)$ n'est autre que$\ldots$ $Spin(n)$ et ne 
+co\"incide pas avec un autre groupe classique. Pour construire 
+explicitement $Spin(n)$, le plus simple est d'utiliser les alg\`ebres 
+de 
+Clifford (voir la discussion en fin de chapitre).
+\end{itemize}
+\end{itemize}
+
+\subsection{Classification des groupes et alg\`ebres de Lie. 
+G\'en\'eralit\'es.}
+
+\subsubsection{Un peu de terminologie}
+\begin{itemize}
+\item Une alg\`ebre de Lie est {\sl ab\'elienne \/} si elle est$\ldots$ 
+commutative.
+\item Une alg\`ebre de Lie est {\sl simple \/}\index{alg\`ebre de Lie simple} si elle n'est pas 
+ab\'elienne et 
+si elle ne poss\`ede aucun id\'eal bilat\`ere non trivial.
+\item Une alg\`ebre de Lie est {\sl semi-simple \/}\index{alg\`ebre de Lie 
+semi-simple} si elle peut 
+s'\'ecrire comme
+(si elle est isomorphe \`a une) somme directe d'alg\`ebres simples.
+\item Une alg\`ebre de Lie est {\sl non semi-simple\/} si elle n'est 
+pas 
+semi-simple. 
+\end{itemize}
+On a bien entendu une terminologie analogue au niveau des groupes.
+\begin{itemize}
+\item Un groupe de Lie est {\sl ab\'elien \/} s'il est$\ldots$ 
+commutatif.
+\item Un groupe de Lie  est {\sl simple \/} s'il n'est pas ab\'elien et 
+s'il ne poss\`ede aucun sous groupe distingu\'e ({\sl invariant \/}) non 
+trivial.
+\item Un groupe de Lie  est {\sl semi-simple \/} s'il peut s'\'ecrire 
+comme
+(s'il est isomorphe \`a un) produit direct de groupes simples.
+\item Un groupe de Lie  est {\sl non semi-simple\/} s'il n'est pas 
+semi-simple.
+\end{itemize}
+\subsubsection{Id\'ees fondamentales de la classification}
+\begin{itemize}
+\item On tente d'abord de classifier les alg\`ebres de Lie. On en 
+d\'eduit la 
+classification des groupes de Lie. Nous supposerons toujours, dans 
+cette
+section, et sauf mention explicite du
+contraire, que nous sommes en dimension finie.
+\item On montre qu'une alg\`ebre de Lie quelconque peut toujours se 
+d\'ecomposer en une somme directe d'une alg\`ebre de Lie semi-simple et 
+d'une 
+alg\`ebre de Lie non semi-simple particuli\`ere qu'on appelle son radical (d\'ecomposition de Levi). Pour d\'efinir le radical d'une alg\`ebre de Lie 
+${\frak g}$, on proc\`ede comme suit: on commence par construire la ``s\'erie d\'eriv\'ee'' $({\frak g}^{(i)})$
+ de $\frak g$ d\'efinie par 
+${\frak g}^{(i+1)}  =  [{\frak g}^{(i)},{\frak g}^{(i)}]$. Chaque terme de cette suite est un id\'eal de
+$\frak g$ contenant le terme suivant.
+Notons que ${\frak g}$ est ab\'elienne lorsque le premier terme de cette suite 
+(c'est \`a dire  ${\frak g}^{(1)}$) est nul. L'alg\`ebre de Lie $\frak g$ est dite {\sl r\'esoluble} lorsque ${\frak g}^{(k)} = 0$ pour une certaine valeur de $k$. Etre r\'esoluble est ainsi, pour une alg\`ebre de Lie, une notion un peu plus faible que celle d'\^etre ab\'elienne. Le {\sl radical} d'une alg\`ebre de Lie quelconque est alors, par d\'efinition le plus grand id\'eal r\'esoluble de cette alg\`ebre de Lie. Le radical d'une alg\`ebre de Lie semi-simple est, bien \'evidemment, nul.
+L'existence de la d\'ecomposition de Levi montre qu'il faudrait classifier, pour bien faire, d'une part les alg\`ebres de Lie semi-simples et
+et d'autre part les alg\`ebres de Lie non semi-simples.
+\item La classification des alg\`ebres de Lie non semi-simples est 
+difficile$\ldots$ (et probablement impossible).
+\item La classification des alg\`ebres de Lie semi-simples (sur le 
+corps 
+$\CC$) a \'et\'e effectu\'ee par E. Cartan. Pour classer les 
+alg\`ebres de Lie semi-simples, il suffit de classer les alg\`ebres de 
+Lie 
+simples.
+\item On classifie d'abord les alg\`ebres de Lie simples complexes (\ie 
+en 
+tant qu'espace vectoriel, le corps des complexes est $\CC$). On 
+d\'emontre 
+qu'il existe quatre s\'eries infinies $A_n$, $B_n$, $C_n$ , $D_n$ 
+d'alg\`ebres de Lie simples. Le symbole $n$ apparaissant en indice 
+fournit le rang de l'alg\`ebre 
+correspondante.
+ Pour $n$ ``suffisamment petit'', il peut se 
+faire que des individus appartenant \`a des s\'eries diff\'erentes 
+co\"incident. 
+Il peut se faire aussi, pour $n$ petit, que les alg\`ebres en question 
+soient, non pas simples, mais semi-simples (en fait cela n'arrive 
+qu'une 
+seule fois). On y reviendra plus loin.
+On d\'emontre aussi qu'il existe, en dehors des alg\`ebres de Lie 
+classiques, 
+qui sont, par d\'efinition, les membres 
+des quatre s\'eries pr\'e-cit\'ees, un nombre fini (cinq) d'alg\`ebres de Lie 
+simples. On les 
+appelle ``exceptionnelles''; ce sont~: $G_2$,$F_4$,$E_6$,$E_7$ et 
+$E_8$.
+\item Pour une alg\`ebre de Lie complexe donn\'ee, on 
+classifie les diff\'erentes alg\`ebres de Lie r\'eelles admettant la m\^eme 
+extension complexe~; techniquement, ceci se fait en classifiant  les 
+involutions. C'est ainsi que $D_n$, par exemple, admet les formes 
+r\'eelles 
+distinctes, not\'ees  ${\frak so}(p,q), p\geq 0, q \geq 0, p+q = n$,
+et  ${\frak so}(2n)^*$.
+\item
+A chaque forme r\'eelle (c'est \`a dire, \`a chaque alg\`ebre de Lie r\'eelle 
+correspondant \`a une 
+alg\`ebre de Lie complexe donn\'ee) on associe un groupe de Lie connexe 
+et 
+simplement connexe, \`a l'aide de l'application exponentielle. On 
+d\'emontre 
+que, pour une alg\`ebre de Lie complexe donn\'ee (exemple $D_3$), une 
+seule 
+forme r\'eelle correspond \`a un groupe de Lie compact (dans notre 
+exemple, 
+il s'agit de $\widehat{SO(6)}=\exp({\frak so}(6)$). Les autres 
+groupes de 
+Lie ainsi obtenus, \`a savoir $\widehat{SO(5,1)}$, $\widehat{SO(4,2)}$, 
+$\widehat{SO(3,3)}$ et $\widehat{SO(6)^*}$ sont non compacts. 
+L'alg\`ebre 
+de Lie r\'eelle unique dont l'exponentielle constitue un groupe de Lie 
+compact 
+s'appelle {\sl forme r\'eelle compacte \/} de l'alg\`ebre de Lie complexe 
+donn\'ee 
+(bien que, {\it stricto sensu \/} cette alg\`ebre poss\`ede \'evidemment 
+une 
+topologie non compacte puisqu'il s'agit d'un espace vectoriel~!).
+\item
+A chaque groupe de Lie connexe et simplement connexe $\widehat G$, on 
+associe 
+alors une famille de groupes de Lie $G_i$ connexes, mais non 
+simplement 
+connexes en quotientant $\widehat G$ par un sous-groupe distingu\'e 
+discret 
+$K_i$ (voir la sous-section pr\'ec\'edente): $G_i=\widehat G/K_i$. On a 
+$\pi_1(G_i)=K_i$ et $\widehat G$ est le rev\^etement universel des 
+$G_i$. Par 
+exemple, on obtient ainsi $SO(6)=\widehat{SO(6)}/\ZZ_2$ (rappelons la 
+notation consacr\'ee~: $Spin(n)  =  \widehat{SO(n)}$).
+\item
+Les groupes de Lie compacts correspondant \`a la forme r\'eelle compacte 
+des
+ alg\`ebres complexes $A_n$, $B_n$, $C_n$ et $D_n$ sont les groupes 
+d\'ej\`a 
+ rencontr\'es not\'es $SU(n+1)$, $Spin(2n+1)$, $Sp(n)$ et $Spin(2n)$ 
+dont nous avons d\'ej\`a donn\'e les dimensions. Ceux 
+ correspondants aux alg\`ebres de Lie exceptionnelles se notent 
+g\'en\'eralement de la m\^eme 
+ fa\c con que les alg\`ebres de Lie correspondantes. Les dimensions des 
+cinq groupes exceptionnels $G_2, F_4, E_6, E_7, E_8$ sont 
+respectivement $14, 52, 78, 133, 248$.
+ \end{itemize}
+ 
+ \subsubsection{Remarques diverses}
+\begin{itemize}
+ \item
+ Tout le monde, ou presque, d\'esigne par $SO(n)$ le groupe 
+$SO(n,\RR)$ et par $SU(n)$ le groupe $SU(n,\CC)$.
+ Les groupes de Lie correspondant \`a la s\'erie $C_n$ se notent 
+ malheureusement de fa\c cons tr\`es diverses suivant les auteurs. Nous 
+avons 
+ d\'ecid\'e de noter $Sp(n)$ le groupe compact correspondant et de 
+r\'eserver 
+ la notation $Sp(2n,\RR)$ pour  d\'esigner ``le'' groupe symplectique 
+ (la forme r\'eelle non compacte de $C_n$ qui d\'efinit la g\'eom\'etrie de 
+l'espace
+  des phases en m\'ecanique). La notation $U(n,\HH)$ se r\'ef\'erant aux 
+groupes unitaires 
+  quaternioniques ($\HH$ est le corps non commutatif des quaternions) 
+est 
+  aussi assez en vogue pour d\'esigner le groupe compact $Sp(n)$. Le 
+  m\^eme groupe est d\'esign\'e quelquefois par le symbole $USp(2n)$. La
+  raison d'\^etre de cette derni\`ere notation est que ce groupe 
+co\"incide avec 
+  l'intersection des unitaires (les $U(n))$ et des symplectiques 
+complexes
+  (les $Sp(n,\CC)$) Pour cette raison on les appelle aussi ``les 
+unitaires 
+  symplectiques''. H\'elas, on peut \'egalement trouver des auteurs 
+d\'esignant 
+  ce m\^eme groupe $USp(2n)$ par $USp(n)\ldots$ Bref, c'est la 
+  pagaille.
+  \item
+  Toutes les alg\`ebres de Lie, membres de s\'eries $A_n$, $B_n$, $C_n$ 
+et 
+  $D_n$ --- et tous les groupes correspondants --- sont simples, \`a 
+  l'exception de $D_2 = A_1 \oplus A_1$. Au niveau des groupes, on 
+peut 
+  donc \'ecrire $Spin(4)=SU(2)\times SU(2)=Spin(3)\times Spin(3)$~; en 
+  d'autres termes, $SO(4)$ et $SO(3)\times SO(3)$ ont m\^eme alg\`ebre de 
+Lie.
+  \item
+  Comme annonc\'e plus haut, il existe des isomorphismes exceptionnels 
+  entre membres de s\'eries diff\'erentes, lorsque $n$ est assez petit. 
+Les 
+  voici
+  \begin{eqnarray*}
+&&  A_1=D_1=C_1 {\hskip 3cm}  D_2 = A_1\oplus A_1 {\hskip 
+0.7cm}\mbox{{\it (d\'ej\`a vu)}} \\
+&&  A_3=D_3 {\hskip 4cm} C_2 = B_2
+  \end{eqnarray*}
+
+  Au niveau des groupes compacts correspondants, on obtient donc les 
+isomorphismes
+  
+  \begin{eqnarray*}
+&& SU(2) = Spin(3)= Sp(1) {\hskip 1cm}  {\hskip 1cm} Spin(4) = 
+SU(2)\times SU(2)  \\
+&& SU(4) = Spin(6) {\hskip 3.5cm}   Sp(2)=Spin(5)
+  \end{eqnarray*}
+  
+  Citons enfin quelques isomorphismes concernant les groupes non 
+compacts.
+$Spin^{\uparrow}(p,q)$ d\'esigne ici la composante connexe de 
+l'identit\'e dans
+$Spin(p,q)$:
+ $$Spin^{\uparrow}(2,1)=SL(2,\RR), Spin^{\uparrow}(3,1)=SL(2,\CC), 
+Spin^{\uparrow}(4,1)=U(1,1,\HH)$$
+$$
+Spin^{\uparrow}(5,1)=SL(2,\HH), Spin^{\uparrow}(3,2)=Sp(4,\RR), 
+Spin^{\uparrow}(4,2) = SU(2,2)$$
+  
+  \item
+  La classification des alg\`ebres et groupes de Lie ainsi que l'\'etude 
+des  probl\`emes qui s'y rattachent n\'ecessiterait de d\'ecupler la taille de 
+ce chapitre. Nous ne pr\'etendons donc pas, dans ce paragraphe, expliquer 
+ quoi que ce soit et nous nous contentons de faire un tour rapide du 
+zoo$\ldots$
+  Il est difficile de parler de la classification des groupes de Lie 
+sans mentionner les diagrammes de Dynkin (dans un contexte diff\'erent on 
+parle aussi de graphes de Coxeter). Mentionnons seulement que
+  la classification de Cartan, pour les alg\`ebres de Lie simples, se 
+  r\'eduit, en fin de compte, \`a un probl\`eme de combinatoire admettant 
+une interpr\'etation graphique. A chaque alg\`ebre de Lie simple complexe, 
+on  associe donc un petit diagramme (voir n'importe trait\'e de
+  classification des groupes de Lie).  
+Nous recommandons au lecteur de compl\'eter sa culture 
+en allant consulter la litt\'erature appropri\'ee. Notons que ces 
+ diagrammes apparaissent absolument partout, c'est \`a dire non 
+seulement 
+ dans un contexte li\'e \`a l'\'etude des alg\`ebres de Lie, mais encore dans 
+bien 
+ d'	autres domaines~: dans la th\'eorie des groupes engendr\'es par 
+ r\'eflexions, en th\'eorie des singularit\'es, dans la th\'eorie des noeuds, 
+ dans la classification des inclusions d'alg\`ebres d'op\'erateurs 
+ (sous-facteurs), en arithm\'etique, dans la g\'eom\'etrie des solides 
+ platoniques (en relation avec l'\'etude des sous-groupes finis de 
+ $SO(3)$), dans la th\'eorie des carquois, dans celle des syst\`emes 
+ int\'egrables (en m\'ecanique), dans les th\'eories conformes 
+bi-dimensionelles, 
+ en th\'eorie des cordes$\ldots$ Bref, partout.
+ Nous esp\'erons donc que le lecteur, curieux, sera tent\'e de vouloir 
+ comprendre pourquoi ces quelques petits dessins contiennent une 
+telle 
+ quantit\'e d'information.
+ \item
+ Un dernier mot sur ces diagrammes~: certains contiennent des lignes 
+ doubles ou triples (exemple de $G_2$), et d'autres non. Ceux 
+n'utilisant 
+ que des lignes simples (ce sont ceux des s\'eries $A_n$, $D_n$ et 
+$E_n$) 
+ sont souvent consid\'er\'es, d'une certaine fa\c con, comme plus 
+fondamentaux 
+ que les autres~; les alg\`ebres de Lie correspondantes (les alg\`ebres 
+ ``ADE'') sont \'egalement appel\'ees {\sl alg\`ebres simplement lac\'ees\/}.
+ \end{itemize}
+
+%%%%{Exemple: Le groupe de Lorentz. Le groupe de Poincar\'e.}
+%%%%%%TO DO ONE DAY..?$***$ 
+ 
+\subsection{Message}
+
+ Un tout dernier mot~: passer en revue ``l'essentiel'' de la 
+ th\'eorie des groupes de Lie en une seule section -- m\^eme en se 
+limitant aux 
+ g\'en\'eralit\'es et aux probl\`emes de classification -- est certainement 
+une t\^ache 
+ impossible. Un ouvrage entier serait d'ailleurs insuffisant. 
+ Nous n'avons fait qu'aborder le sujet. Vouloir dresser la liste de 
+ce qui n'a 
+ pas \'et\'e effleur\'e serait \`a la fois inutile et$\ldots$ incomplet~!  
+Voici 
+ donc le message le plus important destin\'e \`a notre lecteur n\'eophyte~: 
+La 
+ section qui s'ach\`eve ici ne doit pas \^etre consid\'er\'ee comme un 
+r\'esum\'e, 
+ mais comme une invitation au voyage$\ldots$
+ 
+\section{Actions de groupes et repr\'esentations}
+
+\subsection{G\'en\'eralit\'es}
+
+L'\'etude des groupes pour eux-m\^emes ne devrait pas nous faire oublier 
+un 
+fait essentiel~: un groupe sert surtout \`a agir sur ``quelque chose''. 
+Historiquement, d'ailleurs, on d\'efinissait le plus souvent les 
+groupes 
+comme ``groupes de transformations'', pour s'apercevoir, apr\`es coup, 
+du 
+fait que deux groupes de transformations pouvant sembler tr\`es 
+diff\'erents 
+de prime abord, ne constituaient, en fait, qu'un seul et m\^eme groupe 
+``abstrait'', 
+agissant de deux fa\c cons diff\'erentes sur deux espaces diff\'erents.
+Pour pr\'eciser cette notion d'action ainsi que pour d\'ecrire la fa\c con 
+dont un groupe $G$ 
+agit sur un ensemble $M$, il est utile d'introduire un vocabulaire 
+appropri\'e.
+
+\subsection{Groupe $G$ op\'erant \`a gauche sur un ensemble $E$}
+
+A tout \'el\'ement $g$ de $G$ et \`a tout \'el\'ement $x$ (on dira ``point'') 
+de 
+$E$, on associe un point $y$ de $E$ qu'on appelera {\sl image de $x$ 
+par 
+la transformation $g$}. On \'ecrira 
+$$ y = g \, x $$
+On veut que $(g_1 g_2) x = g_1 (g_2 x)$ afin de pouvoir oublier les 
+parenth\`eses. Plus pr\'ecis\'ement, une action (\`a gauche) de $G$ sur $E$ 
+est 
+la donn\'ee d'un homomorphisme $L$ du groupe $G$ dans le groupe des 
+substitutions de $E$ (l'ensemble des bijections de $E$ dans $E$). 
+L'image 
+de $g \in G$ est not\'e $L_g$. L'application $L_g$ est donc une 
+bijection 
+de $E$ dans lui-m\^eme. Puisque $L$ est un homomorphisme, on a $L_{g_1 
+g_2} = L_{g_1}L_{g_2}$. Par abus de langage, il est d'usage de noter 
+$y = 
+g \, x$ au lieu de $y = L_g(x)$. Le lecteur aura compris que le 
+symbole 
+$L$ vient de $\underline{L}eft$.
+
+Pour d\'efinir une action quelconque, nous avons simplement suppos\'e que 
+$L_g$ \'etait une bijection, mais on peut contraindre davantage la 
+situation en imposant \`a $L_g$ d'\^etre un hom\'eomorphisme ($E$ \'etant 
+alors 
+suppos\'e muni d'une topologie), un diff\'eomorphisme ($E$ \'etant une 
+vari\'et\'e 
+diff\'erentiable), \etc. On parle alors d'action continue, 
+diff\'erentiable, \etc.
+
+\subsection{Action \`a droite (anti-action)}
+
+On dit que $G$ agit \`a droite sur $E$ si on se donne un 
+anti-homomorphisme 
+$R$ de $G$ dans l'ensemble des substitutions de $E$. En d'autres 
+termes, 
+on remplace la condition $L_{g_1 g_2} = L_{g_1}L_{g_2}$ par la 
+condition 
+$R_{g_1 g_2} = R_{g_2}R_{g_1}$. Une action \`a droite n'est donc pas 
+une 
+action, au sens strict du terme, mais une anti-action. De fa\c con \`a 
+pouvoir 
+se d\'ebarrasser du symbole $R$, mis pour $\underline{R}ight$, on 
+notera 
+$y=x \, g$ au lieu de $y=R_g(x)$. L'\'ecriture de $g$, \`a droite de $x$ 
+permet de composer correctement les transformations sans qu'il y ait 
+besoin de parenth\`eses~: $R_{g_1 g_2}(x) = R_{g_2}R_{g_1}(x)$ implique 
+en 
+effet $x(g_1 g_2)=(x g_1)g_2$.
+
+\subsection{Passage de la droite \`a la gauche (et inversement)}
+
+Supposons donn\'ee une action \`a droite $R$ de $G$ sur $E$~; on peut 
+canoniquement lui associer une action \`a gauche $L$ en d\'efinissant 
+$L_g x  =  
+R_{g^{-1}} x$ ; c'est \`a dire encore, avec des notations plus 
+d\'epouill\'ees, $g x  =  x 
+g^{-1}$. On peut ainsi toujours passer de la droite \`a la gauche et 
+inversement. Cela dit, il est, quelquefois, dangereux d'effectuer ce 
+passage sans notations protectrices$\ldots$ En effet, prenons par 
+exemple 
+$E=G$ lui-m\^eme~; on n'a alors certainement {\it pas} $g . k = k . 
+g^{-1}$ dans le 
+groupe $G$~! Une telle expression devrait donc s'\'ecrire $g \times k 
+ =  k . 
+g^{-1}$ et s'interpr\'eterait, non comme une \'egalit\'e dans $G$ mais 
+comme une 
+expression d\'efinissant, \`a partir de la multiplication ``$ . $'' une 
+nouvelle
+multiplication ``$\times$'' (qu'on appelle dailleurs la ``multiplication oppos\'ee'').
+
+\subsection{Orbites, espace quotient}
+
+\begin{itemize}
+\item
+Soit $G$ un groupe op\'erant \`a gauche sur $E$. L'orbite $Gx$ de $x\in 
+E$ 
+est l'ensemble $$Gx=\{y \in E {\hskip 0.4cm}\tq {\hskip 0.4cm}\exists 
+g \in G ,\, y = g \, x\}$$
+On peut ainsi passer d'un point \`a un autre de la m\^eme orbite en 
+utilisant 
+un \'el\'ement du groupe $G$.
+\item
+Le fait, pour deux points $x$ et $y$, d'appartenir \`a la m\^eme orbite 
+est 
+clairement une relation d'\'equivalence (utilisant l'existence d'un 
+\'el\'ement 
+neutre, l'existence, pour tout $g$, d'un inverse $g^{-1}$, et le fait 
+que 
+la loi de groupe soit interne). L'ensemble quotient n'est autre que 
+l'ensemble des diff\'erentes orbites $\overline{x}=Gx$ et se note 
+$G\backslash E$ 
+pour une action \`a gauche. L'ensemble quotient pour une action \`a 
+droite 
+(les classes sont alors les orbites  $\overline{x}=xG$) se note $E/G$.
+\end{itemize}
+
+\subsection{Efficacit\'e}
+
+\begin{itemize}
+\item
+L'action de $G$ sur $E$ est dite {\sl fid\`ele},  {\sl efficace\/},  ou {\sl effective} (``{\it effective or faithful
+action\/}'')\index{action fid\`ele} \index{action effective} lorsque 
+tous les \'el\'ements de $G$ (hormis l'\'el\'ement neutre) font effectivement 
+quelque chose~! On consid\`ere le fait de ne rien faire comme une 
+action particuli\`ere peu efficace$\ldots$
+L'adjectif ``efficace'' est assez parlant, mais il semble que le mot ``fid\`ele'' soit maintenant g\'en\'eralement utilis\'e pour d\'esigner cette notion.
+Pour une action donn\'ee du groupe $G$ sur l'ensemble 
+$E$, 
+on d\'efinit l'ensemble $I$ des \'el\'ements de $G$ qui n'agissent sur 
+aucun 
+des \'el\'ements de $E$, c'est \`a dire
+$$ I = \{j \in G {\hskip 0.5cm}\tq  {\hskip 0.5cm} \forall x \in E, j 
+\, x = x\} $$
+Cet ensemble $I$ est manifestement un sous-groupe de $G$ (on pourrait 
+l'appeler le sous-groupe des feignants~! ) et il caract\'erise 
+l'efficacit\'e 
+de l'action du groupe $G$. Plus il y a de feignants, moins l'action 
+est efficace. 
+Lorsque $I$ se r\'eduit \`a l'\'el\'ement neutre de $G$, on dit que 
+l'action est fid\`ele. Lorsque $I$ co\"incide avec $G$, l'action est 
+triviale.
+\item
+Manifestement, seules les actions  fid\`eles sont int\'eressantes. Pour 
+cette raison, il est utile, lorsqu'on se donne une action 
+non- fid\`ele de 
+$G$ sur $E$, de fabriquer un nouveau groupe $G \vert I$ pour lequel 
+l'action est  fid\`ele. Noter que $G \vert I$ est bien un groupe car 
+$I$ 
+est distingu\'e dans $G$ (en effet $g I (g^{-1} x) = g g^{-1} x = x$ 
+donc 
+$g I g^{-1} = I$).
+\end{itemize}
+
+\subsection{Libert\'e et stabilisateur}
+
+\begin{itemize}
+\item
+On suppose donn\'ee une action fid\`ele du groupe $G$ sur l'ensemble 
+$E$. 
+Puisque l'action est fid\`ele, tous les \'el\'ements de $G$ -- sauf 
+l'\'el\'ement 
+neutre -- ``font quelque chose''. Cependant, il peut se faire que, 
+pour 
+un point particulier $x \in E$, il existe des \'el\'ements de $G$ 
+laissant ce 
+point invariant. On d\'efinit ainsi le {\sl stabilisateur\/} 
+\index{stabilisateur}
+$H_x$ de $x \in E$~: $$H_x = \{h \in G {\hskip 0.5cm}\tq{\hskip 
+0.5cm} h \, x = x \}$$
+Il est facile de voir que $H_x$ est un sous-groupe de $G$. Noter la 
+diff\'erence entre la d\'efinition de $H_x$ et celle de $I$ donn\'ee dans 
+le 
+paragraphe pr\'ec\'edent~: la d\'efinition de $H_x$ d\'epend {\it a priori 
+\/} de 
+$x$~! Le stabilisateur de $x$ est quelquefois d\'enomm\'e 
+(historiquement, 
+dans le contexte de l'action du groupe de Lorentz sur l'espace de 
+Minkowski de la th\'eorie 
+de la Relativit\'e Restreinte) {\sl petit groupe de $x$ \/}. Le 
+stabilisateur 
+$H_x$ de $x$ est aussi appel\'e {\sl sous-groupe d'isotropie de $x \in 
+E$}.\index{sous-groupe d'isotropie}
+\item
+Deux points appartenant \`a la m\^eme orbite ont des stabilisateurs 
+conjugu\'es. En effet, soit $y = g\,x$, alors l'hypoth\`ese $H_x x=x$ 
+implique 
+$H_x g^{-1}y=g^{-1}y$. Ceci montre que $H_y = g H_x g^{-1}$. 
+Notons que $H_x$ et $H_y$, bien qu'isomorphes, sont en g\'en\'eral 
+distincts 
+comme sous-groupes de $G$ ($H_x$ n'est g\'en\'eralement pas distingu\'e 
+dans $G$).
+\item
+Il existe une bijection entre les points de l'orbite 
+$\overline{x}=Gx$ de 
+$x$ et les points de l'ensemble quotient $G/H_x$~: \`a $y=gx$ on 
+associe 
+l'\'el\'ement $gH_x$ de $G/H_x$ et r\'eciproquement. On assimile souvent 
+l'orbite $Gx$ de $x$ \`a l'ensemble 
+quotient $G/H$ o\`u $H$ d\'esigne le stabilisateur d'un point quelconque 
+de 
+l'orbite, mais il faut se rappeler que, pr\'ecis\'ement, cette 
+identification n'est possible que si on a choisi un point. En 
+d'autres 
+termes, la bijection entre les 
+deux ensembles n'est pas canonique puisqu'elle d\'epend du point $x$ 
+choisi. Cette remarque (le fait qu'une telle bijection ne soit pas 
+canonique) est 
+\`a la base de l'id\'ee d'invariance de jauge, qui, elle-m\^eme, est \`a la 
+base 
+de pratiquement toutes nos th\'eories physiques. Nous y reviendrons 
+avec force d\'etails 
+dans le chapitre consacr\'e aux espaces fibr\'es, puis dans celui 
+consacr\'e aux 
+connexions. 
+\item
+Il peut se faire que, pour tout point $x$ de $E$, le stabilisateur 
+$H_x$ 
+se r\'eduise \`a l'identit\'e. Dans ce cas l'action 
+\index{action libre} est dite {\sl libre\/}. 
+Le r\'esultat pr\'ec\'edent montre alors que, dans un tel cas, 
+chaque orbite est identifiable \`a $G$ lui-m\^eme. Cette situation est \`a 
+la 
+base de la th\'eorie des espaces fibr\'es principaux (chapitre suivant).
+\item
+Notons que libert\'e implique efficacit\'e \ldots
+\end{itemize}
+
+\subsection{Transitivit\'e}
+
+L'action de $G$ sur $E$ est dite {\sl transitive\/} s'il n'existe 
+\index{action transitive}
+qu'une seule 
+orbite, en d'autres termes, s'il est possible de passer de n'importe 
+quel 
+point de $E$ \`a n'importe quel autre point \`a l'aide d'un \'el\'ement de 
+$G$.
+
+\subsection{Action d'un sous-groupe $H$ sur un groupe $G$, 
+normalisateur, 
+centralisateur}
+\begin{itemize}
+\item
+Le cas particulier o\`u $E=G$ et o\`u on consid\`ere donc l'action de $G$ 
+sur 
+lui-m\^eme par multiplication -- \`a gauche ou \`a droite -- m\'erite 
+\'evidemment 
+une mention sp\'eciale. Il s'agit alors d'une action fid\`ele, libre et 
+transitive~; nous y reviendrons un peu plus loin car elle permet de 
+donner 
+une d\'efinition intrins\`eque de la notion d'alg\`ebre de Lie.
+\item
+Choisissons maintenant un sous-groupe $H$ de $G$. On peut alors 
+d\'efinir 
+une action \`a gauche de $H$ sur $G$ (les orbites sont les 
+$\overline{g}=Hg$, c'est \`a dire les classes de $H\backslash G$) et 
+une action \`a 
+droite de $H$ sur $G$ (les orbites sont les $\overline{g}=gH$, c'est 
+\`a 
+dire les classes de $G/H$). En g\'en\'eral, les ensembles quotients $G/H$ 
+et 
+$H\backslash G$ ne sont pas des groupes, sauf dans le cas o\`u les 
+classes \`a gauche 
+et \`a droite co\"incident ($gH=Hg$), c'est \`a dire lorsque $H$ est {\sl 
+distingu\'e\/} \index{sous-groupe distingu\'e} dans $G$ (on dit aussi dans ce cas que $H$ est un 
+sous-groupe {\sl 
+invariant\/} ou un sous-groupe {\sl normal\/}). En effet, on peut 
+alors 
+d\'efinir de fa\c con non ambiguÎ la multiplication des classes~: 
+$\overline{g} \overline{k} = g\,H\,k\,H=g\,k\,H=\overline{gk}$.
+\item
+Soit $H\subset G$. On d\'efinit le {\sl normalisateur\/} $N$ de $H$ 
+dans \index{normalisateur}
+$G$ comme le plus grand sous-groupe de $G$ dans lequel $H$ est 
+normal. $$
+N = \{n \in G {\hskip 0.5cm}\tq{\hskip 0.5cm} nH=Hn \}$$
+Par construction $H$ est distingu\'e dans $N$, donc $N\vert H$ est un 
+groupe, et si $H$ est un sous-groupe distingu\'e de $G$, alors $N=G$. 
+Notons 
+que, dans un groupe ab\'elien, tout sous-groupe est distingu\'e.
+\item
+Il faut distinguer (pr\'ecis\'ement~!) les notions de normalisateur et de 
+centralisateur. Le {\sl centralisateur\/}\index{centralisateur} ${\cal Z}_H$ de $H$ dans 
+$G$ est 
+l'ensemble des \'el\'ements de $G$ qui commutent (\'el\'ement par \'el\'ement) 
+avec 
+ceux de $H$~: $$
+{\cal Z}_H=\{z \in G {\hskip 0.5cm}\tq{\hskip 0.5cm} \forall h \in H, 
+h z = z h \}$$
+Le centralisateur ${\cal Z}$  de $H$ dans $G$ (que nous notons 
+\'egalement  ${\cal Z}_H$ pour
+pr\'eciser) est bien \'evidemment un 
+sous-groupe -- non n\'ecessairement ab\'elien -- de $G$. Il nous faut 
+\'egalement 
+rappeler la d\'efinition du {\sl centre\/}\index{centre} d'un groupe $G$ qui n'est 
+autre 
+que le centralisateur de $G$ dans lui-m\^eme.
+ Bien entendu, le sous-groupe $H$ 
+poss\`ede lui-m\^eme son propre centre $C_H$ et on a $C_H \subset 
+\mbox{{\cal 
+{\cal Z}}}_H$.
+\end{itemize}
+
+\subsection{Stratification}
+
+Dans toute cette sous-section on consid\`ere un groupe $G$ agissant sur 
+$E$ 
+de fa\c con fid\`ele.
+\begin{itemize}
+\item
+On sait que si deux points appartiennent \`a la m\^eme orbite, leurs 
+stabilisateurs sont conjugu\'es, mais il peut se faire qu'ils 
+co\"incident. 
+Cela arrivera si $H_{y=gx}=H_x$ c'est \`a dire si $gH_xg^{-1}=H_x$, 
+c'est \`a 
+dire si $g$ appartient au normalisateur de $H_x$ dans $G$.
+\item
+Ce n'est pas parce que les stabilisateurs de $H_{x_1}$ et de 
+$H_{x_2}$ 
+sont conjugu\'es qu'ils appartiennent n\'ecessairement \`a la m\^eme orbite. 
+Par 
+contre, et par d\'efinition, on dit alors qu'ils appartiennent \`a la 
+m\^eme 
+{\sl strate\/}\index{strate}. Ainsi, une strate donn\'ee est caract\'eris\'ee par un 
+certain 
+sous-groupe $H$ de $G$ d\'efini \`a isomorphisme pr\`es. On dira que deux 
+orbites sont du m\^eme type si les stabilisateurs des diff\'erents points 
+sont 
+isomorphes. Une strate est donc la r\'eunion de toutes les orbites d'un 
+m\^eme type.
+\item
+On peut ainsi d\'ecomposer $E$ en une r\'eunion de strates $E_H$, 
+chaque 
+strate \'etant caract\'eris\'ee par un certain type de stabilisateur $H$. 
+On 
+peut \'egalement d\'ecomposer l'espace des orbites $G\backslash E$ en une 
+r\'eunion 
+d'ensembles $G\backslash E_H$. Lorsque $E$ est muni d'une topologie, 
+on d\'emontre 
+que l'une de ces strates (dite la {\sl strate 
+g\'en\'erique\/}\index{strate g\'en\'erique}) est 
+ouverte 
+et dense dans $E$~; le groupe d'isotropie correspondant (le {\sl 
+stabilisateur g\'en\'erique\/}) est le plus petit possible.
+
+%%%\item 
+%%%Choix d'une {\sl tranche\/} pour l'action d'un groupe $G$. $TO 
+%%% DO?$***$ 
+
+\end{itemize}
+
+\subsection{Remarques}
+
+Afin de se familiariser avec les concepts qui pr\'ec\`edent ainsi qu'avec 
+la 
+terminologie correspondante, nous sugg\'erons tr\`es fortement au lecteur 
+de 
+revoir toute la g\'eom\'etrie \'el\'ementaire (celle \'etudi\'ee dans les classes 
+secondaires) en ces termes, c'est \`a dire en
+utilisant l'action des groupes de translations, rotations, 
+homoth\'eties, \etc.
+Il pourra \^etre \'egalement extr\^emement utile de revoir la cin\'ematique 
+classique (puis la cin\'ematique relativiste) sous cet angle, en 
+\'etudiant 
+l'action du groupe Euclidien, celle du groupe de Galil\'ee, du groupe 
+de 
+Lorentz \etc.
+
+\section{Champs de vecteurs fondamentaux}\index{champs de vecteurs 
+fondamentaux}
+
+\subsection{Cas d'un groupe de Lie agissant sur une vari\'et\'e}
+
+\begin{itemize}
+\item
+On se donne un groupe de Lie $G$ et une action \`a gauche (suppos\'ee 
+diff\'erentiable) de $G$ sur une vari\'et\'e $M$. Il y a, au moins, trois 
+fa\c cons de consid\'erer cette action:
+\begin{enumerate}
+\item Comme une application de $G\times M$ dans $M$~: $$(g,P)\in 
+G\times M 
+\stackrel{L}{\longmapsto} g P \in M$$
+\item Comme la donn\'ee, pour tout point $P$ dans $M$, d'une 
+application 
+$$g\in G \stackrel{R_P}{\longmapsto}gP\in M$$
+\item Comme la donn\'ee, pour tout \'el\'ement $g$ du groupe $G$, d'une 
+application $$P\in M \stackrel{L_g}{\longmapsto}gP \in M$$
+\end{enumerate}
+Attention : Une action {\`a gauche} fournit une application not\'ee 
+$L_g$ quand on g\`ele l'\'el\'ement $g$ du groupe 
+mais fournit une application not\'ee $R_P$ quand on g\`ele le point 
+$P$.
+L'application $L_g$ n'est autre que celle qui nous a permis 
+pr\'ec\'edemment de d\'efinir 
+l'action d'un groupe sur un ensemble. Notons que 
+$L_g=L(g,\cdot)$. C'est en fait surtout le point de vue $2$ qui nous 
+int\'eresse 
+ici et nous allons donc \'etudier l'application $R_P =  L(\cdot,P)$. 
+L'application 
+$R_P$ \'etant suppos\'ee diff\'erentiable, nous pouvons consid\'erer sa 
+diff\'erentielle not\'ee suivant les auteurs, ${R_P}_*$, $TR_P$ ou 
+simplement $dR_P$. Comme on le sait 
+(voir la premi\`ere partie de cet ouvrage), $dR_P$ est une application 
+lin\'eaire de l'espace tangent $T(G,g)$ dans l'espace tangent $T(M,gP)$ 
+dont l'expression, relativement \`a un couple de rep\`eres mobiles dans 
+$G$ 
+et $M$ s'\'ecrit \`a l'aide de la matrice jacobienne. Si on choisit alors 
+$g=e$ (l'\'el\'ement neutre de $G$), on obtient ainsi une application 
+lin\'eaire $T(G,e) \longmapsto T(M,P)$ qu'on devrait noter 
+${(dR_P)}_{g=e}$ 
+mais que nous pr\'ef\'erons ne pas baptiser du tout. L'important est 
+d'observer qu'on obtient ainsi, pour tout vecteur $X$ appartenant \`a 
+$T(G,e)$ un vecteur not\'e $X^L(P)$ appartenant \`a $T(M,P)$. Puisque 
+cette 
+application existe pour tout $P$ de $M$, on obtient donc un champ de 
+vecteurs $P\in M \longmapsto X^L(P) \in T(M,P)$. On dit que $X^L$ est 
+le 
+{\sl champ de vecteurs fondamental gauche\/} associ\'e \`a l'\'el\'ement $X$ 
+de 
+l'espace tangent \`a $G$ en l'identit\'e.
+
+\item
+Nous verrons un peu plus loin que l'alg\`ebre de Lie de $G$, que nous 
+avons 
+pr\'ec\'edemment
+d\'efinie de fa\c con \'el\'ementaire \`a l'aide de la fonction exponentielle, 
+peut s'identifier, {\it en tant qu'espace vectoriel\/} \`a 
+l'espace tangent \`a $G$ en l'identit\'e~: $Lie(G)=T(G,e)$.
+En anticipant l\'eg\`erement, nous voyons donc qu'\`a tout \'el\'ement $X$ de 
+$Lie(G)$ on peut associer un champ de vecteurs $X^L$ sur $M$.
+R\'esumons cette construction simple et fondamentale par le diagramme 
+suivant~:
+
+\begin{eqnarray*}
+&\begin{pmatrix}  G & \rightarrow & M \\ g & \rightarrow & g \, 
+P\end{pmatrix}\rightarrow 
+\begin{pmatrix}  T(G,g) & \rightarrow & T(M,gP)\end{pmatrix}
+\rightarrow
+\begin{pmatrix}  Lie G = T(G,e) & \rightarrow & T(M,P) \\ X & \rightarrow & 
+X^L(P)\end{pmatrix} & \\
+& {\hskip 1.5cm}
+\mbox{On diff\'erentie}
+{\hskip 3.5cm}
+\mbox{On particularise} 
+{}&
+\end{eqnarray*}
+
+\item
+Le champ fondamental gauche associ\'e \`a $X\in Lie G$ se note, soit 
+$X^L(P)$ 
+comme ci-dessus, soit, encore plus simplement $$X^L(P) = X\cdot P$$ 
+Pour 
+rendre cette notation naturelle, il suffit de d\'evelopper 
+l'exponentielle dans l'\'ecriture 
+$$ g(t) \cdot P = e^{tX} \cdot P \approx P + t 
+X \cdot P + \ldots $$ et ne garder que les termes du premier ordre.
+Ainsi $X^L(P)=X.P = {d\over dt}(g(t).P)\vert_{t=0}$.
+\item
+Tout ce que nous avons d\'ecrit depuis le d\'ebut de cette section 
+consacr\'ee 
+\`a l'\'etude des champs fondamentaux supposait donn\'ee une action {\em \`a 
+gauche\/} de $G$ sur $M$. Nous obtenons des notions analogues en 
+supposant 
+que $G$ agit {\em \`a droite\/} sur $M$. En particulier, lorsque $M=G$, 
+nous 
+pouvons aussi bien consid\'erer l'action \`a gauche que l'action \`a droite 
+du 
+groupe sur lui-m\^eme, et donc, de la m\^eme fa\c con que nous avons 
+construit 
+des champs fondamentaux gauche, nous pouvons \'egalement construire, 
+pour tout \'el\'ement 
+$X$ de $Lie(G)=T(G,e)$, 
+un champ de vecteurs fondamentaux droit (le {\sl champ 
+fondamental droit\/} $$X^R(P)=P \cdot X$$ associ\'e \`a $X$). 
+
+\item
+Certains auteurs d\'esignent les champs fondamentaux sous le nom de 
+{\sl champs de Killing\/}\index{champs de Killing}. Pour nous, les champs de Killing sont des 
+champs fondamentaux 
+particuliers, ceux associ\'es \`a l'action d'un groupe agissant par 
+isom\'etries sur une vari\'et\'e riemannienne.
+
+\end{itemize}
+
+\subsection{Exemple~: le groupe euclidien agissant sur le plan 
+$\RR^2$}
+
+Le groupe euclidien $E(2)$ agit sur le plan affine $M=\RR^2$ par 
+composition 
+de translations et de rotations autour de l'origine (c'est un produit semi-direct 
+du groupe des rotations $U(1)$ par le groupe des translations $\RR^2$).
+Une carte (qui 
+est d'ailleurs globale) de $\RR^2$ est d\'efinie par les coordonn\'ees 
+$(x, y)$ relatives \`a un rep\`ere du plan. L'action du groupe 
+euclidien s'\'ecrit $$(\theta,a,b) \cdot \begin{pmatrix}  x\\ y\end{pmatrix}  = \begin{pmatrix}  x' 
+= x \cos \theta - y \sin \theta + a \\  y'= x \sin \theta + y \cos 
+\theta + b\end{pmatrix} $$
+Noter qu'un \'el\'ement $g$ du groupe euclidien peut s'\'ecrire \`a l'aide de 
+la 
+carte $g \rightarrow (\theta,a,b) \in \RR^3$~; $G$ est un groupe de 
+Lie de 
+dimension $3$. La diff\'erentielle de l'application
+$$
+g=(\theta,a,b) \stackrel{L_P}{\longmapsto} g P = {P'} = 
+\begin{pmatrix}  x'\\  y'\end{pmatrix}$$
+s'\'ecrit
+$$
+{[dL_P]}_{g=(\theta,a,b) }=\begin{pmatrix}  
+\partial x'/ \partial \theta & \partial x'/ \partial a & 
+\partial x'/ \partial b \\ 
+\partial y'/ \partial \theta & \partial y'/ \partial a & 
+\partial y'/ \partial b \end{pmatrix}
+$$
+En prenant $g=e=(0,0,0)$, il vient
+${[dL_P]}_e=\begin{pmatrix}  y&1&0 \\  -x&0&1\end{pmatrix} $.
+Gr\^ace \`a l'utilisation de quelques abus de notations \'evidents, nous 
+voyons que
+\begin{itemize}
+\item
+Le champ fondamental associ\'e \`a $X_\theta  =  \begin{pmatrix}  1\\ 0\\ 
+0\end{pmatrix} $ est 
+
+$X_\theta(P)=\begin{pmatrix}  y&1&0\\ -x&0&1\end{pmatrix} \begin{pmatrix}  1\\ 0\\ 
+0\end{pmatrix} =\begin{pmatrix}  y\\ -x\end{pmatrix} $ et 
+donc $X_\theta(P)= {\displaystyle {x{\partial \over \partial 
+y}-y{\partial\over \partial x}}}$
+
+\item
+Le champ fondamental associ\'e \`a $X_a  =  \begin{pmatrix}  0\\ 1\\ 0\end{pmatrix} $ est 
+
+$X_a(P)=\begin{pmatrix}  y&1&0\\ -x&0&1\end{pmatrix} \begin{pmatrix}  0\\ 1\\ 0\end{pmatrix} =\begin{pmatrix}  1\\ 
+0\end{pmatrix} $ et 
+donc $X_a(P)= {\displaystyle{{{\partial}\over{\partial x}}}}$
+\item
+Le champ fondamental associ\'e \`a $X_b  =  \begin{pmatrix}  0\\ 0\\ 1\end{pmatrix} $ est 
+
+$X_b(P)=\begin{pmatrix}  y &1&0\\ -x&0&1\end{pmatrix} \begin{pmatrix}  0\\ 0\\ 1\end{pmatrix} =\begin{pmatrix}  0\\ 
+1\end{pmatrix} $ et 
+donc $X_a(P)= {\displaystyle{{{\partial}\over{\partial y}}}}$
+\end{itemize}
+
+\subsection{Un cas particulier fondamental~: le groupe $G$ agissant 
+sur 
+lui-m\^eme par translations \`a gauche et \`a droite}
+
+\begin{itemize}
+\item
+Nous consid\'erons maintenant le cas o\`u $G$ op\`ere sur $M=G$ lui m\^eme 
+($g,k\in 
+G$ et $P \in G$). Comme nous le savons, il est possible de consid\'erer 
+deux actions~: l'une \`a gauche $g \rightarrow g\cdot P$ et l'autre \`a 
+droite
+$k \rightarrow P\cdot k$. En 
+cons\'equence, nous avons aussi des champs fondamentaux \`a gauche $X^L$ 
+et 
+des champs fondamentaux \`a droite $X^R$.  Soit $X \in Lie \, G$, alors
+$$X^L(k) = X \, k {\hskip 0.2cm} {\mbox et}  {\hskip 0.2cm} X^R(k) = 
+k \, X$$
+Notons aussi que 
+$$
+X^R(k)=k \, X^L(k) \, k^{-1}
+$$
+
+\item
+Les deux actions commutent~: $(gP)k=g(Pk)$.
+Elles commutent donc aussi infinit\'esimalement,
+$(X^L Y^R - Y^R X^L) (k) = X (k Y) - (X k) Y = 0$. D'o\`u
+$$[X^L,Y^R]=0$$
+\item
+La propri\'et\'e $X^L(g)k=X^L(gk)$ caract\'erise l'invariance de $X^L$ 
+(champ 
+r\'esultant d'une action \`a gauche) lorsqu'on le multiplie \`a droite par 
+$k$. 
+On peut donc dire que le champ fondamental gauche $X^L$ est un {\sl 
+champ 
+invariant \`a droite} \index{champs invariants \`a droite}\index{champs 
+invariants \`a gauche}.
+Attention~: {\sl Un champ fondamental gauche est invariant \`a droite 
+et un 
+champ fondamental droit est invariant \`a gauche.\/} Attention, le 
+champ 
+invariant \`a {\it gauche\/} associ\'e \`a $X$ se note $X^R$.
+
+\item
+Soit $X \in Lie(G)$. Lorsque $t$ varie, l'\'el\'ement $g(t) = e^{tX}$ 
+d\'ecrit une 
+courbe dans le groupe $G$ et le vecteur tangent \`a l'origine de cette 
+courbe est donn\'e par ${dg(t) \over dt}\vert_{t=0} = X$.
+Inversement, \`a tout \'el\'ement $X$ de $T(G,e)$ on peut associer une 
+courbe \`a 
+un param\`etre $g(t)=e^{tX}$ (en fait il s'agit d'un groupe \`a un 
+param\`etre 
+puisque $g(t_1+t_2)=g(t_1)g(t_2)$).
+On peut ainsi identifier $Lie(G)$, en tant qu'espace vectoriel,
+ et d\'efini comme pr\'ec\'edemment \`a l'aide de 
+la fonction exponentielle, avec l'espace tangent en l'identit\'e du 
+groupe 
+$G$ : 
+$$ Lie(G) \equiv T(G,e) $$
+
+\item
+Un champ fondamental droit $X^R$ est parfaitement caract\'eris\'e --- que 
+$M=G$ ou non --- par $X \in T(G,e)$ c'est \`a dire par un \'el\'ement de  
+l'espace tangent \`a l'identit\'e du groupe $G$. Dans le cas o\`u $M=G$,
+ cependant, la 
+correspondance entre champs fondamentaux droits ({\sl champs 
+invariants \`a 
+gauche\/}) et \'el\'ements de $T(G,e)$ est bijective ($k X = k Y, \,  k 
+\in G$ implique $X = Y$). 
+Notons que si $dim \, G = n$, alors $dim \, T(G,e)=n$ et la dimension 
+de 
+l'espace des champs de vecteurs invariants \`a gauche est encore $n$, 
+alors 
+que la dimension de l'espace de {\em tous\/} les champs de vecteurs 
+est 
+infinie.
+
+\item
+Par ailleurs, on vient de voir que la correspondance entre $T(G,e)$ 
+et 
+l'ensemble des champs de vecteurs invariants \`a gauche (par exemple) 
+\'etait 
+bijective. En effet $X^R(g)$  est parfaitement caract\'eris\'e par $X 
+ =  X^R(e)$
+puisque $X^R(g) = g.X$.
+Notons $\Gamma^G(TG)$ l'ensemble de ces champs de vecteurs. On 
+peut donc identifier $Lie(G)$ avec $\Gamma^G(TG)$ :
+$$Lie(G) \equiv \Gamma^G(TG)$$
+ Une autre fa\c con de 
+d\'efinir l'alg\`ebre de Lie d'un groupe de Lie $G$ est donc de la d\'efinir
+comme espace des champs de vecteurs invariants \`a 
+gauche sur un groupe de Lie. Le commutateur dans l'alg\`ebre de Lie (le 
+crochet de Lie)
+ est alors d\'efini simplement comme commutateur des champs de 
+vecteurs~; il 
+faut \'evidemment montrer que le commutateur de deux champs de vecteurs 
+invariants \`a gauche est encore invariant \`a gauche :
+$$[X^R,Y^R] = [X,Y]^R$$
+Cette propri\'et\'e  r\'esulte de ce qui pr\'ec\`ede.
+
+\item
+On pourrait bien sur penser \`a utiliser les champs invariants \`a 
+droite
+pour d\'efinir l'alg\`ebre de
+Lie, cependant (noter le signe), le commutateur des champs invariants 
+\`a droite conduit
+ \`a la relation (exercice!)
+$$ [X^L,Y^L] = - [X,Y]^L $$
+
+\end{itemize}
+
+A titre d'exercice (ou d'illustration), v\'erifions ces 
+propri\'et\'es g\'en\'erales dans le cadre de $SL(2,\CC)$.
+
+Les g\'en\'erateurs (repr\'esentation fondamentale) sont donn\'es par 
+
+\begin{tabular}{ccc}
+$\underline{X_{+}}= \begin{pmatrix}  0 & 1 \\ 0 & 0 \end{pmatrix} $, & 
+$\underline{X}_{-}= \begin{pmatrix}  0 & 0 \\ 1 & 0  \end{pmatrix} $, &
+$\underline{X_{3}}= \begin{pmatrix}  1 & 0 \\ 0 & -1  \end{pmatrix} $ \\
+\end{tabular}
+
+les actions \`a droite et \`a gauche sont donn\'ees par:
+
+\smallskip
+
+\begin{tabular}{ccc}
+$\underline{X}_{+} \begin{pmatrix}  a & b \\ c & d \end{pmatrix}  =  \begin{pmatrix}  c  & d \\ 0 & 0 \end{pmatrix} $ & , &
+$ \begin{pmatrix}  a & b \\ c & d \end{pmatrix} 
+\underline{X}_{+}  =   \begin{pmatrix}  0 & a \\ 0 & c  \end{pmatrix} $ \\
+$\underline{X}_{-} \begin{pmatrix}  a & b \\ c & d  \end{pmatrix}   =   \begin{pmatrix}  0 & 0 \\ a & b  \end{pmatrix} $ & , &
+$ \begin{pmatrix}  a & b \\ c & d  \end{pmatrix} 
+\underline{X}_{-}   =   \begin{pmatrix}  b & 0 \\ d & 0  \end{pmatrix}$ \\
+$\underline{X_{3}} \begin{pmatrix}  a & b \\ c & d \end{pmatrix}   =   \begin{pmatrix}  a & b \\ -c & -d  \end{pmatrix} $ & , &
+$ \begin{pmatrix}  a & b \\ c & d  \end{pmatrix}
+\underline{X_{3}}  =   \begin{pmatrix}  a & -b \\ c & -d \end{pmatrix}  $ \\
+\end{tabular}
+
+\smallskip 
+
+\noindent
+
+Notez que les g\'en\'erateurs $\underline{X}_{\pm}$ et 
+$\underline{X}_{3}$ agissent par d\'erivations.
+En effet, les actions classiques (droite et gauche) ci-dessus  peuvent 
+aussi \^etre \'ecrites \`a l'aide des op\'erateurs diff\'erentiels 
+suivants:
+
+\smallskip
+
+\begin{tabular}{ccc}
+$\underline{X}_{+}^{L} = c {\partial \over \partial a} + d {\partial \over \partial b} $
+&,&
+$\underline{X}_{+}^{R} = a {\partial \over \partial b} + c {\partial \over \partial 
+d}$ \\
+$\underline{X}_{-}^{L} = a {\partial \over \partial c} + b {\partial \over \partial d}$
+&,&
+$\underline{X}_{-}^{R} = b {\partial \over \partial a} + d {\partial \over \partial 
+c} $\\
+$\underline{X}_{3}^{L} = a {\partial \over \partial a} + b {\partial \over \partial b}
+- c {\partial \over \partial c} - d {\partial \over \partial d}$
+&,&
+$\underline{X}_{3}^{R} = a {\partial \over \partial a} - b {\partial \over \partial b}
++ c {\partial \over \partial c} - d {\partial \over \partial d}$
+\end{tabular}
+
+\smallskip 
+\noindent
+
+Il est alors facile de v\'erifier explicitement que, par exemple,
+
+$$[\underline{X}_{3},\underline{X}_{+}] = + 2 \underline{X}_{+}, 
+\hspace{0.25 cm}
+[\underline{X}_{3}^{R},\underline{X}_{+}^{R}] = + 2 \underline{X}_{+}^{R}, \hspace{0.25 cm} 
+[\underline{X}_{3}^{L},\underline{X}_{+}^{L}] = - 2 \underline{X}_{+}^{R} 
+$$
+
+\subsection{L'action adjointe de $G$}
+
+Le groupe $G$ agit sur lui-m\^eme par multiplications \`a droite et \`a 
+gauche, comme nous l'avons vu plus haut, mais \'egalement par 
+l'application 
+adjointe. Soit $g$ un \'el\'ement de $G$, on d\'efinit :
+$$
+Ad_g \, : {\hskip 0.5cm} k\in G \rightarrow Ad_g (k) = gkg^{-1} \in G
+$$
+Cette action n'est pas fid\`ele en g\'en\'eral car les \'el\'ements du centre 
+$C$ 
+n'agissent pas. Le groupe $G\vert C$ qu'on d\'esigne sous le nom de 
+{\sl 
+groupe adjoint} \index{groupe adjoint} ou {\sl groupe des automorphismes int\'erieurs} agit, 
+bien 
+sur, de fa\c con fid\`ele. L'application tangente \`a $Ad_g$, au point 
+$k$, 
+envoie $T(G,k)$ dans $T(G,gkg^{-1})$. Si on prend alors $k=e$ 
+(l'\'el\'ement 
+neutre), on voit que l'application tangente, not\'ee $ad_g  =  
+(d(Ad_g))_{k=e}$ 
+envoie $T(G,e)$ dans $T(G,gg^{-1}=e)$, c'est \`a dire $Lie(G)$ dans 
+$Lie(G)$. Posant $k(t) = e^{tX}$, 
+on voit que $ad_g(X)={d \over dt}(g e^{tX} g^{-1})_{\vert t = 0}$ et 
+donc
+$$ad_g(X) = g X g^{-1}$$
+
+
+\subsection{Exemple : l'alg\`ebre de Lie du groupe euclidien}
+
+Nous avons d\'ej\`a fait agir le groupe euclidien $G$ (\'el\'ements 
+$g=(\theta,a,b)$) sur l'espace affine $\RR^2$. Nous 
+allons maintenant faire agir $G$ sur lui-m\^eme, \`a droite.
+
+Soit $P\in G$. On consid\`ere l'application
+$$ 
+\left(
+\begin{array}{c}
+G \stackrel{R_P}{\longmapsto}M=G \\
+g \longmapsto Q=Pg
+\end{array}
+\right)
+$$
+ce qui, avec des coordonn\'ees, s'\'ecrit
+$$
+(\theta_Q,a_Q,b_Q) = (\theta_P,a_P,b_P)(\theta_g,a_g,b_g)
+$$
+soit, explicitement
+
+$$
+\begin{pmatrix}  \theta\\ a\\ b\\ 1\end{pmatrix} _Q=\begin{pmatrix}  1&0&0&\theta \\ 0&\cos\theta 
+&\sin\theta&a\\ 
+0&-\sin\theta&\cos\theta&b\\ 0&0&0&1\end{pmatrix}_P \begin{pmatrix}  \theta\\ a\\ b\\ 
+1\end{pmatrix}_g
+$$
+La diff\'erentielle de $R_P$, \cad l'application tangente est \'egale \`a
+$$
+dR_P=\begin{pmatrix}  
+\frac{\partial \theta_Q}{\partial \theta^g} &
+\frac{\partial \theta_Q}{\partial a^g} &
+\frac{\partial \theta_Q}{\partial b^g} \\ 
+\frac{\partial      a_Q}{\partial \theta^g} &
+\frac{\partial      a_Q}{\partial a^g} &
+\frac{\partial      a_Q}{\partial b^g} \\ 
+\frac{\partial      b_Q}{\partial \theta^g} &
+\frac{\partial      b_Q}{\partial a^g} &
+\frac{\partial      b_Q}{\partial b^g} \end{pmatrix}
+$$
+On choisit, comme base de $T(G,e)$ la base 
+$X_\theta(e)=\frac{\partial}{\partial \theta}$, 
+$X_a(e)=\frac{\partial}{\partial a}$, 
+$X_b(e)=\frac{\partial}{\partial b}$.
+\par
+On calcule $dR_P \begin{pmatrix}  1\\ 0\\ 0\end{pmatrix} =\begin{pmatrix}  1\\ 0\\ 0\end{pmatrix} $, $dR_P 
+\begin{pmatrix}  0\\ 1\\ 0\end{pmatrix} =\begin{pmatrix}  0\\  \cos \theta \\  -\sin \theta\end{pmatrix} $, 
+$dR_P \begin{pmatrix}  0\\ 0\\ 1\end{pmatrix} =\begin{pmatrix}  0\\  \sin \theta\\  \cos 
+\theta\end{pmatrix} $. 
+\par
+La base correspondante de $Lie G \equiv \Gamma^G(TG)$ est donc
+$$X_\theta(P)={{\partial}\over{\partial \theta}}, X_a(P)=\cos \theta 
+{{\partial}\over{\partial a}} - \sin \theta {{\partial}\over{\partial 
+b}} 
+{\mbox et}
+X_b(P)=\sin \theta 
+{{\partial}\over{\partial a}} + \cos \theta {{\partial}\over{\partial 
+b}}$$
+
+Nous laissons au lecteur le soin de v\'erifier les relations de 
+commutation
+
+$$[X_\theta,X_a]=-X_b, {\hskip 1cm} [X_\theta,X_b]=+X_a
+ {\hskip 1cm} {\mbox et}  {\hskip 1cm} [X_a,X_b]=0$$
+
+
+%%%{Autre exemple : $SO(3,1)$ agissant sur $\RR^4$} et sur lui-m\^eme
+%%%$***TO DO ***$
+
+\subsection{Exemple : champs invariants sur $SU(2)$}
+Le groupe $SU(2)$ est diff\'eomorphe \`a  la sph\`ere $S^3$. Pour le 
+voir, il
+suffit d'\'ecrire un \'el\'ement $g$ de $SU(2)$ comme une matrice
+$\begin{pmatrix}  \alpha & \beta \\ -\beta^* & \alpha^*\end{pmatrix} $, ob\'eissant \`a la
+condition $g^\dag = g^{-1}$. Alors, $det \, g^\dag g = 1$, c'est \`a 
+dire
+$$Re^2(\alpha)+Im^2(\alpha)+Re^2(\beta)+Im^2(\beta)=1$$
+On obtient ainsi l'\'equation cart\'esienne d'une $3$-sph\`ere.
+On peut donc se repr\'esenter visuellement $SU(2)$ comme une sph\`ere 
+dot\'ee d'une structure multiplicative (non commutative d'ailleurs). 
+Attention, il ne faudrait pas se laisser abuser par cet exemple : 
+seules les sph\`eres $S^0 = \ZZ_2$, $S^1=U(1)$ et $S^3=SU(2)$ sont 
+des groupes (et $S^7$ est ``presque'' un groupe).
+Ces particularit\'es des dimensions $0,1,3,7$ sont li\'ees \`a 
+l'existence
+des alg\`ebres de division suivantes :
+les corps $\RR$ (les r\'eels), $\CC$ (les complexes), $\HH$ (les 
+quaternions)
+et les octaves de Cayley (octonions) ${\cal O}$.
+
+Revenons \`a la sph\`ere $S^3$ qu'on peut donc identifier avec le 
+groupe de Lie
+$SU(2)$.  Posons $X_i = i/2 \sigma_i$, o\`u les $\sigma_i$ sont les 
+matrices de Pauli (section 2.2.2).
+On peut param\'etriser un point quelconque $g$ par trois angles
+d'Euler $\psi,\theta,\phi$ en \'ecrivant
+$$ g = R_3(\psi)R_1(\theta)R_3(\phi), \quad
+0<\psi\leq 4\pi, 0<\theta\leq \pi, 0\leq \phi\leq 2\pi
+$$
+ $R_i(x)= exp(t X_i)$ est une rotation d'angle $x$ autour de l'axe 
+$i$. On consid\`ere, dans $SU(2)$ les courbes obtenues par 
+translation \`a droite,
+$D_i(t) =  g\, R_i(t)$ et nous  notons $X_i^R(g)$ les champs 
+fondamentaux
+ \`a droite correspondants (les champs invariants \`a gauche).
+En terme du rep\`ere naturel associ\'e aux coordonn\'ees d'Euler, on 
+obtient le rep\`ere
+mobile:
+$$
+\begin{pmatrix}  X_1^R \\ X_2^R \\ X_3^R\end{pmatrix} = N
+ \begin{pmatrix}  
+{\partial \over \partial \theta} \\
+{\partial \over \partial \psi} \\
+{\partial \over \partial \phi}\end{pmatrix}
+$$
+avec
+$$
+N = \begin{pmatrix}  
+\cos \phi & {\sin \phi \over \sin \theta} & {-\sin \phi \cot \theta} 
+\\ 
+\sin \phi & {-\cos \phi \over \sin \theta} & {\cos \phi \cot \theta} 
+\\ 
+0 & 0 & 1 
+\end{pmatrix}
+$$
+Les relations de commutation s'\'ecrivent $$[X_1^R,X_2^R] = - X_3^R 
+\quad {\hbox \etc}$$
+Le corep\`ere mobile correspondant $\{X^{iR}\}$ (le dual du rep\`ere
+mobile $\{X_i^R\}$) est donn\'e par
+$$(X^{1R},X^{2R},X^{3R}) = (d\theta, d\psi, d\phi) N^{-1}$$
+
+On peut aussi consid\'erer les courbes $G_i(t)=R_i(t)\, g$ obtenues 
+par translation \`a gauche.
+L'expression des champs de vecteurs invariants \`a droite $X_i^L$ (et 
+des formes correspondantes
+$X^{iL}$) s'exprime \`a l'aide des formules pr\'ec\'edentes
+en interchangeant simplement partout les coordonn\'ees $\phi$ et 
+$\psi$.
+Les relations de commutation s'\'ecrivent alors  $$[X_1^L,X_2^L] = + 
+X_3^L \quad {\hbox \etc}$$
+et on v\'erifie que $$[X_i^R,X_j^L] = 0$$
+
+\subsection{Une remarque sur les constantes de structure}
+
+Soit $G$ un groupe de Lie et choisissons une base $X_\alpha$ dans son 
+alg\`ebre de Lie, ensemble que nous identifions, en tant qu'espace 
+vectoriel, avec l'espace tangent $T(G,e)$. Les vecteurs $X_\alpha$ 
+d\'eterminent, comme nous l'avons vu, des champs de vecteurs invariants 
+\`a 
+gauche $X_\alpha(\cdot)$. L'espace de ces champs de vecteurs
+ \'etant, comme on le sait, de dimension finie et \'etant lui-m\^eme 
+identifiable \`a l'alg\`ebre de Lie de $G$, on peut \'ecrire, en tout point 
+$P$ 
+de $G$,  $$[X_\alpha(\cdot), 
+X_\beta(\cdot)](P)=f_{\alpha\beta}^{\gamma} (P) 
+X_\gamma(P)$$ On voit qu'on a ainsi obtenu un rep\`ere mobile {\em 
+global\/} (les 
+$\{X_\alpha (P)\}$) pour lequel les fonctions de structure sont les 
+$f_{\alpha\beta}^{\gamma} (P)$. En fait, ces 
+$f_{\alpha\beta}^{\gamma} 
+(P)$ sont des constantes~: elles ne d\'ependent pas de $P \in G$. Ceci
+r\'esulte du fait que le commutateur de deux champs invariants \`a gauche 
+est lui-m\^eme un champ invariant 
+\`a gauche.
+
+Rappelons que, pour une vari\'et\'e 
+diff\'erentiable quelconque, les fonctions de structure 
+d'un rep\`ere mobile d\'ependent g\'en\'eralement du point o\`u elles sont 
+\'evalu\'ees~; 
+par contre, on voit ici que, lorsque cette vari\'et\'e est un groupe de 
+Lie et que le 
+rep\`ere mobile choisi est un champ de vecteurs invariant \`a gauche, ces 
+fonctions de structure $f_{\alpha\beta}^\gamma$ sont des {\sl 
+constantes de structure\/}~: \index{constantes de structure} elles 
+ne d\'ependent que de la base choisie dans $T(G,e)$ et non du point $P$ 
+o\`u elles sont calcul\'ees.
+
+En utilisant des champs invariants \`a droite, on pourrait mener une 
+discussion analogue, \cad, en particulier, associer \`a toute base 
+$\{X_\alpha\}$ de $T(G,e)$ un rep\`ere mobile 
+global constitu\'e de champs invariants \`a droite 
+$X^L(g)=Xg$ et obtenir des constantes de structure
+ $g_{\alpha\beta}^{\gamma} = - f_{\alpha\beta}^{\gamma}$.
+
+\subsection{La forme de Maurer-Cartan}
+
+\begin{itemize}
+	\item  Il existe en fait {\it deux\/} formes de Maurer-Cartan~: 
+l'une 
+	est ``gauche'' et l'autre est ``droite''. Tout le monde utilisant 
+des champs
+invariants \`a gauche pour d\'efinir l'alg\`ebre de Lie,
+	on parle alors de ``la'' forme de Maurer-Cartan.
+	
+	\item  La forme de Maurer-Cartan $\theta$ est une forme au sens 
+	g\'en\'eralis\'e du mot. En effet, elle est \`a valeurs, non pas dans le 
+corps 
+	des r\'eels (ou des complexes) mais dans une alg\`ebre de Lie. Son r\^ole 
+est 
+	de ramener les champs invariants (\`a gauche) \`a l`origine~: soit 
+	$X_\alpha(g)$ un champ invariant \`a gauche, on d\'efinit $\theta_g$ par
+	$$
+	\mbox{\fbox{$
+	\theta_g(X_\alpha(g))  =  X_\alpha(e) 
+	$}}
+	$$
+	En notant $\{\theta^\alpha(g)\}$ la base duale, au point $g$ de $G$ 
+de 
+	la base $\{X_\alpha(g)\}$ et en notant simplement $X_\alpha  =  
+	X_\alpha(e)$, on voit que
+	$$
+	\theta_g  =  \theta^\alpha(g) \otimes  X_\alpha  \in 
+T^*(G,g)\otimes T(G,e)
+	$$
+	en effet, 
+	
+$$\theta_g(X_\beta(g))=\theta^\alpha(g)(X_\beta(g))X_\alpha=\delta^\alpha_\beta 	
+X_\alpha=X_\beta$$
+	L'application $\theta_g$ va de $T(G,g)$ dans $T(G,e)$. La forme de 
+	Maurer-Cartan elle-m\^eme $\theta = \theta^\alpha(\cdot)\otimes 
+X_\alpha$, qu'on 
+	peut simplement noter $\theta^\alpha X_\alpha$, va de $TG$ dans $Lie 
+G = 
+	T(G,e)$. En r\'esum\'e, $\theta \in \Omega^1(G, Lie \, G)$.
+	
+	Si $u \in TG$, c'est \`a dire que $u$ est un vecteur en un certain 
+point 
+	$g$, on peut, {\it a priori\/} d\'ecomposer $u$ sur une base de champs 
+	invariants \`a gauche au point $g$ : $u=u^\alpha X_\alpha(g)$. On sait 
+que 
+	$\theta(u)$ est alors l'\'el\'ement de l'alg\`ebre de Lie (identifi\'ee ici 
+avec 
+	$T(G,e)$) \'egal \`a $\theta(u) = u^\alpha X_\alpha(e)=u^\alpha 
+X_\alpha$.
+	Puisque $\theta = \theta^\alpha X_\alpha$, on d\'efinit $d\theta 
+ =  d 
+	\theta^\alpha X_\alpha$ (rappelons que $X_\alpha \equiv 
+X_\alpha(e)$), 
+	mais on sait que, pour un rep\`ere mobile quelconque (voir chapitre 
+	pr\'ec\'edent), 
+	on a $d\theta^\alpha + \frac{1}{2} 
+f^\alpha_{\beta\gamma}\theta^\beta 
+	\theta^\gamma = 0$ o\`u les $f^\alpha_{\beta\gamma}$ sont les 
+fonctions de 
+	structure du rep\`ere mobile~; ici les ``fonctions de structure'' sont 
+les 
+	{\sl constantes de structure. \/} Pour deux formes $\omega$ et 
+$\sigma$ \`a 
+	valeurs dans une alg\`ebre de Lie ($\omega = \omega^\alpha X_\alpha$ 
+et 
+	$\sigma = \sigma^\alpha X_\alpha$) on d\'efinit le crochet
+	$$
+	[\omega \land \sigma]  = 
+ [\omega^\alpha X_\alpha \land 	\sigma^\beta X_\beta] =
+ \omega^\alpha \land \omega^\beta [X_\alpha,X_\beta] =
+  \omega^\alpha \land \sigma^\beta \, f^\gamma_{\alpha \beta} \, 
+X_\gamma
+	$$
+	Ainsi donc l'\'equation de structure de Maurer-Cartan s'\'ecrit
+\index{equation de Maurer-Cartan}
+	$$
+   	\mbox{\fbox{$
+	d\theta + \frac{1}{2}[\theta \land \theta] = 0
+	$}}
+	$$
+	
+		\item {\em Attention aux facteurs $1/2$ et aux notations\/}~: la 
+	pr\'esence du $[\, ,\,]$ autour du symbole $\land$ est indispensable 
+dans la 
+	d\'efinition de $[\omega \land \sigma]$ et on voit que le crochet, en 
+ce 
+	sens, d'une $p$-forme \`a valeurs dans $Lie G$ avec une $q$-forme du 
+m\^eme 
+	type est une $(p+q)$-forme \`a valeurs dans $Lie G$. 
+	Prenons de nouveau 
+	$\omega$ et $\sigma$ dans $\Omega^1(G,Lie \, G)$ et \'evaluons-les sur 
+des 
+	vecteurs $u$ et $v$~: $\omega(u)=\omega^\alpha(u) X_\alpha$, 
+	$\sigma(v)=\sigma^\beta(v)X_\beta$. On peut aussi d\'efinir
+	$$[\omega,\sigma](u,v)  =  [\omega(u),\sigma(v)]$$
+	Alors $[\omega^\alpha(u)X_\alpha, 	
+\sigma^\beta(v)X_\beta]=\omega^\alpha(u)\sigma^\beta(v)[X_\alpha,X_\beta]=	
+\omega^\alpha(u)\sigma^\beta(v)	f^\gamma_{\alpha \beta} X_\gamma$, 
+mais
+par ailleurs,
+	$\omega^\alpha\land	\omega^\beta f^\gamma_{\alpha \beta}  
+X_\gamma(u,v)=
+	\left( 
+(\omega^\alpha\otimes\omega^\beta-\omega^\beta\otimes\omega^\alpha)f^\gamma_{\alpha 	
+\beta}X_\gamma\right)(u,v)=2 \omega^\alpha(u) \omega^\beta(v) 
+f^\gamma_{\alpha 
+	\beta}X_\gamma$
+	Ainsi $[\omega\land\omega](u,v)=2[\omega,\omega](u,v)$ et l'\'equation 
+de 
+	Maurer-Cartan peut s'\'ecrire \'egalement sous la forme
+	$$
+	d\theta+[\theta,\theta]=0
+	$$
+	On peut utiliser indiff\'eremment le crochet $[\, \land  \,]$ ou le 
+crochet
+   $[\, ,  \,]$ mais ils diff\`erent par des facteurs num\'eriques.
+   Par ailleurs, de nombreux auteurs d\'esignent $[\, \land \,]$ par [\, , \,] !
+	
+\item La forme de Maurer-Cartan ci-dessus, d\'efinie \`a l'aide de champs 
+	fondamentaux \`a droite (c'est \`a dire \`a l'aide de champs invariants \`a 
+	gauche) est celle qui est le plus utilis\'ee. Il ne faut pas oublier 
+	qu'``A travers le miroir'' existe une forme analogue, d\'efinie \`a 
+	partir des champs invariants \`a droite. Notons $\omega$ la forme de 
+	Maurer-Cartan ``\`a droite''.
+	Par une m\'ethode analogue \`a celle qui pr\'ec\`ede, on montre que $\omega$ 
+	satisfait \`a l'\'equation de structure
+	$$
+		d\omega - \frac{1}{2}[\omega \land \omega] = 0
+	$$ 
+	
+%%% TODO?$***LIen avec$	$g^{-1}dg$
+
+\end{itemize}
+
+
+
+\section[Repr\'esentations]{Action d'un groupe sur un espace 
+vectoriel~: la th\'eorie des 
+repr\'esentations}
+
+Une {\sl repr\'esentation\/}\index{repr\'esentation} $L$ d'un groupe $G$ dans un espace 
+vectoriel $E$ (sur 
+le corps $K$) est un 
+cas particulier de la notion d'action. L'espace 
+$E$ n'\'etant pas quelconque mais dot\'e d'une structure d'espace 
+vectoriel, 
+on impose \`a l'action $L_g$ d'\^etre lin\'eaire. En d'autres termes, \`a 
+tout 
+\'el\'ement $g$ de $G$, on associe un automorphisme $L_g$ de $E$ (une 
+transformation lin\'eaire bijective de $E$ sur lui-m\^eme). Si $E$ est 
+de 
+dimension finie $p$, moyennant un choix de bases, on peut \'ecrire 
+l'automorphisme $L_g$ \`a l'aide d'une matrice inversible $p\times p$ 
+encore d\'esign\'ee 
+par $L_g$. On peut donc d\'efinir une repr\'esentation $L$ comme un 
+homomorphisme du groupe $G$ dans le groupe $GL(p,K)$.
+On dit qu'une repr\'esentation est {\sl fid\`ele}\index{repr\'esentation 
+fid\`ele} lorsque l'homomorphisme $L$
+ci-dessus est injectif.
+
+La th\'eorie des repr\'esentations est un chapitre essentiel de la 
+th\'eorie 
+des groupes et est \'egalement d'une importance capitale dans 
+pratiquement toutes 
+les branches de la physique. Les diff\'erents aspects de la th\'eorie des 
+repr\'esentations ne seront pas \'etudi\'es dans cet ouvrage. 
+ 
+
+\section{Espaces homog\`enes}
+
+Soit $G$ un groupe et $H$ un sous-groupe. On d\'efinit la relation 
+d'\'equivalence $g_1 \sim g_2$ si et seulement si $g_1 \in g_2 H$. 
+L'ensemble des classes d'\'equivalence, c'est \`a dire l'ensemble quotient $G/\sim$ se note 
+$G/H$. On dit que cet ensemble
+est un espace homog\`ene pour le groupe $G$. Le vocable 
+``homog\`ene'' vient du fait que les
+propri\'et\'es alg\'ebriques de $G/H$ sont les m\^emes en tous ses 
+points puisqu'on peut passer
+de l'un \`a l'autre par action de $G$.
+
+On d\'emontre, lorsque $G$ est topologique, que $H$ doit \^etre 
+ferm\'e pour que le quotient ait une
+topologie s\'epar\'ee (propri\'et\'e de Haussdorf). C'est toujours ce 
+que nous supposerons.
+
+Lorsque $G$ est un groupe de Lie et $H$ un sous groupe de Lie, $G/H$ 
+est une vari\'et\'e diff\'erentiable. Les espaces homog\`enes 
+fournissent donc une quantit\'e d'exemples int\'eressants de 
+vari\'et\'es. Ce sont les vari\'et\'es les plus ``simples'' qui 
+soient (les groupes de Lie eux-m\^emes \'etant des cas particuliers 
+d'espaces homog\`enes).
+Nous aurons de nombreuses fois l'occasion d'y revenir lors de notre 
+\'etude des espaces
+fibr\'es. Attention, une vari\'et\'e donn\'ee peut parfois s'\'ecrire 
+de diverses fa\c cons comme espace homog\`ene de groupes de Lie. En 
+d'autres termes, deux quotients $G_1/H_1$ et $G_2/H_2$ peuvent
+tr\`es bien \^etre diff\'eomorphes, m\^eme si $G_1 \neq G_2$ (par 
+exemple $SU(3)/SU(2)$ et $SO(6)/SO(5)$ sont tous deux diff\'eomorphes 
+\`a la sph\`ere $S^5$). Ainsi, deux groupes
+diff\'erents peuvent agir transitivement sur le m\^eme espace.
+
+Les r\'esultats concernant la th\'eorie des espaces homog\`enes (en 
+particulier
+tout ce qui concerne les espaces sym\'etriques) sont
+d'un usage constant dans de nombreuses branches des math\'ematiques 
+et de la physique th\'eorique. L\`a encore, comme pour la th\'eorie 
+des
+repr\'esentations, que nous n'avons fait que mentionner$\ldots$
+nous conseillons vivement au lecteur de se cultiver sur le sujet en 
+consultant
+les ouvrages appropri\'es.
+
+\section{Alg\`ebres de Clifford et groupes Spin}
+
+\subsection{D\'efinitions g\'en\'erales} 
+
+Bien conna\^\i tre la structure  des alg\`ebres de Clifford est une 
+chose essentielle,
+ aussi bien pour les g\'eom\`etres que pour les physiciens des 
+particules, ou plus g\'en\'eralement
+pour les physiciens th\'eoriciens. Cette section est bien trop courte 
+pour couvrir tous leurs
+aspects. Nous nous contenterons de donner leur
+d\'efinition, de discuter leur structure g\'en\'erale, et de montrer 
+comment se  servir de ces alg\`ebres
+ pour obtenir une description explicite des groupes $Spin$.
+
+L'{\sl alg\`ebre de Clifford\/} \index{alg\`ebre de Clifford}
+r\'eelle $C(p,q)$ est l'alg\`ebre 
+associative unitaire engendr\'ee sur $\RR$
+ par $n=p+q$ symboles $\gamma^\mu$ soumis aux relations 
+$(\gamma^\mu)^2=1$ pour $\mu \in \{1,2,\ldots,p\}$,  
+$(\gamma^\nu)^2=-1$ pour $\nu \in \{p+1,p+2,\ldots,p+q\}$, et 
+$$\gamma^\mu \gamma^\nu + \gamma^\nu \gamma^\mu = 0$$ quand $\mu \neq 
+\nu$.
+
+Il est utile d'introduire une matrice diagonale 
+$\eta  =   diag(1\ldots 1, -1, \ldots  -1)$ 
+et d'\'ecrire les relations pr\'ec\'edentes \`a l'aide d'un anticommutateur
+ ($\{,\}$) sous la forme $\{ \gamma^\mu,\gamma^\nu, \}=2 \eta^{\mu\nu}$
+
+Soit $E$ un espace vectoriel de dimension $n$ sur $\RR$ muni d'un 
+produit scalaire non d\'eg\'en\'er\'ee $g$ (la m\'etrique), de 
+signature $(p,q)$. Soit $\{e_\mu\}$ une base orthonorm\'ee et  
+$\{e^\mu\}$ la base duale. On a encore une m\'etrique de composantes 
+$g_{\mu\nu}$ sur le dual.
+ On peut associer, \`a tout vecteur $v=v_\mu e^\mu$ du dual, un 
+\'el\'ement $Cliff(v) = v_\mu \gamma^\mu$ de l'alg\`ebre de Clifford 
+$C(p,q)$. Abus de notations: Nous noterons $v = Cliff(v)$. Les 
+physiciens
+des particules utilisent en g\'en\'eral la notation ``slash'' de 
+Feynmann.
+De cette fa\c con nous obtenons la relation $uv + vu = 2 g(u,v)$ pour 
+tout couple de vecteurs du dual.
+
+Une base vectorielle de $C(p,q)$ peut \^etre choisie comme suit:
+ $$\{1,\gamma^\mu,\gamma^\mu \gamma^\nu, \gamma^\mu \gamma^\nu 
+\gamma^\rho, \ldots \}$$ avec
+$\mu<\nu<\rho<\ldots$. La dimension (r\'eelle) de $C(p,q)$ est donc 
+$$1+(^n_1)+(^n_2)+\ldots = 2^n$$
+
+L'adjectif {\it r\'eel\/} est important : Par exemple, en dimension 
+$(3,1)$, l'\'el\'ement $\gamma^5 = i\gamma^0 \gamma^1 \gamma^2 
+\gamma^3$ n'est pas un \'el\'ement de $C(p,q)$ mais un \'el\'ement de 
+l'alg\`ebre complexifi\'ee $C^{{\scriptstyle \CC}} = C(p,q)\otimes \CC$.
+
+L'alg\`ebre $C(p,q)$ n'est g\'en\'eralement pas isomorphe \`a 
+$C(q,p)$. Il faut se rappeler que
+$(p,q)=(p_+,q_-)$.
+
+Puisque l'alg\`ebre de Clifford $C=C(p,q)$ et l'alg\`ebre 
+ext\'erieure $\Lambda (E)$
+ont m\^eme dimension,
+ils sont isomorphes en tant qu'espaces vectoriels. La correspondance 
+entre les deux lois d'alg\`ebre
+est la suivante : pour $u,v\in E^*$, on peut directement d\'efinir le 
+produit de Clifford $uv = u\land v + g(u,v)$.
+
+Soit $C_0$ la partie paire de $C$, c'est \`a dire la sous-alg\`ebre 
+lin\'eairement 
+engendr\'ee par les produits
+d'un nombre pair de g\'en\'erateurs $\gamma$. 
+
+Soit $$
+\mbox{\fbox{$
+\epsilon = \gamma^0  \gamma^1 \ldots  \gamma^n
+$}}
+$$ 
+l'{\sl op\'erateur d'orientation\/}\index{op\'erateur d'orientation}.
+On doit choisir un ordre sur les g\'en\'erateurs.  La
+d\'efinition de $\epsilon$ n'est pas ambiguÎ si on a choisi une 
+orientation de $E$
+ (sinon, il n'est d\'efini qu'au signe pr\`es).
+
+
+Soit $Z$ le centre de $C$ et $Z_0$ le centre de $C_0$.
+
+
+\subsection{Le groupe $Spin$}
+
+Le groupe des rotations $O(n)$ poss\`ede, comme nous l'avons vu, deux 
+composantes connexes, mais lorsqu'on
+autorise une signature pseudo-euclidienne $(p,q)$, le groupe des 
+rotations correspondant, not\'e
+ $L =  O(p,q)$ en  poss\`ede en g\'en\'eral quatre.
+ $$L = L_+^\uparrow \cup L_+^\downarrow \cup L_-^\uparrow \cup 
+L_-^\downarrow $$
+Le signe $\pm$ fait r\'ef\'erence au signe du d\'eterminant
+ (transformations qui changent, ou non, l'orientation
+totale) et le signe $\uparrow$ ou $\downarrow$ fait r\'ef\'erence
+aux transformations qui changent, ou non, l'orientation temporelle.
+On dit g\'en\'eralement, pour une signature $(p,q)$, que la 
+m\'etrique poss\`ede
+ $min(p,q)$ dimensions de temps et $max(p,q)$ dimensions d'espace.
+On consid\`ere les groupes et sous-groupes suivants
+ $$ L = O(p,q), \quad SO(p,q) = L_+^\uparrow \cup L_-^\downarrow ,
+\quad SO^\uparrow(p,q) = L_+^\uparrow
+$$
+
+Aucune des composantes connexes de $L$ n'est simplement connexe. Il 
+est donc naturel de consid\'erer, pour chacun des groupes mentionn\'e 
+leur
+groupe de recouvrement universel. On note $Pin$, $Spin$ et 
+$Spin^\uparrow$ les groupes simplement connexes
+correspondant \`a $O$, $SO$ et $SO^\uparrow$.
+
+Le {\sl groupe de Clifford\/} $\Gamma$ est d\'efini comme l'ensemble
+\index{groupe de Clifford} 
+de tous les \'el\'ements $s$ de l'alg\`ebre de Clifford $C=C(p,q)$  
+qui sont  inversibles et satisfont \`a la propri\'et\'e : $$\forall x 
+\in E, sxs^{-1} \in E$$
+$E$ d\'esigne ici l'espace vectoriel (pseudo) euclidien, de signature 
+$(p,q)$ auquel l'alg\`ebre $C$ est
+associ\'ee.  Attention, l'alg\`ebre de Clifford, comme toute alg\`ebre
+associative, est stable par le crochet de Lie d\'efini comme le 
+commutateur,
+$C$ est donc aussi une alg\`ebre de Lie {\it mais} cette alg\`ebre de 
+Lie
+n'est pas (n'est jamais) l'alg\`ebre de Lie du groupe de Clifford.
+Il est \'evident que tout \'el\'ement inversible de $E$ appartient au 
+groupe de Clifford (on plonge
+$E$ dans $C$ en associant \`a $v=v_\mu e^\mu$ l'\'el\'ement $v=v_\mu 
+\gamma^\mu$). En effet
+$$
+vxv^{-1} = {1\over v^2}vxv = {1\over v^2}(-vvx + 2 g(v,x))=-x+2g(v,x) 
+v /v^2
+$$
+La transformation $x \mapsto vxv^{-1}$ est donc l'oppos\'ee de la 
+sym\'etrie par rapport \`a l'hyperplan
+conjugu\'e \`a $v$. Plus g\'en\'eralement, pour $s \in \Gamma$, la 
+transformation
+$$\chi(s) : x\in E \rightarrow s x s^{-1}$$
+appartient au groupe orthogonal $O(p,q)$ en vertu d'une propri\'et\'e 
+\'el\'ementaire connue
+disant que les groupes
+de rotations peuvent \^etre engendr\'es par produit de  sym\'etries 
+par rapport \`a des hyperplans.
+
+L'application $\chi$ d\'efinit manifestement une
+repr\'esentation du groupe de Clifford, mais cette repr\'esentation
+n'est pas fid\`ele puisque $s$ et $3s$, par exemple, d\'eterminent la 
+m\^eme rotation. On va obtenir le
+groupe $Spin$ \`a partir du groupe de Clifford
+ en introduisant une condition de normalisation. Notons tout d'abord 
+avec une
+``barre'', plac\'ee au dessus d'un symbole, l'involution principale 
+de $C$,
+d\'efinie par ${\overline \gamma^\mu} = \gamma^\mu$, c'est \`a dire
+$${\overline {\gamma^1 \gamma^2 \ldots  \gamma^p}}= \gamma^p  \ldots  
+\gamma^2 
+ \gamma^1$$
+On voit que $$s\in \Gamma \rightarrow N(s) = {\overline s}s \in \RR$$
+On d\'efinit alors 
+$$Pin  =  \{s\in \Gamma \, \hbox {tels que} \, \vert N(s)\vert = 
+1\}$$
+$$Spin   =  Pin \cap C_0 $$
+$$Spin^\uparrow   =  \{s \in Spin \, \hbox{tels que} \, N(s) = 
+1\}$$
+La repr\'esentation $\chi$ du groupe de Clifford est encore une 
+repr\'esentation des groupes ci-dessus. Le lecteur pourra se 
+convaincre du fait que
+$$\chi(Spin) = L_+ \quad \hbox{et}\quad \chi(Spin^\uparrow) = 
+L_+^\uparrow $$
+Plus pr\'ecis\'ement, tout \'el\'ement de $Pin$ peut s'\'ecrire comme 
+un produit $u_1u_2\ldots u_k$ o\`u
+les $u_i$ sont des (co)-vecteurs de $E$ :
+\begin{eqnarray*}
+k \, \hbox {pair et} \, {\overline {s}s} > 0 &\Longleftrightarrow & 
+\chi(s) \in L_+^\uparrow \\
+k \, \hbox {pair et} \, {\overline {s}s} < 0 &\Longleftrightarrow & 
+\chi(s) \in L_+^\downarrow \\
+k \, \hbox {impair et} \, {\overline {s}s} > 0 &\Longleftrightarrow & 
+\chi(s) \in L_-^\uparrow \\
+k \, \hbox {impair et} \, {\overline {s}s} < 0 &\Longleftrightarrow & 
+\chi(s) \in L_-^\downarrow 
+\end{eqnarray*}
+Par ailleurs, si $s\in Spin$, alors $-s\in Spin$, et $\chi(s) = 
+\chi(-s)$. En fait $Ker(\chi)=\{-1,+1\}$
+ce qui montre que $Spin^\uparrow$ recouvre bien $L_+^\uparrow$ avec 
+un noyau $\ZZ_2$.
+
+On peut non seulement d\'ecrire le groupe $Spin(p,q)$ comme un sous 
+ensemble
+ de l'alg\`ebre de Clifford $C(p,q)$ mais aussi l'alg\`ebre de Lie 
+correspondante. Soient $x,y,z \in E$, alors $[xy,z] \in E$. En effet,
+$[xy,z]=xyz - zxy =2( x g(y,z) - g(x,z) y)$. En d\'eveloppant 
+l'exponentielle, on obtient ainsi
+$exp(txy)\, z \, exp(-txy) \in E$,  donc $exp(txy)$ appartient au  
+groupe de Clifford et $xy$ appartient
+ \`a l'alg\`ebre de Lie du groupe de Clifford.
+On peut aussi, en d\'eveloppant l'exponentielle, montrer que 
+${\overline {exp(s)}}=exp({\overline {s}})$.
+
+Ces remarques montrent que l'alg\`ebre de Lie du groupe de Clifford 
+est engendr\'ee par $1$ et les
+produits $xy$ lorsque $x,y \in E$. Cette alg\`ebre de Lie est un peut 
+trop ``grosse'', celle de $Spin^\uparrow$ est plus int\'eressante.
+ En effet, soient $x$ et $y$ deux (co)-vecteurs, alors
+\begin{eqnarray*}
+& exp(xy) \in Spin^\uparrow & \Leftrightarrow N(exp(xy))=1 \\
+&{}& \Leftrightarrow exp({\overline {xy}})exp(xy) = 1 \\
+&{}& \Leftrightarrow
+ exp(yx+xy) = 1  \Leftrightarrow xy + yx = 0 \\
+&{}& \Leftrightarrow g(x,y) = 0 
+\end{eqnarray*}
+Ainsi, $z \in C(p,q)$ appartient \`a $Lie(Spin^\uparrow)$ si et 
+seulement si il
+peut \^etre \'ecrit comme une combinaison lin\'eaire de produits $xy$ 
+o\`u
+$x$ et $y$ sont orthogonaux, c'est \`a dire par les produits 
+$\gamma^\mu\gamma^\nu$. On retrouve bien le fait que 
+$dim(Lie(Spin(p,q)))_{\vert{n=p+q}}=n(n-1)/2$.
+
+ Exemple. Prenons $(p=3,q=1)$. Le groupe des rotations correspondant
+est le groupe de Lorentz de la physique relativiste. Soit $\beta$ un
+r\'eel quelconque. Alors ${\beta \over 2} \gamma^0 \gamma^1 \in 
+Lie(Spin^\uparrow)$ et $s  =  exp({\beta \over 2} \gamma^0 
+\gamma^1) \in Spin^\uparrow$.
+Un calcul facile (d\'evelopper l'exponentielle) montre alors que
+$$s = \cosh {\beta \over 2} + \gamma^0 \gamma^1 \sinh  {\beta \over 
+2}$$
+et que
+\begin{eqnarray*}
+&s\gamma^0s^{-1} &= \gamma^0 \cosh \beta + \gamma^1 \sinh \beta \\
+&s\gamma^1s^{-1} &=  \gamma^0 \sinh \beta + \gamma^1 \cosh \beta \\
+&s\gamma^is^{-1} &= \gamma^i \, \hbox{pour} \,  i = 2,3
+\end{eqnarray*}
+Notons que $s$ peut s'\'ecrire aussi
+$$
+s = \gamma^0(-\gamma^0  \cosh {\beta \over 2} + \gamma^1 \sinh{\beta 
+\over 2})$$
+
+Ceci montre donc que la transformation de Lorentz $\chi(s)$ est un 
+``boost'' 
+(rotation hyperbolique) le long de l'axe des $x$. Plus 
+g\'en\'eralement, si
+$$
+\mbox{\fbox{$
+s=exp({\beta \over 2} \gamma^0 ({\vr v}.{\vr \gamma}))
+$}}
+$$ $\chi(s)$ 
+d\'esigne
+un boost de param\`etre $\beta$ le long de la direction 
+$\overrightarrow v$ et si
+$$
+\mbox{\fbox{$
+s= exp({\theta \over 2}  {\vr n}.{\vr \gamma})
+$}}
+$$ $\chi(s)$ 
+d\'esigne une
+rotation d'angle $\theta$ autour de la direction ${\vr n}$ avec 
+($\vert n \vert^2 = 1$).
+
+Notons pour finir que $Spin(p,q) \subset C_0(p,q)=C_0(q,p)$, mais que 
+$C(p,q) \neq C(q,p)$ en g\'en\'eral.
+L'inclusion est \'evidente au vu de la d\'efinition du groupe $Spin$. 
+Les \'egalit\'es (ou in\'egalit\'es)
+entre ces ensembles r\'esultent de l'\'etude g\'en\'erale qui suit.
+
+\subsection{Structure des alg\`ebres de Clifford r\'eelles}
+
+Pour voir si $C$ ou $C_0$ sont des alg\`ebres simples, il faut voir 
+si on peut, ou non, fabriquer
+un projecteur non trivial $P$  ($P^2=P$) qui commute avec $C$ (ou 
+$C_0$). Un tel projecteur peut,
+dans certains cas, se
+fabriquer \`a l'aide de $\epsilon$. 
+
+La discussion est tr\`es diff\'erente suivant que la dimension $n$ 
+est paire
+ou impaire ($\epsilon$ appartiendra, suivant les cas, au centre de 
+$C$, ou seulement au centre de $C_0$).
+
+\subsubsection{Cas $n=p+q$ pair}
+
+Dans ce cas, l'op\'erateur d'orientation $\epsilon$ commute avec les 
+\'el\'ements pairs de $C$ mais
+anticommute avec les \'el\'ements impairs (d\'emonstration 
+imm\'ediate en utilisant les relations
+de commutation des g\'en\'erateurs $\gamma^\mu$). Le centre de $C_0$ 
+est en fait engendr\'e, dans ce cas
+ par $1$ et par $\epsilon$.
+
+La discussion d\'epend alors du carr\'e de $\epsilon$. Si  
+$\epsilon^2 = 1$ on peut fabriquer deux
+projecteurs $P_R  =  {1 + \epsilon \over 2}$ et 
+ $P_L  =  {1 -  \epsilon \over 2}$ permettant de ``couper'' la 
+sous-alg\`ebre $C_0$ en deux composantes
+simples (on voit imm\'ediatement que $P_L^2 = P_L$ et $P_R^2 = P_R$).
+
+La discussion peut se r\'esumer comme suit:
+{\vskip 0.5cm}
+$C$ est une alg\`ebre simple pour $n$ pair.
+\begin{eqnarray*}
+& C_0\, \hbox{ est simple} & \Leftrightarrow \epsilon^2 = -1 
+\Leftrightarrow p-q = 2 \,\hbox{ mod}\, 4 \Leftrightarrow Z_0 \sim 
+\CC \\
+& C_0 \, \hbox{n'est pas simple} &  \Leftrightarrow \epsilon^2 = +1 
+\Leftrightarrow p-q = 0 \,\hbox{ mod}\, 4 \Leftrightarrow Z_0 \sim 
+\RR \oplus \RR \\
+&{}& {\hskip 1cm} \hbox{ dans ce dernier cas} \quad  C_0 = P_L C_0 
+\oplus P_R C_0
+\end{eqnarray*}
+
+Remarque : dans le cas de l'alg\`ebre de Dirac (nom donn\'e \`a 
+l'alg\`ebre de Clifford dans le cas
+$(p=3, q=1)$), $\epsilon^2=-1$. La sous alg\`ebre paire $C_0$ est 
+simple. Pour pouvoir la casser en deux,
+il faut introduire le nombre complexe $i$ et fabriquer un projecteur 
+$(1 \pm \gamma_5)/2$ \`a l'aide de
+$\gamma_5 = i \, \epsilon$, mais$\ldots$ cela ne peut \'evidemment se 
+faire qu'en autorisant des
+coefficients complexes, c'est \`a dire en  complexifiant l'alg\`ebre 
+$C$.
+
+\subsubsection{Cas $n=p+q$ impair}
+
+
+Dans ce cas, l'op\'erateur d'orientation $\epsilon$ commute avec les 
+\'el\'ements impairs de $C$ {\it et}
+commute aussi avec les \'el\'ements impairs (d\'emonstration 
+imm\'ediate en utilisant les relations
+de commutation des g\'en\'erateurs $\gamma^\mu$). Le centre de $C$ 
+est en fait engendr\'e, dans ce cas
+ par $1$ et par $\epsilon$.
+
+La discussion d\'epend encore alors, comme pr\'ec\'edemment du 
+carr\'e de $\epsilon$. Si  $\epsilon^2 = 1$ on peut fabriquer deux
+projecteurs ${1 + \epsilon \over 2}$ et 
+ ${1 -  \epsilon \over 2}$ permettant de ``couper'' l'alg\`ebre de 
+Clifford $C$ en deux composantes
+simples.
+
+La discussion peut se r\'esumer comme suit:
+{\vskip 0.5cm}
+$C_0$ est une alg\`ebre simple.
+\begin{eqnarray*}
+& C \, \hbox{est simple} & \Leftrightarrow \epsilon^2 = -1 
+\Leftrightarrow p-q = 3 \,\hbox{ mod}\, 4 \Leftrightarrow Z \sim \CC 
+\\
+& C \, \hbox{n'est pas simple} &  \Leftrightarrow \epsilon^2 = +1 
+\Leftrightarrow p-q = 1 \,\hbox{ mod}\, 4 \Leftrightarrow Z \sim \RR 
+\oplus \RR \\
+&{}&  {\hskip 1cm} \hbox{ dans ce dernier  cas} \quad  C = {1 -  
+\epsilon \over 2} C \oplus {1 -  \epsilon \over 2} C
+\end{eqnarray*}
+
+De plus, $C = C_0 \oplus C_0 \epsilon$.
+
+\subsubsection{Structure des alg\`ebres de Clifford r\'eelles et 
+p\'eriodicit\'e modulo $8$}
+
+La discussion qui pr\'ec\`ede pourrait laisser croire que la 
+structure des alg\`ebres de Clifford sur $\RR$
+d\'epend de $(p-q)$ modulo $4$. En fait une analyse plus fine montre 
+qu'elle d\'epend
+ de $(p-q)$ modulo $8$. L'id\'ee est la suivante : on commence par 
+\'etudier explicitement la structure
+de quelques alg\`ebres de Clifford de basse dimension, puis on 
+construit les autres par produits tensoriels.
+\begin{description}
+\item[\tt Un th\'eor\`eme de r\'eduction dimensionelle] Soit $F$ un 
+espace vectoriel muni d'un produit scalaire $g$ et $E \subset F$ un 
+sous espace vectoriel de dimension paire tel que la restriction de $g$
+\`a $E$ ne soit pas singuli\`ere. Soit $E^\perp$ le compl\'ement 
+orthogonal de $E$ dans $F$. Alors 
+$$C(F,g) = C(E,g_E) \otimes C(E^\perp,\epsilon_E^2 \,   g_{E^\perp})$$
+o\`u $\epsilon_E$ est l'op\'erateur d'orientation de $E$
+La d\'emonstration est imm\'ediate et s'appuie sur les relations 
+suivantes. Soient 
+$\gamma^\mu$ les g\'en\'erateurs associ\'es \`a $(E,g_E)$ et 
+$\gamma^\alpha$ les g\'en\'erateurs associ\'es \`a $E^\perp$. On 
+fabrique alors les g\'en\'erateurs $\Gamma^\alpha = \epsilon \otimes 
+\gamma^\alpha$ et
+ $\Gamma^\mu = \gamma^\mu \otimes 1$. On v\'erifie que les 
+g\'en\'erateurs
+$\Gamma$ v\'erifient bien les relations de d\'efinitions pour 
+$C(F,g)$.
+
+Ce th\'eor\`eme permet d'obtenir imm\'ediatement les r\'esultats 
+suivants : Soit $E$ un espace vectoriel
+de dimension $2$. Soit $\epsilon = \gamma^1 \gamma^2$ son op\'erateur 
+d'orientation.
+\begin{itemize}
+\item Si la signature est $(2,0)$ alors $\epsilon^2 = -1$ et 
+$C(2,0)\otimes C(p,q) = C(q+2,p)$
+\item Si la signature est $(0,2)$ alors $\epsilon^2 = -1$ et 
+$C(0,2)\otimes C(p,q) = C(q,p+2)$
+\item Si la signature est $(1,1)$ alors $\epsilon^2 = +1$ et 
+$C(1,1)\otimes C(p,q) = C(p+1,p+1)$
+\end{itemize}
+
+
+\item[\tt Alg\`ebres de Clifford de basse dimension]
+En regardant les relations de commutation des g\'en\'erateurs 
+$\gamma^\mu$
+en basse dimension, on voit facilement que
+$$C(1,0)=\CC, C(0,1)=\RR \oplus \RR, C(2,0) = M(2,\RR)$$ 
+$$C(1,1) = M(2,\RR) \,\hbox{et} \, C(0,2) = \HH$$
+Dans ce dernier cas, on rappelle que les \'el\'ements du corps non
+commutatif des quaternions peuvent s'\'ecrire
+$\begin{pmatrix}  a-id & ib + c \\ ib - c & a+ id\end{pmatrix} $
+\item[\tt Produit tensoriel des alg\`ebres] $\RR$, $\CC$ et $\HH$
+On utilise ensuite les isomorphismes suivants (seuls ceux mettant en 
+jeu
+les quaternions ne sont pas \'evidents et on peut s'assurer du 
+r\'esultat
+en repr\'esentant les quaternions par des matrices $2\times 2$ 
+complexes du type
+pr\'ec\'edent et en effectuant des produits tensoriels de matrices).
+\begin{eqnarray*}
+M(n,\RR) \otimes M(m,\RR) = M(nm,\RR)& \quad &\CC \otimes \CC = \CC 
+\oplus \CC \\
+M(n,\RR) \otimes \CC = M(n,\CC)& \quad &\HH \otimes \CC = M(2,\CC) \\
+M(n,\RR) \otimes \HH = M(n,\HH)& \quad &\HH \otimes \HH = M(4,\RR)
+\end{eqnarray*}
+\item[\tt Le th\'eor\`eme de p\'eriodicit\'e]
+Les r\'esultats pr\'ec\'edents impliquent imm\'ediatement :
+\begin{eqnarray*}
+C(n+8,0)& = & C(2,0) \otimes C(0,n+6) \\
+{} & = & C(2,0) \otimes C(0,2) \otimes C(n+4,4) \\
+{} & = & C(2,0) \otimes C(0,2) \otimes C(2,0) \otimes C(0,n+2) \\
+{} & = & C(2,0) \otimes C(0,2) \otimes C(2,0) \otimes C(0,2) \otimes 
+C(n,0)  \\
+{} & = & M(2,\RR) \otimes \HH \otimes M(2,\RR) \otimes \HH \otimes 
+C(n,0) \\
+{} & = & M(4,\RR) \otimes M(4,\RR) \otimes C(n,0) \\
+{} & = & M(16,\RR) \otimes C(n,0)
+\end{eqnarray*}
+Le r\'esultat final montre que l'alg\`ebre $C(n+8,0)$ est de m\^eme 
+type que $C(n,0)$, les dimensions
+sont, bien s\^ur, diff\'erentes (il faut tensorialiser par les 
+matrices r\'eelles $16\times 16$) mais la
+structure est la m\^eme.
+De la m\^eme fa\c con, nous obtenons (supposons $q < p$) :
+\begin{eqnarray*}
+C(p,q) & = & C(1,1) \otimes C(p-1,q-1) \\
+{} & = & C(1,1) \otimes C(1,1)\otimes \ldots \otimes C(p-q,0) \\
+{} & = & M(2^q,\RR)\otimes C(p-q,0)
+\end{eqnarray*}
+Les deux r\'esultats $$C(n+8,0) =  M(16,\RR) \otimes C(n,0) $$ et 
+$$C(p,q)=  M(2^q,\RR)\otimes C(p-q,0)$$ montre qu'il suffit 
+d'\'etudier le cas purement euclidien et que
+la classification ne d\'epend que de $(p-q) \, \hbox{modulo}\,  8$.
+
+\item[\tt La classification des $C(p,q)$.]
+Il suffit d'\'etudier la structure des huit premiers $C(n,0)$. Cela 
+se fait sans difficult\'e en utilisant
+les r\'esultats rappel\'es plus haut sur les produits tensoriels de 
+matrices dans les corps $\RR$, $\CC$ et $\HH$. Par exemple, 
+\begin{eqnarray*}
+C(5,0)& = & C(2,0) \otimes C(0,3) = C(2,0) \otimes C(0,2) \otimes 
+C(1,0) \\
+{} & = & M(2,\RR) \otimes \HH \otimes (\RR \oplus \RR) = M(2,\HH) 
+\oplus M(2,\HH)
+\end{eqnarray*}
+\end{description}
+Les th\'eor\`emes de p\'eriodicit\'e montrent alors que
+ $$C(p,q) = M(2^{{n-1\over 2}-1}) \oplus  M(2^{{n-1\over 2}-1}) \, 
+\hbox{lorsque}\, p-q = 5 \, \hbox{mod} \, 8
+$$
+On peut r\'esumer tous les r\'esultats dans la table suivante ($n = 
+p+q$).
+
+
+\begin{center}
+\begin{tabular}{|l||c|c|c|c|}
+\hline
+$p-q \,\hbox {mod}\, 8 $ & $ 0 $ & $ 1 $ & $ 2 $ & $ 3 $\\
+\hline
+$C(p,q)  $ & $ M(2^{n/2},\RR) $ & $M(2^{{n-1 \over 2}},\RR)\oplus 
+M(2^{{n-1 \over 2}},\RR)  $ & $ M(2^{n/2},\RR) $ & $ M(2^{{n-1 \over 
+2}},\CC) $ \\
+\hline
+\hline
+$p-q \, \hbox {mod} \, 8$  & $ 4 $ & $ 5 $ & $ 6 $ & $ 7 $ \\
+\hline
+$C(p,q) $ & $ M(2^{{n\over 2}-1},\HH) $ &$ M(2^{{n-1 \over 2}},\HH) 
+\oplus M(2^{{n-1 \over 2}},\HH) $ & $ M(2^{{n\over 2}-1},\HH) $ & 
+$M(2^{{n-1 \over 2}},\CC)$ \\
+\hline
+\end{tabular}
+\end{center}
+
+Le lecteur pourra faire usage des deux tables suivantes (qui se 
+d\'eduisent
+ de la pr\'ec\'edente)  o\`u on \'etudie explicitement
+le cas particulier d'une signature euclidenne $(n,0)$ ou $(0,n)$ et 
+d'une
+signature  hyperbolique $(n-1,1)$ ou $(1,n-1)$, pour les huit cas
+ $n=4 \ldots 11$.
+{\vskip 0.3cm}
+Cas euclidien (de $n=4$ \`a $n=11$). \\
+Pour r\'eduire la taille de la  table, on a not\'e $M(d,K)$ sous la forme $(d,K)$.
+{\vskip 0.3cm}
+\begin{center}
+\begin{tabular}{|c||c|c|c|c|c|}
+\hline
+$n$ & $C^{{\scriptstyle \CC}}$ & $C(n,0)$ & $C(0,n)$ & $C_0(n,0)$ & $\theta$ \\
+\hline
+$4$ & ${}(4,\CC)$      &  ${}(2,\HH)$                 & 
+${}(2,\HH)$ &  ${}\HH \oplus \HH$ & $ \epsilon $\\
+$5$ & ${}(4,\CC) \oplus {}(4,\CC)$  & ${}(2,\HH) \oplus {}(2,\HH)$ &  
+${}(4,\CC)$&  ${}(2,\HH)$ & {}  \\
+$6$ & ${}(8,\CC)$                   &   ${}(4,\HH)$                & 
+${}(8,\RR)$&   ${}(4,\CC)$ & $i \epsilon $\\
+$7$ & ${}(8,\CC)\oplus {}(8,\CC)$   &   ${}(8,\CC)$                & 
+${}(8,\RR)\oplus {}(8,\RR)$&   ${}(8,\RR)$ & {} \\
+$8$ & ${}(16,\CC)$                  &   ${}(16,\RR)$               &  
+${}(16,\RR)$&  ${}(8,\RR)\oplus {}(8,\RR)$ & $  \epsilon $ \\
+$9$ & ${}(16,\CC)\oplus {}(16,\CC)$ &  ${}(16,\RR)\oplus {}(16,\RR)$ 
+& ${}(16,\CC)$&   ${}(16,\RR)$ & {} \\
+$10$ & ${}(32,\CC)$                 &  ${}(32,\RR)$                & 
+${}(16,\HH)$&   ${}(16,\CC)$ & $ i \epsilon$ \\
+$11$ & ${}(32,\CC)\oplus {}(32,\CC)$ & ${}(32,\CC)$   & 
+${}(16,\HH)\oplus (16,\HH)$ & ${}(16,\HH)$ & {} \\
+\hline
+\end{tabular}
+\end{center}
+{\vskip 0.3cm}
+Cas hyperbolique (de $n=4$ \`a $n=11$).\\
+Pour r\'eduire la taille de  la table, on a not\'e $M(d,K)$ sous la forme $(d,K)$.
+{\vskip 0.3cm}
+\begin{center}
+\begin{tabular}{|c||c|c|c|c|c|}
+\hline
+$n$ & $C^{{\scriptstyle \CC}}$ & $C(n-1,1)$ & $C(1,n-1)$ & $C_0(n-1,1)$ & 
+$\theta$ \\
+\hline
+$4$ & ${}(4,\CC)$ &  ${}(4,\RR)$ &  ${}(2,\HH)$ &   ${}(2,\CC)$ & $ i 
+\epsilon $\\
+$5$ & ${}(4,\CC) \oplus {}(4,\CC)$ &  ${}(4,\CC)$ &  ${}(2,\HH) 
+\oplus {}(2,\HH)$ &   ${}(2,\HH)$ & {}  \\
+$6$ & ${}(8,\CC)$ &  ${}(4,\HH)$ &  ${}(4,\HH)$ &   ${}(2,\HH)\oplus 
+{}(2,\HH)$ & $ \epsilon $\\
+$7$ & ${}(8,\CC)\oplus {}(8,\CC)$ &  ${}(4,\HH)\oplus {}(4,\HH)$ &  
+${}(8,\CC)$ &   ${}(4,\HH)$ & {} \\
+$8$ & ${}(16,\CC)$ &  ${}(8,\HH)$ &  ${}(16,\RR)$ &   ${}(8,\CC)$ & $ 
+i \epsilon $ \\
+$9$ &  ${}(16,\CC)\oplus {}(16,\CC)$ &  ${}(16,\CC)$ &  
+${}(16,\RR)\oplus {}(16,\RR)$ &   ${}(16,\RR)$ & {} \\
+$10$ & ${}(32,\CC)$ &  ${}(32,\RR)$ &  ${}(32,\RR)$ &   ${}(16,\RR) 
+\oplus {}(16,\RR)$ & $  \epsilon$ \\
+$11$ &  ${}(32,\CC)\oplus {}(32,\CC)$ &  ${}(32,\RR) \oplus 
+{}(32,\RR)$ &  ${}(32,\CC)$ &   ${}(32,\RR)$ & {} \\
+\hline
+\end{tabular}
+\end{center}
+{\vskip 0.3cm}
+Remarque : en observant ces tables, on voit que
+ $$C(0,n) \neq C(n-1,1) {\hskip 0.2cm}\hbox{mais}{\hskip 0.2cm} 
+C(n,0)=C(1,n-1)$$
+On voit aussi que $$C_0(n,0)=C_0(0,n)=C(0,n-1)$$ et que 
+$$C_0(n-1,1)=C_0(1,n-1)=C(1,n-2)$$
+
+Ces derni\`eres \'egalit\'es constituent un cas particulier de la 
+relation g\'en\'erale (cons\'equence directe des
+relations de p\'eriodicit\'e) : $$C_0(p,q) = 
+C(p,q-1)=C(q,p-1)=C_0(q,p)$$
+
+On sait que le groupe $Spin(p,q)$ est inclus dans la sous-alg\`ebre 
+de Clifford paire $C_0(p,q)$.
+Les tables ci-dessus permettent donc aussi de trouver les inclusions 
+de $Spin(p,q)$ dans les groupes $SL(n,K)$ o\`u
+$K=\RR, \CC, \HH$. Dans les cas de plus basse dimension, les 
+inclusions peuvent \^etre des \'egalit\'es.
+Par exemple $Spin(5)=SL(2,\HH)$, $Spin(10)\subset SL(16,\CC)$, 
+$Spin(6,1)\subset SL(4,\HH)$ etc.
+
+\subsection{La structure des alg\`ebres de Clifford complexes}
+
+Si on complexifie l'alg\`ebre de Clifford r\'eelle $C$, c'est \`a dire si on autorise les scalaires  
+de l'alg\`ebre \`a appartenir au corps des
+nombres complexes, on peut alors toujours fabriquer, \`a l'aide de 
+$\epsilon$, un op\'erateur de carr\'e un.
+Cet op\'erateur est appel\'e {\sl op\'erateur de chiralit\'e\/} et
+\index{op\'erateur de chiralit\'e} 
+not\'e traditionnellement $\gamma_5$.
+Si $\epsilon$ est d\'ej\`a de carr\'e \'egal \`a $1$, il n'y a plus 
+rien \`a faire et 
+on pose simplement $\gamma_5 = \epsilon$.
+ Sinon, on le multiplie par $i$ et on pose $\gamma_5 = i \epsilon$. A 
+l'aide
+de cet op\'erateur de carr\'e $1$ on peut alors toujours fabriquer 
+$2$ projecteurs ${1 \pm \gamma_5 \over 2}$ \`a l'aide desquels on 
+pourra d\'ecomposer $C_0^{{\scriptstyle \CC}}$ en deux composantes simples 
+lorsque $n$ est pair et
+$C^{{\scriptstyle \CC}}$ en deux composantes simples lorsque $n$ est 
+impair. La discussion se r\'esume par :
+\begin{eqnarray*}
+&\hbox{ n pair} & \quad \hbox{$ C^{{\scriptstyle \CC}}$ est simple} \\
+&{}& \quad C_0^{{\scriptstyle \CC}} = {1 - \gamma_5 \over 2}C_0^{{\scriptstyle 
+\CC}} \oplus  {1 + \gamma_5 \over 2}\, \hbox{$ C_0^{{\scriptstyle \CC}}$ 
+n'est pas simple} \\
+&\hbox{ n impair} & \quad \hbox{$ C_0^{{\scriptstyle \CC}}$ est simple} \\
+&{}& \quad C^{{\scriptstyle \CC}} = {1 - \gamma_5 \over 2}C^{{\scriptstyle \CC}} 
+\oplus  {1 + \gamma_5 \over 2}\, \hbox{$ C^{{\scriptstyle \CC}}$ n'est pas 
+simple} \end{eqnarray*}
+
+Remarque: Lorsque $n$ est impair, on dit parfois que $\gamma_5$ 
+n'existe pas$\ldots$ Il faut pr\'eciser ce
+qu'on entend par l\`a : l'op\'erateur que nous venons de d\'efinir et 
+de noter $\gamma_5$ existe dans tous
+les cas. Cela dit, dans le cas impair, il ne peut pas servir \`{a} 
+d\'ecomposer $C_0^{{\scriptstyle \CC}}$ en deux, 
+pr\'ecis\'ement parce que, dans ce cas $C_0^{{\scriptstyle \CC}}$ est simple 
+! En d'autre termes, lorsque $n$ est impair,
+on ne peut pas \'ecrire un spineur de Dirac comme somme de deux 
+spineurs de Weyl (terminologie pr\'ecis\'ee
+un peu plus bas).
+ 
+\subsection{Type des repr\'esentations}
+On dit qu'une repr\'esentation d'une $K$-alg\`ebre associative $A$ 
+sur le $K$-espace vectoriel $V$ est 
+de {\sl type \/} $F$ si l'ensemble des automorphismes de $V$ qui 
+commutent avec l'action de $A$ est \'egal \`a $F$.
+On d\'emontre que $F=GL_A(V)$ est un corps et que $K$ est un 
+sous-corps de $F$. Lorsque la repr\'esentation est
+irr\'eductible et $K=\RR$, les seules possibilit\'es pour $F$ sont 
+$\RR$, $\CC$ ou $\HH$. Les tables qui 
+pr\'ec\`edent illustrent ce ph\'enom\`ene. En effet, lorsqu'on 
+\'ecrit, par exemple $C(1,3)=M(2,\HH)$, c'est qu'il 
+existe, entre ces deux objets, un isomorphisme d'alg\`ebre 
+associative r\'eelle. En d'autres termes, il existe une
+repr\'esentation fid\`ele $\rho$ de la $\RR$-alg\`ebre $C(1,3)$ sur 
+l'espace vectoriel $\HH^2$ consid\'er\'e
+comme espace vectoriel r\'eel de dimension $8$. Les g\'en\'erateurs 
+$\gamma^\mu$ sont alors repr\'esent\'es par des
+matrices $2\times 2$ not\'ees $\rho(\gamma^\mu)$ \`a coefficients 
+dans $\HH$. Il est \'evident que si $\psi \in \HH^2$ et si
+$k \in \HH$, alors $(\rho(\gamma^\mu)\psi)k=\rho(\gamma^\mu)(\psi 
+k)$, ce qui montre que le commutant de la repr\'esentation $\rho$ est 
+bien \'egal \`a $\HH$ : $\rho$ est de type $\HH$. Bien entendu, si on 
+se donne explicitement la
+repr\'esentation $\rho$ par la donn\'ee de matrices 
+$\rho(\gamma^\mu)$, on peut fabriquer une infinit\'e de
+repr\'esentations \'equivalentes en changeant simplement de base.
+Attention, l'alg\`ebre de Clifford $C(p,q)$ est d\'efinie par des 
+g\'en\'erateurs $\gamma^\mu$ particuliers 
+ob\'eissant aux relations de Clifford, alors que ce n'est pas le cas 
+{\it a priori} pour une alg\`ebre de matrices
+donn\'ee. Il est bon de garder \`a l'esprit la distinction entre ces 
+alg\`ebres de Clifford ``abstraites'' 
+et les alg\`ebres de matrices qui les repr\'esentent fid\`element, 
+alg\`ebres qui sont 
+donn\'ees par les tables pr\'ec\'edentes.
+On parlera cependant abusivement du type de l'alg\`ebre $C(p,q)$.
+
+
+Dans le cas $n$ pair, on voit, en consultant la table, que le type 
+est 
+toujours, soit r\'eel, soit quaternionique.
+
+Dans le cas $n$ impair, les trois types peuvent exister mais 
+on peut noter que si $C(p,q)$ est de type 
+complexe, alors $C(q,p)$ est de type r\'eel ou de type quaternionique 
+(on 
+n'a jamais deux types complexes en m\^eme temps pour des signatures 
+oppos\'ees).
+{\vskip 0.3cm}
+On peut aussi changer de point de vue et partir d'une 
+repr\'esentation complexe de l'alg\`ebre de 
+Clifford $C(n)^{{\scriptstyle \CC}}$ avec $n=p+q$. On veut alors retrouver 
+les repr\'esentations des formes r\'eelles
+$C(p,q)$ \`a partir de celle(s) de $C^{{\scriptstyle \CC}}$
+(cette derni\`ere est d'ailleurs unique, \`a \'equivalence pr\`es, 
+dans le cas pair, puisque l'alg\`ebre est simple). De fa\c con 
+g\'en\'erale, \`a une forme r\'eelle correspond
+une involution (une ``\'etoile'') $*$ qui doit satisfaire aux 
+relations $*(ab)=*(b)*(a)$ et $**=1$. Les \'el\'ements
+``r\'eels'' sont ceux qui sont hermitiens pour cette involution, 
+c'est \`a dire, qui sont tels que $*a=a$. Ainsi, 
+par exemple $M(2,\HH)$ est l'ensemble des \'el\'ements hermitiens de 
+$M(4,\CC)$ pour une \'etoile particuli\`ere.
+
+Au niveau de l'espace vectoriel support d'une repr\'esentation de 
+l'alg\`ebre complexifi\'ee,
+l'existence des trois types de repr\'esentations est li\'ee \`a 
+l'existence, ou non, d'un op\'erateur $c$, appel\'e (en physique 
+surtout) un {\sl op\'erateur de conjugaison de charge\/}, qui est 
+d\'efini comme \index{conjugaison de charge}
+un op\'erateur antilin\'eaire de carr\'e $\pm 1$, commutant avec les 
+g\'en\'erateurs $\gamma^\mu$ de $C^{{\scriptstyle \CC}}$. En d'autres 
+termes $c$ doit 
+\^etre un $C^{{\scriptstyle \CC}}$-isomorphisme de l'espace vectoriel 
+complexe $E_{Dirac}$ 
+sur l'espace vectoriel conjugu\'e ${\overline E_{Dirac}}$ (le m\^eme 
+espace vectoriel muni de la loi externe conjugu\'ee). Il existe trois 
+cas :
+Premier cas : $c$ existe et $c^2=-1$. Dans ce cas le type est 
+quaternionique. L'op\'erateur $c$ (qui n'est pas unique)
+correspond \`a la conjugaison complexe dans le commutant, suivie de 
+la multiplication par un des trois
+g\'en\'erateurs quaternioniques.
+Deuxi\`eme cas :
+ il n'existe pas de conjugaison de carr\'e $-1$ mais il existe une 
+conjugaison $c$ de carr\'e $1$.
+Dans ce cas, le type est r\'eel et $c$ correspond \`a la conjugaison 
+complexe du commutant.
+Troisi\`eme cas : lorsqu'il n'existe pas de conjugaison, le type est 
+complexe.
+
+
+\subsection{Spineurs}
+\begin{description}
+\item[Spineurs de Dirac]
+Les spineurs de Dirac sont les \'el\'ements d'un espace vectoriel 
+complexe $E_{Dirac}$ sur lequel est repr\'esent\'e, de fa\c con 
+irr\'eductible, l'alg\`ebre de Clifford complexifi\'ee $C^{{\scriptstyle 
+\CC}}=C(p,q)^{{\scriptstyle \CC}}$.
+
+
+Si $n=p+q$ est pair, il n'existe qu'une seule repr\'esentation de 
+Dirac, 
+puisque $C^{{\scriptstyle \CC}}$ est simple.
+
+Si $n$ est impair, nous en avons deux, puisque $C^{{\scriptstyle \CC}}$ est 
+somme de deux 
+alg\`ebres simples, mais ces deux repr\'esentations ne sont pas 
+fid\`eles 
+(la somme des deux l'est).
+
+Dans tous les cas,  $E_{Dirac} = \CC^f$ o\`u $f=2^{[n/2]}$, $[n/2]$ 
+d\'esignant la partie enti\`ere de $n/2$. Ceci r\'esulte 
+imm\'ediatement 
+du fait que $dim \, C = 2^n$.
+
+\item[Spineurs de Weyl]
+Si $n$ est pair, la restriction de la repr\'esentation de Dirac \`a 
+la 
+sous alg\`ebre paire $C_0^{{\scriptstyle \CC}}$ devient r\'eductible :  
+$E_{Dirac} =  
+E_{Weyl}^L \oplus  E_{Weyl}^R$. Les spineurs de Weyl gauche et droit 
+sont 
+d\'efinis par 
+$$ E_{Weyl}^L = \{\psi \in E_{Dirac} \, \vert\, ({1 - \gamma_5 \over 
+2}\psi=\psi
+\Leftrightarrow \gamma_5 \psi = -\psi \}$$
+$$ E_{Weyl}^R = \{\psi \in E_{Dirac} \, \vert \, ({1 + \gamma_5 \over 
+2}\psi=\psi
+\Leftrightarrow \gamma_5 \psi = \psi \}$$
+On peut donc toujours d\'ecomposer $\psi \in E_{Dirac} : \psi = 
+\psi_L + 
+\psi_R$ avec $\psi_L = ({1 - \gamma_5 \over 2})\psi$ et $\psi_R =
+({1 + \gamma_5 \over 2})\psi$.
+
+Si $n$ est impair, la restriction de la repr\'esentation de Dirac \`a 
+la 
+sous alg\`ebre $C_0^{{\scriptstyle \CC}}$ reste irr\'eductible puisque 
+$C_0^{{\scriptstyle \CC}}$ est 
+simple. L'op\'erateur $\gamma_5$ ne permet pas de d\'ecomposer un 
+spineur 
+de Dirac (on a d\'ej\`a $\gamma_5 \psi = \pm 1$).
+
+Rappelons que $Pin(p,q)$ et $Spin(p,q)$ (le 
+recouvrement de $SO(p,q)$) sont respectivement obtenus comme 
+sous-ensembles des 
+alg\`ebres $C(p,q)$ et $C_0(p,q)$. Les spineurs de Dirac et de Weyl 
+fournissent \'egalement des repr\'esentations irr\'eductibles des 
+groupes 
+correspondants.
+
+\item[Spineurs de Majorana]
+
+Etant donn\'e une dimension $n$ et un couple d'entiers $(p,q)$ avec 
+$n=p+q$,
+on dit qu'il existe des {\sl spineurs de Majorana\/}
+\index{spineurs de Majorana}
+ si l'{\it une des deux\/} alg\`ebres $C(p,q)$ ou $C(q,p)$ est de
+ type r\'eel. 
+
+
+L'existence de spineurs de Majorana se lit sur les tables 
+pr\'ec\'edentes :
+
+Dans le cas $n$ pair, on a des spineurs de Majorana
+lorsque la signature $(p,q)$ est telle que
+ $p-q = 0, 2 \, \hbox {ou}\,  6 \, \hbox{modulo} \, 8$.
+Exemple: En dimension $4$, lorsque la signature est proprement 
+euclidienne, on n'a pas de spineurs de Majorana.
+Par contre, toujours avec 
+$n=4$, on a des spineurs de Majorana, aussi bien lorsque la signature 
+est 
+hyperbolique (un seul temps) que dans le cas neutre (cas $(2,2)$).
+
+Dans le cas impair, on a des spineurs de Majorana lorsque $p-q = 1 \, 
+\hbox{ou} \, 7 \, 
+\hbox{modulo} \, 8$. Ces repr\'esentations (cas impair) ne sont pas 
+fid\`eles.
+
+Soit $E_{Dirac}$ l'espace des 
+spineurs de Dirac. Dans le cas $n$ pair, il n'y a pas 
+d'ambigu\"\i t\'e. Dans 
+le cas impair, on peut supposer $\epsilon^2=1$ (si ce n'est pas le 
+cas, 
+on remplace $C(p,q)$ par $C(q,p)$). Avec cette derni\`ere hypoth\`ese,
+on peut toujours trouver un op\'erateur antilin\'eaire $c$.
+Lorsque $c^2=1$, on 
+d\'efinit l'espace vectoriel des spineurs de Majorana par
+$$E_{Majorana} = \{\psi \in E_{Dirac}\, \vert \quad c\psi = \psi \}$$
+Il est bien \'evident qu'un op\'erateur pour lequel $c^2=-1$ ne peut 
+pas 
+avoir de vecteurs propres non nuls ($c\psi=\psi$ implique 
+$c^2\psi=-\psi=\psi$).
+
+
+
+\item[Spineurs de Weyl-Majorana]
+Dans le cas o\`u $n$ est pair et o\`u on peut donc parler de spineurs 
+de 
+Weyl, on peut se demander si les deux conditions de Weyl et de 
+Majorana 
+peuvent \^etre compatibles : peut-on avoir des spineurs qui sont \`a 
+la fois
+r\'eels et (par exemple) de chiralit\'e gauche ? Pour cela il faut 
+que 
+$\gamma_5$
+et $c$ commutent. Sachant que $c$ est un op\'erateur antilin\'eaire, 
+il 
+est il est \'evident que $c$ et $\gamma_5$ commutent lorsque 
+$\gamma_5 = 
+\epsilon$ mais anti-commutent lorsque $\gamma_5 = i \epsilon$.
+
+Lorsque $(p-q) = 0 \,\hbox{modulo} \, 8$, $\gamma_5 \, c = c \, 
+\gamma_5$, 
+ on peut donc d\'efinir les {\sl spineurs de Weyl-Majorana\/} de 
+chiralit\'es \index{spineurs de Weyl-Majorana}
+gauche et droite :
+$$ E_{Majorana}^L = \{\psi \in E_{Weyl}^L   \vert \quad c\, 
+\psi=\psi\}$$
+$$ E_{Majorana}^R = \{\psi \in E_{Weyl}^R \vert \quad c \, 
+\psi=\psi\}$$
+On peut alors d\'ecomposer un spineur de Majorana quelconque en une 
+partie
+droite et une partie gauche : $ E_{Majorana} =  E_{Majorana}^L \oplus 
+E_{Majorana}^R$.
+Cela se produit donc, avec une signature proprement euclidienne,
+ lorsque $n=8, 16, 24\ldots$ et,
+avec une signature hyperbolique, lorsque $n=2, 10, 18 \ldots$
+
+Lorsque cette d\'ecomposition est impossible, c'est \`a dire lorsque
+$\gamma_5 \, c = - c \, \gamma_5$, il faut noter que si $\psi \in 
+E_{Weyl}^L$, alors $c(\psi) \in E_{Weyl}^R$
+
+
+\item[Remarques]
+
+Il existe de nombreuses fa\c cons d'\'ecrire les 
+g\'en\'erateurs $\gamma^\mu$ de $C(p,q)$ sous forme matricielle.
+En g\'en\'eral il n'est pas indispensable d'effectuer un choix 
+quelconque 
+pour faire des calculs : la manipulation formelle des g\'en\'erateurs 
+suffit. Si on tient absolument \`a utiliser des matrices, il faut 
+noter que
+l'expression de l'op\'erateur $c$, lorsque ce dernier
+ existe, d\'epend elle aussi de la 
+repr\'esentation choisie. Cet op\'erateur, \'etant antilin\'eaire, 
+s'\'ecrira toujours comme la compos\'ee de la conjugaison complexe, 
+dont 
+la d\'efinition d\'epend de la repr\'esentation, et d'une matrice 
+g\'en\'eralement not\'ee {\it C}, dont l'expression d\'epend aussi de 
+la
+ repr\'esentation choisie.
+
+ 
+
+ En physique des particules, les spineurs d\'ecrivent les particules 
+ \'el\'ementaires fermioniques les plus ``fondamentales'' : celles de 
+ spin $1/2$. Les spineurs de Dirac d\'ecrivent les particules 
+charg\'ees 
+ (type \'electron). L'op\'erateur de conjugaison de charge associe, 
+\`a toute 
+ particule d\'ecrite par le spineur $\psi$, une autre particule 
+ (l'anti-particule de la premi\`ere) d\'ecrite par le spineur 
+$c(\psi)$.
+ Dans le cadre du mod\`ele standard des interactions \'electrofaibles, 
+les 
+ neutrinos sont d\'ecrits par des spineurs de Weyl de chiralit\'e 
+gauche (et les 
+ anti-neutrinos, bien \'evidemment, par des spineurs de Weyl de 
+chiralit\'e  
+ droite). La nature n'est pas invariante par parit\'e : les neutrinos 
+ droits ne semblent pas exister (et, m\^eme s'ils existent, ils ont 
+des 
+ propri\'et\'es tr\`es diff\'erentes de leurs homologues gauches).
+ Rappelons qu'il n'existe pas de spineurs de Weyl-Majorana en 
+dimension $4$ lorsque la
+ signature est euclidienne ou hyperbolique. Il faudrait utiliser une 
+signature $(2,2)\ldots$ !
+ Par ailleurs, bien que les spineurs de Majorana soient 
+math\'ematiquement 
+ disponibles en dimension $(3,1)$,
+ ils n'entrent pas dans la 
+ formulation du mod\`ele standard d\'ecrivant les particules 
+fondamentales connues.
+ 
+ \end{description}
+

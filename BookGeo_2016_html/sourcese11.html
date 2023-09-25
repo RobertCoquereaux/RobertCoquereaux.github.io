@@ -1,0 +1,910 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>Varietes riemanniennes (proprietes elementaires)</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<!-- html,index=2,3,next --> 
+<meta name="src" content="source.tex"> 
+<link rel="stylesheet" type="text/css" href="source.css"> 
+</head><body 
+>
+   <!--l. 2318--><div class="crosslinks"><p class="noindent">[<a 
+href="sourcese12.html" >next</a>] [<a 
+href="sourcese10.html" >prev</a>] [<a 
+href="sourcese10.html#tailsourcese10.html" >prev-tail</a>] [<a 
+href="#tailsourcese11.html">tail</a>] [<a 
+href="sourcech1.html#sourcese11.html" >up</a>] </p></div>
+   <h3 class="sectionHead"><span class="titlemark">1.11   </span> <a 
+ id="x23-450001.11"></a>Variétés riemanniennes (propriétés élémentaires)</h3>
+<!--l. 2320--><p class="noindent" >En toute logique, cette section ne devrait pas se trouver dans ce premier chapitre
+consacré aux variétés différentielles. En effet, la définition de la structure de
+variété riemannienne est liée à un cas particulier de restriction d&#8217;espace fibré (les
+espaces fibrés font l&#8217;objet du chapitre&#x00A0;4). Cela dit, pour des raisons à
+la fois historiques et pédagogiques, il est sans doute préférable que le
+lecteur se familiarise d&#8217;ores et déjà avec certaines propriétés des variétés
+riemanniennes.
+<!--l. 2331--><p class="indent" >   En géométrie élémentaire, on étudie d&#8217;abord les propriétés linéaires et affines
+et on passe, ensuite, aux notions métriques. Il en va de même dans l&#8217;étude des
+variétés. Une variété différentiable est encore un objet flasque et mou. . .&#x00A0;la
+donnée d&#8217;une métrique rigidifie l&#8217;espace considéré et permet, d&#8217;une part, de parler
+de norme des vecteurs tangents et, d&#8217;autre part, de parler de distances entre
+points. La définition élémentaire d&#8217;une métrique <span 
+class="cmmi-12">g</span>, sur une variété différentiable
+<span 
+class="cmmi-12">M</span>, est la suivante<span class="frenchb-nbsp">&#x00A0;</span>: c&#8217;est un champ de tenseurs covariants symétriques
+de degré deux (en général on impose également une condition de non
+dégénérescence). Si <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">x</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmsy-10x-x-120">} </span>désigne un système de coordonnées locales, on
+écrira
+   <center class="math-display" >
+<img 
+src="source140x.png" alt="|-----------------|
+-g =-g&#x03BC;&#x03BD;dx&#x03BC;-&#x2297;-dx&#x03BD;--  " class="math-display" ></center> La
+métrique <span 
+class="cmmi-12">g </span>est quelquefois notée <span 
+class="cmmi-12">ds</span><sup><span 
+class="cmr-8">2</span></sup> = <span 
+class="cmmi-12">g</span><sub>
+<span 
+class="cmmi-8">&#x03BC;&#x03BD;</span></sub><span 
+class="cmmi-12">dx</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmmi-12">dx</span><sup><span 
+class="cmmi-8">&#x03BD;</span></sup> et appelée &#8220;élément de
+longueur&#8221; ou <span 
+class="cmsl-12">tenseur m</span><span 
+class="cmsl-12">étrique</span><a 
+ id="dx23-45001"></a>. Si <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03B1;</span></sup><span 
+class="cmsy-10x-x-120">} </span>est un co-repère mobile, on pourra écrire
+également <span 
+class="cmmi-12">g </span>= <span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">&#x03B1;&#x03B2;</span></sub><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03B1;</span></sup> <span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03B2;</span></sup>. En tout point <span 
+class="cmmi-12">P </span>de <span 
+class="cmmi-12">M </span>on a donc un produit scalaire
+<span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">P</span> </sub> défini sur <span 
+class="cmmi-12">T</span><sub><span 
+class="cmmi-8">P</span> </sub><span 
+class="cmmi-12">M </span>et permettant de calculer le produit scalaire <span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">P</span> </sub>(<span 
+class="cmmi-12">v,w</span>) de deux
+vecteurs quelconques <span 
+class="cmmi-12">v </span>et <span 
+class="cmmi-12">w </span>appartenant à l&#8217;espace tangent en ce point.
+On a déjà dit que <span 
+class="cmmi-12">g </span>devait être symétrique (c&#8217;est-à-dire <span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">&#x03BC;v</span></sub> = <span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">&#x03BD;&#x03BC;</span></sub>, ou
+                                                                          
+
+                                                                          
+<span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">P</span> </sub>(<span 
+class="cmmi-12">v,w</span>) = <span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">P</span> </sub>(<span 
+class="cmmi-12">w,v</span>)). Dans la plupart des cas, on impose également à <span 
+class="cmmi-12">g </span>d&#8217;être non
+dégénérée<span class="frenchb-nbsp">&#x00A0;</span>: le déterminant de la matrice (<span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">&#x03BC;v</span></sub>) est supposé non nul en tout
+point <span 
+class="cmmi-12">P </span>et on peut donc inverser cette matrice. On obtient ainsi (<span 
+class="cmmi-12">g</span><sup><span 
+class="cmmi-8">&#x03BC;&#x03BD;</span></sup>)
+avec <span 
+class="cmmi-12">g</span><sup><span 
+class="cmmi-8">&#x03BC;&#x03BD;</span></sup><span 
+class="cmmi-12">g</span><sub>
+<span 
+class="cmmi-8">&#x03BD;&#x03C1;</span></sub> = <span 
+class="cmmi-12">&#x03B4;</span><sub><span 
+class="cmmi-8">&#x03C1;</span></sub><sup><span 
+class="cmmi-8">&#x03BC;</span></sup>. Cela définit un produit scalaire sur l&#8217;espace cotangent
+qu&#8217;on pourra noter <span 
+class="cmmi-12">&#x266F;g </span>(et quelquefois <span 
+class="cmmi-12">g</span><sup><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sup>) et même parfois <span 
+class="cmmi-12">g </span>s&#8217;il n&#8217;y a pas
+d&#8217;ambiguïté)<span class="frenchb-nbsp">&#x00A0;</span>:
+   <center class="math-display" >
+<img 
+src="source141x.png" alt="|-----------------|
+|g = g&#x03BC;&#x03BD;&#x2202;&#x2202;x&#x03BC; &#x2297; &#x2202;&#x2202;x&#x03BD; |
+------------------
+" class="math-display" ></center>
+<!--l. 2380--><p class="indent" >   Une variété différentiable munie d&#8217;une métrique (non dégénérée) est, par
+définition, une <span 
+class="cmsl-12">vari</span><span 
+class="cmsl-12">ét</span><span 
+class="cmsl-12">é riemannienne</span><a 
+ id="dx23-45002"></a>. Nous n&#8217;avons pas imposé au produit scalaire
+défini par (<span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">&#x03BC;v</span></sub>) d&#8217;être positif et nous ne l&#8217;imposerons pas. En général, une forme
+bilinéaire symétrique est caractérisée par sa signature (<span 
+class="cmmi-12">p,q</span>) &#8211; le nombre de signes
++(<span 
+class="cmmi-12">p</span>) et de signes <span 
+class="cmsy-10x-x-120">-</span>(<span 
+class="cmmi-12">q</span>) obtenus lorsqu&#8217;on la diagonalise. Si on tient à préciser
+que la signature est de type (<span 
+class="cmmi-12">p, </span>0) ou (0<span 
+class="cmmi-12">,p</span>), on dira que la variété est
+proprement riemannienne. Si on tient à préciser que la signature est de type
+(<span 
+class="cmmi-12">p, </span>1) ou (1<span 
+class="cmmi-12">,p</span>), on dira que la variété est lorentzienne (on dit aussi, dans
+ce dernier cas, que la signature est hyperbolique). Les cas riemanniens
+et lorentziens sont particulièrement importants en physique mais nous
+n&#8217;avons pas besoin de nous restreindre à ce cadre pour l&#8217;essentiel de ce qui
+suit.
+<!--l. 2401--><p class="indent" >   <span 
+class="cmsy-10x-x-120">&#x2219; </span>Pour une variété riemannienne (<span 
+class="cmmi-12">M,g</span>) orientée, on peut définir une <span 
+class="cmsl-12">forme de</span>
+<span 
+class="cmsl-12">volume canonique</span> <a 
+ id="dx23-45003"></a> de la façon suivante. Soit <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">e</span><sub><img 
+src="source142x.png" alt="^&#x03B1;"  class="widehat" ></sub><span 
+class="cmsy-10x-x-120">} </span>un repère mobile orthonormal,
+c&#8217;est-à-dire <span 
+class="cmmi-12">g</span>(<span 
+class="cmmi-12">e</span><sub><img 
+src="source143x.png" alt="^&#x03B1;"  class="widehat" ></sub><span 
+class="cmmi-12">,e</span><sub><img 
+src="source144x.png" alt="^&#x03B2;"  class="widehat" ></sub>) = <span 
+class="cmmi-12">&#x03B7;</span><sub><img 
+src="source145x.png" alt="^&#x03B1;"  class="widehat" ><img 
+src="source146x.png" alt="^&#x03B2;"  class="widehat" ></sub>, avec <span 
+class="cmmi-12">&#x03B7;</span><sub><img 
+src="source147x.png" alt="^&#x03B1;"  class="widehat" ><img 
+src="source148x.png" alt="^&#x03B2;"  class="widehat" ></sub> = <span 
+class="cmsy-10x-x-120">±</span><span 
+class="cmmi-12">&#x03B4;</span><sub><img 
+src="source149x.png" alt="^&#x03B1;"  class="widehat" ><img 
+src="source150x.png" alt="^&#x03B2;"  class="widehat" ></sub>, le signe <span 
+class="cmsy-10x-x-120">± </span>dépendant de la signature
+de la métrique. Pour l&#8217;instant nons pouvons supposer que l&#8217;espace est proprement
+riemannien, et orienté, mais à la fin de cette section, nous verrons comment
+compléter les propriétés qui suivent lorsque la signature de la métrique est
+quelconque, et plus particulièrement lorsqu&#8217;elle est hyperbolique. Désignant par
+<span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">e</span><sup><img 
+src="source151x.png" alt="&#x03B1;^"  class="widehat" ></sup><span 
+class="cmsy-10x-x-120">} </span>le co-repère dual du repère mobile choisi, l&#8217;élément de volume riemannien
+est
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source152x.png" alt="|---------------------|
+|&#x03F5; = e^1 &#x2227; e^2 &#x2227; &#x22C5;&#x22C5;&#x22C5; &#x2227; e^n
+----------------------
+" class="math-display" ></center>
+<!--l. 2421--><p class="indent" >   Soit <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">&#x03C3;</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub><span 
+class="cmsy-10x-x-120">} </span>un autre repère, non nécessairement orthonormal, et &#x039B;<sub><span 
+class="cmmi-8">&#x03B1;</span></sub><sup><img 
+src="source153x.png" alt="^&#x03B1;"  class="widehat" ></sup> la
+matrice de passage, c&#8217;est-à-dire <span 
+class="cmmi-12">&#x03C3;</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub> = &#x039B;<sub><span 
+class="cmmi-8">&#x03B1;</span></sub><sup><img 
+src="source154x.png" alt="^&#x03B1;"  class="widehat" ></sup><span 
+class="cmmi-12">e</span><sub><img 
+src="source155x.png" alt="^&#x03B1;"  class="widehat" ></sub>. Alors <span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">&#x03B1;&#x03B2;</span></sub> = &#x039B;<sub><span 
+class="cmmi-8">&#x03B1;</span></sub><sup><img 
+src="source156x.png" alt="^&#x03B1;"  class="widehat" ></sup><span style="margin-left:0.3em" class="thinspace"></span>&#x039B;<sub>
+<span 
+class="cmmi-8">&#x03B2;</span></sub><sup><img 
+src="source157x.png" alt="^&#x03B2;"  class="widehat" ></sup><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">g</span><sub><img 
+src="source158x.png" alt="^&#x03B1;"  class="widehat" ><img 
+src="source159x.png" alt="&#x03B2;^"  class="widehat" ></sub>, ce qui
+implique
+   <center class="math-display" >
+<img 
+src="source160x.png" alt="det(g&#x03B1;&#x03B2;) = [det(&#x039B;^&#x03B1;)]2det(g  ^) et donc det (&#x039B; ^&#x03B1;) = |detg&#x03B1;&#x03B2;-|1&#x2215;2
+                 &#x03B1;        ^&#x03B1;&#x03B2;                &#x03B1;     detg^&#x03B1;&#x03B2;^   " class="math-display" ></center>
+mais <span 
+class="cmsy-10x-x-120">|</span> det(<span 
+class="cmmi-12">g</span><sub><img 
+src="source161x.png" alt="^&#x03B1;"  class="widehat" ><img 
+src="source162x.png" alt="^
+&#x03B2;"  class="widehat" ></sub>)<span 
+class="cmsy-10x-x-120">| </span>= 1 puisqu&#8217;on a supposé la base <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">e</span><sub><img 
+src="source163x.png" alt="^&#x03B1;"  class="widehat" ></sub><span 
+class="cmsy-10x-x-120">} </span>orthonormale et
+donc
+   <center class="math-display" >
+<img 
+src="source164x.png" alt="det(&#x039B;^&#x03B1;) = |det(g  )|1&#x2215;2 = [det((&#x039B; -1)&#x03B1;)]-1
+     &#x03B1;          &#x03B1;&#x03B2;                  ^&#x03B1;   " class="math-display" ></center> Or
+<div class="eqnarray">
+   <center class="math-display" >
+<img 
+src="source165x.png" alt="     ^1   ^2         ^n     ^1  ^2      ^n  &#x03B1;1    &#x03B1;2         &#x03B1;n
+&#x03F5; = e &#x2227; e  &#x2227; &#x22C5;&#x22C5;&#x22C5; &#x2227; e = &#x039B; &#x03B1;1&#x039B;&#x03B1;2 ...&#x039B; &#x03B1;n&#x03C3;  &#x2227; &#x03C3;   &#x2227; &#x22C5;&#x22C5;&#x22C5; &#x2227; &#x03C3;
+         ^&#x03B1;    1    2         n
+&#x03F5; = d&#x2218;et(&#x039B;&#x03B1;)-&#x22C5; &#x03C3;-&#x2227; &#x03C3;  &#x2227; &#x22C5;&#x22C5;&#x22C5; &#x2227; &#x03C3;
+                 1    2         n            &#x03B1;1    &#x03B1;2         &#x03B1;n
+&#x03F5; =   |det(g&#x03B1;&#x03B2;)|&#x03C3;  &#x2227; &#x03C3; &#x2227; &#x22C5;&#x22C5;&#x22C5; &#x2227; &#x03C3;  = &#x03F5;&#x03B1;1&#x03B1;2...&#x03B1;n&#x03C3;   &#x2227; &#x03C3;   &#x2227; &#x22C5;&#x22C5;&#x22C5; &#x2227; &#x03C3;
+" class="math-display" ></center>
+</div>Ainsi <span class="footnote-mark"><a 
+href="source24.html#fn2x2"><sup class="textsuperscript">2</sup></a></span><a 
+ id="x23-45005f2"></a> 
+   <center class="math-display" >
+<img 
+src="source166x.png" alt="|-------------------------------|
+|          &#x2218;  ---------- 12...n   |
+&#x03F5;&#x03B1;1&#x03B1;2...&#x03B1;n-=----|det(g&#x03B1;&#x03B2;)|&#x03B4;&#x03B1;1&#x03B1;2...&#x03B1;n--  " class="math-display" ></center> où
+le symbole <span 
+class="cmmi-12">&#x03B4;</span><sub><span 
+class="cmmi-8">&#x03B1;</span><sub><span 
+class="cmr-6">1</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-8">&#x03B1;</span><sub><span 
+class="cmr-6">2</span></sub><span 
+class="cmmi-8">&#x2026;</span><span 
+class="cmmi-8">&#x03B1;</span><sub><span 
+class="cmmi-6">n</span></sub></sub><sup><span 
+class="cmr-8">12</span><span 
+class="cmmi-8">&#x2026;</span><span 
+class="cmmi-8">n</span></sup> désigne <span 
+class="cmsy-10x-x-120">± </span>suivant que <span 
+class="cmmi-12">&#x03B1;</span><sub>
+<span 
+class="cmr-8">1</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03B1;</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">&#x03B1;</span><sub><span 
+class="cmmi-8">n</span></sub> est une permutation paire
+ou impaire de 1<span 
+class="cmmi-12">, </span>2<span 
+class="cmmi-12">, </span>3<span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">n </span>et il est égal à zéro dans les autres cas.
+<!--l. 2499--><p class="indent" >   En particulier, si <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">&#x03C3;</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub><span 
+class="cmsy-10x-x-120">} </span>désigne un repère naturel <span class="bbig"><img 
+src="source167x.png" alt="{"  class="left" align="middle"></span> <span 
+class="cmmi-8">&#x2202;</span> __
+<span 
+class="cmmi-8">&#x2202;x</span><sup><span 
+class="cmmi-6">&#x03BC;</span></sup><span class="bbig"><img 
+src="source168x.png" alt="}"  class="left" align="middle"></span>, on a <span 
+class="cmmi-12">g </span>= <span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">&#x03BC;&#x03BD;</span></sub><span 
+class="cmmi-12">dx</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> <span 
+class="cmsy-10x-x-120">&#x2227;</span><span 
+class="cmmi-12">dx</span><sup><span 
+class="cmmi-8">&#x03BD;</span></sup>
+et
+   <center class="math-display" >
+<img 
+src="source169x.png" alt="|----&#x2218;-------------1----------n-|
+-&#x03F5; =---|det(g&#x03BC;v)|dx-&#x2227;-&#x22C5;&#x22C5;&#x22C5;-&#x2227;-dx--|  " class="math-display" ></center>
+Notons également que, dans un repère orthonormé, la racine carrée précédente
+vaut 1 et donc <span class="fbox"><span 
+class="cmmi-12">&#x03F5;</span><sub><span 
+class="cmmi-8">&#x03B1;</span><sub><span 
+class="cmr-6">1</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-8">&#x03B1;</span><sub><span 
+class="cmr-6">2</span></sub><span 
+class="cmmi-8">&#x2026;</span><span 
+class="cmmi-8">&#x03B1;</span><sub><span 
+class="cmmi-6">n</span></sub></sub> = <span 
+class="cmmi-12">&#x03B4;</span><sub><span 
+class="cmmi-8">&#x03B1;</span><sub><span 
+class="cmr-6">1</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-8">&#x03B1;</span><sub><span 
+class="cmr-6">2</span></sub><span 
+class="cmmi-8">&#x2026;</span><span 
+class="cmmi-8">&#x03B1;</span><sub><span 
+class="cmmi-6">n</span></sub></sub><sup><span 
+class="cmr-8">12</span><span 
+class="cmmi-8">&#x2026;</span><span 
+class="cmmi-8">n</span></sup></span> En particulier <span 
+class="cmmi-12">&#x03F5;</span><sub>
+<span 
+class="cmr-8">12</span><span 
+class="cmmi-8">&#x2026;</span><span 
+class="cmmi-8">n</span></sub> = 1.
+                                                                          
+
+                                                                          
+<!--l. 2515--><p class="indent" >   <span 
+class="cmsy-10x-x-120">&#x2219; </span>La métrique <span 
+class="cmmi-12">g </span>permet également d&#8217;établir un isomorphisme canonique entre
+l&#8217;espace tangent <span 
+class="cmmi-12">TM </span>et l&#8217;espace cotangent <span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M</span>. Cette propriété est évidente
+puisqu&#8217;en chaque point, l&#8217;existence d&#8217;un produit scalaire permet d&#8217;identifier les
+espaces vectoriels <span 
+class="cmmi-12">T</span><sub><span 
+class="cmmi-8">P</span> </sub><span 
+class="cmmi-12">M </span>avec <span 
+class="cmmi-12">T</span><sub><span 
+class="cmmi-8">P</span> </sub><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M</span>. En d&#8217;autres termes, on peut &#8220;monter&#8221; et
+&#8220;descendre&#8221; les indices à l&#8217;aide de la métrique<span class="frenchb-nbsp">&#x00A0;</span>: au vecteur <span 
+class="cmmi-12">v </span>= <span 
+class="cmmi-12">v</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmmi-12">e</span><sub>
+<span 
+class="cmmi-8">&#x03BC;</span></sub> on associe
+la 1-forme <sup><span 
+class="cmmi-8">b</span></sup><span 
+class="cmmi-12">v </span>= <span 
+class="cmmi-12">v</span><sub>
+<span 
+class="cmmi-8">&#x03BC;</span></sub><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> définie par <span class="fbox"><span 
+class="cmmi-12">v</span><sub>
+<span 
+class="cmmi-8">&#x03BC;</span></sub> = <span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">&#x03BC;&#x03BD;</span></sub><span 
+class="cmmi-12">v</span><sup><span 
+class="cmmi-8">&#x03BD;</span></sup></span> ( <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmsy-10x-x-120">} </span>désignant la base duale de
+<span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub><span 
+class="cmsy-10x-x-120">}</span>). Inversement, à la 1-forme <span 
+class="cmmi-12">&#x03C3; </span>= <span 
+class="cmmi-12">&#x03C3;</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> on associe le vecteur <span 
+class="cmmi-12">&#x266F;&#x03C3; </span>= <span 
+class="cmmi-12">&#x03C3;</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmmi-12">e</span><sub>
+<span 
+class="cmmi-8">&#x03BC;</span></sub> avec
+<span class="fbox"><span 
+class="cmmi-12">&#x03C3;</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> = <span 
+class="cmmi-12">g</span><sup><span 
+class="cmmi-8">&#x03BC;v</span></sup><span 
+class="cmmi-12">&#x03C3;</span><sub>
+<span 
+class="cmmi-8">&#x03BD;</span></sub></span>. On peut écrire <span 
+class="cmsy-10x-x-120">&#x27E8;</span><sup><span 
+class="cmmi-8">b</span></sup><span 
+class="cmmi-12">v</span><sub>
+<span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">,v</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmsy-10x-x-120">&#x27E9; </span>= <span 
+class="cmmi-12">g</span>(<span 
+class="cmmi-12">v</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">,v</span><sub><span 
+class="cmr-8">2</span></sub>) et <span 
+class="cmsy-10x-x-120">&#x27E8;</span><span 
+class="cmmi-12">&#x03C3;,</span><span 
+class="cmmi-12">&#x00A0;,&#x266F;&#x03C3;</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmsy-10x-x-120">&#x27E9; </span>= (<span 
+class="cmmi-12">&#x03C3;</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">,&#x03C3;</span><sub><span 
+class="cmr-8">2</span></sub>). Les
+isomorphismes <span 
+class="cmmi-12">&#x266D; </span>et <span 
+class="cmmi-12">&#x266F; </span>sont appelés <span 
+class="cmsl-12">isomorphismes musicaux </span>(pour des raisons
+évidentes<span class="frenchb-thinspace">&#x00A0;</span>!)<a 
+ id="dx23-45006"></a>.Cela dit, les physiciens choisissent en général une métrique une fois
+pour toutes et décident donc de passer sous silence ces isomorphismes musicaux.
+En d&#8217;autres termes, ils identifient <span 
+class="cmmi-12">v </span>et <span 
+class="cmmi-12">&#x266D;v </span>ainsi que <span 
+class="cmmi-12">&#x03C3; </span>et <span 
+class="cmmi-12">&#x266F;&#x03C3; </span>et écrivent tout
+simplement <span 
+class="cmmi-12">v </span>= <span 
+class="cmmi-12">v</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmmi-12">e</span><sub>
+<span 
+class="cmmi-8">&#x03BC;</span></sub> = <span 
+class="cmmi-12">v</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> ou <span 
+class="cmmi-12">&#x03C3; </span>= <span 
+class="cmmi-12">&#x03C3;</span><sub>
+<span 
+class="cmmi-8">&#x03BC;</span></sub><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> = <span 
+class="cmmi-12">&#x03C3;</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmmi-12">e</span><sub>
+<span 
+class="cmmi-8">&#x03BC;</span></sub>. Pour des raisons analogues
+ils écrivent <span 
+class="cmmi-12">g </span>= <span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">&#x03BC;v</span></sub><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> <span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BD;</span></sup> = <span 
+class="cmmi-12">g</span><sup><span 
+class="cmmi-8">&#x03BC;v</span></sup><span 
+class="cmmi-12">e</span><sub>
+<span 
+class="cmmi-8">&#x03BC;</span></sub> <span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">v</span></sub> (mais il faut bien entendu se
+rappeler que (<span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">&#x03BC;v</span></sub>) est la matrice inverse de (<span 
+class="cmmi-12">g</span><sup><span 
+class="cmmi-8">&#x03BC;v</span></sup>). Les isomorphismes
+musicaux permettent, de la même façon, d&#8217;identifier les tenseurs covariants
+et contravariants de même rang&#x00A0;. Attention, lorsqu&#8217;on n&#8217;utilise pas de
+métrique pour monter ou baisser les indices, il n&#8217;y a pas de raison de faire
+attention à la position relative des indices covariants et contravariants (par
+exemple, on peut parler de <span 
+class="cmmi-12">T</span><sub><span 
+class="cmmi-8">&#x03BD;&#x03C1;</span></sub><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> sans dire s&#8217;il s&#8217;agit de <span 
+class="cmmi-12">T</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><sub>
+<span 
+class="cmmi-8">&#x03BD;&#x03C1;</span></sub>, de <span 
+class="cmmi-12">T</span><sub><span 
+class="cmmi-8">&#x03BD;&#x03C1;</span></sub><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> ou de
+<span 
+class="cmmi-12">T</span><sub><span 
+class="cmmi-8">&#x03BD;</span></sub><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><sub>
+<span 
+class="cmmi-8">&#x03C1;</span></sub>). Les trois types de composantes correspondent d&#8217;ailleurs à des objets
+différents puisque on travaille, suivant les cas, dans <span 
+class="cmmi-12">TM </span><span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M </span><span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M</span>,
+<span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M </span><span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M </span><span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">TM </span>ou <span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M </span><span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">TM </span><span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M</span>. Par contre, si on utilise la métrique
+pour procéder à des identifications, il faut faire attention aux positions
+relatives des indices haut et bas<span class="frenchb-thinspace">&#x00A0;</span>! Ainsi, par exemple, <span 
+class="cmmi-12">T</span><sub><span 
+class="cmmi-8">&#x03BC;&#x03BD;&#x03C1;</span></sub> désignera
+<span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">&#x03BC;&#x03BC;</span><span 
+class="cmsy-8">&#x2032;</span></sub><span 
+class="cmmi-12">T</span><sup><span 
+class="cmmi-8">&#x03BC;</span><span 
+class="cmsy-8">&#x2032;</span></sup><sub>
+<span 
+class="cmmi-8">&#x03BD;&#x03C1;</span></sub>. Tout ceci est assez trivial, mais peut être fallait-il le dire une
+fois<span class="frenchb-thinspace">&#x00A0;</span>?
+<!--l. 2570--><p class="indent" >   <span 
+class="cmti-12">Lorsqu&#8217;on a choisi une m</span><span 
+class="cmti-12">étrique</span>, on écrira donc abusivement (sans utiliser la notation
+<span 
+class="cmmi-12">&#x266D; </span>et <span 
+class="cmmi-12">&#x266F;</span>), par exemple <span 
+class="cmmi-12">T </span>= <span 
+class="cmmi-12">T</span><sub><span 
+class="cmmi-8">&#x03BC;v&#x03C1;</span></sub><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> <span 
+class="cmsy-10x-x-120">&#x2297;</span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">v</span></sup> <span 
+class="cmsy-10x-x-120">&#x2297;</span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03C1;</span></sup> = <span 
+class="cmmi-12">T</span><sub>
+<span 
+class="cmmi-8">&#x03BC;</span></sub><sup><span 
+class="cmmi-8">&#x03BD;&#x03C1;</span></sup><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> <span 
+class="cmsy-10x-x-120">&#x2297;</span><span 
+class="cmmi-12">e</span><sub>
+<span 
+class="cmmi-8">v</span></sub> <span 
+class="cmsy-10x-x-120">&#x2297;</span><span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03C1;</span></sub> = <span 
+class="cmmi-12">T</span><sup><span 
+class="cmmi-8">&#x03BC;v&#x03C1;</span></sup><span 
+class="cmmi-12">e</span><sub>
+<span 
+class="cmmi-8">&#x03BC;</span></sub> <span 
+class="cmsy-10x-x-120">&#x2297;</span><span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">v</span></sub> <span 
+class="cmsy-10x-x-120">&#x2297;</span><span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03C1;</span></sub> = <span 
+class="cmmi-12">&#x2026;</span><span style="margin-left:0.3em" class="thinspace"></span>
+<!--l. 2579--><p class="indent" >   Les isomorphismes musicaux sont quelquefois simplement désignés par
+le même symbole <span 
+class="cmmi-12">g </span>que la métrique elle même, le nombre d&#8217;arguments
+permettant de décider si on parle des isomorphismes en question ou de la
+métrique. Par exemple, on peut noter <span 
+class="cmmi-12">g</span>(<span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub>) = <span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">&#x03BC;v</span></sub><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BD;</span></sup> et <span 
+class="cmmi-12">g</span>(<span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup>) = <span 
+class="cmmi-12">g</span><sup><span 
+class="cmmi-8">&#x03BC;v</span></sup><span 
+class="cmmi-12">e</span><sub>
+<span 
+class="cmmi-8">&#x03BD;</span></sub>.
+Ceci est en accord avec les notations précédentes puisque par exemple
+<span 
+class="cmmi-12">g</span>(<span 
+class="cmmi-12">v</span>) = <span 
+class="cmmi-12">g</span>(<span 
+class="cmmi-12">v</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmmi-12">e</span><sub>
+<span 
+class="cmmi-8">&#x03BC;</span></sub>) = <span 
+class="cmmi-12">v</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmmi-12">g</span>(<span 
+class="cmmi-12">e</span><sub>
+<span 
+class="cmmi-8">&#x03BC;</span></sub>) = <span 
+class="cmmi-12">v</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmmi-12">g</span><sub>
+<span 
+class="cmmi-8">&#x03BC;v</span></sub><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BD;</span></sup> = <span 
+class="cmmi-12">v</span><sub>
+<span 
+class="cmmi-8">v</span></sub><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BD;</span></sup>.
+<!--l. 2590--><p class="indent" >   Avec ces notations, nous avons alors <span 
+class="cmmi-12">g</span>(<span 
+class="cmmi-12">v,w</span>) = <span 
+class="cmsy-10x-x-120">&#x27E8;</span><span 
+class="cmmi-12">g</span>(<span 
+class="cmmi-12">v</span>)<span 
+class="cmmi-12">,w</span><span 
+class="cmsy-10x-x-120">&#x27E9; </span>= <span 
+class="cmsy-10x-x-120">&#x27E8;</span><span 
+class="cmmi-12">g</span>(<span 
+class="cmmi-12">w</span>)<span 
+class="cmmi-12">,v</span><span 
+class="cmsy-10x-x-120">&#x27E9; </span>= <span 
+class="cmmi-12">g</span>(<span 
+class="cmmi-12">w,v</span>).
+<!--l. 2595--><p class="indent" >   <span 
+class="cmsy-10x-x-120">&#x2219; </span>L&#8217;existence d&#8217;une métrique permet non seulement de calculer le produit
+scalaire de deux vecteurs (ou de deux 1-formes) mais de contracter n&#8217;importe quel
+tenseur d&#8217;ordre <span 
+class="cmmi-12">k </span>covariant, contravariant ou partiellement covariant et
+contravariant avec n&#8217;importe quel autre tenseur d&#8217;ordre <span 
+class="cmmi-12">k</span>. On utilisera encore la
+                                                                          
+
+                                                                          
+notation <span 
+class="cmsy-10x-x-120">&#x27E8;</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmsy-10x-x-120">|</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmsy-10x-x-120">&#x27E9; </span>pour écrire ces contractions de type assez général. Plutôt que
+de décrire les différents cas, il suffit de dire, en termes imagés, qu&#8217;on
+&#8220;monte&#8221; tous les indices du premier à l&#8217;aide de la métrique, qu&#8217;on &#8220;descend&#8221;
+tous les indices du second et qu&#8217;on contracte complètement les objets
+obtenus. Par exemple, si <span 
+class="cmmi-12">S </span>= <span 
+class="cmmi-12">S</span><sub><span 
+class="cmmi-8">&#x03BC;&#x03BD;</span></sub><sup><span 
+class="cmmi-8">&#x03C1;</span></sup><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> <span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BD;</span></sup> <span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">e</span><sub>
+<span 
+class="cmmi-8">&#x03C1;</span></sub> et <span 
+class="cmmi-12">T </span>= <span 
+class="cmmi-12">T</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub><sup><span 
+class="cmmi-8">&#x03BD;&#x03C1;</span></sup><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> <span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">e</span><sub>
+<span 
+class="cmmi-8">&#x03BD;</span></sub> <span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03C1;</span></sub>
+on fabrique <span 
+class="cmmi-12">S</span><sub><span 
+class="cmmi-8">&#x03BC;v&#x03C1;</span><span 
+class="cmsy-8">&#x2032;</span></sub> = <span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">&#x03C1;</span><span 
+class="cmsy-8">&#x2032;</span><span 
+class="cmmi-8">&#x03C1;</span></sub><span 
+class="cmmi-12">S</span><sub><span 
+class="cmmi-8">&#x03BC;v</span></sub><sup><span 
+class="cmmi-8">&#x03C1;</span></sup> et <span 
+class="cmmi-12">T</span><sup><span 
+class="cmmi-8">&#x03BC;</span><span 
+class="cmsy-8">&#x2032;</span><span 
+class="cmmi-8">&#x03BD;&#x03C1;</span></sup> = <span 
+class="cmmi-12">g</span><sup><span 
+class="cmmi-8">&#x03BC;</span><span 
+class="cmsy-8">&#x2032;</span><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmmi-12">T</span><sub>
+<span 
+class="cmmi-8">&#x03BC;</span></sub><sup><span 
+class="cmmi-8">&#x03BD;&#x03C1;</span></sup>. On peut alors calculer
+<span 
+class="cmsy-10x-x-120">&#x27E8;</span><span 
+class="cmmi-12">S,T</span><span 
+class="cmsy-10x-x-120">&#x27E9; </span>= <span 
+class="cmmi-12">S</span><sup><span 
+class="cmmi-8">&#x03BC;&#x03BD;&#x03C1;</span></sup><span 
+class="cmmi-12">T</span><sub>
+<span 
+class="cmmi-8">&#x03BC;&#x03BD;&#x03C1;</span></sub>. En particulier, si <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">&#x03C6;</span><sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmmi-12">,&#x03C6;</span><sup><span 
+class="cmr-8">2</span></sup><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,&#x03C6;</span><sup><span 
+class="cmmi-8">k</span></sup><span 
+class="cmsy-10x-x-120">} </span>désignent une famille de
+1-formes et <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">&#x03C8;</span><sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmmi-12">,&#x03C8;</span><sup><span 
+class="cmr-8">2</span></sup><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,&#x03C8;</span><sup><span 
+class="cmmi-8">k</span></sup><span 
+class="cmsy-10x-x-120">} </span>en désigne une autre, on peut vérifier que cette
+définition conduit à
+   <center class="math-display" >
+<img 
+src="source170x.png" alt="  1    2         k    1    2         k            i   i
+&#x27E8;&#x03C6;  &#x2227; &#x03C6;  &#x2227; &#x22C5;&#x22C5;&#x22C5; &#x2227; &#x03C6; , &#x03C8; &#x2227; &#x03C8;  &#x2227; &#x22C5;&#x22C5;&#x22C5; &#x2227; &#x03C8; &#x27E9; = k!det(&#x27E8;&#x03C6; ,&#x03C8; &#x27E9;)  " class="math-display" ></center>
+Dans le sous-cas particulier où ces deux familles coïncident et où on suppose la
+famille <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">&#x03C6;</span><sup><span 
+class="cmmi-8">k</span></sup><span 
+class="cmsy-10x-x-120">} </span>orthonormée, il vient
+   <center class="math-display" >
+<img 
+src="source171x.png" alt="&#x27E8;&#x03C6; &#x03BC;1 &#x2227; &#x22C5;&#x22C5;&#x22C5; &#x2227; &#x03C6;&#x03BC;k, &#x03C6;&#x03BD;1 &#x2227; &#x22C5;&#x22C5;&#x22C5; &#x2227; &#x03C6;&#x03BD;k&#x27E9; = k!&#x03B4;&#x03BC;&#x03BD;1&#x03BC;&#x03BD;2......&#x03BD;&#x03BC;k
+                                      1 2  k
+" class="math-display" ></center>
+<!--l. 2639--><p class="indent" >   <span 
+class="cmsy-10x-x-120">&#x2219; </span>Lorsque la signature de la métrique n&#8217;est pas proprement riemannienne, c&#8217;est
+à dire lorsqu&#8217;elle est de type (<span 
+class="cmmi-12">p,q</span>), il faut supposer que la variété admet une
+orientation temporelle et qu&#8217;elle est temporellement orientée. Dans le
+cas usuel de l&#8217;espace-temps de la physique (signature (3<span 
+class="cmmi-12">, </span>1)), on utilisera
+des indices 0<span 
+class="cmmi-12">, </span>1<span 
+class="cmmi-12">, </span>2<span 
+class="cmmi-12">, </span>3, comme c&#8217;est l&#8217;usage, plutôt que 1<span 
+class="cmmi-12">, </span>2<span 
+class="cmmi-12">, </span>3<span 
+class="cmmi-12">, </span>4<span class="frenchb-thinspace">&#x00A0;</span>; on posera
+alors
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source172x.png" alt="&#x03F5; = e^0 &#x2227; e^1 &#x2227; e^2 &#x2227; e^3   " class="math-display" ></center> La
+différence avec le cas proprement euclidien vient du fait qu&#8217;il faut faire attention
+aux signes lorsqu&#8217;on &#8220;monte&#8221; les indices. Par ailleurs, <span 
+class="cmmi-12">det</span>(<span 
+class="cmmi-12">g</span><sub><img 
+src="source173x.png" alt="^&#x03B1;"  class="widehat" ><img 
+src="source174x.png" alt="^&#x03B2;"  class="widehat" ></sub>) = (<span 
+class="cmsy-10x-x-120">-</span>1)<sup><span 
+class="cmmi-8">q</span></sup>.
+Les formules précédentes restent donc valables et on aura toujours, par
+exemple,
+   <center class="math-display" >
+<img 
+src="source175x.png" alt="&#x03F5;^0^1^2^3 = 1  " class="math-display" ></center>
+mais par contre
+   <center class="math-display" >
+<img 
+src="source176x.png" alt=" ^0^1^2^3
+&#x03F5;    = - 1  " class="math-display" ></center>
+Plus généralement, nous avons vu que <span 
+class="cmmi-12">&#x03F5;</span><sub><span 
+class="cmmi-8">&#x03B1;</span><sub><span 
+class="cmr-6">1</span></sub><span 
+class="cmmi-8">&#x03B1;</span><sub><span 
+class="cmr-6">2</span></sub><span 
+class="cmmi-8">&#x2026;</span><span 
+class="cmmi-8">&#x03B1;</span><sub><span 
+class="cmmi-6">n</span></sub></sub> = <img 
+src="source177x.png" alt="&#x2218; ---------
+  |det g&#x03B1;&#x03B2;|"  class="sqrt" ><span style="margin-left:2.6108pt" class="tmspace"></span><span 
+class="cmmi-12">&#x03B4;</span><sub><span 
+class="cmmi-8">&#x03B1;</span><sub><span 
+class="cmr-6">1</span></sub><span 
+class="cmmi-8">&#x03B1;</span><sub><span 
+class="cmr-6">2</span></sub><span 
+class="cmmi-8">&#x2026;</span><span 
+class="cmmi-8">&#x03B1;</span><sub><span 
+class="cmmi-6">n</span></sub></sub><sup><span 
+class="cmr-8">12</span><span 
+class="cmmi-8">&#x2026;</span><span 
+class="cmmi-8">n</span></sup>, mais si
+on &#8220;monte&#8221; ces indices (à l&#8217;aide de la métrique) le résultat va dépendre de la
+signature, plus particulièrement du nombre <span 
+class="cmmi-12">q </span>de signes &#8220;<span 
+class="cmsy-10x-x-120">-</span>&#8221; dans la métrique. On
+obtient donc
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source178x.png" alt="                   q
+ &#x03B1;1&#x03B1;2...&#x03B1;n   ---(--1)----&#x03B1;1&#x03B1;2...&#x03B1;n        q&#x2218; ------&#x03B1;&#x03B2;- &#x03B1;1&#x03B1;2...&#x03B1;n
+&#x03F5;        = &#x2218;  |detg&#x03B1;&#x03B2;|&#x03B4;12...n    = (- 1)   |det g  |&#x03B4;12...n  " class="math-display" ></center>
+Citons quelques contractions utiles<span class="frenchb-nbsp">&#x00A0;</span>:
+   <center class="math-display" >
+<img 
+src="source179x.png" alt="  &#x03B1;1...&#x03B1;p&#x03BC;1...&#x03BC;q   &#x03B1;1...&#x03B1;p&#x03B2;1...&#x03B2;q &#x03BC;1...&#x03BC;q
+q!&#x03B4;&#x03B3;1...&#x03B3;p+q    = &#x03B4;&#x03B3;1...&#x03B3;p+q   &#x03B4;&#x03B2;1...&#x03B2;q   " class="math-display" ></center>
+Lorsque la variété est lorentzienne, avec une signature de type (3<span 
+class="cmmi-12">, </span>1), on obtient
+en particulier
+   <center class="math-display" >
+<img 
+src="source180x.png" alt="&#x03B4;&#x03B1;&#x03B2;&#x03B3; = - &#x03F5;&#x03B1;&#x03B2;&#x03B3;&#x03C1;&#x03F5;
+ &#x03BC;&#x03BD;&#x03BB;          &#x03BC;&#x03BD;&#x03BB;&#x03C1;
+" class="math-display" ></center>
+<!--l. 2678--><p class="indent" >
+   <center class="math-display" >
+<img 
+src="source181x.png" alt="       1         1
+&#x03B4;&#x03B1;&#x03BC;&#x03B2;&#x03BD; =  -&#x03B4;&#x03B1;&#x03BC;&#x03B2;&#x03BD;&#x03B3;&#x03B3; = - -&#x03F5;&#x03B1;&#x03B2;&#x03BB;&#x03C1;&#x03F5;&#x03BC;&#x03BD;&#x03BB;&#x03C1;
+       2         2
+" class="math-display" ></center>
+<!--l. 2682--><p class="indent" >
+   <center class="math-display" >
+<img 
+src="source182x.png" alt=" &#x03B1;   1- &#x03B1;&#x03B2;   1-&#x03B1;&#x03B2;&#x03BB;     1- &#x03B1;&#x03B2;&#x03BB;&#x03C1;
+&#x03B4;&#x03BC; = 3 &#x03B4;&#x03BC;&#x03B2; =  6&#x03B4;&#x03BC;&#x03B2;&#x03BB; = - 6 &#x03F5;    &#x03F5;&#x03BC;&#x03B2;&#x03BB;&#x03C1;
+" class="math-display" ></center>
+<!--l. 2691--><p class="indent" >   <span 
+class="cmsy-10x-x-120">&#x2219; </span>Pour terminer, notons que l&#8217;existence d&#8217;une métrique permet d&#8217;associer à la
+différentielle <span 
+class="cmmi-12">df </span>d&#8217;une fonction <span 
+class="cmmi-12">f</span>, un champ de vecteurs, le <span 
+class="cmsl-12">gradient</span><a 
+ id="dx23-45007"></a> de <span 
+class="cmmi-12">f </span>défini
+par <span 
+class="cmmi-12">grad</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">f </span>= <span 
+class="cmmi-12">&#x266F;df</span>. Ainsi, dans un repère naturel, on écrira
+   <center class="math-display" >
+<img 
+src="source183x.png" alt="gradf  = g&#x03BC;&#x03BD;(-&#x2202;f-)-&#x2202;--
+             &#x2202;x &#x03BC; &#x2202;x &#x03BD;
+" class="math-display" ></center>
+<!--l. 2701--><p class="indent" >   Encore une fois, la présente section consacrée aux variétés riemanniennes n&#8217;est
+destinée qu&#8217;à introduire certaines notations utiles et quelques notions
+élémentaires. Nous reviendrons plus en détail sur les variétés riemanniennes à la
+fin du chapitre consacré aux connexions.
+                                                                          
+
+                                                                          
+   <!--l. 2708--><div class="crosslinks"><p class="noindent">[<a 
+href="sourcese12.html" >next</a>] [<a 
+href="sourcese10.html" >prev</a>] [<a 
+href="sourcese10.html#tailsourcese10.html" >prev-tail</a>] [<a 
+href="sourcese11.html" >front</a>] [<a 
+href="sourcech1.html#sourcese11.html" >up</a>] </p></div>
+<!--l. 2708--><p class="indent" >   <a 
+ id="tailsourcese11.html"></a>  
+</body></html> 

@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>2 Groupes de Lie et espaces homog`enes</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<!-- html,index=2,3,next --> 
+<meta name="src" content="source.tex"> 
+<link rel="stylesheet" type="text/css" href="source.css"> 
+</head><body 
+>
+   <!--l. 2--><div class="crosslinks"><p class="noindent">[<a 
+href="sourcese13.html" >next</a>] [<a 
+href="sourcese12.html" >prev</a>] [<a 
+href="sourcese12.html#tailsourcese12.html" >prev-tail</a>] [<a 
+href="#tailsourcech2.html">tail</a>] [<a 
+href="source.html#sourcech2.html" >up</a>] </p></div>
+   <h2 class="chapterHead"><span class="titlemark">Chapitre&#x00A0;2</span><br /><a 
+ id="x26-530002"></a>Groupes de Lie et espaces homogènes</h2>
+   <div class="sectionTOCS">
+   &#x00A0;<span class="sectionToc" >2.1 <a 
+href="sourcese13.html#x27-540002.1">Généralités sur les groupes de Lie</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.1.1 <a 
+href="sourcese13.html#x27-550002.1.1" id="QQ2-27-61">Généralités et définitions élémentaires</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.1.2 <a 
+href="sourcese13.html#x27-560002.1.2" id="QQ2-27-63">Exemples élémentaires de groupes classiques</a></span>
+<br />   &#x00A0;<span class="sectionToc" >2.2 <a 
+href="sourcese14.html#x29-570002.2">Généralités sur les algèbres de Lie</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.2.1 <a 
+href="sourcese14.html#x29-580002.2.1" id="QQ2-29-65">Application exponentielle et algèbres de Lie</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.2.2 <a 
+href="sourcese14.html#x29-640002.2.2" id="QQ2-29-71">Correspondance entre groupes et algèbres de Lie</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.2.3 <a 
+href="sourcese14.html#x29-670002.2.3" id="QQ2-29-74">Classification des groupes et algèbres de Lie. Généralités.</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.2.4 <a 
+href="sourcese14.html#x29-710002.2.4" id="QQ2-29-78">Message</a></span>
+<br />   &#x00A0;<span class="sectionToc" >2.3 <a 
+href="sourcese15.html#x30-720002.3">Actions de groupes et représentations</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.3.1 <a 
+href="sourcese15.html#x30-730002.3.1" id="QQ2-30-80">Généralités</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.3.2 <a 
+href="sourcese15.html#x30-740002.3.2" id="QQ2-30-81">Groupe <span 
+class="cmmi-12">G </span>opérant à gauche sur un ensemble <span 
+class="cmmi-12">E</span></a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.3.3 <a 
+href="sourcese15.html#x30-750002.3.3" id="QQ2-30-82">Action à droite (anti-action)</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.3.4 <a 
+href="sourcese15.html#x30-760002.3.4" id="QQ2-30-83">Passage de la droite à la gauche (et inversement)</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.3.5 <a 
+href="sourcese15.html#x30-770002.3.5" id="QQ2-30-84">Orbites, espace quotient</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.3.6 <a 
+href="sourcese15.html#x30-780002.3.6" id="QQ2-30-85">Efficacité</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.3.7 <a 
+href="sourcese15.html#x30-790002.3.7" id="QQ2-30-86">Liberté et stabilisateur</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.3.8 <a 
+href="sourcese15.html#x30-800002.3.8" id="QQ2-30-87">Transitivité</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.3.9 <a 
+href="sourcese15.html#x30-810002.3.9" id="QQ2-30-88">Action d&#8217;un sous-groupe <span 
+class="cmmi-12">H </span>sur un groupe <span 
+class="cmmi-12">G</span>, normalisateur,
+centralisateur</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.3.10 <a 
+href="sourcese15.html#x30-820002.3.10" id="QQ2-30-89">Stratification</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.3.11 <a 
+href="sourcese15.html#x30-830002.3.11" id="QQ2-30-90">Remarques</a></span>
+<br />   &#x00A0;<span class="sectionToc" >2.4 <a 
+href="sourcese16.html#x31-840002.4">Champs de vecteurs fondamentaux</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.4.1 <a 
+href="sourcese16.html#x31-850002.4.1" id="QQ2-31-92">Cas d&#8217;un groupe de Lie agissant sur une variété</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.4.2 <a 
+href="sourcese16.html#x31-860002.4.2" id="QQ2-31-93">Exemple&#x00A0;: le groupe euclidien agissant sur le plan I R<sup><span 
+class="cmr-8">2</span></sup></a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.4.3 <a 
+href="sourcese16.html#x31-870002.4.3" id="QQ2-31-94">Un cas particulier fondamental&#x00A0;: le groupe <span 
+class="cmmi-12">G </span>agissant
+sur lui-même par translations à gauche et à droite</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.4.4 <a 
+href="sourcese16.html#x31-880002.4.4" id="QQ2-31-95">L&#8217;action adjointe de <span 
+class="cmmi-12">G</span></a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.4.5 <a 
+href="sourcese16.html#x31-890002.4.5" id="QQ2-31-96">Exemple : l&#8217;algèbre de Lie du groupe euclidien</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.4.6 <a 
+href="sourcese16.html#x31-900002.4.6" id="QQ2-31-97">Exemple : champs invariants sur <span 
+class="cmmi-12">SU</span>(2)</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.4.7 <a 
+href="sourcese16.html#x31-910002.4.7" id="QQ2-31-98">Une remarque sur les constantes de structure</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.4.8 <a 
+href="sourcese16.html#x31-920002.4.8" id="QQ2-31-99">La forme de Maurer-Cartan</a></span>
+<br />   &#x00A0;<span class="sectionToc" >2.5 <a 
+href="sourcese17.html#x32-930002.5">Représentations</a></span>
+<br />   &#x00A0;<span class="sectionToc" >2.6 <a 
+href="sourcese18.html#x33-940002.6">Espaces homogènes</a></span>
+<br />   &#x00A0;<span class="sectionToc" >2.7 <a 
+href="sourcese19.html#x34-950002.7">Algèbres de Clifford et groupes Spin</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.7.1 <a 
+href="sourcese19.html#x34-960002.7.1" id="QQ2-34-103">Définitions générales</a></span>
+                                                                          
+
+                                                                          
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.7.2 <a 
+href="sourcese19.html#x34-970002.7.2" id="QQ2-34-104">Le groupe <span 
+class="cmmi-12">Spin</span></a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.7.3 <a 
+href="sourcese19.html#x34-980002.7.3" id="QQ2-34-105">Structure des algèbres de Clifford réelles</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.7.4 <a 
+href="sourcese19.html#x34-1020002.7.4" id="QQ2-34-109">La structure des algèbres de Clifford complexes</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.7.5 <a 
+href="sourcese19.html#x34-1030002.7.5" id="QQ2-34-110">Type des représentations</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.7.6 <a 
+href="sourcese19.html#x34-1040002.7.6" id="QQ2-34-111">Spineurs</a></span>
+   </div>
+
+
+
+
+
+
+                                                                          
+
+                                                                          
+   <!--l. 2--><div class="crosslinks"><p class="noindent">[<a 
+href="sourcese13.html" >next</a>] [<a 
+href="sourcese12.html" >prev</a>] [<a 
+href="sourcese12.html#tailsourcese12.html" >prev-tail</a>] [<a 
+href="sourcech2.html" >front</a>] [<a 
+href="source.html#sourcech2.html" >up</a>] </p></div>
+<!--l. 2--><p class="indent" >   <a 
+ id="tailsourcech2.html"></a>  
+</body></html> 

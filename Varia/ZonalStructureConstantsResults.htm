@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+        "HTMLFiles/xhtml-math11-f.dtd">
+
+<!-- Created with the Wolfram Language : www.wolfram.com -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>
+  ZonalStructureConstantsResults
+ </title>
+ <link href="HTMLFiles/ZonalStructureConstantsResults.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<p class="Text">
+ The results given below are mentioned and used in the article :<br /><span style='color: #0000FF;'>&ldquo; The Horn Problem for Real Symmetric and Quaternionic Self-Dual Matrices&rdquo; <br /></span><span style='color: #996633;'>by R. Coquereaux and J.-B. Zuber (September 2018)</span>
+</p>
+
+
+
+<p class="Text">
+ The results given below can be obtained by using the Mathematica package SymPol$Package (the file itself is called SymPol$Package.wl in the same directory).<br />See also the companion file SymPol$Examples.nb (usage and examples).<br />See also the file HistogramsUsingSymPol.nb that contains some extra code related to the specific example studied below in the first section (square of {2,1,0}&nbsp;and of its multiples);&nbsp;&nbsp;in particular this file contains commands for visualization. 
+</p>
+
+
+
+<p class="Text">
+ The present file only contains results. Most cells are non editable and non evaluatable.
+</p>
+
+
+
+<p class="Subsection">
+ Structure constants of zonal polynomials and SU(n) reduction
+</p>
+
+
+
+<p class="Subsubsection">
+ Structure constants of zonal polynomials : the square of {2*s, 1*s, 0} -- extended partition -- for s=2,..,6
+</p>
+
+
+
+<p class="Text">
+ Consider the following 3-variables zonal polynomial ZP[{2,1,0}], using the P normalization (hence ZP) :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/ZonalStructureConstantsResults_1.png" alt="ZonalStructureConstantsResults_1.png" width="293" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/ZonalStructureConstantsResults_2.png" alt="ZonalStructureConstantsResults_2.png" width="431" height="33" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ We now consider its square, and decompose on zonal polynomials (same normalization). We get : 
+</p>
+
+
+
+<p class="DisplayFormula">
+ <img src="HTMLFiles/ZonalStructureConstantsResults_3.png" alt="ZonalStructureConstantsResults_3.png" width="782" height="35" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Arguments, above and below (in this subsection), denote extended partitions.
+</p>
+
+
+
+<p class="Text">
+ More generally we consider the square of the 3-variables zonal polynomials ZP[{2s,s,0}] and obtain : 
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/ZonalStructureConstantsResults_4.png" alt="ZonalStructureConstantsResults_4.png" width="650" height="56" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/ZonalStructureConstantsResults_5.png" alt="ZonalStructureConstantsResults_5.png" width="1111" height="75" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/ZonalStructureConstantsResults_6.png" alt="ZonalStructureConstantsResults_6.png" width="1046" height="195" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/ZonalStructureConstantsResults_7.png" alt="ZonalStructureConstantsResults_7.png" width="1126" height="315" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/ZonalStructureConstantsResults_8.png" alt="ZonalStructureConstantsResults_8.png" width="1108" height="515" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubsection">
+ Structure constants of zonal polynomials reduced to SU(3) : the square of [s,s] -- Dynkin basis -- for s=2,..,8
+</p>
+
+
+
+<p class="Text">
+ The SU(3) zonal-characters &chi;Z([1,1]) is obtained by SU(3) reduction from the 3-variables zonal polynomial ZP[{2,1,0}].
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/ZonalStructureConstantsResults_9.png" alt="ZonalStructureConstantsResults_9.png" width="532" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/ZonalStructureConstantsResults_10.png" alt="ZonalStructureConstantsResults_10.png" width="307" height="41" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ The notation [1,1] denotes the components, in the Dynkin basis (basis of fundamental weights), of the highest weight of the adjoint representation of SU(3). <br />The corresponding integer partition (Young diagram) is {2,1} and the corresponding extended partition (three components, with one trailing 0) is {2,1,0}.
+</p>
+
+
+
+<p class="Text">
+ We now consider the square of &chi;Z([1,1])&nbsp;&nbsp;and decompose on the the &chi;Z([&nu;1,&nu;2]).<br />One gets 
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/ZonalStructureConstantsResults_11.png" alt="ZonalStructureConstantsResults_11.png" width="691" height="35" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ It is obtained by SU(3) reduction from the square of the zonal polynomial ZP[{2,1,0}], using the P normalization (hence ZP).
+</p>
+
+
+
+<p class="Text">
+ We consider the square of [s,s]&nbsp;&nbsp;for s = 1, 2, 3, ... <br />Arguments { , }&nbsp;below (in this subsection) denote highest weights [&nu;1,&nu;2] in the SU(3) Dynkin basis.<br />The last entry m of each pair {{&nu;1,&nu;2},m] is the structure constant for the triple :&nbsp;&nbsp;[s,s]&nbsp;&nbsp;*&nbsp;&nbsp;[s,s]&nbsp;&nbsp;--&gt; [&nu;1,&nu;2].
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/ZonalStructureConstantsResults_12.png" alt="ZonalStructureConstantsResults_12.png" width="538" height="56" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/ZonalStructureConstantsResults_13.png" alt="ZonalStructureConstantsResults_13.png" width="1055" height="96" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/ZonalStructureConstantsResults_14.png" alt="ZonalStructureConstantsResults_14.png" width="1033" height="176" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/ZonalStructureConstantsResults_15.png" alt="ZonalStructureConstantsResults_15.png" width="1108" height="296" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/ZonalStructureConstantsResults_16.png" alt="ZonalStructureConstantsResults_16.png" width="1112" height="416" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/ZonalStructureConstantsResults_17.png" alt="ZonalStructureConstantsResults_17.png" width="1114" height="736" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/ZonalStructureConstantsResults_18.png" alt="ZonalStructureConstantsResults_18.png" width="1139" height="1075" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/ZonalStructureConstantsResults_19.png" alt="ZonalStructureConstantsResults_19.png" width="1143" height="1355" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubsection">
+ History and citation
+</p>
+
+
+
+<p class="Text">
+ The package SymPol$Package was written by R.C. during the academic year 2017/2018.<br />It was made public on the R.C. web site in September 2018.<br />If you use the SymPol$Package or the results obtained with it (for instance the results given above) in a scientific publication or talk, please give proper academic credit to the author.<br />Thank you.
+</p>
+
+
+
+
+
+
+<div style="font-family:Helvetica; font-size:11px; width:100%; border:1px none #999999; border-top-style:solid; padding-top:2px; margin-top:20px;">
+ <a href="http://www.wolfram.com/language/" style="color:#000; text-decoration:none;">
+  <span style="color:#555555">Created with the Wolfram Language</span> 
+ </a>
+</div>
+</body>
+
+</html>

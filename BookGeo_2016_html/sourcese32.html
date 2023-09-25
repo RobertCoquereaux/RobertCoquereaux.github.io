@@ -1,0 +1,2209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>Calculs differentiels</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<!-- html,index=2,3,next --> 
+<meta name="src" content="source.tex"> 
+<link rel="stylesheet" type="text/css" href="source.css"> 
+</head><body 
+>
+   <!--l. 107--><div class="crosslinks"><p class="noindent">[<a 
+href="sourcese33.html" >next</a>] [<a 
+href="sourcese31.html" >prev</a>] [<a 
+href="sourcese31.html#tailsourcese31.html" >prev-tail</a>] [<a 
+href="#tailsourcese32.html">tail</a>] [<a 
+href="sourcech6.html#sourcese32.html" >up</a>] </p></div>
+   <h3 class="sectionHead"><span class="titlemark">6.2   </span> <a 
+ id="x52-2440006.2"></a>Calculs différentiels</h3>
+<!--l. 109--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">6.2.1   </span> <a 
+ id="x52-2450006.2.1"></a>Remarques</h4>
+<!--l. 110--><p class="noindent" >Dans le cadre commutatif, étant donné une variété <span 
+class="cmmi-12">M</span>, nous avons décrit, de
+façon détaillée, <span 
+class="cmsl-12">une </span>algèbre différentielle graduée, en l&#8217;occurence, celle, notée
+&#x039B;(<span 
+class="cmmi-12">M</span>) des formes différentielles<span class="frenchb-nbsp">&#x00A0;</span>: le &#8220;complexe de De Rham&#8221;. Cette algèbre
+est différentielle (puisque munie d&#8217;une différentielle <span 
+class="cmmi-12">d</span>) et différentielle
+graduée puisque <span 
+class="cmmi-12">d </span>envoie &#x039B;<sup><span 
+class="cmmi-8">p</span></sup>(<span 
+class="cmmi-12">M</span>) dans &#x039B;<sup><span 
+class="cmmi-8">p</span><span 
+class="cmr-8">+1</span></sup>(<span 
+class="cmmi-12">M</span>). De plus, elle est telle que
+&#x039B;<sup><span 
+class="cmr-8">0</span></sup>(<span 
+class="cmmi-12">M</span>) = <span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">&#x221E;</span></sup>(<span 
+class="cmmi-12">M</span>). Comme nous le verrons un peu plus bas, le lecteur devrait se
+garder de croire qu&#8217;il s&#8217;agit là de la seule possibilité.
+<!--l. 121--><p class="indent" >   Dans le cadre non commutatif, nous supposons donnée une algèbre
+associative <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>, unitale pour simplifier, mais non nécessairement commutative.
+<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>va remplacer, dans la construction, l&#8217;algèbre commutative <span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">&#x221E;</span></sup>(<span 
+class="cmmi-12">M</span>),
+c&#8217;est à dire, &#8220;philosophiquement&#8221;, l&#8217;espace <span 
+class="cmmi-12">M </span>lui-même. On veut pouvoir
+associer à <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>une algèbre différentielle graduée &#x03A9;, qui coïncide avec <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>en
+degré zéro. Les éléments de &#x03A9; vont remplacer les formes différentielles
+usuelles. On pourrait dire que ce sont des <span 
+class="cmsl-12">formes diff</span><span 
+class="cmsl-12">érentielles quantiques</span>
+<a 
+ id="dx52-245001"></a>.
+<!--l. 132--><p class="indent" >   Nous cherchons à fabriquer une algèbre différentielle graduée qui, en degré
+zéro, coïncide avec <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>. En fait, il existe de nombreuses possibilités, chaque
+possibilité définit ce qu&#8217;on appelle un <span 
+class="cmsl-12">calcul diff</span><span 
+class="cmsl-12">érentiel sur l&#8217;alg</span><span 
+class="cmsl-12">èbre </span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>.
+Cependant, une de ces possibilités est plus générale que les autres, en un sens que
+nous allons préciser. C&#8217;est celle qu&#8217;on désigne sous le nom d&#8217;algèbre &#x03A9;<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>des
+<span 
+class="cmsl-12">formes universelles</span>.
+<!--l. 140--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">6.2.2   </span> <a 
+ id="x52-2460006.2.2"></a>L&#8217;algèbre différentielle des formes universelles &#x03A9;<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span></h4>
+<a 
+ id="dx52-246001"></a>
+                                                                          
+
+                                                                          
+<!--l. 144--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x52-2470006.2.2"></a>Universalité</h5>
+<!--l. 144--><p class="noindent" >Soit <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>une algèbre associative unitale. On veut construire une algèbre
+différentielle Z Z-graduée (&#x03A9;<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span><span 
+class="cmmi-12">,&#x03B4;</span>) qui soit &#8220;la plus générale possible&#8221;, et qui soit
+telle que &#x03A9;<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span><sup><span 
+class="cmr-8">0</span></sup> = <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>. Etre &#8220;la plus générale possible&#8221; signifie que tout autre algèbre
+du même type pourra s&#8217;obtenir à partir de celle-ci en imposant des relations
+supplémentaires. Techniquement, cela revient à dire que si (&#x039E;<span 
+class="cmmi-12">,d</span>) est une autre
+algèbre différentielle Z Z-graduée, avec &#x039E;<sup><span 
+class="cmr-8">0</span></sup> = <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>, alors, c&#8217;est qu&#8217;il existe un
+morphisme <span 
+class="cmmi-12">&#x03B1; </span>(morphisme d&#8217;algèbre différentielle graduée) de &#x03A9;<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span><span 
+class="cmsl-12">sur </span>&#x039E; tel que
+l&#8217;algèbre (&#x039E;<span 
+class="cmmi-12">,d</span>) apparaisse comme un quotient de l&#8217;algèbre des formes universelles
+(&#x03A9;<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span><span 
+class="cmmi-12">,&#x03B4;</span>)<span class="frenchb-nbsp">&#x00A0;</span>:
+   <center class="math-display" >
+<img 
+src="source876x.png" alt="&#x039E;  = &#x03A9;A &#x2215;K  " class="math-display" ></center> Ici,
+le noyau <span 
+class="cmmi-12">K </span>de <span 
+class="cmmi-12">&#x03B1; </span>est un idéal bilatère gradué différentiel de &#x03A9;<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>(idéal
+bilatère car &#x03A9;<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span><span 
+class="cmmi-12">.K </span><span 
+class="cmsy-10x-x-120">&#x2282; </span><span 
+class="cmmi-12">K</span>, <span 
+class="cmmi-12">K.</span>&#x03A9;<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />&#x2282; </span><span 
+class="cmmi-12">K </span>et différentiel car <span 
+class="cmmi-12">&#x03B4;K </span><span 
+class="cmsy-10x-x-120">&#x2282; </span><span 
+class="cmmi-12">K</span>). En
+d&#8217;autres termes, (&#x03A9;<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span><span 
+class="cmmi-12">,&#x03B4;</span>) est un objet universel dans la catégorie des algèbres
+différentielles Z Z-graduées et on pourrait écrire tout ceci à l&#8217;aide de diagrammes
+commutatifs&#x2026;
+<!--l. 169--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x52-2480006.2.2"></a>Construction de &#x03A9;<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>par générateurs et relations</h5>
+<!--l. 170--><p class="noindent" >On part de <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>. Désignons les éléments de <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>par des symboles <span 
+class="cmmi-12">a</span><sub><span 
+class="cmmi-8">p</span></sub>. On introduit
+alors de <span 
+class="cmti-12">nouveaux </span>symboles qu&#8217;on va désigner par <span 
+class="cmmi-12">&#x03B4;a</span><sub><span 
+class="cmmi-8">p</span></sub>. Attention, pour l&#8217;instant, <span 
+class="cmmi-12">&#x03B4;</span>
+n&#8217;est pas (encore) un opérateur<span class="frenchb-nbsp">&#x00A0;</span>: le symbole <span 
+class="cmmi-12">&#x03B4;a</span><sub><span 
+class="cmmi-8">p</span></sub> doit être pris comme un tout<span class="frenchb-nbsp">&#x00A0;</span>:
+c&#8217;est une copie de l&#8217;élément <span 
+class="cmmi-12">a</span><sub><span 
+class="cmmi-8">p</span></sub>. L&#8217;espace vectoriel engendré par les symboles <span 
+class="cmmi-12">&#x03B4;a</span><sub><span 
+class="cmmi-8">p</span></sub>
+est simplement une copie de l&#8217;espace vectoriel <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>. Ensuite, on fabrique des <span 
+class="cmsl-12">mots</span>,
+en concaténant librement des éléments de <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>(donc des <span 
+class="cmmi-12">a</span><sub><span 
+class="cmmi-8">p</span></sub>) et des éléments du
+type <span 
+class="cmmi-12">&#x03B4;a</span><sub><span 
+class="cmmi-8">q</span></sub>. Ainsi <span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03B4;a</span><sub><span 
+class="cmr-8">1</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">2</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">3</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03B4;a</span><sub><span 
+class="cmr-8">4</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03B4;a</span><sub><span 
+class="cmr-8">5</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">6</span></sub> est un mot. On décide alors d&#8217;additionner et de
+multiplier librement ces mots de façon à ce que la structure obtenue soit une
+algèbre. Jusque là, on n&#8217;obtient rien de très palpitant<span class="frenchb-nbsp">&#x00A0;</span>: juste une algèbre &#8220;libre&#8221;
+engendrée par des symboles. Pour finir, on va imposer des relations<span class="frenchb-nbsp">&#x00A0;</span>: celles de
+<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>, tout d&#8217;abord, mais surtout, les deux suivantes (pour tout <span 
+class="cmmi-12">a,b </span>dans
+                                                                          
+
+                                                                          
+<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>)<span class="frenchb-nbsp">&#x00A0;</span>:
+   <center class="math-display" >
+<img 
+src="source877x.png" alt="|-------------------|
+-&#x03B4;ab =-(&#x03B4;a)b +-a(&#x03B4;b)-
+" class="math-display" ></center>
+   <center class="math-display" >
+<img 
+src="source878x.png" alt="|-----------------|
+-1l&#x03B4;a-=-&#x03B4;aet&#x03B4;1l =-0-  " class="math-display" ></center> La
+première relation identifie deux éléments, jusque là différents, de l&#8217;algèbre libre.
+L&#8217;ensemble obtenu est, par construction, une algèbre, qu&#8217;on note &#x03A9;<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>. La dernière
+chose à faire consiste à introduire l&#8217;opérateur noté <span 
+class="cmmi-12">&#x03B4;</span>, défini pour tout élément <span 
+class="cmmi-12">a</span>
+de <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>par <span 
+class="cmmi-12">&#x03B4;</span>(<span 
+class="cmmi-12">a</span>) = <span 
+class="cmmi-12">&#x03B4;a </span>et <span 
+class="cmmi-12">&#x03B4;&#x03B4;a </span>= 0. L&#8217;algèbre obtenue devient ainsi une algèbre
+différentielle.
+<!--l. 205--><p class="indent" >   On pourrait, bien entendu, formaliser la construction ci-dessus, en terme
+d&#8217;idéaux et de relations, mais, le résultat est, somme toute, très simple<span class="frenchb-nbsp">&#x00A0;</span>: on part
+des éléments <span 
+class="cmmi-12">a </span>de <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>et on introduit des différentielles <span 
+class="cmmi-12">&#x03B4;a </span>(attention, ce ne sont
+pas des éléments de <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>) de façon à ce que la règle de Leibniz (la règle de
+dérivation d&#8217;un produit) soit vérifiée.
+<!--l. 212--><p class="indent" >   Les règles ci-dessus permettent de re-écrire n&#8217;importe quel élément de &#x03A9;<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>
+sous la forme d&#8217;une combinaison linéaire de termes du type <span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03B4;a</span><sub><span 
+class="cmr-8">1</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03B4;a</span><sub><span 
+class="cmr-8">2</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x2026;</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03B4;a</span><sub><span 
+class="cmmi-8">p</span></sub> où tous
+les <span 
+class="cmmi-12">a</span><sub><span 
+class="cmmi-8">i</span></sub> sont des éléments de <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>et où le seul élément qui n&#8217;est pas différentié (<span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub>) se
+situe <span 
+class="cmti-12">à gauche</span>. En effet, par exemple <div class="eqnarray">
+   <center class="math-display" >
+                                                                          
+
+                                                                          
+<img 
+src="source879x.png" alt="a0&#x03B4;a1 &#x03B4;a2a3 = a0&#x03B4;a1&#x03B4;(a2a3) - a0&#x03B4;a1a2&#x03B4;a3
+            = a &#x03B4;a &#x03B4;(a a ) - a &#x03B4;(a a )&#x03B4;a  + a &#x03B4;a &#x03B4;a &#x03B4;a
+               0  1   2  3    0   1 2   3    0  1   2  3
+" class="math-display" ></center>
+</div>Cette remarque montre que &#x03A9;<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>= <span 
+class="cmex-10x-x-120">&#x2295;</span>
+  <sub><span 
+class="cmmi-8">p</span><span 
+class="cmr-8">=0</span></sub><sup><span 
+class="cmsy-8">&#x221E;</span></sup>&#x03A9;<sup><span 
+class="cmmi-8">p</span></sup><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>, où &#x03A9;<sup><span 
+class="cmmi-8">p</span></sup><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>est l&#8217;espace vectoriel
+engendré par les termes du type <span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03B4;a</span><sub><span 
+class="cmr-8">1</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03B4;a</span><sub><span 
+class="cmr-8">2</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x2026;</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03B4;a</span><sub><span 
+class="cmmi-8">p</span></sub>, avec <span 
+class="cmmi-12">a</span><sub><span 
+class="cmmi-8">i</span></sub> <span 
+class="cmsy-10x-x-120">&#x2208;<img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>. Ainsi, &#x03A9;<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>est donc
+bien Z Z-graduée. Il est facile de vérifier, en utilisant les règles précédentes que,
+pour <span 
+class="cmmi-12">&#x03C3; </span><span 
+class="cmsy-10x-x-120">&#x2208; </span>&#x03A9;<sup><span 
+class="cmmi-8">p</span></sup><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>et <span 
+class="cmmi-12">&#x03C4; </span><span 
+class="cmsy-10x-x-120">&#x2208; </span>&#x03A9;<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>
+   <center class="math-display" >
+<img 
+src="source880x.png" alt="|---------------------------|
+&#x03B4;(&#x03C3; &#x03C4;) = &#x03B4;(&#x03C3;)&#x03C4; + (- 1 )p&#x03C3; &#x03B4;(&#x03C4;)
+-----------------------------
+" class="math-display" ></center>
+<!--l. 242--><p class="indent" >   Le fait que l&#8217;algèbre différentielle &#x03A9;<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>soit universelle vient du fait que, dans sa
+construction, nous n&#8217;avons rien imposé d&#8217;autre que la règle de Leibniz
+ainsi que les relations algébriques déjà présentes dans <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>. Tout autre
+algèbre différentielle construite sur <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>contiendra donc automatiquement des
+relations supplémentaires. Soit (&#x039E;<span 
+class="cmmi-12">,d</span>) une autre algèbre différentielle,
+également associée à <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>, on sait qu&#8217;il doit alors exister un morphisme <span 
+class="cmmi-12">&#x03B1; </span>de &#x03A9;<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>
+dans &#x039E;, ce morphisme est simplement défini sur les éléments de base, par
+<span 
+class="cmmi-12">&#x03B1;</span>(<span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03B4;a</span><sub><span 
+class="cmr-8">1</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03B4;a</span><sub><span 
+class="cmr-8">2</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x2026;</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03B4;a</span><sub><span 
+class="cmmi-8">p</span></sub>) = <span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">da</span><sub><span 
+class="cmr-8">1</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">da</span><sub><span 
+class="cmr-8">2</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x2026;</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">da</span><sub><span 
+class="cmmi-8">p</span></sub> et étendu par linéarité sur toute l&#8217;algèbre
+&#x039E;.
+<!--l. 257--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x52-2490006.2.2"></a>Construction explicite de &#x03A9;<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>par produit tensoriel</h5>
+<!--l. 257--><p class="noindent" >La construction précédente est simple et, en principe suffisante. Cela
+dit, il est agréable de pouvoir considérer <span 
+class="cmmi-12">&#x03B4;a </span>comme un objet construit
+concrètement &#8220;à partir&#8221; de <span 
+class="cmmi-12">a </span>et non comme un symbole abstrait. Voici donc une
+seconde construction de l&#8217;algèbre des formes universelles qui répond à ce
+souci.
+<!--l. 263--><p class="indent" >   Soit <span 
+class="cmmi-12">m </span>: <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />&#x2297;<img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span><img 
+src="source881x.png" alt="&#x21A6;&#x2192;"  class="mapsto" ><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>, l&#8217;opérateur de multiplication <span 
+class="cmmi-12">m</span>(<span 
+class="cmmi-12">a </span><span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">b</span>) = <span 
+class="cmmi-12">ab</span>.
+<!--l. 266--><p class="indent" >   Posons &#x03A9;<sup><span 
+class="cmr-8">0</span></sup><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>= <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>On décide de noter (prenons <span 
+class="cmmi-12">a </span>et <span 
+class="cmmi-12">b </span>dans <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>)<span class="frenchb-nbsp">&#x00A0;</span>:
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source882x.png" alt="|-----------------|
+&#x03B4;b-=-1l &#x2297;-b---b &#x2297;-1l  " class="math-display" ></center>
+Ainsi, <span 
+class="cmmi-12">&#x03B4;b </span>apparait comme une sorte de différence discrète (nous verrons un peu
+plus loin comment, dans l&#8217;exemple où <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>désigne une algèbre de fonctions sur une
+variété comment ceci est explicitement réalisé). Plus généralement, nous
+poserons<span class="frenchb-nbsp">&#x00A0;</span>:
+   <center class="math-display" >
+<img 
+src="source883x.png" alt="|---------------------|
+-a&#x03B4;b-=-a-&#x2297;-b---ab-&#x2297;-1l-|
+" class="math-display" ></center>
+<!--l. 283--><p class="indent" >   Soit &#x03A9;<sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>l&#8217;espace vectoriel engendré par les éléments de <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span><img 
+src="source884x.png" alt="&#x21A6;&#x2192;"  class="mapsto" ><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>du type <span 
+class="cmmi-12">a&#x03B4;b</span>.
+Notons que <span 
+class="cmmi-12">a&#x03B4;b </span>appartient au noyau de l&#8217;opérateur de multiplication
+<span 
+class="cmmi-12">m</span>(<span 
+class="cmmi-12">a&#x03B4;b</span>) = <span 
+class="cmmi-12">ab </span><span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">ab</span>1 l = 0. Plus généralement, il est évident que les éléments de
+<span 
+class="cmmi-12">Ker</span>(<span 
+class="cmmi-12">m</span>) sont des combinaisons linéaires d&#8217;éléments de ce type. En d&#8217;autres
+termes, on a
+   <center class="math-display" >
+<img 
+src="source885x.png" alt="  1
+&#x03A9;  A =  Ker (m )
+" class="math-display" ></center>
+<!--l. 291--><p class="indent" >   On pose alors
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source886x.png" alt="&#x03A9;2A  = &#x03A9;1A  &#x2297;   &#x03A9;1A
+              A " class="math-display" ></center> et
+plus généralement
+   <center class="math-display" >
+<img 
+src="source887x.png" alt=" p       1                  1
+&#x03A9; A  = &#x03A9;  A &#x2297;A  &#x2297;A ...&#x2297;A  &#x03A9; A " class="math-display" ></center>
+Notons que &#x03A9;<sup><span 
+class="cmmi-8">p</span></sup><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>est inclus dans la (<span 
+class="cmmi-12">p </span>+ 1)-ième puissance tensorielle de <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>(bien
+noter cette translation d&#8217;une unité<span class="frenchb-thinspace">&#x00A0;</span>!). Attention<span class="frenchb-nbsp">&#x00A0;</span>: le produit tensoriel est pris <span 
+class="cmti-12">au</span>
+<span 
+class="cmti-12">dessus de </span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>et non pas au dessus du corps des scalaires<span class="frenchb-thinspace">&#x00A0;</span>! Cela signifie, en clair,
+la chose suivante<span class="frenchb-nbsp">&#x00A0;</span>: Considérons le produit de l&#8217;élément (<span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span 
+class="cmmi-12">&#x03B4;a</span><sub><span 
+class="cmr-8">1</span></sub>) <span 
+class="cmsy-10x-x-120">&#x2208; </span>&#x03A9;<sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />&#x2282;<img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />&#x2297;<img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>
+par l&#8217;élément (<span 
+class="cmmi-12">&#x03B4;a</span><sub><span 
+class="cmr-8">2</span></sub>) <span 
+class="cmsy-10x-x-120">&#x2208; </span>&#x03A9;<sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />&#x2282;<img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />&#x2297;<img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>. Ce produit, pris dans &#x03A9;<sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />&#x2297; </span>&#x03A9;<sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>est
+l&#8217;élément
+   <center class="math-display" >
+<img 
+src="source888x.png" alt="(a0 &#x2297; a1 - a0a1 &#x2297; 1l) &#x2297; (1l &#x2297; a2 - a2 &#x2297; 1)  " class="math-display" ></center> de
+<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />&#x2297;<img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />&#x2297;<img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />&#x2297;<img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />&#x2297;<img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>tandis que le produit dans &#x03A9;<sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />&#x2297;</span><sub>
+<span 
+class="cmsy-8"><img 
+src="cmsy8-41.png" alt="A" class="8x-x-41" /></span></sub>&#x03A9;<sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>est un élément de
+<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />&#x2297;<img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />&#x2297;<img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />&#x2297;<img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>, en l&#8217;occurence, il s&#8217;agit de <div class="eqnarray">
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source889x.png" alt="a0&#x03B4;a1&#x03B4;a2 = (a0 &#x2297; a1 - a0a1 &#x2297; 1l)(1l &#x2297; a2 - a2 &#x2297; 1l)
+
+         = a0 &#x2297; a1 &#x2297; a2 - a0a1 &#x2297; 1l &#x2297; a2 - a0 &#x2297; a1a2 &#x2297; 1l + a0a1 &#x2297; a2 &#x2297; 1l
+" class="math-display" ></center>
+</div>L&#8217;écriture explicite de <span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span 
+class="cmmi-12">&#x03B4;a</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">&#x03B4;a</span><sub><span 
+class="cmr-8">2</span></sub> en termes de produit tensoriels contient donc un
+unique terme <span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub> <span 
+class="cmsy-10x-x-120">&#x2297;</span><span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">1</span></sub> <span 
+class="cmsy-10x-x-120">&#x2297;</span><span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">2</span></sub> et une somme alternée d&#8217;autres termes, chacun d&#8217;entre
+eux contenant l&#8217;unité de l&#8217;algèbre ainsi qu&#8217;un unique produit du type <span 
+class="cmmi-12">a</span><sub><span 
+class="cmmi-8">p</span></sub><span 
+class="cmmi-12">a</span><sub><span 
+class="cmmi-8">p</span><span 
+class="cmr-8">+1</span></sub>. On
+pourrait également partir de cette dernière écriture explicite pour définir
+l&#8217;algèbre &#x03A9;<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>. Noter que la multiplication, lorsqu&#8217;on écrit explicitement les
+éléments de cette algèbre en termes de produits tensoriels, s&#8217;écrit explicitement
+en concaténant les différents termes et en effectuant la multiplication dans
+<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>.
+<!--l. 340--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x52-2500006.2.2"></a>Formes universelles dans le cadre commutatif<span class="frenchb-nbsp">&#x00A0;</span>: le calcul différentiel non
+local</h5>
+<a 
+ id="dx52-250001"></a>
+<!--l. 342--><p class="noindent" >Soit <span 
+class="cmmi-12">M </span>une variété différentiable, ou même, un ensemble absolument quelconque.
+On peut alors construire l&#8217;algèbre <span 
+class="cmti-12">commutative </span>des fonctions sur <span 
+class="cmmi-12">M </span>(bien
+entendu, lorsque <span 
+class="cmmi-12">M </span>est un espace topologique, ou une variété différentielle, on
+peut choisir les fonctions continues, les fonctions différentiables etc). Notons
+encore <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>cette algèbre, sans préciser davantage. La construction de &#x03A9;<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>reste
+valable, puisque nous n&#8217;avons rien eu a supposer d&#8217;autre que l&#8217;associativité de
+l&#8217;algèbre <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>. Considérons l&#8217;élément
+   <center class="math-display" >
+<img 
+src="source890x.png" alt="                        1
+a&#x03B4;b = a &#x2297; b - ab &#x2297; 1l &#x2208; &#x03A9; A &#x2282;  A &#x2297;  A " class="math-display" ></center>
+                                                                          
+
+                                                                          
+Puisque les éléments de <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>sont des fonctions sur <span 
+class="cmmi-12">M </span>(des fonctions d&#8217;une variable
+<span 
+class="cmmi-12">x </span><span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="cmmi-12">M</span>) les éléments de <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />&#x2297;<img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>sont des fonctions de <span 
+class="cmti-12">deux </span>variables<span class="frenchb-nbsp">&#x00A0;</span>:
+   <center class="math-display" >
+<img 
+src="source891x.png" alt="|---------------------------------------------------|
+[a&#x03B4;b](x,y)-=-a(x)b(y)---a(x)b(x)-=-a(x)(b(y) --b(x))-  " class="math-display" ></center>
+Cette fonction, comme, il se doit, s&#8217;annulle lorsqu&#8217;on pose <span 
+class="cmmi-12">x </span>= <span 
+class="cmmi-12">y</span>, puisque
+l&#8217;opérateur de multiplication <span 
+class="cmmi-12">m</span>(<span 
+class="cmmi-12">a </span><span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">b</span>) = <span 
+class="cmmi-12">ab</span>, dans le cas présent, peut
+s&#8217;écrire sous la forme <span 
+class="cmmi-12">m</span>(<span 
+class="cmmi-12">a</span>(<span 
+class="cmmi-12">x</span>)<span 
+class="cmmi-12">b</span>(<span 
+class="cmmi-12">y</span>)) = <span 
+class="cmmi-12">a</span>(<span 
+class="cmmi-12">x</span>)<span 
+class="cmmi-12">b</span>(<span 
+class="cmmi-12">x</span>). Ainsi, &#x03A9;<sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>est constitué de
+l&#8217;ensemble des fonctions de deux variables sur l&#8217;espace <span 
+class="cmmi-12">M</span>, qui s&#8217;annulent sur la
+diagonale.
+<!--l. 368--><p class="indent" >   Remarque<span class="frenchb-nbsp">&#x00A0;</span>: lorsque <span 
+class="cmmi-12">M </span>est discret, il est d&#8217;usage d&#8217;identifier, comme nous
+venons de le faire, l&#8217;algèbre des fonctions <span 
+class="cmmi-12">Fun</span>(<span 
+class="cmmi-12">M </span><span 
+class="cmsy-10x-x-120">&#x00D7; </span><span 
+class="cmmi-12">M</span><span 
+class="cmmi-12">&#x2026;</span> <span 
+class="cmsy-10x-x-120">&#x00D7; </span><span 
+class="cmmi-12">M</span>) du produit
+cartésien de l&#8217;espace <span 
+class="cmmi-12">M </span>par lui-même avec l&#8217;algèbre produit tensoriel
+<span 
+class="cmmi-12">Fun</span>(<span 
+class="cmmi-12">M</span>) <span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">Fun</span>(<span 
+class="cmmi-12">M</span>) <span 
+class="cmsy-10x-x-120">&#x2297;</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">Fun</span>(<span 
+class="cmmi-12">M</span>). Lorsque <span 
+class="cmmi-12">M </span>est un espace topologique (en
+particulier une variété), on n&#8217;a, en général, qu&#8217;une inclusion stricte de
+<span 
+class="cmmi-12">Fun</span>(<span 
+class="cmmi-12">M</span>) <span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">Fun</span>(<span 
+class="cmmi-12">M</span>) <span 
+class="cmsy-10x-x-120">&#x2297;</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">Fun</span>(<span 
+class="cmmi-12">M</span>) dans <span 
+class="cmmi-12">Fun</span>(<span 
+class="cmmi-12">M </span><span 
+class="cmsy-10x-x-120">&#x00D7; </span><span 
+class="cmmi-12">M</span><span 
+class="cmmi-12">&#x2026;</span> <span 
+class="cmsy-10x-x-120">&#x00D7; </span><span 
+class="cmmi-12">M</span>), et il faudrait
+tenir compte de la topologie utilisée pour pouvoir préciser davantage.
+Nous ne tiendrons pas compte de cette subtilité topologique dans ce qui
+suit.
+<!--l. 380--><p class="indent" >   Considérons maintenant un élément de &#x03A9;<sup><span 
+class="cmr-8">2</span></sup><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span><span class="frenchb-nbsp">&#x00A0;</span>:
+<!--l. 382--><p class="indent" >   <div class="eqnarray">
+   <center class="math-display" >
+<img 
+src="source892x.png" alt="         a&#x03B4;b&#x03B4;c = a &#x2297; b &#x2297; c - ab &#x2297; 1l &#x2297; c - a &#x2297; bc &#x2297; 1l + ab &#x2297; c &#x2297; 1l
+[a&#x03B4;b&#x03B4;c](x,y,z) = a (x)b(y )c(z) - a(x)b(x)c(z) - a(x)b(y)c(y) + a(x)b(x)c(y)
+
+               = a (x)[b(y) - b(x)][c(z) - c(y)]
+" class="math-display" ></center>
+                                                                          
+
+                                                                          
+</div>
+<!--l. 390--><p class="indent" >   Cet élément peut donc s&#8217;interpréter comme une fonction de trois
+variables, qui s&#8217;annule lorsque <span 
+class="cmmi-12">x </span>= <span 
+class="cmmi-12">y </span>ou lorsque <span 
+class="cmmi-12">y </span>= <span 
+class="cmmi-12">z </span>(mais pas lorsque
+<span 
+class="cmmi-12">x </span>= <span 
+class="cmmi-12">z</span>).
+<!--l. 394--><p class="indent" >   Plus généralement, les élements de &#x03A9;<sup><span 
+class="cmmi-8">p</span></sup><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>peuvent être considérés comme des
+fonctions de <span 
+class="cmmi-12">p </span>+ 1 variables qui s&#8217;annulent lorsque deux arguments successifs sont
+égaux.
+<!--l. 398--><p class="indent" >   On voit que <span 
+class="cmmi-12">&#x03B4;b </span>désigne bien ici la différence discrète <span 
+class="cmmi-12">b</span>(<span 
+class="cmmi-12">y</span>) <span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">b</span>(<span 
+class="cmmi-12">x</span>). Lorsque <span 
+class="cmmi-12">M</span>
+est une variété différentiable, on peut faire tendre <span 
+class="cmmi-12">y </span>vers <span 
+class="cmmi-12">x </span>et obtenir ainsi la
+forme différentielle usuelle <span 
+class="cmmi-12">db</span>(<span 
+class="cmmi-12">x</span>) =  <span 
+class="cmmi-8">&#x2202;b</span> _
+<span 
+class="cmmi-8">&#x2202;x</span><sup><span 
+class="cmmi-6">&#x03BC;</span></sup><span 
+class="cmmi-12">dx</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup>. La théorie générale s&#8217;applique
+évidemment dans ce cas particulier<span class="frenchb-nbsp">&#x00A0;</span>: &#x03A9;<sup><span 
+class="cmmi-8">p</span></sup><span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">&#x221E;</span></sup>(<span 
+class="cmmi-12">M</span>) est une algèbre différentielle
+universelle mais il existe par ailleurs une algèbre de formes différentielles (&#x039B;<span 
+class="cmmi-12">M,d</span>)
+que nous connaissons bien (le complexe de De Rham), il existe donc un
+morphisme <span 
+class="cmmi-12">&#x03B1; </span>de la première algèbre sur la seconde. Ce morphisme envoie
+<span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span 
+class="cmmi-12">&#x03B4;a</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">&#x03B4;a</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-12">&#x2026;</span> (dans le cas présent <span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub>(<span 
+class="cmmi-12">x</span>)(<span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">1</span></sub>(<span 
+class="cmmi-12">y</span>) <span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">1</span></sub>(<span 
+class="cmmi-12">x</span>))(<span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">2</span></sub>(<span 
+class="cmmi-12">z</span>) <span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">2</span></sub>(<span 
+class="cmmi-12">y</span>))<span 
+class="cmmi-12">&#x2026;</span>) sur la forme
+différentielle <span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span 
+class="cmmi-12">da</span><sub><span 
+class="cmr-8">1</span></sub> <span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">da</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-12">&#x2026;</span>.
+<!--l. 411--><p class="indent" >   Notons que le noyau de ce morphisme est très gros. D&#8217;une part, on sait que
+lorsque <span 
+class="cmmi-12">p &#x003E; dim</span>(<span 
+class="cmmi-12">M</span>), &#x039B;<sup><span 
+class="cmmi-8">p</span></sup><span 
+class="cmmi-12">M </span>= 0, alors que &#x03A9;<sup><span 
+class="cmmi-8">p</span></sup><span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">&#x221E;</span></sup>(<span 
+class="cmmi-12">M</span>) n&#8217;est jamais nul (quel que
+soit <span 
+class="cmmi-12">p</span>). Par ailleurs, même si <span 
+class="cmmi-12">p </span><span 
+class="cmsy-10x-x-120">&#x2264; </span><span 
+class="cmmi-12">dim</span>(<span 
+class="cmmi-12">M</span>) il est facile de trouver des éléments de
+&#x03A9;<span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">&#x221E;</span></sup>(<span 
+class="cmmi-12">M</span>) qui s&#8217;envoient sur zéro<span class="frenchb-nbsp">&#x00A0;</span>: par exemple, l&#8217;élément <span 
+class="cmmi-12">a</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03B4;</span>(<span 
+class="cmmi-12">bc</span>) <span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">ab</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03B4;c </span><span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">ca</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03B4;b</span>
+n&#8217;est certainement pas nul dans &#x03A9;<sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">&#x221E;</span></sup>(<span 
+class="cmmi-12">M</span>), alors que <span 
+class="cmmi-12">a</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">d</span>(<span 
+class="cmmi-12">bc</span>) <span 
+class="cmsy-10x-x-120">-</span><span 
+class="cmmi-12">ab</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">dc</span><span 
+class="cmsy-10x-x-120">-</span><span 
+class="cmmi-12">cadb </span>est nul
+dans &#x039B;<sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmmi-12">M</span>.
+<!--l. 422--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x52-2510006.2.2"></a>L&#8217;exemple de lC <span 
+class="cmsy-10x-x-120">&#x2295;</span> lC</h5>
+<!--l. 424--><p class="noindent" >L&#8217;exemple qui nous venons de considérer montre bien que cette algèbre
+différentielle de De Rham, dont nous avons l&#8217;habitude, est loin d&#8217;être la seule
+possible, même dans le cadre commutatif, lorsqu&#8217;on veut définir un calcul
+différentiel. L&#8217;inconvénient de l&#8217;algèbre des formes universelles, c&#8217;est qu&#8217;elle est
+généralement très (trop) &#8220;grosse&#8221; et peu maniable. Cependant, il est des cas,
+même commutatifs, où l&#8217;algèbre de De Rham n&#8217;est pas utilisable &#8212; par exemple
+lorsque <span 
+class="cmmi-12">M </span>n&#8217;est pas différentiable &#8212; et il est bien pratique de pouvoir faire
+appel à la dernière construction. Un autre cas interessant est celui d&#8217;une
+variété <span 
+class="cmmi-12">M </span>qui n&#8217;est pas connexe<span class="frenchb-nbsp">&#x00A0;</span>: on peut alors, bien sûr, faire du calcul
+différentiel &#8220;à la De Rham&#8221; sur chaque composante connexe, mais, ce faisant,
+on perd de l&#8217;information, car les formes universelles non nulles du type
+<span 
+class="cmmi-12">a&#x03B4;b</span>[<span 
+class="cmmi-12">x,y</span>] où <span 
+class="cmmi-12">x </span>et <span 
+class="cmmi-12">y </span>appartiennent à deux composantes connexes distinctes
+n&#8217;ont aucune correspondance dans l&#8217;algèbre de De Rham. Pour illustrer ce
+phénomène, qui se trouve posséder une interprétation physique aussi bien
+                                                                          
+
+                                                                          
+inattendue que capitale, nous allons choisir l&#8217;exemple d&#8217;un espace non
+connexe extrêmement simple<span class="frenchb-nbsp">&#x00A0;</span>: celui fourni par la donnée de deux points.
+Dans ce cas, les 1-formes usuelles (celles de De Rham) n&#8217;existent pas. Par
+contre, on va pouvoir construire et utiliser l&#8217;algèbre des formes universelles
+&#x03A9; = &#x03A9;(lC <span 
+class="cmsy-10x-x-120">&#x2295;</span> lC).
+<!--l. 449--><p class="indent" >   Considérons donc un ensemble discret <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">L,R</span><span 
+class="cmsy-10x-x-120">} </span>constitué de deux éléments que
+nous désignons par les lettres <span 
+class="cmmi-12">L </span>et <span 
+class="cmmi-12">R </span>(penser a <span 
+class="cmti-12">Left </span>et <span 
+class="cmti-12">Right</span>). Soit <span 
+class="cmmi-12">x </span>la fonction
+coordonnée <span 
+class="cmmi-12">x</span>(<span 
+class="cmmi-12">L</span>) = 1<span 
+class="cmmi-12">,x</span>(<span 
+class="cmmi-12">R</span>) = 0 et <span 
+class="cmmi-12">y </span>la fonction coordonnée <span 
+class="cmmi-12">y</span>(<span 
+class="cmmi-12">L</span>) = 0<span 
+class="cmmi-12">,y</span>(<span 
+class="cmmi-12">R</span>) = 1.
+Remarque<span class="frenchb-nbsp">&#x00A0;</span>: <span 
+class="cmmi-12">xy </span>= <span 
+class="cmmi-12">yx </span>= 0, <span 
+class="cmmi-12">x</span><sup><span 
+class="cmr-8">2</span></sup> = <span 
+class="cmmi-12">x,y</span><sup><span 
+class="cmr-8">2</span></sup> = <span 
+class="cmmi-12">y </span>and <span 
+class="cmmi-12">x </span>+ <span 
+class="cmmi-12">y </span>= 1 l où 1 l est la fonction unité
+1l(<span 
+class="cmmi-12">L</span>) = 1<span 
+class="cmmi-12">,</span> 1 l(<span 
+class="cmmi-12">R</span>) = 1. Un élément quelconque de cette algèbre associative (et
+commutative) <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>engendrée par <span 
+class="cmmi-12">x </span>et <span 
+class="cmmi-12">y </span>peut s&#8217;écrire <span 
+class="cmmi-12">&#x03BB;x </span>+ <span 
+class="cmmi-12">&#x03BC;y </span>(où <span 
+class="cmmi-12">&#x03BB; </span>et <span 
+class="cmmi-12">&#x03BC; </span>sont deux
+nombres complexes) et peut être représenté par une matrice diagonale
+<img 
+src="source893x.png" alt="(    )
+ &#x03BB; 0
+ 0 &#x03BC;"  class="left" align="middle"> . On peut écrire <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>= lC<span 
+class="cmmi-12">x </span><span 
+class="cmsy-10x-x-120">&#x2295;</span> lC<span 
+class="cmmi-12">y</span>. L&#8217;algèbre est donc isomorphe à
+lC <span 
+class="cmsy-10x-x-120">&#x2295;</span> lC. Nous introduisons maintenant deux symboles <span 
+class="cmmi-12">&#x03B4;x,&#x03B4;y</span>, ainsi qu&#8217;une
+différentielle <span 
+class="cmmi-12">&#x03B4; </span>qui satisfait à <span 
+class="cmmi-12">&#x03B4;</span><sup><span 
+class="cmr-8">2</span></sup> = 0, qui doit satisfaire à <span 
+class="cmmi-12">&#x03B4;</span>1 l = 0 et à la règle
+habituelle de dérivation d&#8217;un produit (règle de Leibniz). Il est évident
+que &#x03A9;<sup><span 
+class="cmr-8">1</span></sup>, l&#8217;espace des différentielles de degré 1 est engendré par les deux
+quantités indépendantes <span 
+class="cmmi-12">x&#x03B4;x </span>and <span 
+class="cmmi-12">y&#x03B4;y</span>. En effet, la relation <span 
+class="cmmi-12">x </span>+ <span 
+class="cmmi-12">y </span>= 1 l
+implique <span 
+class="cmmi-12">&#x03B4;x </span>+ <span 
+class="cmmi-12">&#x03B4;y </span>= 0<span class="frenchb-thinspace">&#x00A0;</span>; de plus, les relations <span 
+class="cmmi-12">x</span><sup><span 
+class="cmr-8">2</span></sup> = <span 
+class="cmmi-12">x </span>and <span 
+class="cmmi-12">y</span><sup><span 
+class="cmr-8">2</span></sup> = <span 
+class="cmmi-12">y </span>impliquent
+(<span 
+class="cmmi-12">&#x03B4;x</span>)<span 
+class="cmmi-12">x </span>+ <span 
+class="cmmi-12">x</span>(<span 
+class="cmmi-12">&#x03B4;x</span>) = (<span 
+class="cmmi-12">&#x03B4;x</span>), donc (<span 
+class="cmmi-12">&#x03B4;x</span>)<span 
+class="cmmi-12">x </span>= (1 l <span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">x</span>)<span 
+class="cmmi-12">&#x03B4;x </span>and (<span 
+class="cmmi-12">&#x03B4;y</span>)<span 
+class="cmmi-12">y </span>= (1 l <span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">y</span>)<span 
+class="cmmi-12">&#x03B4;y</span>. Ceci
+implique également, par exemple, <span 
+class="cmmi-12">&#x03B4;x </span>= 1 l<span 
+class="cmmi-12">&#x03B4;x </span>= <span 
+class="cmmi-12">x&#x03B4;x </span>+ <span 
+class="cmmi-12">y&#x03B4;x</span>, <span 
+class="cmmi-12">x&#x03B4;x </span>= <span 
+class="cmsy-10x-x-120">-</span><span 
+class="cmmi-12">x&#x03B4;y</span>,
+<span 
+class="cmmi-12">y&#x03B4;x </span>= (1 l <span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">x</span>)<span 
+class="cmmi-12">&#x03B4;x</span>, (<span 
+class="cmmi-12">&#x03B4;x</span>)<span 
+class="cmmi-12">x </span>= <span 
+class="cmmi-12">y&#x03B4;x </span>= <span 
+class="cmsy-10x-x-120">-</span><span 
+class="cmmi-12">y&#x03B4;y </span>etc&#x00A0;. Plus généralement, désignons
+par &#x03A9;<sup><span 
+class="cmmi-8">p</span></sup>, l&#8217;espace des différentielles de degré <span 
+class="cmmi-12">p</span><span class="frenchb-thinspace">&#x00A0;</span>; les relations ci-dessus
+montrent qu&#8217;une base de cet espace vectoriel est fourni par les éléments
+<span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">x&#x03B4;x&#x03B4;x</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">&#x03B4;x,y&#x03B4;y&#x03B4;y</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">&#x03B4;y</span><span 
+class="cmsy-10x-x-120">}</span>. Posons &#x03A9;<sup><span 
+class="cmr-8">0</span></sup> = <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>et &#x03A9; = <span 
+class="cmex-10x-x-120">&#x2295;</span><sub>
+<span 
+class="cmmi-8">p</span></sub>&#x03A9;<sup><span 
+class="cmmi-8">p</span></sup>. L&#8217;espace &#x03A9; est une
+algèbre<span class="frenchb-nbsp">&#x00A0;</span>: on peut multiplier les formes librement, mais il faut tenir compte de la
+règle de Leibniz, par exemple <span 
+class="cmmi-12">x</span>(<span 
+class="cmmi-12">&#x03B4;x</span>)<span 
+class="cmmi-12">x</span>(<span 
+class="cmmi-12">&#x03B4;x</span>) = <span 
+class="cmmi-12">x</span>(1 l <span 
+class="cmsy-10x-x-120">-</span><span 
+class="cmmi-12">x</span>)(<span 
+class="cmmi-12">&#x03B4;x</span>)<sup><span 
+class="cmr-8">2</span></sup>. Attention<span class="frenchb-nbsp">&#x00A0;</span>: l&#8217;algèbre &#x03A9;
+est de dimension infinie, comme il se doit puisque <span 
+class="cmmi-12">p </span>parcourt toutes les
+valeurs de 0 à l&#8217;infini. Bien entendu, la différentielle <span 
+class="cmmi-12">&#x03B4; </span>obéit à la règle de
+Leibniz lorsqu&#8217;elle agit sur les éléments de <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>mais elle obéit à la règle de
+Leibniz graduée lorsqu&#8217;elle agit sur les éléments de &#x03A9;, en l&#8217;occurence
+<span 
+class="cmmi-12">&#x03B4;</span>(<span 
+class="cmmi-12">&#x03C9;</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">&#x03C9;</span><sub><span 
+class="cmr-8">2</span></sub>) = <span 
+class="cmmi-12">&#x03B4;</span>(<span 
+class="cmmi-12">&#x03C9;</span><sub><span 
+class="cmr-8">1</span></sub>)<span 
+class="cmmi-12">&#x03C9;</span><sub><span 
+class="cmr-8">2</span></sub> + (<span 
+class="cmsy-10x-x-120">-</span>1)<sup><span 
+class="cmmi-8">&#x2202;&#x03C9;</span><sub><span 
+class="cmr-6">1</span></sub></sup><span 
+class="cmmi-12">&#x03C9;</span><sub>
+<span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">&#x03B4;</span>(<span 
+class="cmmi-12">&#x03C9;</span><sub><span 
+class="cmr-8">2</span></sub>) où <span 
+class="cmmi-12">&#x2202;&#x03C9;</span><sub><span 
+class="cmr-8">1</span></sub> désigne 0 ou 1 suivant que <span 
+class="cmmi-12">&#x03C9;</span><sub><span 
+class="cmr-8">1</span></sub> est
+pair ou impair.
+<!--l. 493--><p class="indent" >   Dans le cas particulier de la géométrie d&#8217;un ensemble à deux points, <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">L,R</span><span 
+class="cmsy-10x-x-120">}</span>
+nous retrouvons le fait qu&#8217;un élément <span 
+class="cmmi-12">A </span>de &#x03A9;<sup><span 
+class="cmr-8">1</span></sup> considéré comme fonction de deux
+variables doit obéir aux contraintes <span 
+class="cmmi-12">A</span>(<span 
+class="cmmi-12">L,L</span>) = <span 
+class="cmmi-12">A</span>(<span 
+class="cmmi-12">R,R</span>) = 0 et peut donc être
+écrit comme une matrice 2 <span 
+class="cmsy-10x-x-120">&#x00D7; </span>2 indexée par <span 
+class="cmmi-12">L </span>et <span 
+class="cmmi-12">R </span>dont les éléments non
+diagonaux sont nuls (&#8220;matrice hors diagonale&#8221;). Un élement <span 
+class="cmmi-12">F </span>de &#x03A9;<sup><span 
+class="cmr-8">2</span></sup> peut être
+considéré comme fonction de trois variables obéissant aux contraintes
+<span 
+class="cmmi-12">F</span>(<span 
+class="cmmi-12">L,L,R</span>) = <span 
+class="cmmi-12">F</span>(<span 
+class="cmmi-12">R,R,L</span>) = <span 
+class="cmmi-12">F</span>(<span 
+class="cmmi-12">L,R,R</span>) = <span 
+class="cmmi-12">F</span>(<span 
+class="cmmi-12">R,L,L</span>) = <span 
+class="cmmi-12">F</span>(<span 
+class="cmmi-12">R,R,R</span>) = <span 
+class="cmmi-12">F</span>(<span 
+class="cmmi-12">L,L,L</span>) = 0.
+                                                                          
+
+                                                                          
+Les deux seules composantes non nulles sont donc <span 
+class="cmmi-12">F</span>(<span 
+class="cmmi-12">L,R,L</span>) and <span 
+class="cmmi-12">F</span>(<span 
+class="cmmi-12">R,L,R</span>). Le
+fait que <span 
+class="cmmi-12">dim</span>(&#x03A9;<sup><span 
+class="cmmi-8">p</span></sup>) = 2 pour tout <span 
+class="cmmi-12">p </span>suggère la possibilité d&#8217;utiliser des matrices de
+taille fixe (en l&#8217;occurence des matrices 2 <span 
+class="cmsy-10x-x-120">&#x00D7; </span>2) pour toutes valeurs de <span 
+class="cmmi-12">p</span>. Ceci ne
+serait pas le cas pour une géométrie à plus de deux points. En effet, on peut
+aisément généraliser la construction précédente, par exemple en partant de trois
+points au lieu de deux. Mais dans ce cas, &#x03A9;<sup><span 
+class="cmr-8">1</span></sup> est de dimension 6 et &#x03A9;<sup><span 
+class="cmr-8">2</span></sup> de
+dimension 12. Avec <span 
+class="cmmi-12">q </span>points, la dimension de &#x03A9;<sup><span 
+class="cmmi-8">p</span></sup> est <span 
+class="cmmi-12">q</span>(<span 
+class="cmmi-12">q </span><span 
+class="cmsy-10x-x-120">- </span>1)<sup><span 
+class="cmmi-8">p</span></sup>. Ce dernier résultat
+vient du fait que <span 
+class="cmmi-12">dim</span>(<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />&#x2297;<img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>) <span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">dim</span>(<span 
+class="cmmi-12">Ker</span>(<span 
+class="cmmi-12">m</span>)) = <span 
+class="cmmi-12">dim</span>(<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>). On a donc
+<span 
+class="cmmi-12">dim</span>(&#x03A9;<sup><span 
+class="cmr-8">1</span></sup>) = <span 
+class="cmmi-12">q</span><sup><span 
+class="cmr-8">2</span></sup> <span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">q</span>.
+<!--l. 517--><p class="indent" >   Pour revenir au cas de la géométrie à deux points, nous voyons qu&#8217;il est
+possible de représenter <span 
+class="cmmi-12">&#x03BB;x</span>(<span 
+class="cmmi-12">&#x03B4;x</span>)<sup><span 
+class="cmr-8">2</span><span 
+class="cmmi-8">p</span></sup> + <span 
+class="cmmi-12">&#x03BC;y</span>(<span 
+class="cmmi-12">&#x03B4;y</span>)<sup><span 
+class="cmr-8">2</span><span 
+class="cmmi-8">p</span></sup> comme une matrice diagonale <img 
+src="source894x.png" alt="(    )
+  &#x03BB; 0
+  0 &#x03BC;"  class="left" align="middle">
+et l&#8217;élément <span 
+class="cmmi-12">&#x03B1;x</span>(<span 
+class="cmmi-12">&#x03B4;x</span>)<sup><span 
+class="cmr-8">2</span><span 
+class="cmmi-8">p</span><span 
+class="cmr-8">+1</span></sup> + <span 
+class="cmmi-12">&#x03B2;y</span>(<span 
+class="cmmi-12">&#x03B4;y</span>)<sup><span 
+class="cmr-8">2</span><span 
+class="cmmi-8">p</span><span 
+class="cmr-8">+1</span></sup> comme la matrice &#8220;hors&#8221; diagonale
+<img 
+src="source895x.png" alt="(     )
+  0 i&#x03B1;
+ i&#x03B2;  0"  class="left" align="middle"> Autrement dit nous pouvons représenter les formes paires par des
+matrices paires (i.e. diagonales) et les formes impaires par des matrices impaires
+(i.e. &#8220;hors&#8221; diagonales)<span class="frenchb-thinspace">&#x00A0;</span>; ceci est non seulement naturel mais obligatoire si on
+veut que la multiplication des matrices soit compatible avec la multiplication dans
+&#x03A9;. En effet, les relations
+   <center class="math-display" >
+<img 
+src="source896x.png" alt="x(&#x03B4;x)2px   = x(&#x03B4;x )2p
+x(&#x03B4;x)2py   = 0
+x(&#x03B4;x)2p+1x = 0
+     2p+1          2p+1
+x(&#x03B4;x)    y = x(&#x03B4;x )   " class="math-display" ></center>
+montrent que cette représentation utilisant des matrices 2 <span 
+class="cmsy-10x-x-120">&#x00D7; </span>2 est effectivement un
+homomorphisme d&#8217;algèbres Z Z<sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmsy-10x-x-120">-</span>graduées, de &#x03A9; (gradué par la parité de <span 
+class="cmmi-12">p</span>) dans
+l&#8217;algèbre des marices complexes 2 <span 
+class="cmsy-10x-x-120">&#x00D7; </span>2 (avec graduation Z Z<sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmsy-10x-x-120">- </span>associée avec la
+décomposition d&#8217;une matrice en une partie diagonale et hors diagonale). La
+présence du facteur <span 
+class="cmmi-12">i </span>dans les matrices hors diagonales représentant les éléments
+impairs est nécessaire pour que les deux types de produits soient compatibles.
+L&#8217;algèbre &#x03A9; s&#8217;obtient en effectuant la <span 
+class="cmti-12">somme directe  </span>des espaces vectoriels &#x03A9;<sup><span 
+class="cmmi-8">p</span></sup>.
+Comme on l&#8217;a dit, l&#8217;algèbre &#x03A9; est donc de dimension infinie mais si nous
+représentons toute l&#8217;algèbre &#x03A9; à l&#8217;aide de matrices 2 <span 
+class="cmsy-10x-x-120">&#x00D7; </span>2 agissant sur un espace
+                                                                          
+
+                                                                          
+vectoriel fixé de dimension 2, la <span 
+class="cmmi-12">p</span>-graduation est perdue et seule la graduation Z Z<sub><span 
+class="cmr-8">2</span></sub>
+est conservée.
+<!--l. 548--><p class="indent" >   Nous verrons un peu plus loin qu&#8217;il est possible, en géométrie non
+commutative, de donner un sens à la notion de connexion. Dans le cas le plus
+simple, la forme de connexion <span 
+class="cmmi-12">A </span>n&#8217;est autre qu&#8217;une forme de degré 1 appartenant
+à une algèbre différentielle (&#x039E;<span 
+class="cmmi-12">,&#x03B4;</span>) associée à l&#8217;algèbre associative <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>choisie. On
+verra que la courbure <span 
+class="cmmi-12">F</span>, dans ce cas, peut également s&#8217;écrire comme
+<span 
+class="cmmi-12">F </span>= <span 
+class="cmmi-12">&#x03B4;A </span>+ <span 
+class="cmmi-12">A</span><sup><span 
+class="cmr-8">2</span></sup>.
+<!--l. 556--><p class="indent" >   Dans le cas présent, &#x039E; = &#x03A9;. Une forme de degré 1 est un élément de &#x03A9;<sup><span 
+class="cmr-8">1</span></sup>.
+Prenons <span 
+class="cmmi-12">A </span>= (<span 
+class="cmmi-12">&#x03C6;</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">x&#x03B4;x </span>+ <span class="bar-css"><span 
+class="cmmi-12">&#x03C6;</span></span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">y&#x03B4;y</span>). La représentation matricielle de <span 
+class="cmmi-12">A </span>se lit
+donc
+   <center class="math-display" >
+<img 
+src="source897x.png" alt="     ( 0  i&#x03C6;)
+A  =
+       i¯&#x03C6; 0
+" class="math-display" ></center> La courbure correspondante est alors <span 
+class="cmmi-12">F </span>= <span 
+class="cmmi-12">&#x03B4;A </span>+ <span 
+class="cmmi-12">A</span><sup><span 
+class="cmr-8">2</span></sup>, mais
+<span 
+class="cmmi-12">A</span><sup><span 
+class="cmr-8">2</span></sup>  = <span 
+class="cmsy-10x-x-120">-</span><span 
+class="cmmi-12">&#x03C6;</span><span class="bar-css"><span 
+class="cmmi-12">&#x03C6;</span></span><span 
+class="cmmi-12">x</span><sup><span 
+class="cmr-8">2</span></sup><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03B4;x&#x03B4;x </span><span 
+class="cmsy-10x-x-120">-</span><span class="bar-css"><span 
+class="cmmi-12">&#x03C6;</span></span><span 
+class="cmmi-12">&#x03C6;</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">y</span><sup><span 
+class="cmr-8">2</span></sup><span 
+class="cmmi-12">&#x03B4;y&#x03B4;y </span>= <span 
+class="cmsy-10x-x-120">-</span><span 
+class="cmmi-12">&#x03C6;</span><span class="bar-css"><span 
+class="cmmi-12">&#x03C6;</span></span><span 
+class="cmmi-12">x</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03B4;x&#x03B4;x </span><span 
+class="cmsy-10x-x-120">-</span><span class="bar-css"><span 
+class="cmmi-12">&#x03C6;</span></span><span 
+class="cmmi-12">&#x03C6;</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">y&#x03B4;y&#x03B4;y </span>et
+<span 
+class="cmmi-12">&#x03B4;A </span>= <span 
+class="cmmi-12">&#x03C6;&#x03B4;x&#x03B4;x </span>+ <span class="bar-css"><span 
+class="cmmi-12">&#x03C6;</span></span><span 
+class="cmmi-12">&#x03B4;y&#x03B4;y </span>= (<span class="bar-css"><span 
+class="cmmi-12">&#x03C6;</span></span> + <span 
+class="cmmi-12">&#x03C6;</span>)(<span 
+class="cmmi-12">x&#x03B4;x&#x03B4;x </span>+ <span 
+class="cmmi-12">y&#x03B4;y&#x03B4;y</span>). <span 
+class="cmmi-12">F </span>peut donc s&#8217;écrire
+aussi
+   <center class="math-display" >
+<img 
+src="source898x.png" alt="                                     (                        )
+                                       &#x03C6; + ¯&#x03C6; - &#x03C6; ¯&#x03C6;      0
+F =  (&#x03C6; + ¯&#x03C6; - &#x03C6; ¯&#x03C6;)(x&#x03B4;x&#x03B4;x +  y&#x03B4;y&#x03B4;y) =        0      &#x03C6; + &#x03C6;¯- &#x03C6; ¯&#x03C6; " class="math-display" ></center>
+Nous pouvons choisir un produit hermitien sur &#x03A9; en décidant que la base
+<span 
+class="cmmi-12">x</span>(<span 
+class="cmmi-12">&#x03B4;x</span>)<sup><span 
+class="cmmi-8">p</span></sup><span 
+class="cmmi-12">,y</span>(<span 
+class="cmmi-12">&#x03B4;y</span>)<sup><span 
+class="cmmi-8">q</span></sup> est orthonormale. Alors <span 
+class="cmsy-10x-x-120">|</span><span 
+class="cmmi-12">F</span><span 
+class="cmsy-10x-x-120">|</span><sup><span 
+class="cmr-8">2</span></sup> = <span class="bar-css"><span 
+class="cmmi-12">F</span></span><span 
+class="cmmi-12">F </span>= (<span 
+class="cmmi-12">&#x03C6; </span>+ <span class="bar-css"><span 
+class="cmmi-12">&#x03C6;</span></span> <span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">&#x03C6;</span><span class="bar-css"><span 
+class="cmmi-12">&#x03C6;</span></span>)<sup><span 
+class="cmr-8">2</span></sup>. Le lecteur
+familier des théories de jauge avec brisure de symmétrie reconnaitra ici un
+potentiel de Higgs <a 
+ id="dx52-251001"></a>translaté <span 
+class="cmmi-12">V </span>[<span 
+class="cmmi-12">&#x03D5;</span>] = <span 
+class="cmsy-10x-x-120">|</span><span 
+class="cmmi-12">F</span><span 
+class="cmsy-10x-x-120">|</span><sup><span 
+class="cmr-8">2</span></sup>. (voir figure <a 
+href="#x52-2510021">6.1<!--tex4ht:ref: fig:Higgs --></a>). <hr class="figure"><div class="figure" 
+>
+                                                                          
+
+                                                                          
+<a 
+ id="x52-2510021"></a>
+                                                                          
+
+                                                                          
+<!--l. 582--><p class="noindent" >
+<center class="math-display" >
+<img 
+src="source899x.png" alt="
+" class="math-display" ></center>
+<br /> <div class="caption" 
+><span class="id"><span 
+class="cmcsc-10x-x-120">F<span 
+class="small-caps">i</span><span 
+class="small-caps">g</span><span 
+class="small-caps">u</span><span 
+class="small-caps">r</span><span 
+class="small-caps">e</span></span>&#x00A0;6.1: </span><span  
+class="content">Potentiel de Higgs <span 
+class="cmmi-12">V </span>[<span 
+class="cmmi-12">Re</span>(<span 
+class="cmmi-12">&#x03C6;</span>)<span 
+class="cmmi-12">,Im</span>(<span 
+class="cmmi-12">&#x03C6;</span>)]</span></div><!--tex4ht:label?: x52-2510021 -->
+                                                                          
+
+                                                                          
+<!--l. 587--><p class="indent" >   </div><hr class="endfigure">
+<!--l. 589--><p class="indent" >   Notre calcul différentiel, dans le cas présent, est commutatif, puisque l&#8217;algèbre
+des fonctions sur un espace à deux points est simplement l&#8217;algèbre des matrices
+diagonales 2 <span 
+class="cmsy-10x-x-120">&#x00D7; </span>2 avec des coefficients complexes (ou réels) mais notre
+calcul différentiel est, en un sens, &#8220;non local&#8221; puisque la &#8220;distance&#8221; entre
+les deux points étiquetés par <span 
+class="cmmi-12">L </span>et <span 
+class="cmmi-12">R </span>ne peut pas tendre vers zéro&#x2026;Le
+lecteur aura sans doute remarqué que ces résultats peuvent s&#8217;interpréter en
+termes de champs de Higgs. Nous y reviendrons (exemple poursuivi en
+6.2.4).
+   <h4 class="subsectionHead"><span class="titlemark">6.2.3   </span> <a 
+ id="x52-2520006.2.3"></a>L&#8217;algèbre différentielle &#x03A9;<sub><span 
+class="cmmi-8">Der</span></sub><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span></h4>
+<a 
+ id="dx52-252001"></a>
+<!--l. 602--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x52-2530006.2.3"></a>Rappel sur les dérivations d&#8217;algèbre</h5>
+<!--l. 605--><p class="noindent" >Rappelons (relire 1.10.1) que
+       <ul class="itemize1">
+       <li class="itemize"><span 
+class="cmmi-12">Der</span>(<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>) est une algèbre de Lie
+       </li>
+       <li class="itemize"><span 
+class="cmmi-12">Der</span>(<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>) n&#8217;est pas un module sur <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>
+       </li>
+       <li class="itemize"><span 
+class="cmmi-12">Der</span>(<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>) est un module sur le centre de <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>
+       </li>
+       <li class="itemize"><span 
+class="cmmi-12">Int</span>(<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>) = <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">ad</span><sub><span 
+class="cmmi-8">a</span></sub><span 
+class="cmmi-12">&#x2215;a </span><span 
+class="cmsy-10x-x-120">&#x2208; <img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />} </span>avec <span 
+class="cmmi-12">ad</span><sub><span 
+class="cmmi-8">a</span></sub>(<span 
+class="cmmi-12">b</span>) = [<span 
+class="cmmi-12">a,b</span>] qu&#8217;on appelle <span 
+class="cmsl-12">ensemble</span>
+       <span 
+class="cmsl-12">des d</span><span 
+class="cmsl-12">érivations int</span><span 
+class="cmsl-12">érieures </span>est un idéal d&#8217;algèbre de Lie de <span 
+class="cmmi-12">Der</span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>(en
+       effet soit <span 
+class="cmmi-12">X</span><sub><span 
+class="cmmi-8">a</span></sub> = <span 
+class="cmmi-12">ad</span><sub><span 
+class="cmmi-8">a</span></sub> <span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="cmmi-12">Int</span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>et <span 
+class="cmmi-12">Y </span><span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="cmmi-12">Der</span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>, alors [<span 
+class="cmmi-12">Y,X</span><sub><span 
+class="cmmi-8">a</span></sub>] = <span 
+class="cmmi-12">ad</span><sub><span 
+class="cmmi-8">Y </span><span 
+class="cmr-8">(</span><span 
+class="cmmi-8">a</span><span 
+class="cmr-8">)</span></sub> <span 
+class="cmsy-10x-x-120">&#x2208;<img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>).
+       </li>
+       <li class="itemize">On note <span 
+class="cmmi-12">Out</span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>= <span 
+class="cmmi-12">Der</span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span><span 
+class="cmmi-12">&#x2215;Int</span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span></li></ul>
+<!--l. 624--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x52-2540006.2.3"></a>Formes différentielles</h5>
+<!--l. 626--><p class="noindent" >Classiquement, une forme différentielle <span 
+class="cmmi-12">&#x03C9; </span>est une <span 
+class="cmmi-12">n</span>-forme sur l&#8217;algèbre de Lie des
+champs de vecteurs, antisymétrique, linéaire par rapport aux scalaires, bien
+sûr, mais aussi linéaire par rapport aux fonctions, et à valeur dans les
+fonctions.
+                                                                          
+
+                                                                          
+<!--l. 631--><p class="indent" >   On va définir ici les formes différentielles comme des objets qui soient des
+<span 
+class="cmmi-12">n</span>-formes sur l&#8217;algèbre de Lie des dérivations de <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>, antisymétrique, linéaire par
+rapport au scalaires, bien sur, mais aussi linéaire par rapport au centre <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-5a.png" alt="Z" class="10-120x-x-5a" /></span>(<span 
+class="cmmi-12">A</span>) de
+<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>et à valeurs dans l&#8217;algèbre <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>.
+<!--l. 637--><p class="indent" >   En d&#8217;autres termes, on pose
+   <center class="math-display" >
+<img 
+src="source900x.png" alt="  n           n                    0
+&#x03A9;--Der(A ) = CZ(A)(DerA, A ) avec &#x03A9;-Der(A ) = A
+" class="math-display" ></center>
+<!--l. 641--><p class="indent" >   Cette définition est due à <span class="cite">[<a 
+href="sourceli8.html#XMDV-cras">6</a>]</span>
+<!--l. 643--><p class="indent" >   C&#8217;est une algèbre différentielle graduée avec un produit défini par
+<!--l. 645--><p class="indent" >
+   <center class="math-display" >
+<img 
+src="source901x.png" alt="                          &#x2211;         |&#x03C3;|
+(&#x03B1;&#x03B2; )(v1,v2,...,vm+n ) =        (--1)--&#x03B1;(v&#x03C3; ,v&#x03C3; ,...,v&#x03C3; )&#x03B2; (v&#x03C3;   ,v&#x03C3;   ,...,v&#x03C3;   )
+                        &#x03C3;&#x2208;S     m!n!      1   2       m      m+1   m+2       m+n
+                           m+n" class="math-display" ></center>
+où <span 
+class="cmmi-12">&#x03B1; </span><span 
+class="cmsy-10x-x-120">&#x2208;</span><span class="underline">&#x03A9;</span><sub><span 
+class="cmmi-8">Der</span></sub><sup><span 
+class="cmmi-8">m</span></sup>(<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>) et <span 
+class="cmmi-12">&#x03B2; </span><span 
+class="cmsy-10x-x-120">&#x2208;</span><span class="underline">&#x03A9;</span><sub>
+<span 
+class="cmmi-8">Der</span></sub><sup><span 
+class="cmmi-8">n</span></sup>(<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>), et où <span 
+class="cmmi-12">d </span>est une différentielle définie
+comme suit<span class="frenchb-nbsp">&#x00A0;</span>: la forme différentielle <span 
+class="cmmi-12">d&#x03C9; </span>peut se définir directement par son
+action sur tout (<span 
+class="cmmi-12">k </span>+ 1)-uplet <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">v</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">,v</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,v</span><sub><span 
+class="cmmi-8">k</span><span 
+class="cmr-8">+1</span></sub><span 
+class="cmsy-10x-x-120">} </span>de dérivations, en posant
+<div class="eqnarray">
+   <center class="math-display" >
+                                                                          
+
+                                                                          
+<img 
+src="source902x.png" alt="                      k+1
+                      &#x2211;       i+1
+d&#x03C9; (v1,v2,...,vk+1) =     (- 1)  vi[&#x03C9;(v1,...,^vi,...,vk+1)]
+                      i=1 &#x2211;
+                      +         (- 1)i+j&#x03C9;([vi,vj],v1,...,^vi,...,^vj,...,vk+1)
+                        i&#x2264;i&#x2264;j&#x2264;k+1
+" class="math-display" ></center>
+</div>où le symbole <span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmex-10x-x-120">^</span> <span style="margin-left:0.3em" class="thinspace"></span>désigne l&#8217;omission de l&#8217;argument correspondant.
+<!--l. 674--><p class="indent" >   En particulier, pour une 1-forme <span 
+class="cmmi-12">da </span>(agissant sur la dérivation <span 
+class="cmmi-12">v</span>) on a
+simplement
+   <center class="math-display" >
+<img 
+src="source903x.png" alt="|-------------|
+-da(v)-=-v(a)-|
+" class="math-display" ></center>
+<!--l. 682--><p class="indent" >   On peut immédiatement vérifier que <span 
+class="cmmi-12">d </span>est alors une dérivation graduée de
+degré 1 sur l&#8217;algèbre <span class="underline">&#x03A9;</span><sub><span 
+class="cmmi-8">Der</span></sub>(<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>) et que <span 
+class="cmmi-12">d</span><sup><span 
+class="cmr-8">2</span></sup> = 0<span 
+class="cmmi-12">.</span>
+<!--l. 686--><p class="indent" >   Les définitions qui précèdent sont tout à fait naturelles puisque ce sont
+exactement les mêmes que pour les différentielles habituelles (rappelons encore
+une fois que, dans le cas usuel de la géométrie &#8221;commutative&#8221;, les dérivations
+d&#8217;algèbres <span 
+class="cmmi-12">v</span><sub><span 
+class="cmmi-8">k</span></sub> de l&#8217;algèbre <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>= <span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">&#x221E;</span></sup>(<span 
+class="cmmi-12">M</span>) ne sont autres que les champs de
+vecteurs).
+<!--l. 694--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x52-2550006.2.3"></a>Distinction entre <span class="underline">&#x03A9;</span><sub><span 
+class="cmmi-8">Der</span></sub> et &#x03A9;<sub><span 
+class="cmmi-8">Der</span></sub></h5>
+<!--l. 696--><p class="noindent" >En utilisant la règle de Leibniz, on voit qu&#8217;un produit quelconque d&#8217;éléments
+de <span 
+class="cmmi-12">a </span>et de différentielles (du type <span 
+class="cmmi-12">da</span>) peut se réordonner sous la forme
+d&#8217;une somme de termes du type <span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span 
+class="cmmi-12">da</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">da</span><sub><span 
+class="cmmi-8">n</span></sub>. Cela dit, il y a une petite
+subtilité<span class="frenchb-nbsp">&#x00A0;</span>: avec la définition que nous avons adoptée, il n&#8217;est pas clair que tout
+élément de <span class="underline">&#x03A9;</span><sub><span 
+class="cmmi-8">Der</span></sub><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>puisse s&#8217;écrire comme une somme <span 
+class="cmti-12">finie  </span>d&#8217;éléments
+de ce type. Ceci conduit à introduire la définition suivante<span class="frenchb-nbsp">&#x00A0;</span>: on pose
+&#x03A9;<sub><span 
+class="cmmi-8">Der</span></sub><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>= <span 
+class="cmex-10x-x-120">&#x2295;</span>
+  <sub><span 
+class="cmmi-8">n</span><span 
+class="cmr-8">=0</span></sub><sup><span 
+class="cmsy-8">&#x221E;</span></sup>&#x03A9;<sub>
+<span 
+class="cmmi-8">Der</span></sub><sup><span 
+class="cmmi-8">n</span></sup><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>où &#x03A9;<sub>
+<span 
+class="cmmi-8">Der</span></sub><sup><span 
+class="cmmi-8">n</span></sup><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>est le sous-espace vectoriel de <span class="underline">&#x03A9;<sub>
+<span 
+class="cmmi-8">Der</span></sub></span><sup><span 
+class="cmmi-8">n</span></sup><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>
+constitué des sommes finies du type <span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span 
+class="cmmi-12">da</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">da</span><sub><span 
+class="cmmi-8">n</span></sub>. On démontre alors <span class="cite">[<a 
+href="sourceli8.html#XMDV-cras">6</a>]</span> que &#x03A9;<sub><span 
+class="cmmi-8">Der</span></sub><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>
+                                                                          
+
+                                                                          
+est la plus petite sous algèbre différentielle graduée de <span class="underline">&#x03A9;<sub><span 
+class="cmmi-8">Der</span></sub></span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>contenant
+<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>.
+<!--l. 713--><p class="indent" >   En général, on peut oublier cette distinction entre <span class="underline">&#x03A9;</span><sub><span 
+class="cmmi-8">Der</span></sub> et &#x03A9;<sub><span 
+class="cmmi-8">Der</span></sub>. Dans le cas
+de la géométrie des variétés (variétés connexes ou réunion dénombrables de
+variétés connexes), on peut démontrer que les deux notions coïncident lorsque la
+variété <span 
+class="cmmi-12">M </span>est paracompacte. Cela qui revient à dire que la variété admet une
+base topogique dénombrable&#x2026;(et dans ce cas elle admet également un atlas
+comprenant au plus une infinité dénombrable de cartes). Pour des variétés
+paracompactes, donc (hypothèse qu&#8217;on fait presque toujours<span class="frenchb-thinspace">&#x00A0;</span>!), les deux notions
+coïncident et coïncident évidemment avec l&#8217;algèbre des formes différentielles
+usuelles (ceci découlant immédiatement de l&#8217;identité entre les définitions
+ci-dessus et celles qu&#8217;on peut trouver en <a 
+href="sourcese6.html#x18-370001.6.2">1.6.2<!--tex4ht:ref: sec:diffext --></a>). Lorsque l&#8217;algèbre <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>n&#8217;est pas
+commutative, on aura également les deux possibilites<span class="frenchb-nbsp">&#x00A0;</span>: <span class="underline">&#x03A9;</span><sub><span 
+class="cmmi-8">Der</span></sub><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>et &#x03A9;<sub><span 
+class="cmmi-8">Der</span></sub><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>qui
+peuvent coïncider ou non. Le cas le moins &#8220;sauvage&#8221; est évidemment
+celui où les deux notions coïncident (analogue non commutatif du cas
+paracompact). Dans la suite de cette section, on supposera que c&#8217;est le
+cas.
+<!--l. 732--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x52-2560006.2.3"></a>Exemples</h5>
+       <ul class="itemize1">
+       <li class="itemize">Cas  des  variétés.  On  sait  déja  que  <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>=  <span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">&#x221E;</span></sup>(<span 
+class="cmmi-12">M</span>),  que  <span 
+class="cmmi-12">Der</span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>=
+       &#x0393;<span 
+class="cmmi-12">TM </span>(champs de vecteurs) et que &#x03A9;<sub><span 
+class="cmmi-8">Der</span></sub><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>= &#x039B;<span 
+class="cmmi-12">M </span>= &#x0393;<span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M </span>(formes
+       différentielles usuelles).
+       </li>
+       <li class="itemize">Cas  des  matrices.  <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>=  <span 
+class="cmmi-12">M</span>(<span 
+class="cmmi-12">n,</span> lC).  Il  est  bien  connu  que  toutes  les
+       dérivations de cette algèbre sont intérieures, c&#8217;est à dire qu&#8217;elles sont
+       obtenues en calculant des commutateurs avec une matrice donnée.
+       Cela dit, prendre un commutateur avec une matrice <span 
+class="cmmi-12">X </span>ou prendre
+       un commutateur avec une matrice <span 
+class="cmmi-12">X </span>+ <span 
+class="cmmi-12">k</span>1 l donne le même résultat.
+       On  peut  donc  décider  de  normaliser  en  fixant  la  trace  de  <span 
+class="cmmi-12">X  </span>à
+       zéro. L&#8217;ensemble des matrices <span 
+class="cmmi-12">n </span><span 
+class="cmsy-10x-x-120">&#x00D7; </span><span 
+class="cmmi-12">n </span>de trace nulle coïncide, on le
+       sait (cf chapitre 2) avec l&#8217;algèbre de Lie de <span 
+class="cmmi-12">SL</span>(<span 
+class="cmmi-12">n,</span> lC). On voit que
+       <span 
+class="cmmi-12">Der</span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>=  <span 
+class="cmmi-12">Lie</span>(<span 
+class="cmmi-12">SL</span>(<span 
+class="cmmi-12">n,</span> lC)).  Les  éléments  de  &#x03A9;<sub><span 
+class="cmmi-8">Der</span></sub><sup><span 
+class="cmmi-8">n</span></sup><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>sont  donc  les  <span 
+class="cmmi-12">n</span>
+       formes (antisymétriques) sur <span 
+class="cmmi-12">Lie</span>(<span 
+class="cmmi-12">SL</span>(<span 
+class="cmmi-12">n,</span> lC) à valeurs dans l&#8217;algèbre <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>
+       elle-même, c&#8217;est à dire dans <span 
+class="cmmi-12">M</span>(<span 
+class="cmmi-12">n,</span> lC). On peut finalement écrire
+                                                                          
+
+                                                                          
+       <center class="math-display" >
+       <img 
+src="source904x.png" alt="&#x03A9;DerM  (n,lC) = M  (n,lC) &#x2297; &#x2227;(Lie (SL (n,Cl)))*
+       " class="math-display" ></center>
+       </li>
+       <li class="itemize">Cas  des  matrices  à  éléments  fonctions  sur  une  variété.  On  prend
+       <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>= <span 
+class="cmmi-12">M</span>(<span 
+class="cmmi-12">n,</span> lC) <span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">&#x221E;</span></sup>(<span 
+class="cmmi-12">M</span>). Nous ne détaillerons pas cet exemple (voir
+       <span class="cite">[<a 
+href="sourceli8.html#XMDV-cras">6</a>]</span>). Le résultat est assez intuitif et s&#8217;obtient à partir des deux cas
+       précédents<span class="frenchb-nbsp">&#x00A0;</span>: <span 
+class="cmmi-12">Der</span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>= <span 
+class="cmmi-12">Der</span>(<span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">&#x221E;</span></sup>(<span 
+class="cmmi-12">M</span>)) <span 
+class="cmsy-10x-x-120">&#x2297;</span> 1 l <span 
+class="cmsy-10x-x-120">&#x2295; </span><span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">&#x221E;</span></sup>(<span 
+class="cmmi-12">M</span>) <span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">Der</span>(<span 
+class="cmmi-12">M</span>(<span 
+class="cmmi-12">n,</span> lC))
+       et &#x03A9;<sub><span 
+class="cmmi-8">Der</span></sub>(<span 
+class="cmmi-12">M</span>(<span 
+class="cmmi-12">n,</span> lC) <span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">&#x221E;</span></sup>(<span 
+class="cmmi-12">M</span>))  =  &#x039B;(<span 
+class="cmmi-12">M</span>) <span 
+class="cmsy-10x-x-120">&#x2297; </span>&#x03A9;<sub>
+<span 
+class="cmmi-8">Der</span></sub><span 
+class="cmmi-12">M</span>(<span 
+class="cmmi-12">n,</span> lC). Cet exemple
+       a  été  utilisé  pour  la  construction  de  certains  modèles  physiques
+       généralisant les théories de jauges usuelles (voir <span class="cite">[<a 
+href="sourceli8.html#XMDVKernerMadore">10</a>]</span>)
+       </li></ul>
+<!--l. 768--><p class="noindent" >Remarque<span class="frenchb-nbsp">&#x00A0;</span>: il existe des algèbres très simples qui n&#8217;admettent pas de
+dérivations&#x2026;par exemple l&#8217;algèbre des nombres complexes<span class="frenchb-thinspace">&#x00A0;</span>! Dans ce cas, la
+construction qu&#8217;on vient d&#8217;exposer ne donne rien (bien que l&#8217;algèbre des formes
+universelles soit néanmoins non triviale).
+<!--l. 775--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">6.2.4   </span> <a 
+ id="x52-2570006.2.4"></a>Algèbres différentielles pour espaces non connexes</h4>
+<a 
+ id="dx52-257001"></a>
+<!--l. 777--><p class="noindent" >Soient <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>et <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-42.png" alt="B" class="10-120x-x-42" /> </span>deux algèbres associatives (commutatives ou non). Il est
+certain que l&#8217;algèbre des formes universelles pour l&#8217;algèbre <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />&#x2297;<img 
+src="cmsy10-c-42.png" alt="B" class="10-120x-x-42" /> </span>n&#8217;est pas
+isomorphe au produit tensoriel gradué des algèbres universelles de <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>et <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-42.png" alt="B" class="10-120x-x-42" /></span>
+séparément.
+   <center class="math-display" >
+<img 
+src="source905x.png" alt="&#x03A9; (A &#x2297; B ) &#x2044;= &#x03A9;A  &#x2297; &#x03A9;B " class="math-display" ></center> En
+effet, par exemple, &#x03A9;<sup><span 
+class="cmr-8">1</span></sup>(<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />&#x2297;<img 
+src="cmsy10-c-42.png" alt="B" class="10-120x-x-42" /></span>) <span 
+class="cmsy-10x-x-120">&#x2282;<img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />&#x2297;<img 
+src="cmsy10-c-42.png" alt="B" class="10-120x-x-42" />&#x2297;<img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />&#x2297;<img 
+src="cmsy10-c-42.png" alt="B" class="10-120x-x-42" /> </span>alors que
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source906x.png" alt="           1     0      1      1      0
+(&#x03A9;A  &#x2297; &#x03A9;B  ) = &#x03A9;  A &#x2297; &#x03A9;  B &#x2295; &#x03A9;  A &#x2297; &#x03A9;  B &#x2282;  A &#x2297; B &#x2297;  B &#x2295; A &#x2297;  A &#x2297; B " class="math-display" ></center>
+Cependant, &#x03A9;(<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />&#x2297;<img 
+src="cmsy10-c-42.png" alt="B" class="10-120x-x-42" /></span>) et &#x03A9;<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />&#x2297; </span>&#x03A9;<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-42.png" alt="B" class="10-120x-x-42" /> </span>sont toutes deux des algèbres différentielles
+ZZ-graduées dont le terme de degré zéro coïncide avec <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />&#x2297;<img 
+src="cmsy10-c-42.png" alt="B" class="10-120x-x-42" /></span>. La première étant
+universelle, il existe donc un morphisme surjectif de la première sur la
+seconde.
+<!--l. 803--><p class="indent" >   Supposons maintenant que qu&#8217;on s&#8217;intéresse à une variété non connexe
+obtenue comme réunion (disjointe) de plusieurs copies (deux pour simplifier)
+d&#8217;une même variété connexe <span 
+class="cmmi-12">M</span>. On se retrouve donc dans la situation précédente
+avec <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>= <span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">&#x221E;</span></sup>(<span 
+class="cmmi-12">M</span>) et <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-42.png" alt="B" class="10-120x-x-42" /> </span>= lC <span 
+class="cmsy-10x-x-120">&#x2295;</span> lC. En effet <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" />&#x2297;<img 
+src="cmsy10-c-42.png" alt="B" class="10-120x-x-42" /> </span>= <span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">&#x221E;</span></sup>(<span 
+class="cmmi-12">M</span>) <span 
+class="cmsy-10x-x-120">&#x2295; </span><span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">&#x221E;</span></sup>(<span 
+class="cmmi-12">M</span>)<span 
+class="cmmi-12">. </span>L&#8217;algèbre
+différentielle &#x03A9;(<span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">&#x221E;</span></sup>(<span 
+class="cmmi-12">M</span>)) <span 
+class="cmsy-10x-x-120">&#x2297; </span>&#x03A9;(lC <span 
+class="cmsy-10x-x-120">&#x2295;</span> lC) est encore peu commode à utiliser (on se
+souvient que les éléments de &#x03A9;(<span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">&#x221E;</span></sup>(<span 
+class="cmmi-12">M</span>)) sont des fonctions de plusieurs variables
+qui s&#8217;annulent lorsque deux arguments successifs sont égaux). Par contre, rien
+ne nous interdit de remplacer cette dernière par l&#8217;algèbres des formes
+différentielles usuelles &#x039B;<span 
+class="cmmi-12">M</span>. On obtient ainsi le diagramme suivant, où
+chaque flèche désigne un morphisme surjectif d&#8217;algèbres différentielles
+graduées<span class="frenchb-nbsp">&#x00A0;</span>:
+   <center class="math-display" >
+<img 
+src="source907x.png" alt="&#x03A9; (C &#x221E; (M ) &#x2295; C &#x221E;(M  )) &#x21A6;&#x2192; &#x03A9; (C &#x221E; (M )) &#x2297; &#x03A9;(lC &#x2295; lC) &#x21A6;&#x2192;  &#x039B;M  &#x2297;  &#x03A9;(lC &#x2295; lC)
+" class="math-display" ></center>
+<!--l. 822--><p class="indent" >   L&#8217;algèbre
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source908x.png" alt="&#x039E; =  &#x039B;M  &#x2297; &#x03A9; (Cl &#x2295;Cl)  " class="math-display" ></center>
+produit tensoriel gradué du complexe de De Rham usuel par l&#8217;algèbre des formes
+universelles sur l&#8217;espace à deux points lC <span 
+class="cmsy-10x-x-120">&#x2295;</span> lC, constitue une algèbre différentielle
+intéressante à plus d&#8217;un titre et très facile à utiliser. Elle a été étudiée dans <span class="cite">[<a 
+href="sourceli8.html#XCHS">12</a>]</span>
+et utilisée auparavant dans <span class="cite">[<a 
+href="sourceli8.html#XCEV">11</a>]</span>. Sa structure s&#8217;obtient immédiatement à partir de
+notre étude de &#x03A9;(lC <span 
+class="cmsy-10x-x-120">&#x2295;</span> lC). On se souvient que &#x03A9;<sup><span 
+class="cmmi-8">p</span></sup>(lC <span 
+class="cmsy-10x-x-120">&#x2295;</span> lC) est toujours de dimension 2
+et représentable, soit à l&#8217;aide de matrices 2 <span 
+class="cmsy-10x-x-120">&#x00D7; </span>2 diagonales (lorsque <span 
+class="cmmi-12">p </span>est pair) soit
+à l&#8217;aide de matrices 2 <span 
+class="cmsy-10x-x-120">&#x00D7; </span>2 hors diagonales (lorsque <span 
+class="cmmi-12">p </span>est impair). Les éléments
+de
+   <center class="math-display" >
+<img 
+src="source909x.png" alt="     &#x2211;n
+&#x039E;n =     &#x039B;pM  &#x2297;  &#x03A9;n-p(lC &#x2295; lC)
+      p=0  " class="math-display" ></center>
+peuvent donc s&#8217;écrire à l&#8217;aide de matrices 2 <span 
+class="cmsy-10x-x-120">&#x00D7; </span>2 dont les éléments sont des formes
+différentielles usuelles sur la variété <span 
+class="cmmi-12">M </span>(de degré <span 
+class="cmmi-12">p </span>variant de 0 à <span 
+class="cmmi-12">n</span>) et
+positionnées soit sur la diagonale (quand <span 
+class="cmmi-12">p </span>est pair) soit en dehors de la diagonale
+(lorsque <span 
+class="cmmi-12">p </span>est impair). Le produit dans &#x039E; s&#8217;obtient immédiatement à
+partir du produit extérieur dans &#x039B;<span 
+class="cmmi-12">M </span>et du produit déjà étudié dans
+&#x03A9;(lC <span 
+class="cmsy-10x-x-120">&#x2295;</span> lC).
+   <center class="math-display" >
+<img 
+src="source910x.png" alt="(&#x03C1; &#x2297; &#x03B1;)(&#x03C3; &#x2297; &#x03B2;) = (- 1)|&#x03B1;||&#x03C3;|(&#x03C1; &#x2227; &#x03C3; ) &#x2297; (&#x03B1; &#x03B2;)  " class="math-display" ></center> On
+peut finalement encore généraliser la construction précédente en remplaçant
+l&#8217;algèbre des formes différentielles sur la variété <span 
+class="cmmi-12">M </span>par l&#8217;algèbre des formes
+                                                                          
+
+                                                                          
+différentielles sur <span 
+class="cmmi-12">M </span>à valeurs dans l&#8217;algèbre (associative) des matrices <span 
+class="cmmi-12">n </span><span 
+class="cmsy-10x-x-120">&#x00D7; </span><span 
+class="cmmi-12">n</span>
+complexes.
+<!--l. 850--><p class="indent" >   On pourrait ici continuer notre exemple des connexions sur lC <span 
+class="cmsy-10x-x-120">&#x2295;</span> lC, en
+choisissant cette fois-ci pour forme de connexion un élement quelconque de &#x039E;<sup><span 
+class="cmr-8">1</span></sup>. La
+norme carré de la courbure s&#8217;interprète alors physiquement comme le lagrangien
+d&#8217;un modèle de jauge <span 
+class="cmmi-12">U</span>(1) <span 
+class="cmsy-10x-x-120">&#x00D7; </span><span 
+class="cmmi-12">U</span>(1), avec potentiel de Higgs <a 
+ id="dx52-257002"></a>et symmétrie brisée.
+Un des deux champs de jauge devient massif (le boson <span 
+class="cmmi-12">Z</span><sub><span 
+class="cmr-8">0</span></sub>) et l&#8217;autre reste sans
+masse (le photon).
+<!--l. 858--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">6.2.5   </span> <a 
+ id="x52-2580006.2.5"></a>L&#8217;algèbre différentielle &#x03A9;<sub><span 
+class="cmmi-8">D</span></sub><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span></h4>
+<a 
+ id="dx52-258001"></a>
+<!--l. 861--><p class="noindent" >La construction qui suit est un peu plus élaborée que les précédentes, en ce sens
+qu&#8217;elle utilise un plus grand nombre d&#8217;ingrédients. On a vu que la construction de
+l&#8217;algèbre des formes différentielle universelle &#x03A9;(<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>) était possible, pour une algèbre
+associative quelconque <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>. L&#8217;algèbre différentielle &#x03A9;<sub><span 
+class="cmmi-8">Der</span></sub>(<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>), quant à elle, fait jouer
+un rôle particulier aux dérivations de <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>(pour autand qu&#8217;elles existent). L&#8217;algèbre
+différentielle que nous allons présenter maintenant, et dont la construction est due
+à A. Connes, repose sur la donnée d&#8217;un &#8220;triplet spectral&#8221;, donnée qui englobe,
+non seulement l&#8217;algèbre associative <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>elle-même, mais également d&#8217;autres
+données qui peuvent être considérées comme le codage d&#8217;une structure
+riemannienne non commutative. Certains rappels et/ou constructions annexes
+sont nécessaires.
+<!--l. 876--><p class="indent" >   Dans l&#8217;approche traditionnelle de la géométrie différentielle, on commence par
+se donner un espace <span 
+class="cmmi-12">M </span>(on peut alors parler de l&#8217;algèbre des fonctions sur <span 
+class="cmmi-12">M</span>), on
+le munit tout d&#8217;abord d&#8217;une topologie (on peut alors parler de l&#8217;algèbre <span 
+class="cmmi-12">C</span><sup><span 
+class="cmr-8">0</span></sup>(<span 
+class="cmmi-12">M</span>)
+des fonctions continues sur <span 
+class="cmmi-12">M</span>), puis d&#8217;une structure différentiable (ce qui revient
+à choisir une sous-algèbre particulière <span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">&#x221E;</span></sup>(<span 
+class="cmmi-12">M</span>) incluse dans dans <span 
+class="cmmi-12">C</span><sup><span 
+class="cmr-8">0</span></sup>(<span 
+class="cmmi-12">M</span>)), puis
+d&#8217;une structure riemannienne (choix d&#8217;une métrique), puis d&#8217;une structure
+spinorielle (si la variété le permet), on construit alors le fibré des spineurs, puis
+l&#8217;opérateur de Dirac relatif à la métrique choisie et agissant sur les champs
+de spineurs (sections du fibré des spineurs). Dans le cas d&#8217;une variété
+compacte et d&#8217;une métrique proprement riemannienne, on peut alors
+fabriquer un produit scalaire global et un espace de spineurs (l&#8217;espace <span 
+class="cmmi-12">L</span><sup><span 
+class="cmr-8">2</span></sup> des
+champs de spineurs de carré intégrable). Dans le cas où la variété est de
+dimension paire, on peut également décomposer cet espace de Hilbert en
+deux sous-espaces supplémentaires correspondant à des demi-spineurs
+de chiralités opposées, l&#8217;opérateur de Dirac allant d&#8217;un sous-espace à
+l&#8217;autre (on rappelle que cet opérateur anti-commute avec l&#8217;opérateur de
+                                                                          
+
+                                                                          
+chiralité).
+<!--l. 897--><p class="indent" >   Tout ceci est maintenant bien connu du lecteur (voir chapitres précédents).
+L&#8217;approche &#8220;à la A. Connes&#8221; <span class="cite">[<a 
+href="sourceli8.html#XACbook">3</a>]</span> de la géométrie non commutative consiste
+à &#8220;renverser la vapeur&#8221; en écrivant tout ceci à l&#8217;envers, et sous forme
+algébrique (en utilisant des algèbres commutatives), puis de promouvoir
+l&#8217;essentiel de ces transcriptions au rang de définitions, en effaçant l&#8217;adjectif
+&#8220;commutatif&#8221;.
+<!--l. 904--><p class="indent" >   La théorie se divise alors en deux<span class="frenchb-nbsp">&#x00A0;</span>: il existe un cas dit &#8220;pair&#8221; et un cas dit
+&#8220;impair&#8221;. Nous allons simplement ébaucher la discussion du cas pair, cas qui
+généralise au cas non commutatif la géométrie associée à la donnée d&#8217;un
+opérateur de Dirac sur une variété de dimension paire. On se donne un
+triplet (<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span><span 
+class="cmmi-12">,</span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-48.png" alt="H" class="10-120x-x-48" /></span><span 
+class="cmmi-12">,D</span>) possédant les propriétés suivantes<span class="frenchb-nbsp">&#x00A0;</span>: <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-48.png" alt="H" class="10-120x-x-48" /> </span>est un espace de
+Hilbert Z Z<sub><span 
+class="cmr-8">2</span></sub> gradué (l&#8217;opérateur de graduation est alors appelé opérateur de
+chiralité), <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>est une algèbre associative munie d&#8217;une involution (<span 
+class="cmsy-10x-x-120">*</span>) et
+représentée fidèlement dans <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-48.png" alt="H" class="10-120x-x-48" /></span>à l&#8217;aide d&#8217;opérateurs bornés pairs, et <span 
+class="cmmi-12">D </span>est
+un opérateur auto-adjoint tel que les commutateurs [<span 
+class="cmmi-12">D,a</span>]<span 
+class="cmmi-12">,a </span><span 
+class="cmsy-10x-x-120">&#x2208;<img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>soient
+bornés<span class="frenchb-thinspace">&#x00A0;</span>; on impose également à la résolvente (<span 
+class="cmmi-12">D </span>+ <span 
+class="cmmi-12">i</span>)<sup><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sup> d&#8217;être un opérateur
+compact.
+<!--l. 919--><p class="indent" >   Un tel triplet est appelé <span 
+class="cmsl-12">triplet spectral</span> <a 
+ id="dx52-258002"></a>mais on pourrait peut-être, de façon
+plus imagée, le désigner sous le nom d&#8217;<span 
+class="cmsl-12">espace riemannien quantique</span><a 
+ id="dx52-258003"></a>. Dans le cas
+de la géométrie commutative, <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>coïnciderait avec la complexifiée de l&#8217;algèbre
+<span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">&#x221E;</span></sup>(<span 
+class="cmmi-12">M</span>), <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-48.png" alt="H" class="10-120x-x-48" /> </span>avec l&#8217;espace de Hilbert <span 
+class="cmmi-12">L</span><sup><span 
+class="cmr-8">2</span></sup>(<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-53.png" alt="S" class="10-120x-x-53" /></span>) des champs de spineurs de carré
+intégrable, et <span 
+class="cmmi-12">D </span>avec l&#8217;opérateur de Dirac lui-même.
+<!--l. 929--><p class="indent" >   Dans le cas classique (commutatif), si on n&#8217;impose pas de propriété
+de compacité pour la résolvente de <span 
+class="cmmi-12">D</span>, l&#8217;algèbre <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>(qui est telle que les
+commutateurs de ses éléments avec <span 
+class="cmmi-12">D </span>soient bornés) n&#8217;est autre que l&#8217;algèbre des
+fonctions Lipschitziennes sur <span 
+class="cmmi-12">M</span>, c&#8217;est à dire celle dont les éléments sont tels que
+<span 
+class="cmsy-10x-x-120">|</span><span 
+class="cmmi-12">f</span>(<span 
+class="cmmi-12">x</span>) <span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">f</span>(<span 
+class="cmmi-12">y</span>)<span 
+class="cmsy-10x-x-120">|&#x2264; </span><span 
+class="cmmi-12">c</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">d</span>(<span 
+class="cmmi-12">x,y</span>)<span 
+class="cmmi-12">,</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmsy-10x-x-120">&#x2200;</span><span 
+class="cmmi-12">x,y </span><span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="cmmi-12">M</span>.
+<!--l. 936--><p class="indent" >   Dans ce cadre commutatif, il se trouve qu&#8217;il est en fait possible de retrouver la
+distance riemannienne <span 
+class="cmmi-12">d</span>(<span 
+class="cmmi-12">x,y</span>) entre deux points quelconques <span 
+class="cmmi-12">x </span>et <span 
+class="cmmi-12">y </span>de <span 
+class="cmmi-12">M </span>à partir
+de ces données. En effet, on montre que
+   <center class="math-display" >
+<img 
+src="source911x.png" alt="d (x, y) = Sup {|f (x) - f(y)|,f &#x2208; A, |[D, f]| &#x2264; 1} " class="math-display" ></center> Le
+                                                                          
+
+                                                                          
+concept de distance, qu&#8217;on relie d&#8217;habitude à un procédé de minimisation entre
+différents points est alors obtenu grâce à un procédé de maximisation pour les
+fonctions définies sur ces points.
+<!--l. 948--><p class="indent" >   Nous avons maintenant tout ce qu&#8217;il nous faut pour construire l&#8217;algèbre
+différentielle &#x03A9;<sub><span 
+class="cmmi-8">D</span></sub>(<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>). Nous savons déjà construire l&#8217;algèbre des formes universelles
+&#x03A9;(<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>). Soit <span 
+class="cmmi-12">&#x03C9; </span>= <span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span 
+class="cmmi-12">&#x03B4;a</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">&#x03B4;a</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">&#x03B4;a</span><sub><span 
+class="cmmi-8">n</span></sub>, une <span 
+class="cmmi-12">n</span>-forme universelle (un élément de &#x03A9;<sup><span 
+class="cmmi-8">n</span></sup>(<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>)).
+Nous lui associons l&#8217;opérateur borné
+   <center class="math-display" >
+<img 
+src="source912x.png" alt="|-------------------------------|
+&#x03C0; [&#x03C9; ] = a [D, a ][D, a ]...[D, a ]
+---------0----1-----2---------n--  " class="math-display" ></center> Il
+est facile de vérifier que cette application est une représentation de l&#8217;algèbre &#x03A9;(<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>)
+dans l&#8217;algèbre des opérateurs bornés sur l&#8217;espace de Hilbert <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-48.png" alt="H" class="10-120x-x-48" /> </span>(on se
+souvient que <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>est, par hypothèse, représenté dans <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-48.png" alt="H" class="10-120x-x-48" /></span>). Ceci vient du
+fait que la dérivation d&#8217;algébre <span 
+class="cmmi-12">d </span>est représentée par l&#8217;opération [<span 
+class="cmmi-12">D,</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">.</span><span style="margin-left:0.3em" class="thinspace"></span>]
+qui est elle-même une dérivation. La première est de carré nul, mais ce
+n&#8217;est malheureusement pas le cas de la seconde. En d&#8217;autres termes, la
+représentation <span 
+class="cmmi-12">&#x03C0; </span>n&#8217;est pas une représentation d&#8217;algèbre <span 
+class="cmti-12">diff</span><span 
+class="cmti-12">érentielle</span>. Il est
+cependant facile de remédier à cela. Soit <span 
+class="cmmi-12">K </span>le noyau de <span 
+class="cmmi-12">&#x03C0;</span><span class="frenchb-thinspace">&#x00A0;</span>; c&#8217;est un idéal
+de &#x03A9;(<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>), puisque <span 
+class="cmmi-12">&#x03C0; </span>est une représentation d&#8217;algèbre. Mais <span 
+class="cmmi-12">K </span>n&#8217;est pas
+en général un idéal différentiel<span class="frenchb-nbsp">&#x00A0;</span>: <span 
+class="cmmi-12">&#x03B4;K </span>n&#8217;est pas dans <span 
+class="cmmi-12">K</span>. On pose alors
+<span 
+class="cmmi-12">J </span>= <span 
+class="cmmi-12">K </span><span 
+class="cmsy-10x-x-120">&#x2295; </span><span 
+class="cmmi-12">&#x03B4;K</span>. Par construction <span 
+class="cmmi-12">J </span>est alors un idéal différentiel. On pose
+alors
+   <center class="math-display" >
+<img 
+src="source913x.png" alt="&#x03A9;D (A ) = &#x03A9; (A )&#x2215;J  " class="math-display" ></center> Par
+construction, l&#8217;algèbre obtenue &#x03A9;<sub><span 
+class="cmmi-8">D</span></sub>(<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>) est bien une algèbre différentielle. On peut
+finalement la regraduer en considérant les intersections de <span 
+class="cmmi-12">Ker</span>(<span 
+class="cmmi-12">&#x03C0;</span>) avec l&#8217;algèbre
+                                                                          
+
+                                                                          
+universelle. La construction est donc achevée et on démontre que, dans le cas
+classique (où <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /> </span>= <span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">&#x221E;</span></sup>(<span 
+class="cmmi-12">M</span>)), l&#8217;algèbre différentielle Z Z-graduée &#x03A9;<sub>
+<span 
+class="cmmi-8">D</span></sub>(<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-41.png" alt="A" class="10-120x-x-41" /></span>) obtenue est
+isomorphe au complexe de De Rham &#x039B;(<span 
+class="cmmi-12">M</span>), c&#8217;est à dire à l&#8217;algèbre des formes
+différentielles usuelles.
+<!--l. 983--><p class="indent" >   Nous n&#8217;irons pas plus avant dans cette direction. Le lecteur interessé pourra
+consulter une litérature plus spécialisée. Cela dit, il est peut-être important de
+signaler ici que les constructions mathématiques présentées dans cette section &#8212;
+et même dans le présent chapitre &#8212; sont souvent récentes, ce qui signifie
+que les définitions et constructions proposées n&#8217;ont peut être pas encore
+suffisemment bénéficié du mûrissement nécessaire. Cela ne signifie pas qu&#8217;elles
+sont erronées mais elles n&#8217;ont peut être pas atteint le même degré de
+stabilité temporelle que les autres concepts présentés auparavant dans cet
+ouvrage.
+                                                                          
+
+                                                                          
+   <!--l. 994--><div class="crosslinks"><p class="noindent">[<a 
+href="sourcese33.html" >next</a>] [<a 
+href="sourcese31.html" >prev</a>] [<a 
+href="sourcese31.html#tailsourcese31.html" >prev-tail</a>] [<a 
+href="sourcese32.html" >front</a>] [<a 
+href="sourcech6.html#sourcese32.html" >up</a>] </p></div>
+<!--l. 994--><p class="indent" >   <a 
+ id="tailsourcese32.html"></a>   
+</body></html> 

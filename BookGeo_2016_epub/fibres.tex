@@ -1,0 +1,2241 @@
+
+\chapter{Espaces Fibr\'es}
+\section{G\'en\'eralit\'es}
+\subsection{Le langage des fibr\'es}
+Avant d'introduire la notion d'espace fibr\'e, nous allons montrer comment 
+``le langage des fibr\'es'' permet d'analyser de mani\`ere originale un aspect 
+bien connu de la th\'eorie des ensembles, \`a savoir la notion d'application 
+d'un ensemble dans un autre, tout en y apportant un nouvel 
+\'eclairage.
+
+Soit $\pi$ une application quelconque de $P$ (espace de d\'epart) dans $M$ 
+(espace d'arriv\'ee). L'application $\pi$ n'ayant aucune raison d'\^etre 
+injective, notons $F_x  =  \pi^{-1}(x)$ l'ensemble des ant\'ec\'edents de 
+$x\in M$ par $\pi$.
+Lorsque $x$ d\'ecrit $M$, les ensembles $F_x$ sont, bien entendu, 
+distincts, puisque $\pi$ est une application (il n'en serait pas 
+n\'ecessairement ainsi dans le cas o\`u  $\pi$ serait une simple correspondance).
+En g\'en\'eral aussi, la cardinalit\'e de $F_x$, ou m\^eme sa structure 
+topologique peut varier avec $x$. 
+
+Utiliser ``le langage des fibr\'es'' consiste \`a effectuer le changement de 
+vocabulaire suivant~:
+ 
+\begin{tabular}{lcl}
+Espace de d\'epart $P$ & $\longrightarrow$  & Espace total $P$ \\
+Espace d'arriv\'ee $M$ & $\longrightarrow$ & Base $M$ \\
+Application $\pi$ & $\longrightarrow$ &  Projection $\pi$ \\
+Ensemble $F_x$ des ant\'ec\'edents de $x$ & $\longrightarrow$ &  Fibre  $F_x$ au dessus de $x$
+\end{tabular}
+
+et sch\'ematiser la situation par le dessin \ref{fig:espace fibre}.
+
+\begin{figure}[htbp]
+\epsfxsize=8cm
+$$
+\epsfbox{espace-fibre.eps}
+$$
+\caption{Un espace fibr\'e}
+\label{fig:espace fibre}
+\end{figure}
+
+On peut toujours supposer $\pi$ surjective, au besoin en d\'egonflant 
+l'espace d'arriv\'ee $M$, mais $\pi$ ne sera pas, en g\'en\'eral, injective (en 
+d'autres termes, $\mbox{card}(F_x)$ est, en g\'en\'eral, plus grand que $1$).
+Choisissons donc, pour chaque $x$ de $M$, un certain ant\'ec\'edent, c'est \`a 
+dire un \'el\'ement de $F_x$. Nous noterons $\sigma(x)$ l'ant\'ec\'edent choisi. 
+Par construction, $\sigma$ est une application de $M$ dans $P$ telle que 
+$\pi \circ \sigma = \id$, o\`u  le $\id$ du membre de droite d\'esigne 
+l'application identique de $M$. Une telle application $\sigma$ est, par 
+d\'efinition, une {\sl section\/} \index{section} de l'application $P 
+\stackrel{\pi}{\mapsto} M$. Le 
+mot ``section'' vient du fait qu'intuitivement, on d\'efinit $\sigma$ en 
+d\'ecoupant avec des ciseaux la figure~\ref{fig:espace fibre} le long du pointill\'e.
+Le fait que $\pi$ ne soit pas injective montre qu'il existe g\'en\'eralement 
+de nombreuses sections $\sigma$ diff\'erentes (notons que nous n'avons, 
+pour le moment, rien impos\'e sur l'application $\sigma$). Chacune de ces 
+sections d\'efinit donc un inverse (\`a droite) pour l'application $\pi$~; 
+encore une fois, il nous faut insister sur le fait qu'il existe en 
+g\'en\'eral plusieurs sections et que le choix d'une telle section r\'esulte 
+$\ldots$ d'un choix! Lorsque $M$ est muni d'une topologie, le choix d'une 
+section au dessus d'un ouvert $U \subset M$ est d\'esign\'e sous le nom de 
+``choix d'une {\sl section locale\/}  \index{section locale}  pour l'application $\pi$''.
+
+Le vocabulaire pr\'ec\'edent est tellement g\'en\'eral qu'il est utilisable pour 
+des applications entre ensembles quelconques. Le lecteur pourra donc 
+s'amuser \`a ``repenser'', en ces termes, certaines de ses applications 
+favorites. 
+
+Consid\'erons, \`a titre d'exemple, l'application suivante qui, \`a 
+tout point de la sph\`ere unit\'e, associe sa projection sur l'axe $\mbox{Oz}$:
+\begin{description}
+	\item[Espace de d\'epart]  (espace total) $P$~: la sph\`ere $S^2$ de centre 
+	$O$ et de rayon $1$ incluse dans $\RR^2$.
+	
+	\item[Espace d'arriv\'ee]  (base) $M$~: le segment $\{(0,0,z)\,
+ \tq z \, \in 
+	[-1,+1]\}$
+	
+	\item[Application]  $\pi$~: $(x,y,z)\in S^2 \mapsto (0,0,z) \in M$
+\end{description}
+
+La fibre au dessus d'un point quelconque int\'erieur au segment $M$ est un 
+cercle de $S^2$ parall\`ele \`a l'\'equateur $\mbox{xOy}$. Lorsque le point de 
+$M$ choisi co\"incide avec l'un des deux p\^oles $\{0,0,\pm 1\}$, la fibre 
+correspondante se r\'eduit \`a un point (cercle de rayon nul).
+
+De la m\^eme fa\c con, l'analyse de la fonction exponentielle $i\theta \in P 
+ =  i \RR \mapsto e^{i\theta} \in M  =  S^1$ en utilisant le 
+langage des fibr\'es revient \`a ``regarder'' la figure \ref{fig:exponentielle}
+
+\begin{figure}[htbp]
+\epsfxsize=8cm
+\epsfxsize=6cm
+$$
+    \epsfbox{exponentielle.eps}
+$$
+\caption{La fonction exponentielle $e^{i\theta}$}
+\label{fig:exponentielle}
+\end{figure}
+
+Dans le cas pr\'esent, la fibre au dessus de n'importe quel point $x_\theta 
+ =  e^{i\theta}$ du cercle $S^1$ est un ensemble $F_\theta  =  
+\{\theta + 2 k \pi {\hskip 0.5cm} \tq  {\hskip 0.5cm} k \in \ZZ \}$ qu'on peut mettre en bijection avec 
+l'ensemble des entiers $\ZZ$. Toute section d\'efinit un inverse pour 
+l'exponentielle, c'est \`a dire une d\'etermination du logarithme~: 
+$\exp \, Log \, e^{i\theta} = e^{i\theta}$; en pratique, on veut que ces d\'eterminations 
+soient des fonctions continues, ce qui impose des conditions 
+suppl\'ementaires sur les sections correspondantes.
+
+\subsection{Fibrations. Fibr\'es diff\'erentiables localement triviaux}
+\subsubsection{Fibration}
+
+Comme nous venons de le voir, toute application peut \^etre d\'ecrite dans 
+le ``langage des fibr\'es'', mais toute application n'est pas une fibration 
+: dans le cadre de cet ouvrage, nous travaillons dans la cat\'egorie des 
+vari\'et\'es diff\'erentiables et nous dirons qu'une application $\pi: P 
+\rightarrow M$ est une {\sl fibration\/}\index{fibration} si toutes les fibres $\pi^{-1}(x)$, $x \in M$ 
+sont diff\'eomorphes (on suppose ici que $P$ et $M$ sont des vari\'et\'es et que 
+$\pi$ est diff\'erentiable). Plus g\'en\'eralement, m\^eme dans le cas o\`u  les 
+fibres sont discr\`etes, on dira qu'on a affaire \`a une fibration si 
+toutes les fibres ont m\^eme cardinalit\'e.
+
+Puisque toutes les fibres sont diff\'eomorphes, on dira que {\sl la fibre 
+type\/} \index{fibre type} est $F$ lorsque toutes les fibres sont ``de 
+type $F$'', ce qui signifie~: diff\'eomorphes \`a $F$.
+
+\subsubsection{Fibr\'e localement trivial}
+
+Soit $P \rightarrow M$ une fibration et $U \subset M$ un ouvert de $M$
+appartenant \`a l'atlas d\'efinissant la structure diff\'erentiable de $M$. 
+On a envie, intuitivement, de se repr\'esenter l'ensemble des ant\'ec\'edents 
+$\pi^{-1}(U)$ comme un cylindre ``au dessus de $U$'' (voir figure 
+\ref{fig:cylindre}).
+
+\begin{figure}[htbp]
+\epsfxsize=8cm
+$$
+    \epsfbox{cylindre.eps}
+$$
+
+\caption{Les points au dessus de l'ouvert $U$}
+\label{fig:cylindre}
+\end{figure}
+ 
+ On appelle {\sl espace fibr\'e localement trivial\/} \index{espace fibr\'e 
+ localement trivial} la donn\'ee d'une fibration $(P,M,\pi)$ telle que, 
+ pour tout ouvert $U$ de $M$, l'ensemble $\pi^{-1}(U)$ soit diff\'eomorphe 
+ \`a $U \times F$ o\`u  $F$ est la fibre type de la fibration. 
+ La condition de trivialit\'e locale est souvent sous-entendue, et on parle alors simplement d'{\sl espace fibr\'e}.
+ 
+ \subsubsection{Remarques}
+\begin{itemize}
+	\item  En anglais, les deux expressions ``{\it fibered space\/}'' et ``{\it fiber 
+	bundle\/}'' correspondent respectivement aux termes ``fibrations'' et ``espace 
+	fibr\'e localement trivial'', tout au moins, en g\'en\'eral. 	
+	\item  Dans la suite de cet ouvrage, nous ne consid\'ererons que des 
+	espaces fibr\'es localement triviaux, sauf mention explicite du contraire. 
+	Pour cette raison, nous utiliserons souvent les deux expressions 
+	``fibration'' et ``fibr\'e localement trivial'' de fa\c con \'equivalente et 
+	donc sans faire explicitement mention de la propri\'et\'e de trivialit\'e locale.
+	\item  Comme on l'a \'ecrit plus haut, un espace fibr\'e est d\'efini par un 
+	triplet $(P,M,\pi)$ car il peut, en effet, exister plusieurs fibrations 
+	diff\'erentes $(P,{M'},{\pi')}$ et $(P,M,\pi)$ du m\^eme espace 
+	total $P$. Par abus de langage, et dans le cas o\`u  l'on s'int\'eresse \`a une 
+	seule fibration pour un espace total $P$ donn\'e, on pourra dire que $P$ 
+	lui m\^eme est un espace fibr\'e.
+	\item  Intuitivement, dire que $P$ est un espace fibr\'e revient \`a dire 
+	que $P$ est une collection de fibres de m\^eme type et ``coll\'ees'' 
+	ensemble. L'ensemble des fibres (l'ensemble dont les diff\'erents \'el\'ements 
+	sont les fibres) est, par d\'efinition, l'espace de base $M$ et 
+	l'application $\pi$ est celle qui associe \`a tout point $z$ de $P$ la 
+	fibre \`a laquelle il appartient. On dira \'egalement que $P$ est un espace 
+	qui peut \^etre fibr\'e en espaces $F$ au dessus de $M$ (voir la 
+	figure \ref{fig:cylindre}).
+	
+\end{itemize}
+
+ \subsubsection{Fibr\'e trivial}
+ 
+ Dire que $(P,M,\pi)$ est localement trivial consiste \`a affirmer, comme 
+ nous l'avons vu, que {\it localement\/}, l'espace total $P$ ressemble \`a 
+ un produit~: c'est la propri\'et\'e $\pi^{-1}(U) \simeq U\times F$.
+ Cependant, le fait que $P \simeq M \times F$ n'est pas une propri\'et\'e 
+ impos\'ee. Lorsque tel est le cas, on dit que $P$ est un fibr\'e trivial. 
+ Bien qu'utilisable en toute g\'en\'eralit\'e, la th\'eorie des espaces fibr\'es 
+ est surtout int\'eressante lorsque $P$ est seulement localement trivial, 
+ mais n'est pas trivial. Nous rencontrerons une multitude de tels exemples 
+ dans ce qui suit.
+ 
+ \subsubsection{Trivialisations locales}
+ 
+ Lorsque $U$ est un ouvert de $M$, dire que  $\pi^{-1}(U)$ est 
+ diff\'eomorphe \`a $U \times F$ revient \`a dire qu'il existe un 
+ diff\'eomorphisme $\psi_U$ entre les deux ensembles~: 
+$$
+ z \in  \pi^{-1}(U) \subset P \mapsto \psi_U(z) = (x,g) \in U \times F
+{\hskip 0.5cm}\mbox{avec}{\hskip 0.5cm} x = \pi(z) 
+$$
+ L'application $\psi_U$ prend le nom de {\sl trivialisation locale 
+ relative \`a l'ouvert $U$\/}. \index{trivialisations locales}
+ Bien entendu, une telle trivialisation est loin d'\^etre unique puisque la 
+ compos\'ee $(\id_M \times \phi) \circ \psi_U$ de $\psi_U$ avec $(\id_M 
+ \times \phi)$, $\phi$ d\'esignant un diff\'eomorphisme quelconque de la 
+ fibre type $F$, fournit une autre trivialisation.
+ 
+ La trivialisation $\psi_U(z) = (x=\pi(z),g)$ est parfaitement 
+ caract\'eris\'ee par l'application $g_U : \pi^{-1}(U) \rightarrow F$ d\'efinie 
+ par $g_U(z)=g$; en d'autres termes, le point $z$ de $P$ est caract\'eris\'e 
+ par le point $x=\pi(z)$ sur $M$ et le point $g=g_U(z)$ sur 
+ $F$. Seul le point $x$ est canoniquement d\'efini par la fibration ; l'\'el\'ement  $g$ de $F$, 
+ au contraire, r\'esulte du choix d'une trivialisation locale. Pour que ces 
+ deux composantes (les deux points $(x,g)\in M\times F$) deviennent des coordonn\'ees (des 
+ nombres), il suffit de choisir un rep\`ere local sur $M$ et sur $F$.
+ On pourra sch\'ematiser la situation par la figure \ref{fig:trivialisation}.
+\begin{figure}[htbp]
+\epsfxsize=8cm
+$$
+    \epsfbox{trivialisation.eps}
+$$
+
+\caption{Trivialisation locale d'un espace fibr\'e}
+\label{fig:trivialisation}
+\end{figure}
+
+\subsubsection{Sous-fibr\'es}
+
+Soient $(P,M,\pi)$ et $(P',M',\pi')$ deux espaces fibr\'es. On dira que
+le premier est un sous-fibr\'e du second si $P$ (respectivement $M$) est
+une sous-vari\'et\'e de $P'$ (respectivement $M'$) et si $\pi$ co\"incide
+avec la restriction correspondante de $\pi'$.
+
+
+\section{Espaces fibr\'es principaux}
+\subsection{La structure d'espace fibr\'e principal}\label{sec:principal}
+Une fibration $(P,M,\pi)$ est un espace fibr\'e principal lorsque les trois 
+conditions suivantes sont satisfaites~:
+\begin{enumerate}
+	\item  $(P,M,\pi)$ est un espace fibr\'e localement trivial.
+	
+	\item  Un groupe de Lie $G$ agit (\`a droite) sur $P$, et ce, de fa\c con 
+	transitive dans chaque fibre.
+	
+	\item  Toutes les fibres sont hom\'eomorphes \`a $G$.
+\end{enumerate}
+
+Les trois conditions ci-dessus sont obligatoires pour qu'on puisse parler 
+de fibr\'e principal car nous verrons un peu plus loin des exemples o\`u  $(1)$ et 
+$(2)$ sont v\'erifi\'ees (mais pas $(3)$) et des exemples o\`u  $(1)$ et 
+$(3)$ sont v\'erifi\'ees (mais pas $(2)$).
+
+En g\'en\'eral, on consid\`ere des espaces fibr\'es principaux \`a droite, comme 
+ci-dessus, mais il est bien \'evident qu'on peut \'egalement consid\'erer des 
+espaces fibr\'es principaux \`a gauche.
+
+Le groupe $G$ (la fibre type) est g\'en\'eralement d\'esign\'e sous le nom de 
+{\sl groupe structural \/}\index{groupe structural} du fibr\'e consid\'er\'e.
+Afin d'all\'eger les notations, nous noterons tr\`es simplement l'action de 
+$G$ sur $P$~: Soient $z_1 \in P$ et $g \in G$, l'image $z_2$ de $z_1$ 
+sous l'action de $g$ sera not\'ee $z_2 = z_1 g$, ce qui peut \^etre d\'ecrit, 
+de fa\c con imag\'ee, par la figure~\ref{fig:fibre principal}.
+
+\begin{figure}[htbp]
+\epsfxsize=8cm
+$$
+    \epsfbox{action-fibre.eps}
+$$
+
+\caption{Action du groupe structural sur un espace fibr\'{e} principal}
+\label{fig:fibre principal}
+\end{figure}
+
+Attention~: Parce que $G$ agit sur $P$, de nombreux physiciens d\'esignent ces 
+transformations de $P$ dans
+$P$ (du type $z\in P \mapsto {z'}=zg, g\in G$) sous le nom de {\sl 
+transformations de jauge globales\/}\index{transformations de jauge globales}
+ et d\'esignent \'egalement $G$ lui m\^eme sous le nom de 
+{\sl groupe de jauge \/}\index{groupe de jauge};
+ cependant nous r\'eserverons ce dernier vocable (groupe de jauge)  pour le 
+{\sl groupe des transformations de jauge locales \/}\index{transformations de jauge locales}
+\index{automorphismes verticaux}
+ que nous d\'efinirons un 
+peu plus loin.
+
+La relation $z_2=z_1 g$ est formellement tr\`es semblable \`a la relation 
+\'el\'ementaire 
+$A_2=A_1 + \overrightarrow{V}$ o\`u  $A_1$ et $A_2$ d\'esignent deux points d'un espace 
+affine et o\`u  $\overrightarrow{V}$ d\'esigne un vecteur de l'espace vectoriel 
+sous-jacent. Les \'el\`eves de nos lyc\'ees savent bien qu'on peut 
+``soustraire'' deux points en \'ecrivant $\overrightarrow{V}=A_2-A_1$ (on n'a pas le 
+droit d'``additionner'' deux points!). De la m\^eme fa\c con, on pourra \'ecrire 
+ici $g = z_1^{-1}z_2$, puisque
+$z_1 g = z_2$ et que
+ $g$ est bien d\'etermin\'e par la donn\'ee de 
+$z_1$ et de $z_2$. Notons enfin que l'analogue de la c\'el\`ebre ``relation 
+de Chasles'' s'\'ecrit $z_1^{-1}z_2 = (z_1^{-1}z_3)(z_3^{-1}z_2)$.
+
+\subsection{Sections locales et trivialisations locales}
+Dans le cas d'un fibr\'{e} principal, chaque fibre $G_x$ au dessus de $x$, 
+\'el\'ement de $M$ est une ``copie'' du groupe $G$, mais il s'agit d'une 
+copie au sens topologique (ou diff\'erentiable) du terme car l'origine 
+du groupe $G$ (l'\'el\'ement neutre) est connue mais celle de la fibre $G_x$ ne 
+l'est pas~! Afin de mieux faire sentir le sens de cette importante 
+remarque, consid\'erons l'exemple suivant \ref{fig:origine}
+\begin{figure}[htbp]
+\epsfxsize=12cm
+$$
+    \epsfbox{origine.eps}
+$$
+\caption{L'origine de la fibre (copie du cercle $U(1)$) au dessus de $x$ est 
+marqu\'ee par la section $\sigma$}
+\label{fig:origine}
+\end{figure}
+
+Dans le cas pr\'esent, $P$ est un cylindre fini $P=M\times S^1$ o\`u  $M$ est 
+un intervalle et $S^1$ d\'esigne le cercle de rayon $1$~; la fibre au dessus 
+de $x$ est un cercle, et ce cercle, comme tous les cercles, est 
+hom\'eomorphe au groupe $U(1)$. Sur ce cercle, tous les points ``se 
+valent'' et on ne sait pas multiplier un point par un autre. Par contre, 
+si le cercle est marqu\'e par une origine, il devient isomorphe au groupe 
+$U(1)$ et on sait alors multiplier les points 
+($e^{i\theta}e^{i\alpha}=e^{i(\theta+\alpha)}$). Le groupe $U(1)$ agit 
+bien sur l'ensemble $P$ ci-dessus en faisant tourner un point quelconque 
+$z\in P$ d'un angle $\theta$.
+
+Revenons au cas g\'en\'eral d'un fibr\'{e} principal $(P,M,\pi)$ de groupe 
+structural $G$. Le choix d'une section locale $x\in U\subset M \mapsto 
+\sigma(x) \in P$ permet de ``marquer une origine'' sur chacune des 
+fibres $G_x$ situ\'ees au dessus de l'ouvert $U$. En d'autres termes, le 
+choix d'une section locale $\sigma$ permet d'identifier la fibre $G_x$ 
+avec le groupe $G$ lui-m\^eme. La fa\c con la plus simple d'exprimer ceci de 
+fa\c con alg\'ebrique consiste \`a montrer qu'\`a la section locale $\sigma$ on 
+peut associer une trivialisation locale $\psi_U$ d\'efinie comme suit~: 
+soit $z\in P$, alors $\psi_U(z)  =  (x;g_\sigma)$ o\`u  $x=\pi(z)$ et o\`u
+$g_\sigma$ d\'esigne l'unique \'el\'ement de $G$ d\'efini par $z = \sigma(x) 
+g_\sigma$. En effet, $z$ et $\sigma(x)$ \'etant dans la m\^eme fibre, il 
+existe un et un seul \'el\'ement $g_\sigma$ de $G$ permettant de passer de 
+$\sigma(x)$ \`a $z$~; l'existence et l'unicit\'e de cet \'el\'ement $g_\sigma$ 
+r\'esulte des axiomes $(2)$ et $(3)$ de la structure de fibr\'{e} principal. 
+Une section locale $\sigma$ d\'efinit donc \'egalement une application --- que 
+nous noterons encore $g_\sigma$ --- de $P$ dans $G$~; en d'autres termes, 
+les ``composantes'' de $z \in P$ sont $x = \pi(z) \in M$ et 
+$g_\sigma=g_\sigma(z) \in G$. La composante $x$ est canoniquement d\'efinie 
+par la structure fibr\'{e}e et la composante $g_\sigma$ r\'esulte du choix 
+d'une section locale $\sigma$.
+
+Il faut enfin noter que le choix d'une section locale permet de d\'efinir 
+{\it localement\/} l'action {\it \`a gauche\/} du groupe $G$ sur $P$~; en 
+effet, en plus de l'action \`a droite $z\in P, k \in G \rightarrow 
+z \, k=(x;g_\sigma)k=(x;g_\sigma k) \in P$ qui ne d\'epend pas de $\sigma$ et qui est globalement d\'efinie
+puisqu'elle r\'esulte de la structure d'espace fibr\'{e} principal, on 
+peut d\'efinir localement une action \`a gauche
+$z\in P, k \in G \rightarrow 
+(k \, z)_\sigma = (x;k g_\sigma) \in P$, qui d\'epend de $\sigma$.
+
+Supposons que nous ayons fait le choix d'une section locale $\sigma$ au 
+dessus de l'ouvert $U$ et d'une section locale $\tau$ au dessus de 
+l'ouvert $V$~; si on fait un choix de $z \in P$ tel que la projection 
+$\pi(z)$ appartienne \`a l'intersection $U \cap V$, on peut \'ecrire aussi 
+bien 
+$z \mathrel{\oalign{$\, =$\cr$\sigma $}}(x;g_\sigma)$ que
+$z \mathrel{\oalign{$\, =$\cr$\tau $}}(x;g_\tau)$.
+ Il existe donc un \'el\'ement $g_{\sigma\tau}$ du 
+groupe $G$ (et en fait une fonction $g_{\sigma\tau}(x)$ d\'efinie sur $U 
+\cap V$) tel que $g_\sigma = g_{\sigma\tau} g_\tau$. Cette fonction 
+porte le nom de {\sl fonction de transition\/} \index{fonctions de 
+transition}. Ces fonctions de transition permettent en fait de reconstruire
+le fibr\'{e} principal lui-m\^eme. On montre qu'\'etant
+ donn\'es un atlas de $M$ et une famille de fonctions
+de transition  ob\'eissant \`a une certaine propri\'et\'e (dite de cocycle)
+ sur les triples intersections, il est possible de reconstruire
+ l'espace fibr\'{e} dont on est parti.
+
+\subsection{Exemple fondamental~: le fibr\'{e} des rep\`eres lin\'eaires}
+\label{sec:exemple-fondamental}
+L'exemple qui suit est fondamental, non seulement parce qu'il est 
+math\'ematiquement important --- il est d'ailleurs \`a l'origine de toute la 
+th\'eorie des espaces fibr\'{e}s --- mais aussi parce qu'il permet de fournir 
+un support \`a notre intuition g\'eom\'etrique, en particulier dans le cas o\`u  
+l'on s'int\'eresse \`a des fibr\'{e}s principaux $(P,M,\pi)$ quelconques. L'exemple 
+fondamental \'etudi\'e ici nous permettra de d\'evelopper les analogies 
+suivantes~:
+\begin{itemize}
+	\item  Consid\'erer l'espace total $P$ comme un ensemble de rep\`eres 
+	g\'en\'eralis\'es sur la base $M$.
+	
+	\item  Consid\'erer le groupe structural  $G$ comme groupe de 
+	transformations de rep\`eres.
+	
+	\item  Consid\'erer un \'el\'ement quelconque $z$ de $P$ comme un rep\`ere 
+	(g\'en\'eralis\'e) situ\'e au point $x$ de $M$ (avec $x = \pi(z)$).
+	
+	\item  Consid\'erer toute section locale $\sigma(x)$ comme un rep\`ere 
+	mobile (g\'en\'eralis\'e) dans l'ouvert $U$.
+	
+	\item  Consid\'erer les fonctions de transition $g_{\sigma \tau}$ comme 
+	d\'ecrivant des changements de rep\`ere mobile.
+	
+	\item  \etc
+\end{itemize}
+
+Soit $M$ une vari\'et\'e diff\'erentiable de dimension $n$. En chaque point $x$ 
+de $M$ nous avons un espace tangent $T(M,x)$ et nous pouvons consid\'erer 
+l'ensemble $G_x$ de tous les rep\`eres en $x$. Un point $z$ de $G_x$ est 
+donc un rep\`ere en $x$, c'est \`a dire la donn\'ee de $n$ vecteurs 
+ind\'ependants de $T(M,x)$. Soit $P=\bigcup_{x\in M}^{}G_x$ 
+l'ensemble de tous les rep\`eres de $M$. Notons $\pi$ l'application qui, 
+\`a un rep\`ere centr\'e sur $x$, associe l'origine $x$ elle-m\^eme; il est facile 
+de voir que $(P,M,\pi)$ est un espace fibr\'{e} principal de groupe 
+structural $GL(n)$. Il est clair, en effet, que le groupe lin\'eaire 
+$GL(n)$ agit transitivement sur chaque fibre de $P$~: la fibre $G_x$ au 
+dessus de $x$ n'est autre que l'ensemble des rep\`eres en $x$ et il est 
+bien \'evident qu'on peut toujours passer d'un rep\`ere $z={(z_i)}_{i\in 
+\{1\ldots n\}}$ \`a un rep\`ere ${z'}=({z'}_j)$ au m\^eme point $x$ \`a 
+l'aide d'un \'el\'ement $g=(g^i_j)$ de $GL(n)$~: $({z'}_j = z_i g^i_j$). 
+Par ailleurs, le fait que l'ensemble $G_x$ des rep\`eres en $x$ soit 
+hom\'eomorphe \`a $GL(n)$ peut se voir de la fa\c con suivante~: marquons 
+(choisissons) un rep\`ere de r\'ef\'erence $\sigma  =  (\sigma)_i$ en $x$; alors, 
+tout \'el\'ement $g$ de
+$GL(n)$ d\'efinit un nouveau rep\`ere $z = \sigma g$ au m\^eme point, mais 
+r\'eciproquement, tout nouveau rep\`ere $z$ d\'etermine un et un seul \'el\'ement $g$
+de $GL(n)$ tel que $z = \sigma g$. On obtient donc une correspondance 
+bi-univoque entre rep\`eres en $x$ et \'el\'ements de $GL(n)$; bien entendu, 
+cette correspondance d\'epend du choix du rep\`ere de r\'ef\'erence $\sigma$. Il 
+resterait \`a montrer que cette application est bel et bien continue et \`a 
+v\'erifier les conditions de trivialit\'e locale. Le fibr\'{e} principal $P$ 
+ainsi construit se note parfois $FM$ (pour ``{\it Frame bundle of M\/}'') et 
+s'appelle le {\sl fibr\'{e} des rep\`eres lin\'eaires\/}\index{fibr\'{e} des rep\`eres lin\'eaires}
+ sur $M$. Nous invitons 
+le lecteur \`a relire la sous-section pr\'ec\'edente avec cet exemple en t\^ete~; 
+il est alors clair qu'une section locale n'est autre qu'un rep\`ere mobile 
+choisi dans le domaine d'un ouvert et qu'une fonction de transition n'est 
+autre qu'un changement de rep\`ere mobile.
+
+\subsection{Sous-espace des vecteurs verticaux en un point $z$ d'un 
+espace fibr\'{e}}
+
+\begin{itemize}
+	\item  Soit $P$ un espace fibr\'{e} principal et $z$ un \'el\'ement de $P$.
+$P$ est, en particulier, une vari\'et\'e, et
+toutes les 
+constructions \'etudi\'ees dans le contexte des vari\'et\'es diff\'erentiables 
+peuvent \^etre effectu\'ees et on peut donc consid\'erer l'espace tangent \`a $P$ 
+en $z$ que l'on notera $T(P,z)$. Cet espace vectoriel est \'evidemment de 
+dimension $m+n$ lorsque $\mbox{dim}\, M = m$ et $\mbox{dim}\, G = n$, $M$ et 
+$G$ d\'esignant respectivement la base et la fibre type de $P$.
+	
+	\item  Plut\^ot que de consid\'erer l'espace tangent \`a {\it tout\/} l'espace $P$ en 
+$z$, nous pouvons consid\'erer l'espace tangent \`a la fibre $F_x$ de $P$ qui 
+passe par $z$ (c'est \`a dire $x=\pi(z)$); cet espace vectoriel $V_z  =  
+T(F_x,z)$ est naturellement un sous-espace vectoriel de $T(P,z)$. Sa 
+dimension est \'egale \`a $n$ puisque toutes les fibres ont dimension $n$. Le 
+sous-espace $V_z$ s'appelle {\sl espace tangent vertical\/} \index{espace 
+tangent vertical} au point $z$.
+
+\item Intuitivement, un vecteur est un petit 
+d\'eplacement (une fl\`eche~!). Un vecteur de l'espace tangent $T(P,z)$ est 
+donc un d\'eplacement infinit\'esimal d'un ``rep\`ere'' (nous pensons 
+intuitivement \`a $z$ comme \'etant une sorte de rep\`ere g\'en\'eralis\'e).
+Un d\'eplacement infinit\'esimal dans l'ensemble des rep\`eres peut s'analyser \`a 
+l'aide de deux mouvements tr\`es diff\'erents: on peut faire tourner le 
+rep\`ere (sans bouger l'origine) mais on peut \'egalement d\'eplacer l'origine 
+du rep\`ere. Les d\'eplacements verticaux du point $z$ correspondent \`a des 
+mouvements de $z$ dans sa fibre: on ne d\'eplace pas le point de base 
+$x=\pi(z)$~; ainsi, les vecteurs de $V_z$ (les vecteurs verticaux en $z$) 
+correspondent \`a des d\'eplacements infinit\'esimaux du rep\`ere $z$ qui 
+n'entra\^inent aucun d\'eplacement de l'origine $x$~: on se contente de 
+``faire tourner'' infinit\'esimalement (\`a l'aide d'une ``petite 
+transformation'' du groupe $G$) le rep\`ere $z$ en $x$.
+	
+	\item  Le lecteur pourra s'\'etonner de ne trouver, dans ce chapitre, aucun 
+paragraphe intitul\'e ``sous-espace horizontal'' \index{sous-espace 
+horizontal}~; il y a, \`a cela, une excellente raison~: alors que la notion de 
+sous-espace vertical peut se d\'efinir canoniquement, comme on vient de le 
+voir, pour tout fibr\'{e} principal, il n'est par contre pas possible de 
+d\'efinir canoniquement, tout au moins en g\'en\'eral, la notion de d\'eplacement 
+horizontal~; une telle notion est tributaire d'un choix. L'\'etude des 
+choix possibles ---pour un fibr\'{e} principal donn\'e--- d\'efinit, en quelque 
+sorte, la th\'eorie des connexions et fait l'objet du chapitre suivant.
+	
+	\item  Le groupe $G$ agissant (\`a droite) sur l'espace $P$, on peut d\'efinir, 
+comme d'habitude (voir le chapitre sur les groupes) des champs fondamentaux 
+$\epsilon_\alpha$ associ\'es aux \'el\'ements $X_\alpha$ de l'alg\`ebre 
+$Lie(G)$. Par construction, $\epsilon_\alpha(z)$ est un vecteur vertical au 
+point $z$ et l'ensemble $\{\epsilon_\alpha(z)\}_{\alpha \in \{1\ldots 
+n\}}$ constitue une base de l'espace vectoriel $V_z$.
+
+Si $ {z'}=zg$ d\'esigne le rep\`ere issus de $z$ par une ``rotation'' 
+finie $g$, on pourra \'ecrire $\epsilon_\alpha(z)=z X_\alpha$ et 
+interpr\'eter $\epsilon_\alpha(z)$ comme une d\'eplacement infinit\'esimal du 
+``rep\`ere'' $z$ \`a l'aide de la ``rotation infinit\'esimale'' $X_\alpha$. 
+
+Pour ne pas alourdir le texte, nous supprimerons les guillemets autour 
+des mots ``rep\`ere'' et ``rotation'' dans la suite du texte, mais le 
+lecteur devra se souvenir que ces mots d\'esignent respectivement les 
+\'el\'ements du fibr\'{e} principal consid\'er\'e (qui ne sont pas n\'ecessairement des rep\`eres au 
+sens usuel du terme) et les \'el\'ements du groupe structural (qui n'est pas 
+n\'ecessairement un groupe de rotations).
+	
+	\item  Les champs $z \rightarrow \epsilon_\alpha(z)$ sont des champs 
+fondamentaux {\it \`a droite\/} puisque $P$ est ---comme d'habitude--- un 
+fibr\'{e} principal muni d'une action \`a droite. A moins que $P$ ne soit 
+trivial (voir section suivante) il n'existe pas d'action de $G$ \`a gauche 
+de $P$, en tous cas, pas d'action qui soit canoniquement d\'efinie. Par 
+contre, on peut toujours trivialiser $P$ localement en choisissant une 
+section (locale) $x \in M \mapsto \sigma(x) \in P$~; on a vu 
+ qu'une telle section permettait d'identifier la fibre $F_x$ avec 
+$G$ lui-m\^eme en associant au point $z\in F_x$ l'\'el\'ement $g_\sigma$ de $G$ d\'efini 
+par l'\'equation $z=\sigma(x)g_\sigma$.
+On a alors non seulement une action de $G$ 
+\`a droite mais \'egalement une action de $G$ \`a gauche d\'efinie par
+$
+k \in G , \, z = (x,g_\sigma) \in P \mapsto z'=(x,kg_\sigma) \in P.$
+Cette action d\'epend de la section $\sigma$ et permet de d\'efinir 
+localement des champs fondamentaux {\it \`a gauche\/} $e_\alpha(z)$; ces 
+champs d\'ependent donc \'egalement du choix de la section $\sigma$ et, si la chose
+est n\'ecessaire, on pourra les noter ${}^\sigma e_\alpha$.
+	
+	\item  Pour r\'esumer, on pourra dire que la fibre $F_x$ au dessus de $x$ appara\^it 
+comme une copie du groupe $G$, le choix d'une section locale $\sigma(x)$ 
+permet de marquer l'origine (l'identit\'e du groupe) sur la fibre $F_x$. On 
+peut ainsi identifier $G$ avec $F_x$ et l'alg\`ebre de Lie de $G$ avec 
+l'espace vertical $T(F_x,\sigma(x))$ au point $\sigma(x)$. Le groupe $G$ agit sur 
+lui-m\^eme par multiplications \`a gauche et \`a droite, il agit canoniquement 
+sur $F_x$, du c\^ot\'e droit, puisqu'on a affaire \`a un fibr\'{e} principal, mais on peut aussi le 
+faire agir \`a gauche d\`es qu'on a identifi\'e $G$ avec $F_x$, c'est \`a dire 
+d\`es qu'on a choisi une section $\sigma(x)$. Le choix de $\sigma$ 
+permettant d'identifier $G$ avec $F_x$ permet donc \'egalement de d\'efinir 
+une forme de Maurer-Cartan ${}^\sigma \theta(x)$ pour la fibre $F_x$. 
+Cette forme ``ram\`ene'' donc \`a l'origine $\sigma(x)$ les vecteurs 
+verticaux appartenant \`a $V_{\sigma(x)g}$.
+
+\end{itemize}
+
+\subsection{Fibr\'e principal trivial}\label{sec:trivial}
+Un fibr\'{e} principal $(P,M,\pi)$ de groupe structural $G$ est trivial si, 
+par d\'efinition, $P$ est hom\'eomorphe au produit cart\'esien $M\times G$
+(la projection $\pi$ \'etant la projection sur le premier facteur).
+dans ce cas, il existe plusieurs (en g\'en\'eral une infinit\'e de) sections 
+globales puisque toute application diff\'erentiable de $M$ dans $G$ d\'efinit 
+une section globale~: consid\'erer par exemple l'application constante qui, 
+\`a tout point de $M$ associe l'identit\'e de $G$. R\'eciproquement, supposons 
+qu'un fibr\'{e} principal poss\`ede une section globale $\sigma$, on peut alors 
+consid\'erer l'application de $P$ dans $M\times G$ d\'efinie par $z 
+\rightarrow (x,g)$ avec $x=\pi(z)$ et $g$ tel que $z=\sigma(x)g$; on 
+fabrique ainsi un hom\'eomorphisme entre $P$ et $M\times G$.
+
+En conclusion, un fibr\'{e} principal est trivial si et seulement s'il 
+poss\`ede une section globale. Lorsque $P$ est trivial, son identification 
+avec $M\times G$ r\'esulte, comme on vient de le voir, du choix de la section 
+globale $\sigma$;  on \'ecrira simplement $P=M\times G$ si cela ne pr\^ete pas 
+\`a confusion. Noter que, dans un tel cas, les champs fondamentaux \`a droite 
+$\epsilon_\alpha$ et \`a gauche ${}^\sigma e_\alpha$ sont tous deux 
+globalement d\'efinis. 
+
+Attention : pour des fibr\'{e}s non principaux (voir plus loin), le fait de 
+poss\'eder une section globale n'est pas suffisant pour assurer la 
+trivialit\'e.
+
+Nous n'aborderons pas le probl\`eme de la classification des espaces
+fibr\'{e}s, le lecteur interess\'e devrait consulter \cite{Husemoller}.
+
+\subsection{Formes basiques, invariantes et horizontales}
+\begin{description}
+\item[Formes basiques]
+L'existence de l'application de projection $\pi : P \mapsto M$ permet, comme
+nous le savons, de projeter les vecteurs de $TP$ sur les vecteurs de $TM$,
+en utilisant l'application tangente $\pi_*$ ; l'application cotangente, $\pi^*$, permet, quant \`a elle, de faire voyager les formes dans l'autre sens.
+L'image, par $\pi^*$ d'une forme diff\'erentielle sur $M$ est une forme
+particuli\`ere sur $P$ qu'on appelle une {\sl forme basique\/}\index{formes basiques}.
+ On
+obtient un homomorphisme injectif d'alg\`ebres diff\'erentielles
+$$
+\pi^* : \Omega(M) \mapsto \Omega(P)
+$$
+On peut donc identifier l'alg\`ebre $\Omega(M)$ avec la sous-alg\`ebre
+des formes basiques  $\pi^*(\Omega(M)) \subset \Omega(P)$.
+\item[Formes horizontales]
+Une forme sur $P$ est horizontale, par d\'efinition, 
+ si elle s'annule sur les vecteurs verticaux. Etant donn\'e que l'espace
+tangent vertical en un point $z$ de $P$ est engendr\'e par les champs
+ de vecteurs  fondamentaux $X_\alpha(z)$, avec $X_\alpha \in Lie(G)$,
+  il suffit de tester l'annulation sur les champs en question. En d'autres
+termes, soit $X\in Lie(G)$ et d\'esignons $i_X$ le produit int\'erieur
+d'une forme par le champ $X(z)$~; 
+la forme $\omega \in \Omega(P)$ est donc {\sl une forme horizontale\/}
+\index{formes horizontales}
+ si et seulement si, pour tout $X$, $$i_X \omega = 0$$
+
+\item[Formes invariantes]
+Puisque le groupe $G$ agit sur $P$, on peut s'int\'eresser \`a son action
+infinit\'esimale sur les  formes  d\'ecrite par la d\'eriv\'ee de Lie
+ $L_X = d\, i_X + i_X\, d$.
+On dit qu'une forme $\omega$ est une {\sl forme invariante\/}\index{formes invariantes} si et seulement
+si, pour tout $X$,
+$$
+L_X \, \omega = 0
+$$
+
+\item[Formes basiques (bis)]
+Le fait qu'une forme basique soit \`a la fois invariante et horizontale est
+assez intuitif. Formellement cette propri\'et\'e d\'ecoule imm\'ediatement 
+de l'invariance $\pi(zg) = \pi(z)$ lorsque $g\in G$.
+Retenons : La forme $\omega$ est une {\sl forme basique\/}\index{formes basiques} si et seulement
+si, pour tout $X$,
+$$
+L_X \omega  = 0 \; {\mbox et} \; i_X \omega = 0
+$$
+c'est \`a dire si et seulement si  $\omega$ et $d\omega$ sont horizontales.
+
+\item[Remarque : Op\'eration de Cartan]
+Nous  nous servirons assez peu de ces notions de formes basiques,
+de formes invariantes ou de formes horizontales, dans la suite de cet ouvrage.
+ Cela dit, il faut bien noter que les notions qui viennent
+d'\^etre discut\'ees fournissent une formulation alg\'ebrique assez compacte
+de la notion d'espace fibr\'{e} principal (nous n'avons rien utilis\'e d'autre~!)
+On peut, de fait, utiliser ces propri\'et\'es pour d\'efinir la notion
+d'op\'eration (de Cartan) d'une alg\`ebre de Lie,  ${\frak g}$,
+ sur une alg\`ebre diff\'erentielle commutative gradu\'ee $\Omega$ (c'est
+bien le cas de l'alg\`ebre des formes diff\'erentielles sur une vari\'et\'e).
+ On dit
+qu'on a une {\sl op\'eration de Cartan\/}\index{op\'erations de Cartan} 
+lorsqu'\`a tout $X \in {\frak G}$,
+on associe une anti-d\'erivation $i_X$ (de degr\'e $-1$) et une d\'erivation
+$L_X = di_X + i_X d$ (de degr\'e $0$) telles que, $\forall X,Y \in {\frak G}$,
+on ait $L_{[X,Y]}=L_XL_Y-L_YL_X$ et $i_{[X,Y]}=L_Xi_Y-i_YL_X$.
+La donn\'ee d'un fibr\'{e} principal $P$ fournit automatiquement une
+ op\'eration de Cartan de $Lie (G)$ sur $\Omega(P)$ mais il est certain
+que la notion d'op\'eration de Cartan est plus g\'en\'erale.
+Dans ce cadre plus g\'en\'eral, on d\'efinit encore les sous espaces
+ ${\frak H}$,
+${\frak I}$ et ${\frak B}= {\frak H} \cap {\frak I}$ des formes horizontales, invariantes et basiques, et
+on montre ais\'ement que ces trois sous-espaces de ${\Omega}$ sont des
+sous-alg\`ebres diff\'erentielles gradu\'ees de ${\Omega}$.
+
+\item[Remarque : Champs de vecteurs projetables]
+Nous rappelons ici la d\'efinition des champs de vecteurs 
+projetables\index{Champs de vecteurs projetables}
+par une application diff\'erentiable (dans ce cas, il 
+s'agit de la projection 
+$\pi: P \mapsto M$ du fibr\'e consid\'er\'e), 
+notion g\'en\'erale d\'ej\`a introduite au chapitre 1.
+Ici l'ensemble des ant\'ec\'edents de $x \in M$ par $\pi$ n'est autre que la 
+fibre au dessus du point $x$.
+Un champ de vecteurs $V \in \Gamma TP$ est donc dit projetable si et 
+seulement si $\pi_{*} V_{z} = \pi_{*} V_{zg}$ pour tout $g\in G$.
+
+Plusieurs propri\'et\'es des espaces fibr\'es (et des connexions) 
+pourraient s'enoncer en utilisant cette notion, que nous
+n'utiliserons pas explicitement dans la suite.
+
+\end{description}
+
+\subsection{Exemples}\label{sec:Fibres-Exemples}
+\subsubsection{Le fibr\'{e} des rep\`eres lin\'eaires}
+Nous avons d\'ej\`a \'etudi\'e cet exemple en d\'etail en \ref{sec:exemple-fondamental}
+ et nous verrons un peu plus loin divers exemples analogues.
+
+\subsubsection{Fibration d'un groupe $G$ en sous groupes $H$ au dessus de 
+$G/H$}
+
+\begin{itemize}
+	\item  Notre premier exemple sera \`a la fois \'el\'ementaire et discret~: notre 
+espace total $P = \ZZ$ est l'ensemble des entiers relatifs et la 
+projection $\pi$ est celle qui, \`a un entier, associe sa classe modulo $p$ 
+($p$ d\'esignant un entier quelconque choisi une fois pour toutes). Le 
+groupe structural est alors le sous-groupe $p\ZZ$ de $\ZZ$. Illustrons 
+ceci, dans le cas $p=3$ par la figure 
+\ref{fig:Z3}
+\begin{figure}[htbp]
+\epsfxsize=8cm
+$$
+    \epsfbox{entiersmod3.eps}
+$$
+\caption{Les entiers modulo 3}
+\label{fig:Z3}
+\end{figure}
+
+L'espace total $\ZZ$ s'\'ecrit donc ici comme r\'eunion de trois fibres. La 
+fibre type est le groupe additif des multiples de $3$, not\'e $3\ZZ$ et 
+l'espace des fibres ---la base--- poss\`ede trois points~: ${\ZZ /
+3\ZZ} = \{\overline{0},\overline{1},\overline{2}\}$ et est un quotient de 
+$\ZZ$. La notation adopt\'ee, pour l'action du groupe structural sur 
+l'espace total $\ZZ$ est ici une notation additive et non pas une 
+notation multiplicative (mais cela devrait \^etre assez clair~!), ainsi, 
+l'\'el\'ement $11$ de la fibre $\overline{2}$ peut s'obtenir \`a partir de 
+l'\'el\'ement $-1$ de la m\^eme fibre sous l'action de $3\ZZ$ en \'ecrivant 
+$11=-1 + {3} \times 4$.
+	
+	\item  Apr\`es cet exemple discret et extr\^emement \'el\'ementaire (l'art de 
+reconsid\'erer des choses bien connues avec un \'eclairage diff\'erent $\ldots$ 
+!) passons \`a un autre exemple, presque aussi \'el\'ementaire, mais 
+``continu''. L'espace total, comme dans l'exemple pr\'ec\'edent, est un 
+groupe, ici le groupe $SU(2)$. Rappelons, que 
+$SU(2)$ est topologiquement identifiable \`a la sph\`ere $S^3$. Nous 
+choisissons un sous-groupe $U(1)$, c'est \`a dire un grand cercle passant 
+par l'origine et effectuons une d\'ecomposition en classes de $SU(2)$ par 
+rapport \`a cet $U(1)$~: soit $g$ un \'el\'ement de $SU(2)$ qui n'appartienne 
+pas au $U(1)$ choisi, on construit alors l'ensemble $\overline{g}=gU(1) = 
+\{gh \vert h \in U(1)\}$. Ensuite, on choisit un \'el\'ement $k$ qui 
+n'appartienne ni au $U(1)$ choisi, ni \`a $\overline{g}$. On construit alors 
+$\overline{k}=kU(1)$ et on continue $\ldots$ On \'ecrit ainsi le groupe 
+$SU(2)$ comme une r\'eunion (infinie) de classes du type 
+$\overline{g}=gU(1)$, l'ensemble de ces classes \'etant par d\'efinition, 
+l'ensemble quotient $SU(2)/U(1)$ qu'on identifie (voir le chapitre sur les
+groupes et espaces homog\`enes) avec la sph\`ere $S^2$. Le groupe $SU(2)$ ---c'est 
+\`a dire la sph\`ere $S^3$--- peut donc \^etre consid\'er\'e comme r\'eunion d'une 
+infinit\'e de cercles $S^1$ param\`etr\'ee par la sph\`ere $S^2$.
+
+\begin{figure}[htbp]
+\epsfxsize=14cm
+$$
+    \epsfbox{HopfS3.eps}
+$$
+\caption{La fibration de Hopf pour $S^3$}
+\label{fig:HopfS3}
+\end{figure}
+
+Bien \'evidemment, le 
+groupe $U(1)$ agit, par multiplication \`a droite, sur l'espace total 
+$SU(2)$ (dans la construction pr\'ec\'edente on a choisi $U(1)$ comme 
+sous-groupe de $SU(2)$). Cette fibration en cercles de $S^3$ est souvent 
+utilis\'ee et porte le nom de ``fibration de Hopf'' (pour $S^3$).
+
+Avant de g\'en\'eraliser cet exemple, notons que la sph\`ere $S^3$ n'est, en 
+aucun cas hom\'eomorphe au produit cart\'esien $S^2\times S^1$, ce qui ne 
+l'emp\^eche pas d'\^etre un fibr\'{e} en cercles au dessus de $S^2$. En d'autres 
+termes, les deux espaces fibr\'{e}s principaux $S^3 \mapsto S^2$ et 
+$S^2\times S^1 \mapsto S^2$ (avec projection canonique \'evidente) ont m\^eme 
+structure locale ---ils sont tous deux fibr\'{e}s en cercles au dessus de 
+$S^2$--- mais le second est trivial alors que le premier ne l'est pas.
+	
+	\item  Passons maintenant \`a la g\'en\'eralisation de l'exemple qui pr\'ec\`ede. 
+	Soit $G$ un groupe de Lie et $H$ un sous-groupe de Lie, qu'on supposera 
+	ferm\'e dans $G$ pour que la topologie du quotient soit s\'epar\'ee. On 
+	consid\`ere la relation d\'efinissant les classes \`a gauche de $H$~: $g$ et 
+	$k$ sont reli\'es si $k$ appartient \`a l'ensemble $gH$. 
+	Il s'agit d'une relation d'\'equivalence et on peut \'ecrire $G$ comme 
+	r\'eunion de ses classes $gH$ ; l'ensemble des classes \'etant, par 
+	d\'efinition, l'ensemble quotient $G/H$. Il est \'evident que $H$ agit (\`a 
+	droite) sur $G$ et que l'application $G \mapsto G/H$ qui, \`a tout \'el\'ement 
+	associe sa classe $\overline{g}=gH$, d\'efinit une fibration principale. 
+	Tout groupe $G$ est donc ainsi un espace fibr\'{e} principal au dessus de 
+	$G/H$, le groupe structural \'etant $H$. Notons que l'espace quotient (la 
+	base du fibr\'{e}) $G/H$ n'est g\'en\'eralement pas un groupe, \`a moins que $H$ 
+	ne soit un sous groupe distingu\'e de $G$, c'est \`a dire \`a moins que les 
+	classes \`a gauche et \`a droite ne co\"incident.
+	La propri\'et\'e qui pr\'ec\`ede est illustr\'ee par la figure \ref{fig:fibration 
+	de G} et est \`a l'origine d'une multitude d'exemples que le lecteur 
+	pourra construire en utilisant les donn\'ees ``zoologiques'' concernant 
+	les groupes de Lie et les espaces homog\`enes (voir chapitre pr\'ec\'edent).
+\begin{figure}[htbp]
+\epsfxsize=8cm
+$$
+    \epsfbox{fibration-homogene.eps}
+$$
+	\caption{Fibration principale d'un groupe au dessus d'un espace homog\`ene}
+	\label{fig:fibration de G}
+	\end{figure}
+	
+	\item  Indiquons simplement ci-dessous quelques familles de fibrations principales, 
+	bas\'ees sur la construction pr\'ec\'edente. Nous utilisons la notation 
+	$H \longrightarrow G \longrightarrow G/H$ pour  caract\'eriser une telle 
+	fibration de $G$ au dessus de $G/H$. Le nom figurant en titre est celui 
+	donn\'e \`a l'espace quotient.
+	\begin{description}
+		\item[ Vari\'et\'es de Stiefel r\'eelles] 
+		$$SO(m) \longrightarrow SO(n) \longrightarrow V_{n-m}(\RR^n)=SO(n)/SO(m)=O(n)/O(m)$$
+		
+		\item[Vari\'et\'es de Stiefel complexes]  
+        $$SU(m) \longrightarrow SU(n) \longrightarrow 
+        V_{n-m}(\CC^n)=SU(n)/SU(m)=U(n)/U(m)$$ 
+		
+		\item[Vari\'et\'es de Stiefel quaternioniques]
+		$$Sp(m) \longrightarrow Sp(n) \longrightarrow V_{n-m}(\HH^n)=Sp(n)/Sp(m)$$ 
+	
+	Si $x=x_0+i x_1 + j x_2 + k x_3 \in \HH$, alors 
+	$\overline{x}=x_0-i x_1 - j x_2 - k x_3$, et $(x\vert y)  =  \sum x_i 
+	{\overline y_i}$.
+	Comme dans le chapitre pr\'ec\'edent, la notation $Sp(n)$ d\'esigne le groupe 
+	de Lie compact simplement connexe correspondant \`a la forme 
+	r\'eelle compacte de l'alg\`ebre de Lie complexe $C_n$. Avec d'autres 
+	notations : $Sp(n)=U(n,\HH) = \{u \in GL(\HH) \vert (u(x) \vert u(y))=(x\vert y)$. 
+	Le groupe symplectique (non compact) usuel 
+	correspondant \`a la m\^eme alg\`ebre de Lie $C_n$ sera 
+	g\'en\'eralement plut\^ot d\'esign\'e par la notation $Sp(2n,\RR)$.
+	
+	
+	\end{description}
+
+	Le cas $m=n-1$ m\'erite une attention particuli\`ere puisque nous obtenons les 
+	sph\`eres de cette fa\c con.
+	\begin{eqnarray*}
+	    S^{n-1}	 & = & SO(n)/SO(n-1) = O(n)/O(n-1) \\
+		S^{2n-1} & = & SU(n)/SU(n-1) = U(n)/U(n-1) \\
+		S^{4n-1} & = & Sp(n)/Sp(n-1)
+	\end{eqnarray*}
+
+	Noter que la m\^eme sph\`ere peut \^etre obtenue comme base de plusieurs 
+	fibrations diff\'erentes de groupes de Lie (trois possibilit\'es si elle est 
+	de dimension $4n-1$, deux possibilit\'es si elle est de dimension $2n-1$ 
+	et une seule possibilit\'e si elle est de dimension paire). Il existe encore quelques autres
+possibilit\'es dites ``exceptionnelles'' et nous y reviendrons plus loin.
+	
+	Si nous divisons les groupes orthogonaux $O(n)$ ou $SO(n)$ --- ou leurs analogues complexes ou 
+	quaternioniques --- par un sous groupe maximal quelconque, nous obtenons plus g\'en\'eralement les 
+	vari\'et\'es de Grassmann et les fibrations principales correspondantes~:
+	 	\begin{description}
+		\item[Grassmaniennes r\'eelles orient\'ees] 
+		$$SO(m) \times SO(n-m) \longrightarrow SO(n) \longrightarrow 
+		SG_m(\RR^n)  =  SO(n)/{SO(m) \times SO(n-m)}$$
+		
+		\item[Grassmaniennes complexes orient\'ees]  
+        $$SU(m) \times SU(n-m) \longrightarrow SU(n) \longrightarrow 
+        SG_m(\CC^n)  =  SU(n)/{SU(m) \times SU(n-m)}$$ 
+		
+		\item[Grassmaniennes quaternioniques]
+		$$Sp(m) \times Sp(n-m) \longrightarrow Sp(n) \longrightarrow 
+		G_m(\HH^n)  =  Sp(n)/{Sp(m) \times Sp(n-m)}$$  
+	\end{description}
+    
+    Les Grassmaniennes non orient\'ees r\'eelles et complexes sont
+    $$G_m(\RR^n)  =  O(n)/{O(m) \times O(n-m)} \; {\mbox et} \; 
+G_m(\CC^n)  =  
+    U(n)/{U(m) \times U(n-m)}$$
+    
+    
+    Le cas $m=n-1$ m\'erite \'egalement une mention particuli\`ere puisque nous 
+    obtenons ainsi les espaces projectifs r\'eels ($\RR P^n$), complexes 
+    ($\CC P^n$) et quaternioniques ($\HH  P^n$).
+    	\begin{eqnarray*}
+	   \RR P^n	 & = & SO(n)/{SO(n-1)\times \ZZ_2}  \\
+	   \CC P^n & = & SU(n)/{S(U(n-1) \times U(1))}  \\
+	   \HH  P^n & = & Sp(n)/{S(Sp(n-1) \times SU(2))}
+	\end{eqnarray*}
+
+	Le lecteur devrait \'egalement conna\^{i}tre l'existence des diff\'eomorphismes 
+	exceptionnels suivants~: $\CC P^1 \sim S^2$ et $\HH  P^1 \sim S^4$.
+	Une remarque sur les notations~: $H=S(U(n-1) \times U(1))$ d\'esigne un 
+	sous groupe maximal de $SU(n)$; on \'ecrit quelquefois $SU(n-1) \times 
+	U(1)$ pour d\'esigner ce m\^eme sous groupe $H$ mais une telle notation est 
+	un peu abusive puisque $H$ est en fait en quotient du produit direct de 
+	ces deux groupes par un groupe discret (il ne faut pas compter l'unit\'e 
+	deux fois~!). Les deux objets ont bien \'evidemment la m\^eme alg\`ebre de 
+	Lie. Une remarque analogue s'applique au cas symplectique (par ailleurs 
+	on se rappelle que $Sp(1)$ et $SU(2)$ sont isomorphes, ce qui explique 
+	l'apparition de ce dernier dans le tableau pr\'ec\'edent).
+	\item  Nous venons de voir que $G$ peut \^etre consid\'er\'e comme espace 
+	fibr\'{e} principal {\it \`a droite\/} au dessus de $G/H = \{gH \vert g\in G\}$ mais il 
+	peut \^etre \'egalement consid\'er\'e comme fibr\'{e} principal {\it \`a gauche\/} au 
+	dessus de $H\backslash G =  \{Hg \vert g\in G\}$. L'\'etude de ce ce cas est 
+	\'evidemment tout \`a fait semblable \`a celle que l'on vient de mener.
+	
+	\item Voici un autre cas particulier de la construction pr\'ec\'edente.
+	On part du groupe $G\times G$ (produit direct du groupe $G$ avec lui m\^eme).
+	On consid\`ere le sous-groupe diagonal $G_\Delta = \{(g,g)\subset G\times G \vert g\in G\}$
+	qui est d'ailleurs isomorphe \`a $G$ et on fabrique le quotient. En r\'esum\'e, on
+	a un fibr\'{e} principal d'espace total $G\times G$, de fibre type $G_\Delta \sim G$ et de
+	base ${G\times G \over G_\Delta} \sim G$. La base est elle-m\^eme, en tant que vari\'et\'e,
+	diff\'eomorphe avec $G$, mais la structure de groupe ne passe pas au quotient puisque
+	$G_\Delta$ n'a aucune raison d'\^etre distingu\'e dans $G\times G$.
+	Posant $G_L = G\times 1$ et $G_R = 1 \times G$, on voit qu'on peut \'ecrire
+	$G\sim G_L\, G_R /G_\Delta$. Cet exemple d'apparence
+	innocent est assez subtil \`a analyser et pourra servir, dans la suite,
+	pour discuter de connexions (ou de m\'etriques) particuli\`eres sur les groupes de Lie.
+	On peut aussi consid\'erer les projections
+	$G_L \, G_R \mapsto G_L \sim G$ et $G_L \, G_R \mapsto G_R \sim G$ qui d\'efinissent deux
+	autres fibr\'{e}s principaux (cette fois-ci, la structure de groupe passe au quotient).
+
+
+	\item  Finalement, consid\'erons le cas d'un sous groupe $G$ qui n'est pas 
+	simplement connexe. On sait qu'il admet un rev\^etement universel 
+	simplement connexe $\widehat{G}$ et que $G$ est isomorphe au groupe quotient 
+	$\widehat{G}\vert H$ o\`u  $H$ est un sous groupe discret (distingu\'e) du centre 
+	de $G$ isomorphe au groupe d'homotopie $\pi_1(G)$. On se retrouve donc 
+	dans la situation consid\'er\'ee pr\'ec\'edemment d'une fibration de 
+	$\widehat{G}$ au dessus de $G=\widehat{G} \vert H$ avec groupe structural (fibre 
+	type) $H$, \`a ceci pr\`es que le groupe $H$ est ici un groupe discret 
+	admettant  une interpr\'etation topologique particuli\`ere et que le quotient 
+	$G$ est non seulement un espace homog\`ene, mais est lui-m\^eme un groupe. 
+	Plus g\'en\'eralement d'ailleurs, tout sous groupe $K \subset H \sim 
+	\pi_1(G)$ d\'efinit un rev\^etement $\widehat{G}/K$ qui est un fibr\'{e} principal 
+	au dessus de $G=\widehat{G}/H$ avec fibres $H\vert K$ (c'est bien un groupe 
+	puisque $H$ est ab\'elien); ce rev\^etement n'est pas universel puisque son 
+	$\pi_1$ est \'egal \`a $K$. Tout ceci est presque intuitif si on se 
+	repr\'esente ces fibrations par des figures telles que \ref{fig:revetements}.
+\begin{figure}[htbp]
+\epsfxsize=8cm
+$$
+    \epsfbox{revetement.eps}
+$$
+	\caption{Rev\^etements}
+	\label{fig:revetements}
+	\end{figure}
+\end{itemize}
+
+
+\subsubsection{Fibration d'un espace homog\`ene $G/H_1$ en groupes $H_2$ au 
+dessus de $G/(H_1 \times H_2)$}
+
+Soit $H$ un sous groupe de Lie d'un groupe de Lie $G$ et supposons que 
+$H$ soit isomorphe au produit $H_1\times H_2$ de deux groupes de Lie. On 
+peut alors consid\'erer $H_1$ (en fait $H_1 \times \mbox{Identit\'e}$) comme 
+sous groupe de $G$ et on a une projection $G/H_1 \mapsto G/(H_1\times 
+H_2)$ de fibre $H_2$. L'action de $H_2$ (\`a droite) sur $G/H_1$ est bien 
+d\'efinie car $H_1$ et $H_2$ commutent, et donc $(gH_1)h_2 = (gh_2)H_1$ 
+lorsque $h_2$ appartient \`a $H_2$. Vu la diversit\'e des cas \`a consid\'erer 
+nous n'\'enoncerons aucun r\'esultat pr\'ecis dans ce cas. N\'eanmoins nous 
+\'enoncerons les trois remarques suivantes~:
+\begin{enumerate}
+	\item  ``En g\'en\'eral'' la situation pr\'ec\'edente conduit \`a un fibr\'{e} 
+	principal $H_2\longrightarrow G/H_1 \longrightarrow G/(H_1 \times H_2)$ 
+	de groupe structural $H_2$.
+	
+	\item  Bien souvent, et en particulier lorsque $G$ est un groupe simple, 
+	le sous groupe $H$ consid\'er\'e n'est pas isomorphe au produit $H_1 \times 
+	H_2$ de deux groupes de Lie, mais au quotient d'un tel produit par un 
+	groupe discret (on a donc $\mbox{Lie}H = \mbox{Lie}H_1 \oplus 
+	\mbox{Lie}H_2$ au niveau des alg\`ebres de Lie). Dans ce cas, le r\'esultat 
+	``g\'en\'eral'' pr\'ec\'edent est valable \`a condition de quotienter correctement 
+	par le groupe discret appropri\'e.
+	
+	\item  Le lecteur pourrait \^etre \'egalement tent\'e de consid\'erer des 
+	doubles classes $K\backslash G/H$ o\`u  $H$ et $K$ sont deux sous groupes de $G$. 
+	Attention~: la projection $G/H \mapsto K\backslash G/H$ {\it ne d\'efinit en 
+	g\'en\'eral pas\/} une fibration principale, ni m\^eme une fibration, car le 
+	type topologique des fibres (ou m\^eme la cardinalit\'e) peut varier d'un point \`a 
+	l'autre de la base.
+\end{enumerate}
+
+Afin de conclure cette sous section consacr\'ee aux exemples par un 
+th\'eor\`eme pr\'ecis concernant les fibrations principales d'espaces 
+homog\`enes, nous consid\'erons maintenant le cas suivant.
+
+\subsubsection{Fibration principale de $G/H$ en groupes $N\vert H$ au 
+dessus de $G/N$, $N$ \'etant le normalisateur de $H$ dans $G$}
+
+Soit $H$ un sous groupe de Lie du groupe de Lie $G$ et soit $N$ son 
+normalisateur dans $G$. On rappelle que $N = \{n\in G \vert nH=Hn \}$~; 
+en d'autres termes, $N$ est le plus grand sous groupe de $G$ dans lequel 
+$H$ est un sous groupe normal (on dit aussi sous groupe distingu\'e). $H$ 
+\'etant normal dans $N$, il s'ensuit que les classes \`a gauche et \`a droite 
+de $N$ par rapport \`a $H$ co\"incident (voir ci-dessus la d\'efinition de $N$) 
+et que l'espace homog\`ene $N\vert H  =  N/H = H\backslash N$ poss\`ede une 
+structure de groupe. Par ailleurs, $N$ agit \`a droite sur $G/H$~: soit $gH 
+\in G/H$ et $n \in N$~; alors $gHn  =  gnH \in G/H$. Cette action 
+n'est pas fid\`ele car les 
+\'el\'ements de $H$ lui-m\^eme n'agissent pas~: si $h \in H$, alors $gHh=gH$. 
+Le fait de quotienter $N$ par $H$ rend pr\'ecis\'ement cette action 
+ fid\`ele. 
+ On peut se repr\'esenter les actions de $G$ \`a gauche de $G/H$ et de $N\vert 
+H$, \`a droite de $G/H$ par le sch\'ema:
+$$
+G \longrightarrow G/H \longleftarrow N\vert H
+$$
+En utilisant seulement l'action \`a droite, on obtient ainsi une fibration principale dont l'espace 
+total est $G/H$ et le groupe structural est $N\vert H$, il est 
+facile de voir que la base de la fibration est l'espace homog\`ene $G/N$ 
+(voir figure \ref{fig:normalisateur}).
+\begin{figure}[htbp]
+\epsfxsize=8cm
+$$
+    \epsfbox{normalisateur.eps}
+$$
+\caption{Fibration principale associ\'ee \`a l'action du groupe $N\vert H$ 
+sur l'espace homog\`ene $G/H$}
+\label{fig:normalisateur}
+\end{figure}
+
+Ce type de fibration principale est \'egalement \`a l'origine d'une multitude 
+d'exemples. Les fibrations de Hopf des sph\`eres au dessus des espaces 
+projectifs r\'eels, complexes ou quaternioniques sont d'ailleurs de ce 
+type. En effet, on a
+
+\bigskip
+
+\begin{tabular}{llll}
+$ G=SO(n)$ & $ H = SO(n-1) $ & $ N=SO(n-1)\times \ZZ_2$ & $N\vert H=\ZZ_2 $\\
+\end{tabular}
+
+
+\begin{tabular}{ll}
+{\hskip 1cm} $G/H=S^{n-1}$ & $G/N  = \RR P^n$\\
+\end{tabular}
+
+\smallskip
+
+\begin{tabular}{llll}
+$ G=SU(n)$  & $ H = SU(n-1) $  &  $ N=SU(n-1)\times U(1) $  &  $ N\vert H=U(1) $ \\
+\end{tabular}
+
+
+\begin{tabular}{ll}
+{\hskip 1cm} $ G/H = S^{2n-1} $  &  $ G/N = \CC P^{n-1} $ \\
+\end{tabular}
+
+\smallskip
+
+\begin{tabular}{llll}
+$ G=Sp(n)  $  &  $ H = Sp(n-1) $  &  $ N=Sp(n-1)\times SU(2) $  &  $ N\vert H=SU(2)  $ \\
+\end{tabular}
+
+
+\begin{tabular}{ll}
+{\hskip 1cm} $ G/H=S^{4n-1}$  & $G/N  = \HH P^n$\\
+\end{tabular}
+	
+\bigskip
+	et on peut illustrer les fibrations correspondantes par la figure 
+	\ref{fig:spheres}
+\begin{figure}[htbp]
+\epsfxsize=12cm
+$$
+    \epsfbox{Hopf.eps}
+$$
+	\caption{Fibrations de Hopf des sph\`eres}
+	\label{fig:spheres}
+	\end{figure}
+
+	On se souvient aussi que $Z_2 \equiv S^0$, $U(1) \equiv S^1$ et 
+	$SU(2)\equiv S^3$~; ainsi les trois fibres types repr\'esent\'ees sur la 
+	figure \ref{fig:spheres} sont non seulement des groupes, mais aussi des 
+	sph\`eres.
+	
+	Le lecteur pourra fabriquer ais\'ement d'autres exemples de ce type en 
+	choisissant, pour tout groupe $G$ donn\'e, un sous groupe $H$ qui ne soit 
+	pas trop ``gros'' (de fa\c con \`a ce que $N\vert H$ ne soit pas trop 
+	trivial). Voici un dernier exemple de ce type qui utilise les groupes de 
+	Lie exceptionnels~: $G = E_8$, $H=E_6$ ,
+  $N=(E_6\times SU(3))/\ZZ_3$, $N\vert H=SU(3)/\ZZ_3$.
+
+\subsubsection{Fibrations exceptionnelles des sph\`eres et des espaces 
+projectifs}
+
+Il existe des fibrations exceptionnelles des sph\`eres et des espaces 
+projectifs qui ne sont pas li\'ees aux
+inclusions de groupes unitaires, orthogonaux ou symplectiques (forme compacte)
+c'est \`a dire aux structures r\'eelles, complexes ou 
+quaternioniques. Certaines de ces fibrations sont li\'ees \`a l'existence
+de l'``alg\`ebre'' non-associative des octaves de Cayley ${\mathcal O}$
+({\sl octonions\/}\index{octonions}). On sait que pour $n=1,2,4,8$ (et ce sont
+les seules valeurs possibles),
+ il existe une op\'eration bilin\'eaire $\RR^n\times \RR^n \mapsto \RR^n$ sans diviseurs
+de z\'ero (c'est \`a dire que $a \times b = 0 \Rightarrow \; a = 0 \; \mbox{ou}\; b = 0$), conduisant \`a la d\'efinition des
+ corps $\RR$, $\CC$, $\HH$ et des octaves~${\mathcal O}$.
+
+ Certaines des fibrations mentionn\'ees ici ne sont pas des fibrations
+ principales (en particulier la fibre type n'est pas un groupe)
+mais elles y ressemblent beaucoup (on sait que la sph\`ere $S^7$, par 
+exemple, est presque un groupe$\ldots$) Nous donnons ici une liste de 
+fibrations qui sont \`a la fois int\'eressantes et c\'el\`ebres (la 
+fibration de Hopf exceptionnelle de $S^{15}$~!) bien qu'elles ne 
+s'inscrivent pas logiquement toutes dans cette section puisqu'il ne s'agit pas 
+toujours de fibrations principales.
+ Nous ne les utiliserons pas dans la suite et 
+ne les mentionnons que pour des raisons culturelles, en esp\'erant que le 
+lecteur pourra y retourner (soit-dit en passant, il reste \`a \'etudier de nombreux 
+probl\`emes int\'eressants concernant ces objets).
+
+\smallskip
+$$\begin{matrix} 
+\mbox{fibre}   &  \longrightarrow   &  \mbox{espace total}   &  \longrightarrow 
+  &  \mbox{base} \\
+{} & {} & {} & {} & {} \\
+  S^7    &   \longrightarrow    &   S^{15}    &   \longrightarrow 
+   &   S^8  \\
+ Spin(7)    &   \longrightarrow    &   Spin(9)    &   \longrightarrow 
+   &   S^{15}  \\
+ SU(3)    &   \longrightarrow    &   G_2   &   \longrightarrow 
+   &   S^6  \\
+ \CC P^1=S^2    &   \longrightarrow    &   \CC P^{2n+1}    &   \longrightarrow 
+   &   \HH P^n \\
+ Spin(9)    &   \longrightarrow    &   F_4    &   \longrightarrow 
+   &   {\mathcal O} P^2 
+\end{matrix} 
+$$
+
+\section{Fibr\'es associ\'es}
+\subsection{Introduction}
+Comme nous l'avons vu pr\'ec\'edemment, \`a une vari\'et\'e diff\'erentiable donn\'ee, 
+on peut attacher l'ensemble de tous les rep\`eres, et cet ensemble, qu'on 
+d\'esigne sous le nom de {\sl fibr\'{e} des rep\`eres \/}\index{fibr\'{e} des rep\`eres}
+ poss\`ede une structure 
+d'espace fibr\'{e} principal. Il est d'autres ensembles qu'on peut attacher 
+ \`a une vari\'et\'e donn\'ee, par exemple, l'ensemble de tous 
+ses vecteurs tangents, ou l'ensemble de tous ses tenseurs de type donn\'e. 
+Ces diff\'erents ensembles sont, d'une fa\c con que nous allons rendre 
+pr\'ecise, ``associ\'es'' au fibr\'{e} des rep\`eres, en ce sens que le groupe 
+structural --- le groupe lin\'eaire dans ce cas --- agit \'egalement sur les 
+composantes des vecteurs, tenseurs \etc
+
+Plus g\'en\'eralement, nous allons d\'efinir des fibr\'{e}s associ\'es en 
+``rempla\c cant'' le groupe structural d'un fibr\'{e} principal par un ensemble 
+sur lequel ce groupe op\`ere. D'un certain point de vue, on peut dire que 
+les groupes eux-m\^emes n'ont un int\'er\^et que parce qu'ils agissent 
+(op\`erent) sur des ensembles bien choisis et cette th\'eorie des actions de 
+groupe --- que nous avons sommairement d\'ecrite dans la deuxi\`eme partie de 
+cet ouvrage --- est particuli\`erement
+riche lorsqu'il s'agit d'une action lin\'eaire sur un espace vectoriel 
+(th\'eorie des repr\'esentations). Les groupes sont donc des ``machines \`a 
+agir sur des espaces''. D'une fa\c con analogue, nous allons consid\'erer les
+fibr\'{e}s principaux comme des ``machines \`a fabriquer des fibr\'{e}s associ\'es'' 
+et la th\'eorie sera particuli\`erement riche lorsque ces fibr\'{e}s associ\'es 
+seront fabriqu\'es \`a l'aide d'une repr\'esentation de groupe sur un espace 
+vectoriel (th\'eorie des fibr\'{e}s vectoriels).
+
+\subsection{Espaces fibr\'{e}s associ\'es g\'en\'eraux}\label{sec:associes}
+
+Soit $P \stackrel{\pi}\mapsto M$ un espace fibr\'{e} principal (\`a droite), de 
+groupe structural $G$, et soit $\rho$ une action (\`a gauche) de $G$ sur un 
+ensemble $F$. On obtient alors une relation d'\'equivalence sur $P\times F$ 
+en disant que $(z,f)\in P\times F$ est \'equivalent \`a $( {z'}, 
+ {f'}) \in P\times F$ s'il existe un \'el\'ement $g$ de $G$ qui soit tel 
+que $ {z'}=zg$ et $ {f'}=\rho(g^{-1}) f$. L'ensemble quotient $E 
+= P \times_G F$ prend le nom de fibr\'{e} associ\'e \`a $P$ via l'action de $G$ 
+sur $F$. En d'autres termes, on identifie $(z,f)$ avec 
+$(zg,\rho(g^{-1}f))$. Cette d\'efinition un peu abstraite ne devrait pas 
+rebuter le lecteur, en effet elle correspond \`a une situation bien connue 
+: supposons l'action $\rho$ fix\'ee une fois pour toutes et notons 
+$g^{-1}f$ l'objet que nous notions un peu plus haut $\rho(g^{-1}) f$~; 
+par ailleurs, d\'esignons par $z.f$ la classe de $(z,f)$~; l'\'el\'ement 
+$u=z.f$ de $E$ n'est donc rien d'autre que l'objet g\'eom\'etrique qui 
+poss\`ede les ``composantes'' $f$ dans le ``rep\`ere'' $z$ et les ``composantes'' 
+$g^{-1}.f$ dans le ``rep\`ere'' $zg$, en effet, $u = z.f =zg.g^{-1}f$. On voit donc 
+ici que $u$ g\'en\'eralise la notion classique et \'el\'ementaire de ``vecteur''. 
+Nous verrons un peu plus loin comment r\'ecup\'erer la notion d\'ej\`a introduite 
+de vecteur tangent \`a une vari\'et\'e par cette construction.
+
+L'espace $E$ est bien un espace fibr\'{e} et on a une projection, encore 
+not\'ee $\pi$, de $E$ sur $M$, d\'efinie par $\pi(z.f)  =  \pi(z)$ o\`u  le 
+$\pi$ du membre de droite se r\'ef\`ere \`a la projection dans le fibr\'{e} 
+principal correspondant. Il est bien clair que cette d\'efinition ne d\'epend 
+pas du choix du repr\'esentant choisi (puisque les diff\'erents $z$ possibles 
+sont tous dans la m\^eme fibre~!) On se souvient, par ailleurs, qu'il est 
+parfaitement l\'egitime et non ambigu de noter le point $x = \pi(z)$ de $M$ 
+sous la forme $x=z G$ puisqu'il existe une correspondance 
+bi-univoque entre points de $M$ et fibres de $P$. Par ailleurs,
+la fibre de la nouvelle projection $\pi$ (dans $E$) \'etant, par construction, 
+hom\'eomorphe \`a $F$, on a donc, de fait, ``remplac\'e'' $G$ par $F$, ce qui 
+justifie de repr\'esenter cette construction, associant $E$ \`a $P$, par la figure suivante (fig. \ref{fig:fibre associe}):
+\begin{figure}[htbp]
+\epsfxsize=14cm
+$$
+    \epsfbox{fibre-associe.eps}
+$$
+\caption{Passage d'un fibr\'{e} principal \`a un fibr\'{e} associ\'e}
+\label{fig:fibre associe}
+\end{figure}
+
+On dit que $G$ est le groupe structural du fibr\'{e} associ\'e $E$ (attention, 
+dans le cas des fibr\'{e}s associ\'es, le groupe structural $G$ n'a aucune 
+raison d'\^etre diff\'eomorphe \`a la fibre type $F$). Notons enfin que 
+$\mbox{dim}\, E=\mbox{dim}\, M + \mbox{dim}\, F$.
+
+Avant de donner quelques exemples de tels espaces, il importe de noter 
+que, sauf exceptions, le groupe structural $G$ {\it n'agit pas\/} sur le 
+fibr\'{e} associ\'e $E$ puisque $E$ est pr\'ecis\'ement obtenu via un quotient de 
+l'action simultan\'ee de $G$ sur $P$ (c'est \`a dire sur les ``rep\`eres'') et 
+sur $F$ (c'est \`a dire les ``composantes'').\par
+ Une situation famili\`ere, bien 
+connue du lecteur, nous est fournie par l'exemple des espaces vectoriels~:
+ 
+Soit $E$ un espace vectoriel de dimension $n$~; les \'el\'ements de $E$ sont 
+nos vecteurs familiers~; il faut bien voir que le groupe lin\'eaire 
+$GL(n,\RR)$, d\'efini comme groupe de matrices, ne sait pas 
+comment agir sur les vecteurs si aucune base n'a été choisie. Par contre, il sait agir sur les bases 
+de $E$ (il fait passer d'une base \`a l'autre) et, une base \'etant choisie, il sait \'egalement agir 
+sur les composantes des vecteurs de $E$. Il existe bien un groupe qui 
+sait agir sur les vecteurs eux-m\^emes, c'est le groupe $Aut \, E$ des 
+automorphismes de $E$, mais ce groupe ne peut s'identifier \`a $GL(n,,\RR)$ 
+que moyennant le choix d'une base. Un espace vectoriel usuel n'est autre 
+chose qu'un espace fibr\'{e} sur un point (la base est un point et la fibre 
+s'identifie \`a l'espace vectoriel lui-m\^eme). Apr\`es quelques moments de 
+r\'eflexion pass\'es \`a examiner ce cas assez trivial, mais instructif, le 
+lecteur pourra sans doute se demander quel est l'objet g\'en\'eralisant $Aut 
+\, E$ lorsqu'on passe de la situation bien connue \'evoqu\'ee ci-dessus au 
+cas des espaces fibr\'{e}s plus g\'en\'eraux o\`u  la base est, en g\'en\'eral, une 
+vari\'et\'e. Il se trouve que ce groupe $Aut E$ admet une g\'en\'eralisation, 
+c'est \`a dire qu'il existe bien un groupe qui agit sur $E$~: c'est un 
+objet d\'esign\'e sous le nom de  {\sl groupe de jauge\/}\index{groupe de jauge} et son \'etude fera 
+l'objet de la
+section \ref{sec:groupe-de-jauge}. Nous verrons qu'il est, en g\'en\'eral, 
+de dimension infinie.
+
+Une des  conclusions que nous voulons tirer de la pr\'esente discussion est 
+la suivante~: le groupe structural $G$ d'un fibr\'{e} associ\'e n'agit pas sur 
+l'espace fibr\'{e} associ\'e en question~; il y a bien un groupe $Aut \, E$ qui 
+agit sur $E$, mais ce groupe ne co\"incide pas avec $G$.
+
+\subsection{Espaces fibr\'{e}s en espaces homog\`enes, associ\'es \`a un fibr\'{e} 
+principal de groupe structural $G$}\label{sec:fibres-homogenes}
+Soit $P = P(M,G)$ un fibr\'{e} principal et $H$ un sous groupe de Lie du 
+groupe structural $G$. On consid\`ere l'action \`a gauche de $G$ sur l'espace 
+homog\`ene $F=G/H$ et on construit, en suivant la m\'ethode de construction 
+g\'en\'erale des fibr\'{e}s associ\'es, l'ensemble $E = P \times_G G/H$. Les fibres 
+de $E$ sont diff\'eomorphes \`a l'espace homog\`enes $G/H$ et la base est toujours $M$. La 
+dimension de $E$ est donc \'egale \`a $dim \, M \, + dim \, G/H = dim \, M \, 
++ dim \, G - dim \, H$ et on peut repr\'esenter $E$ \`a l'aide de la figure suivante (fig. \ref{fig:Fibre en G/H})~:
+\begin{figure}[htbp]
+\epsfxsize=8cm
+$$
+    \epsfbox{fibre-homogeneII.eps}
+$$
+\caption{Fibr\'e associ\'e en espaces homog\`enes}
+\label{fig:Fibre en G/H}
+\end{figure}
+
+On peut noter $E = P \, \mbox{mod} \, H$ ou simplement $E = P/H$.
+
+A l'aide de cette m\'ethode g\'en\'erale et des exemples de fibr\'{e}s principaux donn\'es pr\'ec\'edemment,
+on peut ainsi fabriquer une foule de nouveaux espaces. 
+En voici quelques exemples~: 
+\begin{figure}[htbp]
+\epsfxsize=15cm
+$$
+    \epsfbox{exemples-homogenes.eps}
+$$
+\caption{Exemples de fibr\'{e}s associ\'es en espaces homog\`enes}
+\end{figure}
+
+\subsection{Fibration principale relative \`a un fibr\'{e} quotient}\label{sec:fibre-quotient}
+La figure ci-dessous (\ref{fig:PsurE}),
+le fait que $\mbox{$dim P = dim E +  dim H$}$ et le fait que $G$ soit 
+lui-m\^eme un $H$-fibr\'{e} principal au dessus de $G/H$,
+ sugg\`erent que l'espace total $P$ du fibr\'{e} 
+principal $P(M,G)$ dont on est parti peut \'egalement \^etre consid\'er\'e comme fibr\'{e} 
+principal $P(E,H)$ de fibre $H$ au-dessus du fibr\'{e} associ\'e $E = P\times_G 
+G/H$. Il en est effectivement ainsi.
+
+Soit $z \in P(M,G)$, on consid\`ere l'application $p : P \mapsto E = P 
+\times_G G/H = P\, \mbox{mod}\, H$ d\'efinie par $p(z)=(z,eH)$, o\`u  $e$ 
+d\'esigne l'\'el\'ement neutre du groupe $G$. La fibre passant par $z$ de cette 
+application est simplement $zH$ puisque 
+$$\forall h \in H, \, p(zh)=(zh,eH)=(z,heH)=(z,eH)=p(z)$$
+On obtient donc ainsi un nouveau fibr\'{e} principal $Q(E,H)$ poss\'edant le 
+m\^eme espace total que $P(M,G)$ mais cette fois-ci avec une base $E = P\, \mbox{mod}\, H$
+et un groupe structural $H$.
+Pour tout choix d'un sous groupe $H$ de $G$, on obtient 
+ainsi une deuxi\`eme fibration principale de l'espace $P$ repr\'esent\'ee par 
+la figure (\ref{fig:PsurE}).
+\begin{figure}[htbp]
+\epsfxsize=14cm
+$$
+    \epsfbox{double-fibration.eps}
+$$
+\caption{Deuxi\`eme fibration principale de $P$~: les espaces P(M,G) et P(E,H)}
+\label{fig:PsurE}
+\end{figure}
+
+\subsection{Espaces fibr\'{e}s en $\ldots$ espaces fibr\'{e}s}
+Voici une famille d'exemples assez surprenante~: on se donne $P_1 =  
+P_1(M_1,G)$ et $P_2(M_2,G)$, deux espaces fibr\'{e}s principaux poss\'edant le 
+m\^eme groupe structural. On supposera, de plus, que $P_1$ est un espace 
+fibr\'{e} \`a droite ---comme d'habitude--- mais que $P_2$ est un espace fibr\'{e} \`a 
+gauche, ce qui n'est pas vraiment une restriction puisqu'on peut toujours 
+passer d'une action \`a droite \`a une action \`a gauche
+(voir le chapitre sur les actions de groupes).
+On va alors fabriquer un fibr\'{e} associ\'e en choisissant
+ $P=P_1$, $F=P_2$ et 
+en suivant la m\'ethode g\'en\'erale de construction des fibr\'{e}s associ\'es. On 
+obtient ainsi un espace $E=P_1 \times_G P_2$ dont la base est $M_1$ et dont 
+la fibre type est $P_2$.
+
+Voici un exemple de cette construction. Soit $P_1 = G = P_1(G/H,H)$, un 
+groupe de Lie fibr\'{e} en sous groupes de type $H$ au dessus de $G/H$ et $P_2 = K = P_2(H\backslash K,H)$, 
+un autre groupe de Lie fibr\'{e} en sous groupe de type $H$ au dessus de 
+$H\backslash K$~; on fabrique alors $E=G\times_H K$ qui a pour base $G/H$ et pour fibre type $K$. Une situation encore plus 
+particuli\`ere correspond au choix $G=K$.
+
+\subsection{Le fibr\'{e} adjoint $E=Ad \, P$}\label{sec:fibre-adjoint}
+Soit $P=P(M,G)$ un fibr\'{e} principal. On peut faire agir $G$ sur lui-m\^eme 
+via l'action adjointe $g\in G, \, Ad(g)k=gkg^{-1}$. On choisit alors 
+$F=G$, $\rho=Ad$, et on construit $E=P\times_{Ad}G$, fibr\'{e} not\'e 
+habituellement $Ad \, P$. Cet espace fibr\'{e} associ\'e a ceci de particulier que sa 
+fibre type est un groupe de Lie ---c'est le groupe structural lui-m\^eme--- 
+et donc, au niveau du ``dessin'', rien ne le distingue de $P$, puisqu'ils 
+ont tous deux m\^eme base $M$ et m\^eme fibre type $G$. En revanche, $G$ 
+op\`ere, comme il se doit, sur le fibr\'{e} principal $P$, alors qu'il ne sait pas agir sur $Ad \, 
+P$. Cet exemple illustre bien la n\'ecessit\'e d'imposer la condition $2$ 
+dans la d\'efinition des fibr\'{e}s principaux (voir section \ref{sec:principal}). 
+A tout fibr\'{e} principal $P$, on peut donc associer un {\sl fibr\'{e} en groupes\/}
+\index{fibr\'{e} en groupes} 
+$Ad \, P$, dont l'importance s'av\'erera essentielle (nous verrons plus 
+tard que les sections de $Ad \, P$ sont les {\sl transformations de 
+jauge\/})\index{transformations de jauge locales}
+\index{automorphismes verticaux}. Notons pour terminer que $G$ 
+agit non seulement sur lui-m\^eme par l'action adjointe $Ad$ mais aussi sur 
+$Lie(G)$ par l'action adjointe $ad$ d\'efinie par $ad(g)X=gXg^{-1}$, o\`u  
+$X$ appartient \`a l'alg\`ebre de Lie de $G$. La construction g\'en\'erale 
+peut encore \^etre effectu\'ee dans ce cas, et on fabrique ainsi le fibr\'{e} associ\'e $ad \,P = P 
+\times_G Lie(G)$ qui est un fibr\'{e} en alg\`ebres de Lie, de base $M$.
+
+\subsection{Le r\^ole du normalisateur}
+\begin{itemize}
+	\item  On vient de construire un nouvel espace fibr\'{e} en faisant
+	 agir $G$ sur lui-m\^eme par l'action adjointe. On 
+	pourrait se demander pourquoi ne pas faire tout simplement agir $G$ sur 
+	lui-m\^eme par multiplications \`a gauche, et fabriquer le fibr\'{e} associ\'e 
+	correspondant. Bien sur, on le peut, mais alors, on n'obtient ainsi rien 
+	de neuf~! En effet, partons de $P=P(M,G)$, fibr\'{e} principal ( \`a droite) 
+	et construisons $E = P\times_G G$ via l'action (multiplication) \`a gauche 
+	de $G$ sur $G$. La prise du quotient identifie ces deux actions ---\`a 
+	droite de $P$ et \`a gauche de $G$--- et ces deux actions s'annihilent donc 
+	mutuellement (voir la remarque en fin de section \ref{sec:associes}). Par 
+	contre, il existe encore une action de $G$ \`a droite de la fibre $F=G$, 
+	de sorte que l'espace obtenu $E$ s'identifie canoniquement \`a $P$ 
+	lui-m\^eme. La construction n'offre donc aucun int\'er\^et.
+	
+	\item  Dans le cas de fibrations en espaces homog\`enes du type 
+	$E=P\times_G G/H$, nous avons vu que l'action de $G$ disparaissait, {\it 
+	en g\'en\'eral\/}, au niveau de $E$. L'exemple qui pr\'ec\`ede (o\`u  $H$ se d\'eduit 
+	\`a l'identit\'e) offre un bon contre-exemple, mais il s'agit l\`a d'une 
+	situation un peu extr\^eme$\ldots$ On pourrait se demander s'il existe des 
+	situations interm\'ediaires, c'est \`a dire des situations o\`u  il existe 
+	encore une certaine action {\it \`a droite\/} au niveau du fibr\'{e} associ\'e 
+	$E$. La r\'eponse est simple et a d\'ej\`a \'et\'e trouv\'ee
+	dans notre \'etude succincte des espaces homog\`enes des 
+	groupes de Lie~: l'espace $G/H$ est toujours muni d'une action de $G$ 
+	\'evidente, du c\^ot\'e gauche, mais \'egalement d'une action \`a droite du {\it 
+	groupe\/} $N\vert H$ o\`u  $N$ d\'esigne le normalisateur de $H$ dans $G$~; 
+	en effet, on peut \'ecrire $(gH)n=(gn)H$ si $n$ est un \'el\'ement de $N$. 
+	Sch\'ematiquement, on a $$G \rightarrow G/H \leftarrow N\vert H$$ Le 
+	groupe $N\vert H$ agit donc toujours, \`a droite, sur l'espace fibr\'{e} 
+	$E=P\times_G G/H$. Bien souvent, ce groupe $N\vert H$ est discret, mais 
+	il peut ne pas l'\^etre. On a \'egalement le cas extr\^eme o\`u  $N$ et $G$ 
+	co\"incident~; dans un tel cas, $H$ est sous groupe distingu\'e de $G$, 
+	l'espace homog\`ene $G/H$ est un groupe, et $E$, muni de cette action \`a 
+	droite, devient un fibr\'{e} principal. Dans le cas g\'en\'eral o\`u  $N$ et $G$ 
+	sont distincts, et o\`u  $H$ n'est pas trivial, il faut se rappeler (voir 
+        section \ref{sec:Fibres-Exemples}) que $G/H$ est lui m\^eme un $N\vert H$ fibr\'{e} 
+	principal au dessus de $G/N$~; on fabrique ainsi une projection de $E$ 
+	sur $M \times G/N$ et $E$ peut alors \^etre consid\'er\'e comme $N\vert H$ 
+	fibr\'{e} principal au dessus de $M\times G/N$.
+\end{itemize}
+
+\subsection{Les espaces fibr\'{e}s vectoriels}
+
+``A tout seigneur, tout honneur'', voici les espaces fibr\'{e}s vectoriels, 
+espaces qui tiennent une place de choix dans la th\'eorie des espaces 
+fibr\'{e}s, et dont l'\'etude peut se faire (et se fait souvent) de fa\c con 
+ind\'ependante de la notion de fibr\'{e} principal. Dans notre approche, 
+cependant, les fibr\'{e}s vectoriels sont des espaces fibr\'{e}s associ\'es 
+comme les autres, \`a cette diff\'erence pr\`es que la fibre $F$ 
+choisie est un espace vectoriel ($\RR^n$ ou $\CC^n$) et que l'action 
+$\rho$ de $G$ sur $F$ est une repr\'esentation de $G$ sur cet espace 
+vectoriel. Nous devons donc nous r\'ep\'eter~: soit $P=P(M,G)$ un fibr\'{e} 
+vectoriel et $\rho$ une repr\'esentation de $G$ sur l'espace vectoriel $F$ 
+; on construit le fibr\'{e} vectoriel $E = P \times_G F$. Les 
+\'el\'ements $\overrightarrow{ v}$ de $E$ sont vraiment ici des 
+``vecteurs'' (gardons la fl\`eche pour le moment) et on pourra 
+sans danger ---et avec profit--- utiliser une notation ``avec 
+des indices''. Comme on l'a vu en section \ref{sec:associes}, l'\'el\'ement 
+$\overrightarrow{ v}$ de $E$ peut s'\'ecrire
+${\overrightarrow{ v}} = (\epsilon).(v)=(\epsilon 
+g).(\rho(g^{-1}v))$, avec $\epsilon \in P$ et $v \in F$, ce qui 
+se lit ``${\overrightarrow{ v}}$ poss\`ede les composantes $(v)$ 
+dans le rep\`ere $(\epsilon)$ et les composantes $(\rho(g^{-1}v))$ 
+dans le rep\`ere $(\epsilon g)$''. Si on introduit des indices, on 
+\'ecrira ${\overrightarrow{ v}} = \epsilon_i v^i$ o\`u  les $v^i$ sont 
+des nombres r\'eels ou complexes et o\`u  $\{\epsilon_i \}$ d\'esigne 
+un \'el\'ement de $P$, c'est \`a dire un rep\`ere g\'en\'eralis\'e au point $x$, rep\`ere 
+qui peut, dans les cas simples (cas o\`u  $\rho$ d\'esigne une repr\'esentation 
+fondamentale de $G$, par exemple) \^etre consid\'er\'e comme base de la fibre 
+au point $x$.
+ Sch\'ematiquement, on a la figure \ref{fig:fibre vectoriel}
+\begin{figure}[htbp]
+\epsfxsize=8cm
+$$
+    \epsfbox{fibre-vectoriel.eps}
+$$
+\caption{Espace fibr\'{e} vectoriel}
+\label{fig:fibre vectoriel}
+\end{figure}
+
+Le fibr\'{e} vectoriel est dit r\'eel ou complexe suivant que $F=\RR^n$ 
+ou $\CC^n$ et on pourra \'ecrire $E=E(M,F)$.  Le 
+lecteur aura devin\'e que la notation utilis\'ee ici permet de nommer la 
+base, la fibre et l'espace total correspondant.
+
+L'exemple fondamental est celui fourni par le fibr\'{e} tangent \`a 
+une vari\'et\'e $M$. Nous avons d\'ej\`a d\'efini cet espace de fa\c con 
+\'el\'ementaire au premier chapitre. Il s'introduit ici de fa\c con 
+parfaitement naturelle~: Soit $P=FM$ le fibr\'{e} principal des 
+rep\`eres lin\'eaires sur $M$~; le groupe structural est 
+$G=GL(m,\RR)$ avec $m={\mbox dim}\, M$. On consid\`ere la 
+repr\'esentation fondamentale de $G$ sur $\RR^m$ et on construit 
+le fibr\'{e} tangent $TM=FM \times_{GL(m,\RR)} \RR^m$ comme fibr\'{e} 
+associ\'e \`a $FM$. Les \'el\'ements de $TM$ sont, par d\'efinition, des 
+vecteurs tangents qu'on note $v=\epsilon_\mu .  v^\mu$, o\`u  
+$\epsilon_\mu$ d\'esigne un \'el\'ement de $FM$, c'est \`a dire aussi 
+une base de $T(M,x)$, l'espace tangent en $x$, c'est \`a dire la 
+fibre de $TM$ au dessus de $x \in M$. On d\'ecide \'egalement de ne 
+plus mettre de fl\`eche sur les vecteurs.
+Noter que nous \'ecrivons les composantes $v^\mu$ de $v$ \`a droite 
+de la base $\epsilon_\mu$ de fa\c con \`a rester compatible avec la 
+notation g\'en\'erale que nous avons introduite pr\'ec\'edemment pour 
+les espaces fibr\'{e}s associ\'es. Soit $\Lambda = 
+(\Lambda_\mu^\nu)$ une matrice de $GL(m,\RR)$, on retrouve 
+alors la propri\'et\'e bien connue 
+$$
+v = \epsilon_\mu v^\mu = (\epsilon_\nu 
+\Lambda_\mu^\nu)({\Lambda^{-1}}_\rho^\mu v^\rho)
+$$
+
+Les tenseurs contravariants et covariants de tous ordres, qui ne sont autres que les 
+\'el\'ements de $(TM)^{\otimes p} \bigotimes (T^*M)^{\otimes q}$ 
+d\'ej\`a introduits au premier chapitre s'interpr\`etent ici comme 
+des \'el\'ements des espaces fibr\'{e}s vectoriels $FM \times_G F$ o\`u  
+$F$ d\'esigne la puissance tensorielle appropri\'ee de $\RR^m$ et 
+o\`u  $GL(m,\RR)$ agit sur $F$ par la repr\'esentation tensorielle 
+correspondante.
+
+Les exemples qui pr\'ec\`edent sont d'une utilisation courante en 
+physique de l'espace-temps (th\'eorie de la gravitation) mais il 
+faut bien voir qu'il n'y a pas grande diff\'erence conceptuelle 
+entre vecteurs de l'espace temps et $\ldots$ quarks! En effet, 
+en th\'eorie des interactions fortes, par exemple, on consid\`ere un fibr\'{e} 
+principal $P$ de groupe structural $SU(3)$ au dessus de 
+l'espace-temps $M$, on choisit alors l'action de $SU(3)$ sur 
+$\CC^3$ et on construit le fibr\'{e} vectoriel associ\'e $P 
+\times_{SU(3)} \CC^3$~; un quark au point $x$ est alors d\'ecrit 
+par un \'el\'ement de ce fibr\'{e} vectoriel. Nous reviendrons plus 
+loin sur ces exemples utilis\'es en physique.
+
+\subsection{Trivialit\'e des fibr\'{e}s vectoriels, vari\'et\'es parall\'elisables}
+
+Revenons un peu sur la notion de trivialit\'e d\'ej\`a \'etudi\'ee, dans le 
+cas des fibr\'{e}s principaux, en section \ref{sec:trivial}.  On se souvient qu'une 
+condition n\'ecessaire et suffisante, pour assurer la trivialit\'e d'un fibr\'{e} principal $P$,
+est l'existence 
+d'une section globale. Contrairement au cas des fibr\'{e}s 
+principaux, l'existence, pour un fibr\'{e} vectoriel, de sections
+globales, est une propri\'et\'e \'evidente~: tout fibr\'{e} vectoriel, 
+trivial ou non, poss\`ede des sections globales, par exemple la 
+section nulle. Ce n'est donc pas ainsi qu'on d\'etecte la 
+trivialit\'e. Par contre, nous avons vu que, d'une certaine 
+fa\c con, on pouvait consid\'erer
+un \'el\'ement du fibr\'{e} principal $P$ comme une base dans une certaine fibre du
+fibr\'{e} associ\'e $E.$ L'existence pour $P$ d'une section globale \'equivaut donc, pour $E$, \`a 
+l'existence de $n$ sections ind\'ependantes en tout point de $M$ 
+ ($n$ d\'esignant ici la dimension de la fibre type).
+On dit qu'une {\sl vari\'et\'e est parall\'elisable}\index{vari\'et\'e parall\'elisable}
+  si son fibr\'{e} tangent est trivial. De fa\c con g\'en\'erale, les groupes de Lie sont des vari\'et\'es
+parall\'elisables. En effet la donn\'ee d'une base dans l'alg\`ebre de Lie $\frak g$ du groupe $G$
+d\'etermine $n=dim(G)$ champs de vecteurs ind\'ependants en tous points de $G$ (les champs invariants
+\`a gauche associ\'es). On voit ainsi que le fibr\'{e} tangent $TG$ poss\`ede $n$ sections ind\'ependantes
+(il est donc trivial), et que,
+ce qui revient au m\^eme, le fibr\'{e} principal $FG$ (le fibr\'{e} principal des rep\`eres
+sur la vari\'et\'e $G$, fibr\'{e} dont le groupe structural est $GL(n)$)
+poss\`ede une section globale. Les groupes ne sont pas les seules vari\'et\'es
+parall\'elisables ; l'exemple le plus c\'el\`ebre de vari\'et\'e
+ne poss\'edant pas de structure de groupe mais \'etant n\'eanmoins parall\'elisable
+est sans doute celui de la sph\`ere $S^7$
+(seules les sph\`eres $S^0$, $S^1$ et $S^3$ poss\`edent une structure de groupe).
+La d\'emonstration de cette propri\'et\'e repose sur l'utilisation du produit de Cayley
+dans $R^8$ (l'``alg\`ebre'' des octonions). Les sph\`eres $S^n$ de 
+dimension $n=0,1,3,7$ sont les seules sph\`eres \`a
+\^etre parall\'elisables. Signalons sans d\'emonstration 
+quelques autres exemples de vari\'et\'es parall\'elisables : 
+les vari\'et\'es de Stiefel complexes $SU(n)/SU(k)$ (en excluant les sph\`eres, c'est \`a dire en
+supposant $k \neq n-1$),
+les espaces homog\`enes qui sont des quotients de $SU(n)$ par des
+sous-groupes du type $SU(2)\times\ldots\times SU(2)$ (\`a condition d'exclure une seule exception,
+la sph\`ere $S^5=SU(3)/SU(2)$), les quotients du type $Sp(n)/SU(2)$, l'espace homog\`ene
+$SU(4)/H$ o\`u $H$ est le sous-groupe de $SU(4)$ isomorphe \`a $SU(2)$ constitu\'e des matrices du type
+$\begin{pmatrix}  A & 0 \\ 0 & A\end{pmatrix}  $, avec $A \in SU(2)$.
+
+
+\subsection{Sections de fibr\'{e}s associ\'es et champs}\label{sec:sections}
+
+\begin{itemize}
+	\item  Soit $P=P(M,G)$ un fibr\'{e} principal et $E=E(M,F)$ un fibr\'{e} associ\'e~.
+ Nous savons ce qu'est une 
+section $\sigma$ d'un espace fibr\'{e}, \`a savoir une application 
+diff\'erentiable de $M$ dans $P$, ou dans $E$, telle que $\pi \, o \, 
+\sigma$ soit l'identit\'e de $M$, $\pi$ d\'esignant la projection du fibr\'{e} 
+correspondant. L'ensemble des sections globales est quelquefois vide (cas 
+des fibr\'{e}s principaux non triviaux) mais on sait qu'un fibr\'{e} vectoriel 
+admet de nombreuses sections globales. Soit $\Gamma E$ l'ensemble de ces 
+sections. Dans le cas o\`u  $E$ est le fibr\'{e} tangent $TM$ d'une vari\'et\'e, il 
+est \'evident qu'une section n'est autre qu'un champ de vecteurs~; 
+de la m\^eme fa\c con,
+les champs de tenseurs d'ordre sup\'erieur sont \'egalement des sections de 
+fibr\'{e}s vectoriels appropri\'es.  
+	
+	\item  En physique, les champs de mati\`ere classiques sont toujours d\'ecrits par 
+des sections de fibr\'{e}s associ\'es (le mot ``classique'' signifiant ici 
+qu'on fait allusion aux th\'eories de champs classiques et non aux th\'eories 
+de champs quantiques). C'est ainsi qu'un champ de quarks, par exemple, 
+est une section d'un fibr\'{e} \`a fibres $\CC^3$, mentionn\'e au paragraphe 
+pr\'ec\'edent, et que les champs de mati\`ere des ``mod\`eles $\sigma$ non 
+lin\'eaires'' sont des sections de fibr\'{e}s en espaces homog\`enes. Pour cette 
+raison, on dira quelquefois {\sl champ de mati\`ere \/}\index{champs de mati\`ere} au lieu de ``section de 
+fibr\'{e} associ\'e''. L'ensemble $\Gamma E$ est donc l'espace des champs de 
+mati\`ere caract\'eris\'e par le fibr\'{e} $E=E(M,F)$.
+	
+	\item  ll existe au moins quatre descriptions possibles d'un tel champ 
+	de mati\`ere~; illustrons ces quatre descriptions dans le cas des champs 
+	de vecteurs.
+	\begin{enumerate}
+		\item  On peut consid\'erer $x \in M \rightarrow v(x) \in E$ comme une 
+		section de $E$ (cf. supra) et on \'ecrit
+		 $\overrightarrow{v}(x)=\epsilon_\mu(x).v^\mu(x)$.
+		
+		\item  On peut consid\'erer $v$  (laissons tomber les fl\`eches !) 
+		comme une application de $P$ dans $F$ (et 
+		non plus de $M$ dans $E$) qui, au rep\`ere $\epsilon = (\epsilon_\mu)$, 
+		un \'el\'ement de $P$, associe le $n$-uplet de composantes $v^\mu$ (un 
+		\'el\'ement de $F$). Ce point de vue redonne (au deuxi\`eme degr\'e~!) un sens 
+		intrins\`eque \`a la notation ``avec des indices''. Cette application de 
+		$P$ dans $F$ n'est pas quelconque, elle est \'equivariante. En effet, si 
+		le rep\`ere $(\epsilon_\mu)$ a pour image $v^\mu$, il faut que le rep\`ere 
+		$(\epsilon_\mu)g$ ait pour image $\rho(g^{-1})v^\mu$. Ici $g$ et $\rho$ 
+		d\'esignent respectivement un \'el\'ement du groupe structural et la 
+		repr\'esentation d\'efinissant le fibr\'{e} associ\'e. {\it Il existe une 
+		correspondance bijective entre l'ensemble des sections d'un fibr\'{e} 
+		associ\'e $E=E(M,F)$
+		et l'ensemble des applications \'equivariantes du fibr\'{e} principal 
+		correspondant $P$ dans la fibre type $F$.}
+		On peut donc identifier 
+		$\Gamma E = \Omega^0(M,E)$ avec l'ensemble des applications de $P$ dans $F$ qui sont 
+		\'equivariantes, c'est \`a dire $\Omega^0_\rho(P,F)$. Cette identification 
+		se g\'en\'eralise au cas des $p$-formes sur $M$ \`a valeurs dans les sections 
+		de $E$ : $\Omega^p (M,E) \sim \Omega^p_\rho(P,F).$
+		
+		\item  On peut \'evidemment fixer ---tout au moins localement--- une 
+		section de $P$, c'est \`a dire choisir un ``rep\`ere mobile'' et 
+		caract\'eriser $v(x)$ par ses composantes dans le rep\`ere choisi. C'est 
+		cette m\'ethode qui est la plus utilis\'ee dans les calculs pratiques (on 
+		ne regarde que $v^\mu(x))$ mais il faut alors se rappeler qu'on a 
+		effectu\'e un choix et que ce choix est d'ordinaire local.
+		
+		\item  Les trois descriptions ci-dessus suffisent g\'en\'eralement \`a 
+		discuter le cas de la ``g\'eom\'etrie commutative'' (la g\'eom\'etrie tout 
+		court~?) ou de son pendant physique, la th\'eorie classique des champs. 
+		Cela dit, dans le cas des espaces fibr\'{e}s vectoriels, il existe une 
+		quatri\`eme description que nous n'aurons pas le loisir de discuter plus 
+		avant mais qui se g\'en\'eralise parfaitement au cas de le g\'eom\'etrie non 
+		commutative. La voici. On sait que l'ensemble des fonctions sur $M$ 
+		constitue une alg\`ebre (commutative)~; soit $v$ un \'el\'ement de $\Gamma E$ 
+		(un champ de mati\`ere) et soit $f$ une fonction sur la base, alors, il 
+		est bien \'evident que $f v$ est encore un \'el\'ement de $\Gamma E$. En 
+		d'autres termes, les champs de mati\`ere ---les sections de $E$---
+		constituent un module sur l'alg\`ebre des fonctions sur $M$ (il s'agit 
+		m\^eme d'un bimodule puisque l'alg\`ebre des fonctions sur $M$ est 
+		commutative et d'un bimodule particulier puisque les deux actions \`a droite et \`a gauche
+co\"incident).
+		
+		
+	\end{enumerate}
+	
+\end{itemize}
+
+\section[Elargissement et r\'eduction]{Changement de groupe structural dans les fibr\'{e}s principaux : 
+\'elargissement et r\'eduction}
+\subsection{D\'efinitions}
+On consid\`ere la situation o\`u  nous avons deux fibr\'{e}s principaux $Q(M,H)$ 
+et $P(M,G)$ avec $H \subset G$ et $f$, un diff\'eomorphisme de $Q$ sur 
+$f(Q) \subset P$ tel que $\forall z \in Q , \forall s \in H , f(zs)=f(z)s$.
+En pratique il s'agira souvent d'une inclusion $Q \subset P$, $f$ n'\'etant 
+autre que l'identit\'e.
+
+Dans une telle situation, on dit que $P$ est un {\sl \'elargissement\/}
+\index{elargissement d'espace fibr\'{e}}
+ (ou un {\sl prolongement\/}\index{prolongement d'espace fibr\'{e}})
+de $Q$ et que $Q$ est une {\sl r\'eduction\/}\index{r\'eduction d'espace fibr\'{e}} de $P$.
+
+Comme nous allons le voir, il est toujours possible d'\'elargir mais il 
+n'est pas n\'ecessairement possible de r\'eduire.
+
+\subsection{Elargissement (passage de $H$ \`a $G$ avec $H\subset G$)}
+
+Soit $Q=Q(M,H)$ un fibr\'{e} principal. On veut ``agrandir'' le fibr\'{e} $Q$ 
+sans modifier la base $M$ mais en agrandissant la fibre, c'est \`a dire en 
+rempla\c cant le groupe de Lie $H$ par un groupe $G$ ``plus grand''. La 
+construction est la suivante~: on se choisit un groupe de Lie $G$ tel que 
+$H \subset G$ et on construit le fibr\'{e} $P$ associ\'e \`a $Q$ d\'efini par $P= Q
+\times_H G$ o\`u  $H$ agit sur $G$ par multiplication \`a gauche.
+Les actions de $H$ \`a droite de $Q$ et \`a gauche de $G$ s'annihilent, mais
+il est \'evident que l'espace $P=P(M,G)$ est un $G$-fibr\'{e} principal puisque 
+$G$ 
+agit \`a droite de $P$ via $(z.k) {k'}=z.k {k'}$, avec $z \in Q$ et 
+$k,  {k'} \in G$.
+Par ailleurs, le diff\'eomorphisme de $Q$ sur $f(Q)$ recherch\'e est
+d\'efini, pour $z \in Q$, par $f(z) = z.e$ ($e$ d\'esignant l'\'el\'ement neutre 
+de $G$) et on notera simplement $f(z) = z$.
+
+ En conclusion, le passage de $Q(M,H)$ \`a $P(M,G)$ avec 
+$H\subset G$ est toujours possible. On dit que $P$ est obtenu \`a partir 
+de $Q$ par \'elargissement du groupe structural et que $Q$ lui-m\^eme est une
+r\'eduction de $P$. Notons que les 
+repr\'esentations de $G$ sont toujours des repr\'esentations de $H$, mais que 
+le contraire n'est pas n\'ecessairement vrai (ainsi, il faut, en g\'en\'eral, 
+prendre la somme directe de plusieurs repr\'esentations de $H$ pour 
+construire une repr\'esentation de $G$)~; les fibr\'{e}s associ\'es \`a $Q$ ne sont 
+donc pas forc\'ement toujours des fibr\'{e}s associ\'es \`a un \'elargissement $P$.
+
+\subsection{R\'eduction (passage de $G$ \`a $H$ avec $H\subset G$)}\label{sec:reduction}
+\begin{description}
+	\item[M\'ethode]
+	
+  Soit $P=P(M,G)$ un fibr\'{e} principal. On veut diminuer la 
+	taille de $P$ sans modifier la base $M$ mais en ``raccourcissant'' la 
+	fibre, c'est \`a dire en rempla\c cant $G$ par un groupe ``plus petit''. En 
+	d'autres termes, si on consid\`ere les \'el\'ements de $P$ comme des rep\`eres 
+	g\'en\'eralis\'es, on veut s'int\'eresser uniquement \`a une sous-classe 
+	particuli\`ere de rep\`eres, sous-classe qui soit stable sous l'action d'un 
+	sous-groupe $H$ de $G$. La m\'ethode du paragraphe pr\'ec\'edent ne s'applique 
+	pas car le groupe $H (\subset G)$ n'est pas stable lorsqu'on le 
+	multiplie \`a gauche par des \'el\'ements de $G$.
+	
+	Enon\c cons (et retenons) le r\'esultat suivant que nous d\'emontrerons un peu 
+	plus bas~:
+	
+	{\it  Le choix d'une r\'eduction du fibr\'{e} 
+	principal $P=P(M,G)$ \`a un sous-fibr\'{e} $Q=Q(M,H)$ de groupe structural $H$, lorsqu'il 
+	existe, n'est pas en g\'en\'eral unique, et est caract\'eris\'e par le choix 
+	d'une section globale dans un fibr\'{e} en espaces homog\`enes associ\'e \`a $P$,
+	en l'occurrence le fibr\'{e} associ\'e $P\times_G G/H$\/}.
+			 
+	Ce th\'eor\`eme est d'une importance fondamentale car il permet, comme nous 
+	allons le voir, de donner un sens pr\'ecis \`a l'id\'ee intuitive de ``choix 
+	d'une g\'eom\'etrie'' pour la vari\'et\'e diff\'erentiable $M$.
+	
+	Preuve. Soit $\sigma$ une section globale de $E = P\; {\mbox mod}\; H$. Un
+	th\'eor\`eme pr\'ec\'edemment discut\'e (voir les diverses mani\`eres de consid\'erer
+	les sections de fibr\'{e} associ\'e) nous dit qu'on peut associer \`a $\sigma$ une 
+	application $\overrightarrow{\sigma}$ du fibr\'{e} principal $P$ dans la fibre type $G/H$, 
+	qui soit \'equivariante ($\overrightarrow{\sigma}(ys)=s^{-1}\overrightarrow{\sigma}(y)$).
+	D\'efinissons $Q=\overrightarrow{\sigma}^{-1}(eH) \subset P$. La projection $\pi : Q 
+	\mapsto M$ n'est autre, par d\'efinition, que la restriction \`a $Q$ de la 
+	projection $\pi$ de $P$. Consid\'erons deux points $y_1$ et $y_2$ de la 
+	m\^eme fibre de $Q$, c'est \`a dire $\pi(y_1)=\pi(y_2)$ ; nous savons qu'il 
+	existe $s \in G \; \mbox{tel que}\; y_2=y_1 s$. Nous allons montrer qu'en 
+	fait, cet \'el\'ement $s$ appartient au sous-groupe $H$. En effet,
+	$$
+	y_1,y_2 \in Q \Rightarrow \overrightarrow{\sigma}(y_1) =eH \, {\mbox et} \, \overrightarrow{\sigma}(y_2)=eH
+	$$
+	mais
+	$
+	\overrightarrow{\sigma}(y_2)=\overrightarrow{\sigma}(y_1 s) = s^{-1} \overrightarrow{\sigma}(y_1)
+	$
+	et donc, $ eH = s^{-1}(eH)$, ce qui montre que $s \in H$.
+	Ainsi $Q \subset P$ est un fibr\'{e} principal de groupe structural $H$.
+	
+	R\'eciproquement, donnons nous $H \subset G$ et une r\'eduction 
+	$Q=Q(M,H)\subset P=P(M,G)$. D\'efinissons $\overrightarrow{\sigma} : P \mapsto G/H$ par
+	$\forall y \in Q \subset P, \overrightarrow{\sigma}(y)=eH \in G/H$. La fonction $\overrightarrow{\sigma}$ 
+	est ainsi constante sur les fibres de $Q$. Soient maintenant deux points $y_0 \in Q$ 
+	et $y \in P$ que nous prenons dans la m\^eme fibre de $P$ mais nous
+	supposons que $y$ n'appartient pas n\'ecessairement \`a $Q$. Il existe donc 
+	un \'el\'ement $g$ de $G$ tel que $y=y_0 g$, alors $\overrightarrow{\sigma}(y)=\overrightarrow{\sigma}(y_0 g) 
+	= g^{-1} \overrightarrow{\sigma}(y_0)=g^{-1}eH=g^{-1}H \in G/H$. On a ainsi construit une 
+	application $\overrightarrow{\sigma} : P \mapsto G/H$ \'equivariante sous l'action de $G$. 
+	Cela d\'etermine, en vertu du th\'eor\`eme \'enonc\'e au $2$ du \ref{sec:sections}
+        une section globale de 
+	$E(M,G/H)=P\, {\mbox mod} \, H$.
+			
+		\item[R\'eduction de $GL(n,\RR)$ \`a $SO(n)$~: structures riemanniennes] 
+	\ \\
+ On peut rattacher canoniquement \`a une vari\'et\'e diff\'erentiable $M$ son 
+	fibr\'{e} $FM$ des rep\`eres lin\'eaires. C'est un fibr\'{e} principal de groupe 
+	structural $GL(n,\RR)$. {\it Choisissons\/} maintenant {\it une\/} 
+	r\'eduction \`a un sous-fibr\'{e} de groupe structural $SO(n)$. Choisir une 
+	telle r\'eduction consiste \`a s\'electionner une certaine classe de 
+	rep\`eres, que nous appellerons {\em orthonorm\'es\/}, telle que l'un 
+	quelconque d'entre eux puisse s'obtenir \`a partir de n'importe quel autre 
+	\`a l'aide d'une matrice du groupe orthogonal $SO(n)$. Par d\'efinition, 
+    une vari\'et\'e riemannienne ($M$ en l'occurrence) est une 
+	vari\'et\'e diff\'erentiable de dimension $n$ pour laquelle on a {\it 
+	choisi\/} une r\'eduction du fibr\'{e} $FM$ des rep\`eres lin\'eaires \`a un 
+	sous-fibr\'{e} de groupe structural $SO(n)$. Le sous-fibr\'{e} en question se 
+	note alors $OFM$ (``Orthogonal Frame Bundle'') et prend le nom de fibr\'{e} 
+	des rep\`eres orthonorm\'es. Le lecteur peut se demander o\`u  est la m\'etrique 
+	dans cette approche$\ldots$ La r\'eponse est la suivante~: le tenseur 
+	m\'etrique s'identifie pr\'ecis\'ement avec la section globale du fibr\'{e} en 
+	espaces homog\`enes $GL(n)/SO(n)$ qui d\'efinit la r\'eduction (nous oublions 
+	momentan\'ement les probl\`emes li\'es \`a des exigences de non d\'eg\'en\'erescence, 
+	de positivit\'e \etc). Noter que la dimension de cet espace homog\`ene est \'egale \`a
+	$dim(GL(n)) - dim(SO(n)) = n^2 - n(n-1)/2 = n(n+1)/2$, et ses \'el\'ements 
+	peuvent donc s'identifier, comme il se doit, \`a des tenseurs de rang deux compl\`etement 
+	sym\'etriques. 
+    Intuitivement, choisir une structure 
+	riemannienne revient \`a conf\'erer une ``forme g\'eom\'etrique'' \`a une vari\'et\'e 
+	diff\'erentiable~; c'est ainsi que c'est le choix de la m\'etrique qui fait 
+	la diff\'erence entre un ballon de foot, un ballon de rugby et$\ldots$ une 
+	bouteille de vin (bouch\'ee!) et 	la multiplicit\'e des r\'eductions possibles co\"incide avec 
+	la multiplicit\'e des m\'etriques riemanniennes qu'on peut choisir, pour une 
+	vari\'et\'e diff\'erentiable donn\'ee.
+	Vu l'importance de cette notion, nous y reviendrons abondamment dans le chapitre suivant.
+	
+	\item[R\'eduction de $GL(2n,\RR)$ \`a $GL(n,\CC)$~: structures 
+	presque-complexes]
+
+ L'id\'ee est essentiellement la m\^eme que dans l'exemple 
+	pr\'ec\'edent, \`a ceci pr\`es que $M$ est suppos\'e \^etre de dimension 
+	paire et qu'on choisit maintenant une r\'eduction du fibr\'{e} des rep\`eres 
+	lin\'eaires \`a un sous-fibr\'{e} dont le groupe orthogonal doit \^etre $SU(n)$. 
+	Les vari\'et\'es pour lesquelles on a effectu\'e un tel choix se nomment 
+	{\sl vari\'et\'es presque-complexes\/}\index{vari\'et\'es presque-complexes}
+	 et l'analogue de la m\'etrique est ici la 
+	donn\'ee, en chaque espace tangent $T(M,x)$ d'un endomorphisme $j$ de 
+	carr\'e \'egal \`a $-1$. Cet op\'erateur peut encore s'identifier \`a une section 
+	globale d'un fibr\'{e} en espaces homog\`enes $GL(2n,\RR)/GL(n,\CC)$. Le lecteur 
+	peut sans doute se demander pourquoi on parle ici de vari\'et\'es presque-complexes 
+	et non, tout simplement, de vari\'et\'es complexes. Il se trouve 
+	que ces deux notions sont de nature assez diff\'erentes (et la terminologie 
+	est d\'esormais consacr\'ee)~: la notion de structure presque-complexe est, 
+	comme on vient de le voir, analogue \`a la notion de structure 
+	riemannienne et est associ\'ee au choix d'une r\'eduction du fibr\'{e} des 
+	rep\`eres pour une vari\'et\'e diff\'erentiable~; la notion de structure 
+	complexe est, quant \`a elle, analogue \`a la notion de structure de vari\'et\'e 
+	topologique, de vari\'et\'e lin\'eaire par morceaux ou analogue \`a la notion de 
+	structure 
+	diff\'erentiable elle-m\^eme (on choisit des cartes \`a valeur dans $\CC^n$ et 
+	non plus dans $\RR^n$ et on impose aux fonctions de transitions d'\^etre 
+	holomorphes). Nous n'aurons pas le loisir, dans cet ouvrage, 
+	d'\'etudier la g\'eom\'etrie des vari\'et\'es complexes~; notons simplement que la 
+	terminologie vient du fait qu'une vari\'et\'e complexe donn\'ee fournit 
+    une vari\'et\'e diff\'erentiable qui se trouve automatiquement munie d'une 
+	structure presque-complexe (l'endomorphisme $j$ de carr\'e \'egal \`a $-1$ 
+	provenant tout simplement de la multiplication par le nombre complexe 
+	$i$). Le passage inverse, celui d'une structure presque-complexe \`a une 
+	structure complexe, n'est pas automatique car il n\'ecessite la v\'erification d'une certaine condition 
+	d'int\'egrabilit\'e.
+	
+	On peut aussi parler de vari\'et\'es presque-hermitiennes lorsque la 
+	r\'eduction du groupe structural va de $GL(2n,\RR)$ \`a $U(n)=O(2n)\cap 
+	GL(n,\CC)$. Dans ce cas, il existe une m\'etrique $h$ compatible avec la 
+	structure presque-complexe, en ce sens que $h(v_1,v_2)=h(j v_1,j v_2)$.
+	On peut alors construire une forme hermitienne
+ $H(v_1,v_2) = {1\over 
+	2}(h(v_1,v_2)-i h(jv_1, v_2))$ et une forme presque-K\"ahlerienne 
+	$\omega(v_1,v_2)=h(j v_1,v_2)$.
+	
+	\item[R\'eduction de $GL(4,n)$ \`a $Sp(n)$~: structures presque-quaternioniques]
+
+	L'histoire est la m\^eme que dans le cas pr\'ec\'edent et les commentaires sont analogues. La section 
+	globale du fibr\'{e} en espaces homog\`enes $GL(4n,\RR)/Sp(n)$ caract\'erisant 
+	la r\'eduction peut s'identifier \`a la donn\'ee, en chaque espace tangent 
+	$T(M,x)$ de trois op\'erateurs $j_1$, $j_2$, $j_3$, tous trois de carr\'e 
+	\'egal \`a moins l'identit\'e, et satisfaisant aux relations $j_1 j_2=-j_2 j_1 
+	= j_3$, $j_2 j_3=-j_3 j_2	= j_1$ et $j_3 j_1=-j_1 j_3 = j_2$.
+	La raison du ``presque'' dans le presque-quaternionique est analogue celle
+	donn\'ee dans le paragraphe pr\'ec\'edent \`a condition toutefois de remplacer 
+	nombres complexes par quaternions. Ici $Sp(n)$ d\'esigne le groupe compact 
+	des unitaires quaternioniques, quelquefois d\'esign\'e par $U(n,\HH)$.
+	 Nous n'aurons pas le loisir de 
+	revenir sur ce sujet dans le cadre de cet ouvrage. 
+    
+    \item[Remarques]
+
+ Avant de quitter cette partie consacr\'ee aux 
+    r\'eductions de fibr\'{e}s principaux, notons que les repr\'esentations d'un 
+    groupe $G$ sont aussi des repr\'esentations de tout sous-groupe $H$ de 
+    $G$. Ainsi donc, les fibr\'{e}s associ\'es \`a $P(M,G)$ sont aussi associ\'es \`a 
+    tout sous-fibr\'{e} $Q(M,H)$ avec $H \subset G$. Il est rassurant de 
+    savoir que le fibr\'{e} tangent $TM$ d\'efini \`a partir du fibr\'{e} des rep\`eres 
+    lin\'eaires $FM$ co\"incide avec celui qu'on peut d\'efinir \`a partir du fibr\'{e} $OFM$ des rep\`eres 
+    orthonorm\'es!
+
+\end{description}
+
+\section[Extension et quotient]{Changement de groupe structural dans les fibr\'{e}s principaux : 
+extension et quotient}
+
+  Les deux sous-sections pr\'ec\'edentes \'etaient, en 
+	quelque sorte, compl\'ementaires, les deux qui suivent le seront 
+	aussi. \index{extension d'espace fibr\'e}  \index{quotient d'espace fibr\'e} 
+	
+\subsection{Extension (passage de $G$ \`a $\widehat G$ avec $G \sim{\widehat 
+G}\vert H$)}
+
+\begin{description}
+	\item[M\'ethode g\'en\'erale]
+	
+Le probl\`eme est le suivant~: on part d'un espace fibr\'{e} $P=P(M,G)$ et on 
+veut remplacer le groupe structural $G$ par un groupe $\widehat G$ tel que 
+$G$ soit isomorphe \`a $\widehat G/H$ o\`u  $H$ est un sous-groupe distingu\'e de 
+$\widehat G$. Le cas le plus fr\'equent est celui o\`u  $G$ est un groupe qui n'est 
+pas simplement connexe et o\`u  on veut le remplacer par son groupe de 
+recouvrement universel ${\widehat G}$. $H$ est alors un sous-groupe discret 
+du centre de ${\widehat G}$ et s'identifie au groupe d'homotopie $\pi_1(G)$ 
+(voir le chapitre sur les groupes).
+ Pour illustrer cette situation, voici un exemple 
+dont l'importance physique est importante. La vari\'et\'e diff\'erentiable $M$ 
+est un mod\`ele pour l'espace-temps et $P$ d\'esigne le fibr\'{e} des rep\`eres 
+orthonorm\'es correspondant au choix d'une certaine m\'etrique sur $M$. 
+Certains champs de mati\`ere vont \^etre repr\'esent\'es par des sections de 
+fibr\'{e}s associ\'es \`a $P$. Ces fibr\'{e}s seront construits \`a partir de 
+repr\'esentations du groupe $SO(n)$ (en physique quadri-dimensionelle, 
+g\'en\'eralement $SO(3,1)$
+ou $SO(4)$). Dans bien des cas, cependant, les champs de mati\`ere qui nous 
+int\'eressent ne correspondent pas vraiment  \`a des repr\'esentations de $SO(n)$ mais \`a 
+des repr\'esentations de son groupe de recouvrement universel $Spin(n)$ 
+c'est \`a dire $Spin(3,1)=SL(2,\CC)$ si $G=SO(3,1)$ et $Spin(4)=SU(2)\times 
+SU(2)$ si $G=SO(4)$. On se souvient en effet que les repr\'esentations de 
+$G$ peuvent \'egalement \^etre consid\'er\'ees comme des repr\'esentations de ${\widehat 
+G}$ mais que certaines repr\'esentations de ${\widehat G}$ ne correspondent \`a 
+aucune repr\'esentation de $G$ (ainsi, les spins demi-entiers correspondent 
+\`a des repr\'esentations de $SU(2)$ mais pas \`a des repr\'esentations de $SO(3)$).
+Lorsque la topologie de $M$ et triviale, le fait de ``consid\'erer des 
+spineurs'' n'offre aucune difficult\'e~; les choses changent lorsque $M$ 
+cesse d'\^etre trivial~: en d'autre termes, il existe des espaces qui 
+n'admettent pas de spineurs! A l'oppos\'e, il existe des espaces qui 
+admettent plusieurs types de spineurs. Nous discuterons de nouveau de ces probl\`emes un 
+peu plus loin.
+
+Revenons \`a un cadre plus g\'en\'eral. On se donne $G={\hat G}/H$. On a donc un 
+homomorphisme (surjectif) de groupe ${\widehat G}{\stackrel \lambda \mapsto} 
+G$ de noyau $H=Ker \lambda$. On appellera ``extension de fibr\'{e} principal 
+$P=P(M,G)$ \`a un fibr\'{e} de groupe structural ${\widehat G}$'' la donn\'ee d'un 
+fibr\'{e} principal ${\widehat P} = {\widehat P}(M,{\widehat G})$ et d'un homomorphisme 
+de fibr\'{e} ${\widehat \lambda} : {\widehat P} \mapsto P$ qui soit compatible avec 
+les actions respectives de $G$ et ${\widehat G}$ et avec l'homomorphisme de 
+groupe $\lambda$~; en d'autres termes, ${\widehat \lambda}$ doit pr\'eserver 
+les fibres (c'est un homomorphisme de fibr\'{e}) et \^etre tel que
+$$
+{\widehat \lambda}({\widehat z}{\widehat k})=z \, k {\hskip 0.2cm}{\mbox {o\`u}} {\hskip 0.2cm}
+{\widehat z}\in{\widehat P}, {\widehat k}\in{\widehat G}, z = {\widehat \lambda}(z) {\hskip 0.2cm}
+{\mbox et} {\hskip 0.2cm} k=\lambda({\widehat k})
+$$
+L'existence d'une ou de plusieurs extensions correspondant \`a une 
+situation donn\'ee (c'est \`a dire le fibr\'{e} $P$, le groupe ${G}$, \etc) 
+d\'epend bien entendu de la situation consid\'er\'ee $\ldots$
+	
+	
+Le probl\`eme de l'extension d'un fibr\'{e} principal (passage de $G$ \`a ${\widehat 
+G}$ avec $G = {\widehat G}/H$) peut \^etre d\'ecrit de fa\c con imag\'ee par la figure 
+suivante
+(\ref{fig:extension}).
+
+\begin{figure}[htbp]
+\epsfxsize=8cm
+$$
+    \epsfbox{extension-fibre.eps}
+$$
+\caption{Extension d'un fibr\'{e} principal}
+\label{fig:extension}
+\end{figure}
+
+On voit que ${\widehat P}$ est aussi un $H$-fibr\'{e} principal au dessus de $P$ (voir 
+\'egalement la discussion men\'ee en section \ref{sec:fibre-quotient}) et que $P \sim {\widehat 
+P}/H$.
+	\item[Structures spinorielles]
+
+  Dans le cas particulier o\`u  $P=OFM$ 
+	d\'esigne le fibr\'{e} des rep\`eres orthonorm\'es d'une vari\'et\'e riemannienne $M$, 
+	le groupe structural est $G=SO(n)$ et ${\widehat G = Spin(n)}$. On dit que 
+	la vari\'et\'e $M$ est une vari\'et\'e spinorielle s'il existe une extension 
+	${\widehat P} = {\widehat P}(M,Spin(n))$. {\sl Choisir une structure 
+	spinorielle\/}\index{structure 
+	spinorielle} pour une vari\'et\'e riemannienne donn\'ee $M$ consiste \`a choisir 
+	une extension ${\widehat P}$ (s'il en existe une). Le fibr\'{e} ${\widehat P}$, s'il
+	existe, est alors d\'esign\'e sous le nom de {\sl fibr\'{e} des rep\`eres 
+	spinoriels\/}\index{fibr\'{e} des rep\`eres 
+	spinoriels} ou, tout simplement {\sl fibr\'{e} de spin\/}\index{fibr\'{e} de spin}
+	 et d\'enot\'e ${\widehat 
+	OFM}$. Dans les bons cas (``bon'' signifiant qu'on peut ne pas se 
+	soucier du probl\`eme!), ${\widehat OFM}$ existe et est unique, \`a isomorphisme 
+	pr\`es. Notons encore que le choix d'une structure spinorielle est 
+	tributaire du choix d'une structure riemannienne (on choisit d'abord 
+	$P=P(M,SO(n))$, puis ${\widehat P}={\widehat P}(M, Spin(n))$, mais on doit se 
+	souvenir que deux m\'etriques distinctes d\'efinissent des fibr\'{e}s 
+	$P(M,SO(n))$ diff\'erents. On sait que la repr\'esentation fondamentale de 
+	$SO(n)$ agissant sur $\RR^n$ permet de fabriquer le fibr\'{e} tangent $TM = 
+	P \times_{SO(n)} \RR^n$ comme fibr\'{e} associ\'e \`a $P$ et de d\'efinir 
+	l'ensemble des champs de vecteurs $\Gamma T M$ comme ensemble des 
+	sections de $TM$. De la m\^eme fa\c con, la repr\'esentation fondamentale de 
+	$Spin(n)$ agissant sur $\CC^s$ avec $s=2^{[n/2]}$, $[n/2]$ d\'esignant la 
+	partie enti\`ere de $n/2$, permet de fabriquer le {\sl fibr\'{e} des spineurs\/}
+	\index{fibr\'{e} des spineurs} $SM = 
+	{\widehat P} \times_{Spin(n)} \CC^s$ comme fibr\'{e} associ\'e \`a ${\widehat P}$ et de 
+	d\'efinir l'ensemble des champs de spineurs $\Gamma SM$ comme ensemble des 
+	sections de $SM$.
+	
+	Pour ce qui est des rappels concernant la repr\'esentation fondamentale de 
+	$Spin(n)$, les alg\`ebres de Clifford, \etc, voir la fin du chapitre pr\'ec\'edent.
+	
+	On montre que l'existence d'une structure spinorielle, pour une vari\'et\'e 
+	donn\'ee, est li\'ee \`a l'annulation d'une certaine classe caract\'eristique 
+	(la deuxi\`eme classe de Stiefel-Whitney). Mis \`a part une courte 
+remarque du m\^eme type \`a la fin de cette section, ce ph\'enom\`ene
+ ne sera pas 
+	discut\'e dans le cadre de notre ouvrage.
+	
+	\item[Bosons et fermions]
+
+  En physique th\'eorique, on montre que, dans le 
+	cadre de la th\'eorie quantique des champs, et en dimension \'egale \`a $4$, 
+	les particules ob\'eissant \`a une statistique de Fermi-Dirac (les fermions) 
+	sont des particules de spin demi-entier, alors que celles ob\'eissant \`a 
+	une statistique de Bose-Einstein (les bosons) sont des particules de 
+	spin entier. Nous n'expliquerons pas ici la signification de ce r\'esultat 
+	c\'el\`ebre (le {\sl th\'eor\`eme spin-statistique\/}\index{th\'eor\`eme spin-statistique})
+	 puisque nous n'aborderons 
+	pas la th\'eorie quantique des champs dans le cadre de cet ouvrage. 
+	Cependant, le r\'esultat en question (qui n'est vraiment bien compris et 
+	d\'emontr\'e qu'en dimension $4$) nous permet d'introduire la terminologie 
+	suivante en dimension quelconque~: nous dirons qu'un champ est un champ 
+	bosonique s'il s'agit d'une section d'un fibr\'{e} vectoriel associable au 
+	fibr\'{e} des rep\`eres orthonorm\'es d'une vari\'et\'e riemannienne $M$~; nous 
+	dirons que c'est un champ fermionique s'il s'agit d'une section d'un 
+	fibr\'{e} vectoriel associable au fibr\'{e} des rep\`eres spinoriels d'une vari\'et\'e 
+	riemannienne $M$, qui soit telle que la repr\'esentation correspondante (celle qui d\'efinit
+	le fibr\'{e} associ\'e) soit une repr\'esentation de 
+	$Spin(n)$ qui ne puisse pas \^etre consid\'er\'ee comme
+	 une repr\'esentation du groupe $SO(n)$ mais seulement comme une repr\'esentation de $Spin(n)$.
+	
+	Notons que, bien que moins proche de notre intuition, les champs 
+	spinoriels (sections de $SM$) sont plus ``fondamentaux'' que les champs 
+	vectoriels (sections de $TM$). Ceci est d\'ej\`a \'evident au niveau de la 
+	th\'eorie des repr\'esentations de $SU(2)$~: on peut construire n'importe 
+	quelle repr\'esentation de ce groupe \`a partir de la fondamentale (qui est 
+	{\sl spinorielle \/}). Cette derni\`ere est de dimension $2$ et correspond 
+	physiquement \`a ce qu'on appelle un champ de spin $1/2$. Par ailleurs, il est facile de voir 
+	qu'on peut construire un champ de vecteurs \`a partir 
+	de (deux) champs de spineurs, mais pas le contraire$\ldots$
+	
+	\item[Structure quarkique]
+
+  Nous venons de discuter le cas particulier 
+	de $G=SO(n)= Spin(n)/\ZZ_2$  mais nous aurions pu \'egalement consid\'erer 
+	le cas de fibr\'{e}s avec groupe structural $G=SU(3)/\ZZ_3$~: le fait qu'il 
+	soit, ou non, possible, de d\'efinir des ``champs de quarks'' (associ\'es 
+	\`a la repr\'esentation fondamentale de $SU(3)$, ou plus g\'en\'eralement des champs associ\'es \`a des
+	repr\'esentations dont la trialit\'e est diff\'erente de z\'ero) pour une 
+	vari\'et\'e $M$ consid\'er\'ee comme base d'un
+ fibr\'{e} principal $P(M,SU(3)/\ZZ_3)$ n'est 
+	pas quelque chose d'automatique$\ldots$. On pourrait alors parler de 
+	``structure quarkique''~!
+
+	\item[Structure encord\'ee]
+
+  Il ne faudrait pas croire que le groupe $H$, 
+	tel que $G = {\widehat G}/H$ dont il a \'et\'e question dans ce chapitre 
+	consacr\'e aux extensions d'espaces fibr\'{e}s soit n\'ecessairement discret. 
+	C'est ainsi qu'en th\'eorie des cordes, la vari\'et\'e $M$ est remplac\'ee par 
+	$LM$ (le ``loopspace'' de $M$), c'est \`a dire l'ensemble des applications 
+	de $S^1$ dans $M$, $G$ est, de la m\^eme fa\c con remplac\'e par $LG$ et $P$ 
+	par $LP$. L'ensemble $LG$ est naturellement un groupe (de dimension 
+	infinie) et $LP$ est fibr\'{e} en $LG$ au dessus de $LM$. Dans ce cas, 
+	toutefois, ce ne sont pas tant les repr\'esentations de $LG$ qui nous 
+	int\'eressent, mais celles d'une {\sl extension centrale\/}\index{extension centrale}
+	 ${\widehat LG}$ de $LG$ 
+	(on a $Lie({\widehat LG})=Lie(LG) \oplus \RR$). Dans ce cas, $H=U(1)$ et la
+	question se pose de savoir si $LP$ peut \^etre \'etendu \`a un fibr\'{e} ${\widehat 
+	LP}$ de groupe structural ${\widehat LG}$. L\`a encore, l'existence n'est pas 
+	assur\'ee, et, en cas d'existence, l'unicit\'e non plus. Lorsque ${\widehat 
+	LP}$ existe, on dit que {\sl le fibr\'{e} en boucles\/}\index{fibr\'{e} en boucles}
+	 $LP$ poss\`ede une {\sl 
+	structure encord\'ee\/}\index{structure encord\'ee}
+	 (``a string structure for a loop bundle'' $\ldots$).
+
+	\item[Interpr\'etation cohomologique]
+
+  L'existence et l'unicit\'e (ou non) 
+	des extensions de fibr\'{e}s peuvent se d\'ecrire de fa\c con cohomologique. 
+	Cette interpr\'etation d\'epasse le cadre que nous nous sommes fix\'es. 
+	Mentionnons seulement que l'existence de ${\widehat P}$ peut \^etre li\'e \`a 
+	l'annulation d'une certaine classe de cohomologie appartenant \`a 
+	$H^2(M,H)$. Dans le cas des structures spinorielles, $H=\ZZ_2$ et la 
+	classe en question, dont l'annulation fournit une condition n\'ecessaire 
+	et suffisante \`a l'existence de ${\widehat P}$, s'appelle {\sl deuxi\`eme classe 
+	de Stiefel-Whitney \/}\index{classe de Stiefel-Whitney}. Dans le cas des 
+	structures encord\'ees, il faut consid\'erer $H^2(LM,U(1))$ puisque $LM$ est 
+	la base du fibr\'{e} consid\'er\'e, ce groupe de cohomologie (de $LM$)
+   peut alors \^etre reli\'e \`a  $H^3(M,\ZZ)$ et $\ldots$ ceci est une autre histoire.
+	
+\end{description}
+
+
+\subsection{Quotient (passage de $G$ \`a $K$ avec $K \sim G\vert H$, $H$ 
+sous-groupe distingu\'e de $G$)}
+
+On part de $P=P(M,G)$, on se choisit un sous-groupe distingu\'e $H$ de $G$ et 
+on veut remplacer $P$ par $Q=Q(M,K)$, avec $K=G\vert H$. Cette op\'eration 
+est, en un sens, inverse de celle pr\'ec\'edemment consid\'er\'ee. La m\'ethode est 
+simple puisqu'il s'agit de ``diviser'' $P$ par $H$ en consid\'erant 
+l'ensemble quotient $Q=P/H$ o\`u  l'action de $H$ sur $P$ est obtenue par 
+restriction de celle de $G$. Il est \'evident que ce type de changement de 
+groupe structural n'offre aucune difficult\'e, contrairement \`a la situation 
+inverse d\'ecrite au paragraphe pr\'ec\'edent. Il faut \'evidemment veiller \`a ce 
+que $H$ soit distingu\'e dans $G$, de fa\c con \`a ce que le quotient $G\vert H$ 
+soit bien un groupe. Nous n'en dirons pas plus sur ce sujet puisque la 
+discussion r\'esulte simplement des analyses d\'ej\`a effectu\'ees dans les 
+sections pr\'ec\'edentes. En particulier, $P$ est un $H$-fibr\'{e} principal au 
+dessus du fibr\'{e} quotient $Q$, lequel se trouve \^etre, \'egalement, dans ce 
+cas particulier, un fibr\'{e} principal.
+
+\section{Groupe des automorphismes. Groupe de jauge}
+
+\subsection{Remarque terminologique}
+
+Nous utiliserons souvent l'expression ``rep\`ere en $x$'' ---sans mettre les 
+guillemets!--- pour parler d'un point $z$ de $P=P(M,G)$ se projetant au 
+point $x$, m\^eme si le fibr\'{e} consid\'er\'e n'est pas un sous-fibr\'{e} de l'espace 
+des rep\`eres  mais un fibr\'{e} principal quelconque au dessus de $M$, avec 
+groupe de structure $G$. Le contexte devrait suffire \`a pr\'eciser s'il 
+s'agit d'un rep\`ere de l'``espace interne'' ---comme disent les 
+physiciens--- c'est \`a dire un \'el\'ement d'un fibr\'{e} principal quelconque non 
+reli\'e au fibr\'{e} $FM$ des rep\`eres lin\'eaires, ou, au contraire, d'un rep\`ere 
+de l'``espace externe'', c'est \`a dire un \'el\'ement de $FM$ (ou de $OFM$, ou 
+d'un autre sous-fibr\'{e} de $FM$).
+
+\subsection{Automorphismes verticaux d'un espace fibr\'{e} principal 
+(d\'efinition)}\label{sec:groupe-de-jauge}
+\begin{itemize}
+	\item  L'action du groupe structural $G$ sur un fibr\'{e} principal $P = 
+	P(M,G)$ est une notion qui nous est maintenant famili\`ere. Soient $z_1$ 
+	et $z_2$ deux \'el\'ements de $P$ appartenant \`a des fibres diff\'erentes (en 
+	d'autres termes, on consid\`ere un rep\`ere $z_1$ en $x_1$ et un rep\`ere 
+	$z_2$ en $x_2$) et soit $g$ un \'el\'ement de $G$. L'action de $G$ 
+	---d'ordinaire un groupe de Lie de dimension finie--- \'etant globalement 
+	d\'efinie, nous savons ce que sont les points $z_1'=z_1 g$ et $z_2'=z_2 
+	g$, mais il faut bien voir que ``c'est le m\^eme $g$'' qui agit en $z_1$ 
+	et en $z_2$. Ce que nous voulons maintenant, c'est consid\'erer des 
+	transformations plus g\'en\'erales (soit $\Phi$ une telle transformation 
+	---une application de $P$ dans $P$---) qui, en un sens, autorise le 
+	``petit $g$'' qui pr\'ec\`ede, \`a d\'ependre du point $x$ de la vari\'et\'e $M$~: 
+	on veut remplacer $g$ par $g(x)$, c'est \`a dire remplacer les {\sl 
+	transformations de jauge globales\/}\index{transformations de jauge globales}
+	 par les {\sl transformations de jauge 
+	locales\/}\index{transformations de jauge 
+	locales}\index{transformations de jauge locales}.
+	Passons maintenant \`a une d\'efinition pr\'ecise.
+	
+	\item  On dira que $\Phi$ est  un automorphisme vertical du fibr\'{e} $P$ si 
+	et seulement si les trois conditions suivantes sont v\'erifi\'ees
+	\begin{enumerate}
+		\item  $\Phi$ est un diff\'eomorphisme de $P$.
+		
+		\item  $\Phi$ pr\'eserve les fibres, au sens suivant~: la fibre 
+		$\pi^{-1}(x)$ au dessus de $x$ est stable par $\Phi$.
+		
+		\item  $\Phi$ commute avec l'action du groupe structural $G$, c'est \`a 
+		dire que $$\forall z \in P, \forall g \in G, \Phi(zg)=\Phi(z)g$$.
+	\end{enumerate}
+	
+	\item  Il est imm\'ediat de constater que l'ensemble ${\frak G}$ des 
+	automorphismes verticaux est un groupe pour la loi de composition. Nous 
+	d\'esignerons ${\frak G}$ sous le nom de {\sl groupe des automorphismes 
+	verticaux\/}\index{automorphismes 
+	verticaux}\index{transformations de jauge locales}
+	du fibr\'{e} principal $P$, ou plus simplement sous le nom de 
+	``groupe de jauge de $P$''. Nous noterons \'egalement ${\frak G}=Int P= 
+	Aut_V P.$ Par l'expression ``transformation de jauge'' nous d\'esignerons 
+	toujours un automorphisme vertical, c'est \`a dire une ``transformation de 
+	jauge locale''.
+	
+		L'action de ${\frak G}$ commutant avec celle de $G$, il est commode 
+	d'\'ecrire l'action de ${\frak G}$ \`a gauche et d'oublier les parenth\`eses, 
+	on voit alors (la notation est faite pour cela~!) que
+	$$\Phi \, z \, g = \Phi(z g) = \Phi(z) g$$
+	
+\end{itemize}
+
+\subsection{Ecriture locale des transformations de jauge}
+
+Soit $\Phi$ une transformation de jauge, $z$ un \'el\'ement de $P$ et 
+$\sigma$ une section locale au voisinage de $x=\pi(z) \in M$. Le rep\`ere 
+$\Phi(\sigma(x))$ \'etant dans la m\^eme fibre (au m\^eme point!) 
+que le rep\`ere mobile $\sigma(x)$, il doit \^etre possible d'atteindre le 
+premier \`a partir du second par l'action d'un \'el\'ement appropri\'e de $G$ que 
+nous noterons $g(x)$, puisque $G$ est transitif sur les fibres. Cet 
+\'el\'ement est donc d\'efini par l'\'equation $\Phi(\sigma(x))=\sigma(x) g(x)$ 
+c'est \`a dire encore par $$g(x) = \sigma(x)^{-1} \Phi(\sigma(x)),$$ en 
+utilisant la notation introduite en fin de section \ref{sec:principal}. Notons que $g(x)$ 
+d\'epend non seulement de $\Phi$ mais aussi de la section $\sigma$ choisie 
+; on pourrait utiliser la notation un peu lourde ${}^\sigma g(x)$ pour 
+d\'esigner cet \'el\'ement.
+
+Lorsque $P$ est trivial, on sait qu'il existe des sections globales. Soit 
+$\sigma$ une telle section, alors, l'\'equation pr\'ec\'edente d\'efinit une 
+application de $M$ dans $G$~; r\'eciproquement, la donn\'ee d'une application 
+$g(x)$ de $M$ dans $G$ permet, lorsque le fibr\'{e} principal est trivial, de 
+d\'efinir, via le choix d'une section globale $\sigma$, une transformation 
+de jauge $\Phi$ par la m\^eme \'equation. Lorsque $P$ est trivial, on peut 
+donc identifier le groupe de jauge ${\frak G}$ avec le groupe $\Omega^0(M,G)$ 
+des applications diff\'erentiables de $M$ dans $G$. La correspondance n'est 
+cependant pas canonique puisqu'elle d\'epend du choix d'une section globale 
+$\sigma$. Cette identification ``explique'' pourquoi les automorphismes 
+verticaux sont d\'esign\'es par les physiciens (des particules) sous le nom 
+de ``transformations de jauge locales'', le mot ``local'' se r\'ef\'erant ici 
+\`a la d\'ependance ``en $x$'' car la transformation $g(.)$ elle-m\^eme est 
+globalement d\'efinie lorsque $P$ est trivial.
+
+\subsection{Deux autres d\'efinitions des transformations de jauge}
+
+\begin{itemize}
+	\item  Soit $\Phi: P \mapsto P$ une transformation de jauge. On sait que 
+	$\Phi(z)$ est dans la m\^eme fibre que $z$, on doit donc pouvoir obtenir 
+	$\Phi(z)$ \`a partir de $z$ par action \`a droite d'un \'el\'ement de $G$ que 
+	nous d\'esignerons par $\phi(z)$~:
+	$$ \Phi(z) = z \, . \phi(z) $$
+	Nous obtenons donc ainsi une application $\phi$ de $P$ dans $G$, mais 
+	cette application n'est pas quelconque~; en effet, l'\'egalit\'e $\Phi(zg) = 
+	\Phi(z)g$ peut s'\'ecrire \'egalement $zg \phi(zg) = z \phi(z) g$ et on obtient donc la 
+	condition $$
+	\phi(zg) = g^{-1} \phi(z) g
+	$$
+	Il est \'evident que $\Phi$ et $\phi$ se d\'eterminent l'un l'autre; on peut 
+	donc identifier le groupe de jauge ${\frak G}$ avec l'ensemble 
+	$\Omega^0_{Ad}(P,G)$ des applications de $P$ dans $G$ qui sont \'equivariantes 
+	par l'action adjointe de $G$.
+	
+	\item La troisi\`eme d\'efinition de ${\frak G}$ r\'esulte en fait de la 
+	pr\'ec\'edente et de la discussion men\'ee en section \ref{sec:sections} (description $2$). Soit, en 
+	effet $Ad \, P = P \times_{Ad} G$ le fibr\'{e} adjoint, d\'efini comme fibr\'{e} 
+	en groupes, associ\'e \`a $P$ gr\^ace \`a l'action adjointe de $G$ sur lui-m\^eme 
+	(voir section \ref{sec:fibre-adjoint}),
+	les \'el\'ements $\overrightarrow{\phi}$ de $Ad P$ sont des classes 
+	d'\'equivalences $z . k = zg.g^{-1}kg$ et les sections $\overrightarrow{\phi}(x)$ de 
+	$Ad \, P$ peuvent donc s'identifier aux applications de $P$ dans $G$ qui 
+	sont $Ad$-\'equivariantes. Ainsi, nous 
+	pouvons \'egalement d\'efinir le groupe de jauge ${\frak G}$ comme l'ensemble 
+	des sections du fibr\'{e} adjoint $Ad \, P$.
+\end{itemize}
+
+\subsection{Automorphismes quelconques d'un espace fibr\'{e} principal}
+
+Soit $P= P(M,G)$ un fibr\'{e} principal et ${\frak G}$ son groupe 
+d'automorphismes verticaux (groupe de jauge). Nous allons \`a pr\'esent 
+consid\'erer des automorphismes plus g\'en\'eraux que ceux consid\'er\'es dans les 
+sous-sections pr\'ec\'edentes. Jusqu'\`a pr\'esent, nos automorphismes \'etaient 
+verticaux, en ce sens que l'image $\Phi(z)$ de $z$ par $\Phi$ \'etait dans 
+la m\^eme fibre que $z$. Nous allons garder les conditions 1 et 3 donn\'ees 
+dans la d\'efinition du groupe de jauge (section \ref{sec:groupe-de-jauge})
+ mais att\'enuer la deuxi\`eme condition~; les automorphismes devront 
+pr\'eserver les fibres au sens suivant~: l'image d'une fibre devra \^etre une 
+fibre, mais on n'imposera pas le fait qu'image et ant\'ec\'edent 
+appartiennent \`a la {\it m\^eme} fibre! En d'autres termes, si $x$
+d\'esigne un point de $M$, l'ensemble $\Phi(\pi^{-1}(x))$, image de la 
+fibre au dessus de $x$ par $\Phi$ doit \^etre une fibre de $P$. Cette fibre 
+image se projette en un certain point $y$ de $M$. L'action d'un tel 
+automorphisme $\Phi$ d\'efinit donc \'egalement une application de $M$ dans 
+$M$ (\`a $x$ on associe le point $y$ tel que $y=\pi(\Phi(\pi^{-1}(x)))$). 
+Cette application est, par construction, un diff\'eomorphisme.
+On obtient donc de cette fa\c con une projection du groupe $Aut \, P$ des 
+automorphismes de $P$ (le groupe engendr\'e par les automorphismes que nous 
+venons de d\'efinir) sur le groupe $Diff \, M$ des diff\'eomorphismes de $M$.
+Deux automorphismes de $P$ se projetant sur le m\^eme diff\'eomorphisme de 
+$M$ diff\`erent manifestement (au sens de la composition des morphismes) 
+par un automorphisme ne changeant pas le point de base, c'est \`a dire par 
+un automorphisme vertical. Localement, ces ``sym\'etries de jauge'' (nom 
+qu'on donne quelquefois aux \'el\'ements de $Aut \, P$) sont donc cod\'ees \`a 
+l'aide d'un diff\'eomorphisme de $M$ et d'une transformation de jauge.
+ Plus pr\'ecis\'ement, on a la fibration principale ${\frak G}\mapsto Aut \, 
+ P \mapsto Diff \, M$ (noter que ${\frak G}$ est un groupe de dimension 
+ infinie) qu'on peut repr\'esenter par la figure \ref{fig:automorphisme-et-jauge}
+ 
+\begin{figure}[htbp]
+\epsfxsize=14cm
+$$
+    \epsfbox{automorphismes-fibre.eps}
+$$
+\caption{Automorphismes de fibr\'{e}s principaux}
+\label{fig:automorphisme-et-jauge}
+\end{figure}
+
+%%%Discuter
+%%%Produit semi-direct... Discuter en general les relations entre fibration et produit semi-direct
+%%%
+
+
+\subsection{Action des automorphismes sur les espaces fibr\'{e}s associ\'es}
+
+\begin{itemize}
+	\item  Soit $E = P \times_G F$ un espace fibr\'{e} associ\'e au fibr\'{e} principal 
+	$P=P(M,G)$ obtenu \`a partir de l'action \`a gauche $\rho$ de $G$ sur $F$, 
+	$z.f=zg.\rho(g^{-1})f \in E$. L'action \`a droite de $G$ sur $P$ n'existe 
+	plus au niveau de $E$ puisqu'on a fabriqu\'e un espace quotient en 
+	divisant par cette action. Par contre, on peut utiliser l'action \`a 
+	gauche de ${\frak G}$ sur $P$ pour d\'efinir une action (\`a gauche) de ${\scr 
+	G}$ sur n'importe quel fibr\'{e} associ\'e \`a $P$. Ainsi, 
+	$$
+	\Phi \in {\frak G}, z \in P, f \in F, z.f \in E {\stackrel \Phi 
+	\longrightarrow} \Phi z.f \in E
+	$$
+	
+	\item  ${\frak G}$ agit non seulement sur $E$ mais sur l'espace
+        $\Gamma E$ de ses sections. Soit $ u \in \Gamma E$, $x \in M$, $u(x) \in E$~;on 
+	d\'efinit
+	$$
+	[\Phi u](x)  =  \Phi(u(x))
+	$$
+\end{itemize}
+
+\subsection{Le cas des espaces vectoriels (un cas trivial mais instructif!)}
+
+Un fibr\'{e} vectoriel n'est autre, intuitivement, qu'une famille $E_x$ 
+d'espaces vectoriels de m\^eme dimension, ``coll\'es'' ensemble, et 
+param\'etris\'es par une vari\'et\'e ($x \in M$). Lorsque $M$ se r\'eduit \`a un seul 
+point, on n'a qu'une seule fibre et donc un seul espace vectoriel. On 
+peut donc consid\'erer un espace vectoriel $E$ comme un fibr\'{e} vectoriel au 
+dessus d'un point! Ce fibr\'{e} vectoriel particuli\`erement trivial est 
+associ\'e \`a un fibr\'{e} principal \'egalement constitu\'e d'une seule fibre, 
+fibre qui n'est autre que l'ensemble $P$ des bases de l'espace vectoriel 
+$E$. Si on suppose que $E$ est isomorphe \`a $\RR^n$, on voit que cette 
+fibre est diff\'eomorphe au groupe $GL(n,\RR)$. Si on choisit une base 
+$\sigma = \{\sigma_\mu\}$ de r\'ef\'erence (une section!), on obtient une 
+correspondance bi-univoque entre bases (\'el\'ements de $P$) et matrices 
+inversibles (\'el\'ements du groupe $GL(n,\RR)$). L'identification de $P$ avec 
+$GL(n,\RR)$ d\'epend de la base $\sigma$ choisie. Le groupe matriciel 
+$GL(n,\RR)$ agit sur $P$; cette action ne d\'epend pas du choix de $\sigma$.
+En effet, si $e=(e_\mu)\in P$ et $\Lambda = (\Lambda^\mu_\nu) \in 
+GL(n,\RR)$, on obtient $e'=e\, \Lambda \in P$ via $e_\nu'=e_\mu 
+\Lambda^\mu_\nu$.
+Les vecteurs $u$ de l'espace vectoriel $E$ sont des classes d'\'equivalence 
+$u=e_\mu . u^\mu$ avec $e=\{e_\mu\}\in P$ et $u^\mu \in \RR^n$, la 
+relation d'\'equivalence identifiant $e_\mu.u^\mu$ avec $e_\nu 
+\Lambda^\nu_\mu .(\Lambda^{-1})^\mu_\rho u^\rho$. Le groupe $GL(n,\RR)$ 
+n'agit donc pas sur $E$ (il n'agit que sur les composantes des vecteurs 
+de $E$). Par contre, l'espace vectoriel $E$ poss\`ede un groupe 
+d'automorphismes $Aut \, E$ (les applications lin\'eaires bijectives).
+ Si $u\in E$ et $\Phi \in Aut \, E$ alors  $\Phi u \in E$~; les 
+ automorphismes $\Phi$ agissent aussi sur les bases $e=\{e_\mu\}$, 
+ l'action en question r\'esultant de l'action sur chacun des vecteurs de 
+ base.
+ Il faut bien voir que les groupes $Aut \, E$ et $GL(n,\RR)$ sont 
+ diff\'erents!  {\it Cependant}, si on se choisit une base 
+ $\sigma={\sigma_\mu}$ de r\'ef\'erence, on peut, de fa\c con \'el\'ementaire 
+ ---voir cours de Terminale de nos 
+ lyc\'ees--- associer, \`a tout \'el\'ement $\Phi$ de $Aut \, E$, une matrice 
+ $\Lambda$ de $GL(n,\RR)$. Dans le cas d'un espace vectoriel, donc, le 
+ groupe structural et le groupe des automorphismes (qui, dans ce cas, 
+ sont n\'ecessairement verticaux), bien que conceptuellement distincts, 
+ sont identifiables d\`es qu'on se choisit une base de r\'ef\'erence
+(c'est \`a dire une section de ce fibr\'{e}~!). En particulier, lorsque $E$ est 
+de dimension finie, ces deux groupes sont de dimension finie. D\`es qu'on 
+passe au cas de fibr\'{e}s vectoriels au dessus d'une vari\'et\'e $M$ non r\'eduite 
+\`a un point, l'identification n'est plus possible: $G=GL(n,\RR)$ reste ce 
+qu'il \'etait mais ${\frak G}=Aut_V P$ devient un groupe de dimension 
+infinie qu'on peut se repr\'esenter intuitivement comme une famille de 
+groupe d'automorphismes d'espaces vectoriels (les fibres de $E$) 
+param\'etris\'es par les points de la base $M$.
+%%%
+%%%
+%%%\subsection{Sym\'etries des espaces fibr\'{e}s principaux}
+%%% Otra vez ! (o nunca)
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

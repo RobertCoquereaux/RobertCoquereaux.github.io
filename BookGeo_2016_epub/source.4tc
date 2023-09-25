@@ -1,0 +1,299 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{2}{x2-1000}{QQ2-2-1}{Table des mati\`eres}}{3}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{3}{x3-2000}{QQ2-3-2}{Pr\'eface}}{13}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{3}{Q1-3-3}{}{Pr\'eface}}{xiii}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{4}{x4-3000}{QQ2-4-4}{Introduction}}{19}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{4}{Q1-4-5}{}{Introduction}}{xix}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{4}{x4-4000}{QQ2-4-6}{\sl  Mod\`eles math\'ematiques et r\'ealit\'e}}{19}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{4}{Q1-4-7}{}{Mod\`eles math\'ematiques et r\'ealit\'e}}{xix}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{4}{x4-5000}{QQ2-4-8}{Du classique au quantique:{} math\'ematiques commutatives et non commutatives}}{22}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{4}{Q1-4-9}{}{Du classique au quantique}}{xxii}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{4}{x4-6000}{QQ2-4-10}{Guide de lecture, autocritique et perspectives}}{24}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{4}{Q1-4-11}{}{Guide de lecture, autocritique et perspectives}}{xxiv}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{4}{x4-7000}{QQ2-4-12}{\sl  Disponibilit\'e}}{26}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{4}{x4-8000}{QQ2-4-13}{\sl  Bibliographie}}{27}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{6}{x6-9000}{QQ2-6-14}{Bibliographie}}{31}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{6}{Q1-6-15}{}{}}{1}\relax 
+\doTocEntry\tocchapter{1}{\csname a:TocLink\endcsname{7}{x7-100001}{QQ2-7-16}{Vari\'et\'es diff\'erentiables}}{3}\relax 
+\doTocEntry\tocsection{1.1}{\csname a:TocLink\endcsname{7}{x7-110001.1}{QQ2-7-17}{Vari\'et\'es topologiques}}{3}\relax 
+\doTocEntry\tocsubsection{1.1.1}{\csname a:TocLink\endcsname{7}{x7-120001.1.1}{QQ2-7-18}{D\'efinition}}{3}\relax 
+\doTocEntry\tocsubsection{1.1.2}{\csname a:TocLink\endcsname{7}{x7-130001.1.2}{QQ2-7-19}{Vari\'et\'es \`a bord}}{3}\relax 
+\doTocEntry\tocsubsection{1.1.3}{\csname a:TocLink\endcsname{7}{x7-140001.1.3}{QQ2-7-20}{Contre-exemples}}{4}\relax 
+\doTocEntry\tocsection{1.2}{\csname a:TocLink\endcsname{7}{x7-150001.2}{QQ2-7-21}{ Vari\'et\'es diff\'erentiables}}{5}\relax 
+\doTocEntry\tocsubsection{1.2.1}{\csname a:TocLink\endcsname{7}{x7-160001.2.1}{QQ2-7-22}{ Vari\'et\'es, cartes, atlas}}{6}\relax 
+\doTocEntry\tocsubsection{1.2.2}{\csname a:TocLink\endcsname{7}{x7-170001.2.2}{QQ2-7-23}{ Atlas maximal}}{7}\relax 
+\doTocEntry\tocsubsection{1.2.3}{\csname a:TocLink\endcsname{7}{x7-180001.2.3}{QQ2-7-24}{ Vari\'et\'es et calcul diff\'erentiel ``intrins\`eque''}}{7}\relax 
+\doTocEntry\tocsection{1.3}{\csname a:TocLink\endcsname{7}{x7-190001.3}{QQ2-7-25}{Applications diff\'erentiables, diff\'eomorphismes}}{8}\relax 
+\doTocEntry\tocsubsection{1.3.1}{\csname a:TocLink\endcsname{7}{x7-200001.3.1}{QQ2-7-26}{ D\'efinition}}{8}\relax 
+\doTocEntry\tocsubsection{1.3.2}{\csname a:TocLink\endcsname{7}{x7-210001.3.2}{QQ2-7-27}{ Diff\'eomorphismes et changements de coordonn\'ees}}{9}\relax 
+\doTocEntry\tocsubsection{1.3.3}{\csname a:TocLink\endcsname{7}{x7-220001.3.3}{QQ2-7-28}{ Fonctions diff\'erentiables}}{10}\relax 
+\doTocEntry\tocsection{1.4}{\csname a:TocLink\endcsname{7}{x7-230001.4}{QQ2-7-29}{ Champs de vecteurs}}{11}\relax 
+\doTocEntry\tocsubsection{1.4.1}{\csname a:TocLink\endcsname{7}{x7-240001.4.1}{QQ2-7-30}{ Notions \'el\'ementaires et intuitives}}{11}\relax 
+\doTocEntry\tocsubsection{1.4.2}{\csname a:TocLink\endcsname{7}{x7-250001.4.2}{QQ2-7-31}{ Vecteurs, espace tangent et champs de vecteurs}}{12}\relax 
+\doTocEntry\tocsubsection{1.4.3}{\csname a:TocLink\endcsname{7}{x7-260001.4.3}{QQ2-7-32}{ R\`egle de Leibniz}}{14}\relax 
+\doTocEntry\tocsubsection{1.4.4}{\csname a:TocLink\endcsname{7}{x7-270001.4.4}{QQ2-7-33}{ Crochet de deux champs de vecteurs}}{15}\relax 
+\doTocEntry\tocsubsection{1.4.5}{\csname a:TocLink\endcsname{7}{x7-280001.4.5}{QQ2-7-34}{ Rep\`ere naturel associ\'e \`a une carte}}{17}\relax 
+\doTocEntry\tocsubsection{1.4.6}{\csname a:TocLink\endcsname{7}{x7-290001.4.6}{QQ2-7-35}{ Changement de carte}}{18}\relax 
+\doTocEntry\tocsubsection{1.4.7}{\csname a:TocLink\endcsname{7}{x7-300001.4.7}{QQ2-7-36}{ Rep\`eres mobiles (rep\`eres quelconques)}}{18}\relax 
+\doTocEntry\tocsection{1.5}{\csname a:TocLink\endcsname{7}{x7-310001.5}{QQ2-7-37}{Tenseurs et formes ext\'erieures}}{20}\relax 
+\doTocEntry\tocsubsection{1.5.1}{\csname a:TocLink\endcsname{7}{x7-320001.5.1}{QQ2-7-38}{ Alg\`ebre tensorielle d'un espace vectoriel}}{20}\relax 
+\doTocEntry\tocsubsection{1.5.2}{\csname a:TocLink\endcsname{7}{x7-330001.5.2}{QQ2-7-39}{ Alg\`ebre ext\'erieure d'un espace vectoriel. Produit ext\'erieur}}{25}\relax 
+\doTocEntry\tocsubsection{1.5.3}{\csname a:TocLink\endcsname{7}{x7-340001.5.3}{QQ2-7-40}{ Produit int\'erieur d'une forme par un vecteur}}{30}\relax 
+\doTocEntry\tocsubsection{1.5.4}{\csname a:TocLink\endcsname{7}{x7-350001.5.4}{QQ2-7-41}{ Transformation du produit ext\'erieur et du produit int\'erieur par endomorphismes}}{32}\relax 
+\doTocEntry\tocsection{1.6}{\csname a:TocLink\endcsname{7}{x7-360001.6}{QQ2-7-42}{Formes diff\'erentielles}}{33}\relax 
+\doTocEntry\tocsubsection{1.6.1}{\csname a:TocLink\endcsname{7}{x7-370001.6.1}{QQ2-7-43}{D\'efinition}}{33}\relax 
+\doTocEntry\tocsubsection{1.6.2}{\csname a:TocLink\endcsname{7}{x7-380001.6.2}{QQ2-7-44}{La diff\'erentielle ext\'erieure $d$}}{36}\relax 
+\doTocEntry\tocsubsection{1.6.3}{\csname a:TocLink\endcsname{7}{x7-390001.6.3}{QQ2-7-45}{L'\'equation de Maurer-Cartan pour un rep\`ere mobile}}{41}\relax 
+\doTocEntry\tocsubsection{1.6.4}{\csname a:TocLink\endcsname{7}{x7-400001.6.4}{QQ2-7-46}{Produit int\'erieur d'une forme par un champ ou vecteurs}}{42}\relax 
+\doTocEntry\tocsection{1.7}{\csname a:TocLink\endcsname{7}{x7-410001.7}{QQ2-7-47}{Application tangente et cotangente}}{43}\relax 
+\doTocEntry\tocsection{1.8}{\csname a:TocLink\endcsname{7}{x7-420001.8}{QQ2-7-48}{D\'eriv\'ees de Lie}}{48}\relax 
+\doTocEntry\tocsection{1.9}{\csname a:TocLink\endcsname{7}{x7-430001.9}{QQ2-7-49}{Flots}}{53}\relax 
+\doTocEntry\tocsection{1.10}{\csname a:TocLink\endcsname{7}{x7-440001.10}{QQ2-7-50}{Orientation et int\'egration}}{54}\relax 
+\doTocEntry\tocsubsection{1.10.1}{\csname a:TocLink\endcsname{7}{x7-450001.10.1}{QQ2-7-51}{Orientation -- Partition de l'unit\'e}}{55}\relax 
+\doTocEntry\tocsection{1.11}{\csname a:TocLink\endcsname{7}{x7-460001.11}{QQ2-7-52}{Vari\'et\'es riemanniennes (propri\'et\'es \'el\'ementaires)}}{59}\relax 
+\doTocEntry\tocsection{1.12}{\csname a:TocLink\endcsname{7}{x7-470001.12}{QQ2-7-53}{Divers}}{68}\relax 
+\doTocEntry\tocsubsection{1.12.1}{\csname a:TocLink\endcsname{7}{x7-480001.12.1}{QQ2-7-54}{ Compl\'ements sur les d\'erivations d'alg\`ebre}}{68}\relax 
+\doTocEntry\tocsubsection{1.12.2}{\csname a:TocLink\endcsname{7}{x7-490001.12.2}{QQ2-7-55}{Cohomologie de De Rham}}{70}\relax 
+\doTocEntry\tocsubsection{1.12.3}{\csname a:TocLink\endcsname{7}{x7-500001.12.3}{QQ2-7-56}{Homologie de De Rham}}{71}\relax 
+\doTocEntry\tocsubsection{1.12.4}{\csname a:TocLink\endcsname{7}{x7-510001.12.4}{QQ2-7-57}{Espace des $p$-vecteurs}}{72}\relax 
+\doTocEntry\tocsubsection{1.12.5}{\csname a:TocLink\endcsname{7}{x7-520001.12.5}{QQ2-7-58}{Espace des courants de De Rham}}{72}\relax 
+\doTocEntry\tocsubsection{1.12.6}{\csname a:TocLink\endcsname{7}{x7-530001.12.6}{QQ2-7-59}{Les alg\`ebres de Fr\"olicher -- Nijenhuis et de Nijenhuis--Richardson}}{73}\relax 
+\doTocEntry\tocchapter{2}{\csname a:TocLink\endcsname{10}{x10-540002}{QQ2-10-60}{Groupes de Lie et espaces homog\`enes}}{81}\relax 
+\doTocEntry\tocsection{2.1}{\csname a:TocLink\endcsname{10}{x10-550002.1}{QQ2-10-61}{G\'en\'eralit\'es sur les groupes de Lie}}{81}\relax 
+\doTocEntry\tocsubsection{2.1.1}{\csname a:TocLink\endcsname{10}{x10-560002.1.1}{QQ2-10-62}{G\'en\'eralit\'es et d\'efinitions \'el\'ementaires}}{81}\relax 
+\doTocEntry\toclof{2.1}{\csname a:TocLink\endcsname{10}{x10-560021}{}{\ignorespaces Un groupe de Lie}}{figure}\relax 
+\doTocEntry\tocsubsection{2.1.2}{\csname a:TocLink\endcsname{10}{x10-570002.1.2}{QQ2-10-64}{Exemples \'el\'ementaires de groupes classiques}}{85}\relax 
+\doTocEntry\tocsection{2.2}{\csname a:TocLink\endcsname{10}{x10-580002.2}{QQ2-10-65}{G\'en\'eralit\'es sur les alg\`ebres de Lie}}{86}\relax 
+\doTocEntry\tocsubsection{2.2.1}{\csname a:TocLink\endcsname{10}{x10-590002.2.1}{QQ2-10-66}{Application exponentielle et alg\`ebres de Lie}}{86}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{10}{x10-600002.2.1}{QQ2-10-67}{D\'efinition}}{86}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{10}{x10-610002.2.1}{QQ2-10-68}{Exemple fondamental}}{87}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{10}{x10-620002.2.1}{QQ2-10-69}{Constantes de structure d'une alg\`ebre de Lie ${\mathfrak  g}$}}{87}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{10}{x10-630002.2.1}{QQ2-10-70}{Application exponentielle dans $M(n,\mathbb  {C})$}}{88}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{10}{x10-640002.2.1}{QQ2-10-71}{Cas des groupes de matrices:{} Correspondance entre groupes et alg\`ebres de Lie}}{88}\relax 
+\doTocEntry\tocsubsection{2.2.2}{\csname a:TocLink\endcsname{10}{x10-650002.2.2}{QQ2-10-72}{Correspondance entre groupes et alg\`ebres de Lie}}{90}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{10}{x10-660002.2.2}{QQ2-10-73}{Alg\`ebres de Lie des groupes classiques}}{90}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{10}{x10-670002.2.2}{QQ2-10-74}{Isomorphisme local:{} comparaison entre $SU(2)$ et $SO(3)$}}{94}\relax 
+\doTocEntry\tocsubsection{2.2.3}{\csname a:TocLink\endcsname{10}{x10-680002.2.3}{QQ2-10-75}{Classification des groupes et alg\`ebres de Lie. G\'en\'eralit\'es.}}{100}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{10}{x10-690002.2.3}{QQ2-10-76}{Un peu de terminologie}}{100}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{10}{x10-700002.2.3}{QQ2-10-77}{Id\'ees fondamentales de la classification}}{100}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{10}{x10-710002.2.3}{QQ2-10-78}{Remarques diverses}}{102}\relax 
+\doTocEntry\tocsubsection{2.2.4}{\csname a:TocLink\endcsname{10}{x10-720002.2.4}{QQ2-10-79}{Message}}{106}\relax 
+\doTocEntry\tocsection{2.3}{\csname a:TocLink\endcsname{10}{x10-730002.3}{QQ2-10-80}{Actions de groupes et repr\'esentations}}{106}\relax 
+\doTocEntry\tocsubsection{2.3.1}{\csname a:TocLink\endcsname{10}{x10-740002.3.1}{QQ2-10-81}{G\'en\'eralit\'es}}{106}\relax 
+\doTocEntry\tocsubsection{2.3.2}{\csname a:TocLink\endcsname{10}{x10-750002.3.2}{QQ2-10-82}{Groupe $G$ op\'erant \`a gauche sur un ensemble $E$}}{106}\relax 
+\doTocEntry\tocsubsection{2.3.3}{\csname a:TocLink\endcsname{10}{x10-760002.3.3}{QQ2-10-83}{Action \`a droite (anti-action)}}{107}\relax 
+\doTocEntry\tocsubsection{2.3.4}{\csname a:TocLink\endcsname{10}{x10-770002.3.4}{QQ2-10-84}{Passage de la droite \`a la gauche (et inversement)}}{108}\relax 
+\doTocEntry\tocsubsection{2.3.5}{\csname a:TocLink\endcsname{10}{x10-780002.3.5}{QQ2-10-85}{Orbites, espace quotient}}{108}\relax 
+\doTocEntry\tocsubsection{2.3.6}{\csname a:TocLink\endcsname{10}{x10-790002.3.6}{QQ2-10-86}{Efficacit\'e}}{109}\relax 
+\doTocEntry\tocsubsection{2.3.7}{\csname a:TocLink\endcsname{10}{x10-800002.3.7}{QQ2-10-87}{Libert\'e et stabilisateur}}{110}\relax 
+\doTocEntry\tocsubsection{2.3.8}{\csname a:TocLink\endcsname{10}{x10-810002.3.8}{QQ2-10-88}{Transitivit\'e}}{111}\relax 
+\doTocEntry\tocsubsection{2.3.9}{\csname a:TocLink\endcsname{10}{x10-820002.3.9}{QQ2-10-89}{Action d'un sous-groupe $H$ sur un groupe $G$, normalisateur, centralisateur}}{111}\relax 
+\doTocEntry\tocsubsection{2.3.10}{\csname a:TocLink\endcsname{10}{x10-830002.3.10}{QQ2-10-90}{Stratification}}{113}\relax 
+\doTocEntry\tocsubsection{2.3.11}{\csname a:TocLink\endcsname{10}{x10-840002.3.11}{QQ2-10-91}{Remarques}}{113}\relax 
+\doTocEntry\tocsection{2.4}{\csname a:TocLink\endcsname{10}{x10-850002.4}{QQ2-10-92}{Champs de vecteurs fondamentaux}}{114}\relax 
+\doTocEntry\tocsubsection{2.4.1}{\csname a:TocLink\endcsname{10}{x10-860002.4.1}{QQ2-10-93}{Cas d'un groupe de Lie agissant sur une vari\'et\'e}}{114}\relax 
+\doTocEntry\tocsubsection{2.4.2}{\csname a:TocLink\endcsname{10}{x10-870002.4.2}{QQ2-10-94}{Exemple~:{} le groupe euclidien agissant sur le plan $\mathbb  {R}^2$}}{118}\relax 
+\doTocEntry\tocsubsection{2.4.3}{\csname a:TocLink\endcsname{10}{x10-880002.4.3}{QQ2-10-95}{Un cas particulier fondamental~:{} le groupe $G$ agissant sur lui-m\^eme par translations \`a gauche et \`a droite}}{119}\relax 
+\doTocEntry\tocsubsection{2.4.4}{\csname a:TocLink\endcsname{10}{x10-890002.4.4}{QQ2-10-96}{L'action adjointe de $G$}}{123}\relax 
+\doTocEntry\tocsubsection{2.4.5}{\csname a:TocLink\endcsname{10}{x10-900002.4.5}{QQ2-10-97}{Exemple :{} l'alg\`ebre de Lie du groupe euclidien}}{124}\relax 
+\doTocEntry\tocsubsection{2.4.6}{\csname a:TocLink\endcsname{10}{x10-910002.4.6}{QQ2-10-98}{Exemple :{} champs invariants sur $SU(2)$}}{127}\relax 
+\doTocEntry\tocsubsection{2.4.7}{\csname a:TocLink\endcsname{10}{x10-920002.4.7}{QQ2-10-99}{Une remarque sur les constantes de structure}}{130}\relax 
+\doTocEntry\tocsubsection{2.4.8}{\csname a:TocLink\endcsname{10}{x10-930002.4.8}{QQ2-10-100}{La forme de Maurer-Cartan}}{131}\relax 
+\doTocEntry\tocsection{2.5}{\csname a:TocLink\endcsname{10}{x10-940002.5}{QQ2-10-101}{Repr\'esentations}}{134}\relax 
+\doTocEntry\tocsection{2.6}{\csname a:TocLink\endcsname{10}{x10-950002.6}{QQ2-10-102}{Espaces homog\`enes}}{135}\relax 
+\doTocEntry\tocsection{2.7}{\csname a:TocLink\endcsname{10}{x10-960002.7}{QQ2-10-103}{Alg\`ebres de Clifford et groupes Spin}}{136}\relax 
+\doTocEntry\tocsubsection{2.7.1}{\csname a:TocLink\endcsname{10}{x10-970002.7.1}{QQ2-10-104}{D\'efinitions g\'en\'erales}}{136}\relax 
+\doTocEntry\tocsubsection{2.7.2}{\csname a:TocLink\endcsname{10}{x10-980002.7.2}{QQ2-10-105}{Le groupe $Spin$}}{138}\relax 
+\doTocEntry\tocsubsection{2.7.3}{\csname a:TocLink\endcsname{10}{x10-990002.7.3}{QQ2-10-106}{Structure des alg\`ebres de Clifford r\'eelles}}{145}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{10}{x10-1000002.7.3}{QQ2-10-107}{Cas $n=p+q$ pair}}{145}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{10}{x10-1010002.7.3}{QQ2-10-108}{Cas $n=p+q$ impair}}{146}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{10}{x10-1020002.7.3}{QQ2-10-109}{Structure des alg\`ebres de Clifford r\'eelles et p\'eriodicit\'e modulo $8$}}{147}\relax 
+\doTocEntry\tocsubsection{2.7.4}{\csname a:TocLink\endcsname{10}{x10-1030002.7.4}{QQ2-10-110}{La structure des alg\`ebres de Clifford complexes}}{154}\relax 
+\doTocEntry\tocsubsection{2.7.5}{\csname a:TocLink\endcsname{10}{x10-1040002.7.5}{QQ2-10-111}{Type des repr\'esentations}}{155}\relax 
+\doTocEntry\tocsubsection{2.7.6}{\csname a:TocLink\endcsname{10}{x10-1050002.7.6}{QQ2-10-112}{Spineurs}}{157}\relax 
+\doTocEntry\tocchapter{3}{\csname a:TocLink\endcsname{12}{x12-1060003}{QQ2-12-113}{Espaces Fibr\'es}}{165}\relax 
+\doTocEntry\tocsection{3.1}{\csname a:TocLink\endcsname{12}{x12-1070003.1}{QQ2-12-114}{G\'en\'eralit\'es}}{165}\relax 
+\doTocEntry\tocsubsection{3.1.1}{\csname a:TocLink\endcsname{12}{x12-1080003.1.1}{QQ2-12-115}{Le langage des fibr\'es}}{165}\relax 
+\doTocEntry\toclof{3.1}{\csname a:TocLink\endcsname{12}{x12-1080011}{}{\ignorespaces Un espace fibr\'e}}{figure}\relax 
+\doTocEntry\toclof{3.2}{\csname a:TocLink\endcsname{12}{x12-1080042}{}{\ignorespaces La fonction exponentielle $e^{i\theta }$}}{figure}\relax 
+\doTocEntry\tocsubsection{3.1.2}{\csname a:TocLink\endcsname{12}{x12-1090003.1.2}{QQ2-12-118}{Fibrations. Fibr\'es diff\'erentiables localement triviaux}}{171}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{12}{x12-1100003.1.2}{QQ2-12-119}{Fibration}}{171}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{12}{x12-1110003.1.2}{QQ2-12-120}{Fibr\'e localement trivial}}{171}\relax 
+\doTocEntry\toclof{3.3}{\csname a:TocLink\endcsname{12}{x12-1110013}{}{\ignorespaces Les points au dessus de l'ouvert $U$}}{figure}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{12}{x12-1120003.1.2}{QQ2-12-122}{Remarques}}{174}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{12}{x12-1130003.1.2}{QQ2-12-123}{Fibr\'e trivial}}{175}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{12}{x12-1140003.1.2}{QQ2-12-124}{Trivialisations locales}}{175}\relax 
+\doTocEntry\toclof{3.4}{\csname a:TocLink\endcsname{12}{x12-1140024}{}{\ignorespaces Trivialisation locale d'un espace fibr\'e}}{figure}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{12}{x12-1150003.1.2}{QQ2-12-126}{Sous-fibr\'es}}{178}\relax 
+\doTocEntry\tocsection{3.2}{\csname a:TocLink\endcsname{12}{x12-1160003.2}{QQ2-12-127}{Espaces fibr\'es principaux}}{178}\relax 
+\doTocEntry\tocsubsection{3.2.1}{\csname a:TocLink\endcsname{12}{x12-1170003.2.1}{QQ2-12-128}{La structure d'espace fibr\'e principal}}{178}\relax 
+\doTocEntry\toclof{3.5}{\csname a:TocLink\endcsname{12}{x12-1170085}{}{\ignorespaces Action du groupe structural sur un espace fibr\'{e} principal}}{figure}\relax 
+\doTocEntry\tocsubsection{3.2.2}{\csname a:TocLink\endcsname{12}{x12-1180003.2.2}{QQ2-12-130}{Sections locales et trivialisations locales}}{182}\relax 
+\doTocEntry\toclof{3.6}{\csname a:TocLink\endcsname{12}{x12-1180016}{}{\ignorespaces L'origine de la fibre (copie du cercle $U(1)$) au dessus de $x$ est marqu\'ee par la section $\sigma $}}{figure}\relax 
+\doTocEntry\tocsubsection{3.2.3}{\csname a:TocLink\endcsname{12}{x12-1190003.2.3}{QQ2-12-132}{Exemple fondamental~:{} le fibr\'{e} des rep\`eres lin\'eaires}}{186}\relax 
+\doTocEntry\tocsubsection{3.2.4}{\csname a:TocLink\endcsname{12}{x12-1200003.2.4}{QQ2-12-133}{Sous-espace des vecteurs verticaux en un point $z$ d'un espace fibr\'{e}}}{187}\relax 
+\doTocEntry\tocsubsection{3.2.5}{\csname a:TocLink\endcsname{12}{x12-1210003.2.5}{QQ2-12-134}{Fibr\'e principal trivial}}{189}\relax 
+\doTocEntry\tocsubsection{3.2.6}{\csname a:TocLink\endcsname{12}{x12-1220003.2.6}{QQ2-12-135}{Formes basiques, invariantes et horizontales}}{190}\relax 
+\doTocEntry\tocsubsection{3.2.7}{\csname a:TocLink\endcsname{12}{x12-1230003.2.7}{QQ2-12-136}{Exemples}}{193}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{12}{x12-1240003.2.7}{QQ2-12-137}{Le fibr\'{e} des rep\`eres lin\'eaires}}{193}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{12}{x12-1250003.2.7}{QQ2-12-138}{Fibration d'un groupe $G$ en sous groupes $H$ au dessus de $G/H$}}{193}\relax 
+\doTocEntry\toclof{3.7}{\csname a:TocLink\endcsname{12}{x12-1250017}{}{\ignorespaces Les entiers modulo 3}}{figure}\relax 
+\doTocEntry\toclof{3.8}{\csname a:TocLink\endcsname{12}{x12-1250028}{}{\ignorespaces La fibration de Hopf pour $S^3$}}{figure}\relax 
+\doTocEntry\toclof{3.9}{\csname a:TocLink\endcsname{12}{x12-1250039}{}{\ignorespaces Fibration principale d'un groupe au dessus d'un espace homog\`ene}}{figure}\relax 
+\doTocEntry\toclof{3.10}{\csname a:TocLink\endcsname{12}{x12-12500610}{}{\ignorespaces Rev\^etements}}{figure}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{12}{x12-1260003.2.7}{QQ2-12-143}{Fibration d'un espace homog\`ene $G/H_1$ en groupes $H_2$ au dessus de $G/(H_1 \times H_2)$}}{202}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{12}{x12-1270003.2.7}{QQ2-12-144}{Fibration principale de $G/H$ en groupes $N\delimiter "026A30C H$ au dessus de $G/N$, $N$ \'etant le normalisateur de $H$ dans $G$}}{203}\relax 
+\doTocEntry\toclof{3.11}{\csname a:TocLink\endcsname{12}{x12-12700111}{}{\ignorespaces Fibration principale associ\'ee \`a l'action du groupe $N\delimiter "026A30C H$ sur l'espace homog\`ene $G/H$}}{figure}\relax 
+\doTocEntry\toclof{3.12}{\csname a:TocLink\endcsname{12}{x12-12700212}{}{\ignorespaces Fibrations de Hopf des sph\`eres}}{figure}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{12}{x12-1280003.2.7}{QQ2-12-147}{Fibrations exceptionnelles des sph\`eres et des espaces projectifs}}{209}\relax 
+\doTocEntry\tocsection{3.3}{\csname a:TocLink\endcsname{12}{x12-1290003.3}{QQ2-12-148}{Fibr\'es associ\'es}}{210}\relax 
+\doTocEntry\tocsubsection{3.3.1}{\csname a:TocLink\endcsname{12}{x12-1300003.3.1}{QQ2-12-149}{Introduction}}{210}\relax 
+\doTocEntry\tocsubsection{3.3.2}{\csname a:TocLink\endcsname{12}{x12-1310003.3.2}{QQ2-12-150}{Espaces fibr\'{e}s associ\'es g\'en\'eraux}}{211}\relax 
+\doTocEntry\toclof{3.13}{\csname a:TocLink\endcsname{12}{x12-13100113}{}{\ignorespaces Passage d'un fibr\'{e} principal \`a un fibr\'{e} associ\'e}}{figure}\relax 
+\doTocEntry\tocsubsection{3.3.3}{\csname a:TocLink\endcsname{12}{x12-1320003.3.3}{QQ2-12-152}{Espaces fibr\'{e}s en espaces homog\`enes, associ\'es \`a un fibr\'{e} principal de groupe structural $G$}}{214}\relax 
+\doTocEntry\toclof{3.14}{\csname a:TocLink\endcsname{12}{x12-13200114}{}{\ignorespaces Fibr\'e associ\'e en espaces homog\`enes}}{figure}\relax 
+\doTocEntry\toclof{3.15}{\csname a:TocLink\endcsname{12}{x12-13200215}{}{\ignorespaces Exemples de fibr\'{e}s associ\'es en espaces homog\`enes}}{figure}\relax 
+\doTocEntry\tocsubsection{3.3.4}{\csname a:TocLink\endcsname{12}{x12-1330003.3.4}{QQ2-12-155}{Fibration principale relative \`a un fibr\'{e} quotient}}{221}\relax 
+\doTocEntry\toclof{3.16}{\csname a:TocLink\endcsname{12}{x12-13300116}{}{\ignorespaces Deuxi\`eme fibration principale de $P$~:{} les espaces P(M,G) et P(E,H)}}{figure}\relax 
+\doTocEntry\tocsubsection{3.3.5}{\csname a:TocLink\endcsname{12}{x12-1340003.3.5}{QQ2-12-157}{Espaces fibr\'{e}s en $\ldots  $ espaces fibr\'{e}s}}{224}\relax 
+\doTocEntry\tocsubsection{3.3.6}{\csname a:TocLink\endcsname{12}{x12-1350003.3.6}{QQ2-12-158}{Le fibr\'{e} adjoint $E=Ad \tmspace  +\thinmuskip {.1667em} P$}}{224}\relax 
+\doTocEntry\tocsubsection{3.3.7}{\csname a:TocLink\endcsname{12}{x12-1360003.3.7}{QQ2-12-159}{Le r\^ole du normalisateur}}{225}\relax 
+\doTocEntry\tocsubsection{3.3.8}{\csname a:TocLink\endcsname{12}{x12-1370003.3.8}{QQ2-12-160}{Les espaces fibr\'{e}s vectoriels}}{226}\relax 
+\doTocEntry\toclof{3.17}{\csname a:TocLink\endcsname{12}{x12-13700117}{}{\ignorespaces Espace fibr\'{e} vectoriel}}{figure}\relax 
+\doTocEntry\tocsubsection{3.3.9}{\csname a:TocLink\endcsname{12}{x12-1380003.3.9}{QQ2-12-162}{Trivialit\'e des fibr\'{e}s vectoriels, vari\'et\'es parall\'elisables}}{231}\relax 
+\doTocEntry\tocsubsection{3.3.10}{\csname a:TocLink\endcsname{12}{x12-1390003.3.10}{QQ2-12-163}{Sections de fibr\'{e}s associ\'es et champs}}{232}\relax 
+\doTocEntry\tocsection{3.4}{\csname a:TocLink\endcsname{12}{x12-1400003.4}{QQ2-12-164}{Elargissement et r\'eduction}}{234}\relax 
+\doTocEntry\tocsubsection{3.4.1}{\csname a:TocLink\endcsname{12}{x12-1410003.4.1}{QQ2-12-165}{D\'efinitions}}{234}\relax 
+\doTocEntry\tocsubsection{3.4.2}{\csname a:TocLink\endcsname{12}{x12-1420003.4.2}{QQ2-12-166}{Elargissement (passage de $H$ \`a $G$ avec $H\subset G$)}}{234}\relax 
+\doTocEntry\tocsubsection{3.4.3}{\csname a:TocLink\endcsname{12}{x12-1430003.4.3}{QQ2-12-167}{R\'eduction (passage de $G$ \`a $H$ avec $H\subset G$)}}{235}\relax 
+\doTocEntry\tocsection{3.5}{\csname a:TocLink\endcsname{12}{x12-1440003.5}{QQ2-12-168}{Extension et quotient}}{239}\relax 
+\doTocEntry\tocsubsection{3.5.1}{\csname a:TocLink\endcsname{12}{x12-1450003.5.1}{QQ2-12-169}{Extension (passage de $G$ \`a $\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle G$}\mathaccent "0362{G}$ avec $G \sim {\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle G$}\mathaccent "0362{G}}\delimiter "026A30C H$)}}{239}\relax 
+\doTocEntry\toclof{3.18}{\csname a:TocLink\endcsname{12}{x12-14500118}{}{\ignorespaces Extension d'un fibr\'{e} principal}}{figure}\relax 
+\doTocEntry\tocsubsection{3.5.2}{\csname a:TocLink\endcsname{12}{x12-1460003.5.2}{QQ2-12-171}{Quotient (passage de $G$ \`a $K$ avec $K \sim G\delimiter "026A30C H$, $H$ sous-groupe distingu\'e de $G$)}}{244}\relax 
+\doTocEntry\tocsection{3.6}{\csname a:TocLink\endcsname{12}{x12-1470003.6}{QQ2-12-172}{Groupe des automorphismes. Groupe de jauge}}{244}\relax 
+\doTocEntry\tocsubsection{3.6.1}{\csname a:TocLink\endcsname{12}{x12-1480003.6.1}{QQ2-12-173}{Remarque terminologique}}{244}\relax 
+\doTocEntry\tocsubsection{3.6.2}{\csname a:TocLink\endcsname{12}{x12-1490003.6.2}{QQ2-12-174}{Automorphismes verticaux d'un espace fibr\'{e} principal (d\'efinition)}}{245}\relax 
+\doTocEntry\tocsubsection{3.6.3}{\csname a:TocLink\endcsname{12}{x12-1500003.6.3}{QQ2-12-175}{Ecriture locale des transformations de jauge}}{246}\relax 
+\doTocEntry\tocsubsection{3.6.4}{\csname a:TocLink\endcsname{12}{x12-1510003.6.4}{QQ2-12-176}{Deux autres d\'efinitions des transformations de jauge}}{247}\relax 
+\doTocEntry\tocsubsection{3.6.5}{\csname a:TocLink\endcsname{12}{x12-1520003.6.5}{QQ2-12-177}{Automorphismes quelconques d'un espace fibr\'{e} principal}}{248}\relax 
+\doTocEntry\toclof{3.19}{\csname a:TocLink\endcsname{12}{x12-15200119}{}{\ignorespaces Automorphismes de fibr\'{e}s principaux}}{figure}\relax 
+\doTocEntry\tocsubsection{3.6.6}{\csname a:TocLink\endcsname{12}{x12-1530003.6.6}{QQ2-12-179}{Action des automorphismes sur les espaces fibr\'{e}s associ\'es}}{252}\relax 
+\doTocEntry\tocsubsection{3.6.7}{\csname a:TocLink\endcsname{12}{x12-1540003.6.7}{QQ2-12-180}{Le cas des espaces vectoriels (un cas trivial mais instructif!)}}{253}\relax 
+\doTocEntry\tocchapter{4}{\csname a:TocLink\endcsname{13}{x13-1550004}{QQ2-13-181}{Connexions}}{257}\relax 
+\doTocEntry\tocsection{4.1}{\csname a:TocLink\endcsname{13}{x13-1560004.1}{QQ2-13-182}{Connexions dans un fibr\'e principal}}{257}\relax 
+\doTocEntry\tocsubsection{4.1.1}{\csname a:TocLink\endcsname{13}{x13-1570004.1.1}{QQ2-13-183}{Motivations}}{257}\relax 
+\doTocEntry\tocsubsection{4.1.2}{\csname a:TocLink\endcsname{13}{x13-1580004.1.2}{QQ2-13-184}{Distributions horizontales \'equivariantes}}{258}\relax 
+\doTocEntry\tocsubsection{4.1.3}{\csname a:TocLink\endcsname{13}{x13-1590004.1.3}{QQ2-13-185}{Rel\`evement horizontal}}{259}\relax 
+\doTocEntry\toclof{4.1}{\csname a:TocLink\endcsname{13}{x13-1590041}{}{\ignorespaces Rel\`evement horizontal et connexion}}{figure}\relax 
+\doTocEntry\tocsubsection{4.1.4}{\csname a:TocLink\endcsname{13}{x13-1600004.1.4}{QQ2-13-187}{Forme de connexion}}{263}\relax 
+\doTocEntry\tocsubsection{4.1.5}{\csname a:TocLink\endcsname{13}{x13-1610004.1.5}{QQ2-13-188}{ Ecriture locale de la forme de connexion:{} le potentiel de jauge}}{264}\relax 
+\doTocEntry\tocsection{4.2}{\csname a:TocLink\endcsname{13}{x13-1620004.2}{QQ2-13-189}{Connexions dans les fibr\'es vectoriels associ\'es}}{266}\relax 
+\doTocEntry\tocsubsection{4.2.1}{\csname a:TocLink\endcsname{13}{x13-1630004.2.1}{QQ2-13-190}{Matrice de connexion $A^i_j$, coefficients de connexion $A^i_{j\mu }$}}{266}\relax 
+\doTocEntry\tocsubsection{4.2.2}{\csname a:TocLink\endcsname{13}{x13-1640004.2.2}{QQ2-13-191}{Diff\'erentielle covariante des sections $\nabla $, d\'eriv\'ee covariante $\nabla _\mu $, parall\'elisme}}{269}\relax 
+\doTocEntry\tocsubsection{4.2.3}{\csname a:TocLink\endcsname{13}{x13-1650004.2.3}{QQ2-13-192}{Remarques concernant les notations}}{272}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-1660004.2.3}{QQ2-13-193}{Mise en garde concernant la notation $\nabla _\mu $}}{272}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-1670004.2.3}{QQ2-13-194}{Remarque sur les produits tensoriels}}{272}\relax 
+\doTocEntry\tocsubsection{4.2.4}{\csname a:TocLink\endcsname{13}{x13-1680004.2.4}{QQ2-13-195}{Loi de transformation des coefficients de connexion}}{274}\relax 
+\doTocEntry\tocsubsection{4.2.5}{\csname a:TocLink\endcsname{13}{x13-1690004.2.5}{QQ2-13-196}{D\'erivation covariante des sections du fibr\'e dual}}{276}\relax 
+\doTocEntry\tocsubsection{4.2.6}{\csname a:TocLink\endcsname{13}{x13-1700004.2.6}{QQ2-13-197}{D\'erivation covariante dans les puissances tensorielles d'un fibr\'e vectoriel}}{277}\relax 
+\doTocEntry\tocsubsection{4.2.7}{\csname a:TocLink\endcsname{13}{x13-1710004.2.7}{QQ2-13-198}{L'op\'erateur D}}{280}\relax 
+\doTocEntry\tocsubsection{4.2.8}{\csname a:TocLink\endcsname{13}{x13-1720004.2.8}{QQ2-13-199}{Diff\'erentielle ext\'erieure covariante $d^\nabla $}}{281}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-1730004.2.8}{QQ2-13-200}{D\'efinition}}{281}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-1740004.2.8}{QQ2-13-201}{ Les op\'erateurs $D$ et $d^\nabla $}}{282}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-1750004.2.8}{QQ2-13-202}{ Autre exemple}}{285}\relax 
+\doTocEntry\tocsubsection{4.2.9}{\csname a:TocLink\endcsname{13}{x13-1760004.2.9}{QQ2-13-203}{Diff\'erentielles et d\'eriv\'ees covariantes g\'en\'eralis\'ees~$\nabla $}}{288}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-1770004.2.9}{QQ2-13-204}{Remarques}}{288}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-1780004.2.9}{QQ2-13-205}{Exemple}}{289}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-1790004.2.9}{QQ2-13-206}{Comparaison entre $\nabla $ et $d^\nabla $}}{292}\relax 
+\doTocEntry\tocsection{4.3}{\csname a:TocLink\endcsname{13}{x13-1800004.3}{QQ2-13-207}{Courbure}}{293}\relax 
+\doTocEntry\tocsubsection{4.3.1}{\csname a:TocLink\endcsname{13}{x13-1810004.3.1}{QQ2-13-208}{Lin\'earit\'e de $(d^\nabla )^2$}}{293}\relax 
+\doTocEntry\tocsubsection{4.3.2}{\csname a:TocLink\endcsname{13}{x13-1820004.3.2}{QQ2-13-209}{Expression de l'op\'erateur de courbure dans les fibr\'es vectoriels associes}}{295}\relax 
+\doTocEntry\tocsubsection{4.3.3}{\csname a:TocLink\endcsname{13}{x13-1830004.3.3}{QQ2-13-210}{Equation de structure pour la courbure}}{298}\relax 
+\doTocEntry\tocsubsection{4.3.4}{\csname a:TocLink\endcsname{13}{x13-1840004.3.4}{QQ2-13-211}{Identit\'e de Bianchi pour la courbure}}{300}\relax 
+\doTocEntry\tocsubsection{4.3.5}{\csname a:TocLink\endcsname{13}{x13-1850004.3.5}{QQ2-13-212}{Transformation de jauge pour la courbure}}{300}\relax 
+\doTocEntry\tocsubsection{4.3.6}{\csname a:TocLink\endcsname{13}{x13-1860004.3.6}{QQ2-13-213}{Forme de connexion, diff\'erentielle covariante et courbure dans les fibr\'es principaux (compl\'ements)}}{303}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-1870004.3.6}{QQ2-13-214}{Remarque g\'en\'erale}}{303}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-1880004.3.6}{QQ2-13-215}{Forme de connexion}}{304}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-1890004.3.6}{QQ2-13-216}{Diff\'erentielle covariante}}{305}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-1900004.3.6}{QQ2-13-217}{L'op\'erateur de courbure dans les fibr\'es principaux}}{306}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{13}{x13-1910004.3.6}{QQ2-13-218}{Aspect global}}{306}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{13}{x13-1920004.3.6}{QQ2-13-219}{Aspect local}}{307}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-1930004.3.6}{QQ2-13-220}{Passage aux fibr\'es associ\'es}}{308}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{13}{x13-1940004.3.6}{QQ2-13-221}{Aspect global}}{308}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{13}{x13-1950004.3.6}{QQ2-13-222}{Aspect local}}{308}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{13}{x13-1960004.3.6}{QQ2-13-223}{L'op\'erateur $D^2$}}{310}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-1970004.3.6}{QQ2-13-224}{Mise en garde concernant l'utilisation de la notation $D$}}{311}\relax 
+\doTocEntry\tocsubsection{4.3.7}{\csname a:TocLink\endcsname{13}{x13-1980004.3.7}{QQ2-13-225}{Ecritures diverses de la courbure $F$ (r\'ecapitulatif)}}{312}\relax 
+\doTocEntry\tocsubsection{4.3.8}{\csname a:TocLink\endcsname{13}{x13-1990004.3.8}{QQ2-13-226}{Connexions et op\'erations de Cartan}}{313}\relax 
+\doTocEntry\tocsubsection{4.3.9}{\csname a:TocLink\endcsname{13}{x13-2000004.3.9}{QQ2-13-227}{Groupe d'holonomie d'une connexion, fibr\'e d'holonomie}}{315}\relax 
+\doTocEntry\tocsubsection{4.3.10}{\csname a:TocLink\endcsname{13}{x13-2010004.3.10}{QQ2-13-228}{R\'eduction des connexions}}{317}\relax 
+\doTocEntry\tocsection{4.4}{\csname a:TocLink\endcsname{13}{x13-2020004.4}{QQ2-13-229}{Cas particulier des connexions lin\'eaires}}{319}\relax 
+\doTocEntry\tocsubsection{4.4.1}{\csname a:TocLink\endcsname{13}{x13-2030004.4.1}{QQ2-13-230}{D\'efinition et g\'en\'eralit\'es}}{319}\relax 
+\doTocEntry\tocsubsection{4.4.2}{\csname a:TocLink\endcsname{13}{x13-2040004.4.2}{QQ2-13-231}{Potentiel de jauge et courbure des connexions lin\'eaires}}{321}\relax 
+\doTocEntry\tocsubsection{4.4.3}{\csname a:TocLink\endcsname{13}{x13-2050004.4.3}{QQ2-13-232}{Diff\'erentielle ext\'erieure covariante (cas des connexions lin\'eaires)}}{326}\relax 
+\doTocEntry\tocsubsection{4.4.4}{\csname a:TocLink\endcsname{13}{x13-2060004.4.4}{QQ2-13-233}{Forme canonique (ou forme de soudure)}}{331}\relax 
+\doTocEntry\tocsubsection{4.4.5}{\csname a:TocLink\endcsname{13}{x13-2070004.4.5}{QQ2-13-234}{Torsion}}{333}\relax 
+\doTocEntry\tocsubsection{4.4.6}{\csname a:TocLink\endcsname{13}{x13-2080004.4.6}{QQ2-13-235}{Equation de structure pour la torsion}}{336}\relax 
+\doTocEntry\tocsubsection{4.4.7}{\csname a:TocLink\endcsname{13}{x13-2090004.4.7}{QQ2-13-236}{Identit\'es de Bianchi pour les connexions lin\'eaires}}{338}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-2100004.4.7}{QQ2-13-237}{Premi\`ere identit\'e (relative \`a la torsion)}}{340}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-2110004.4.7}{QQ2-13-238}{Deuxi\`eme identit\'e (relative \`a la courbure)}}{342}\relax 
+\doTocEntry\tocsubsection{4.4.8}{\csname a:TocLink\endcsname{13}{x13-2120004.4.8}{QQ2-13-239}{D\'eriv\'ees covariantes secondes, hessien et identit\'es de Ricci}}{342}\relax 
+\doTocEntry\tocsubsection{4.4.9}{\csname a:TocLink\endcsname{13}{x13-2130004.4.9}{QQ2-13-240}{Tenseur de Ricci}}{352}\relax 
+\doTocEntry\tocsubsection{4.4.10}{\csname a:TocLink\endcsname{13}{x13-2140004.4.10}{QQ2-13-241}{Courbes autoparall\`eles}}{352}\relax 
+\doTocEntry\tocsubsection{4.4.11}{\csname a:TocLink\endcsname{13}{x13-2150004.4.11}{QQ2-13-242}{Connexions lin\'eaires sur les groupes et espaces homog\`enes}}{354}\relax 
+\doTocEntry\tocsection{4.5}{\csname a:TocLink\endcsname{13}{x13-2160004.5}{QQ2-13-243}{Connexions m\'etriques}}{354}\relax 
+\doTocEntry\tocsubsection{4.5.1}{\csname a:TocLink\endcsname{13}{x13-2170004.5.1}{QQ2-13-244}{La m\'etrique}}{355}\relax 
+\doTocEntry\tocsubsection{4.5.2}{\csname a:TocLink\endcsname{13}{x13-2180004.5.2}{QQ2-13-245}{Compatibilit\'e avec la m\'etrique}}{357}\relax 
+\doTocEntry\tocsubsection{4.5.3}{\csname a:TocLink\endcsname{13}{x13-2190004.5.3}{QQ2-13-246}{Calcul des coefficients de connexion}}{361}\relax 
+\doTocEntry\tocsubsection{4.5.4}{\csname a:TocLink\endcsname{13}{x13-2200004.5.4}{QQ2-13-247}{Compl\'ements sur le tenseur de Riemann. Propri\'et\'es de sym\'etrie.}}{366}\relax 
+\doTocEntry\tocsubsection{4.5.5}{\csname a:TocLink\endcsname{13}{x13-2210004.5.5}{QQ2-13-248}{Equation des g\'eod\'esiques}}{368}\relax 
+\doTocEntry\tocsubsection{4.5.6}{\csname a:TocLink\endcsname{13}{x13-2220004.5.6}{QQ2-13-249}{Tenseur de Ricci, courbure scalaire et tenseur d'Einstein, courbures sectionelles}}{369}\relax 
+\doTocEntry\tocsubsection{4.5.7}{\csname a:TocLink\endcsname{13}{x13-2230004.5.7}{QQ2-13-250}{Dualit\'e de Hodge et laplaciens}}{372}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-2240004.5.7}{QQ2-13-251}{Appariement entre $\Omega ^k(M)$ et $\Omega ^{n-k}(M)$}}{372}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-2250004.5.7}{QQ2-13-252}{L'isomorphisme $\star $ :{} La dualit\'e de Hodge}}{373}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-2260004.5.7}{QQ2-13-253}{Le produit $<<,>>$ dans l'espace des $k$-formes}}{376}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-2270004.5.7}{QQ2-13-254}{La codiff\'erentielle $\delta $ sur les formes}}{377}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-2280004.5.7}{QQ2-13-255}{La divergence $div$ sur les tenseurs quelconques}}{380}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-2290004.5.7}{QQ2-13-256}{Le laplacien de De Rham sur les formes}}{381}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-2300004.5.7}{QQ2-13-257}{Hessiens et Laplaciens na\"\i fs}}{383}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-2310004.5.7}{QQ2-13-258}{Equations de Maxwell et \'equations de Yang-Mills}}{384}\relax 
+\doTocEntry\tocsubsection{4.5.8}{\csname a:TocLink\endcsname{13}{x13-2320004.5.8}{QQ2-13-259}{Connexions spinorielles et op\'erateur de Dirac}}{389}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-2330004.5.8}{QQ2-13-260}{Compl\'ement sur l'alg\`ebre de Lie du groupe $Spin$}}{389}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-2340004.5.8}{QQ2-13-261}{Connexion spinorielle}}{390}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-2350004.5.8}{QQ2-13-262}{D\'eriv\'ee covariante sur les champs de spineurs}}{393}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-2360004.5.8}{QQ2-13-263}{L'op\'erateur de Dirac}}{394}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{13}{x13-2370004.5.8}{QQ2-13-264}{Le fibr\'e de Clifford}}{395}\relax 
+\doTocEntry\tocsubsection{4.5.9}{\csname a:TocLink\endcsname{13}{x13-2380004.5.9}{QQ2-13-265}{M\'etriques sur les groupes et espaces homog\`enes}}{395}\relax 
+\doTocEntry\tocchapter{5}{\csname a:TocLink\endcsname{15}{x15-2390005}{QQ2-15-266}{Un saut dans l'infini}}{401}\relax 
+\doTocEntry\tocsubsection{5.0.1}{\csname a:TocLink\endcsname{15}{x15-2400005.0.1}{QQ2-15-267}{Action du groupe de jauge sur l'espace des connexions}}{401}\relax 
+\doTocEntry\tocsubsection{5.0.2}{\csname a:TocLink\endcsname{15}{x15-2410005.0.2}{QQ2-15-268}{L'espace des orbites}}{402}\relax 
+\doTocEntry\tocsubsection{5.0.3}{\csname a:TocLink\endcsname{15}{x15-2420005.0.3}{QQ2-15-269}{Conclusion}}{403}\relax 
+\doTocEntry\tocchapter{6}{\csname a:TocLink\endcsname{16}{x16-2430006}{QQ2-16-270}{Calcul diff\'erentiel pour alg\`ebres non commutatives}}{409}\relax 
+\doTocEntry\tocsection{6.1}{\csname a:TocLink\endcsname{16}{x16-2440006.1}{QQ2-16-271}{Remarques philosophico-math\'ematiques sur les espaces non commutatifs}}{409}\relax 
+\doTocEntry\tocsection{6.2}{\csname a:TocLink\endcsname{16}{x16-2450006.2}{QQ2-16-272}{Calculs diff\'erentiels}}{411}\relax 
+\doTocEntry\tocsubsection{6.2.1}{\csname a:TocLink\endcsname{16}{x16-2460006.2.1}{QQ2-16-273}{Remarques}}{411}\relax 
+\doTocEntry\tocsubsection{6.2.2}{\csname a:TocLink\endcsname{16}{x16-2470006.2.2}{QQ2-16-274}{L'alg\`ebre diff\'erentielle des formes universelles $\Omega {\mathcal  A}$}}{411}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{16}{x16-2480006.2.2}{QQ2-16-275}{Universalit\'e}}{412}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{16}{x16-2490006.2.2}{QQ2-16-276}{Construction de $\Omega {\mathcal  A}$ par g\'en\'erateurs et relations}}{412}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{16}{x16-2500006.2.2}{QQ2-16-277}{Construction explicite de $\Omega {\mathcal  A}$ par produit tensoriel}}{415}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{16}{x16-2510006.2.2}{QQ2-16-278}{Formes universelles dans le cadre commutatif :{} le calcul diff\'erentiel non local}}{417}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{16}{x16-2520006.2.2}{QQ2-16-279}{L'exemple de $\mathbb  {C}\oplus \mathbb  {C}$}}{420}\relax 
+\doTocEntry\toclof{6.1}{\csname a:TocLink\endcsname{16}{x16-2520021}{}{\ignorespaces Potentiel de Higgs $V[Re(\varphi ),Im(\varphi )]$}}{figure}\relax 
+\doTocEntry\tocsubsection{6.2.3}{\csname a:TocLink\endcsname{16}{x16-2530006.2.3}{QQ2-16-281}{L'alg\`ebre diff\'erentielle $\Omega _{Der}{\mathcal  A}$}}{426}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{16}{x16-2540006.2.3}{QQ2-16-282}{Rappel sur les d\'erivations d'alg\`ebre}}{426}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{16}{x16-2550006.2.3}{QQ2-16-283}{Formes diff\'erentielles}}{426}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{16}{x16-2560006.2.3}{QQ2-16-284}{Distinction entre $\relax $\o:@@underline: {\hbox {\Omega }}\mathsurround \z@ $\relax _{Der}$ et $\Omega _{Der}$}}{428}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{16}{x16-2570006.2.3}{QQ2-16-285}{Exemples}}{429}\relax 
+\doTocEntry\tocsubsection{6.2.4}{\csname a:TocLink\endcsname{16}{x16-2580006.2.4}{QQ2-16-286}{Alg\`ebres diff\'erentielles pour espaces non connexes}}{430}\relax 
+\doTocEntry\tocsubsection{6.2.5}{\csname a:TocLink\endcsname{16}{x16-2590006.2.5}{QQ2-16-287}{L'alg\`ebre diff\'erentielle $\Omega _{D}{\mathcal  A}$}}{433}\relax 
+\doTocEntry\tocsection{6.3}{\csname a:TocLink\endcsname{16}{x16-2600006.3}{QQ2-16-288}{Excursion au pays des math\'ematiques non commutatives}}{436}\relax 
+\doTocEntry\tocsubsection{6.3.1}{\csname a:TocLink\endcsname{16}{x16-2610006.3.1}{QQ2-16-289}{Remarques et pr\'esentation g\'en\'erale}}{437}\relax 
+\doTocEntry\tocsubsection{6.3.2}{\csname a:TocLink\endcsname{16}{x16-2620006.3.2}{QQ2-16-290}{Topologie non commutative et th\'eorie de la mesure non commutative}}{437}\relax 
+\doTocEntry\tocsubsection{6.3.3}{\csname a:TocLink\endcsname{16}{x16-2630006.3.3}{QQ2-16-291}{Calcul diff\'erentiel non commutatif}}{439}\relax 
+\doTocEntry\tocsubsection{6.3.4}{\csname a:TocLink\endcsname{16}{x16-2640006.3.4}{QQ2-16-292}{Espaces fibr\'es non commutatifs et modules projectifs}}{440}\relax 
+\doTocEntry\tocsubsection{6.3.5}{\csname a:TocLink\endcsname{16}{x16-2650006.3.5}{QQ2-16-293}{Connections g\'en\'eralis\'ees en geometrie non commutative}}{441}\relax 
+\doTocEntry\tocsubsection{6.3.6}{\csname a:TocLink\endcsname{16}{x16-2660006.3.6}{QQ2-16-294}{Cohomologie des espaces non commutatifs}}{445}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{16}{x16-2670006.3.6}{QQ2-16-295}{La cohomologie de Hochschild}}{445}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{16}{x16-2680006.3.6}{QQ2-16-296}{La cohomologie cyclique :{} une cohomologie de De Rham non commutative}}{449}\relax 
+\doTocEntry\tocsubsection{6.3.7}{\csname a:TocLink\endcsname{16}{x16-2690006.3.7}{QQ2-16-297}{ Remarque finale}}{453}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{18}{x18-2700006.3.7}{QQ2-18-298}{Index}}{455}\relax 

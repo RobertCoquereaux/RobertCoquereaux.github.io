@@ -1,0 +1,132 @@
+
+\chapter{Un saut dans l'infini}
+
+\subsection{Action du groupe de jauge sur l'espace des connexions}
+
+
+Soit  $Ad\; P = P \times_{Ad} G$ le fibr\'e adjoint en groupes et $ad\; P = P \times_{ad} {\frak g}$ le 
+fibr\'e adjoint en alg\`ebres de Lie (voir le chapitre ``Espaces fibr\'es''). On 
+se souvient que l'ensemble des sections globales de $Ad\; P$ n'est autre 
+que le groupe de jauge ${\frak G}$ (automorphismes verticaux de $P$)
+et que l'ensemble des sections globales de $ad\; P$ est 
+l'alg\`ebre de Lie ${\scr G}$ du groupe de jauge. La fibre type 
+de $ad\; P$ est une alg\`ebre de Lie, et donc, en particulier, un espace 
+vectoriel. Puisque $ad\; P$ est un fibr\'e vectoriel, toute connexion 
+$\omega$ sur $P$ donne naissance \`a une diff\'erentielle covariante 
+$\nabla^\omega$ agissant sur les sections de $ad\; P$ (qui sont des 
+transformations de jauge infinit\'esimales) et plus 
+g\'en\'eralement \`a une diff\'erentielle ext\'erieure 
+covariante $d^{\nabla^\omega}$ agissant sur ${\scr G}^p  =  \Omega^p(M,ad\; P)$.
+$$
+d^{\nabla^\omega} : {\scr G}^p  =  \Omega^p(M,ad\; P) \mapsto 
+{\scr G}^{p+1}  =  \Omega^p(M,ad\; P)
+$$
+Noter que $\Omega^p(M,ad\; P) \simeq \Omega^p_{ad}(P,Lie\, {\scr G})$ (voir section 3.3.10 (2)).
+On supposera aussi qu'il est possible de plonger le groupe structural $G$ dans une 
+alg\`ebre de matrices $M(n,\CC)$, pour $n$ assez grand et donc consid\'erer 
+$Ad\; P$ comme sous-fibr\'es du fibr\'e vectoriel 
+$P \times_{Ad} M(n,\CC) $. On peut donc \'egalement consid\'erer la 
+diff\'erentielle covariante $\nabla^\omega$ agissant sur une transformation de jauge 
+finie, $\Phi$.
+
+Soit ${\scr A}$ l'ensemble de toutes les connexions qu'on peut 
+d\'efinir sur un fibr\'e principal donn\'e $P=P(M,G)$. Il est facile de voir que le groupe 
+de jauge ${\frak G}$ agit sur ${\scr A}$ par ``pull-back''.
+Soit $\Phi \in {\frak G}$, $\omega \in {\scr A},$ $z \in P$ et $V \in 
+T(P,z)$. On d\'efinit 
+$\omega^\Phi \equiv \omega.\Phi$
+par 
+$${\omega^\Phi}_z (V)  =  \omega_{\Phi(z)}(\Phi_*(V))$$
+
+L'\'equivariance d'une connexion peut s'\'ecrire, comme on le sait, en terme du potentiel de jauge,
+sous la forme $A \rightarrow A' = g^{-1}Ag + g^{-1} dg$. Le second membre de cette \'egalit\'e
+peut encore s'\'ecrire $A + g^{-1}(dg + [A,g])$ et la quantit\'e $dg + [A,g]$ appara\^it comme
+une diff\'erentielle covariante $\nabla g$ relative \`a la connexion choisie.
+De la m\^eme fa\c con, l'action du groupe de jauge ${\frak G}$ sur l'espace ${\scr A}$ des
+formes de connexion s'\'ecrit 
+$$
+(\omega, \Phi)\in {\scr A} \times {\frak G} \rightarrow \omega^\Phi  =  \omega.\Phi = \omega + 
+\Phi^{-1}\nabla^\omega \Phi
+$$
+
+Cette loi de transformation nous montre que l'ensemble ${\scr A}$ de 
+toutes les connexions n'est pas un espace vectoriel mais un espace 
+affine. En g\'eom\'etrie 
+\'el\'ementaire, la diff\'erence de deux points est un vecteur de l'espace 
+vectoriel sous-jacent. Il en est de m\^eme ici. L'objet 
+$\Phi^{-1}\nabla^\omega \Phi$ est une $1$-forme (\'equivariante) sur $P$, \`a 
+valeurs dans ${\frak g}=Lie(G)$. L'espace vectoriel sous-jacent \`a l'espace affine ${\scr A}$ est
+donc ${\scr G}^1$. En particulier, notons que si $\omega_1$ et 
+$\omega_2$ d\'esignent deux connexions, alors
+$(\omega_2^\Phi - \omega_1^\Phi) = ( \omega_2 - \omega_1) + 
+\Phi^{-1}(\nabla^{\omega_{2}}-\nabla^{\omega_{1}}) \Phi$.
+
+\subsection{L'espace des orbites}
+
+Puisqu'on a une action de groupe sur un espace, on peut \'etudier le quotient par cette
+action, c'est \`a dire l'espace des orbites ${\scr I}  =  {\scr A}/{\frak G}$.
+Il faut tenir compte, en fait, de quelques subtilit\'es car l'action de ${\frak G}$ n'est pas libre,
+en g\'en\'eral. En d'autres termes, certaines connexions peuvent avoir des sym\'etries : c'est
+le cas lorsque le sous-groupe de ${\frak G}$ qui stabilise une connexion donn\'ee 
+ne se r\'eduit pas \`a l'identit\'e. Pour rendre cette action libre, il faut, soit consid\'erer
+un espace des connexions plus petit (c'est \`a dire ne consid\'erer que les connexions ``irr\'eductibles''
+pour lesquelles le stabilisateur est trivial), soit diminuer la taille du groupe de jauge (on
+consid\`ere le {\sl groupe de jauge point\'e\/} ${\frak G}_x$ obtenu en se fixant arbitrairement un point
+$x$ de $M$ et en ne consid\'erant que les transformations de jauge $\Phi$ telles que $\Phi(z)=z$, pour
+tout $z$ appartenant \`a la fibre de $P$ au dessus de $x$)\index{groupe 
+de jauge point\'e}.
+Moyennant ces quelques pr\'ecautions, par exemple celle qui revient \`a ne consid\'erer que l'action du
+groupe de jauge point\'e, on montre que l'espace des connexions est lui-m\^eme un espace fibr\'e principal, de
+groupe structural ${\frak G}_x$ au dessus de l'espace des orbites, qu'on note
+${\scr I}$.
+
+Lorsque la vari\'et\'e $M$ est compacte,  munie d'une m\'etrique et qu'on a choisi \'egalement
+une m\'etrique bi-invariante sur le groupe de structure $G$, on peut construire 
+un produit scalaire global sur les espaces vectoriels ${\scr G}^p$ ainsi qu'un
+laplacien g\'en\'eralis\'e. Le produit scalaire sur l'espace vectoriel ${\scr G}^1$ (identifi\'e
+avec l'espace vectoriel sous-jacent \`a l'espace affine ${\scr A}$ en un point quelconque $\omega$)
+fait de ${\scr A}$ un espace affine euclidien (de dimension infinie, bien s\^ur~!). On a donc
+une m\'etrique sur ${\scr A}$. Cette m\'etrique permet de d\'ecomposer l'espace tangent
+$T({\scr A},\omega)$ en un sous-espace vertical \'evident (celui qui est tangent \`a l'action
+de ${\frak G}$) et un sous-espace horizontal d\'efini comme \'etant perpendiculaire au sous-espace
+vertical pour cette m\'etrique. On obtient ainsi une connexion sur le fibr\'e 
+${\scr A = A(I},{\frak G)}$.
+La m\'etrique sur ${\scr A}$, \'etant  ${\frak G}$-invariante, 
+permet \'egalement de d\'efinir une nouvelle m\'etrique sur la base du fibr\'e
+ ${\scr A = A(I},{\scr G)}$, c'est \`a dire sur  l'espace des orbites ${\scr I}$.
+
+\subsection{Conclusion}
+
+La g\'eom\'etrie riemannienne de l'espace des orbites des connexions, modulo l'action du groupe de jauge,
+est un sujet \`a la fois complexe et
+fascinant. Notre but, dans ce dernier chapitre n'avait d'autre but 
+que d'entrebailler une porte$\ldots$
+ Nous allons arr\^eter l\`a notre escapade en dimension infinie, non sans
+faire un clin d'\oe il \`a la physique...bouclant ainsi la boucle.
+En effet, on sait que dans les th\'eories de jauge, deux connexions qui diff\`erent par
+une transformation de jauge d\'ecrivent la m\^eme situation physique. L'espace des
+champs de Yang-Mills possibles, celui sur lequel on doit int\'egrer lorsqu'on fait de la th\'eorie
+quantique des champs ``\`a la Feynman'' est donc l'espace des orbites ${\scr I}$.
+Par ailleurs, les champs de mati\`ere sont, comme on le sait, d\'ecrits par des sections
+de fibr\'es $E$ associ\'es \`a un fibr\'e principal $P=P(M,G)$, mais le groupe de jauge
+${\frak G}$ agit sur l'espace $\Gamma E$ de ces sections et deux sections qui diff\`erent par
+l'action du groupe de jauge sont \'egalement physiquement \'equivalentes.
+On en d\'eduit que la physique des champs de Yang-Mills et des champs de mati\`ere
+qui leur sont coupl\'es
+est en d\'efinitive d\'ecrite par la g\'eom\'etrie
+de l'espace fibr\'e $$\aleph  =  {\scr A(I},{\frak G)} \times_{\frak G} \Gamma E$$
+ Une structure analogue existe lorsqu'on s'int\'eresse \`a la gravitation quantique et qu'on
+veut \'etudier l'espace des m\'etriques qu'il est possible de
+d\'efinir sur une vari\'et\'e diff\'erentiable donn\'ee. Le groupe de jauge ${\frak G}$ est
+alors remplac\'e par le groupe des diff\'eomorphismes de $M$. La situation est d'ailleurs
+plus complexe dans ce cas. 
+
+C'est donc de la g\'eom\'etrie diff\'erentielle en dimension infinie qu'il faut faire
+pour comprendre, du point de vue quantique, 
+la structure des th\'eories physiques d\'ecrivant les interactions
+fondamentales. Il n'est pas exclu que le traitement math\'ematique le plus
+adapt\'e \`a cette \'etude de la g\'eom\'etrie en dimension infinie passe par une
+``alg\'ebra\"isation''
+compl\`ete des techniques de la g\'eom\'etrie diff\'erentielle et au remplacement de celle-ci 
+par la g\'eom\'etrie non commutative (voir chapitre suivant).
+

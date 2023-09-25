@@ -1,0 +1,3137 @@
+
+
+\chapter {Vari\'et\'es diff\'erentiables}
+\minitoc
+
+\section {Vari\'et\'es topologiques}
+
+\subsection  {D\'efinition}
+\par
+Une {\sl vari\'et\'e topologique}\index{vari\'et\'e topologique} est tout d'abord un espace
+topologique, mais on suppose, de surcro\^{i}t, que chacun de
+ses points poss\`ede un voisinage hom\'eomorphe \`a un ouvert
+de $\RR^n$. On dit alors que cet espace est une vari\'et\'e
+topologique de dimension~$n$.\par
+
+Intuitivement, une vari\'et\'e topologique de dimension $2$
+est un espace qui, localement, c'est \`a dire si on ne
+regarde pas trop loin, ressemble \`a un petit morceau de
+feuille de papier qu'on aurait pu d\'ecouper avec des
+ciseaux apr\`es en avoir trac\'e le pourtour au crayon (on
+peut d'ailleurs froisser le bout de papier en question).
+La structure globale de cet espace peut \^etre \'evidemment
+assez diff\'erente puisque la vari\'et\'e elle-m\^eme est obtenue
+par recollement de tous ces petits morceaux de papier.
+Ainsi, un pneu de bicyclette, \'eventuellement d\'egonfl\'e,
+pli\'e et ``froiss\'e'' fournit un exemple d'objet physique
+qu'on peut mod\'eliser \`a l'aide d'une vari\'et\'e topologique de
+dimension $2$: un tore.
+\smallskip
+\subsection  {Vari\'et\'es \`a bord}
+\par
+ Les vari\'et\'es dont il vient d'\^etre question n'ont pas de
+bord (au sens intuitif du terme). En effet, si nous nous
+transformons en \^etres plats, rampant sur la surface d'un
+ballon -- ou d'un pneu -- nous ne sommes jamais arr\^et\'es
+par une quelconque barri\`ere. Cela ne serait pas le cas si
+nous nous d\'eplacions sur la surface d'un quartier d'orange
+ou d'un pneu crev\'e (nous nous arr\^eterions au bord du
+trou!). Sans se transformer en \^etres plats, cela ne serait
+pas le cas non plus si nous nous d\'eplacions \`a l'int\'erieur
+d'une boule ferm\'ee. De fa\c con g\'en\'erale, il est possible de
+fabriquer des ``vari\'et\'es \`a bord'' en effectuant un ou
+plusieurs trous dans une vari\'et\'e sans bord (\`a l'aide d'une
+petite cuill\`ere multi-dimensionelle!); la partie enlev\'ee,
+comme la partie qui reste, devient une {\sl vari\'et\'e topologique \`a 
+bord\/}.\par
+
+Pour pr\'eciser cette notion, il nous faut \'elargir la
+d\'efinition de vari\'et\'e que nous avons donn\'e plus
+haut puisque certains des points (ceux du bord) ont un
+voisinage non pas hom\'eomorphe \`a un ouvert de $\RR^n$ mais \`a\
+un voisinage de $\RR^n_+$ (le ferm\'e de $\RR^n$  form\'e des points dont
+la derni\`ere composante est positive ou nulle).
+\par
+
+Attention: si nous nous promenons dans une boule
+ouverte, nous ne pourrons jamais atteindre aucun bord... par
+d\'efinition d'une boule ouverte! Une boule ouverte est une
+vari\'et\'e sans bord de dimension $3$ qui est d'ailleurs
+hom\'eomorphe \`a $\RR^3$. Par contre, une boule ferm\'ee est une
+vari\'et\'e \`a bord de dimension $3$, les points du bords sont
+ceux de la sph\`ere (une vari\'et\'e de dimension $2$) et ils
+poss\`edent -- dans la boule ferm\'ee -- des voisinages
+particuliers. Le disque ouvert (la
+boule de dimension $2$) est aussi une vari\'et\'e sans bord
+et le disque ferm\'e est une vari\'et\'e \`a bord (son bord est
+constitu\'e d'un cercle qu'on peut appeler \'egalement
+``sph\`ere de dimension $1$''. Dans le m\^eme genre, un
+intervalle ouvert est une vari\'et\'e sans bord (la boule de
+dimension $1$) et un intervalle ferm\'e est une vari\'et\'e \`a
+bord (son bord est constitu\'e de deux points dont la
+r\'eunion constitue ce qu'on peut appeler la sph\`ere de
+dimension $0$. Les exemples qui pr\'ec\`edent sont
+g\'en\'eralisables en toutes dimensions.\par
+
+Terminologie: Si on ne pr\'ecise pas davantage, une vari\'et\'e
+topologique est cens\'ee \^etre une vari\'et\'e sans bord.\par
+\smallskip
+\subsection  {Contre-exemples}
+\par
+ La plupart des objets math\'ematiques auxquels nous avons
+tendance \`a penser de prime abord sont des exemples de
+vari\'et\'es topologiques (avec ou sans bord), et, pour cette
+raison, il est bon de donner quelques exemples d'espaces
+topologiques qui ne sont pas des vari\'et\'es.
+ Consid\'erez par exemple une croix  (r\'eunion de
+deux segments d'intersection r\'eduite \`a un point); ce n'est pas une vari\'et\'e 
+car le point
+situ\'e \`a l'intersection des deux segments poss\`ede des
+voisinages en forme de croix, et une croix n'est jamais
+hom\'eomorphe \`a un ouvert de $\RR = \RR^1$.  Le globe imp\'erial
+est un objet qu'on pourrait penser \`a
+mod\'eliser math\'ematiquement par une sph\`ere
+(vari\'et\'e de dimension $2$) sur laquelle on aurait coll\'e
+une croix (r\'eunion de deux segments) Cet espace n'est pas
+une vari\'et\'e pour deux raisons. La premi\`ere vient du point
+d'intersection des deux branches de la croix (d\'ej\`a vu) et
+la deuxi\`eme est analogue puisque le point ou on a coll\'e
+la croix sur la sph\`ere poss\`ede des voisinages qui ne sont
+hom\'eomorphes ni \`a des ouverts de $\RR^1$ ni \`a des ouverts
+de $\RR^2$. \par
+
+Ces derniers exemples ne sont pas des vari\'et\'es mais sont
+n\'eanmoins obtenus par recollement de vari\'et\'es... (CW
+complexes) Ils ne poss\`edent pas une dimension
+d\'etermin\'ee mais ont n\'eanmoins une structure assez
+simple. On peut cependant faire bien pire... Les exemples
+d'espaces topologiques qui ne sont pas des vari\'et\'es
+abondent (prenez par exemple des espaces topologiques
+qui ne sont pas de Haussdorf, c'est \`a dire qui poss\`edent
+des points qu'on ne peut pas s\'eparer \`a l'aide d'ouverts
+disjoints). Il ne faudrait pas croire que les espaces
+qui ne sont pas des vari\'et\'es n'ont pas d'int\'er\^et
+math\'ematique ou physique, bien au contraire. En fait, la
+g\'eom\'etrie non commutative (dont nous ne parlerons pratiquement pas dans 
+cet ouvrage) s'est d\'evelopp\'ee en grande partie pour forger des outils 
+permettant de ``calculer'' dans de tels espaces, espaces qui sont 
+en fait compl\`etement d\'ecrits par des alg\`ebres associatives mais 
+g\'en\'eralement non commutatives$\ldots$ Par ailleurs, on sait que la 
+description 
+math\'ematique de la m\'ecanique quantique repose sur l'utilisation des 
+alg\`ebres d'op\'erateurs, ce qui explique la raison pour laquelle les 
+ph\'enom\`enes physiques relevant de cette m\'ecanique soient si peu 
+intuitifs puisqu'il nous faut, dans ce cas, abandonner nos notions 
+famili\`eres de 
+g\'eom\'etrie ``commutative''. C'est \`a l'\'etude de cette g\'eom\'etrie commutative 
+qu'est consacr\'ee le pr\'esent ouvrage. Attention \`a la terminologie (mise en 
+garde destin\'ee au lecteur trop savant)~: l'expression classique des 
+th\'eories 
+de jauge non ab\'eliennes ainsi que l'\'etude des groupes de Lie (en g\'en\'eral 
+non commutatifs), 
+rel\`event de la g\'eom\'etrie commutative!
+Le calcul diff\'erentiel -- et la physique classique -- se
+sont d\'evelopp\'es dans le cadre des vari\'et\'es et c'est
+pourquoi nous commen\c cons par l\`a. La structure de vari\'et\'e
+topologique est d'ailleurs elle-m\^eme insuffisante pour
+pouvoir travailler dans de bonnes conditions: Il nous
+faudra pouvoir diff\'erentier les fonctions un nombre de
+fois suffisant. Pour ce faire il nous faudra supposer que
+les vari\'et\'es (en anglais {\it manifolds}) consid\'er\'ees ne
+sont pas ``froiss\'ees'': elles doivent \^etre ``lisses'' (bien
+repass\'ees!). Ce sont les vari\'et\'es diff\'erentiables (en
+anglais {\it  smooth manifolds}). \par
+\bigskip
+\section { Vari\'et\'es diff\'erentiables}
+\smallskip
+\subsection{  Vari\'et\'es, cartes, atlas}
+\par
+Intuitivement, on peut consid\'erer une vari\'et\'e
+diff\'erentiable comme une vari\'et\'e topologique (voir
+exemples {\it supra}) qui soit ``lisse'', c'est \`a dire sans
+plis, sans coins etc.
+Une vari\'et\'e diff\'erentiable $M$ de dimension $n$ est donc avant
+tout une vari\'et\'e topologique. Nous d\'efinissons tout s'abord
+la notion de carte qui g\'en\'eralise la notion usuelle de
+carte g\'eographique. Une {\sl carte}\index{carte} consiste en la donn\'ee
+d'un ouvert $U_i$ de $M$ ainsi que d'une application $x:
+{\cal P} \in U_i \subset M \stackrel{x}{\longrightarrow} (x^\mu({\cal P}))
+ \in
+\RR^n $ avec $\mu \in \{1 \dots n\}$. Il importe de bien
+\'etablir une distinction entre le point ${\cal P}$ lui-m\^eme
+et ce qu'on appelle ses coordonn\'ees $x^\mu({\cal P})$ dans la
+carte choisie. On suppose, de plus, que l'application
+$x$ est bijective et bi-continue de $U_i$ sur son
+image.\par
+
+Mis \`a part le cas relativement trivial o\`u $M$ est
+hom\'eomorphe \`a $\RR^n$, il nous faut plusieurs cartes pour
+recouvrir la vari\'et\'e $M$. On appellera {\sl atlas}\index{atlas}
+(sous-entendu diff\'erentiable) la donn\'ee d'un ensemble de
+cartes $(U_i, x)$ qui recouvrent $M$ c'est \`a dire telles
+que $\cup_i U_i = M$ et telles que les changements de
+cartes $\phi_{ij}$ soient des bijections
+diff\'erentiables, ainsi que leurs inverses. Pr\'ecisons ce
+dernier point. Supposons que ${\cal P} \in U_i \cap U_j
+\subset M$, on peut donc repr\'esenter ${\cal P}$ par un
+point $x^\mu({\cal P})$ de $\RR^n$ dans la carte $(U_i,x)$ ou par
+un autre point $y^\mu({\cal P})$ de $\RR^n$ dans la carte
+$(U_j,y)$. On note $\phi_{ij}$ le changement de cartes (encore
+appel\'e transformation de coordonn\'ees); c'est une
+application de l'ouvert $x(U_i)$ de $\RR^n$ dans l'ouvert
+$y(U_j)$ de $\RR^n$. On sait ce que signifie
+``diff\'erentiable'' pour une application de $\RR^n$ dans
+$\RR^n$: les d\'eriv\'ees partielles, par rapport \`a chacune
+des variables, doivent exister. On impose donc \`a
+$\phi_{ij}$ d'\^etre une application diff\'erentiable. On
+lui impose \'egalement d'\^etre bijective (donc inversible)
+et on impose \`a son inverse $\phi_{ji}  = 
+\phi_{ij}^{-1}$ d'\^etre \'egalement diff\'erentiable. Bien
+entendu, il faut pr\'eciser un peu plus ce qu'on entend par
+diff\'erentiable: suivant qu'on impose aux applications
+$\phi_{ij}$ d'\^etre une seule fois diff\'erentiable, $r$
+fois diff\'erentiables ou infiniment diff\'erentiables, 
+on parle d'atlas de classe $C^1$, $C^r$ ou $C^\infty$.
+Dans la suite de l'ouvrage et sauf mention explicite du
+contraire, c'est de classe $C^\infty$ qu'il s'agira. La
+premi\`ere fa\c con de d\'efinir une {\sl vari\'et\'e
+diff\'erentiable}\index{vari\'et\'e diff\'erentiable} est de se donner une vari\'et\'e
+topologique ainsi qu'un atlas diff\'erentiable. Du pont de vue des
+notations, il n'est pas tr\`es commode de faire figurer
+l'indice $i$ qui se rapporte \`a la carte, sur le syst\`eme
+de coordonn\'ees $x$; dans le cas o\`u on en consid\`ere
+deux (par exemple $x$ et $y$) on \'ecrira les formules de
+changement de carte (l'application $\phi_{ij}$) sans
+introduire de nouvelle notation en \'ecrivant simplement
+$y^\mu$ comme une fonction de $x^\nu$, c'est \`a dire $ y^\mu
+=  y^\mu (x^\nu)$.\par
+
+\smallskip
+\subsection{  Atlas maximal}
+\par
+En g\'eographie ordinaire (celle du globe terrestre) il est
+bien connu qu'il nous faut au moins deux cartes pour
+d\'ecrire la Terre. Par contre, rien ne nous interdit d'en
+utiliser trois ou plus $\ldots$. Si on r\'eunit les cartes
+d'un atlas avec celles d'un atlas diff\'erent (concernant la
+m\^eme vari\'et\'e topologique), on peut s'attendre \`a fabriquer
+ainsi un atlas plus grand, un peu redondant, certes, mais
+ n\'eanmoins utile. Il faut cependant prendre la pr\'ecaution
+d'imposer aux cartes d'\^etre compatibles, c'est \`a dire
+telles que les formules de changements
+de cartes, d'un atlas \`a l'autre,  puissent s'exprimer
+en terme de transformations diff\'erentiables de $\RR^n$.
+Cette pr\'ecaution n'est pas
+inutile et peut conduire \`a des surprises. Rien ne nous
+emp\^eche alors  de consid\'erer l'ensemble (assez gros il est vrai!)
+de tous les atlas compatibles possibles d'une vari\'et\'e
+donn\'ee et de les r\'eunir en un unique {\sl atlas maximal}\index{atlas maximal}.
+Bien qu'un seul atlas suffise \`a caract\'eriser compl\`etement
+la vari\'et\'e, il peut \^etre tr\`es utile de consid\'erer la
+vari\'et\'e $M$ \'equip\'ee d'un tel atlas maximal contenant
+toutes les cartes compatibles possibles. En d'autres termes, on peut
+compl\`etement caract\'eriser une vari\'et\'e diff\'erentiable par la 
+donn\'ee d'une vari\'et\'e topologique et d'un atlas maximal. Il se trouve 
+que, dans
+certains cas, une vari\'et\'e topologique donn\'ee poss\`ede plusieurs 
+structures diff\'erentiables (plusieurs atlas maximaux distincts). C'est 
+le cas pour $\RR^4$ (le seul, parmi les espaces num\'eriques $\RR^n$ \`a 
+poss\'eder des structures diff\'erentiables ``exotiques'') et c'est aussi 
+le cas pour les sph\`eres $S^n$ lorsque $n \geq 7$. Nous ne nous 
+int\'eresserons pas \`a ces ph\'enom\`enes dans le cadre de cet ouvrage.
+\par 
+
+\smallskip
+\subsection{  Vari\'et\'es et calcul diff\'erentiel ``intrins\`eque''}
+\par
+En math\'ematiques \'el\'ementaires, on d\'efinit souvent les
+espaces g\'eom\'etriques int\'eressants (par exemple une sph\`ere)
+comme sous espace d'un espace affine $\RR^n$. L'id\'ee
+fondamentale du calcul sur les vari\'et\'es (calcul
+diff\'erentiel intrins\`eque comme on l'appelait autrefois)
+est de faire abstraction du fait que la vari\'et\'e qui nous
+int\'eresse est, ou non, plong\'ee dans un espace $\RR^n$ ``plus
+grand'' et de d\'evelopper un calcul qui soit totalement
+ind\'ependant du plongement en question. Les motivations
+physiques sont analogues. Par exemple, l'exp\'erience
+quotidienne nous montre que tout \'ev\'enement de
+l'univers sensible (whatever it means) peut se d\'ecrire \`a
+l'aide de quatre nombres sp\'ecifiant sa position (trois
+nombres) et sa date (un nombre). Mais pourquoi supposer,
+{\it a priori} que l'ensemble de ces \'ev\'enements doive
+\^etre d\'ecrit \`a l'aide d'un un espace $\RR^4$~? Pourquoi pas
+une hyper-sph\`ere (ou n'importe quoi d'autre?) Mais alors,
+si on d\'ecide d'utiliser une hyper-sph\`ere de dimension
+$4$ pour d\'ecrire notre espace-temps, ou, comme dans
+certains mod\`eles cosmologiques, comme le produit d'une
+hyper-sph\`ere (gonflable) de dimension $3$ par une droite
+ou une demi-droite, pourquoi supposer que notre vari\'et\'e est
+plong\'ee dans un espace de dimension $5$ ou plus dont les
+points sont sans signification physique? Puisque c'est
+possible, autant travailler dans la vari\'et\'e qui nous
+int\'eresse sans chercher \`a en ``sortir''.\par
+
+L'id\'ee la plus fondamentale et la plus simple du calcul
+diff\'erentiel sur les vari\'et\'es est la suivante. Gr\^ace \`a
+l'existence locale des cartes, on peut toujours faire
+``comme si'' on \'etait sur $\RR^n$ et d\'evelopper des outils
+et des m\'ethodes de calcul sans se soucier -- dans un
+premier temps -- de leur globalisation, quitte \`a
+v\'erifier, par la suite, que tout se recolle comme il faut
+lorsqu'on passe d'une carte \`a l'autre. C'est ainsi que
+l'essentiel des notions qui suivent sont en fait des
+notions qui peuvent \^etre d\'efinies dans un espace $\RR^n$
+et dont la g\'en\'eralisation, au cas des vari\'et\'es, est
+quasi-imm\'ediate. Nous ne supposons pas que le lecteur est
+d\'ej\`a familier des notions en question; c'est la raison
+d'\^etre des paragraphes qui suivent.
+\bigskip
+\section {Applications diff\'erentiables,  diff\'eomorphismes} 
+\smallskip
+\subsection{ D\'efinition}
+\par
+Soient $M$ et $N$ deux vari\'et\'es diff\'erentiables de
+dimensions respectives $m$ et $n$. Une {\sl application diff\'erentiable\/}
+\index{application diff\'erentiable} $\phi$ de $M$ dans $N$ est une application
+qui peut s'\'ecrire localement \`a l'aide d'une application
+diff\'erentiable (encore not\'ee $\phi$) de $\RR^m$ dans $\RR^n$.
+En d'autres termes, si on a ${  Q}\in N = \phi({ 
+P})$ avec ${  P} \in M$,  alors,  gr\^ace au choix
+de cartes ${  P} \in U_i \subset M \rightarrow
+x^\mu({  P})\in \RR^m$ et ${  Q} \in V_i \subset N
+\rightarrow y^\nu({  Q}) \in \RR^n$, on pourra \'ecrire (et on
+\'ecrira!) $ y = \phi (x)$ ce qui signifie, en fait $
+y^\nu({  Q}) = \phi (x^\mu({  P}))$. L'ensemble
+des applications diff\'erentiables de $M$ dans $N$ se
+note $ C^\infty(M,N).$\par
+
+ Petite parenth\`ese sur le probl\`eme des notations en
+math\'ematiques: Il est important de comprendre la
+signification de ce qu'on \'ecrit, mais il est (de l'avis
+de l'auteur) absurde de vouloir que la notation utilis\'ee
+nous rappelle \`a tout moment les diff\'erents abus d'\'ecriture
+commis depuis le chapitre 1 du tome 1 de Bourbaki et sans
+lesquels il n'est pas de calcul possible!\par
+
+L'application $\phi$ (celle qui va de $M$ dans $N$) est
+donc caract\'eris\'ee -- les cartes \'etant choisies -- par $n$
+fonctions diff\'erentiables $y^\nu$ de $m$ variables
+$x^\mu$. Il est alors naturel de consid\'erer la matrice
+jacobienne de cette application, c'est \`a dire la matrice
+rectangulaire $m \times n$ des d\'eriv\'ees partielles
+$\partial y^\nu \over \partial x^\mu .$ Nous en
+reparlerons un peu plus tard.\par
+\smallskip
+\subsection{ Diff\'eomorphismes et changements de coordonn\'ees}
+\par
+Il existe deux cas particuliers particuli\`erement
+int\'eressants.\par
+
+ Le premier est celui o\`u $M$ et $N$
+co\"incident. Dans ce cas, il peut se faire que
+l'application diff\'erentiable $\phi$ soit non seulement
+diff\'erentiable mais encore bijective et que son inverse
+soit \'egalement diff\'erentiable. On dit alors que $\phi$
+est un {\sl diff\'eomorphisme}\index{diff\'eomorphisme}. Notons qu'une application
+diff\'erentiable est automatiquement continue et que, par
+cons\'equent, un diff\'eomorphisme est automatiquement un
+hom\'eomorphisme. Il est facile de v\'erifier que l'ensemble
+des diff\'eomorphismes d'une vari\'et\'e diff\'erentiable $M$
+constitue un groupe pour la composition des applications.
+On note ce groupe $Diff(M) \subset C^\infty(M,M)$; c'est un
+sous groupe de l'ensemble $Hom(M) \subset C^0(M,M)$ des
+hom\'eomorphismes de $M$. Notons qu'il existe une
+correspondance assez subtile entre diff\'eomorphismes d'une
+part -- qui sont des transformations que l'on appelait
+autrefois ``actives'' car elles transforment les points
+de $M$ en d'autres points de $M$ -- et changements de
+coordonn\'ees -- qui sont des transformations que l'on appelait
+autrefois ``passives'' car elles ne transforment pas les
+points de $M$ mais r\'esultent seulement d'un changement de
+carte.
+
+Il est \`a peu pr\`es \'evident que ces deux notions
+co\"incident dans le cas o\`u $M$ est l'espace $\RR^n$
+lui-m\^eme (muni de la structure diff\'erentiable d\'efinie
+par une unique carte canonique, l'application identique).
+Examinons de plus pr\`es le cas g\'en\'eral. Les cartes \'etant
+elles-m\^emes des diff\'eomorphismes locaux entre ouverts de
+$M$ et ouverts de $\RR^n$, effectuer un changement de carte
+(changement de syst\`eme de coordonn\'ees) se traduit par un
+diff\'eomorphisme local $y(x)$ de $\RR^n$. Par contre, un
+diff\'eomorphisme de $M$ est, par d\'efinition, une notion
+globale qui se traduit elle-aussi, apr\`es choix de cartes,
+par un diff\'eomorphisme local de $\RR^n$. L'\'equivalence des
+points de vue ``actifs'' et ``passifs'' n'existe donc que
+pour $\RR^n$ et il semble pr\'ef\'erable d'\'eviter cette
+terminologie. Une id\'ee physique fondamentale, \`a la base
+de la th\'eorie de la relativit\'e g\'en\'erale est que les
+\'equations de la physique doivent pouvoir s'\'ecrire de fa\c con
+tout \`a fait ind\'ependante de l'observateur, quelle que soit
+l'\'etat de mouvement de ce dernier. Traduite en termes de
+coordonn\'ees, ce ``Principe de Relativit\'e G\'en\'erale'' a
+souvent \'et\'e exprim\'e de par le pass\'e comme affirmant
+l'ind\'ependance des lois de la physique par rapport aux
+changements de syst\`emes de coordonn\'ees. Une telle
+affirmation manque de pr\'ecision, d\`es lors qu'on travaille
+sur une vari\'et\'e quelconque et non sur un espace
+num\'erique. Il semble d'ailleurs qu'A. Einstein lui-m\^eme
+n'ait jamais pu exprimer correctement ce principe de
+fa\c con vraiment pr\'ecise et moderne (cela n'enl\`eve rien \`a son
+g\'enie!). Le principe en question  peut s'\'enoncer ainsi:
+l'espace-temps \'etant d\'ecrit par une vari\'et\'e
+diff\'erentiable, les lois de la physique doivent \^etre
+invariantes sous l'action du groupe des diff\'eomorphismes
+de cette vari\'et\'e.\par
+\smallskip
+\subsection{  Fonctions diff\'erentiables}
+\par
+ La deuxi\`eme classe de cas particuliers int\'eressants est
+celle o\`u l'application diff\'erentiable consid\'er\'ee $\phi$,
+de $M$ dans $N$  est d\'efinie sur une vari\'et\'e
+quelconque $M$, mais ou $N$ co\"incide avec
+l'ensemble $\RR$ des nombres r\'eels. Les applications
+diff\'erentiables en question sont d\'esign\'ees sous le nom de
+{\sl fonctions diff\'erentiables sur $M$} \index{fonctions diff\'erentiables}; l'utilisation du mot ``fonction''
+ est en accord
+avec les habitudes terminologiques anglaises, o\`u les
+applications quelconques sont des ``{\it maps\/}'' , mais o\`u les
+applications \`a valeurs r\'eelles (ou complexes) sont des
+``{\it functions\/}''.  L'ensemble des fonctions diff\'erentiables
+sur $M$ se note $C^\infty(M)  = 
+C^\infty(M,\RR).$\par
+
+Remarque: l'ensemble des fonctions
+diff\'erentiables $C^\infty(M)$ est une alg\`ebre pour
+l'addition des fonctions $[f+g](x) =  f(x) + g(x)$, la
+multiplication des fonctions d\'efinie (ponctuellement)
+par $[fg](x) =  f(x) g(x)$ et l'op\'eration externe de
+multiplication par un nombre r\'eel. C'est une sous-alg\`ebre
+de l'alg\`ebre commutative $C^0(M)$.\par
+
+Le lecteur peut s'\'etonner de la pr\'esence et de la
+signification de l'indice sup\'erieur $0$ ou $\infty$
+dans les notations $C^0(M)$ ou $C^\infty(M)$. Cet
+indice se r\'ef\`ere \`a l'ordre de diff\'erentiabilit\'e suppos\'e
+des fonctions appartenant \`a l'ensemble consid\'er\'e. On
+pourrait bien entendu consid\'erer des ensembles tels que
+$C^p(M)$ constitu\'es de fonctions qui sont, au moins, $p$
+fois diff\'erentiables. Dans la suite de cet ouvrage,
+cependant, nous nous limiterons aux cas $p=0$, c'est \`a
+dire les fonctions continues (qui peuvent \'evidemment \^etre
+diff\'erentiables ou non) et $p=\infty$, c'est \`a dire
+les fonctions infiniment
+diff\'erentiables.\par
+
+\bigskip
+
+\section { Champs de vecteurs}
+\index{champs de vecteurs}
+\smallskip
+\subsection{  Notions \'el\'ementaires et intuitives}
+\par
+Avant de donner une d\'efinition g\'en\'erale des vecteurs et
+champs de vecteurs, d\'efinition qui pourrait sembler
+assez abstraite de prime abord, nous souhaitons motiver
+quelque peu cette d\'efinition. Le lecteur est d\'ej\`a suppos\'e
+\^etre familier de la notion \'el\'ementaire de vecteur, \`a savoir
+une classe d'\'equivalence de bi-points parall\`eles et de
+m\^eme sens, dans l'espace affine $\RR^n$. Un champ de
+vecteurs de $\RR^n$, au sens \'el\'ementaire du terme, est donc
+une application qui, \`a tout point de $\RR^n$ -- consid\'er\'e
+comme espace affine --  associe un vecteur de $\RR^n$
+--consid\'er\'e comme espace vectoriel. Intuitivement, on a
+une ``fl\`eche'' en tout point; on peut penser \`a l'exemple du
+champ des vitesses d'un solide en mouvement, mais on peut
+aussi penser au champ magn\'etique en tout point de
+l'espace, etc. En physique -- mais aussi, comme nous
+allons le voir, en math\'ematiques --  un vecteur peut \^etre
+consid\'er\'e comme un ``petit d\'eplacement''. Soit $M$ une
+vari\'et\'e diff\'erentiable, $f$ une fonction diff\'erentiable
+ainsi que $P$ et $Q$ deux points de $M$. Si $M$ \'etait un
+espace affine (comme $\RR^n$), cela aurait un sens de
+consid\'erer la diff\'erence de $Q$ et de $P$, puisque
+cette diff\'erence d\'efinirait simplement le vecteur
+$ \overrightarrow{PQ} =  Q-P$. On pourrait aussi (mais on
+peut de toutes fa\c cons) consid\'erer la diff\'erence $f(Q) -
+f(P)$ des valeurs prises par $f$ en $Q$ et $P$. Dans le cas
+de $M= \RR^n$ et lorsque $Q$ (coordonn\'ees $x'$) tend vers $P$
+(coordonn\'ees $x$), le th\'eor\`eme des accroissement finis
+(ou celui de Taylor) nous dit que
+\footnote{Nous utilisons la convention d'Einstein : il existe toujours
+une somme sous-entendue sur les indices r\'ep\'et\'es, par exemple $v^\mu w_\mu 
+\equiv \sum_\mu v^\mu w_\mu$. En r\`egle g\'en\'erale, les indices r\'ep\'et\'es ne 
+sont jamais en m\^eme position : l'un est en position haute et l'autre en
+position basse, \`a moins qu'une m\'etrique ne soit utilis\'ee.} 
+ $f(x') - f(x) = (x'-x)^i
+\partial / \partial x^i f(x) + \ldots = v^i \partial / \partial x^i f(x) + 
+\ldots
+$ o\`u les nombres $ v^i  =  (x'-x)^i $ ne sont autres que
+les composantes du vecteur $\overrightarrow{ PQ} =  Q-P$
+dans le rep\`ere o\`u $P$ et $Q$ ont des composantes $x^i$ et
+${x'}^i$. Dans le cas des vari\'et\'es, l'expression $(x'-x)^i
+\partial / \partial x^i f(x)$ a encore un sens. En effet,
+choisissons tout d'abord une carte, et notons $v$ la
+quantit\'e  $v  =  v^i \partial / \partial x^i$.
+ Si $x(P)$ sont les coordonn\'ees de $P$ dans le
+domaine de la carte $x$, on pourra consid\'erer la quantit\'e
+$$
+\mbox{\fbox{$
+v[f]  =  v^i {\partial \over \partial x^i} f(x)
+$}}
+$$ qui nous
+d\'ecrit la variation - au premier ordre -- de $f$ dans ce
+que nous avons envie d'appeler la direction $v$. La
+quantit\'e pr\'ec\'edente $v[f]$ est elle-m\^eme une fonction, qui,
+lorsqu'elle est \'evalu\'ee au point $P$ nous fournit un
+nombre $v[f](P)$.
+
+\par
+\smallskip
+\subsection{  Vecteurs, espace tangent et champs de vecteurs}
+\par
+Dans le cas des vari\'et\'es, il est clair que les vecteurs
+ne peuvent pas \^etre d\'efinis comme des bi-points (ou des
+classes d'\'equivalences de bi-points), par contre, rien ne
+nous emp\^eche d'utiliser leur propri\'et\'e de
+machine-\`a-fabriquer-des-d\'eriv\'ees-partielles pour les
+d\'efinir de fa\c con g\'en\'erale. Dans le domaine d'une carte
+$x$, un champ de vecteurs sera donc d\'efini comme un op\'erateur de
+diff\'erentiation d'ordre $1$ \`a
+savoir  $$v = v^i {\partial \over \partial x^i}$$ Cet op\'erateur
+agit sur les fonctions $f\in C^\infty(M)$ pour donner
+d'autres fonctions (puisque $v[f] \in C^\infty(M)$).
+Le champ de vecteurs $v$ ainsi
+d\'efini est ind\'ependant de la carte choisie.
+
+
+ L'op\'erateur
+diff\'erentiel d'ordre $1$ not\'e $v=v^i \partial / \partial
+x^i$ est un champ de vecteurs car les $v^i$ sont des
+fonctions sur $M$ alors que $v(P)=v^i(P) \partial /
+\partial x^i$ est un vecteur au point $P$, de composantes
+$v^i(P)$.
+
+
+En g\'eom\'etrie \'el\'ementaire des courbes, la
+tangente en $P$ \`a une courbe (diff\'erentiable) est d\'efinie
+comme limite des s\'ecantes $PQ$ lorsque $Q$ tends vers $P$;
+cela signifie que les vecteurs $\overrightarrow{ PQ}$
+tendent vers un vecteur tangent \`a la courbe. En g\'eom\'etrie
+des vari\'et\'es diff\'erentiables, on pourrait faire de m\^eme,
+\`a condition de plonger notre vari\'et\'e (par exemple la
+sph\`ere usuelle $S^2$) dans un espace plus grand (par
+exemple $\RR^3$) et voir ainsi, un vecteur de $S^2$ comme
+un vecteur tangent \`a la sph\`ere (et donc ``sortant'' de
+celle-ci); mais une telle contrainte serait pr\'ecis\'ement
+contraire \`a l'id\'ee m\^eme du calcul intrins\`eque sur les
+vari\'et\'es, calcul qui se veut, justement, ind\'ependant de
+l'existence de plongements possibles. La d\'efinition
+adopt\'ee pr\'ec\'edemment est bien ind\'ependante de la
+pr\'esence d'un espace affine ambiant, mais il est
+n\'eanmoins commode, pour l'intuition, de visualiser nos
+vecteurs de fa\c con \'el\'ementaire et d'adopter une
+terminologie qui nous rappelle des situations bien
+connues. Pour ces raisons, un vecteur de la vari\'et\'e $M$
+en un point $P$ est souvent appel\'e {\sl vecteur tangent \/}\index{vecteur 
+tangent} en
+$P$, l'ensemble de ces vecteurs se note $T(M,P)$ ou
+encore $T_P M$ et est d\'esign\'e sous le nom de {\sl  espace
+tangent \/}\index{espace tangent} \`a $M$ en $P$~; on a donc un espace tangent en
+chaque point de la vari\'et\'e. L'ensemble des vecteurs eux-m\^emes 
+(tous les vecteurs), se note $T(M)$ ou simplement $TM$
+et est appel\'e l'{\sl espace tangent} \`a $M$ ou encore, pour une
+raison qu'on expliquera ult\'erieurement le {\sl fibr\'e tangent}\index{fibr\'e 
+tangent}
+\`a M (``{\it tangent bundle\/}''). Un \'el\'ement de $TM$ est donc la donn\'ee 
+$(P,u)$ d'un
+point de $M$ et d'un vecteur en ce point. Attention, il
+faut bien distinguer les notions de vecteur en un point et
+de champs de vecteurs (mais nous allons tr\`es souvent
+oublier cette distinction). L'ensemble des champs de vecteurs se note
+$\Gamma TM$. Notons que cet espace est un espace
+vectoriel (de dimension infinie), et $T(M,P)$ est
+un espace vectoriel de dimension $n$ (supposant que $M$ est
+elle-m\^eme de dimension $n$), alors que $TM$ n'est pas un
+espace vectoriel du tout (on ne peut pas additionner un
+vecteur en $P$ avec un vecteur en $Q$!). On verra que $TM$, que l'on peut 
+consid\'erer comme une
+collection d'espaces vectoriels param\`etris\'es par les
+points de $M$, poss\`ede la structure d'espace fibr\'e
+vectoriel (cette structure sera d\'efinie et \'etudi\'ee plus
+loin). Notons que l'espace $TM$ est lui-m\^eme une
+vari\'et\'e diff\'erentiable. Supposons que $M$ soit une vari\'et\'e
+de dimension $n$, un point $P$ de $M$ est en effet caract\'eris\'e
+(dans une certaine carte) par $n$ composantes $x^\mu$ et
+ un ``point'' (c'est \`a dire un \'el\'ement) de $TM$
+consistera en la donn\'ee d'un couple $(P,u)\in M \times
+T(M,P)$ c'est \`a dire $2n$ nombres ($n$ nombres $x^\mu$ et
+$n$ composantes du vecteur $u$ dans une base
+choisie de l'espace vectoriel $T(M,P)$. Ainsi $TM$ est
+une vari\'et\'e de dimension $2n$. Intuitivement, on peut se
+repr\'esenter par exemple $TS^2$ comme la donn\'ee d'une
+infinit\'e de plans tangents coll\'es \`a la sph\`ere; il s'agit,
+dans ce cas d'une vari\'et\'e de dimension $4$.\par
+\smallskip
+\subsection{  R\`egle de Leibniz}
+\par
+Soit $v$ un champ de vecteurs. Il pourra donc s'\'ecrire
+localement (c'est \`a dire dans une certaine carte)
+$v=v^\mu \partial / \partial x^\mu$. Si $f$ et $g$
+d\'esignent deux fonctions sur $M$, il est clair que $$
+{ \partial \over \partial x^\mu}
+[f g] = {\partial \over \partial x^\mu} [f] g + f {\partial \over \partial 
+x^\mu}
+[g]$$ Par cons\'equent on aura plus g\'en\'eralement: $$
+\mbox{\fbox{$
+ v[f g] = v[f] g + f v[g]
+ $}}
+$$
+On retrouve la r\`egle usuelle de d\'erivation d'un produit.
+De fa\c con g\'en\'erale, si ${\cal A}$ est une alg\`ebre
+associative, on dit que $v$ est une d\'erivation, lorsque $v$
+est  une application lin\'eaire (un ``op\'erateur'') de $A$
+dans $A$ telle que $v[f g] = v[f] g + f v[g]$ avec $f,g \in
+{\cal A}$. Les champs de vecteurs sont des
+d\'erivations de l'alg\`ebre associative (et commutative)
+$C^\infty(M)$. On pourrait d'ailleurs les
+d\'efinir directement par cette propri\'et\'e. En d'autres
+termes, $\Gamma T M  = Der \, C^\infty(M)$. \par
+\smallskip
+\subsection{ Crochet de deux champs de vecteurs}
+\par
+Notons que le produit de deux vecteurs n'est pas un
+vecteur (produit d\'efini par composition de l'action des
+vecteurs sur les fonctions) mais un op\'erateur
+diff\'erentiel d'ordre 2. En effet, soient $v=v^\mu
+\partial / \partial x^\mu$ et $w=w^\nu
+\partial / \partial x^\nu$ deux champs de vecteurs
+(attention les $v^\mu$ est les $w^\nu$ n'ont aucune
+raison d'\^etre constants dans la carte choisie). Alors,
+$(v w)[f]  =  v[w[f]] = v[w^\nu
+\partial / \partial x^\nu [f]] = v^\mu
+\partial / \partial x^\mu [w^\nu \partial / \partial x^\nu
+[f]] = v^\mu \partial / \partial x^\mu [w^\nu]\partial / \partial x^\nu
+[f] + v^\mu w^\nu \partial^2 / \partial x^\mu \partial x^\nu [f]$
+Par contre, le commutateur (notation crochet) de deux
+champs de vecteurs, d\'efini par $$
+\mbox{\fbox{$
+[v,w] =  v w - w v
+$}} $$
+est un champ de vecteurs. Pour s'en convaincre, il suffit
+de v\'erifier que c'est bien un op\'erateur diff\'erentiel
+d'ordre un. Le petit calcul pr\'ec\'edent montre
+imm\'ediatement que les d\'eriv\'ees secondes disparaissent
+lorsqu'on calcule la diff\'erence et qu'il reste $$
+[v,w][f] = (v w)[f] - (w v)[f] = (
+v^\mu {\partial \over \partial x^\mu} [w^\nu]{\partial \over \partial
+x^\nu} -
+w^\mu {\partial \over \partial x^\mu} [v^\nu]{\partial \over \partial
+x^\nu})[f] $$
+La d\'efinition pr\'ec\'edente du crochet $[v,w] = v w - w v$ de
+deux champs de vecteurs \index{crochet de Lie} implique de fa\c con imm\'ediate les
+deux propri\'et\'es suivantes:\par
+Antisym\'etrie $$\mbox{\fbox{$[u,v]=-[v,u]$}}$$
+Identit\'e  de Jacobi
+$$\mbox{\fbox{$ [u,[v,w]] + [v,[w,u]] + [w,[u,v]] = 0 $}}$$
+Une alg\`ebre (\'evidemment non associative) o\`u les
+\'el\'ements v\'erifient ces deux identit\'es est appel\'ee une
+alg\`ebre de Lie. Notons qu'une alg\`ebre de Lie est, en
+particulier, un espace vectoriel. Nous pouvons donc
+conclure ce paragraphe en disant ``l'ensemble des champs
+de vecteurs est une alg\`ebre de Lie (de dimension
+infinie)''.
+\smallskip
+\subsection{ Rep\`ere naturel associ\'e \`a une carte}
+\par
+On appelle rep\`ere sur $U\subset M$, la donn\'ee, en chaque
+point $P\in U$, d'une base de l'espace vectoriel tangent
+en $P$. Un rep\`ere est en
+g\'en\'eral ``local'', c'est \`a dire qu'on n'essaye pas, ou
+qu'on ne peut pas choisir $U=M$. Si $x^\mu (P) $ d\'esignent les composantes 
+de $P$
+dans une carte locale $(U,x)$, on a d\'ej\`a vu que des vecteurs
+quelconques en $P$ ou dans un voisinage de $P$ peuvent se
+d\'ecomposer sur les vecteurs $\partial / \partial x^\mu$.
+En d'autres termes, l'ensemble des $$\mbox{\fbox{$ e_\mu  = 
+\{\partial / \partial x^\mu \}$}}$$ fournit un rep\`ere. Ce
+rep\`ere est appel\'e {\sl rep\`ere naturel associ\'e \`a la carte}\index{rep\`ere 
+naturel}
+$x$ ou aux coordonn\'ees $x^\mu$ (``{\it coordinate frame\/}''). Par suite 
+de la
+propri\'et\'e de commutativit\'e des d\'eriv\'ees partielles,
+ il est \'evident que
+$\partial^2 /\partial x^\mu \partial x^\nu - \partial^2 /\partial
+x^\nu \partial x^\mu = 0$. En d'autres termes, si $\{e_\mu\}$
+d\'esigne le rep\`ere naturel associ\'e \`a la carte $x^\mu$, on
+a $$ [e_\mu, e_\nu] = 0$$
+Une telle propri\'et\'e
+caract\'erise, en fait, les rep\`eres naturels.
+\smallskip
+\subsection{ Changement de carte}
+\par
+Soit $P\in M \rightarrow y(P) \in \RR^n $ un nouveau syst\`eme
+de coordonn\'ees. Si $x$ d\'esigne l'ancien syst\`eme, on notera
+\'egalement $y: \RR^n \mapsto \RR^n$ les fonctions de
+changement de carte, on \'ecrira donc $y(P) = y(x(P))$. Le
+rep\`ere naturel associ\'e aux coordonn\'ees $x$ est $e_\mu
+ =  \{\partial / \partial x^\mu \}$, celui associ\'e aux
+coordonn\'ees $y$ est $e^\prime_\mu
+ =  \{\partial / \partial y^\mu \}$. Nous savons
+(depuis le secondaire) comment calculer la d\'eriv\'ee d'une
+fonction compos\'ee, et donc $$
+\mbox{\fbox{$
+{\partial \over \partial x^\mu}  = 
+{ \partial y^\nu \over \partial x^\mu  } 
+{ \partial \over \partial y^\nu }  $}} $$
+ce qui, avec d'autres notations, s'\'ecrit $$
+e_\mu =  {\partial y^\nu \over \partial x^\mu }
+e^\prime_\nu$$
+{\it Notation} 
+
+Il est souvent commode de noter tout simplement
+$\partial_\mu$ les vecteurs du rep\`ere naturel $\{e_\mu =
+\partial / \partial x^\mu \}$ associ\'es \`a la carte
+$x^\mu$. La d\'ecomposition d'un vecteur quelconque $v$
+suivant ce rep\`ere s'\'ecrit $v = v^\mu \partial_\mu $,
+o\`u les $v^\mu$ sont des nombres r\'eels.
+\smallskip
+\subsection{ Rep\`eres mobiles (rep\`eres quelconques)}
+\par
+Dans un espace vectoriel, nous savons que les changements
+de base sont d\'ecrits par des matrices ``de passage'' qui
+ne sont autres que des matrices inversibles
+$\Lambda^\mu_\alpha$ quelconques. En g\'eom\'etrie
+diff\'erentielle, nous pouvons bien entendu faire de
+m\^eme, \`a ceci pr\`es que la matrice
+$\Lambda^\mu_\alpha$ peut maintenant d\'ependre du point
+de la vari\'et\'e. En d'autres termes, on a des matrices
+de passage dont les \'el\'ements sont des fonctions sur
+la vari\'et\'e. Supposons que nous nous trouvons
+dans le domaine d'une carte et que $\{\partial_\mu\}$
+d\'esigne le rep\`ere naturel associ\'e. Ce
+rep\`ere, au point $P$, constitue une base de
+l'espace tangent en $P$. Mais rien ne nous emp\^eche
+de choisir une autre base au m\^eme point. Si
+$\Lambda^\mu_\alpha$ d\'esigne une matrice inversible en
+$P$, alors la famille de vecteurs $\{e_\alpha  = 
+\Lambda^\mu_\alpha \partial_\mu \}$ est une autre base
+de l'espace tangent $T_pM$, c'est \`a dire un rep\`ere au
+point $P$. Un tel rep\`ere est couramment d\'esign\'e
+sous le nom de {\sl rep\`ere mobile\/}\index{rep\`ere mobile}. Notons qu'il n'y a
+aucune raison, {\it a priori}, pour que ce rep\`ere
+co\"incide avec le rep\`ere naturellement associ\'e \`a une
+autre carte que celle des $x^\mu$; pour que cela soit le
+cas, il faudrait qu'on puisse trouver une solution locale
+$y^\alpha$ au   syst\`eme d'\'equations $\partial y^\alpha / \partial
+x^\mu = ({\Lambda^{-1}})^\alpha_\mu)$ o\`u $\Lambda^{-1}$
+d\'esigne la matrice inverse de la matrice $\Lambda$. Le th\'eor\`eme
+garantissant l'existence de solutions pour une \'equation
+diff\'erentielle aux d\'eriv\'ees partielles nous assure
+seulement l'existence d'une telle solution
+$y^\mu(x^\nu))$ le long d'une ligne, mais pas dans un
+voisinage ouvert de la vari\'et\'e.
+\par
+Soit $\{e_\alpha\}$ un rep\`ere mobile. Nous avons d\'ej\`a vu
+que le crochet (commutateur) de deux champs de vecteurs
+est un champ de vecteurs. En particulier
+$[e_\alpha,e_\beta]$ est un champ de vecteurs qui, \'evalu\'e au
+point $P$, appartient \`a l'espace tangent en ce point
+et peut donc se d\'ecomposer sur une base de l'espace tangent
+en $P$. On \'ecrira donc 
+$$[e_\alpha,e_\beta](P) = f_{\alpha \beta}^\gamma (P)
+e_\gamma (P)$$ ou, plus simplement
+$$
+\mbox{\fbox{$
+[e_\alpha,e_\beta] = f_{\alpha \beta}^\gamma e_\gamma 
+$}}
+$$
+o\`u les $f_{\alpha \beta}^\gamma$ sont des fonctions sur
+la vari\'et\'e qu'on appelle {\sl fonctions de structure du
+rep\`ere mobile \/}\index{fonctions de structure} (on ne doit pas les appeler {\sl constantes
+de structure}\index{constantes de structure} car, pr\'ecis\'ement, elles ne sont pas
+constantes en g\'en\'eral!).
+
+Par ailleurs, on posera souvent $\partial_\alpha  =  e_\alpha$ m\^eme s'il
+n'existe pas de syst\`eme de coordonn\'ees $\{y^\alpha\}$ tel que 
+$\partial_\alpha$ soit
+le rep\`ere naturel associ\'e. Le lecteur doit donc se m\'efier de cet abus 
+d'\'ecriture pourtant commode: il est des cas o\`u
+$\partial_\alpha$ et $\partial_\beta$ ne commutent pas!
+\par
+
+
+\bigskip
+\section [Tenseurs et formes ext\'erieures]{Tenseurs et formes ext\'erieures 
+sur les espaces vectoriels}
+\smallskip
+Avant de passer au cas des vari\'et\'es, il convient d'effectuer quelques
+rappels d'alg\`ebre lin\'eaire puisque le passage du cas vectoriel
+au cas des vari\'et\'es s'effectue essentiellement en rempla\c cant
+un espace vectoriel unique par une famille d'espaces
+vectoriels ``de m\^eme nature'', param\`etris\'ee par les points de la
+vari\'et\'e. 
+\smallskip
+\subsection{ Alg\`ebre tensorielle d'un espace vectoriel}
+\par
+Soit $E$ un espace vectoriel de dimension finie $n$ sur un corps $K$. On
+note $E^*$ son dual, c'est \`a dire l'ensemble des formes $K$-lin\'eaires
+sur $E$ (applications lin\'eaires sur $E$ \`a valeurs dans le
+corps de base, qu'on suppose commutatif). En terme de composantes, soit 
+$\{e_\mu\}$ une base de
+$E$, et $\{e^\mu\}$ la base duale correspondante de $E^*$, on a
+ $$e^\mu [e_\nu] = \delta^\mu_\nu$$ o\`u $\delta^\mu_\nu$
+d\'esigne le symbole de Kronecker ($1$ si $\mu = \nu$ et $0$ si $\mu
+\neq \nu$).
+
+L'espace vectoriel $E$ de r\'ef\'erence \'etant choisi, on \'ecrira (comme le font 
+toujours 
+les physiciens) les vecteurs de base avec des ``indices en bas'' et les 
+composantes avec des ``indices en haut''. Bien entendu, la convention est 
+oppos\'ee pour ce qui concerne l'espace vectoriel dual. Par ailleurs nous 
+adoptons \'egalement la ``convention d'Einstein'', c'est \`a dire que nous 
+effectuons toujours une sommation (le signe somme \'etant sous-entendu) sur 
+les indices r\'ep\'et\'es, lorsque l'un des indices est en position haute et 
+l'autre en position basse. Nous avons d\'ej\`a utilis\'e cette convention dans 
+les sous-sections pr\'ec\'edentes. Cette convention all\`ege consid\'erablement 
+l'\'ecriture des formules.
+
+Nous n'adopterons pas, dans cet ouvrage, la notation dyadique ch\`ere \`a 
+Dirac utilisant des {\sl bra}\index{bra et ket} et des {\sl ket} car elle est peu usuelle en 
+g\'eom\'etrie mais il est peut-\^etre utile d'y consacrer quelques lignes. Avec 
+cette notation, les \'el\'ements d'un certain espace vectoriel $E$ choisi une 
+fois pour toutes sont not\'es avec des ``kets'', par exemple $\vert v 
+\rangle$ et les \'el\'ements du dual avec des ``bras'', par exemple $\langle 
+\sigma \vert$. L'\'evaluation d'une forme sur un vecteur se note ainsi 
+naturellement sous forme de ``bracket'' $\langle \sigma \vert v \rangle$.
+La relation pr\'ec\'edente caract\'erisant la dualit\'e entre une base de $E$ et 
+une base de 
+$E^*$ s'\'ecrira
+donc $$\langle e^\mu \vert e_\nu \rangle = \delta^\mu_\nu$$
+On \'evalue ici une forme sur un vecteur et on obtient donc un nombre.
+
+Par contre, la quantit\'e $\vert e_\nu
+\rangle \langle  e^\mu  \vert $  d\'esigne une application lin\'eaire de $E$ 
+dans $E$ puisque
+$\vert e_\nu \rangle \langle  e^\mu  \vert e_\rho\rangle = \vert 
+e_\nu\rangle
+\delta^\mu_\rho = \vert e_\rho\rangle$. Ainsi, en prenant $\vert v 
+\rangle = v^\rho \vert e_\rho \rangle$, on obtient $\vert e_\nu \rangle 
+\langle  
+e^\mu \vert v \rangle = v^\mu \vert e_\nu \rangle$. Pour les m\^emes 
+raisons, 
+l'\'ecriture $\vert v \rangle \langle  \sigma \vert $ d\'esigne un op\'erateur 
+(alors que  $\langle  \sigma \vert v \rangle$ d\'esigne un nombre).
+
+ L'identification des vecteurs
+de $E$ avec des applications de $K$ dans $E$ (\`a $v \in E $ on associe 
+l'application
+$\lambda \in K \rightarrow \lambda v \in E$)  permet de bien comprendre 
+cette dualit\'e
+et l'int\'er\^et de la notation dyadique.
+
+Si on se souvient ``qui est qui'', et si on fait attention \`a l'ordre des 
+termes, on peut simplifier les notations \`a 
+l'extr\^eme et ne noter ni les produits tensoriels, ni les symboles 
+$\langle {\,} \vert$ ou $\vert {\,} \rangle$.
+On \'ecrira ainsi parfois de fa\c con un peu
+provocante les \'el\'ements de $E$ sous la forme $$v= e_\mu v^\mu$$ (avec 
+$v^\mu \in \RR$)
+et les composantes {\it \`a droite} des vecteurs.  On \'ecrira parfois de m\^eme
+les \'el\'ements du dual $E^*$ sous la forme $$\sigma = \sigma_\mu
+e^\mu$$ (avec  $\sigma_\mu \in \RR$) et les composantes {\it \`a
+gauche} des formes lin\'eaires. Si on ne note explicitement ni les produits 
+tensoriels ni les \'evaluations des formes sur les vecteurs, on voit que
+$\sigma v = \sigma_\mu (e^\mu e_\nu) v^\nu =
+\sigma_\mu \delta^\mu_\nu v^\nu = \sigma_\mu v^\mu$ est un nombre. Par 
+contre $v \sigma$
+est un op\'erateur (on pourrait l'\'ecrire $v \otimes \sigma \in E \otimes 
+E^*$), plus
+pr\'ecis\'ement $v \sigma = e_\mu (v^\mu \sigma_\nu) e^\nu$.
+
+ L'ordre adopt\'e ci-dessus
+(le fait d'\'ecrire les composantes ---qui sont pourtant des nombres!--- \`a 
+droite des vecteurs, etc) est particuli\`erement
+adapt\'e aux g\'en\'eralisations non commutatives de la g\'eom\'etrie diff\'erentielle
+-- cela vient du fait qu'en Occident, nous \'ecrivons de gauche \`a droite!-- 
+mais
+rappelons nous que, bien entendu, en g\'eom\'etrie ordinaire ``commutative'' 
+(celle
+qui nous int\'eresse ici), on peut toujours \'ecrire $v= e_\mu v^\mu = v^\mu 
+e_\mu$. Un
+dernier mot de mise en garde: lorsqu'on veut insister sur le fait que
+le vecteur  $e_\mu$ d\'esigne une d\'erivation $\partial_\mu$,
+il est pr\'ef\'erable -- pour ne pas se tromper! -- d'\'ecrire les composantes du
+c\^ot\'e gauche. Il en va de m\^eme en g\'eom\'etrie non commutative o\`u champs
+de vecteurs et d\'erivations d'alg\`ebre sont de toute fa\c con des concepts
+diff\'erents puisque les premiers forment un module sur l'alg\`ebre 
+associative des
+``fonctions'' alors que les d\'erivations ne forment un module que sur le 
+centre de
+cette alg\`ebre. Aucune ambigu\"it\'e n'est donc possible dans ce cadre plus 
+g\'en\'eral.
+
+\par
+
+On note $\bigotimes E$ l'alg\`ebre tensorielle sur $E$ c'est \`a dire
+la somme directe $\oplus_{p=0}^{\infty} E^{\otimes p}$ o\`u $E^{\otimes
+p}$ d\'esigne la puissance tensorielle d'ordre $p$ de $E$, c'est \`a dire
+encore l'ensemble des applications multilin\'eaires d'ordre $p$ sur
+$E^*$. Soit $T\in E^{\otimes p}$ alors on peut \'ecrire $$
+T = T^{\mu_1 \mu_2 \ldots \mu_p} \; e_{\mu_1}\otimes e_{\mu_2}\otimes \ldots
+\otimes e_{\mu_p}
+$$
+Les \'el\'ements de $\bigotimes E$ sont encore appel\'es tenseurs
+contravariants (d'ordre $p$ s'ils appartiennent \`a $E^{\otimes p}$).
+Bien entendu, cet ensemble est non
+seulement un espace vectoriel (de dimension infinie, les $E^{\otimes
+p}$ \'etant de dimension $(dim \, E)^p$ mais encore une alg\`ebre pour le
+produit tensoriel. On peut ne pas \'ecrire le symbole $\otimes$ 
+explicitement dans
+l'expression pr\'ec\'edente du tenseur $T$, car$\ldots$ ``what else could it 
+be?'', auquel cas,
+ $$
+T = T^{\mu_1 \mu_2 \ldots \mu_p} \; e_{\mu_1}e_{\mu_2}\ldots e_{\mu_p}
+$$
+De la m\^eme fa\c con, on note  $\bigotimes E^*$ l'{\sl alg\`ebre
+tensorielle \/}\index{alg\`ebre tensorielle} sur $E^*$ c'est \`a dire la somme directe
+$\oplus_{p=0}^{\infty} {E^*}^{\otimes p}$ o\`u ${E^*}^{\otimes p}$
+d\'esigne la puissance tensorielle d'ordre $p$ de ${E^*}$, c'est \`a
+dire encore l'ensemble des applications multilin\'eaires d'ordre $p$
+sur $E$. Soit $T\in {E^*}^{\otimes p}$ alors on peut \'ecrire $$ T =
+T_{\mu_1 \mu_2 \ldots \mu_p} e^{\mu_1}e^{\mu_2}\ldots e^{\mu_p} $$
+Les \'el\'ements de $\bigotimes E^*$ sont encore appel\'es tenseurs covariants 
+(d'ordre $p$ s'ils appartiennent \`a ${E^*}^{\otimes p}$).\par
+
+Bien entendu, nous pourrons consid\'erer des tenseurs $p$-fois
+contravariants et $q$-fois covariants (\'el\'ements $T$ de ${E}^{\otimes
+p} \otimes {E^*}^{\otimes q})$ et pour rester coh\'erents avec nos
+notations, nous \'ecrirons les produits tensoriels des vecteurs de $E$ \`a
+gauche de ceux de $E^*$, c'est \`a dire $$
+T = T^{\mu_1 \mu_2 \ldots \mu_p}_{\nu_1 \nu_2 \ldots \nu_q}
+\, e_{\mu_1}e_{\mu_2}\ldots e_{\mu_p} \, e^{\nu_1}e^{\nu_2}\ldots
+e^{\nu_q}$$ ou m\^eme encore $$
+T = e_{\mu_1}e_{\mu_2}\ldots e_{\mu_p}\,  T^{\mu_1 \mu_2 \ldots 
+\mu_p}_{\nu_1
+\nu_2 \ldots \nu_q}\,  e^{\nu_1}e^{\nu_2}\ldots e^{\nu_q}$$
+On pose ${E^*}^{\otimes 0} = {E}^{\otimes 0} = \RR$. 
+\smallskip
+\subsection{ Alg\`ebre ext\'erieure d'un espace vectoriel. Produit ext\'erieur}
+\par
+On notera $\Lambda^k(E^*)$ l'espace vectoriel des formes $k$-lin\'eaires
+altern\'ees sur $E$. Rappelons que $
+T \in {E^*}^{\otimes k}$ est altern\'ee lorsque
+$T(v_1,\ldots,v_i\ldots,v_j,\ldots, v_k) = 0$ d\`es que $v_i = v_j, i\neq j$.
+Il est \'equivalent de dire (si le corps de base n'est pas de
+caract\'eristique $2$) que $T$ est antisym\'etrique, c'est \`a dire que 
+$T(v_1,\ldots,v_i\ldots,v_j,\ldots, v_k)  = -
+T(v_1,\ldots,v_j\ldots,v_i,\ldots, v_k).$
+On dit aussi que $T$ est une {\sl forme ext\'erieure}\index{forme ext\'erieure} d'ordre $k$ et que 
+$\Lambda(E^*)$ est l'alg\`ebre ext\'erieure construite sur $E^*$.
+\begin{description}
+	\item[L'antisym\'etriseur ${\bf Alt}$]  
+
+	Le groupe sym\'etrique ${\cal S}_k$ des substitutions sur $k$ \'el\'ements op\`ere
+de fa\c con \'evidente sur les $k$-uplets de vecteurs.
+Soit $s \in {\cal S}_k$
+$$
+s . (v_1,v_2,\ldots,v_k)  =  (v_{s(1)},v_{s(2)},\ldots,v_{s(k)})$$
+Gr\^ace \`a cette action, on peut d\'efinir un op\'erateur $Alt$ qui projette
+les tenseurs covariants d'ordre $k$ sur les formes $k$-lin\'eaires
+antisym\'etriques $$
+\mbox{\fbox{$
+Alt \, T  =  {1 \over k!} \sum_{s\in S_k} \epsilon_s Tos
+$}}
+$$
+o\`u $\epsilon$ d\'esigne la parit\'e de la substitution $s$.
+On peut v\'erifier les propri\'et\'es suivantes du projecteur $Alt$. Tout
+d'abord, c'est effectivement un projecteur de ${E^*}^{\otimes p}$ sur
+ $\Lambda^p(E^*)$, par ailleurs, si $\omega, \eta$ et
+$\theta$ d\'esignent trois tenseurs de $\bigotimes E$,
+alors $Alt(Alt(\omega \otimes \eta)\otimes \theta) = Alt(\omega \otimes
+Alt(\eta \otimes \theta)$ et on peut donc \'ecrire cette quantit\'e sous
+la forme $Alt(\omega \otimes \eta \otimes \theta).$ La pr\'esence du $k!$
+dans la d\'efinition de $Alt$ est indispensable pour que la propri\'et\'e
+pr\'ec\'edente d'associativit\'e soit v\'erifi\'ee.\par
+
+
+	\item[Le  produit ext\'erieur $\land$]
+
+Soient $\omega \in \Lambda^k(E^*)$ et $\eta \in \Lambda^p(E^*)$. On
+d\'efinit {\sl Le  produit ext\'erieur \/}\index{produit ext\'erieur} $\land$,
+ $$
+ \mbox{\fbox{$
+\omega \land \eta  =  {(k+p)! \over k! p!}\, Alt(\omega \otimes
+\eta) \; \in \;  \Lambda^{k+p}(E^*)
+$}}
+$$
+
+Propri\'et\'es:
+
+$\land$ est associatif et distributif \`a droite et \`a gauche sur $+$
+
+$a \omega \land \eta = \omega \land a \eta = a(\omega \land \eta)$
+avec $a \in \RR$
+
+$\omega \land \eta = (-1)^{(pk)} \eta \land \omega$ En particulier,
+si $\omega$ est impaire, $\omega \land \omega = 0$
+
+Ces propri\'et\'es font de $\Lambda(E^*) = \bigoplus_{k=0}^n \Lambda^k(E^*)$ 
+une alg\`ebre
+super-commutative (une alg\`ebre commutative $\ZZ_2$-gradu\'ee).
+
+De plus, si $\omega \in \Lambda^k(E^*)$, $\eta \in \Lambda^p(E^*)$ et
+$\theta \in \Lambda^q(E^*)$, alors $$
+\omega \land \eta \land \theta = {(k+p+q)! \over k! p! q!}
+Alt(\omega \otimes \eta \otimes \theta)$$
+
+La pr\'esence des diverses factorielles dans les expressions ci-dessus,
+aussi bien dans la d\'efinition de $Alt$ que dans celle du produit
+ext\'erieur, dispara\^it dans bien des cas; par exemple, le lecteur
+pourra se convaincre que si $\{\theta^\mu\}$ d\'esigne une base de
+$1-formes$, les d\'efinitions pr\'ec\'edentes conduisent aux expressions
+suivantes:$$ 
+\theta^1 \land \theta^2 = \theta^1 \otimes \theta^2 - \theta^2
+\otimes \theta^1$$ et
+\begin{eqnarray*}
+\theta^1 \land \theta^2 \land \theta^3 & = &
+\theta^1 \otimes \theta^2 \otimes \theta^3 +
+\theta^2 \otimes \theta^3 \otimes \theta^1 +
+\theta^3 \otimes \theta^1 \otimes \theta^2 \\
+{} & {} &  -
+\theta^2 \otimes \theta^1 \otimes \theta^3 -
+\theta^1 \otimes \theta^3 \otimes \theta^2 -
+\theta^3 \otimes \theta^2 \otimes \theta^1  
+\end{eqnarray*}
+
+Il faut signaler ici qu'il existe une autre d\'efinition du produit
+ext\'erieur o\`u les membres de droite des expressions pr\'ec\'edentes
+sont respectivement multipli\'es par $1/2!$ et $1/3!$ La
+d\'efinition adopt\'ee ici est telle que si $\{e_\mu\}$ d\'esigne une base
+de l'espace vectoriel consid\'er\'e et $\{\theta^\mu\}$ la base duale
+correspondante, nous avons $$
+\theta^{1}\land \theta^{2}\land \ldots \land
+\theta^{n} (e_1,e_2,\ldots,e_n) = 1$$
+
+	\item[D\'ependance et ind\'ependance lin\'eaire des formes ext\'erieures] 
+
+	D\'esignons par  $\{\theta^\mu\}_{\mu \in \{1,2\ldots n\}}$ une base de 
+${E^*}$.
+Consid\'erons un mon\^ome tel que $\theta^{\mu_1} \land \theta^{\mu_2}
+\land \ldots \land \theta^{\mu_k}$. Par suite de l'antisym\'etrie du
+produit ext\'erieur, il est clair qu'une telle expression est nulle d\`es
+qu'un vecteur de base est r\'ep\'et\'e deux fois (c'est une autre fa\c con de
+dire qu'un tenseur compl\`etement antisym\'etrique est nul d\`es que deux
+indices sont r\'ep\'et\'es). Par ailleurs, deux mon\^omes de ce type qui ne
+diff\`erent que par l'ordre des termes sont soit \'egaux, soit oppos\'es.
+On peut donc supposer que les indices sont ordonn\'es de la fa\c con
+suivante: $1 \leq \mu_1 < \mu_2 < \ldots <\mu_k \leq n$. Enfin, il
+est facile de voir que toute forme ext\'erieure d'ordre $k$, c'est \`a
+dire tout \'el\'ement de $\Lambda^k(E^*)$ peut se d\'ecomposer sur des
+mon\^omes de ce type. La dimension de l'espace vectoriel
+$\Lambda^k(E^*)$ est donc $({}^n_k)$. Bien entendu,
+lorsque $k>n$, toute forme ext\'erieure est nulle (deux indices sont
+alors automatiquement r\'ep\'et\'es!). La dimension de l'alg\`ebre ext\'erieure
+est donc $\Sigma_{k=0}^n {}^n_k= 2^n$.
+Pour conclure ce paragraphe, citons sans d\'emonstration
+(mais elle est facile) le petit r\'esultat bien utile suivant: Les formes
+lin\'eaires $\omega^1, \omega^2, \ldots, \omega^p$ sont ind\'ependantes si
+et seulement si leur produit ext\'erieur $\omega^1 \land \omega^2  \land 
+\ldots  \land  \omega^p$ est non nul.\par
+
+	\item[Ecriture des formes ext\'erieures]
+
+	Une forme ext\'erieure $\omega$ d'ordre $k$ peut s'\'ecrire de trois
+fa\c cons possibles. Tout d'abord, on peut la consid\'erer comme un
+tenseur $k$ fois covariant, et , \`a ce titre, on peut la d\'ecomposer
+(existence et unicit\'e) sur la base des tenseurs d'ordre $k$. On peut
+donc \'ecrire $$
+\mbox{\fbox{$
+\omega = \omega_{\mu_1\mu_2\dots\mu_k}
+\theta^{\mu_1} \otimes \theta^{\mu_1} \otimes \ldots \otimes
+\theta^{\mu_k}
+$}}
+$$
+On peut aussi la d\'ecomposer sur la base des formes ext\'erieures 
+$\theta^{\mu_1} \land \theta^{\mu_2}
+\land \ldots \land \theta^{\mu_k}$, \`a condition d'ordonner les
+indices (sinon, la famille pr\'ec\'edente est g\'en\'eratrice mais n'est pas
+libre et donc n'est pas une base!). 
+\begin{eqnarray*}
+\omega & = & \sum_{\mu_1 < \mu_2 < \ldots <\mu_k}
+\omega_{\mu_1\mu_2\dots\mu_k}
+\theta^{\mu_1} \land \theta^{\mu_2} \land \ldots \land
+\theta^{\mu_k}\\
+{} & = & \omega_{| \mu_1\mu_2\dots\mu_k |}
+\theta^{\mu_1} \land \theta^{\mu_2} \land \ldots \land
+\theta^{\mu_k}
+\end{eqnarray*}
+La deuxi\`eme \'egalit\'e utilise une notation $|\ldots|$ qui
+signifie que non seulement on utilise la convention d'Einstein (sommation 
+sur les
+indices r\'ep\'et\'es) mais qu'on d\'ecide d'ordonner les indices.
+
+La troisi\`eme \'ecriture --- de loin, la plus utilis\'ee --- est
+celle o\`u on d\'ecompose la forme $\omega$ (toujours la m\^eme) sur la
+famille g\'en\'eratrice des formes ext\'erieures $\theta^{\mu_1} \land 
+\theta^{\mu_1}
+\land \ldots \land \theta^{\mu_k}$ mais sans ordonner les indices!
+Bien entendu, pour un ensemble d'indices donn\'es (pour un ensemble de
+vecteurs de base donn\'e), $k!$ des mon\^omes pr\'ec\'edents vont \^etre \'egaux
+(ou oppos\'es) et il faudra ``corriger'' le d\'eveloppement de $\omega$ en
+rajoutant un $1/k!$ devant l'expression. Ainsi donc, 
+$$
+\mbox{\fbox{$
+\omega = {1\over k!} \quad
+\omega_{\mu_1\mu_2\dots\mu_k}
+\quad
+\theta^{\mu_1} \land \theta^{\mu_2} \land \ldots \land
+\theta^{\mu_k}
+$}} $$
+Notons que la premi\`ere \'ecriture contient $n^k$ termes (et il y a
+unicit\'e de la d\'ecomposition), la seconde contient ${n! \over
+k! (n-k)!}$ termes (et il y a unicit\'e de la
+d\'ecomposition), la troisi\`eme contient $n^k$ termes (mais il n'y a pas
+unicit\'e de la d\'ecomposition). 
+Il est quelquefois utile, pour all\'eger les notations, d'introduire
+des multi-indices $M = ({\mu_1\mu_2\dots\mu_k})$. Alors, les deux
+ d\'ecompositions pr\'ec\'edentes s'\'ecrivent
+$$ \omega = \omega_{|M|} \, \theta^M = {\omega_M \over k!} \theta^M $$
+
+\end{description}
+
+\subsection{ Produit int\'erieur d'une forme par un vecteur}\index{produit 
+int\'erieur}
+\par
+Soit $E$ un espace vectoriel et $\Lambda(E^*)$ l'alg\`ebre ext\'erieure sur 
+son dual.
+Nous avons d\'efini pr\'ec\'edemment le produit {\em ext\'erieur}, qui est une
+loi de composition interne \`a l'alg\`ebre ext\'erieure. Au contraire,
+l'op\'eration que nous allons maintenant d\'efinir, le produit {\em
+int\'erieur} n'est pas un produit au sens usuel du terme, en effet, il
+associe, \`a la donn\'ee d'une forme ext\'erieure $\omega$ d'ordre $k$ (un
+\'el\'ement de $\Lambda^k(E^*)$) et d'un vecteur $v$ (un \'el\'ement de $E$) une
+autre forme diff\'erentielle, mais maintenant d'ordre $k-1$, c'est \`a
+dire un \'el\'ement de $\Lambda^{k-1}(E^*)$. Cette nouvelle forme est
+simplement obtenue en ``contractant'' $\omega$ et $v$, plus
+pr\'ecis\'ement, en \'ecrivant $$
+\mbox{\fbox{$
+[i_v \omega](v_1,v_2,\ldots, v_{k-1} )  = 
+\omega(v,v_1,v_2,\ldots,v_{k-1}) 
+$}}
+$$
+c'est \`a dire encore, en terme de composantes et en notant $\alpha = 
+i_v \omega $, $$\alpha_{\mu_1,\mu_2,\ldots,\mu_{k-1}} =
+v^\mu \; \omega_{\mu,\mu_1,\mu_2,\ldots,\mu_{k-1}}$$
+ Cette op\'eration est quelquefois not\'ee $v {\lfloor} \omega $ au lieu de
+$i_v \omega $.\par
+Il r\'esulte de l'antisym\'etrie des formes ext\'erieures que deux
+op\'erations $i_v$ et $i_w$ anticommutent, en particulier, le carr\'e de
+l'op\'eration $i_v$ est nul:$
+i_v i_w \omega = - i_w i_v \omega $
+et
+$i_v i_v \omega = 0$, ce qu'on \'ecrit simplement $$
+\mbox{\fbox{$
+i_v i_w = - i_w i_v  \quad
+\hbox {et} \quad
+i_v i_v = 0 $}} $$
+Le produit int\'erieur est
+une antid\'erivation de l'alg\`ebre ext\'erieure, c'est \`a dire que pour
+$\omega_1 \in \Lambda^{k_1}(E^*)$ et $\omega_2 \in \Lambda^{k_2}(E^*)$,
+nous avons un analogue $\ZZ_2$-gradu\'e de la r\`egle de Leibniz $$
+\mbox{\fbox{$
+i_v(\omega_1\land\omega_2) = 
+i_v(\omega_1)\land\omega_2 + (-1)^{k_1}\omega_1\land i_v(\omega_2)
+$}}$$
+En particulier, si $v = e_{\mu_i}$ est un vecteur de base et si
+$\omega$ est \'egal au produit ext\'erieur d'un certain nombre de
+vecteurs de la base duale, l'expression pr\'ec\'edente donne simplement:
+\begin{eqnarray*}
+i(e_{\mu_i}) \, \sigma^{\mu_1} \land \ldots
+ \land \sigma^{\mu_j} \land \dots \land \sigma^{\mu_k} & = & 
+(-1)^{j - 1} \sigma^{\mu_1}\land\ldots\land
+\widehat{\sigma^{\mu_j}}\land\ldots \sigma^{\mu_k} \quad \hbox{si}
+\quad i = j \\   {} & = & 0 \quad \hbox{si} \quad i \not \in
+\{\mu_1,\mu_2,\ldots,\mu_k\}
+\end{eqnarray*}
+ o\`u le symbole $\; \widehat{} \;$  d\'esigne l'omission du symbole au dessus duquel
+il est situ\'e.
+\smallskip
+
+\subsection{ Transformation du produit ext\'erieur et du produit int\'erieur 
+par
+endomorphismes}
+\par
+
+%\def\fsubtilde{\mathop{\oalign{f\cr\hidewidth \tilde {} \hidewidth\cr}}}
+
+%\def\fsubtilde{{\oalign{f\cr\hidewidth \tilde {} \hidewidth\cr}}}
+
+Soit $f_\sim$ un endomorphisme de l'espace vectoriel $E$ et soit
+$f^\sim $ l'endomorphisme dual (aussi appel\'e transpos\'e). Rappelons ce
+que cela signifie: $f_\sim$ est une application lin\'eaire de $E$ dans $E$ et
+$f^\sim $ est une application lin\'eaire du dual $E^*$ dans lui-m\^eme
+ d\'efinie comme suit: soient $v \in E$ et $\theta \in E^*$, alors $
+f^\sim (\theta) (v)  =  \theta (f_\sim  (v))$, c'est \`a dire encore
+$f^\sim (\theta) = \theta o f_\sim $.  On peut alors v\'erifier ais\'ement
+que
+$$
+f^\sim (\omega \land \eta) = f^\sim (\omega) \land f^\sim (\eta) 
+$$ 
+et que
+$$
+i_{f_\sim (v)}(\omega) = i_v f^\sim (\omega)
+$$
+Remarque sur les notations: celle utilisant $*$ et non ${\sim {}}$ est 
+beaucoup
+plus utilis\'ee; cela dit, le symbole $*$ est ``trop'' utilis\'e et
+peut quelquefois pr\^eter \`a confusion puisqu'il peut aussi bien d\'esigner
+la conjugaison complexe, la dualit\'e de Hodge, qu'une involution
+quelconque... Par ailleurs le ``tilde'' est sous-employ\'e (il d\'esigne
+traditionnellement l'expression matricielle de $f^\sim $), il en va de 
+m\^eme de la ``fl\`eche''.
+Dans le cadre de cet ouvrage, nous \'ecrirons indiff\'eremment
+ $f_*=f_\sim=\vr f$ et $f^*=f^\sim=\vl f$.
+Notons pour finir que la notation $f_\sim$ est en g\'en\'eral inutile  dans le 
+cas des espaces
+vectoriels puisqu'on peut \'ecrire tout simplement $f = f_\sim $, mais dans 
+le cas des
+vari\'et\'es, nous verrons que $f \neq f_\sim \neq f^\sim$!
+\smallskip
+%%%\subsection{ Alg\`ebre sym\'etrique d'un espace vectoriel. Alg\`ebre de Weyl}
+%%%\subsection{ Op\'erateurs (pseudo) diff\'erentiels}
+\bigskip
+
+
+\section{Formes diff\'erentielles}
+
+\subsection{D\'efinition}
+
+Nous avons d\'ej\`a d\'efini la notion de vecteur au point 
+$P$ d'une vari\'et\'e diff\'e\-ren\-tia\-ble 
+$M$ ainsi que la notion de champ de vecteurs. L'ensemble des vecteurs
+au point 
+$P$ se notant 
+$T_P M$, l'ensemble de tous les vecteurs (le fibr\'e tangent) se notant
+$T M$ et l'ensemble des champs de vecteurs se notant
+$\Gamma T M$, on obtient, par dualit\'e, les notions qui suivent.
+Tout d'abord l'espace vectoriel dual de 
+$T_P M$ se note
+$T_P^* M$~; ses \'el\'ements sont donc des formes ext\'erieures de
+degr\'e~1, ou plus simplement, des ``1-formes''~. L'ensemble 
+$T^* M$, baptis\'e fibr\'e cotangent, est l'ensemble de toutes les 
+1-formes, lorsque le point
+$P$ d\'ecrit 
+$M$, c'est-\`a-dire 
+$T^* M ={\cup}_{p \in M} T_P^* M$.
+%$T^* M = \build{\cup}_{p \in M}^{} T_P^* M$.  % OK for latex but not for html
+
+Une forme diff\'erentielle (en degr\'e un) est tout simplement un champ de
+formes ext\'erieures, c'est-\`a-dire une application qui \`a tout
+point 
+$P \in M$ associe une forme ext\'erieure en ce point. Nous verrons
+un peu plus loin la raison d'\^etre de cette terminologie.
+L'ensemble des formes diff\'erentielles de degr\'e $1$ peut se noter
+$\Gamma T^* M$ ou $\Omega^1M$.
+
+Toutes les constructions alg\'ebriques du paragraphe pr\'ec\'edent
+(tenseurs et formes ext\'erieures sur un espace vectoriel) sont en
+particulier valables ici puisqu'on peut choisir comme espace
+vectoriel, l'espace vectoriel tangent au point
+$P$, c'est-\`a-dire 
+$T_P M$. Les tenseurs 
+$p$ fois contravariants, 
+$q$ fois cova\-riants au point
+$P$ sont donc des \'el\'ements de 
+$(T_P M)^{\otimes p} \otimes (T_P^* M)^{\otimes q}$. Si on
+consid\`ere tous les tenseurs de ce type (c'est-\`a-dire qu'on
+effectue la r\'eunion de ces espaces lorsque 
+$P$ d\'ecrit 
+$M$) on obtient
+$(T M)^{\otimes p} \otimes (T^* M)^{\otimes q}$ et on peut bien
+entendu consid\'erer des champs de tenseurs de ce type, dont
+l'ensemble constitue
+$\Gamma 
+\Bigl(
+(T M)^{\otimes p} \otimes (T^* M)^{\otimes q}
+\Bigr)
+$.
+
+Le cas particulier des tenseurs compl\`etement antisym\'etriques est
+parti\-cu\-li\`erement int\'eres\-sant. On notera
+$\Lambda (T_P M)^* = \bigoplus_k \Lambda^k(T_P M)^*$ l'alg\`ebre ext\'erieure 
+sur le dual de l'espace vectoriel
+$T_P M$ et $\Lambda (T^* M) = \cup_{p \in M} \Lambda(T_P M)^*$.
+
+Les {\sl formes diff\'erentielles\/} \index{formes diff\'erentielles} de degr\'e 
+$q$ sont des ``sections'' de 
+$\Lambda^q (T^* M)$ c'est-\`a-dire des champs de formes ext\'erieures de
+degr\'e 
+$q$. Leur ensemble peut se noter, bien entendu, 
+$\Gamma \Lambda^q (T^* M)$. Lorsque 
+$q = 1$, on a 
+$\Lambda^1 (T^* M) = T^* M$. Pour all\'eger la notation, on d\'ecide
+de poser
+$\Omega^q (M)  =  \Gamma \Lambda^q (T^*M)$. On sait que 
+$q$ ne peut pas \^etre trop grand~; plus pr\'ecis\'ement
+$0 \le q \le n$ avec
+$n = \dim M$. Attention, ne pas confondre la dimensionalit\'e de 
+$\Lambda (T_P M)^*$ -- qui est 
+$2^n$ -- et celle de 
+%$\Omega M  =  \build{\oplus}_{q = 0}^n \Omega^q M$, 
+$\Omega M  =  {\oplus}_{q = 0}^n \Omega^q M$,
+qui est infinie. Notons que les \'el\'ements de 
+$\Omega^\circ M$ sont simplement les fonctions sur
+$M$ c'est-\`a-dire 
+$\Omega^0 M = C^\infty (M)$. Nous avons d\'ej\`a \'etudi\'e les
+propri\'et\'es du produit ext\'erieur et il n'y a rien \`a rajouter
+ici~: le produit ext\'erieur
+$\alpha \land \beta$ de deux formes diff\'erentielles 
+$\alpha$ et 
+$\beta$ est obtenu en ``globalisant'' la d\'efinition d\'ej\`a connue
+pour chaque point 
+$P$ de 
+$M$. 
+
+
+$\Omega M$, munie des op\'erations de multiplication par un
+scalaire, d'addition et de produit ext\'erieur, devient ainsi une
+alg\`ebre. Cette alg\`ebre n'est pas commutative mais elle est
+commutative gradu\'ee puisque
+$\alpha \land \beta = (- 1)^{\#\alpha \#\beta}
+\beta \land \alpha$ o\`u $\#\alpha$ d\'esigne le degr\'e de $\alpha$.
+On appelle cette alg\`ebre {\sl alg\`ebre de De Rham}\index{alg\`ebre de De 
+Rham} des formes 
+diff\'erentielles.
+
+Pour ce qui est de l'\'ecriture locale d'une forme diff\'erentielle,
+il n'y a pas grand-chose \`a rajouter non plus puisque nous savons
+d\'ej\`a d\'ecomposer une forme ext\'erieure sur une base de
+l'espace vectoriel
+$T_P^* M$. Le seul probl\`eme qui se pose est de savoir comment la
+base en question varie avec le point
+$P$.
+
+Soient
+$x^\mu (P)$ les coordonn\'ees de 
+$P$ dans une carte locale. On sait que l'ensemble des vecteurs
+$e_\mu = {\partial \over \partial x^\mu}$ fournit le rep\`ere
+naturel associ\'e \`a cette carte, c'est-\`a-dire que 
+$\{ e_\mu \}$ est une base de l'espace tangent en tout point d'un
+voisinage de
+$P$.
+
+On d\'esignera par
+$\{ d x^\mu \}$ la base duale correspondante et on \'ecrira avec des
+indices ``en haut'' 
+$\{ e^\mu  =  d x^\mu \}$. On peut, si on veut, ``visualiser'' 
+$d x^\mu$ par ``un petit accroissement'' , mais ceci pr\'esente un
+int\'er\^et purement psychologique~; en effet
+$d x^\mu$ est {\it d\'efini\/} par dualit\'e et donc par la relation
+$\langle d x^\mu,\ {\partial \over \partial x^\nu} \rangle
+= \delta_\nu^\mu$. De la m\^eme fa\c con qu'on avait un rep\`ere
+naturel
+$\left( {\partial \over \partial x^\mu} \right)$ associ\'e aux
+coordonn\'ees 
+$x^\mu$, on a donc aussi un {\sl corep\`ere naturel \/}\index{corep\`ere 
+naturel}
+$\{ d x^\mu \}$.
+
+Dans le cas de l'espace tangent, nous avons d\'efini la notion
+de rep\`ere mobile
+$\{ e_\alpha \}$ (qui \'etait issu de
+${\partial \over \partial x^\mu}$ par changement de base
+arbitraire), nous aurons donc aussi un {\sl corep\`ere 
+mobile\/}\index{corep\`ere mobile}
+$\{ e^\alpha \}$ d\'efini, en chaque point
+$P$ de la carte, comme la base duale de
+$\{ e_\alpha \}$, c'est-\`a-dire
+$\langle e^\alpha,\ e_\beta \rangle
+= \delta_\beta^\alpha$.
+
+Venons-en maintenant \`a la notion de diff\'erentielle proprement
+dite. Pour ce qui est des fonctions (0-formes), on pose bien entendu
+$$
+\mbox{\fbox{$
+d f  =  {\partial f \over \partial x^\mu} d x^\mu
+$}}
+$$
+
+\medskip
+
+La $1$-forme $df$ peut \^etre \'evalu\'ee sur le champ de vecteurs 
+$v=v^\mu {\partial \over \partial x^\mu}$.
+On obtient
+$$
+\langle df, v \rangle = \langle {\partial f \over \partial x^\mu} d x^\mu,
+v=v^\nu {\partial \over \partial x^\nu} \rangle =  {\partial f \over 
+\partial x^\mu} v^\nu
+\langle dx^\mu,  {\partial \over \partial x^\nu} \rangle =
+ {\partial f \over \partial x^\mu} v^\nu
+\delta^\mu_\nu = v^\mu {\partial f \over \partial x^\mu}
+$$
+On voit que le membre de droite n'est autre que $v[f]$. Ainsi donc,
+$$
+\mbox{\fbox{$
+\langle df, v \rangle = v[f] 
+$}}
+$$
+On notera souvent $df(v)$ au lieu de $\langle df, v\rangle$, 
+l'\'evaluation de
+la forme $df$ sur le vecteur $v$.
+
+La r\`egle de Leibniz usuelle pour la diff\'erentielle d'un produit de 
+deux fonctions, \`a savoir
+$$
+\mbox{\fbox{$
+d(fg)=df \, g + f \, dg
+$}}
+$$
+r\'esulte imm\'ediatement de la propri\'et\'e, pour les champs de vecteurs, 
+d'\^etre des d\'erivations de l'alg\`ebre des fonctions.
+
+Nous allons g\'en\'eraliser aussi bien la d\'efinition de $d$ que la 
+r\`egle de Leibniz \`a des formes diff\'erentielles de degr\'e sup\'erieur.
+
+
+\subsection{La diff\'erentielle ext\'erieure $d$}\label{sec:diffext}
+\index{diff\'erentielle ext\'erieure}\index{diff\'erentielle de De Rham}
+Soit
+$\omega$ une 
+$k$-forme diff\'erentielle~; on va d\'efinir un op\'erateur 
+$d$ qui, appliqu\'e \`a
+$\omega$, cr\'ee une 
+$(k + 1)$-forme. Cet op\'erateur est d\'esign\'e sous le nom de
+ {\sl diff\'erentielle ext\'erieure\/} ou  {\sl diff\'erentielle de De Rham\/}.
+
+
+\begin{all}{\bigskip}{D\'efinition}{\it} La forme diff\'erentielle 
+$d \omega$ peut se d\'efinir directement par son action sur tout
+$(k+1)$-uplet
+$\{ v_1, v_2, \dots, v_{k + 1} \}$ de champs de vecteurs, en posant 
+\begin{eqnarray*}
+ d \omega (v_1, v_2, \dots, v_{k + 1}) 
+& = & \sum_{i = 1}^{k + 1} (- 1)^{i + 1} v_i
+\Bigl[
+\omega (v_1, \dots, \widehat v_i, \dots, v_{k + 1})
+\Bigr]                                               \nonumber \\
+& & + 
+\sum_{i \le i \le j \le k+1} (- 1)^{i + j} \omega
+\Bigl(
+[v_i, v_j], v_1, \dots, 
+\widehat v_i, \dots, 
+\widehat v_j, \dots, v_{k + 1}
+\Bigr) 
+\end{eqnarray*}
+o\`u le symbole
+ $\widehat{}$ d\'esigne l'omission de l'argument correspondant.
+\end{all}
+
+\bigskip
+
+Cette d\'efinition poss\`ede un int\'er\^et pratique
+certain. Pour se rappeler des signes, on peut signaler le moyen
+mn\'emotechnique suivant~: le premier type de termes s'obtient en
+faisant passer les vecteurs
+$v_i$ devant 
+$\omega$ et en comptant un signe 
+``$-$'' chaque fois que 
+$v_i$ ``traverse'' un des autres vecteurs~; le second type de terme
+s'obtient en choisissant une paire
+$v_i, v_j$ et en la faisant passer en position 1 et 2 de la forme
+$\omega$, tout en utilisant l'antisym\'etrie de 
+$\omega$ lorsqu'on effectue des transpositions. On remplace alors la
+paire 
+$(v_i, v_j)$ par son crochet
+$[v_i, v_j]$ et on multiplie le tout par un signe 
+$- 1$.
+
+\medskip
+
+\noindent Exemple 1~: Soit $f$ une $0$-forme, c'est \`a dire une fonction
+sur $M$. La d\'efinition ci-dessus conduit \`a
+$$ df(v) = v[f] $$
+ce qu'on savait d\'ej\`a.
+
+\noindent Exemple 2~: Soit 
+$\omega$, une 1-forme, alors 
+$$
+d \omega (u, v) 
+= u (\omega (v)) - v (\omega (u)) - \omega ([u, v])
+$$
+Si $u = {\partial \over \partial x^\mu}$ et  $v= {\partial \over \partial 
+x^\nu}$, on trouve simplement que les composantes de $F =  d\omega$ sont
+donn\'ees par
+ $F_{\mu\nu}=\partial_\mu \omega_\nu - \partial_\nu \omega_\mu$.
+
+Le lecteur aura reconnu,
+dans le
+cas de la dimension $4$,
+ l'expression du champ \'electromagn\'etique (le
+tenseur $F$ ) en terme du (quadri) potentiel vecteur $\omega$.
+Soit dit en passant, il faut incorporer le troisi\`eme terme
+(l'\'evaluation de $\omega$ sur
+le commutateur $ [u,v]$) lorsqu'on veut exprimer le champ $F=d\omega$ dans 
+un
+rep\`ere quelconque.
+
+\medskip
+
+\noindent Exemple 3~: Soit 
+$\omega$, une 2-forme, alors
+
+\begin{eqnarray*}
+ d \omega (x, y, z)
+& = & x (\omega (y, z)) - y (\omega (x, z)) + z (\omega (x, y))      \\
+{} & {} & - \omega ([x, y], z) - \omega ([y, z], x) + \omega ([x, z], y)
+\end{eqnarray*}
+
+
+En utilisant la d\'efinition de $d$, donn\'ee ci-dessus,
+on montre imm\'ediatement que, si 
+$\omega_1 \in \Omega^{k_1}$ et 
+$\omega_2 \in \Omega^{k_2}$, alors
+$$
+\mbox{\fbox{$
+d (\omega_1 \land \omega_2) = d \omega_1 \land \omega_2
++ (- 1)^{k_1} \omega_1 \land d \omega_2
+$}}
+$$
+
+De la m\^eme fa\c con, on montre que $$\mbox{\fbox{$d^2 = 0$}}$$
+
+Les deux propri\'et\'es ci-dessus sont absolument fondamentales et peuvent
+m\^eme servir \`a d\'efinir l'op\'erateur $d$ lui m\^eme.
+
+
+\begin{all}{\bigskip}{D\'efinition}{\it} 
+$d$ est l'unique op\'erateur (application lin\'eaire) de 
+$\Omega^k M$ dans 
+$\Omega^{k + 1} M$ tel que, pour tout 
+$k$,
+$\omega_1 \in \Omega^{k_1}$,
+$\omega_2 \in \Omega^{k_2}$,
+$k=k_1 + k_2$, on ait
+$d (\omega_1 \land \omega_2) = d \omega_1 \land \omega_2
++ (- 1)^{k_1} \omega_1 \land d \omega_2$ et
+$d^2 = 0$.
+En d'autre terme 
+$d$ \'etend la d\'efinition usuelle de diff\'erentiation des
+fonctions en une d\'eriva\-tion gradu\'ee de carr\'e nul de
+l'alg\`ebre
+$\Omega M$.
+\end{all}
+\index{champ electromagn\'etique\/}
+En physique, si $\omega$ d\'esigne le quadri-potentiel vecteur, alors,
+$F = d\omega$ ob\'eit automatiquement \`a l'\'equation $d\, F = 0$,
+puisque $d^2 =0$. Ceci
+nous donne donc la moiti\'e des \'equations de Maxwell (les \'equations 
+sans
+source).
+
+Il existe une troisi\`eme d\'efinition possible de l'op\'erateur $d$, 
+d\'efinition qui est \'egalement
+d'un int\'er\^et pratique certain. La voici :
+
+
+\begin{all}{\bigskip}{D\'efinition}{\it} Relativement \`a un choix
+de coordonn\'ees on peut \'ecrire 
+$\omega = \omega_I d x^I$, o\`u 
+$I$ est un multi-indice et 
+$\omega_I$ est une 0-forme, c'est-\`a-dire une fonction. On
+d\'efinit d'abord 
+$d$ sur les fonctions 
+$d \omega_I  =  {\partial \omega_I \over \partial x^\mu} 
+d x^\mu$. Ensuite, plus g\'en\'eralement, on pose 
+$d \omega  =  d \omega_I \land d x^I$.
+\end{all}
+
+Nous venons de voir
+trois d\'efinitions \'equivalentes
+possibles de l'op\'erateur $d$. Toutes les trois sont utiles et nous 
+laissons au lecteur le
+soin de d\'emontrer l'\'equivalence des d\'efinitions. 
+
+Terminons par un 
+petit calcul \'el\'ementaire (clin d'\oe{il} au cours d'\'electromagn\'etisme). \index{champ electromagn\'etique\/}
+Soit
+$A = A_\mu dx^\mu$ une $1$-forme (le quadri-potentiel vecteur). Le champ 
+de Maxwell est d\'efini par $$
+\mbox{\fbox{$
+F=dA=
+{1\over 2}F_{\mu\nu} dx^\mu\land dx^\nu = F_{\mu\nu}dx^\mu\otimes dx^\nu
+$}}
+$$
+ Or 
+ \begin{eqnarray*}
+ dA & = &
+d( A_\mu)\land dx^\mu =  {\partial A_\mu \over  \partial x^\nu}
+dx^\nu \land dx^\mu = {1\over 2}(
+ {\partial A_\mu \over  \partial x^\nu}
+dx^\nu \land dx^\mu + 
+ {\partial A_\mu \over  \partial x^\nu}
+dx^\nu \land dx^\mu) \\
+{} & = & {1\over 2}(
+ {\partial A_\nu \over  \partial x^\mu}
+-
+ {\partial A_\mu \over  \partial x^\nu})
+dx^\mu \land dx^\nu
+ \end{eqnarray*}
+ 
+ 
+Ainsi $$
+\mbox{\fbox{$
+F_{\mu\nu} =  
+ {\partial A_\nu \over  \partial x^\mu}
+-
+ {\partial A_\mu \over  \partial x^\nu}$}}$$
+
+\subsection{L'\'equation de Maurer-Cartan pour un rep\`ere mobile}
+\label{sec:mobileMaurerCartan}
+Soit
+$\{ e_\alpha \}$ un rep\`ere mobile et 
+$f_{\beta \gamma}^\alpha$ les fonctions de structure correspondantes,
+c'est-\`a-dire que ce rep\`ere v\'erifie l'\'equation de structure~:
+$[e_\beta, e_\gamma] = f^\alpha_{\beta \gamma} e_\alpha$.
+
+Soit
+$\{ e^\alpha \}$ le co-rep\`ere mobile correspondant d\'efini, comme
+on l'a vu, par dualit\'e. Le co-rep\`ere v\'erifie \'egalement une
+\'equation de structure (souvent d\'esign\'ee sous le nom
+d'{\sl \'equation de Maurer-Cartan\/})\index{equation de Maurer-Cartan}
+$$
+\mbox{\fbox{$
+d e^\alpha + {1 \over 2} f_{\beta \gamma}^\alpha 
+e^\beta \land e^\gamma = 0
+$}}
+$$ La fa\c con la plus simple de
+d\'emontrer cette identit\'e est de la v\'erifier en l'\'evaluant
+sur un couple 
+$(e_\delta, e_\epsilon)$ de vecteurs du rep\`ere mobile. D'une part, en 
+effet,
+\begin{eqnarray*}
+d e^\alpha (e_\delta, e_\epsilon) 
+& = & e_\delta (e^\alpha (e_\epsilon)) 
+- e_\epsilon (e^\alpha (e_\delta))
+- e^\alpha ([e_\delta, e_\epsilon])                \nonumber \\
+& = & e_\delta (\delta_\epsilon^\alpha)  
+- e_\epsilon (\delta_\delta^\alpha)
+- f_{\delta \epsilon}^\gamma e^\alpha (e_\gamma)   \nonumber \\
+& = & 0 - 0
+- f_{\delta \epsilon}^\gamma \delta_\gamma^\alpha 
+= - f_{\delta \epsilon}^\alpha
+\end{eqnarray*}
+Les deux premiers termes sont nuls puisqu'on
+ d\'erive des
+constantes~!
+
+D'autre part
+\begin{eqnarray*}
+{1 \over 2} f_{\beta \gamma}^\alpha 
+e^\beta \land e^\gamma (e_\delta, e_\epsilon)
+& = & {1 \over 2} f_{\beta \gamma}^\alpha
+(e^\beta \otimes e^\gamma - e^\gamma \otimes e^\beta)
+(e_\delta, e_\epsilon)
+= {1 \over 2} f_{\beta \gamma}^\alpha
+\left(
+\delta_\delta^\beta \delta_\epsilon^\gamma
+- \delta_\delta^\gamma \delta_\epsilon^\beta
+\right)                                           \nonumber \\
+& = & {1 \over 2} f_{\delta \epsilon}^\alpha
+- {1 \over 2} f_{\epsilon \delta}^\alpha
+= {1 \over 2} f_{\delta \epsilon}^\alpha
++ {1 \over 2} f_{\delta \epsilon}^\alpha
+= f_{\delta \epsilon}^\alpha
+\end{eqnarray*}
+D'o\`u le r\'esultat.
+
+\subsection{Produit int\'erieur d'une forme par un champ ou vecteurs}
+
+ Cette
+op\'eration g\'en\'eralise celle \'etudi\'ee pr\'ec\'edemment (produit int\'erieur d'une 
+forme ext\'erieure par un vecteur). On associe, \`a une 
+$k$ forme 
+$\omega$ et un vecteur 
+$v$ une 
+$k - 1$ forme not\'ee 
+$i_v \omega$. La d\'efinition en est tr\`es simple~: pour une 1-forme,
+c'est tout simplement l'\'evaluation. C'est-\`a-dire
+$i_v \omega = \omega (v) = \langle \omega, v \rangle$. Pour une 
+$k$-forme, on g\'en\'eralise simplement en contractant l'indice du
+vecteur
+$v$ avec le premier indice de la forme 
+$\omega$~; en d'autres termes (et sans utiliser d'indices) 
+$i_v \omega$ est la 
+$k - 1$ forme d\'efinie par
+$$
+\mbox{\fbox{$
+i_v \omega (v_1, v_2, \dots, v_{k - 1})
+ =  \omega (v, v_1, v_2, \dots, v_{k - 1})
+$}}
+$$
+Si
+$\alpha = i_v \omega$ on a \'evidemment
+$\alpha_{\mu_1, \mu_2, \dots, \mu_{k - 1}} 
+= v^\nu \omega_{\nu \mu_1, \mu_2, \dots, \mu_{k - 1}}$. Il s'agit d'une
+ op\'eration tr\`es \'el\'ementaire
+g\'en\'eralisant l'\'evaluation d'une forme sur un vecteur. L'op\'eration 
+$i_v$, de 
+$\Omega^k M$ dans 
+$\Omega^{k - 1} M$ est, comme l'op\'eration
+$d$, une d\'erivation gradu\'ee et de carr\'e nul de l'alg\`ebre
+ext\'erieure.
+La propri\'et\'e d'\^etre de carr\'e nul est une cons\'equence
+imm\'ediate du fait que les formes diff\'erentielles sont des objets
+antisym\'etriques et donc s'annulent d\`es que deux arguments sont
+\'egaux. La propri\'et\'e d'anti-d\'erivation, c'est-\`a-dire 
+$$
+\mbox{\fbox{$
+i_v (\omega_1 \land \omega_2) 
+= (i_v \omega_1) \land \omega_2 
++ (- 1)^k \omega_1 \land (i_v \omega_2)
+$}}
+$$ o\`u 
+$k$ est le degr\'e de 
+$\omega_1$ est \'egalement une cons\'equence imm\'ediate de la
+d\'efinition. La diff\'erence essentielle entre l'op\'eration 
+$d$ et l'op\'eration
+$i_v$ est que ces deux op\'erations vont dans des sens diff\'erents 
+($i_v$ fait baisser le degr\'e d'une unit\'e alors que
+$d$ l'\'el\`eve). Notons que la d\'efinition de 
+$i_v$ d\'epend du choix du vecteur
+$v$.
+
+
+\section{Application tangente et cotangente}
+
+Soit
+$f$ un diff\'eomorphisme de la vari\'et\'e
+$M$, ou, plus g\'en\'eralement, une application diff\'erentiable de
+$M$ (de dimension
+$m$) dans
+$N$ (de dimension
+$n$). En coordonn\'ees locales, 
+$f$ s'\'ecrit \`a l'aide de 
+$n$ fonctions
+$f^\alpha$ de 
+$m$ variables
+$y^\alpha = f^\alpha (x^\mu)$. La matrice jacobienne de cette
+application est la matrice
+$(n, m)$ des \'el\'ements
+${\partial y^\alpha /\partial x^\mu}$. Une telle matrice
+d\'efinit une application lin\'eaire de l'espace vectoriel tangent
+\`a
+$M$ au point
+$P$ dans l'espace tangent \`a
+$N$ au point
+$f (P).$
+Soit
+$\{ \partial_\mu \}$ un rep\`ere naturel de 
+$M$ d\'efini dans un voisinage de 
+$P$ et
+$\{ \partial_\alpha \}$ un rep\`ere naturel de 
+$N$ d\'efini dans un voisinage de 
+$f (P)$. Soit 
+$v \in T_P (M)$, on peut \'ecrire
+$v = v^\mu \partial_\mu$. On obtient un vecteur 
+$w \in T_{f (P)} (N)$ en \'ecrivant
+$w = w^\alpha \partial_\alpha$ avec
+$$
+\mbox{\fbox{$
+(w^\alpha)  =  
+\left( {\partial y^\alpha \over \partial x^\mu} \right) 
+(v^\mu)
+$}}
+$$
+
+
+Cette application, dite application lin\'eaire tangente (ou ``push 
+forward'') se note, suivant les auteurs
+$f_*$, $Tf$,
+$f_\sim$, ou m\^eme
+$\vr f$ et on dit que
+$w = \vr f (v)$ est l'{\sl image directe \/}\index{image directe} de
+$v$. 
+On peut bien entendu d\'efinir directement
+$\vr f$ sans utiliser de syst\`emes coordonn\'es. De fa\c con 
+g\'en\'erale, ˆ toute application diff\'erentiable
+$f : M \to N$, on associe une application lin\'eaire tangente 
+$\vr f : T M \to T N$, et si  $v \in T_{P} M$, alors 
+$\vr f [v] \in T_{f(P)} M$.
+
+Remarque: on peut toujours prendre l'image d'un vecteur tangent par 
+l'application tangente, mais l'image d'un champ de vecteurs 
+$v$  sur $M$ ne 
+d\'efinit pas n\'ecessairement un champ de vecteur sur $N$;
+d'une part, en effet, rien ne prouve qu'un point $Q$ quelconque de $N$ soit 
+n\'ecessairement dans l'image de $f$, et par ailleurs, m\^eme si $f$ 
+est surjective, rien ne dit, dans le cas o\`u deux points distincts $P_{1}$ et 
+$P_{2}$ seraient tels que $f(P_{1}) = f(P_{2})$ que l'image par $\vr 
+f$ du vecteur $v(P_{1})$ co\"incide avec l'image par $\vr 
+f$ du vecteur $v(P_{2})$. En fait, pour une application 
+differentiable surjective $f: M \to N$ donn\'ee, 
+il est commode d'introduire la notion de 
+{\sl champ de vecteurs projetable} \index{champ de vecteurs projetable}: $v \in \Gamma(TM)$ est dit 
+projetable (par $f$) si, pour tout $Q \in N$ et pour toute paire 
+$(P_{1},P_{2})$ de points de $M$ tels que $Q=f(P_{1}) = f(P_{2})$ on 
+ait $\vr f [v(P_{1})] = \vr f [v(P_{2})]$; dans ce cas on obtient 
+bien un champ de vecteur sur $N$. 
+
+
+La m\^eme matrice jacobienne
+${(\partial y^\alpha / \partial x^\mu)}$ d\'efinit \'egalement une
+application lin\'eaire de l'espace cotangent \`a
+$N$ au point
+$f (P)$ dans l'espace cotangent \`a
+$M$ au point
+$P$. En effet, soit
+$\tau \in T_{f (P)}^* N$, alors
+$\tau = \tau_\alpha d y^\alpha$. L'image de la forme
+$\tau$ est la forme
+$\sigma \in T_P^* M$, avec
+$\sigma = \sigma_\mu d x^\mu$ et 
+$$
+\mbox{\fbox{$
+(\sigma_\mu)  =  
+\left( {\partial y^\alpha \over \partial x^\mu} \right) 
+(\tau_\alpha)
+$}}
+$$
+
+
+Cette application, qu'on pourrait appeler {\sl  application
+lin\'eaire cotangente \/}\index{application cotangente}, (ou ``pull 
+back'') et noter $f^*$, $T^{*}f$, $f^\sim$, ou m\^eme $\vl f$
+n'est donc autre  que la transpos\'ee de l'application lin\'eaire tangente $\vr f$ {\sl au 
+point $P \in M$}: elle envoie les co-vecteurs de 
+$N$ au point $f(P)$ (i.e. les 1-formes de
+$N$ au point $f(P)$ ) dans les co-vecteurs de $M$ au point $P$.
+Si $\tau \in T_{f(P)}^* N$, alors $\vl f (\tau) = \tau \circ \vr f \in T_{P}^* M$.
+Cette application de $T_{f(P)}^* N$ dans $T_{P}^* M$ ne peut 
+manifestement pas, en g\'en\'eral, se g\'en\'eraliser \`a une 
+application de $T^{*}N$ dans $T^{*}M$; la situation n'est donc pas 
+tout \`a fait analogue \`a celle de l'application tangente, qui, elle, 
+est bien d\'efinie, comme application de $TM$ dans $TN$.
+
+
+Par contre, si $\omega$ est une $1$-forme differentielle sur $N$, c'est 
+\`a dire {\sl un champ} de co-vecteurs, on peut toujours consid\'erer
+son image par $\vl f$;  en effet, dans ce cas, si $v$ est un vecteur 
+quelconque en  $P\in M$, alors $\vr f (P)$ est un vecteur en $Q=f(P) \in N$ et 
+le nombre $\omega_{Q}[\vr f (P)]$ est bien d\'efini. On obtient ainsi 
+une $1$-forme differentielle sur $M$ qu'on notera $f^{*} \omega$ ou 
+$\vl f (\omega)$. On l'appelle en g\'en\'eral ``pull back'' de 
+$\omega$ par $f$.
+
+Quelques remarques sur les notations :
+on peut trouver commode d'utiliser de nouveau le
+symbole
+$d f$ et d'\'ecrire tout simplement (en un point $P$ donn\'e, 
+non explicitement indiqu\'e par la notation)
+$$
+\mbox{\fbox{$
+d f =
+\left( {\partial f^\alpha \over \partial x^\mu} \right) 
+{\partial \over \partial y^\alpha} \otimes d x^\mu
+$}}
+$$ et donc de
+consid\'erer 
+$d f$ comme un \'el\'ement de
+$T_{f (P)} N \otimes T_P^* M$.
+La matrice $(\partial f^\alpha / \partial x^\mu)$ est la matrice jacobienne
+de l'application $f$.
+Attention, $df$, ici, n'est pas une $1$-forme puisque $f$ n'est pas une 
+fonction \`a valeurs dans le corps des scalaires mais une application entre 
+deux vari\'et\'es. Il ne semble pas n\'ecessairement utile
+de vouloir \`a tout crin introduire de nouvelles notations chaque fois qu'une
+fonction de plusieurs variables donne naissance \`a des applications 
+diff\'erentes lorsqu'on d\'ecide de geler l'un ou l'autre de ses arguments~! La
+notation ``diff\'erentielle''  pr\'ec\'edente est une g\'en\'eralisation directe
+de la notation d\'esignant la diff\'erentielle d'une fonction \`a valeurs 
+r\'eelles. Ici, $d f$ doit
+\^etre consid\'er\'ee comme une application bilin\'eaire
+qu'on peut noter $(.,df,.)$
+dont l' une des restrictions co\"incide avec $\vr f$ et l'autre
+avec $\vl f$.
+Si on choisit $\tau \in T_{f(P)}^*N$ et $v \in T_{P}M$, on voit que
+$$ \sigma = \vl f (\tau) = (\tau,df,\cdot) \in T_{P}^*M 
+\qquad \text{et} \qquad
+ w = \vr f (v) = (\cdot, df, v) \in T_{f(P)}N $$
+
+La notation suivante est \'egalement tr\`es commode : 
+$$
+\langle \sigma \vert  = \langle \tau \vert df 
+\qquad \text{et} \qquad
+\vert w \rangle = df \vert v \rangle
+$$ 
+
+Si on choisit un rep\`ere mobile
+$e_{\widehat \alpha} 
+= \Lambda_{\widehat \alpha}^\beta \, \partial_\beta$ dans
+$N$ et un co-rep\`ere mobile
+$e^{\widehat \mu} = L^{\widehat \mu}_\nu dx^\nu$ dans 
+$M$, on pourra \'ecrire \'egalement
+$$
+d f
+= (\Lambda^{-1})_\alpha^{\widehat \beta} \,  
+{\partial f^\alpha \over \partial x^\mu} \, 
+ (L^{-1})_{\widehat \nu}^\mu \qquad 
+e_{\widehat \beta} \otimes e^{\widehat \nu} 
+$$
+et consid\'erer la quantit\'e
+$f_{\widehat \nu}^{\widehat \beta}  = 
+(\Lambda^{-1})_\alpha^{\widehat \beta} 
+\,({\partial f^\alpha / \partial x^\mu}) \,
+(L^{-1})_{\widehat \nu}^\mu$ comme les \'el\'ements de la matrice
+jacobienne de
+$f$ par rapport au choix de deux rep\`eres mobiles.
+
+Nous venons de voir que les 1-formes de
+$N$ peuvent \^etre ``rappel\'ees'' sur 
+$M$ \`a l'aide de
+$\vl f$:
+$$\vl f \omega = \omega \vr f$$
+Il en va de m\^eme des 
+$p$-formes et on d\'efinit, pour
+$\omega \in \Omega^p N$, la 
+$p$-forme
+$\vl f (\omega) \in \Omega^p M$ par l'\'egalit\'e
+$$\vl f \omega (v_1, v_2, \dots, v_p)  = 
+\omega (\vr f v_1, \vr f v_2, \dots, \vr f v_p)$$ avec
+$v_1, v_2, \dots, v_p \in T M$.
+
+Nous laissons au lecteur le soin de d\'emontrer les propri\'et\'es
+suivantes~:
+\begin{eqnarray*}
+\vl f (\omega \land \eta)
+& = & \vl f (\omega) \land \vl f (n)              \nonumber \\[4mm]
+i_v \vl f (\omega)
+& = & \vl f \biggl( i_{\vr f (v)} \omega \biggr)  \nonumber \\
+\vl f d \omega
+& = & d \vl f \omega
+\end{eqnarray*}
+
+
+\section{D\'eriv\'ees de Lie}
+
+La notion usuelle de d\'eriv\'ee d'une fonction num\'erique 
+$f$ nous permet de pr\'eciser la notion de variation locale de cette
+fonction lorsque son argument cro\^{\i}t ou d\'ecro\^{\i}t. Lorsque
+l'argument se d\'eplace sur une vari\'et\'e de dimension
+sup\'erieure \`a~1, la variation ne sera d\'efinie que si on
+pr\'ecise dans quelle direction se d\'eplace le point (l'argument).
+En d'autres termes, la g\'en\'eralisation de la notion de
+d\'eriv\'ee invoque obligatoirement la notion de vecteur tangent. La
+d\'eriv\'ee d'une fonction
+$f : M \to \RR$ par rapport \`a un champ de vecteurs
+$X$ se note
+$L_X f$ et est tout simplement d\'efinie par l'\'egalit\'e
+$$
+L_X f  =  d f [X] \quad = X [f]
+$$
+Ainsi, la diff\'erentielle de
+$f$ ``code'' toutes les variations possibles, alors que la
+d\'eriv\'ee de 
+$f$ dans la direction 
+$X$ est obtenue en \'evaluant la diff\'erentielle de 
+$f$ sur le vecteur
+$X$.
+
+Cette notion de d\'eriv\'ee se g\'en\'eralise au cas o\`u 
+$f$ n'est plus une fonction sur 
+$M$ \`a valeurs r\'eelles mais un champ $t$ de tenseurs quelconques (ou
+m\^eme, comme on le verra plus tard, une section d'un fibr\'e
+quelconque au-dessus de
+$M$). On a envie de donner un sens \`a la limite de
+${t (x + \epsilon X) - t (x) \over \epsilon}$ lorsque 
+$\epsilon$ tend vers 0. La quantit\'e correspondante se note toujours
+$L_X t$ et s'appelle {\sl d\'eriv\'ee de Lie \/}\index{d\'eriv\'ee de Lie} du tenseur 
+$t$ par rapport au champ de vecteurs 
+$X$. C'est un tenseur de m\^eme type que 
+$t$. On veut que 
+$L_X$ soit une d\'erivation de l'alg\`ebre tensorielle,
+c'est-\`a-dire qu'on impose
+ $$
+ \mbox{\fbox{$
+L_X (t_1 \otimes t_2) 
+= L_X t_1 \otimes t_2 + t_1 \otimes L_X t_2
+$}}
+$$
+o\`u 
+$t_1$ et 
+$t_2$ sont des tenseurs quelconques. Pour d\'efinir compl\`etement 
+$L_X$ il suffit de pr\'eciser la valeur de
+$L_X Y$ lorsque
+$Y$ est un champ de vecteurs (contravariants) et de
+$L_X \omega$ lorsque
+$\omega$ est une 1-forme (champ de vecteurs covariants). Dans le
+premier cas on pose
+$$
+L_X Y  =  [X, Y]
+  $$
+  Par exemple,
+  $$L_{e_\rho} e_\mu = f^\nu_{\rho \mu} e_\nu $$
+Dans le second cas (action de $L$ sur les $1$-formes), on d\'efinit
+$L_X \omega$ par la relation
+$$[L_X \omega] (Y) = X (\omega (Y)) - \omega ([X, Y])$$ o\`u 
+$Y$ est, comme 
+$X$, un champ de vecteurs sur 
+$M$. 
+Nous laissons le soin au lecteur de d\'emontrer que cette d\'efinition, ainsi 
+que la propri\'et\'e de d\'erivation, conduit \`a la relation suivante 
+caract\'erisant l'action de $L_X$ sur les formes diff\'erentielles:
+$$ 
+\mbox{\fbox{$
+L_X = d \, i_X + i_X \, d 
+$}}
+$$
+Cette derni\`ere propri\'et\'e peut d'ailleurs servir de d\'efinition.
+Il est alors imm\'ediat de v\'erifier que 
+$L_X$ est une d\'erivation de l'alg\`ebre des formes
+diff\'erentielles puisque 
+$d$ et 
+$i_X$ sont des d\'erivations gradu\'ees. 
+$L_X$ est une ``vraie'' d\'erivation et non une d\'erivation
+gradu\'ee~: le signe
+$(- 1)$ potentiel, dans la r\`egle de Leibniz, dispara\^{\i}t.
+$$
+\mbox{\fbox{$
+L_X(\alpha \land \beta) = L_X(\alpha)\land\beta + \alpha \land L_X(\beta)
+$}}
+$$
+ De
+plus 
+$L_X$ ne modifie pas le degr\'e des formes puisque 
+$d$ et
+$i_X$ agissent en sens contraires. La relation pr\'ec\'edente conduit
+imm\'ediatement \`a la formule explicite
+$$
+L_X \omega (X_1, \dots, X_k)
+= X (\omega (X_1, \dots, X_k))
+- \sum_{i = 1}^k \omega (X_1, \dots, [X, X_i], \dots, X_k)
+$$
+
+\medskip
+
+
+Le cas particulier o\`u 
+$\omega$ est une 1-forme se retrouve aussi ais\'ement. Notons que,
+dans ce dernier cas, si 
+$e_\mu$ et 
+$e^\mu$ d\'esignent deux rep\`eres duaux l'un de l'autre (un rep\`ere mobile et 
+le co-rep\`ere mobile dual), on a
+$$L_X e^\mu = e^\mu ([e_\nu, X]) e^\nu$$ et en particulier
+$$
+\mbox{\fbox{$
+L_{e_\rho} e^\mu = f_{\nu \rho}^\mu \; e^\nu
+$}}
+$$
+En coordonn\'ees locales, lorqu'on choisit un rep\`ere naturel, on peut \'ecrire $\omega = 1/k! \, \omega_{\mu_1\ldots\mu_k} \, dx^{\mu_1}\wedge\ldots\wedge dx^{\mu_k}$ et on obtient
+$$
+\mbox{\fbox{$
+L_X\omega ={1\over k!} (X^\rho {\partial \over \partial x^\rho} \omega_{\mu_1\ldots\mu_k}+
+\omega_{\rho\mu_2\ldots\mu_k} {\partial X^\rho \over \partial x^{\mu_1}}+
+\ldots + \omega_{\mu_1\ldots\mu_{k-1}\rho} {\partial X^\rho \over \partial x^{\mu_k}}) \, dx^{\mu_1}\wedge \ldots\wedge dx^{\mu_k} 
+$}}
+$$
+\bigskip
+
+Dans le cas des formes, la d\'efinition de la d\'eriv\'ee de Lie implique
+imm\'ediatement que
+$L_X$ commute avec
+$d$ (car
+$d^2 = 0$), ainsi qu'avec
+$i_X$ (puisque
+$i_v i_v = 0$), et que, par ailleurs
+\begin{eqnarray*}
+i_{[X, Y]}
+& = & L_X i_Y - i_Y L_X   \nonumber \\[1mm]
+[L_X, L_Y]
+& = & L_{[X, Y]}     \nonumber 
+\end{eqnarray*}
+
+\bigskip
+
+Enfin, si 
+$f$ est une application diff\'erentiable et 
+$\omega$ une forme diff\'erentielle, on voit que
+$$L_X \vl f \omega = \vl f L_{\vr f X} \omega$$
+
+Nous terminons ce paragraphe en montrant que la d\'eriv\'ee de Lie du
+tenseur de Kronecker
+$\delta = e_\mu \otimes e^\mu$ est nulle dans toutes les directions.
+En effet
+\begin{eqnarray*}
+L_{e_\rho} \delta
+& = & L_{e_\rho} e_\mu \otimes e^\mu
++ e_\mu \otimes L_{e_\rho} e^\mu                 \nonumber \\[1mm]
+& = & [e_\rho, e_\mu] \otimes e^\mu
++ e_\mu \otimes f_{\nu \rho }^\mu e^\nu          \nonumber \\[1mm]
+& = & f_{\rho \mu}^\sigma e_\sigma \otimes e^\mu
++ f_{\nu \rho }^\mu e_\mu \otimes e^\nu 
+= 0          \nonumber
+\end{eqnarray*}
+
+\section{Flots}
+
+Un {\sl flot} sur la vari\'et\'e $M$ est un sous-groupe differentiable \`a un param\`etre $\{\phi_t\}$ de diff\'eomorphismes de $M$: on suppose que pour tout $t$ r\'eel, l'application
+$t\in \RR \mapsto \phi_t \in Diff(M)$ est un homomorphisme de groupe et que l'application $(t,P) \in \RR \times M \mapsto \phi_t(P) \in  M$ est diff\'erentiable.
+
+La {\sl trajectoire du flot} aussi appel\'ee {\sl courbe int\'egrale du flot} passant par le point $P \in M$ est la courbe $t \mapsto \phi_t(P)$.
+L'application lin\'eaire tangente \`a cette courbe associe au vecteur unit\'e $1$ de $R$ (identifi\'e avec son espace tangent en $0$) un vecteur tangent en $Q=\phi_t(P) \in T(M,Q)$.
+Ce vecteur tangent en $Q$ ne d\'epend que du flot. En effet,  les propri\'et\'es d'homomorphisme $\phi_{t_1+t_2} = \phi_{t_1} \circ \phi_{t_2}$, et de bijectivit\'e de $\phi_f$ , montrent que si deux trajectoires passent par le m\^eme point $Q$, c'est \`a dire si $\phi_{t}(P_1)=\phi_{t_2}(P_2)$, avec $t \geq t_2$ par exemple, on peut poser $t_1=t-t_2$ et $P_2=\phi_{t_1}(P_1)$, ce qui montre que  les vecteurs tangents en $Q$ \`a ces deux trajectoires co\"incident.
+Le vecteur tangent obtenu, notons le $X(Q)$, d\'efinit un champ de vecteurs $X$ quelquefois d\'esign\'e sous le nom de {\sl champ des vitesses du flot}.
+
+Puisque le flot choisi d\'efinit un champ des vitesses, il d\'efinit \'egalement une d\'eriv\'ee de Lie par rapport \`a ce champ de vecteurs.
+
+On peut d\'emontrer qu'inversement, un champ de vecteurs sur une vari\'et\'e d\'efinit un {\sl flot local}, c'est \`a dire qu'il ne sera en g\'en\'eral d\'efini que sur un ouvert strictement inclus dans $\RR \times M$; si cette inclusion devient une \'egalit\'e, le champ de vecteur est dit  ``complet'' et il engendre un flot: les diffeomorphismes $\phi_t$ sont alors d\'efinis quel que soit $t$.
+
+\section[Orientation et int\'egration]{Orientation -- El\'ement de volume \\ 
+D\'eterminant -- Int\'egration}
+
+En g\'eom\'etrie \'el\'ementaire, l'orientation d'un espace
+vectoriel r\'eel est sp\'ecifi\'ee par le choix d'une base
+${\cal B}$ (choix {\it ordonn\'e\/} d'un syst\`eme libre et g\'en\'erateur).
+Le choix d'une autre base
+${\cal B'}$ d\'etermine un isomorphisme 
+$g$ qui envoie les vecteurs de
+${\cal B}$ sur les vecteurs de
+${\cal B'}$. On dit que 
+$g$ pr\'eserve l'orientation si
+$\det g > 0$ et renverse l'orientation si
+$\det g < 0$. Dans le premier cas on dit que 
+${\cal B}$ et 
+${\cal B'}$ ont la m\^eme orientation~; dans le second cas, 
+${\cal B}$ et
+${\cal B'}$ ont des orientations oppos\'ees. On peut alors r\'epartir les
+bases de l'espace vectoriel en question en deux classes
+d'\'equivalence correspondant aux deux orientations possibles. Afin
+de g\'en\'eraliser cette discussion au cadre des vari\'et\'es, il
+est utile de reformuler ce qui pr\'ec\`ede en terme de formes
+ext\'erieures. Nous allons donc travailler avec les bases duales et poser
+$e^{\mu'} = f(e^{\mu})$.
+
+Soit 
+${\cal B}^* = \{ e^1, e^2, \dots, e^n \}$ et 
+$\omega  =  e^1 \land e^2 \land \dots \land e^n$.
+
+Soit
+${\cal B'}^* = \{ e^{1'}, e^{2'}, \dots, e^{n'} \}$ avec
+$e^{\mu'} = f (e^\mu)$ et 
+$\omega' =  f (e^1) \land f (e^2) \land \dots \land f (e^n)$.
+L'espace des formes ext\'erieures de degr\'e
+$n$ sur un espace vectoriel de dimension
+$n$ est un espace vectoriel de dimension 1. Les formes
+$\omega$ et 
+$\omega'$ sont donc proportionnelles et
+ le coefficient de proportionnalit\'e n'est autre que le d\'eterminant 
+de $f$ : $\omega'= (\det f) \, \omega$. Nous laissons au lecteur le soin
+de retrouver la d\'efinition \'el\'ementaire des d\'eterminants en \'ecrivant
+$e^{\mu'}= \Lambda^{\mu'}_\mu e^\mu$.
+
+
+ L'orientation de l'espace vectoriel qui
+\'etait d\'efinie par le choix de
+${\cal B}$ peut tout aussi bien se d\'efinir par le choix de la 
+$n$-forme
+$\omega$. Deux 
+$n$-formes 
+$\omega$ et 
+$\omega'$ (obligatoirement proportionnelles) d\'efinissent la m\^eme
+orientation si le coefficient de proportionnalit\'e est positif et
+deux orientations de sens contraire si le coefficient en question
+est n\'egatif. Nous pouvons maintenant passer au cas des
+vari\'et\'es. Nous venons de voir que l'orientation, en chaque point 
+$P$ de 
+$M$, de l'espace tangent
+$T_P M$, est \'equivalente au (ou d\'efinie par le) choix d'une 
+$n$-forme ext\'erieure en ce point. On pourrait donc na\"{\i}vement
+penser que, pour d\'efinir une orientation globale de la vari\'et\'e 
+$M$, il suffit de choisir une 
+$n$-forme diff\'erentiable 
+$\omega$. Le probl\`eme est que, si 
+$\omega$ s'annule en un point, l'orientation cesse d'\^etre
+d\'efinie en ce point~! Pour pouvoir parler d'orientation
+de fa\c con globale, il faut
+donc qu'il soit possible de choisir une 
+$n$-forme diff\'erentielle sur 
+$M$ qui ne s'annule nulle part. Ceci n'est pas toujours possible~:
+on dit que la vari\'et\'e est orientable ou non orientable suivant
+les cas. Tout le monde conna\^{\i}t l'exemple fameux du ruban de
+Moebius ou de la bouteille de Klein.
+
+ On appelle ``\'el\'ement de volume'' sur 
+$M$ le choix d'une 
+$n$-forme 
+$\omega$ sur 
+$M$ qui ne s'annule nulle part (ce qui suppose, par d\'efinition, que
+$M$ soit orientable). On note
+$[\omega]$ l'ensemble des \'el\'ements de volume proportionnels \`a
+$\omega$, avec un coefficient de proportionnalit\'e positif et
+$[- \omega]$ l'ensemble des \'el\'ements de volume proportionnels \`a
+$\omega$, avec un coefficient de proportionnalit\'e n\'egatif. Une
+vari\'et\'e orientable poss\`ede donc deux orientations possibles,
+l'une quelconque d'entre elles \'etant caract\'eris\'ee par le
+choix d'un \'el\'ement de volume appartenant \`a l'une des deux
+classes possibles. Soient maintenant 
+$M$ et 
+$N$ deux vari\'et\'es diff\'erentiables de m\^eme dimension
+$n$ et 
+$f$ un diff\'eomorphisme de
+$M$ dans
+$N$~; on suppose 
+$M$ et
+$N$ orientables et orient\'ees par le choix des \'el\'ements de
+volume 
+$\omega_M$ et 
+$\omega_N$. On dit que 
+$f$ pr\'eserve l'orientation si et seulement si
+$\vl f (\omega_N) \in [\omega_M]$ et renverse l'orientation si
+$\vl f (\omega_N) \in [- \omega_M]$.
+
+\subsection{Orientation -- Partition de l'unit\'e}
+
+Notre but, dans ce paragraphe, est d'introduire la notion
+d'int\'egration des formes diff\'eren\-tiel\-les. Comme d'habitude, on
+va commencer par d\'efinir cette notion pour l'espace num\'erique
+$\RR^n$, puis, gr\^ace \`a un syst\`eme de cartes, on va pouvoir
+g\'en\'eraliser la construction au cas des vari\'et\'es. On suppose
+le lecteur familier avec la notion d'int\'egrale (de Riemann) sur
+$\RR^n$. Soit
+$f$ une fonction (num\'erique) c'est-\`a-dire une fonction -- que
+nous supposons diff\'erentiable -- de 
+$\RR^n$ \`a valeurs r\'eelles. Nous supposons, de plus, que
+$f$ est \`a support compact. Son int\'egrale est not\'ee
+$\int_{\RR^n} f$ ou
+$\int_{\RR^n} f(x) d^nx$, comme d'habitude. Choisissons maintenant une
+orientation sur
+$\RR^n$ et consid\'erons la 
+$n$-forme
+$$\omega  =  f(x) \,  d x^1 \land d x^2 \land \dots \land d x^n$$ o\`u
+$d x^1 \land d x^2 \land \dots \land d x^n$ est une 
+$n$-forme positive pour l'orientation choisie. On pose simplement
+$$\int \omega  =  \int_{\RR^n} f d^n x$$ Notons que la d\'efinition du
+membre de gauche d\'epend de l'orientation choisie~; en d'autres
+termes, on peut identifier les deux notations et concepts en posant
+$$d^n x = d x^1 \land d x^2 \land \dots \land d x^n$$ mais il faut
+bien noter que l'identification des notations d\'epend du choix
+d'une orientation car l'int\'egrale d'une 
+$n$-forme d\'epend de l'ordre
+$x^1, x^2, \dots, x^n$ alors que l'int\'egrale de Riemann d'une
+fonction
+$f$ n'en d\'epend pas. Soit
+$T$ un diff\'eomorphisme de 
+$\RR^n$, c'est-\`a-dire un changement de variables
+$x^\mu \stackrel{T}{\to} y^\mu$. 
+
+ Notre \'etude g\'en\'erale des formes
+diff\'erentielles implique en particulier
+$$
+d x^1 \land d x^2 \land \dots \land d x^n 
+= J (T) \, d y^1 \land d y^2 \land \dots \land d y^n
+$$
+o\`u
+$J (T) = det({\partial x^\mu / \partial y^\nu})$ est le jacobien (le 
+d\'eterminant de la
+matrice jacobienne) de l'application
+$T$. On a donc
+$$
+\int f (x) d x^1 \land \dots \land d x^n
+= \int f (T^{- 1} (y)) J (T) 
+d y^1 \land \dots \land d y^n
+$$
+Mais on sait bien que
+$$
+\int f (x) d^n x
+= \int f (T^{- 1} (y)) | J (T) | d^n y
+$$
+Donc si 
+$\vl T \omega$ d\'esigne l'image r\'eciproque de 
+$\omega$, on voit que 
+$\vl T \omega = \pm \int \omega$ suivant que 
+$T$ pr\'eserve ou non l'orientation~: l'int\'egrale d'une 
+$n$-forme est invariante sous le groupe des diff\'eomorphismes qui
+pr\'eservent l'orientation.
+
+Passons maintenant au cas des vari\'et\'es. Soit
+$M$ une vari\'et\'e de dimension
+$n$ et
+$\omega$ une 
+$n$-forme \`a support compact. Supposant la vari\'et\'e orientable,
+on choisit une orientation
+$[M]$ et une {\sl partition de l'unit\'e \/}\index{partition de l'unit\'e}
+$\{ \rho_\alpha \}_{\alpha \in I}$ subordonn\'ee \`a un atlas
+$\{ (U_\alpha, \varphi_\alpha) \}_{\alpha \in I}$, c'est-\`a-dire
+qu'on se donne une famille de fonctions diff\'erentielles non
+n\'egatives 
+$\rho_\alpha$ telles que le support de
+$\rho_\alpha$ soit contenu dans 
+$U_\alpha$ et telles que
+$\sum \rho_\alpha = 1$ (chaque point de 
+$M$ doit poss\'eder un voisinage dans lequel la somme pr\'ec\'edente
+est une somme finie). L'existence d'une telle partition de
+l'unit\'e, pour une vari\'et\'e diff\'erentiable, est un
+th\'eor\`eme (que nous ne d\'emontrons pas) qui permet, dans de
+nombreux cas, de passer des r\'esultats locaux (valables dans une
+carte) aux r\'esultats globaux (valables pour toute la vari\'et\'e
+$M$). On d\'efinit l'int\'egrale de 
+$\omega$ sur
+$[M]$ par l'\'egalit\'e
+$$
+\int_{[M]} \omega
+= \sum_\alpha \int_{U_\alpha} \rho_\alpha \omega
+$$
+o\`u la quantit\'e
+$\int_{U_\alpha} \rho_\alpha \omega$ signifie en fait
+$\int_{\RR^n} (\varphi_\alpha^{- 1})^* (\rho_\alpha \omega)$ pour
+une trivialisation locale
+$\varphi_\alpha : U_\alpha \to \RR^n$ pr\'eservant l'orientation. On
+se ram\`ene ainsi au cas de
+$\RR^n$.
+
+L'orientation \'etant choisie une fois pour toutes, on note
+$\int_M$ et non plus
+$\int_{[M]}$ l'int\'egrale correspondante. Il reste alors \`a
+d\'emontrer que la d\'efinition adopt\'ee ne d\'epend pas des cartes
+choisies\dots
+
+On appelle {\sl \'el\'ement de volume \/}\index{element de volume} sur 
+$M$ (de dimension
+$n$) ou {\sl forme volume \/}\index{forme volume} un \'el\'ement quelconque
+$\epsilon$ de
+$\Omega^n M$. Le {\sl volume \/}\index{volume} de 
+$M$, suppos\'ee compacte,  est alors \'egal, par d\'efinition, \`a
+$\int_M \epsilon$. Il faut bien noter que sur une vari\'et\'e
+quelconque (orient\'ee), on int\`egre des 
+$n$-formes, et non  des fonctions, \`a moins, pr\'ecis\'ement, d'avoir
+choisi un \'el\'ement de volume
+$\epsilon$ une fois pour toutes, auquel cas on peut \'evidemment
+poser $\int_M f$  $ =  \int_M f \epsilon$ o\`u
+$f \in C^\infty (M)$. Un cas particuli\`erement important \`a
+consid\'erer est celui o\`u la forme volume est associ\'ee
+canoniquement au choix d'une structure riemannienne (voir
+section~1.11) sur la vari\'et\'e en question.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Vari\'et\'es riemanniennes (propri\'et\'es \'el\'ementaires)}
+
+En toute logique, cette section ne devrait pas se trouver
+dans ce premier chapitre consacr\'e aux vari\'et\'es
+diff\'erentielles. En effet, la d\'efinition de la structure de
+vari\'et\'e riemannienne est li\'ee \`a un cas particulier de
+restriction d'espace fibr\'e (les espaces fibr\'es font l'objet du
+chapitre~4).
+ Cela dit, pour des raisons \`a la fois historiques et
+p\'edagogiques, il est sans doute pr\'ef\'erable que le lecteur se
+familiarise d'ores et d\'ej\`a avec certaines propri\'et\'es des
+vari\'et\'es riemanniennes.
+
+En g\'eom\'etrie \'el\'ementaire, on \'etudie d'abord les
+propri\'et\'es lin\'eaires et affines et on passe, ensuite, aux
+notions m\'etriques. Il en va de m\^eme dans l'\'etude des
+vari\'et\'es. Une vari\'et\'e diff\'erentiable est encore un objet
+flasque et mou\dots\ la donn\'ee d'une m\'etrique rigidifie l'espace
+consid\'er\'e et permet, d'une part, de parler de norme des vecteurs
+tangents et, d'autre part, de parler de distances entre points. La
+d\'efinition \'el\'ementaire d'une m\'etrique
+$g$, sur une vari\'et\'e diff\'erentiable 
+$M$, est la suivante~: c'est un champ de tenseurs covariants
+sym\'etriques de degr\'e deux (en g\'en\'eral on impose \'egalement une condition 
+de non d\'eg\'en\'erescence). Si
+$\{ x^\mu \}$ d\'esigne un syst\`eme de coordonn\'ees locales, on \'ecrira
+$$
+\mbox{\fbox{$
+g = g_{\mu \nu} \, d x^\mu \otimes d x^\nu
+$}}
+$$
+La m\'etrique  $g$ est quelquefois not\'ee
+$d s^2 = g_{\mu \nu} d x^\mu d x^\nu$ et appel\'ee  ``\'el\'ement de
+longueur'' ou {\sl tenseur m\'etrique\/}\index{m\'etrique}. Si
+$\{ e^\alpha \}$ est un co-rep\`ere mobile, on pourra \'ecrire
+\'egalement
+$g = g_{\alpha \beta} e^\alpha \otimes e^\beta$. En tout point
+$P$ de 
+$M$ on a donc un produit scalaire 
+$g_P$ d\'efini sur 
+$T_P M$ et permettant de calculer le produit scalaire
+$g_P (v, w)$ de deux vecteurs quelconques 
+$v$ et
+$w$ appartenant \`a l'espace tangent
+en ce point. On a d\'ej\`a dit que
+$g$ devait \^etre sym\'etrique (c'est-\`a-dire 
+$g_{\mu v} = g_{\nu \mu}$, ou
+$g_P (v, w) = g_P (w, v)$). Dans la plupart des cas, on impose \'egalement \`a
+$g$ d'\^etre non d\'eg\'en\'er\'ee~: le d\'eterminant de la matrice
+$(g_{\mu v})$ est suppos\'e non nul en tout point
+$P$ et on peut donc inverser cette matrice. On obtient ainsi $(g^{\mu\nu})$
+avec $g^{\mu\nu}g_{\nu\rho}=\delta^\mu_\rho$. Cela d\'efinit
+ un produit
+scalaire sur l'espace cotangent qu'on pourra noter   $ \sharp g$
+(et quelquefois $g^{-1}$) et m\^eme parfois $g$ s'il n'y
+a pas d'ambigu\"it\'e):
+$$
+\mbox{\fbox{$
+g = g^{\mu \nu} {\partial \over \partial x^\mu} 
+\otimes {\partial \over \partial x^\nu}
+$}}$$
+
+Une vari\'et\'e diff\'erentiable munie d'une m\'etrique (non
+d\'eg\'en\'er\'ee) est, par d\'efinition, une
+ {\sl vari\'et\'e riemannienne\/}\index{vari\'et\'e riemannienne}.
+Nous n'avons pas impos\'e au produit scalaire d\'efini par
+$(g_{\mu v})$ d'\^etre positif et nous ne l'imposerons pas. En
+g\'en\'eral, une forme bilin\'eaire sym\'etrique est
+caract\'eris\'ee par sa signature
+$(p, q)$ -- le nombre de signes
+$+ (p)$ et de signes 
+$- (q)$ obtenus lorsqu'on la diagonalise.
+Si on tient \`a pr\'eciser que la signature est de type
+$(p, 0)$ ou $(0,p)$, on dira que la vari\'et\'e est proprement riemannienne. Si
+on tient \`a pr\'eciser que la signature est de type
+$(p, 1)$ ou $(1,p)$, on dira que la vari\'et\'e est lorentzienne (on dit 
+aussi, dans ce dernier cas, que la signature est hyperbolique). Les
+ cas riemanniens et lorentziens sont particuli\`erement importants en 
+physique mais
+nous n'avons pas besoin de nous restreindre \`a ce cadre pour
+l'essentiel de ce qui suit.
+
+\smallskip
+$\bullet$ Pour une vari\'et\'e riemannienne 
+$(M, g)$ orient\'ee, on peut d\'efinir une {\sl forme de volume canonique\/}
+\index{forme volume}\label{sec:forme volume}
+de la fa\c con suivante. Soit
+$\{ e_{\widehat \alpha} \}$ un rep\`ere mobile orthonormal, c'est-\`a-dire
+$g (e_{\widehat \alpha}, e_{\widehat \beta}) 
+= \eta_{\widehat \alpha \widehat \beta}$, avec
+$\eta_{\widehat \alpha \widehat \beta} 
+= \pm \delta_{\widehat \alpha \widehat \beta}$, le signe $\pm$ d\'ependant de la signature de la m\'etrique. Pour l'instant nons pouvons supposer que l'espace est proprement riemannien, et orient\'e, mais
+\`a la fin de cette section, nous verrons comment compl\'eter les propri\'et\'es qui suivent lorsque la signature de la m\'etrique est quelconque, et plus particuli\`erement lorsqu'elle est hyperbolique.
+ D\'esignant par
+$\{ e^{\widehat \alpha} \}$ le co-rep\`ere dual du rep\`ere mobile choisi, l'\'el\'ement de volume riemannien est
+$$
+\mbox{\fbox{$
+\epsilon 
+= e^{\widehat 1} \land e^{\widehat 2} 
+\land \dots \land e^{\widehat n}
+$}}
+$$
+
+Soit
+$\{ \sigma_\alpha \}$ un autre rep\`ere, non n\'ecessairement
+orthonormal, et 
+$\Lambda_\alpha^{\widehat \alpha}$ la matrice de passage, c'est-\`a-dire
+$\sigma_\alpha = \Lambda_\alpha^{\widehat \alpha} e_{\widehat \alpha}$.
+Alors
+$g_{\alpha \beta} 
+= \Lambda_\alpha^{\widehat \alpha} \, \Lambda_\beta^{\widehat \beta} \,
+g_{\widehat \alpha \widehat \beta}$, ce qui implique 
+$$
+\det (g_{\alpha \beta})
+= 
+\Bigl[ 
+\det (\Lambda_\alpha^{\widehat \alpha}) 
+\Bigr]^2 
+\det (g_{\widehat \alpha \widehat \beta})\ \mbox{et donc}\ 
+\det (\Lambda_\alpha^{\widehat \alpha})
+= 
+\biggl|
+{
+\det g_{\alpha \beta} 
+\over 
+\det g_{\widehat \alpha \widehat \beta}
+}
+\biggr|^{1 / 2}
+$$
+mais 
+$|\det (g_{\widehat \alpha \widehat \beta})| = 1$ puisqu'on a
+suppos\'e la base
+$\{ e_{\widehat \alpha} \}$ orthonormale et donc
+$$
+\det (\Lambda_\alpha^{\widehat \alpha}) 
+= |\det (g_{\alpha \beta})|^{1 / 2}
+=
+\Bigl[
+\det ((\Lambda^{- 1})_{\widehat \alpha}^\alpha)
+\Bigr]^{- 1}
+$$
+Or
+\begin{eqnarray*}
+ \epsilon
+& = & e^{\widehat 1} \land e^{\widehat 2} 
+\land \dots \land e^{\widehat n}
+= \Lambda_{\alpha_1}^{\widehat 1} 
+\Lambda_{\alpha_2}^{\widehat 2}
+\dots \Lambda_{\alpha_n}^{\widehat n} \, 
+\sigma^{\alpha_1} \land \sigma^{\alpha_2} 
+\land \dots \land \sigma^{\alpha_n}            \nonumber \\[1mm]
+ \epsilon & = & \det (\Lambda_\alpha^{\widehat \alpha}) 
+\cdot \sigma^1 \land \sigma^2 
+\land \dots \land \sigma^n                     \nonumber \\[1mm]
+ \epsilon
+& = & \sqrt{|\det (g_{\alpha \beta})|} \: 
+\sigma^1 \land \sigma^2 
+\land \dots \land \sigma^n 
+= \epsilon_{\alpha_1 \alpha_2 \dots \alpha_n}
+\sigma^{\alpha_1} \land \sigma^{\alpha_2} 
+\land \dots \land \sigma^{\alpha_n}
+\end{eqnarray*}
+Ainsi
+\footnote{L'espace des $n$-formes \'etant de dimension $1$, deux 
+$n$-formes quelconques sont obligatoirement proportionelles.
+Dans les \'equations qui pr\'ec\`edent,
+le passage de la premi\`ere \`a la seconde ligne peut donc \^etre 
+consid\'er\'e comme une d\'efinition du d\'eterminant de la matrice $\Lambda$.}
+$$
+\mbox{\fbox{$
+\epsilon_{\alpha_1 \alpha_2 \dots \alpha_n}
+= \sqrt{|\det (g_{\alpha \beta})|} \: 
+\delta_{\alpha_1 \, \alpha_2 \dots \alpha_n}^{1 2 \dots n}
+$}}
+$$
+o\`u le symbole  $\delta_{\alpha_1 \, \alpha_2 \dots \alpha_n}^{1 2 \dots 
+n}$ d\'esigne
+$\pm$ suivant que ${\alpha_1 \, \alpha_2 \dots \alpha_n}$ est une 
+permutation paire ou impaire de $1,2,3\ldots n$ et il est \'egal \`a 
+z\'ero dans les autres cas.
+
+En particulier, si
+$\{ \sigma_\alpha \}$ d\'esigne un rep\`ere naturel
+$\Bigl\{
+{\partial \over \partial x^\mu}
+\Bigr\}$, on a
+$g = g_{\mu \nu} d x^\mu \land d x^\nu$ et
+$$
+\mbox{\fbox{$\epsilon
+= \sqrt{|\det (g_{\mu v})|} \: d x^1 \land \dots \land d x^n $}}$$
+Notons \'egalement que, dans un rep\`ere orthonorm\'e, la racine carr\'ee
+pr\'ec\'edente vaut $1$ et donc
+ \fbox{$\epsilon_{\alpha_1 \, \alpha_2 \dots \alpha_n}
+=\delta_{\alpha_1 \, \alpha_2 \dots \alpha_n}^{1 2 \dots n}$}
+En particulier $\epsilon_{12\ldots n}=1$.
+
+\smallskip
+$\bullet$ La m\'etrique
+$g$ permet \'egalement d'\'etablir un isomorphisme canonique entre
+l'espace tangent
+$T M$ et l'espace cotangent 
+$T^* M$. Cette propri\'et\'e est \'evidente puisqu'en chaque point,
+l'existence d'un produit scalaire permet d'identifier
+les espaces vectoriels $T_P M$ avec
+$T^*_P M$. En d'autres termes, on peut ``monter'' et ``descendre'' les
+indices \`a l'aide de la m\'etrique~: au vecteur
+$v = v^\mu e_\mu$ on associe la 1-forme
+${}^b v = v_\mu e^\mu$ d\'efinie par 
+\fbox{$v_\mu = g_{\mu \nu} v^\nu$} (
+$\{ e^\mu \}$ d\'esignant la base duale de 
+$\{ e_\mu \}$). Inversement, \`a la 1-forme
+$\sigma = \sigma_\mu e^\mu$ on associe le vecteur
+$\sharp\sigma = \sigma^\mu e_\mu$ avec
+\fbox{$\sigma^\mu = g^{\mu v} \sigma_\nu$}. On peut \'ecrire
+$\langle {}^b v_1, v_2 \rangle = g (v_1, v_2)$ et 
+$\langle \sigma,\ , \sharp\sigma_2 \rangle 
+= (\sigma_1, \sigma_2)$. Les isomorphismes 
+$\flat$ et
+$\sharp$ sont appel\'es {\sl isomorphismes musicaux \/}(pour des raisons
+\'evidentes~!)\index{isomorphismes musicaux}.Cela dit, les physiciens choisissent en g\'en\'eral
+une m\'etrique une fois pour toutes et d\'ecident donc de passer
+sous silence ces isomorphismes musicaux. En d'autres termes, ils
+identifient 
+$v$ et 
+$\flat v$ ainsi que
+$\sigma$ et
+$\sharp \sigma$ et \'ecrivent tout simplement
+$v = v^\mu e_\mu = v_\mu e^\mu$ ou
+$\sigma = \sigma_\mu e^\mu = \sigma^\mu e_\mu$. Pour des raisons
+analogues ils \'ecrivent
+$g = g_{\mu v} e^\mu \otimes e^\nu = g^{\mu v} e_\mu \otimes e_v$
+(mais il faut bien entendu se rappeler que
+$(g_{\mu v})$ est la matrice inverse de
+$(g^{\mu v})$. 
+ Les isomorphismes
+musicaux permettent, de la m\^eme fa\c con, d'identifier les
+tenseurs covariants et contravariants de m\^eme rang~. Attention, lorsqu'on 
+n'utilise pas de m\'etrique pour monter ou baisser les indices, il n'y a pas
+de raison de faire attention \`a la position relative des indices 
+covariants et
+contravariants (par exemple, on peut parler de $T^\mu_{\nu\rho}$ sans dire
+s'il s'agit de ${T^\mu}_{\nu\rho}$, de ${T_{\nu\rho}}^\mu$ ou de
+${{T_\nu}^\mu}_\rho$). Les trois types de composantes correspondent 
+d'ailleurs \`a des objets diff\'erents puisque on travaille, suivant les 
+cas, dans
+ $TM\otimes T^*M \otimes T^*M$,  $T^*M\otimes T^*M \otimes TM$ ou  
+$T^*M\otimes TM \otimes T^*M$. Par contre, si on utilise la m\'etrique 
+pour proc\'eder \`a des identifications, il faut faire attention aux 
+positions relatives des indices haut et bas! Ainsi, par exemple, 
+$T_{\mu\nu\rho}$ d\'esignera $g_{\mu \mu'}{T^{\mu'}}_{\nu\rho}$. Tout ceci 
+est assez trivial, mais peut \^etre fallait-il le dire une fois ?
+
+{\it Lorsqu'on a choisi une m\'etrique\/},  on \'ecrira
+donc abusivement (sans utiliser la notation
+$\flat$ et
+$\sharp$), par exemple
+$T = T_{\mu v \rho} e^\mu \otimes e^v \otimes e^\rho 
+={T_\mu}^{\nu \rho} e^\mu \otimes e_v \otimes e_\rho
+= T^{\mu v \rho} e_\mu \otimes e_v \otimes e_\rho
+= \dots$ 
+
+Les isomorphismes musicaux sont quelquefois simplement d\'esign\'es
+par le m\^eme symbole
+$g$ que la m\'etrique elle m\^eme, le nombre d'arguments permettant
+de d\'ecider si on parle des isomorphismes en question ou de la
+m\'etrique. Par exemple, on peut noter
+$g (e_\mu) = g_{\mu v} e^\nu$ et
+$g (e^\mu) = g^{\mu v} e_\nu$. Ceci est en accord avec les notations
+pr\'ec\'edentes puisque par exemple
+$g (v) = g (v^\mu e_\mu) = v^\mu g (e_\mu) 
+= v^\mu g_{\mu v} e^\nu = v_v e^\nu$.
+
+Avec ces notations, nous avons alors 
+$g (v, w) = \langle g (v), w \rangle = \langle g (w), v \rangle
+= g (w,v)$.
+
+\smallskip
+$\bullet$
+L'existence d'une m\'etrique permet non seulement de calculer le
+produit scalaire de deux vecteurs (ou de deux $1$-formes)
+mais de contracter
+n'importe quel tenseur d'ordre
+$k$ covariant, contravariant ou partiellement covariant et
+contravariant avec n'importe quel autre tenseur d'ordre
+$k$. On utilisera encore la notation $\langle {\,}\vert {\,} \rangle$ pour 
+\'ecrire 
+ces contractions de type assez g\'en\'eral. 
+Plut\^ot que de d\'ecrire les diff\'erents cas, il suffit de dire,
+en termes imag\'es, qu'on ``monte'' tous les indices du premier \`a
+l'aide de la m\'etrique, qu'on ``descend'' tous les indices du second
+et qu'on contracte compl\`etement les objets obtenus. Par exemple, si
+$S = {S_{\mu \nu}}^\rho e^\mu \otimes e^\nu \otimes  e_\rho$ et
+$T ={ T_\mu}^{\nu \rho} e^\mu \otimes  e_\nu \otimes  e_\rho$ on fabrique
+$S_{\mu v \rho'} = g_{\rho'\rho} {S_{\mu v}}^\rho$ et
+$T^{\mu'\nu \rho} = g^{\mu'\mu} {T_\mu}^{\nu \rho}$. On peut alors calculer
+$\langle S, T \rangle = S^{\mu \nu \rho} T_{\mu \nu \rho}$. En
+particulier, si
+$\{ \varphi^1, \varphi^2, \dots, \varphi^k \}$ d\'esignent une
+famille de 1-formes et
+$\{ \psi^1, \psi^2, \dots, \psi^k \}$ en d\'esigne une autre, on
+peut v\'erifier que cette d\'efinition conduit \`a
+$$
+\langle
+\varphi^1 \land \varphi^2 \land \dots \land \varphi^k,\ 
+\psi^1 \land \psi^2 \land \dots \land \psi^k 
+\rangle
+= k ! \det (\langle \varphi^i, \psi^i \rangle)
+$$
+Dans le sous-cas particulier o\`u ces deux familles co\"incident et
+o\`u on suppose la famille 
+$\{ \varphi^k \}$ orthonorm\'ee, il vient
+$$
+\langle
+\varphi^{\mu_1} \land \dots \land \varphi^{\mu_k},\ 
+\varphi^{\nu_1} \land \dots \land \varphi^{\nu_k} 
+\rangle
+= k ! \delta_{\nu_1 \nu_2 \dots \nu_k}^{\mu_1 \mu_2 \dots \mu_k}
+$$
+
+
+\smallskip
+$\bullet$ Lorsque la signature de la m\'etrique n'est pas proprement riemannienne, c'est \`a dire lorsqu'elle est de type $(p,q)$, il faut supposer que la vari\'et\'e admet une orientation temporelle et qu'elle est temporellement orient\'ee.
+Dans le cas usuel de l'espace-temps de la physique (signature $(3,1)$), on utilisera des indices $0,1,2,3$, comme c'est l'usage, plut\^ot que $1,2,3,4$; on posera alors
+$$
+\epsilon = e^{\widehat 0} \land e^{\widehat 1} \land e^{\widehat 2}
+ \land e^{\widehat 3}
+$$
+La diff\'erence avec le cas proprement euclidien vient du fait qu'il faut faire attention aux signes lorsqu'on ``monte'' les indices. Par ailleurs, 
+$det(g_{{\widehat \alpha}{\widehat \beta}})=(-1)^q$.
+Les formules pr\'ec\'edentes restent donc valables et on aura toujours, par exemple,
+$$\epsilon_{{\widehat 0}{\widehat 1}{\widehat 2}{\widehat 3}} = 1$$
+mais par contre
+$$\epsilon^{{\widehat 0}{\widehat 1}{\widehat 2}{\widehat 3}} = -1$$
+Plus g\'en\'eralement, nous avons vu que
+$\epsilon_{\alpha_1 \alpha_2 \dots \alpha_n}
+= \sqrt{|\det g_{\alpha \beta}|} \: 
+\delta_{\alpha_1 \alpha_2 \dots \alpha_n}^{1 2 \dots n}$, mais si on
+``monte'' ces indices (\`a l'aide de la m\'etrique) le r\'esultat va
+d\'ependre de la signature, plus particuli\`erement du nombre $q$  de
+signes 
+``$-$'' dans la m\'etrique. On obtient donc
+$$
+\epsilon^{\alpha_1 \alpha_2 \dots \alpha_n}
+= {(- 1)^q \over \sqrt{|\det g_{\alpha \beta}|}}
+\delta_{1 2 \dots n}^{\alpha_1 \alpha_2 \dots \alpha_n}
+= (- 1)^q \sqrt{|\det g^{\alpha \beta}|} \:
+\delta_{1 2 \dots n}^{\alpha_1 \alpha_2 \dots \alpha_n}
+$$
+Citons quelques contractions utiles:
+$$
+q! \; \delta^{\alpha_1 \ldots \alpha_p \mu_1 \ldots 
+\mu_q}_{\gamma_1\ldots \gamma_{p+q}} = 
+\delta^{\alpha_1\ldots\alpha_p \beta_1\ldots 
+\beta_q}_{\gamma_1\ldots\gamma_{p+q}}\delta^{\mu_1 \ldots \mu_q}_{\beta_1\ldots \beta_q}
+$$
+Lorsque la vari\'et\'e est lorentzienne, avec une signature de type $(3,1)$, on obtient en particulier
+$$
+\delta^{\alpha \beta \gamma}_{\mu\nu\lambda}=- \epsilon^{\alpha\beta\gamma\rho} \epsilon_{\mu\nu\lambda\rho}
+$$
+
+$$
+\delta^{\alpha \beta}_{\mu\nu}={1 \over 2} \delta^{\alpha \beta \gamma}_{\mu\nu\gamma}= -{1 \over 2}\epsilon^{\alpha\beta\lambda\rho} \epsilon_{\mu\nu\lambda\rho}
+$$
+
+$$
+\delta^{\alpha}_{\mu} = {1\over 3}\delta^{\alpha \beta}_{\mu\beta} = 
+{1\over 6}\delta^{\alpha \beta \lambda}_{\mu\beta\lambda}=-{1\over 6}
+ \epsilon^{\alpha\beta\lambda\rho} \epsilon_{\mu\beta\lambda\rho}
+$$
+
+
+
+\smallskip
+$\bullet$
+Pour terminer, notons que l'existence d'une m\'etrique permet d'associer
+\`a la diff\'erentielle $df$ d'une fonction $f$, un champ de vecteurs, le
+ {\sl gradient\/}\index{gradient} de $f$ d\'efini par $grad \, f = \sharp df$.
+Ainsi, dans un rep\`ere naturel, on \'ecrira
+$$ grad \, f = g^{\mu\nu} ({\partial f \over \partial x^\mu}){\partial 
+\over \partial x^\nu}
+$$
+
+\bigskip
+Encore une fois, la pr\'esente section consacr\'ee aux
+ vari\'et\'es riemanniennes n'est destin\'ee qu'\`a introduire certaines  
+notations utiles et quelques notions \'el\'ementaires. Nous reviendrons
+plus en d\'etail sur les vari\'et\'es riemanniennes \`a la fin du chapitre consacr\'e aux connexions.
+
+
+
+\section{Divers}
+
+Nous regroupons dans ce paragraphe un certain nombre de notions et
+de commentaires qui peuvent \^etre consid\'er\'es comme un peu moins
+\'el\'ementaires que ce qui pr\'ec\`ede~; cela ne signifie pas
+qu'ils sont moins ``importants'' mais simplement que nous utiliserons
+peu ou pas ces concepts dans la suite de l'ouvrage. On se contente
+donc ici de pr\'esenter quelques d\'efinitions de fa\c con \`a
+sugg\'erer au lecteur des lectures plus approfondies et \`a donner
+quelques id\'ees intuitives.
+
+\subsection{ Compl\'ements sur les d\'erivations d'alg\`ebre}
+\par
+ L'ensemble des d\'erivations de l'alg\`ebre associative  ${\cal
+A}$ se note $Der {\cal A}$.
+Rappelons qu'une d\'erivation
+est  une application lin\'eaire $v$ de $A$
+dans $A$ telle que $v[f g] = v[f] g + f v[g]$ avec $f,g \in
+{\cal A}$.
+ Il est facile de voir que la
+somme de deux d\'erivations est une d\'erivation, par contre
+le produit de deux d\'erivations n'est pas une d\'erivation
+(dans les cas o\`u on peut le d\'efinir, c'est un op\'erateur du
+``second ordre'' ).  Il
+est int\'eressant de savoir si l'op\'erateur $w$ d\'efini par $ w  =  h 
+v$ avec $h \in
+{\cal A}$ et $v \in Der{\cal A}$ est, ou non, une d\'erivation.
+En d'autres termes, on veut savoir si l'espace $Der{\cal A}$ est stable
+lorsqu'on multiplie (\`a gauche) ses \'el\'ements par des \'el\'ements
+de ${\cal A}$. Dans l'affirmative, on dit que $Der{\cal A}$ est un {\sl 
+module \/} \index{volume} sur ${\cal A}$.
+ La
+r\'eponse est oui, mais seulement dans le cas o\`u ${\cal
+A}$ est commutative. En effet, prenons $f$ et $g$ dans ${\cal A}$. Alors,
+$ (hv)[fg] =
+h(v[fg]) = h(v[f] g + f v[g]) = h v[f] g + h f v[g]$ mais
+$(hv)[f] g + f (hv)[g] = h v[f] g + f h v[g]$. Ces deux
+expressions ne co\"incident que si $h f = f h$.
+
+
+Conclusion: L'ensemble des d\'erivations d'une alg\`ebre
+associative n'est pas, en g\'en\'eral, un module sur cette
+alg\`ebre, sauf si cette cette derni\`ere est commutative.
+Il est facile de voir que $Der{\cal A}$ est un module sur
+le centre de ${\cal A}$, centre qui peut \^etre assez
+petit...
+
+ Par contre, l'ensemble des d\'erivations est
+toujours une alg\`ebre de Lie~: on peut y
+d\'efinir une loi de composition interne (not\'ee $[,]$) non
+associative et anti-commutative ($[u,v]=-[v,u]$), qui
+v\'erifie l'identit\'e suivante (l'identit\'e de Jacobi): $$
+[u,[v,w]] + [v,[w,u]] + [w,[u,v]] = 0 $$
+\par
+Rappelons que l'ensemble des champs de vecteurs sur une vari\'et\'e
+n'est autre que l'alg\`ebre de Lie $Der C^\infty(M)$.
+\index{champs de vecteurs}
+\par
+ Le fait que l'ensemble des d\'erivations de ${\cal A}$
+soit un module sur ${\cal A}$ lorsque ${\cal A}$ est
+commutative admet une g\'en\'eralisation
+{\sl supersym\'etrique\/}\index{supersym\'etrique}. Supposons que $A$ soit une alg\`ebre
+$\ZZ_2$-gradu\'ee. Chaque \'el\'ement $a$ de ${\cal A}$ peut donc
+s'\'ecrire comme somme d'un \'el\'ement pair ($\#a =0$) et d'un
+\'el\'ement impair ($\#a =1$). On d\'efinit les
+{\sl d\'erivations gradu\'ees \/} (ou {\sl super-d\'erivations \/}) 
+\index{d\'erivations gradu\'ees} des
+alg\`ebres $\ZZ_2$-gradu\'ees comme les d\'erivations usuelles, mais en
+introduisant un signe. On dit qu'une super-d\'erivation
+est paire si c'est une d\'erivation, au sens usuel du
+terme. On dit qu'une super-d\'erivation
+est impaire si c'est  une
+application lin\'eaire de $A$ dans $A$ telle que $v[f g] =
+v[f] g + (-1)^{\#f} f v[g]$. On introduit donc alors une
+$\ZZ_2$ graduation pour les super-d\'erivations et on r\'eunit
+les deux types de formules de la fa\c con suivante~:
+ $$
+ \mbox{\fbox{$ 
+ v[f g] = v[f] g + (-1)^{\#v \#f} f v[g]
+ $}}$$ avec  $f,g \in
+{\cal A}$. En pratique, il suffit d'utiliser la r\`egle
+dite ``R\`egle de Milnor'' disant qu'il faut introduire un signe ``$-$''
+ chaque fois qu'on doit commuter deux \'el\'ements impairs.\par
+
+ L'ensemble des super-d\'erivations d'une alg\`ebre {\cal A} ne constitue pas,
+en g\'en\'eral, un module sur ${\cal A}$, sauf lorsque ${\cal A}$ est
+{\sl commutative gradu\'ee \/}\index{alg\`ebre commutative gradu\'ee} (on dit aussi
+{\sl super-commutative \/}), c'est \`a dire lorsque $f g =
+(-1)^{\#f \#g} g f$. Par contre l'ensemble des
+d\'erivations gradu\'ees constitue toujours un module sur le
+{\sl super-centre \/} de ${\cal A}$ (l'ensemble des \'el\'ements de
+${\cal A}$ qui commute -- au signe pr\`es -- avec ${\cal A}$)
+et il  constitue \'egalement une {\sl super-alg\`ebre de Lie 
+\/}\index{superalg\`ebre de Lie}, c'est
+\`a dire que les d\'erivations gradu\'ees super-anticommutent~:
+$$
+\mbox{\fbox{$
+[v,w]= - (-)^{\#v \#w} [w,v]
+$}}
+$$
+et v\'erifient l'identit\'e de Jacobi gradu\'ee
+$$
+\mbox{\fbox{$
+(-)^{\#u \#w}[u,[v,w]] +
+(-)^{\#w \#v}[w,[u,v]] +
+(-)^{\#v \#u}[v,[w,u]] = 0 
+$}}
+$$ 
+
+%%% D\'efinition alg\'ebrique comme d\'erivations,
+%%% op\'erateurs diff\'erentiels
+%%% d'ordre $1$ agissant sur les fonctions, etc
+
+\subsection{Cohomologie de De Rham}\label{sec: cohomologie de De Rham}
+
+ Nous avons vu que l'op\'erateur 
+$d$ satisfait
+$d^2 = 0$ et envoie
+$\Omega^k M$ dans
+$\Omega^{k + 1} M$. Soit
+$Z^k$ le noyau de
+$d$, c'est-\`a-dire 
+$Z^k = \{ \omega \in \Omega^k M \ t q \ d \omega = 0 \}$. Les
+\'el\'ements de
+$Z^k$ sont appel\'es {\sl cocycles de De Rham \/}\index{cocycles} de degr\'e 
+$k$ (ou {\sl formes ferm\'ees}\index{formes ferm\'ees}). Soit
+$B^k$ l'image par
+$d$ de 
+$\Omega^{k - 1} M$ dans 
+$\Omega^k M$, c'est-\`a-dire 
+$B^k = 
+\{ 
+\omega \in \Omega^k M \ t q \ \exists \tau \in \Omega^{k - 1}$ avec
+$\omega = d \tau
+\}$. Les \'el\'ements de
+$B^k$ sont les {\sl cobords de De Rham \/}\index{cobords} de degr\'e
+$k$ ou {\sl formes exactes \/}\index{formes exactes} . Le fait que 
+$d^2 = 0$ implique l'inclusion
+$B^k \subset Z^k$.
+
+Il r\'esulte de la lin\'earit\'e de
+$d$ que
+$Z^k$ et 
+$B^k$ sont stables par addition, ce sont donc des groupes
+ab\'eliens~; on peut alors consid\'erer le groupe quotient
+$H^k = Z^k / B^k$ qu'on appelle groupe de cohomologie (de De Rham)
+de degr\'e
+$k$. On peut calculer, pour toute vari\'et\'e, les groupes
+$H^0, H^1, \dots, H^n$. Ces groupes fournissent, en quelque sorte
+une ``mesure'' de la non-trivialit\'e de la topologie de la
+vari\'et\'e
+$M$. En effet, tous ces groupes sont triviaux (se r\'eduisent \`a
+l'\'el\'ement neutre 0) dans le cas de l'espace num\'erique 
+$\RR^n$, ce que le lecteur sait d\'ej\`a puisque, dans un autre
+contexte, celui de la th\'eorie des \'equations diff\'erentielles
+sur 
+$\RR^n$, on montre de fa\c con \'el\'ementaire que, pour r\'esoudre
+une \'equation 
+$d f = 0$, il faut poser
+$f = d g$ (Lemme de Poincar\'e).
+
+\subsection{Homologie de De Rham}
+
+ La d\'efinition de l'homologie de De Rham est
+plus d\'elicate que celle de la cohomologie. De fa\c con \`a en
+donner une image intuitive, disons qu'on s'int\'eresse \`a des
+``morceaux'' de la vari\'et\'e
+$M$ (compt\'es possiblement avec multiplicit\'e). Un tel morceau 
+$C$ (techniquement une {\sl cha\^{\i}ne \/}) peut avoir un bord (le bord
+d'un disque est un cercle) ou pas de bord (le bord d'un cercle est
+nul). On peut formellement additionner les cha\^{\i}nes (avec des coefficients
+r\'eels, dans le cas pr\'esent).
+ On d\'efinit alors un {\sl op\'erateur bord\/}\index{bord}
+$\partial$, de carr\'e nul lui aussi 
+($\partial^2 = 0$, le bord d'un bord est nul) et on peut
+consid\'erer les {\sl cycles \/} \index{cycle} (cha\^{\i}nes
+$C$ dont le bord 
+$\partial C$ est nul) et les {\sl bords\/} (cha\^{\i}nes 
+$C$ qui sont le bord de quelque chose 
+$C = \partial D$).
+
+Tous les bords \'etant des cycles, on peut l\`a aussi consid\'erer
+les cycles
+$Z_k$ de dimension
+$k$ modulo les bords
+$B_k$ et d\'efinir les groupes d'homologie
+$H_k = Z_k / B_k$. De fa\c con g\'en\'erale, on parle de
+{\sl cohomologie \/}\index{cohomologie} lorsqu'on a un op\'erateur de carr\'e nul (tel 
+$d$) dont l'action sur un espace vectoriel
+$\ZZ$-gradu\'e fait cro\^{\i}tre le degr\'e d'une unit\'e et
+ d'{\sl homologie\/}\index{homologie} lorsqu'on
+a un op\'erateur de carr\'e nul 
+(tel~$\partial$) dont l'action fait d\'ecro\^{\i}tre le degr\'e.
+
+Paradoxalement, la d\'efinition de 
+$d$ est plus simple que celle de
+$\partial$ (nous avons pass\'e cette derni\`ere sous silence) alors
+que l'action de 
+$\partial$ est plus intuitive, plus ``visuelle'' que celle de 
+$d$. Le lien entre les deux est fournit par \index{th\'eor\`eme de Stokes} le {\sl th\'eor\`eme de
+Stokes\/}~: de fa\c con g\'en\'erale on peut int\'egrer les 
+$k$-formes sur les 
+$k$-cha\^{\i}nes et on a la propri\'et\'e
+$$
+\mbox{\fbox{$
+\int_{\partial C} \omega
+= \int_C d \omega
+$}}
+$$
+qui g\'en\'eralise la relation bien connue des physiciens de premi\`ere
+ann\'ee de nos universit\'es 
+$\int_\Sigma \vr E. d \vr s = \int_V d i v \vr E \, d \tau$ o\`u la
+surface 
+$\Sigma$ est le bord du volume
+$V$ et o\`u l'int\'egrale repr\'esente le ``flux sortant'' du
+champ \'electrique
+$\vr E$.
+
+La dualit\'e entre homologie et cohomologie s'\'ecrit tr\`es
+simplement dans le cas des vari\'et\'es compactes~; dans ce cas, on
+d\'emontre que
+$H^k$ est isomorphe \`a $ H_{n - k}$ o\`u 
+$n$ est la dimension de la vari\'et\'e. Le support visuel intuitif
+suffit, en dimension~2, pour calculer l'homologie (et donc la
+cohomologie) de quelques vari\'et\'es tr\`es simples. C'est ainsi
+que, pour la sph\`ere 
+$S^2$ on a 
+$H_0 (S^2) = H_2 (S^2) = \RR$ et
+$H_1 (S^2) = 0$ (tout cercle trac\'e sur la sph\`ere est le bord de
+quelque chose), alors que pour le tore
+$T^2$, on a 
+$H_0 (T^2) = H_2 (T^2) = \RR$ mais 
+$H_1 (T^2) = \RR \oplus \RR$~: les deux g\'en\'erateurs de
+$H_1 (T^2)$ correspondent respectivement aux deux types de cercles
+qu'on peut tracer sur un tore et qui ne ``bordent'' rien,
+c'est-\`a-dire ``ceux qui font un tour''. On appelle {\sl nombres de
+Betti \/} \index{nombres de Betti} de la vari\'et\'e
+$M$, la dimension 
+$b_p$ de
+$H_p (M)$ consid\'er\'e comme espace vectoriel.
+
+
+\subsection{Espace des $p$-vecteurs}
+
+Nous avons choisi de d\'evelopper la notion de produit ext\'erieur
+en partant du fibr\'e cotangent~, c'est-\`a-dire que nous avons
+consid\'er\'e des produits tensoriels compl\`etement
+antisym\'etriques de vecteurs covariants. Ceci nous a amen\'e au
+concept de forme diff\'erentielle. Nous aurions pu faire de m\^eme
+en partant des vecteurs contravariants. Le formalisme est tr\`es
+semblable et les objets contravariants $\Omega_p(M)$ correspondant aux 
+formes
+diff\'erentielles $\Omega^p(M)$ sont simplement baptis\'ees 
+``$p$-vecteurs''. On peut alors bien entendu \'evaluer une 
+$p$-forme sur un 
+$p$-vecteur, le r\'esultat \'etant une fonction sur 
+$M$.
+
+
+\subsection{Espace des courants de De Rham}\label{sec: courants de De Rham}
+
+Le lecteur est sans doute d\'ej\`a familier avec la notion de
+distribution. Pour les fonctions num\'eriques sur un compact de $\RR^n$
+ les distributions
+sont d\'efinies comme dual des fonctions infiniment diff\'erentiables.
+ Cet espace
+contient d'une part des \'el\'ements ``r\'eguliers'' mais aussi
+toutes les mesures (en particulier la mesure de Dirac) et m\^eme des
+objets encore plus singuliers (les d\'eriv\'ees de la distribution
+de Dirac par exemple). On peut g\'en\'eraliser la th\'eorie des
+distributions aux formes diff\'erentielles~ de degr\'e quelconque sur une
+vari\'et\'e; on d\'efinit ce qu'on
+appelle l'espace des {\sl courants de De Rham \/}\index{courants de De 
+Rham} comme dual (sur 
+$\RR$) des formes diff\'erentielles. L'\'evaluation d'un courant 
+$C$ sur une forme 
+$\omega$ est donc un nombre
+$\langle C, \omega \rangle$. Si la vari\'et\'e
+$M$ est compacte et si 
+$\omega$ est une 
+$k$-forme,
+un \'el\'ement ``r\'egulier'' peut \^etre
+repr\'esent\'e par une 
+$n - k$ forme
+$\sigma$ puisque l'\'evaluation de l'int\'egrale
+$\int_M \sigma \land \omega$ est bien une fonctionnelle lin\'eaire.
+L'int\'egration d'une forme sur une cha\^{\i}ne (th\'eorie de
+l'homologie), l'\'evaluation d'un 
+$p$-vecteur sur une 
+$p$-forme suivie de l'int\'egration sur
+$M$ de la fonction obtenue,
+fournissent aussi des exemples de
+courants de De Rham. La th\'eorie de l'homologie de De Rham
+(op\'erateur 
+$\partial$) se g\'en\'eralise d'ailleurs au cadre des courants
+ et le th\'eor\`eme de Stokes s'\'ecrit dans ce cas
+$\langle \partial C,\omega \rangle = \langle C, d\omega \rangle$.
+
+\subsection{Les alg\`ebres de Fr\"olicher -- Nijenhuis et de Nijenhuis--Richardson}
+
+Nous savons que l'alg\`ebre de De Rham $\Omega(M)$, munie du produit 
+ext\'erieur, est une alg\`ebre commutative gradu\'ee.
+
+Nous savons aussi que l'ensemble des d\'erivations gradu\'ees d'une 
+alg\`ebre commutative gradu\'ee constitue une super-alg\`ebre de Lie pour 
+laquelle le
+ crochet de Lie  est donn\'ee par le commutateur (gradu\'e) que nous 
+noterons
+simplement $[.,.]$.
+
+En cons\'equence $Der(\Omega(M))$ est une alg\`ebre de Lie gradu\'ee. 
+Reste \`a
+identifier explicitement les \'el\'ements de cette alg\`ebre.
+
+Tout d'abord, puisque $\Omega(M)$ est $\ZZ$-gradu\'ee, on dira qu'une 
+d\'erivation est de degr\'e $p$ (qui peut \^etre positif, n\'egatif ou 
+nul) si elle fait
+passer de $\Omega^k(M)$ \`a $\Omega^{k+p}(M)$. On notera 
+$Der_p(\Omega(M))$ l'espace des d\'erivations de degr\'e $p$. La 
+d\'eriv\'ee ext\'erieure est elle-m\^eme un \'el\'ement de 
+$Der_1(\Omega(M)$.
+
+Soit $\Omega(M,TM)$ l'espace des formes diff\'erentielles sur $M$ {\it \`a 
+valeurs\/} dans le fibr\'e tangent, c'est \`a dire $\Omega^k(M,TM)  = 
+ \Gamma(\Lambda^kT^*M\otimes TM)$. Une $k$-forme $K$ \`a valeurs 
+vectorielles s'\'ecrira, dans un rep\`ere naturel,
+$$K = K_{\mu_1 \mu_2 \ldots \mu_k}^\nu dx^{\mu_1}\land dx^{\mu_2}\ldots \land dx^{\mu_k}
+\otimes {\partial \over \partial x^\nu}$$
+
+
+Un r\'esultat du \`a Richardson et Nijenhuis montre que l'alg\`ebre de Lie 
+gradu\'ee des d\'erivations (gradu\'ees) de l'alg\`ebre de De Rham 
+$\Omega(M)$ peut 
+s'identifier \`a deux copies de  $\Omega(M,TM)$ munies de deux crochets 
+diff\'erents, connus respectivement sous le nom de {\sl crochet de 
+Nijenhuis-Richardson\/} \index{crochet de Nijenhuis-Richardson} et 
+{\sl crochet de Fr\"olicher-Nijenhuis\/}\index{crochet de 
+Fr\"olicher-Nijenhuis}. Plus pr\'ecis\'ement, pour tout 
+toute d\'erivation $D$, de degr\'e $k$ de l'alg\`ebre $\Omega(M)$ on peut 
+trouver un unique $K \in  \Omega^k(M,TM)$ et un unique $L \in  
+\Omega^{k+1}(M,TM)$ tels que $$\mbox{\fbox{$D = {\cal L}_K + i_L$}}$$ o\`u $ {\cal L}_K$ et 
+$ i_L$ d\'efinissent des d\'erivations que nous allons caract\'eriser un 
+peu plus loin.
+Nous ne d\'emontrerons pas le th\'eor\`eme de Richardson et Nijenhuis mais
+ d\'efinirons seulement  les d\'erivations dont il vient d'\^etre question 
+(voir \cite{MDV-PM}.
+
+Il se trouve que les \'el\'ements de $\Omega(M,TM)$ peuvent en effet agir 
+par d\'erivation sur $\Omega(M)$, et ce, de deux fa\c cons distinctes.
+
+\smallskip
+La premi\`ere consiste en une g\'en\'eralisation du produit int\'erieur.
+Au lieu de consid\'erer le produit int\'erieur d'une forme par un vecteur, 
+on remplace le vecteur par une $k$-forme \`a valeurs vectorielles.
+ En effet, soit $K \in \Omega^k(M,TM)$, $L \in \Omega^l(M,TM)$ et $\omega$ 
+une forme diff\'erentielle de degr\'e $q$ sur $M$. On va d\'efinir $i_K\omega$, qui 
+sera une forme diff\'erentielle de degr\'e $k+(q-1)$ (la partie ``champ de 
+vecteurs'' 
+pr\'esente dans $K$ fait passer de $q$ \`a $q-1$ mais les $k$ indices de 
+forme demeurent). Soient $X_i$ $i\in \{1,2,\ldots,k+(q-1)$ des champs de 
+vecteurs.
+On pose
+$$
+i_K\omega(X_1,X_2,\ldots,X_{k+q-1}) =
+{1\over k!(q-1)!} \sum_\sigma \epsilon_\sigma
+\omega(K(X_{\sigma 1},\ldots,X_{\sigma k}),X_{\sigma(k+1)},\ldots)
+$$
+Notons que, agissant sur une fonction (un \'el\'ement de $\Omega^0(M)$), $i_K$ 
+donne z\'ero.
+On peut v\'erifier que $i_K$ d\'efini bien une d\'erivation. Celle-ci est
+d'ailleurs de degr\'e $k-1$ ; ainsi $i_K \in Der_{k-1}\Omega(M)$. On peut 
+d\'emontrer que toute d\'erivation de l'alg\`ebre de De Rham dont la 
+restriction aux fonctions est nulle est de cette forme. Le commutateur 
+gradu\'e (dans $Der(\Omega(M))$ de deux d\'erivations de ce type est une 
+d\'erivation du m\^eme type. Plus pr\'ecis\'ement,
+$$ \mbox{\fbox{$ [i_K,i_L] = i_{[K,L]_{NR}} $}} $$
+o\`u la forme \`a valeur vectorielle $[K,L]_{NR}$ est \'egale \`a
+$$
+[K,L]_{NR}  =  i_K \, L -(-1)^{(k-1)(l-1)}\,  i_L \, K
+$$
+et o\`u on g\'en\'eralise l'action de $i_K$ sur $\Omega(M)$ \`a une action
+sur $\Omega(M,TM)$ 
+ en posant
+$i_K(\alpha \otimes X)  =  i_K(\alpha) \otimes X$, avec $\alpha \in 
+\Omega(M)$ et $X$ un champ de vecteurs. Le crochet $[,.,]$ porte le nom de 
+{\sl crochet de Nijenhuis-Richardson\/}.
+\smallskip
+
+La deuxi\`eme fa\c con d'agir consiste en une g\'en\'eralisation de la 
+d\'eriv\'ee de Lie. Soit encore $K \in \Omega^k(M,TM)$. On d\'efinit 
+${\cal L}_K$ par
+$${\cal L}_K  =  [i_K,d] =  i_K \, d - (-1)^{k-1} d \, i_K
+$$
+On peut v\'erifier que cet op\'erateur fournit bien une d\'erivation de 
+l'alg\`ebre $\Omega(M)$. Cette d\'erivation est de degr\'e $k$ : ${\cal 
+L}_K \in Der_k(\Omega(M)$ (dans le cas particulier $k=0$ on retrouve un 
+r\'esultat connu).
+On peut d\'emontrer que
+$$
+\mbox{\fbox{$
+[{\cal L}_K,{\cal L}_L] = {\cal L}_{[K,L]_{FN}}
+$}}$$
+pour une forme \`a valeurs vectorielles bien d\'etermin\'ee not\'ee 
+$[K,L]_{FN}$ qu'on appelle {\sl crochet de Fr\"olicher-Nijenhuis\/}. Pour 
+des \'el\'ements d\'ecompos\'es, on a la formule de Michor
+\begin{eqnarray*}
+[\alpha\otimes X,\beta \otimes Y]_{FN} & = & 
+\alpha \land \beta \otimes [X,Y] \, + \,
+\alpha \land {\cal L}_X \beta \otimes Y \\ {} & {} & - \, 
+{\cal L}_Y \alpha \land \beta \otimes X \, + \, 
+(-1)^{\#\alpha}(d\alpha\land i_X \beta \otimes Y \, + \, 
+               i_Y \alpha \land d\beta \otimes X)
+\end{eqnarray*}
+Avant de conclure ce paragraphe, il est utile de d\'efinir la notion 
+suivante.
+ Soit $J \in \Omega^1(M,TM)$, alors le carr\'e gradu\'e de $J$, pour le 
+crochet de Fr\"olicher-Nijenhuis, est un \'el\'ement
+$[J,J]_{FN}$ de $\Omega^2(M,TM)$ appel\'e  {\sl torsion de Nijenjuis}
+\index{torsion de Nijenhuis} du 
+vecteur-1-forme $J$. Pour justifier l'int\'er\^et port\'e \`a cette 
+notion, citons seulement le r\'esultat suivant (nous n'\'etudierons pas 
+les vari\'et\'es complexes dans cet ouvrage) : lorsque $J$, qui peut 
+s'interpr\'eter g\'eom\'etriquement comme un champ d'endomorphismes du 
+fibr\'e tangent, est une structure presque complexe ($J^2=-1$), 
+l'annulation de sa torsion de Nijenhuis fourni une condition n\'ecessaire et 
+suffisante pour l'int\'egrabilit\'e de cette structure (c'est \`a dire que, 
+dans ce cas, la structure presque-complexe est en fait, complexe).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

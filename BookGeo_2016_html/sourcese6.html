@@ -1,0 +1,971 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>Formes differentielles</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<!-- html,index=2,3,next --> 
+<meta name="src" content="source.tex"> 
+<link rel="stylesheet" type="text/css" href="source.css"> 
+</head><body 
+>
+   <!--l. 1206--><div class="crosslinks"><p class="noindent">[<a 
+href="sourcese7.html" >next</a>] [<a 
+href="sourcese5.html" >prev</a>] [<a 
+href="sourcese5.html#tailsourcese5.html" >prev-tail</a>] [<a 
+href="#tailsourcese6.html">tail</a>] [<a 
+href="sourcech1.html#sourcese6.html" >up</a>] </p></div>
+   <h3 class="sectionHead"><span class="titlemark">1.6   </span> <a 
+ id="x18-350001.6"></a>Formes différentielles</h3>
+<!--l. 1208--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">1.6.1   </span> <a 
+ id="x18-360001.6.1"></a>Définition</h4>
+<!--l. 1210--><p class="noindent" >Nous avons déjà défini la notion de vecteur au point <span 
+class="cmmi-12">P </span>d&#8217;une variété
+différentiable <span 
+class="cmmi-12">M </span>ainsi que la notion de champ de vecteurs. L&#8217;ensemble des
+vecteurs au point <span 
+class="cmmi-12">P </span>se notant <span 
+class="cmmi-12">T</span><sub><span 
+class="cmmi-8">P</span> </sub><span 
+class="cmmi-12">M</span>, l&#8217;ensemble de tous les vecteurs (le fibré
+tangent) se notant <span 
+class="cmmi-12">TM </span>et l&#8217;ensemble des champs de vecteurs se notant &#x0393;<span 
+class="cmmi-12">TM</span>, on
+obtient, par dualité, les notions qui suivent. Tout d&#8217;abord l&#8217;espace vectoriel dual
+de <span 
+class="cmmi-12">T</span><sub><span 
+class="cmmi-8">P</span> </sub><span 
+class="cmmi-12">M </span>se note <span 
+class="cmmi-12">T</span><sub><span 
+class="cmmi-8">P</span> </sub><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M</span><span class="frenchb-thinspace">&#x00A0;</span>; ses éléments sont donc des formes extérieures de
+degré&#x00A0;1, ou plus simplement, des &#8220;1-formes&#8221;&#x00A0;. L&#8217;ensemble <span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M</span>, baptisé fibré
+cotangent, est l&#8217;ensemble de toutes les 1-formes, lorsque le point <span 
+class="cmmi-12">P </span>décrit <span 
+class="cmmi-12">M</span>,
+c&#8217;est-à-dire <span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M </span>= <span 
+class="cmsy-10x-x-120">&#x222A;</span><sub>
+<span 
+class="cmmi-8">p</span><span 
+class="cmsy-8">&#x2208;</span><span 
+class="cmmi-8">M</span></sub><span 
+class="cmmi-12">T</span><sub><span 
+class="cmmi-8">P</span> </sub><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M</span>.
+<!--l. 1229--><p class="indent" >   Une forme différentielle (en degré un) est tout simplement un champ de
+formes extérieures, c&#8217;est-à-dire une application qui à tout point <span 
+class="cmmi-12">P </span><span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="cmmi-12">M </span>associe
+une forme extérieure en ce point. Nous verrons un peu plus loin la raison d&#8217;être de
+cette terminologie. L&#8217;ensemble des formes différentielles de degré 1 peut se noter
+&#x0393;<span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M </span>ou &#x03A9;<sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmmi-12">M</span>.
+<!--l. 1237--><p class="indent" >   Toutes les constructions algébriques du paragraphe précédent (tenseurs et
+formes extérieures sur un espace vectoriel) sont en particulier valables ici
+puisqu&#8217;on peut choisir comme espace vectoriel, l&#8217;espace vectoriel tangent au point
+<span 
+class="cmmi-12">P</span>, c&#8217;est-à-dire <span 
+class="cmmi-12">T</span><sub><span 
+class="cmmi-8">P</span> </sub><span 
+class="cmmi-12">M</span>. Les tenseurs <span 
+class="cmmi-12">p </span>fois contravariants, <span 
+class="cmmi-12">q </span>fois covariants au point
+<span 
+class="cmmi-12">P </span>sont donc des éléments de (<span 
+class="cmmi-12">T</span><sub><span 
+class="cmmi-8">P</span> </sub><span 
+class="cmmi-12">M</span>)<sup><span 
+class="cmsy-8">&#x2297;</span><span 
+class="cmmi-8">p</span></sup> <span 
+class="cmsy-10x-x-120">&#x2297; </span>(<span 
+class="cmmi-12">T</span><sub>
+<span 
+class="cmmi-8">P</span> </sub><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M</span>)<sup><span 
+class="cmsy-8">&#x2297;</span><span 
+class="cmmi-8">q</span></sup>. Si on considère tous les
+tenseurs de ce type (c&#8217;est-à-dire qu&#8217;on effectue la réunion de ces espaces lorsque
+<span 
+class="cmmi-12">P </span>décrit <span 
+class="cmmi-12">M</span>) on obtient (<span 
+class="cmmi-12">TM</span>)<sup><span 
+class="cmsy-8">&#x2297;</span><span 
+class="cmmi-8">p</span></sup> <span 
+class="cmsy-10x-x-120">&#x2297; </span>(<span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M</span>)<sup><span 
+class="cmsy-8">&#x2297;</span><span 
+class="cmmi-8">q</span></sup> et on peut bien entendu
+considérer des champs de tenseurs de ce type, dont l&#8217;ensemble constitue
+&#x0393;<span class="bbig"><img 
+src="source49x.png" alt="("  class="left" align="middle"></span>(<span 
+class="cmmi-12">TM</span>)<sup><span 
+class="cmsy-8">&#x2297;</span><span 
+class="cmmi-8">p</span></sup> <span 
+class="cmsy-10x-x-120">&#x2297; </span>(<span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M</span>)<sup><span 
+class="cmsy-8">&#x2297;</span><span 
+class="cmmi-8">q</span></sup><span class="bbig"><img 
+src="source50x.png" alt=")"  class="left" align="middle"></span>.
+<!--l. 1260--><p class="indent" >   Le cas particulier des tenseurs complètement antisymétriques est
+particulièrement intéressant. On notera &#x039B;(<span 
+class="cmmi-12">T</span><sub><span 
+class="cmmi-8">P</span> </sub><span 
+class="cmmi-12">M</span>)<sup><span 
+class="cmsy-8">*</span></sup> = <span 
+class="cmex-10x-x-120">&#x2295;</span><sub>
+<span 
+class="cmmi-8">k</span></sub>&#x039B;<sup><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-12">T</span><sub>
+<span 
+class="cmmi-8">P</span> </sub><span 
+class="cmmi-12">M</span>)<sup><span 
+class="cmsy-8">*</span></sup> l&#8217;algèbre
+extérieure sur le dual de l&#8217;espace vectoriel <span 
+class="cmmi-12">T</span><sub><span 
+class="cmmi-8">P</span> </sub><span 
+class="cmmi-12">M </span>et &#x039B;(<span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M</span>) = <span 
+class="cmsy-10x-x-120">&#x222A;</span><sub>
+<span 
+class="cmmi-8">p</span><span 
+class="cmsy-8">&#x2208;</span><span 
+class="cmmi-8">M</span></sub>&#x039B;(<span 
+class="cmmi-12">T</span><sub><span 
+class="cmmi-8">P</span> </sub><span 
+class="cmmi-12">M</span>)<sup><span 
+class="cmsy-8">*</span></sup>.
+<!--l. 1266--><p class="indent" >   Les <span 
+class="cmsl-12">formes diff</span><span 
+class="cmsl-12">érentielles</span> <a 
+ id="dx18-36001"></a>de degré <span 
+class="cmmi-12">q </span>sont des &#8220;sections&#8221; de &#x039B;<sup><span 
+class="cmmi-8">q</span></sup>(<span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M</span>)
+c&#8217;est-à-dire des champs de formes extérieures de degré <span 
+class="cmmi-12">q</span>. Leur ensemble peut se
+                                                                          
+
+                                                                          
+noter, bien entendu, &#x0393;&#x039B;<sup><span 
+class="cmmi-8">q</span></sup>(<span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M</span>). Lorsque <span 
+class="cmmi-12">q </span>= 1, on a &#x039B;<sup><span 
+class="cmr-8">1</span></sup>(<span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M</span>) = <span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M</span>. Pour
+alléger la notation, on décide de poser &#x03A9;<sup><span 
+class="cmmi-8">q</span></sup>(<span 
+class="cmmi-12">M</span>) = &#x0393;&#x039B;<sup><span 
+class="cmmi-8">q</span></sup>(<span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M</span>). On sait que <span 
+class="cmmi-12">q </span>ne
+peut pas être trop grand<span class="frenchb-thinspace">&#x00A0;</span>; plus précisément 0 <span 
+class="cmsy-10x-x-120">&#x2264; </span><span 
+class="cmmi-12">q </span><span 
+class="cmsy-10x-x-120">&#x2264; </span><span 
+class="cmmi-12">n </span>avec <span 
+class="cmmi-12">n </span>= dim <span 
+class="cmmi-12">M</span>.
+Attention, ne pas confondre la dimensionalité de &#x039B;(<span 
+class="cmmi-12">T</span><sub><span 
+class="cmmi-8">P</span> </sub><span 
+class="cmmi-12">M</span>)<sup><span 
+class="cmsy-8">*</span></sup> &#8211; qui est 2<sup><span 
+class="cmmi-8">n</span></sup> &#8211; et celle
+de &#x03A9;<span 
+class="cmmi-12">M </span>= <span 
+class="cmsy-10x-x-120">&#x2295;</span><sub><span 
+class="cmmi-8">q</span><span 
+class="cmr-8">=0</span></sub><sup><span 
+class="cmmi-8">n</span></sup>&#x03A9;<sup><span 
+class="cmmi-8">q</span></sup><span 
+class="cmmi-12">M</span>, qui est infinie. Notons que les éléments de &#x03A9;<sup><span 
+class="cmsy-8">&#x2218;</span></sup><span 
+class="cmmi-12">M </span>sont
+simplement les fonctions sur <span 
+class="cmmi-12">M </span>c&#8217;est-à-dire &#x03A9;<sup><span 
+class="cmr-8">0</span></sup><span 
+class="cmmi-12">M </span>= <span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">&#x221E;</span></sup>(<span 
+class="cmmi-12">M</span>). Nous avons
+déjà étudié les propriétés du produit extérieur et il n&#8217;y a rien à rajouter
+ici<span class="frenchb-nbsp">&#x00A0;</span>: le produit extérieur <span 
+class="cmmi-12">&#x03B1; </span><span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">&#x03B2; </span>de deux formes différentielles <span 
+class="cmmi-12">&#x03B1; </span>et <span 
+class="cmmi-12">&#x03B2; </span>est
+obtenu en &#8220;globalisant&#8221; la définition déjà connue pour chaque point <span 
+class="cmmi-12">P </span>de
+<span 
+class="cmmi-12">M</span>.
+<!--l. 1297--><p class="indent" >   &#x03A9;<span 
+class="cmmi-12">M</span>, munie des opérations de multiplication par un scalaire, d&#8217;addition et de
+produit extérieur, devient ainsi une algèbre. Cette algèbre n&#8217;est pas commutative
+mais elle est commutative graduée puisque <span 
+class="cmmi-12">&#x03B1;</span><span 
+class="cmsy-10x-x-120">&#x2227;</span><span 
+class="cmmi-12">&#x03B2; </span>= (<span 
+class="cmsy-10x-x-120">-</span>1)<sup><span 
+class="cmr-8">#</span><span 
+class="cmmi-8">&#x03B1;</span><span 
+class="cmr-8">#</span><span 
+class="cmmi-8">&#x03B2;</span></sup><span 
+class="cmmi-12">&#x03B2; </span><span 
+class="cmsy-10x-x-120">&#x2227;</span><span 
+class="cmmi-12">&#x03B1; </span>où #<span 
+class="cmmi-12">&#x03B1; </span>désigne
+le degré de <span 
+class="cmmi-12">&#x03B1;</span>. On appelle cette algèbre <span 
+class="cmsl-12">alg</span><span 
+class="cmsl-12">èbre de De Rham</span><a 
+ id="dx18-36002"></a> des formes
+différentielles.
+<!--l. 1307--><p class="indent" >   Pour ce qui est de l&#8217;écriture locale d&#8217;une forme différentielle, il n&#8217;y a pas
+grand-chose à rajouter non plus puisque nous savons déjà décomposer une forme
+extérieure sur une base de l&#8217;espace vectoriel <span 
+class="cmmi-12">T</span><sub><span 
+class="cmmi-8">P</span> </sub><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M</span>. Le seul problème qui
+se pose est de savoir comment la base en question varie avec le point
+<span 
+class="cmmi-12">P</span>.
+<!--l. 1315--><p class="indent" >   Soient <span 
+class="cmmi-12">x</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup>(<span 
+class="cmmi-12">P</span>) les coordonnées de <span 
+class="cmmi-12">P </span>dans une carte locale. On sait que
+l&#8217;ensemble des vecteurs <span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub> =  <span 
+class="cmmi-8">&#x2202;</span> __
+<span 
+class="cmmi-8">&#x2202;x</span><sup><span 
+class="cmmi-6">&#x03BC;</span></sup>  fournit le repère naturel associé à cette carte,
+c&#8217;est-à-dire que <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub><span 
+class="cmsy-10x-x-120">} </span>est une base de l&#8217;espace tangent en tout point d&#8217;un voisinage
+de <span 
+class="cmmi-12">P</span>.
+<!--l. 1324--><p class="indent" >   On désignera par <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">dx</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmsy-10x-x-120">} </span>la base duale correspondante et on écrira avec des
+indices &#8220;en haut&#8221; <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> = <span 
+class="cmmi-12">dx</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmsy-10x-x-120">}</span>. On peut, si on veut, &#8220;visualiser&#8221; <span 
+class="cmmi-12">dx</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> par &#8220;un petit
+accroissement&#8221; , mais ceci présente un intérêt purement psychologique<span class="frenchb-thinspace">&#x00A0;</span>; en effet
+<span 
+class="cmmi-12">dx</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> est <span 
+class="cmti-12">d</span><span 
+class="cmti-12">éfini </span>par dualité et donc par la relation <span 
+class="cmsy-10x-x-120">&#x27E8;</span><span 
+class="cmmi-12">dx</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x00A0;</span> <span 
+class="cmmi-8">&#x2202;</span>__
+<span 
+class="cmmi-8">&#x2202;x</span><sup><span 
+class="cmmi-6">&#x03BD;</span></sup><span 
+class="cmsy-10x-x-120">&#x27E9; </span>= <span 
+class="cmmi-12">&#x03B4;</span><sub><span 
+class="cmmi-8">&#x03BD;</span></sub><sup><span 
+class="cmmi-8">&#x03BC;</span></sup>. De la même
+façon qu&#8217;on avait un repère naturel <img 
+src="source51x.png" alt="(   )
+ &#x2202;&#x2202;x&#x03BC;"  class="left" align="middle"> associé aux coordonnées <span 
+class="cmmi-12">x</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup>, on a donc
+aussi un <span 
+class="cmsl-12">corep</span><span 
+class="cmsl-12">ère naturel</span> <a 
+ id="dx18-36003"></a><span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">dx</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmsy-10x-x-120">}</span>.
+<!--l. 1340--><p class="indent" >   Dans le cas de l&#8217;espace tangent, nous avons défini la notion de repère mobile
+<span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub><span 
+class="cmsy-10x-x-120">} </span>(qui était issu de   <span 
+class="cmmi-8">&#x2202;</span> __
+<span 
+class="cmmi-8">&#x2202;x</span><sup><span 
+class="cmmi-6">&#x03BC;</span></sup>  par changement de base arbitraire), nous aurons donc
+aussi un <span 
+class="cmsl-12">corep</span><span 
+class="cmsl-12">ère mobile</span><a 
+ id="dx18-36004"></a> <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03B1;</span></sup><span 
+class="cmsy-10x-x-120">} </span>défini, en chaque point <span 
+class="cmmi-12">P </span>de la carte, comme la
+base duale de <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub><span 
+class="cmsy-10x-x-120">}</span>, c&#8217;est-à-dire <span 
+class="cmsy-10x-x-120">&#x27E8;</span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03B1;</span></sup><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x00A0;e</span><sub>
+<span 
+class="cmmi-8">&#x03B2;</span></sub><span 
+class="cmsy-10x-x-120">&#x27E9; </span>= <span 
+class="cmmi-12">&#x03B4;</span><sub><span 
+class="cmmi-8">&#x03B2;</span></sub><sup><span 
+class="cmmi-8">&#x03B1;</span></sup>.
+<!--l. 1352--><p class="indent" >   Venons-en maintenant à la notion de différentielle proprement dite. Pour ce
+qui est des fonctions (0-formes), on pose bien entendu
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source52x.png" alt="|-------------|
+|df = -&#x2202;f&#x03BC;dx &#x03BC; |
+------&#x2202;x------
+" class="math-display" ></center>
+<!--l. 1362--><p class="indent" >   La 1-forme <span 
+class="cmmi-12">df </span>peut être évaluée sur le champ de vecteurs <span 
+class="cmmi-12">v </span>= <span 
+class="cmmi-12">v</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup>  <span 
+class="cmmi-8">&#x2202;</span> __
+<span 
+class="cmmi-8">&#x2202;x</span><sup><span 
+class="cmmi-6">&#x03BC;</span></sup>. On
+obtient
+   <center class="math-display" >
+<img 
+src="source53x.png" alt="           &#x2202;f   &#x03BC;       &#x03BD; &#x2202;      &#x2202;f   &#x03BD;   &#x03BC;   &#x2202;      &#x2202;f   &#x03BD; &#x03BC;    &#x03BC; &#x2202;f
+&#x27E8;df,v&#x27E9; = &#x27E8;---&#x03BC;dx ,v =  v ---&#x03BD;&#x27E9; = ---&#x03BC;v &#x27E8;dx , --&#x03BD;&#x27E9; =  --&#x03BC;v  &#x03B4;&#x03BD; = v ---&#x03BC;
+          &#x2202;x             &#x2202;x      &#x2202;x          &#x2202;x      &#x2202;x           &#x2202;x  " class="math-display" ></center> On
+voit que le membre de droite n&#8217;est autre que <span 
+class="cmmi-12">v</span>[<span 
+class="cmmi-12">f</span>]. Ainsi donc,
+   <center class="math-display" >
+<img 
+src="source54x.png" alt="|-------------|
+-&#x27E8;df,-v&#x27E9; =-v[f-]-  " class="math-display" ></center> On
+notera souvent <span 
+class="cmmi-12">df</span>(<span 
+class="cmmi-12">v</span>) au lieu de <span 
+class="cmsy-10x-x-120">&#x27E8;</span><span 
+class="cmmi-12">df,v</span><span 
+class="cmsy-10x-x-120">&#x27E9;</span>, l&#8217;évaluation de la forme <span 
+class="cmmi-12">df </span>sur le vecteur
+<span 
+class="cmmi-12">v</span>.
+<!--l. 1383--><p class="indent" >   La règle de Leibniz usuelle pour la différentielle d&#8217;un produit de deux
+fonctions, à savoir
+   <center class="math-display" >
+<img 
+src="source55x.png" alt="|-------------------|
+-d(fg)-=-df-g +-f-dg|  " class="math-display" ></center>
+résulte immédiatement de la propriété, pour les champs de vecteurs, d&#8217;être des
+dérivations de l&#8217;algèbre des fonctions.
+<!--l. 1393--><p class="indent" >   Nous allons généraliser aussi bien la définition de <span 
+class="cmmi-12">d </span>que la règle de Leibniz à
+des formes différentielles de degré supérieur.
+<!--l. 1397--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">1.6.2   </span> <a 
+ id="x18-370001.6.2"></a>La différentielle extérieure <span 
+class="cmmi-12">d</span></h4>
+<a 
+ id="dx18-37001"></a>
+<a 
+ id="dx18-37002"></a>
+<!--l. 1399--><p class="noindent" >Soit <span 
+class="cmmi-12">&#x03C9; </span>une <span 
+class="cmmi-12">k</span>-forme différentielle<span class="frenchb-thinspace">&#x00A0;</span>; on va définir un opérateur <span 
+class="cmmi-12">d </span>qui, appliqué à
+<span 
+class="cmmi-12">&#x03C9;</span>, crée une (<span 
+class="cmmi-12">k </span>+ 1)-forme. Cet opérateur est désigné sous le nom de <span 
+class="cmsl-12">diff</span><span 
+class="cmsl-12">érentielle</span>
+<span 
+class="cmsl-12">ext</span><span 
+class="cmsl-12">érieure </span>ou <span 
+class="cmsl-12">diff</span><span 
+class="cmsl-12">érentielle de De Rham</span>.
+<!--l. 1408--><p class="noindent" ><span 
+class="cmbx-12">D</span><span 
+class="cmbx-12">éfinition</span>&#x00A0;<span 
+class="cmbx-12">1.  </span><span 
+class="cmti-12">La forme diff</span><span 
+class="cmti-12">érentielle </span><span 
+class="cmmi-12">d&#x03C9; </span><span 
+class="cmti-12">peut se d</span><span 
+class="cmti-12">éfinir directement par son</span>
+<span 
+class="cmti-12">action sur tout </span>(<span 
+class="cmmi-12">k </span>+ 1)<span 
+class="cmti-12">-uplet </span><span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">v</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">,v</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,v</span><sub><span 
+class="cmmi-8">k</span><span 
+class="cmr-8">+1</span></sub><span 
+class="cmsy-10x-x-120">} </span><span 
+class="cmti-12">de champs de vecteurs, en posant</span>
+<div class="eqnarray">
+   <center class="math-display" >
+<img 
+src="source56x.png" alt="                      k+1
+                      &#x2211;       i+1
+d&#x03C9; (v1,v2,...,vk+1 ) =    (- 1)  vi[&#x03C9;(v1,...,^vi,...,vk+1)]
+                      i=1 &#x2211;
+                      +         (- 1)i+j&#x03C9;([vi,vj],v1,...,^vi,...,^vj,...,vk+1)
+                        i&#x2264;i&#x2264;j&#x2264;k+1
+" class="math-display" ></center>
+</div><span 
+class="cmti-12">o</span><span 
+class="cmti-12">ù le symbole</span><span 
+class="cmex-10x-x-120">^</span><span 
+class="cmti-12">d</span><span 
+class="cmti-12">ésigne l&#8217;omission de l&#8217;argument correspondant.</span>
+<!--l. 1432--><p class="indent" >   Cette définition possède un intérêt pratique certain. Pour se rappeler des
+signes, on peut signaler le moyen mnémotechnique suivant<span class="frenchb-nbsp">&#x00A0;</span>: le premier
+type de termes s&#8217;obtient en faisant passer les vecteurs <span 
+class="cmmi-12">v</span><sub><span 
+class="cmmi-8">i</span></sub> devant <span 
+class="cmmi-12">&#x03C9; </span>et
+                                                                          
+
+                                                                          
+en comptant un signe &#8220;<span 
+class="cmsy-10x-x-120">-</span>&#8221; chaque fois que <span 
+class="cmmi-12">v</span><sub><span 
+class="cmmi-8">i</span></sub> &#8220;traverse&#8221; un des autres
+vecteurs<span class="frenchb-thinspace">&#x00A0;</span>; le second type de terme s&#8217;obtient en choisissant une paire <span 
+class="cmmi-12">v</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmmi-12">,v</span><sub><span 
+class="cmmi-8">j</span></sub> et
+en la faisant passer en position 1 et 2 de la forme <span 
+class="cmmi-12">&#x03C9;</span>, tout en utilisant
+l&#8217;antisymétrie de <span 
+class="cmmi-12">&#x03C9; </span>lorsqu&#8217;on effectue des transpositions. On remplace alors la
+paire (<span 
+class="cmmi-12">v</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmmi-12">,v</span><sub><span 
+class="cmmi-8">j</span></sub>) par son crochet [<span 
+class="cmmi-12">v</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmmi-12">,v</span><sub><span 
+class="cmmi-8">j</span></sub>] et on multiplie le tout par un signe
+<span 
+class="cmsy-10x-x-120">-</span>1.
+<!--l. 1451--><p class="noindent" >Exemple 1<span class="frenchb-nbsp">&#x00A0;</span>: Soit <span 
+class="cmmi-12">f </span>une 0-forme, c&#8217;est à dire une fonction sur <span 
+class="cmmi-12">M</span>. La définition
+ci-dessus conduit à
+   <center class="math-display" >
+<img 
+src="source57x.png" alt="df(v) = v[f]  " class="math-display" ></center> ce
+qu&#8217;on savait déjà.
+<!--l. 1456--><p class="noindent" >Exemple 2<span class="frenchb-nbsp">&#x00A0;</span>: Soit <span 
+class="cmmi-12">&#x03C9;</span>, une 1-forme, alors
+   <center class="math-display" >
+<img 
+src="source58x.png" alt="d &#x03C9;(u,v) = u (&#x03C9; (v)) - v (&#x03C9;(u)) - &#x03C9;([u,v])  " class="math-display" ></center> Si
+<span 
+class="cmmi-12">u </span>=  <span 
+class="cmmi-8">&#x2202;</span> __
+<span 
+class="cmmi-8">&#x2202;x</span><sup><span 
+class="cmmi-6">&#x03BC;</span></sup>  et <span 
+class="cmmi-12">v </span>=  <span 
+class="cmmi-8">&#x2202;</span> __
+<span 
+class="cmmi-8">&#x2202;x</span><sup><span 
+class="cmmi-6">&#x03BD;</span></sup>, on trouve simplement que les composantes de <span 
+class="cmmi-12">F </span>= <span 
+class="cmmi-12">d&#x03C9; </span>sont
+données par <span 
+class="cmmi-12">F</span><sub><span 
+class="cmmi-8">&#x03BC;&#x03BD;</span></sub> = <span 
+class="cmmi-12">&#x2202;</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub><span 
+class="cmmi-12">&#x03C9;</span><sub><span 
+class="cmmi-8">&#x03BD;</span></sub> <span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">&#x2202;</span><sub><span 
+class="cmmi-8">&#x03BD;</span></sub><span 
+class="cmmi-12">&#x03C9;</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub>.
+<!--l. 1467--><p class="indent" >   Le lecteur aura reconnu, dans le cas de la dimension 4, l&#8217;expression du champ
+électromagnétique (le tenseur <span 
+class="cmmi-12">F </span>) en terme du (quadri) potentiel vecteur <span 
+class="cmmi-12">&#x03C9;</span>. Soit
+dit en passant, il faut incorporer le troisième terme (l&#8217;évaluation de <span 
+class="cmmi-12">&#x03C9; </span>sur le
+commutateur [<span 
+class="cmmi-12">u,v</span>]) lorsqu&#8217;on veut exprimer le champ <span 
+class="cmmi-12">F </span>= <span 
+class="cmmi-12">d&#x03C9; </span>dans un repère
+quelconque.
+<!--l. 1480--><p class="noindent" >Exemple 3<span class="frenchb-nbsp">&#x00A0;</span>: Soit <span 
+class="cmmi-12">&#x03C9;</span>, une 2-forme, alors
+<!--l. 1483--><p class="indent" >   <div class="eqnarray">
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source59x.png" alt="d&#x03C9;(x,y, z) = x(&#x03C9; (y, z)) - y(&#x03C9; (x,z)) + z(&#x03C9;(x,y))
+             - &#x03C9;([x,y],z) - &#x03C9;([y, z],x ) + &#x03C9; ([x, z],y )
+" class="math-display" ></center>
+</div>
+<!--l. 1490--><p class="indent" >   En utilisant la définition de <span 
+class="cmmi-12">d</span>, donnée ci-dessus, on montre immédiatement
+que, si <span 
+class="cmmi-12">&#x03C9;</span><sub><span 
+class="cmr-8">1</span></sub> <span 
+class="cmsy-10x-x-120">&#x2208; </span>&#x03A9;<sup><span 
+class="cmmi-8">k</span><sub><span 
+class="cmr-6">1</span></sub></sup>  et <span 
+class="cmmi-12">&#x03C9;</span><sub>
+<span 
+class="cmr-8">2</span></sub> <span 
+class="cmsy-10x-x-120">&#x2208; </span>&#x03A9;<sup><span 
+class="cmmi-8">k</span><sub><span 
+class="cmr-6">2</span></sub></sup>, alors
+   <center class="math-display" >
+<img 
+src="source60x.png" alt="|---------------------------------------|
+|d(&#x03C9; &#x2227; &#x03C9;  ) = d&#x03C9;  &#x2227; &#x03C9; +  (- 1 )k1&#x03C9; &#x2227; d&#x03C9;  |
+----1----2------1----2----------1-----2--
+" class="math-display" ></center>
+<!--l. 1501--><p class="indent" >   De la même façon, on montre que
+   <center class="math-display" >
+<img 
+src="source61x.png" alt="|-2-----|
+-d--=-0-|
+" class="math-display" ></center>
+<!--l. 1503--><p class="indent" >   Les deux propriétés ci-dessus sont absolument fondamentales et peuvent
+même servir à définir l&#8217;opérateur <span 
+class="cmmi-12">d </span>lui même.
+<!--l. 1507--><p class="noindent" ><span 
+class="cmbx-12">D</span><span 
+class="cmbx-12">éfinition</span>&#x00A0;<span 
+class="cmbx-12">2.  </span><span 
+class="cmmi-12">d </span><span 
+class="cmti-12">est l&#8217;unique op</span><span 
+class="cmti-12">érateur (application lin</span><span 
+class="cmti-12">éaire) de </span>&#x03A9;<sup><span 
+class="cmmi-8">k</span></sup><span 
+class="cmmi-12">M </span><span 
+class="cmti-12">dans</span>
+&#x03A9;<sup><span 
+class="cmmi-8">k</span><span 
+class="cmr-8">+1</span></sup><span 
+class="cmmi-12">M </span><span 
+class="cmti-12">tel que, pour tout </span><span 
+class="cmmi-12">k</span><span 
+class="cmti-12">, </span><span 
+class="cmmi-12">&#x03C9;</span><sub>
+<span 
+class="cmr-8">1</span></sub> <span 
+class="cmsy-10x-x-120">&#x2208; </span>&#x03A9;<sup><span 
+class="cmmi-8">k</span><sub><span 
+class="cmr-6">1</span></sub></sup><span 
+class="cmti-12">, </span><span 
+class="cmmi-12">&#x03C9;</span><sub>
+<span 
+class="cmr-8">2</span></sub> <span 
+class="cmsy-10x-x-120">&#x2208; </span>&#x03A9;<sup><span 
+class="cmmi-8">k</span><sub><span 
+class="cmr-6">2</span></sub></sup><span 
+class="cmti-12">, </span><span 
+class="cmmi-12">k </span>= <span 
+class="cmmi-12">k</span><sub>
+<span 
+class="cmr-8">1</span></sub> + <span 
+class="cmmi-12">k</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmti-12">, on ait</span>
+<span 
+class="cmmi-12">d</span>(<span 
+class="cmmi-12">&#x03C9;</span><sub><span 
+class="cmr-8">1</span></sub> <span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">&#x03C9;</span><sub><span 
+class="cmr-8">2</span></sub>) = <span 
+class="cmmi-12">d&#x03C9;</span><sub><span 
+class="cmr-8">1</span></sub> <span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">&#x03C9;</span><sub><span 
+class="cmr-8">2</span></sub> + (<span 
+class="cmsy-10x-x-120">-</span>1)<sup><span 
+class="cmmi-8">k</span><sub><span 
+class="cmr-6">1</span></sub></sup><span 
+class="cmmi-12">&#x03C9;</span><sub>
+<span 
+class="cmr-8">1</span></sub> <span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">d&#x03C9;</span><sub><span 
+class="cmr-8">2</span></sub> <span 
+class="cmti-12">et </span><span 
+class="cmmi-12">d</span><sup><span 
+class="cmr-8">2</span></sup> = 0<span 
+class="cmti-12">. En d&#8217;autre terme </span><span 
+class="cmmi-12">d </span><span 
+class="cmti-12">étend la</span>
+<span 
+class="cmti-12">d</span><span 
+class="cmti-12">éfinition usuelle de diff</span><span 
+class="cmti-12">érentiation des fonctions en une d</span><span 
+class="cmti-12">érivation gradu</span><span 
+class="cmti-12">ée de</span>
+                                                                          
+
+                                                                          
+<span 
+class="cmti-12">carr</span><span 
+class="cmti-12">é nul de l&#8217;alg</span><span 
+class="cmti-12">èbre </span>&#x03A9;<span 
+class="cmmi-12">M</span><span 
+class="cmti-12">.</span>
+<a 
+ id="dx18-37005"></a>En physique, si <span 
+class="cmmi-12">&#x03C9; </span>désigne le quadri-potentiel vecteur, alors, <span 
+class="cmmi-12">F </span>= <span 
+class="cmmi-12">d&#x03C9; </span>obéit
+automatiquement à l&#8217;équation <span 
+class="cmmi-12">d</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">F </span>= 0, puisque <span 
+class="cmmi-12">d</span><sup><span 
+class="cmr-8">2</span></sup> = 0. Ceci nous donne donc la
+moitié des équations de Maxwell (les équations sans source).
+<!--l. 1532--><p class="indent" >   Il existe une troisième définition possible de l&#8217;opérateur <span 
+class="cmmi-12">d</span>, définition qui est
+également d&#8217;un intérêt pratique certain. La voici<span class="frenchb-nbsp">&#x00A0;</span>:
+<!--l. 1537--><p class="noindent" ><span 
+class="cmbx-12">D</span><span 
+class="cmbx-12">éfinition</span>&#x00A0;<span 
+class="cmbx-12">3.  </span><span 
+class="cmti-12">Relativement </span><span 
+class="cmti-12">à un choix de coordonn</span><span 
+class="cmti-12">ées on peut </span><span 
+class="cmti-12">écrire </span><span 
+class="cmmi-12">&#x03C9; </span>= <span 
+class="cmmi-12">&#x03C9;</span><sub><span 
+class="cmmi-8">I</span></sub><span 
+class="cmmi-12">dx</span><sup><span 
+class="cmmi-8">I</span></sup><span 
+class="cmti-12">,</span>
+<span 
+class="cmti-12">o</span><span 
+class="cmti-12">ù </span><span 
+class="cmmi-12">I </span><span 
+class="cmti-12">est un multi-indice et </span><span 
+class="cmmi-12">&#x03C9;</span><sub><span 
+class="cmmi-8">I</span></sub> <span 
+class="cmti-12">est une 0-forme, c&#8217;est-</span><span 
+class="cmti-12">à-dire une fonction. On</span>
+<span 
+class="cmti-12">d</span><span 
+class="cmti-12">éfinit d&#8217;abord </span><span 
+class="cmmi-12">d </span><span 
+class="cmti-12">sur les fonctions </span><span 
+class="cmmi-12">d&#x03C9;</span><sub><span 
+class="cmmi-8">I</span></sub> = <span 
+class="cmmi-8">&#x2202;&#x03C9;</span><sub><span 
+class="cmmi-6">I</span></sub> 
+<span 
+class="cmmi-8">&#x2202;x</span><sup><span 
+class="cmmi-6">&#x03BC;</span></sup><span 
+class="cmmi-12">dx</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmti-12">. Ensuite, plus g</span><span 
+class="cmti-12">én</span><span 
+class="cmti-12">éralement, on</span>
+<span 
+class="cmti-12">pose </span><span 
+class="cmmi-12">d&#x03C9; </span>= <span 
+class="cmmi-12">d&#x03C9;</span><sub><span 
+class="cmmi-8">I</span></sub> <span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">dx</span><sup><span 
+class="cmmi-8">I</span></sup><span 
+class="cmti-12">.</span>
+<!--l. 1549--><p class="indent" >   Nous venons de voir trois définitions équivalentes possibles de l&#8217;opérateur <span 
+class="cmmi-12">d</span>.
+Toutes les trois sont utiles et nous laissons au lecteur le soin de démontrer
+l&#8217;équivalence des définitions.
+<!--l. 1555--><p class="indent" >   Terminons par un petit calcul élémentaire (clin d&#8217;&#339;il au cours
+d&#8217;électromagnétisme). <a 
+ id="dx18-37006"></a>Soit <span 
+class="cmmi-12">A </span>= <span 
+class="cmmi-12">A</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub><span 
+class="cmmi-12">dx</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> une 1-forme (le quadri-potentiel vecteur).
+Le champ de Maxwell est défini par
+   <center class="math-display" >
+<img 
+src="source62x.png" alt="|----------1------&#x03BC;-----&#x03BD;---------&#x03BC;-----&#x03BD;-|
+-F-=-dA--=-2F-&#x03BC;&#x03BD;dx--&#x2227;-dx--=-F-&#x03BC;&#x03BD;dx--&#x2297;-dx---  " class="math-display" ></center> Or
+<div class="eqnarray">
+   <center class="math-display" >
+<img 
+src="source63x.png" alt="dA  = d(A &#x03BC;) &#x2227; dx &#x03BC; = &#x2202;A-&#x03BC;dx &#x03BD; &#x2227; dx &#x03BC; = 1( &#x2202;A-&#x03BC;dx&#x03BD; &#x2227; dx&#x03BC; + &#x2202;A-&#x03BC;-dx&#x03BD; &#x2227; dx&#x03BC;)
+                     &#x2202;x &#x03BD;             2  &#x2202;x&#x03BD;              &#x2202;x&#x03BD;
+      1- &#x2202;A-&#x03BD;   &#x2202;A-&#x03BC;-   &#x03BC;     &#x03BD;
+    = 2 (&#x2202;x &#x03BC; - &#x2202;x &#x03BD; )dx &#x2227; dx
+                                                                          
+
+                                                                          
+" class="math-display" ></center>
+</div>
+<!--l. 1582--><p class="indent" >   Ainsi
+   <center class="math-display" >
+<img 
+src="source64x.png" alt="|-------------&#x2202;A--|
+|F&#x03BC;&#x03BD; =  &#x2202;A&#x2202;x&#x03BC;&#x03BD;-  &#x2202;x&#x03BC;&#x03BD;-|
+------------------
+" class="math-display" ></center>
+<!--l. 1589--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">1.6.3   </span> <a 
+ id="x18-380001.6.3"></a>L&#8217;équation de Maurer-Cartan pour un repère mobile</h4>
+<!--l. 1591--><p class="noindent" >Soit <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub><span 
+class="cmsy-10x-x-120">} </span>un repère mobile et <span 
+class="cmmi-12">f</span><sub><span 
+class="cmmi-8">&#x03B2;&#x03B3;</span></sub><sup><span 
+class="cmmi-8">&#x03B1;</span></sup> les fonctions de structure correspondantes,
+c&#8217;est-à-dire que ce repère vérifie l&#8217;équation de structure<span class="frenchb-nbsp">&#x00A0;</span>: [<span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03B2;</span></sub><span 
+class="cmmi-12">,e</span><sub><span 
+class="cmmi-8">&#x03B3;</span></sub>] = <span 
+class="cmmi-12">f</span><sub><span 
+class="cmmi-8">&#x03B2;&#x03B3;</span></sub><sup><span 
+class="cmmi-8">&#x03B1;</span></sup><span 
+class="cmmi-12">e</span><sub>
+<span 
+class="cmmi-8">&#x03B1;</span></sub>.
+<!--l. 1597--><p class="indent" >   Soit <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03B1;</span></sup><span 
+class="cmsy-10x-x-120">} </span>le co-repère mobile correspondant défini, comme on l&#8217;a vu, par
+dualité. Le co-repère vérifie également une équation de structure (souvent
+désignée sous le nom d&#8217;<span 
+class="cmsl-12">équation de Maurer-Cartan</span>)<a 
+ id="dx18-38001"></a>
+   <center class="math-display" >
+<img 
+src="source65x.png" alt="|---------------------|
+de &#x03B1; + 1f&#x03B1; e&#x03B2; &#x2227; e &#x03B3; = 0
+-------2-&#x03B2;&#x03B3;------------  " class="math-display" ></center> La
+façon la plus simple de démontrer cette identité est de la vérifier en l&#8217;évaluant
+sur un couple (<span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03B4;</span></sub><span 
+class="cmmi-12">,e</span><sub><span 
+class="cmmi-8">&#x03F5;</span></sub>) de vecteurs du repère mobile. D&#8217;une part, en effet,
+<div class="eqnarray">
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source66x.png" alt="de &#x03B1;(e ,e) = e (e&#x03B1;(e )) - e(e&#x03B1;(e )) - e&#x03B1;([e ,e ])
+      &#x03B4;  &#x03F5;     &#x03B4; &#x03B1;  &#x03F5;     &#x03B1;&#x03F5;    &#x03B4;&#x03B3; &#x03B1;       &#x03B4;  &#x03F5;
+           = e &#x03B4;(&#x03B4;&#x03F5; ) - e&#x03F5;(&#x03B4;&#x03B4; ) - f&#x03B4;&#x03F5;e (e&#x03B3;)
+           = 0 - 0 - f &#x03B3;&#x03B4;&#x03B1; = - f&#x03B1;
+                      &#x03B4;&#x03F5; &#x03B3;      &#x03B4;&#x03F5;
+" class="math-display" ></center>
+</div>Les deux premiers termes sont nuls puisqu&#8217;on dérive des constantes<span class="frenchb-thinspace">&#x00A0;</span>!
+<!--l. 1628--><p class="indent" >   D&#8217;autre part <div class="eqnarray">
+   <center class="math-display" >
+<img 
+src="source67x.png" alt="                                                          (            )
+1f&#x03B1; e&#x03B2; &#x2227; e&#x03B3;(e ,e) =  1f&#x03B1; (e&#x03B2; &#x2297; e&#x03B3; - e&#x03B3; &#x2297; e&#x03B2;)(e,e ) = 1-f&#x03B1;   &#x03B4;&#x03B2;&#x03B4;&#x03B3;-  &#x03B4;&#x03B3;&#x03B4;&#x03B2;
+2 &#x03B2;&#x03B3;         &#x03B4;  &#x03F5;    2 &#x03B2;&#x03B3;                     &#x03B4; &#x03F5;    2  &#x03B2;&#x03B3;   &#x03B4; &#x03F5;    &#x03B4; &#x03F5;
+                     1-&#x03B1;    1-&#x03B1;    1- &#x03B1;   1- &#x03B1;    &#x03B1;
+                  =  2f&#x03B4;&#x03F5; - 2f&#x03F5;&#x03B4; = 2f&#x03B4;&#x03F5; + 2f&#x03B4;&#x03F5; = f&#x03B4;&#x03F5;
+" class="math-display" ></center>
+</div>D&#8217;où le résultat.
+<!--l. 1648--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">1.6.4   </span> <a 
+ id="x18-390001.6.4"></a>Produit intérieur d&#8217;une forme par un champ ou vecteurs</h4>
+<!--l. 1650--><p class="noindent" >Cette opération généralise celle étudiée précédemment (produit intérieur d&#8217;une
+forme extérieure par un vecteur). On associe, à une <span 
+class="cmmi-12">k </span>forme <span 
+class="cmmi-12">&#x03C9; </span>et un vecteur <span 
+class="cmmi-12">v </span>une
+<span 
+class="cmmi-12">k </span><span 
+class="cmsy-10x-x-120">- </span>1 forme notée <span 
+class="cmmi-12">i</span><sub><span 
+class="cmmi-8">v</span></sub><span 
+class="cmmi-12">&#x03C9;</span>. La définition en est très simple<span class="frenchb-nbsp">&#x00A0;</span>: pour une 1-forme, c&#8217;est
+tout simplement l&#8217;évaluation. C&#8217;est-à-dire <span 
+class="cmmi-12">i</span><sub><span 
+class="cmmi-8">v</span></sub><span 
+class="cmmi-12">&#x03C9; </span>= <span 
+class="cmmi-12">&#x03C9;</span>(<span 
+class="cmmi-12">v</span>) = <span 
+class="cmsy-10x-x-120">&#x27E8;</span><span 
+class="cmmi-12">&#x03C9;,v</span><span 
+class="cmsy-10x-x-120">&#x27E9;</span>. Pour une <span 
+class="cmmi-12">k</span>-forme,
+on généralise simplement en contractant l&#8217;indice du vecteur <span 
+class="cmmi-12">v </span>avec le premier
+indice de la forme <span 
+class="cmmi-12">&#x03C9;</span><span class="frenchb-thinspace">&#x00A0;</span>; en d&#8217;autres termes (et sans utiliser d&#8217;indices) <span 
+class="cmmi-12">i</span><sub><span 
+class="cmmi-8">v</span></sub><span 
+class="cmmi-12">&#x03C9; </span>est la
+<span 
+class="cmmi-12">k </span><span 
+class="cmsy-10x-x-120">- </span>1 forme définie par
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source68x.png" alt="|-----------------------------------------|
+iv&#x03C9;(v1,v2,...,vk--1)-=-&#x03C9;-(v,v1,v2,...,vk-1)-  " class="math-display" ></center> Si
+<span 
+class="cmmi-12">&#x03B1; </span>= <span 
+class="cmmi-12">i</span><sub><span 
+class="cmmi-8">v</span></sub><span 
+class="cmmi-12">&#x03C9; </span>on a évidemment <span 
+class="cmmi-12">&#x03B1;</span><sub><span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmr-6">1</span></sub><span 
+class="cmmi-8">,&#x03BC;</span><sub><span 
+class="cmr-6">2</span></sub><span 
+class="cmmi-8">,</span><span 
+class="cmmi-8">&#x2026;</span><span 
+class="cmmi-8">,&#x03BC;</span><sub><span 
+class="cmmi-6">k</span><span 
+class="cmsy-6">-</span><span 
+class="cmr-6">1</span></sub></sub> = <span 
+class="cmmi-12">v</span><sup><span 
+class="cmmi-8">&#x03BD;</span></sup><span 
+class="cmmi-12">&#x03C9;</span><sub>
+<span 
+class="cmmi-8">&#x03BD;&#x03BC;</span><sub><span 
+class="cmr-6">1</span></sub><span 
+class="cmmi-8">,&#x03BC;</span><sub><span 
+class="cmr-6">2</span></sub><span 
+class="cmmi-8">,</span><span 
+class="cmmi-8">&#x2026;</span><span 
+class="cmmi-8">,&#x03BC;</span><sub><span 
+class="cmmi-6">k</span><span 
+class="cmsy-6">-</span><span 
+class="cmr-6">1</span></sub></sub>. Il s&#8217;agit d&#8217;une opération
+très élémentaire généralisant l&#8217;évaluation d&#8217;une forme sur un vecteur. L&#8217;opération
+<span 
+class="cmmi-12">i</span><sub><span 
+class="cmmi-8">v</span></sub>, de &#x03A9;<sup><span 
+class="cmmi-8">k</span></sup><span 
+class="cmmi-12">M </span>dans &#x03A9;<sup><span 
+class="cmmi-8">k</span><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sup><span 
+class="cmmi-12">M </span>est, comme l&#8217;opération <span 
+class="cmmi-12">d</span>, une dérivation graduée et de
+carré nul de l&#8217;algèbre extérieure. La propriété d&#8217;être de carré nul est une
+conséquence immédiate du fait que les formes différentielles sont des objets
+antisymétriques et donc s&#8217;annulent dès que deux arguments sont égaux. La
+propriété d&#8217;anti-dérivation, c&#8217;est-à-dire
+   <center class="math-display" >
+<img 
+src="source69x.png" alt="|-------------------------------------------|
+iv(&#x03C9;1 &#x2227; &#x03C9;2) = (iv&#x03C9;1) &#x2227; &#x03C9;2 + (- 1)k&#x03C9;1 &#x2227; (iv&#x03C9;2 )
+---------------------------------------------  " class="math-display" ></center> où
+<span 
+class="cmmi-12">k </span>est le degré de <span 
+class="cmmi-12">&#x03C9;</span><sub><span 
+class="cmr-8">1</span></sub> est également une conséquence immédiate de la définition. La
+différence essentielle entre l&#8217;opération <span 
+class="cmmi-12">d </span>et l&#8217;opération <span 
+class="cmmi-12">i</span><sub><span 
+class="cmmi-8">v</span></sub> est que ces deux
+opérations vont dans des sens différents (<span 
+class="cmmi-12">i</span><sub><span 
+class="cmmi-8">v</span></sub> fait baisser le degré d&#8217;une unité alors
+que <span 
+class="cmmi-12">d </span>l&#8217;élève). Notons que la définition de <span 
+class="cmmi-12">i</span><sub><span 
+class="cmmi-8">v</span></sub> dépend du choix du vecteur
+<span 
+class="cmmi-12">v</span>.
+                                                                          
+
+                                                                          
+   <!--l. 1705--><div class="crosslinks"><p class="noindent">[<a 
+href="sourcese7.html" >next</a>] [<a 
+href="sourcese5.html" >prev</a>] [<a 
+href="sourcese5.html#tailsourcese5.html" >prev-tail</a>] [<a 
+href="sourcese6.html" >front</a>] [<a 
+href="sourcech1.html#sourcese6.html" >up</a>] </p></div>
+<!--l. 1705--><p class="indent" >   <a 
+ id="tailsourcese6.html"></a>   
+</body></html> 

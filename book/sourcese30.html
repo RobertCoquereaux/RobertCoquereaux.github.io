@@ -1,0 +1,2590 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>Connexions metriques</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<!-- html,index=2,3,next --> 
+<meta name="src" content="source.tex"> 
+<link rel="stylesheet" type="text/css" href="source.css"> 
+</head><body 
+>
+   <!--l. 3186--><div class="crosslinks"><p class="noindent">[<a 
+href="sourcech5.html" >next</a>] [<a 
+href="sourcese29.html" >prev</a>] [<a 
+href="sourcese29.html#tailsourcese29.html" >prev-tail</a>] [<a 
+href="#tailsourcese30.html">tail</a>] [<a 
+href="sourcech4.html#sourcese30.html" >up</a>] </p></div>
+   <h3 class="sectionHead"><span class="titlemark">4.5   </span> <a 
+ id="x48-2150004.5"></a>Connexions métriques</h3>
+<!--l. 3188--><p class="noindent" >REMARQUE<span class="frenchb-nbsp">&#x00A0;</span>: La théorie des connexions métriques en général et la géométrie
+riemannienne en particulier mériterait à elle seule plusieurs volumes<span 
+class="cmmi-12">&#x2026;</span> Malgré
+l&#8217;importance du sujet, la présente section est relativement brève et doit être
+considérée par le lecteur comme un simple survol permettant d&#8217;illustrer certaines
+des constructions générales précédentes. Nous voulons considérer la notion de
+connexion métrique comme un cas particulier de la notion de connexion
+réductible, et l&#8217;ensemble des repères orthonormés associés à une métrique comme
+un cas particulier de réduction d&#8217;espace fibré principal. Nous engageons le lecteur
+à discuter de façon analogue d&#8217;autres types de géométries (par exemple les
+structures presque complexes).
+<!--l. 3202--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">4.5.1   </span> <a 
+ id="x48-2160004.5.1"></a>La métrique</h4>
+<!--l. 3203--><p class="noindent" >Soit <span 
+class="cmmi-12">FM </span>= <span 
+class="cmmi-12">FM</span>(<span 
+class="cmmi-12">M,GL</span>(<span 
+class="cmmi-12">n,</span> I R)) le fibré principal des repères sur la variété
+<span 
+class="cmmi-12">M</span>. On considère une réduction de <span 
+class="cmmi-12">FM </span>à un fibré principal de repères
+orthonormés <span 
+class="cmmi-12">OM </span>= <span 
+class="cmmi-12">OM</span>(<span 
+class="cmmi-12">M,SO</span>(<span 
+class="cmmi-12">n</span>)). Cette réduction est caractérisée par une
+métrique <span 
+class="cmmi-12">g </span>qui, en chaque point, est donnée par une forme bilinéaire
+symétrique non dégénérée sur l&#8217;espace tangent. On sait que <span 
+class="cmmi-12">g </span>peut être
+considérée comme une section globale du fibré en espaces homogènes
+<span 
+class="cmmi-12">E </span>= <span 
+class="cmmi-12">E</span>(<span 
+class="cmmi-12">M,GL</span>(<span 
+class="cmmi-12">n,</span> I R)<span 
+class="cmmi-12">&#x2215;SO</span>(<span 
+class="cmmi-12">n</span>)). Le lecteur aura noté que nous considérons
+une réduction à <span 
+class="cmmi-12">SO</span>(<span 
+class="cmmi-12">n</span>) et non à <span 
+class="cmmi-12">O</span>(<span 
+class="cmmi-12">n</span>), en d&#8217;autres termes, la variété est
+supposée orientable et orientée. Localement, c&#8217;est à dire relativement au
+choix d&#8217;un repère mobile (<span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub>) ou d&#8217;un repère naturel (  <span 
+class="cmmi-8">&#x2202;</span>__
+<span 
+class="cmmi-8">&#x2202;x</span><sup><span 
+class="cmmi-6">&#x03BC;</span></sup>), <span 
+class="cmmi-12">g </span>est donnée
+par
+   <center class="math-display" >
+<img 
+src="source753x.png" alt="|--------&#x03B1;----&#x03B2;---------&#x03BC;-----&#x03BD;-|
+-g-=-g&#x03B1;&#x03B2;e--&#x2297;-e--=-g&#x03BC;&#x03BD;dx--&#x2297;--dx--|  " class="math-display" ></center>
+L&#8217;écriture <span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">&#x03BC;&#x03BD;</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">dx</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> <span 
+class="cmsy-10x-x-120">&#x2297;</span><span 
+class="cmmi-12">dx</span><sup><span 
+class="cmmi-8">&#x03BD;</span></sup> justifie la notation <span 
+class="cmmi-12">ds</span><sup><span 
+class="cmr-8">2</span></sup> = <span 
+class="cmmi-12">g</span><sub>
+<span 
+class="cmmi-8">&#x03BC;&#x03BD;</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">dx</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmmi-12">dx</span><sup><span 
+class="cmmi-8">&#x03BD;</span></sup> des vieux manuels et
+l&#8217;appellation <span 
+class="cmti-12">él</span><span 
+class="cmti-12">ément de longueur</span>. Lorsque le repère mobile choisi est orthonormé,
+on aura simplement
+   <center class="math-display" >
+<img 
+src="source754x.png" alt="g&#x03B1;&#x03B2; =  &#x03B4;&#x03B1;&#x03B2;  " class="math-display" ></center>
+Ceci suppose, d&#8217;ailleurs, que nous utilisons <span 
+class="cmmi-12">SO</span>(<span 
+class="cmmi-12">n</span>) plutôt que <span 
+class="cmmi-12">SO</span>(<span 
+class="cmmi-12">p,q</span>) et que <span 
+class="cmmi-12">g </span>est
+définie positive. Dans ce cas, on dit que la variété <span 
+class="cmmi-12">M </span>est une variété
+riemannienne. En fait, toutes les considérations qui suivent restent valables
+lorsque la signature de <span 
+class="cmmi-12">g </span>est (<span 
+class="cmmi-12">p,q</span>), avec <span 
+class="cmmi-12">p </span>+ <span 
+class="cmmi-12">q </span>= <span 
+class="cmmi-12">n </span>= <span 
+class="cmmi-12">dim</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">M </span>c&#8217;est à dire lorsque <span 
+class="cmmi-12">M</span>
+est une variété pseudo-riemannienne. Dans le cas pseudo-riemannien, lorsque le
+repère choisi est orthonormé, on a
+   <center class="math-display" >
+<img 
+src="source755x.png" alt="g&#x03B1;&#x03B2; =  &#x03B7;&#x03B1;&#x03B2;  " class="math-display" ></center> où
+<span 
+class="cmmi-12">&#x03B7; </span>désigne la matrice diagonale <span 
+class="cmmi-12">diag</span>(1<span 
+class="cmmi-12">, </span>1<span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,</span><span 
+class="cmsy-10x-x-120">-</span>1<span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,</span><span 
+class="cmsy-10x-x-120">-</span>1) avec <span 
+class="cmmi-12">p </span>signes + et <span 
+class="cmmi-12">q </span>signes
+<span 
+class="cmsy-10x-x-120">-</span>.
+<!--l. 3240--><p class="indent" >   La matrice <span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">&#x03BC;&#x03BD;</span></sub> étant non dégénérée en chaque point, nous pouvons
+considérer son inverse, notée (<span 
+class="cmmi-12">g</span><sup><span 
+class="cmmi-8">&#x03BC;&#x03BD;</span></sup>). Ainsi <span 
+class="cmmi-12">g</span><sup><span 
+class="cmmi-8">&#x03BC;&#x03BD;</span></sup><span 
+class="cmmi-12">g</span><sub>
+<span 
+class="cmmi-8">&#x03BD;&#x03C1;</span></sub> = <span 
+class="cmmi-12">&#x03B4;</span><sub><span 
+class="cmmi-8">&#x03C1;</span></sub><sup><span 
+class="cmmi-8">&#x03BC;</span></sup>. On obtient donc
+ainsi une forme bilinéaire symétrique sur l&#8217;espace cotangent. Cette forme
+est le plus souvent également notée <span 
+class="cmmi-12">g </span>(mais il peut arriver de la noter
+<span 
+class="cmmi-12">g</span><sup><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sup><span class="frenchb-thinspace">&#x00A0;</span>!).
+<!--l. 3246--><p class="indent" >
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source756x.png" alt="g = g&#x03B1;&#x03B2;e&#x03B1; &#x2297; e&#x03B2;
+" class="math-display" ></center>
+   <center class="math-display" >
+<img 
+src="source757x.png" alt="     &#x03BC;&#x03BD;--&#x2202;-   -&#x2202;--
+g = g  &#x2202;x &#x03BC; &#x2297; &#x2202;x &#x03BD;  " class="math-display" ></center>
+<span 
+class="cmsl-12">Le lecteur est </span><span 
+class="cmsl-12">également invit</span><span 
+class="cmsl-12">é </span><span 
+class="cmsl-12">à relire la derni</span><span 
+class="cmsl-12">ère section du chapitre</span>
+<span 
+class="cmsl-12">consacr</span><span 
+class="cmsl-12">é aux vari</span><span 
+class="cmsl-12">ét</span><span 
+class="cmsl-12">és diff</span><span 
+class="cmsl-12">érentiables, section dans laquelle nous avons</span>
+<span 
+class="cmsl-12">d</span><span 
+class="cmsl-12">éj</span><span 
+class="cmsl-12">à introduit la notion de m</span><span 
+class="cmsl-12">étrique de fa</span><span 
+class="cmsl-12">çon </span><span 
+class="cmsl-12">él</span><span 
+class="cmsl-12">émentaire et o</span><span 
+class="cmsl-12">ù nous</span>
+<span 
+class="cmsl-12">avons </span><span 
+class="cmsl-12">établi un certain nombre de propri</span><span 
+class="cmsl-12">ét</span><span 
+class="cmsl-12">és g</span><span 
+class="cmsl-12">én</span><span 
+class="cmsl-12">érales pour les vari</span><span 
+class="cmsl-12">ét</span><span 
+class="cmsl-12">és</span>
+<span 
+class="cmsl-12">riemanniennes</span>.
+<!--l. 3256--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">4.5.2   </span> <a 
+ id="x48-2170004.5.2"></a>Compatibilité avec la métrique</h4>
+<!--l. 3258--><p class="noindent" >On se donne une connexion linéaire dans <span 
+class="cmmi-12">FM</span>. Une métrique étant donnée, on
+suppose que cette connexion est compatible avec la réduction de <span 
+class="cmmi-12">FM </span>à <span 
+class="cmmi-12">OM</span>. On
+peut aussi supposer, de manière équivalente, qu&#8217;on se donne directement une
+connexion principale dans le fibré <span 
+class="cmmi-12">OM</span>. On dit alors qu&#8217;on s&#8217;est donné une
+connexion métrique. Par construction, la métrique est orthonormée lorsqu&#8217;on
+l&#8217;écrit à l&#8217;aide des repères de <span 
+class="cmmi-12">OM. </span>Soit <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">a</span></sub><span 
+class="cmsy-10x-x-120">} </span>un repère mobile orthonormé, alors
+<span 
+class="cmmi-12">g </span>= <span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">a</span></sub> <span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">b</span></sub><span style="margin-left:3.26288pt" class="tmspace"></span><span 
+class="cmmi-12">&#x03B7;</span><sup><span 
+class="cmmi-8">ab</span></sup> ou <span 
+class="cmmi-12">&#x03B7; </span>est diagonal et constant (composantes <span 
+class="cmsy-10x-x-120">±</span>1). Lorsqu&#8221;on
+considéré la métrique comme 0-forme à valeurs dans le fibré des tenseurs
+symétriques de rang 2, qui est inclus dans &#x03A9;<sup><span 
+class="cmr-8">0</span></sup>(<span 
+class="cmmi-12">M,TM </span><span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">TM</span>), on voit
+immédiatement que
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source758x.png" alt="|-------|
+&#x2207;g--=-0--  " class="math-display" ></center>
+puisque <span 
+class="cmsy-10x-x-120">&#x2207;</span><span 
+class="cmmi-12">g </span>= <span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">a</span></sub> <span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">b</span></sub><span style="margin-left:3.26288pt" class="tmspace"></span><span 
+class="cmmi-12">D&#x03B7;</span><sup><span 
+class="cmmi-8">ab</span></sup> et que <span 
+class="cmmi-12">D&#x03B7;</span><sup><span 
+class="cmmi-8">ab</span></sup> = 0 (on utilise l&#8217;opérateur <span 
+class="cmmi-12">D </span>introduit au
+<a 
+href="sourcese27.html#x44-1700004.2.7">4.2.7<!--tex4ht:ref: sec:operateur-D --></a>.
+<!--l. 3278--><p class="indent" >   La différentielle covariante de <span 
+class="cmmi-12">g </span>est donc nulle, mais ceci peut alors s&#8217;écrire
+dans n&#8217;importe quel repère, orthonormé ou non <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub><span 
+class="cmsy-10x-x-120">}</span>. Ainsi, <span 
+class="cmsy-10x-x-120">&#x2207;</span><span 
+class="cmmi-12">g </span>= (<span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03B1;</span></sup> <span 
+class="cmsy-10x-x-120">&#x2297;</span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03B2;</span></sup>)<span 
+class="cmmi-12">D</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">g</span><sub>
+<span 
+class="cmmi-8">&#x03B1;&#x03B2;</span></sub>
+et
+   <center class="math-display" >
+<img 
+src="source759x.png" alt="|---------|
+Dg &#x03B1;&#x03B2; =  0|
+-----------  " class="math-display" ></center>
+Explicitement, et en notant, comme d&#8217;habitude, &#x0393;<sup><span 
+class="cmmi-8">&#x03B1;</span></sup><sub>
+<span 
+class="cmmi-8">&#x03B2;</span></sub> les éléments de la matrice de
+connexion, on obtient
+   <center class="math-display" >
+<img 
+src="source760x.png" alt="|---------------------------|
+dg &#x03B1;&#x03B2; - &#x0393; &#x03B3;&#x03B1;g&#x03B3;&#x03B2; - &#x0393; &#x03B3;&#x03B2;g&#x03B1; &#x03B3; = 0
+-----------------------------
+" class="math-display" ></center>
+<!--l. 3296--><p class="indent" >   L&#8217;existence d&#8217;un produit scalaire non dégénéré <span 
+class="cmmi-12">g </span>permet d&#8217;identifier un espace
+vectoriel avec son dual et de &#8220;monter&#8221; ou &#8220;descendre&#8221; les indices à volonté. On
+pose donc
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source761x.png" alt="&#x0393; &#x03B1;&#x03B2; = &#x0393; &#x03B4;&#x03B2;g &#x03B1;&#x03B4;
+" class="math-display" ></center>
+<!--l. 3304--><p class="indent" >   Il ne devrait pas y avoir de confusion possible au niveau des notations<span class="frenchb-nbsp">&#x00A0;</span>:
+lorsqu&#8217;on écrit &#x0393;<sub><span 
+class="cmmi-8">&#x03B1;&#x03B2;</span></sub>, c&#8217;est que cet objet est une 1-forme (&#x0393;<sub><span 
+class="cmmi-8">&#x03B1;&#x03B2;</span></sub> = &#x0393;<sub><span 
+class="cmmi-8">&#x03B1;&#x03B2;&#x03B3;</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03B3;</span></sup>) et qu&#8217;on a
+utilisé la métrique pour abaisser le premier indice de fibre. Si on écrit, au
+contraire, &#x0393;<sub><span 
+class="cmmi-8">&#x03B3;</span></sub>, c&#8217;est qu&#8217;on parle alors du potentiel de jauge et qu&#8217;on a simplement
+fait apparaître l&#8217;indice de forme (qui est toujours en troisième &#8212; et dernière&#8212;
+position).
+<!--l. 3313--><p class="indent" >   L&#8217;équation de compatibilité (condition de métricité) s&#8217;écrit alors
+   <center class="math-display" >
+<img 
+src="source762x.png" alt="dg &#x03B1;&#x03B2; - &#x0393; &#x03B1;&#x03B2; - &#x0393; &#x03B2;&#x03B1; = 0
+" class="math-display" ></center>
+<!--l. 3318--><p class="indent" >   <span 
+class="cmti-12">Si on se place dans un rep</span><span 
+class="cmti-12">ère orthonorm</span><span 
+class="cmti-12">é</span>, les fonctions <span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">&#x03B1;&#x03B2;</span></sub> sont des
+constantes. Il en va de même dans un &#8220;repère mobile de forme invariable&#8221;
+(précisément défini en imposant la constance des <span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">&#x03B1;&#x03B2;</span></sub>). Dans ce(s) cas, <span 
+class="cmmi-12">d</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">&#x03B1;&#x03B2;</span></sub> = 0 et
+la condition de métricité s&#8217;écrit simplement
+   <center class="math-display" >
+<img 
+src="source763x.png" alt="&#x0393; &#x03B1;&#x03B2; + &#x0393; &#x03B2;&#x03B1; = 0  " class="math-display" ></center> On
+sait que les éléments de la matrice de connexion (&#x0393;<sub><span 
+class="cmmi-8">&#x03B1;</span></sub><sup><span 
+class="cmmi-8">&#x03B3;</span></sup>) sont les 1-formes
+&#x0393;<sub><span 
+class="cmmi-8">&#x03B1;</span></sub><sup><span 
+class="cmmi-8">&#x03B3;</span></sup> = &#x0393;<sub>
+<span 
+class="cmmi-8">&#x03B1;&#x03B2;</span></sub><sup><span 
+class="cmmi-8">&#x03B3;</span></sup><span style="margin-left:3.26288pt" class="tmspace"></span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03B2;</span></sup><span 
+class="cmmi-12">. </span>En &#8220;abaissant&#8221; comme précédemment le premier indice avec la
+                                                                          
+
+                                                                          
+métrique, on pose
+   <center class="math-display" >
+<img 
+src="source764x.png" alt="&#x0393; &#x03B1; &#x03B2;&#x03B3; = &#x0393; &#x03B4;&#x03B2;&#x03B3;g&#x03B1;&#x03B4;  " class="math-display" ></center> <span 
+class="cmti-12">En</span>
+<span 
+class="cmti-12">rep</span><span 
+class="cmti-12">ère orthonorm</span><span 
+class="cmti-12">é (ou de forme fixe) </span>la condition de métricité se traduit par
+l&#8217;antisymétrie des &#x0393;<sub><span 
+class="cmmi-8">&#x03B1;&#x03B2;&#x03B3;</span></sub> sur les deux premiers indices.
+   <center class="math-display" >
+<img 
+src="source765x.png" alt="&#x0393;    =  - &#x0393;
+  &#x03B1;&#x03B2;&#x03B3;      &#x03B2;&#x03B1;&#x03B3;
+" class="math-display" ></center>
+<!--l. 3342--><p class="indent" >   Une autre façon de retrouver de façon très naturelle (et sans calcul<span class="frenchb-thinspace">&#x00A0;</span>!)
+cette propriété d&#8217;antisymétrie est de se rappeler que les 1 <span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">formes</span> &#x0393;<sup><span 
+class="cmmi-8">&#x03B1;</span></sup><sub>
+<span 
+class="cmmi-8">&#x03B2;</span></sub>
+ne sont autres que les éléments de matrice &#x0393;<sup><span 
+class="cmmi-8">&#x03B1;</span></sup><sub>
+<span 
+class="cmmi-8">&#x03B2;</span></sub> = &#x0393;<sup><span 
+class="cmmi-8">a</span></sup>(<span 
+class="cmmi-12">X</span><sub>
+<span 
+class="cmmi-8">a</span></sub>)<sub><span 
+class="cmmi-8">&#x03B2;</span></sub><sup><span 
+class="cmmi-8">&#x03B1;</span></sup> où les <span 
+class="cmmi-12">X</span><sub>
+<span 
+class="cmmi-8">a</span></sub>
+constituent une représentation de l&#8217;algèbre de Lie du groupe structural,
+en l&#8217;occurrence <span 
+class="cmmi-12">SO</span>(<span 
+class="cmmi-12">n</span>), et ce sont donc, automatiquement, des matrices
+antisymétriques.
+<!--l. 3350--><p class="indent" >   Nous verrons un peu plus loin que, pour une connexion bien particulière (la
+connexion de Levi-Civita) et dans des repères particuliers (les repères naturels),
+les coefficients de connexion possèdent également une propriété de symétrie sur
+les deux derniers indices.
+<!--l. 3356--><p class="indent" >   Si, contrairement à ce que nous supposions ci-dessus, on se donne séparément
+une métrique <span 
+class="cmmi-12">g </span>et une connexion linéaire &#x0393; <span 
+class="cmti-12">quelconque</span>, il n&#8217;y a aucune raison
+pour que la connexion soit réductible. En d&#8217;autres termes, il n&#8217;y a aucune raison
+de supposer que cette connexion soit compatible avec la métrique. Si <span 
+class="cmsy-10x-x-120">&#x2207; </span>désigne
+la différentielle covariante associée à &#x0393;, on définit alors le <span 
+class="cmsl-12">tenseur de</span>
+<span 
+class="cmsl-12">non-m</span><span 
+class="cmsl-12">étricit</span><span 
+class="cmsl-12">é</span><a 
+ id="dx48-217001"></a>
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source766x.png" alt="|---------|
+-Q--=-&#x2207;g--|  " class="math-display" ></center>
+C&#8217;est à dire, <span 
+class="cmmi-12">Q</span>(<span 
+class="cmmi-12">u,v,w</span>) = <span 
+class="cmsy-10x-x-120">&#x2207;</span><span 
+class="cmmi-12">g</span>(<span 
+class="cmmi-12">u,v,w</span>) = <span 
+class="cmsy-10x-x-120">&#x2207;</span><sub><span 
+class="cmmi-8">w</span></sub><span 
+class="cmmi-12">g</span>(<span 
+class="cmmi-12">u,v</span>)<span 
+class="cmmi-12">. </span>Dans un (co)-repère <span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup>, on a
+<span 
+class="cmmi-12">Q </span>= <span 
+class="cmmi-12">Q</span><sub><span 
+class="cmmi-8">&#x03BC;&#x03BD;&#x03C1;</span></sub><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> <span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03BD;</span></sup> <span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">&#x03C1;</span></sup> avec
+   <center class="math-display" >
+<img 
+src="source767x.png" alt="Q     = Q (e ,e ,e ) = &#x2207; g   = g
+  &#x03BD;&#x03C1;&#x03BC;       &#x03BD;  &#x03C1;  &#x03BC;     &#x03BC;  &#x03BD;&#x03C1;    &#x03BD;&#x03C1;;&#x03BC;
+" class="math-display" ></center>
+<!--l. 3376--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">4.5.3   </span> <a 
+ id="x48-2180004.5.3"></a>Calcul des coefficients de connexion</h4>
+<!--l. 3378--><p class="noindent" >Etant donnée une métrique et une connexion linéaire compatible (qui, <span 
+class="cmti-12">a</span>
+<span 
+class="cmti-12">priori</span>, possède de la torsion), nous allons voir qu&#8217;il est possible d&#8217;exprimer
+les coefficients de connexion en terme de la métrique, de ses dérivées
+premières, du tenseur de torsion et des fonctions de structure du repère mobile
+choisi.
+<!--l. 3384--><p class="indent" >   Utilisant la métrique, on définit <div class="eqnarray">
+   <center class="math-display" >
+<img 
+src="source768x.png" alt="             &#x03B1;&#x2032;
+&#x0393; &#x03B1;&#x03B2;&#x03B3; = g&#x03B1;&#x03B1; &#x2032;&#x0393; &#x03B2;&#x03B3;
+T&#x03B1;&#x03B2;&#x03B3; = g&#x03B1;&#x03B1; &#x2032;T &#x03B1;&#x2032;&#x03B2;&#x03B3;
+              &#x03B1;&#x2032;
+f&#x03B2;&#x03B3;&#x03B1; = g&#x03B1;&#x03B1; &#x2032;f&#x03B2;&#x03B3;
+" class="math-display" ></center>
+</div>Le tenseur de torsion (avec ses trois indices covariants) s&#8217;écrit alors (voir section
+<a 
+href="sourcese29.html#x47-2070004.4.6">4.4.6<!--tex4ht:ref: sec:torsion --></a>)
+   <center class="math-display" >
+<img 
+src="source769x.png" alt="T&#x03B1;&#x03B2;&#x03B3; = &#x0393; &#x03B1;&#x03B3;&#x03B2; - &#x0393; &#x03B1;&#x03B2;&#x03B3; - f&#x03B2;&#x03B3;&#x03B1;
+" class="math-display" ></center>
+<!--l. 3396--><p class="indent" >   Nous avons vu que la condition de métricité s&#8217;écrivait <span 
+class="cmsy-10x-x-120">&#x2207;</span><span 
+class="cmmi-12">g </span>= 0, c&#8217;est à dire, en
+terme de composantes <span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">&#x03B1;&#x03B2;</span><span 
+class="cmr-8">;</span><span 
+class="cmmi-8">&#x03B3;</span></sub> = 0. Ceci implique <div class="eqnarray">
+   <center class="math-display" >
+<img 
+src="source770x.png" alt="  g&#x03B1;&#x03B2;;&#x03B3; = 0 &#x21D2;  g&#x03B1;&#x03B2;,&#x03B3; = &#x0393; &#x03B2;&#x03B1;&#x03B3; + &#x0393; &#x03B1;&#x03B2;&#x03B3;
+
+  g&#x03B2;&#x03B3;;&#x03B1; = 0 &#x21D2;  g&#x03B2;&#x03B3;,&#x03B1; = &#x0393; &#x03B3;&#x03B2;&#x03B1; + &#x0393; &#x03B2;&#x03B3;&#x03B1;
+- g&#x03B3;&#x03B1;;&#x03B2; = 0 &#x21D2;  - g&#x03B3;&#x03B1;,&#x03B2; = - &#x0393; &#x03B1;&#x03B3;&#x03B2; - &#x0393; &#x03B3;&#x03B1;&#x03B2;
+" class="math-display" ></center>
+</div>En conséquence
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source771x.png" alt="g    + g    -  g    = (&#x0393;    + &#x0393;    ) + (&#x0393;   -  &#x0393;   ) + (&#x0393;    -  &#x0393;   )
+ &#x03B1;&#x03B2;,&#x03B3;   &#x03B2;&#x03B3;,&#x03B1;    &#x03B3;&#x03B1;,&#x03B2;      &#x03B2;&#x03B1;&#x03B3;    &#x03B2;&#x03B3;&#x03B1;      &#x03B1;&#x03B2;&#x03B3;    &#x03B1;&#x03B3;&#x03B2;      &#x03B3;&#x03B2;&#x03B1;    &#x03B3;&#x03B1;&#x03B2;  " class="math-display" ></center> En
+utilisant l&#8217;expression du tenseur de torsion, il vient
+   <center class="math-display" >
+<img 
+src="source772x.png" alt="g   +g     - g    = (&#x0393;   +f    +T    + &#x0393;    )+ (- T   - f   )+ (- T   - f   )
+ &#x03B1;&#x03B2;,&#x03B3;   &#x03B2;&#x03B3;,&#x03B1;   &#x03B3;&#x03B1;,&#x03B2;     &#x03B2;&#x03B3;&#x03B1;   &#x03B3;&#x03B1;&#x03B2;   &#x03B2;&#x03B3;&#x03B1;    &#x03B2;&#x03B3;&#x03B1;       &#x03B1;&#x03B2;&#x03B3;   &#x03B2;&#x03B3;&#x03B1;       &#x03B3;&#x03B2;&#x03B1;   &#x03B2;&#x03B1;&#x03B3;" class="math-display" ></center>
+En utilisant la symétrie de <span 
+class="cmmi-12">g </span>et en renommant les indices, on obtient
+finalement
+<!--l. 3421--><p class="indent" >
+   <center class="math-display" >
+<img 
+src="source773x.png" alt="|---------------------------------|
+|2&#x0393; &#x03B1;&#x03B2;&#x03B3; = (g&#x03B1;&#x03B2;,&#x03B3; + g&#x03B3;&#x03B1;,&#x03B2; - g&#x03B2;&#x03B3;,&#x03B1; )+  |
+|        (- T&#x03B1;&#x03B2;&#x03B3; + T &#x03B3;&#x03B1; &#x03B2; - T &#x03B2;&#x03B3;&#x03B1;)+|
+---------(f&#x03B1;-&#x03B2;&#x03B3;---f&#x03B3;&#x03B1;&#x03B2;---f&#x03B2;&#x03B3;&#x03B1;)-----|
+" class="math-display" ></center>
+<!--l. 3432--><p class="indent" >   Les trois lignes ci-dessus sont quasiment identiques mais attention à notre
+façon de &#8220;descendre&#8221; les indices (comparer la définition de <span 
+class="cmmi-12">T</span><sub><span 
+class="cmmi-8">&#x03B1;&#x03B2;&#x03B3;</span></sub> et celle de
+<span 
+class="cmmi-12">f</span><sub><span 
+class="cmmi-8">&#x03B1;&#x03B2;&#x03B3;</span></sub>). Nos conventions concernant la position des indices ne sont pas
+universelles<span 
+class="cmmi-12">&#x2026;</span>
+                                                                          
+
+                                                                          
+<!--l. 3437--><p class="indent" >   L&#8217;expression ci-dessus des coefficients de connexion &#x0393;<sub><span 
+class="cmmi-8">&#x03B1;&#x03B2;&#x03B3;</span></sub> a été calculée en
+travaillant dans un <span 
+class="cmti-12">rep</span><span 
+class="cmti-12">ère quelconque </span>(ainsi, par exemple, <span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">&#x03B1;&#x03B2;,&#x03B3;</span></sub> = <span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03B3;</span></sub>[<span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">&#x03B1;&#x03B2;</span></sub>]). En
+travaillant dans un repère naturel on a, plus simplement, <span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">&#x03BC;&#x03BD;,&#x03C1;</span></sub> =  <span 
+class="cmmi-8">&#x2202;</span> __
+<span 
+class="cmmi-8">&#x2202;x</span><sup><span 
+class="cmmi-6">&#x03C1;</span></sup>[<span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">&#x03BC;&#x03BD;</span></sub>] et
+<span 
+class="cmmi-12">f</span><sub><span 
+class="cmmi-8">&#x03BC;&#x03BD;&#x03C1;</span></sub> = 0.
+<!--l. 3445--><p class="indent" >   L&#8217;expression
+   <center class="math-display" >
+<img 
+src="source774x.png" alt="|-------------------------------|
+|{&#x03BC; } = 1&#x2215;2(g    + g    - g   ) |
+--&#x03BD;&#x03C1;---------&#x03BC;&#x03BD;,&#x03C1;----&#x03C1;&#x03BC;,&#x03BD;----&#x03BD;&#x03C1;,&#x03BC;--  " class="math-display" ></center> est
+souvent désignée sous le nom de <span 
+class="cmsl-12">Symbole de Christoffel</span> <a 
+ id="dx48-218003"></a>.
+<!--l. 3454--><p class="indent" >   Le tenseur
+   <center class="math-display" >
+<img 
+src="source775x.png" alt="S&#x03B1; &#x03B2;&#x03B3; = (T &#x03B1;&#x03B2;&#x03B3; - T&#x03B3;&#x03B1;&#x03B2; + T&#x03B2;&#x03B3;&#x03B1;)  " class="math-display" ></center> est
+souvent désigné sous le nom de <span 
+class="cmsl-12">tenseur de contorsion</span> <a 
+ id="dx48-218004"></a> (si<span class="frenchb-thinspace">&#x00A0;</span>! si<span class="frenchb-thinspace">&#x00A0;</span>!). Ce tenseur peut
+être nul sans que <span 
+class="cmmi-12">T </span>le soit<span class="frenchb-thinspace">&#x00A0;</span>; lorsque <span 
+class="cmmi-12">S </span>est nul, la torsion disparaît de l&#8217;expression
+des coefficients de connexion &#x0393;<sub><span 
+class="cmmi-8">&#x03B1;&#x03B2;&#x03B3;</span></sub><span 
+class="cmmi-12">.</span>
+<!--l. 3465--><p class="indent" >   Le calcul précédent montre donc qu&#8217;une connexion linéaire compatible avec
+une métrique donnée est entièrement caractérisée par cette dernière et
+par la torsion de cette connexion (on peut toujours faire disparaître les
+fonctions de structure du repère mobile en se plaçant dans un repère
+naturel).
+<!--l. 3470--><p class="indent" >   Le calcul précédent montre aussi que, étant donnée une métrique, <span 
+class="cmti-12">si on</span>
+<span 
+class="cmti-12">impose une torsion nulle</span>, on obtient une unique connexion compatible qui
+s&#8217;exprime entièrement en terme de la métrique. Cette (unique) connexion
+s&#8217;appelle <span 
+class="cmsl-12">la connexion de Levi-Civita</span> <a 
+ id="dx48-218005"></a> ou encore <span 
+class="cmti-12">la </span>connexion riemannienne.
+Re-exprimons ce résultat sous la forme suivante<span class="frenchb-nbsp">&#x00A0;</span>:
+                                                                          
+
+                                                                          
+<!--l. 3478--><p class="indent" >   <span 
+class="cmti-12">Soit </span><span 
+class="cmmi-12">OM </span><span 
+class="cmti-12">le fibr</span><span 
+class="cmti-12">é principal des rep</span><span 
+class="cmti-12">ères orthonorm</span><span 
+class="cmti-12">és associ</span><span 
+class="cmti-12">é </span><span 
+class="cmti-12">à une m</span><span 
+class="cmti-12">étrique</span>
+<span 
+class="cmti-12">donn</span><span 
+class="cmti-12">ée. Alors, parmi toutes les connexions possibles sur le fibr</span><span 
+class="cmti-12">é </span><span 
+class="cmmi-12">OM</span><span 
+class="cmti-12">, il en</span>
+<span 
+class="cmti-12">existe une et une seule qui soit sans torsion. On l&#8217;appelle la connexion de</span>
+<span 
+class="cmti-12">Levi-Civita</span>.
+<!--l. 3483--><p class="indent" >   Pour cette connexion, et en repère naturel, on a donc simplement
+   <center class="math-display" >
+<img 
+src="source776x.png" alt="               1
+&#x0393; &#x03BC;&#x03BD;&#x03C1; = {&#x03BC;&#x03BD;&#x03C1;} = -(g&#x03BC;&#x03BD;,&#x03C1; + g&#x03C1;&#x03BC;,&#x03BD; - g&#x03BD;&#x03C1;,&#x03BC;)
+               2
+" class="math-display" ></center>
+<!--l. 3489--><p class="indent" >   De façon générale, l&#8217;expression du tenseur de torsion en terme des coefficients
+de connexion et des fonctions de structure du repère mobile (expression rappelée
+ci-dessus) montre que, <span 
+class="cmti-12">si on utilise la connexion de Levi-Civita (</span><span 
+class="cmmi-12">T</span><sub><span 
+class="cmmi-8">&#x03BC;&#x03BD;&#x03C1;</span></sub> = 0<span 
+class="cmti-12">) dans</span>
+<span 
+class="cmti-12">un rep</span><span 
+class="cmti-12">ère naturel </span>(<span 
+class="cmmi-12">f</span><sub><span 
+class="cmmi-8">&#x03BC;&#x03BD;&#x03C1;</span></sub> = 0), les coefficients de connexions possèdent la symétrie
+suivante<span class="frenchb-nbsp">&#x00A0;</span>:
+   <center class="math-display" >
+<img 
+src="source777x.png" alt="  &#x03BC;      &#x03BC;
+&#x0393;  &#x03BD;&#x03C1; = &#x0393; &#x03C1;&#x03BD;  " class="math-display" ></center> ou
+encore
+   <center class="math-display" >
+<img 
+src="source778x.png" alt="&#x0393; &#x03BC;&#x03BD;&#x03C1; = &#x0393; &#x03BC;&#x03C1;&#x03BD;  " class="math-display" ></center> Il
+                                                                          
+
+                                                                          
+faut se garder de confondre cette symétrie sur les deux derniers indices avec
+l&#8217;antisymétrie sur les deux premiers indices (voir plus haut), antisymétrie qui est
+valable pour <span 
+class="cmti-12">toute </span>connexion compatible avec la métrique,<span 
+class="cmti-12">à condition </span>toutefois de
+travailler dans un repère orthonormé (ce qui est rarement le cas des repères
+naturels).
+<!--l. 3506--><p class="indent" >   Il n&#8217;est pas difficile de démontrer que, dans le cas où la connexion n&#8217;est pas
+compatible avec la métrique, il faut rajouter, au second membre de l&#8217;équation
+donnant l&#8217;expression de 2&#x0393;<sub><span 
+class="cmmi-8">&#x03BC;&#x03BD;&#x03C1;</span></sub>, la quantité
+   <center class="math-display" >
+<img 
+src="source779x.png" alt="- (Q   +  Q    - Q    )
+    &#x03BC;&#x03BD;&#x03C1;    &#x03C1;&#x03BC;&#x03BD;     &#x03BD;&#x03C1;&#x03BC;  " class="math-display" ></center> où
+<span 
+class="cmmi-12">Q </span>est le tenseur de non-métricité.
+<!--l. 3514--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">4.5.4   </span> <a 
+ id="x48-2190004.5.4"></a>Compléments sur le tenseur de Riemann. Propriétés de symétrie.</h4>
+<!--l. 3516--><p class="noindent" >Nous avons déjà analysé en détail les propriétés du tenseur de courbure, pour une
+connexion linéaire quelconque, et il n&#8217;y a pas grand chose à rajouter lorsqu&#8217;on
+suppose que cette connexion est une connexion métrique, si ce n&#8217;est la propriété
+d&#8217;antisymétrie suivante<span class="frenchb-nbsp">&#x00A0;</span>: en posant
+   <center class="math-display" >
+<img 
+src="source780x.png" alt="              &#x03B1;&#x2032;
+R&#x03B1; &#x03B2;&#x03B3;&#x03B4; = g&#x03B1;&#x03B1;&#x2032;R  &#x03B2;&#x03B3;&#x03B4;  " class="math-display" ></center> on
+s&#8217;aperçoit que non seulement ce tenseur est antisymétrique sur ses deux derniers
+indices (comme toujours, puisqu&#8217;il provient de la 2-forme de courbure)
+mais que, en outre, il est également antisymétrique sur ces deux premiers
+indices (utiliser l&#8217;expression de la courbure en terme de la connexion et
+                                                                          
+
+                                                                          
+l&#8217;antisymétrie déjà discutée des éléments de la matrice de connexion, ou, plus
+directement, se rappeler que les générateurs de <span 
+class="cmmi-12">SO</span>(<span 
+class="cmmi-12">n</span>) sont des matrices
+antisymétriques).
+<!--l. 3532--><p class="indent" >   En résumé, pour une connexion quelconque<span class="frenchb-nbsp">&#x00A0;</span>:
+   <center class="math-display" >
+<img 
+src="source781x.png" alt="R     =  - R
+  &#x03B1;&#x03B2;&#x03B3;&#x03B4;      &#x03B1;&#x03B2;&#x03B4;&#x03B3;  " class="math-display" ></center>
+Pour une connexion métrique<span class="frenchb-nbsp">&#x00A0;</span>:
+   <center class="math-display" >
+<img 
+src="source782x.png" alt="R &#x03B1;&#x03B2;&#x03B3;&#x03B4; = - R &#x03B2;&#x03B1;&#x03B3;&#x03B4;
+" class="math-display" ></center>
+<!--l. 3537--><p class="indent" >   Pour une connexion métrique, sans torsion, c&#8217;est à dire pour la connexion de
+Levi-Civita, les deux identités précedentes impliquent une propriété de symétrie
+par échange de paires (utiliser les identités de Bianchi)<span class="frenchb-nbsp">&#x00A0;</span>:
+   <center class="math-display" >
+<img 
+src="source783x.png" alt="R &#x03B1;&#x03B2;&#x03B3;&#x03B4; = R&#x03B3;&#x03B4;&#x03B1;&#x03B2;
+" class="math-display" ></center>
+<!--l. 3545--><p class="noindent" >Par ailleurs, les expressions des identités de Bianchi se simplifient pour la
+connexion de Levi-Civita (puisque la torsion disparaît). Il vient<span class="frenchb-nbsp">&#x00A0;</span>:
+<a 
+ id="dx48-219001"></a>
+                                                                          
+
+                                                                          
+<!--l. 3550--><p class="indent" >   Bianchi-1 sans torsion (<span 
+class="cmmi-12">R </span><span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">&#x03B8; </span>= 0)<span class="frenchb-nbsp">&#x00A0;</span>:
+   <center class="math-display" >
+<img 
+src="source784x.png" alt="|-&#x03B1;--------&#x03B1;-------&#x03B1;--------|
+-R--&#x03B2;&#x03B3;&#x03B4; +-R-&#x03B3;&#x03B4;&#x03B2; +-R-&#x03B4;&#x03B2;&#x03B3;-=-0-|
+" class="math-display" ></center>
+<!--l. 3558--><p class="indent" >   Bianchi-2 sans torsion<span class="frenchb-nbsp">&#x00A0;</span>:
+   <center class="math-display" >
+<img 
+src="source785x.png" alt="|-------------------------------|
+|R &#x03B1;    +  R&#x03B1;     + R &#x03B1;    =  0 |
+----&#x03B2;&#x03B3;&#x03B4;;&#x03F5;-----&#x03B2;&#x03B4;&#x03F5;;&#x03B3;------&#x03B2;&#x03F5;&#x03B3;;&#x03B4;-----
+" class="math-display" ></center>
+<!--l. 3568--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">4.5.5   </span> <a 
+ id="x48-2200004.5.5"></a>Equation des géodésiques</h4>
+<!--l. 3569--><p class="noindent" >Nous avons déjà défini la notion de courbe autoparallèle dans la section
+précédente. Il s&#8217;agissait là d&#8217;une notion liée à la donnée d&#8217;une connexion
+linéaire. Dans le cas où cette connexion est <span 
+class="cmti-12">la </span>connexion de Levi-Civita
+déterminée par une métrique, une telle courbe est, par définition, une
+géodésique de la variété riemannienne. En fait, la terminologie (&#8220;le plus court
+chemin&#8221;) vient du fait qu&#8217;une telle courbe est également solution d&#8217;un
+problème variationnel (<span 
+class="cmmi-12">&#x03B4;</span> <span 
+class="cmex-10x-x-120">&#x222B;</span>
+ (<span 
+class="cmmi-12">g</span><sub><span 
+class="cmmi-8">&#x03BC;&#x03BD;</span></sub><span 
+class="cmmi-12">dx</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmmi-12">dx</span><sup><span 
+class="cmmi-8">&#x03BD;</span></sup>)<sup><span 
+class="cmr-8">1</span><span 
+class="cmmi-8">&#x2215;</span><span 
+class="cmr-8">2</span></sup>) mais nous n&#8217;étudierons pas cet
+aspect de la question. Notons que, dans le cas où nous nous donnons
+séparément une métrique (et donc la connexion de Levi-Civita correspondante),
+ainsi qu&#8217;une seconde connexion compatible avec la métrique donnée, mais
+possédant de la torsion, il faut distinguer entre les courbes autoparallèles
+associées à cette dernière et les géodésiques. Une telle distinction est
+physiquement importante lorsqu&#8217;on traite du mouvement des particules
+à spin en Relativité Générale<span class="frenchb-nbsp">&#x00A0;</span>: les particules scalaires suivent en effet
+                                                                          
+
+                                                                          
+les géodésiques du champ gravitationnel mais les particules ayant un
+moment cinétique intrinsèque suivent les autoparallèles d&#8217;une connexion avec
+torsion.
+<!--l. 3588--><p class="indent" >   Plaçons nous dans un repère naturel. Nous avons déjà établi l&#8217;équation des
+autoparallèles dans la section consacrée aux connexions linéaires. L&#8217;équation des
+géodésiques est donc identique, à ceci près que les coefficients de connexion &#x0393;<sup><span 
+class="cmmi-8">&#x03BC;</span></sup><sub>
+<span 
+class="cmmi-8">&#x03BD;&#x03C1;</span></sub>
+doivent être donnés par les symboles de Christoffel <span 
+class="cmsy-10x-x-120">{</span><sub><span 
+class="cmmi-8">&#x03BD;&#x03C1;</span></sub><sup><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmsy-10x-x-120">}</span><span 
+class="cmmi-12">. </span>On voit donc que pour
+que géodésiques et autoparallèles coïncident, il faut et il suffit que le tenseur de
+contorsion <span 
+class="cmmi-12">S</span><sub><span 
+class="cmmi-8">&#x03B1;&#x03B2;&#x03B3;</span></sub> soit nul. Ce sera évidemment le cas si la torsion est nulle mais
+cette condition n&#8217;est pas nécessaire.
+<!--l. 3598--><p class="indent" >   De façon plus générale, le lecteur pourra se convaincre que si, <span 
+class="cmsy-10x-x-120">&#x2207; </span>et <span 
+class="cmsy-10x-x-120">&#x2207;&#x2032;</span>
+désignent deux connexions, une condition nécessaire et suffisante pour que les
+autoparallèles des deux connexions coïncident est que la partie symétrique
+<span 
+class="cmmi-12">s</span>(<span 
+class="cmmi-12">x,y</span>) = (<span 
+class="cmmi-12">c</span>(<span 
+class="cmmi-12">x,y</span>) + <span 
+class="cmmi-12">c</span>(<span 
+class="cmmi-12">y,x</span>))<span 
+class="cmmi-12">&#x2215;</span>2 du tenseur différence <span 
+class="cmmi-12">c</span>(<span 
+class="cmmi-12">x,y</span>) = <span 
+class="cmsy-10x-x-120">&#x2207;</span><sub><span 
+class="cmmi-8">x</span></sub><span 
+class="cmmi-12">y </span><span 
+class="cmsy-10x-x-120">-</span><span 
+class="cmsy-10x-x-120">&#x2207;&#x2032;</span><sub><span 
+class="cmmi-8">x</span></sub><span 
+class="cmmi-12">y </span>s&#8217;annule
+(noter que <span 
+class="cmmi-12">c</span>(<span 
+class="cmmi-12">x,y</span>) est bien un tenseur).
+<!--l. 3608--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">4.5.6   </span> <a 
+ id="x48-2210004.5.6"></a>Tenseur de Ricci, courbure scalaire et tenseur d&#8217;Einstein, courbures
+sectionelles</h4>
+       <ul class="itemize1">
+       <li class="itemize">Tenseur de Ricci. Nous avons déjà défini le tenseur de Ricci <span 
+class="cmmi-12">&#x03C1; </span>de
+       composantes
+       <center class="math-display" >
+       <img 
+src="source786x.png" alt="|-------&#x03BC;---|
+&#x03C1;&#x03C3;&#x03BD; = R &#x03C3;&#x03BC;&#x03BD; |
+-------------
+       " class="math-display" ></center> dans la section consacrée aux connexions linéaires puisque l&#8217;utilisation
+       d&#8217;une métrique n&#8217;était pas nécessaire. Pour la connexion de Levi-Civita
+       la torsion est nulle et on sait que, dans ce cas, le tenseur de Riemann de
+       composantes <span 
+class="cmmi-12">R</span><sub><span 
+class="cmmi-8">&#x03B1;&#x03B2;&#x03BC;&#x03BD;</span></sub> est invariant lorsqu&#8217;on permute les deux premiers
+       indices  avec  les  deux  derniers.  On  en  déduit  immédiatement  que,
+       pour cette connexion, le tenseur de Ricci est symétrique (<span 
+class="cmmi-12">&#x03C1;</span><sub><span 
+class="cmmi-8">&#x03BC;&#x03BD;</span></sub> = <span 
+class="cmmi-12">&#x03C1;</span><sub><span 
+class="cmmi-8">&#x03BD;&#x03BC;</span></sub>)
+                                                                          
+
+                                                                          
+       et définit donc une forme bilinéaire symétrique ainsi qu&#8217;une forme
+       quadratique <span 
+class="cmmi-12">r</span>(<span 
+class="cmmi-12">u</span>) = <span 
+class="cmmi-12">&#x03C1;</span>(<span 
+class="cmmi-12">u,u</span>) où <span 
+class="cmmi-12">u </span><span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="cmmi-12">TM</span>. L&#8217;application polaire associée
+       est l&#8217;application linéaire <img 
+src="source787x.png" alt="&#x02C6;r"  class="circ" > (<span 
+class="cmmi-12">u</span>) = &#x03A3;<sub><span 
+class="cmmi-8">&#x03BC;</span></sub><span 
+class="cmmi-12">&#x03C1;</span>(<span 
+class="cmmi-12">u,e</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub>)<span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub> et les valeurs propres de
+       <img 
+src="source788x.png" alt="&#x02C6;r"  class="circ" > sont les <span 
+class="cmsl-12">courbures principales de Ricci</span> <a 
+ id="dx48-221001"></a>.
+       </li>
+       <li class="itemize">Courbure scalaire.<a 
+ id="dx48-221002"></a> La courbure scalaire <span 
+class="cmmi-12">&#x03C4; </span>est définie par l&#8217;égalité
+       <center class="math-display" >
+       <img 
+src="source789x.png" alt="|-----------|
+&#x03C4; =  g&#x03BC;&#x03BD;&#x03C1;&#x03BC;&#x03BD; |
+------------
+       " class="math-display" ></center>
+       </li>
+       <li class="itemize">Tenseur  d&#8217;Einstein.<a 
+ id="dx48-221003"></a>  Pour  la  connexion  de  Levi-Civita,  le  tenseur
+       d&#8217;Einstein <span 
+class="cmmi-12">G </span>est défini par l&#8217;égalité
+       <center class="math-display" >
+       <img 
+src="source790x.png" alt="|------------------|
+|G   = &#x03C1;   -  1g  &#x03C4;|
+--&#x03BC;&#x03BD;-----&#x03BC;&#x03BD;---2-&#x03BC;&#x03BD;--
+       " class="math-display" ></center> ce nouveau tenseur, comme <span 
+class="cmmi-12">&#x03C1; </span>et <span 
+class="cmmi-12">g</span>, est manifestement symétrique. Son
+       nom provient bien entendu de la théorie de la Relativité Générale,
+       puisque les équations d&#8217;Einstein <a 
+ id="dx48-221004"></a> décrivant la réaction de la géométrie
+       (décrite  par  la  métrique  <span 
+class="cmmi-12">g</span>)  à  la  matière  (décrite  par  un  tenseur
+       d&#8217;énergie-impulsion noté traditionnellement <span 
+class="cmmi-12">T </span>&#8212; ce n&#8217;est pas la torsion<span class="frenchb-thinspace">&#x00A0;</span>!&#8212;)
+       s&#8217;écrivent simplement
+                                                                          
+
+                                                                          
+       <center class="math-display" >
+       <img 
+src="source791x.png" alt="|---------|
+G--=-8&#x03C0;T---
+       " class="math-display" ></center> L&#8217;étude de ces équations et de la physique qui leur correspond sort du
+       cadre de cet ouvrage. Notons simplement que ces équations sont des
+       équations différentielles du second ordre par rapport à la métrique
+       puisque le tenseur de courbure s&#8217;écrit en terme des dérivées des coefficients
+       de connexion et que ces derniers (rappelons que nous supposons choisie
+       la connexion de Levi Civita) s&#8217;expriment en terme des dérivées de la
+       métrique.
+       <!--l. 3669--><p class="noindent" >Par  ailleurs  mentionnons  qu&#8217;une  variété  pour  laquelle  le  tenseur
+       d&#8217;Einstein est proportionnel à la métrique est, par définition, une
+       <span 
+class="cmsl-12">vari</span><span 
+class="cmsl-12">ét</span><span 
+class="cmsl-12">é  d&#8217;Einstein</span>  <a 
+ id="dx48-221005"></a>.  L&#8217;étude  des  variétés  d&#8217;Einstein  &#8212;un  sujet
+       fascinant de la géométrie Riemannienne&#8212; sort également du cadre de
+       cet ouvrage et nous renvoyons le lecteur aux articles spécialisés ainsi
+       qu&#8217;au  beau  livre  d&#8217;Arthur  Besse  (autre  mathématicien  imaginaire,
+       comme Bourbaki) intitulé &#8220;Einstein Manifolds&#8221; <span class="cite">[<a 
+href="sourceli8.html#XBesse">1</a>]</span>.
+       <!--l. 3679--><p class="noindent" >Remarque<span class="frenchb-nbsp">&#x00A0;</span>: si la connexion, supposée métrique, possède une torsion,
+       la propriété pour <span 
+class="cmmi-12">R </span>d&#8217;être invariant par échange de paires n&#8217;est plus
+       vérifiée, le tenseur de Ricci n&#8217;est plus symétrique et, dans ce cadre,
+       on ne connait pas de généralisation naturelle du tenseur d&#8217;Einstein.
+       </li>
+       <li class="itemize">Courbures   sectionelles.   On   définit   tout   d&#8217;abord   la   fonction
+       bi-quadratique de courbure
+       <center class="math-display" >
+       <img 
+src="source792x.png" alt="K (u,v) = g(R (v,u)u,v )
+       " class="math-display" ></center> Cette fonction définie dans le fibré tangent associe un réel à tout
+       couple de vecteurs. Cette fonction est 1) symétrique (puisque <span 
+class="cmmi-12">R </span>est
+       symétrique par échange de paires), 2) bi-quadratique, 3) telle que
+       <span 
+class="cmmi-12">K</span>(<span 
+class="cmmi-12">u,u</span>) = 0. Réciproquement (démonstration non triviale que nous
+       omettrons), toute fonction <span 
+class="cmmi-12">K</span>(<span 
+class="cmmi-12">u,v</span>) vérifiant ces trois propriétés peut
+       être considérée comme la fonction bi-quadratique de courbure associée
+                                                                          
+
+                                                                          
+       à une certaine métrique. L&#8217;ensemble des fonctions symétriques, bi-quadratique
+       avec <span 
+class="cmmi-12">K</span>(<span 
+class="cmmi-12">u,u</span>)  =  0 forme un espace vectoriel de dimension <span 
+class="cmmi-12">n</span><sup><span 
+class="cmr-8">2</span></sup>(<span 
+class="cmmi-12">n</span><sup><span 
+class="cmr-8">2</span></sup> <span 
+class="cmsy-10x-x-120">-</span>
+       1)<span 
+class="cmmi-12">&#x2215;</span>12<span class="frenchb-thinspace">&#x00A0;</span>; en d&#8217;autres termes, il faut préciser <span 
+class="cmmi-12">n</span><sup><span 
+class="cmr-8">2</span></sup>(<span 
+class="cmmi-12">n</span><sup><span 
+class="cmr-8">2</span></sup><span 
+class="cmsy-10x-x-120">-</span>1)<span 
+class="cmmi-12">&#x2215;</span>12 nombres réels
+       pour décrire la courbure Riemannienne d&#8217;une variété de dimension <span 
+class="cmmi-12">n</span>
+       en <span 
+class="cmti-12">un </span>point.
+       <!--l. 3699--><p class="noindent" >La fonction <span 
+class="cmmi-12">K </span>associe un nombre à tout sous-espace de dimension 2
+       de l&#8217;espace tangent. Soit <span 
+class="cmmi-12">u,v</span> une base orthonormale d&#8217;un 2-plan, on
+       définit alors la <span 
+class="cmsl-12">courbure sectionelle</span> <a 
+ id="dx48-221006"></a> de ce sous-espace de dimension
+       2 par <span 
+class="cmmi-12">K </span>= <span 
+class="cmmi-12">K</span>(<span 
+class="cmmi-12">u,v</span>) et on démontre que <span 
+class="cmmi-12">K </span>est indépendant du choix
+       de <span 
+class="cmmi-12">u </span>et <span 
+class="cmmi-12">v </span>dans ce sous-espace. On démontre que, géométriquement,
+       <span 
+class="cmmi-12">K </span>n&#8217;est autre que la courbure Gaussienne de la 2-surface engendrée
+       par les géodésiques ayant des vecteurs tangents de la forme <span 
+class="cmmi-12">&#x03BB;u </span>+ <span 
+class="cmmi-12">&#x03BC;v</span>.
+       Nous renvoyons le lecteur à un traité élémentaire de géométrie des
+       surfaces pour les notions relatives aux courbures de Gauss etc.</li></ul>
+<!--l. 3715--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">4.5.7   </span> <a 
+ id="x48-2220004.5.7"></a>Dualité de Hodge et laplaciens</h4>
+<!--l. 3717--><p class="noindent" >Nous nous contenterons de rassembler ici quelques définitions et résultats
+généraux. Cette section mériterait également un traitement plus approfondi.
+Nous suggérons au lecteur de relire la section <a 
+href="sourcese11.html#x23-450001.11">1.11<!--tex4ht:ref: sec:forme volume --></a> consacré à la définition de
+l&#8217;élément de volume <span 
+class="cmmi-12">&#x03F5;</span>.
+<!--l. 3721--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x48-2230004.5.7"></a>Appariement entre &#x03A9;<sup><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-12">M</span>) et &#x03A9;<sup><span 
+class="cmmi-8">n</span><span 
+class="cmsy-8">-</span><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-12">M</span>)</h5>
+<!--l. 3722--><p class="noindent" >Soit <span 
+class="cmmi-12">&#x03F5; </span>la forme volume canonique d&#8217;une variété riemannienne orientée. On définit
+une opération <span 
+class="cmsy-10x-x-120">{</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">,</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmsy-10x-x-120">} </span>associant un nombre réel à la donnée d&#8217;une <span 
+class="cmmi-12">k</span>-forme et d&#8217;une
+<span 
+class="cmmi-12">n </span><span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">k</span>-forme.
+   <center class="math-display" >
+<img 
+src="source793x.png" alt="(&#x03C9;,&#x03B1; ) &#x2208; &#x03A9;k(M ) &#x00D7; &#x03A9;n -k(M ) &#x2192;  &#x03C9; &#x2227; &#x03B1; = &#x03BB;&#x03F5; &#x2208; &#x03A9;n (M ) &#x2192;  {&#x03C9;,&#x03B1; } = &#x03BB; &#x2208; IR  " class="math-display" ></center> Le
+                                                                          
+
+                                                                          
+réel <span 
+class="cmmi-12">&#x03BB; </span>est bien déterminé puisque l&#8217;espace des <span 
+class="cmmi-12">n</span>-formes est de dimension 1. On a
+donc
+   <center class="math-display" >
+<img 
+src="source794x.png" alt="&#x03C9; &#x2227; &#x03B1; =  {&#x03C9;,&#x03B1; }&#x03F5;
+" class="math-display" ></center>
+<!--l. 3734--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x48-2240004.5.7"></a>L&#8217;isomorphisme <span 
+class="cmmi-12">&#x22C6;</span><span class="frenchb-nbsp">&#x00A0;</span>: La dualité de Hodge</h5>
+<a 
+ id="dx48-224001"></a>
+<!--l. 3736--><p class="noindent" >On définit un isomorphisme <span 
+class="cmmi-12">&#x22C6;</span><span style="margin-left:0.3em" class="thinspace"></span> : <span style="margin-left:0.3em" class="thinspace"></span>&#x03A9;<sup><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-12">M</span>) <span 
+class="cmsy-10x-x-120">&#x2192; </span>&#x03A9;<sup><span 
+class="cmmi-8">n</span><span 
+class="cmsy-8">-</span><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-12">M</span>) comme la composition de
+l&#8217;isomorphisme <span 
+class="cmmi-12">&#x03C9; </span><span 
+class="cmsy-10x-x-120">&#x2208; </span>&#x03A9;<sup><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-12">M</span>) <span 
+class="cmsy-10x-x-120">&#x2192;{</span><span 
+class="cmmi-12">&#x03C9;,.</span><span 
+class="cmsy-10x-x-120">}&#x2208; </span>(&#x03A9;<sup><span 
+class="cmmi-8">n</span><span 
+class="cmsy-8">-</span><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-12">M</span>))<sup><span 
+class="cmsy-8">*</span></sup> et de l&#8217;isomorphisme musical
+entre &#x03A9;<sup><span 
+class="cmmi-8">n</span><span 
+class="cmsy-8">-</span><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-12">M</span>) et son dual, induit par la métrique.
+<!--l. 3741--><p class="indent" >   Explicitement, soit <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">&#x03F5;</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub><span 
+class="cmsy-10x-x-120">} </span>une base orthonormée de sens direct et <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">&#x03C9;</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmsy-10x-x-120">} </span>sa base
+duale. Soit <span 
+class="cmmi-12">&#x03BC;</span><sub><span 
+class="cmr-8">1</span></sub> <span 
+class="cmsy-10x-x-120">&#x2264; </span><span 
+class="cmmi-12">&#x03BC;</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-12">&#x2026;</span> <span 
+class="cmsy-10x-x-120">&#x2264; </span><span 
+class="cmmi-12">&#x03BC;</span><sub><span 
+class="cmmi-8">k</span></sub> <span 
+class="cmsy-10x-x-120">&#x2282;{</span>1<span 
+class="cmmi-12">, </span>2<span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">n</span><span 
+class="cmsy-10x-x-120">} </span>et soit <span 
+class="cmmi-12">&#x03BD;</span><sub><span 
+class="cmr-8">1</span></sub> <span 
+class="cmsy-10x-x-120">&#x2264; </span><span 
+class="cmmi-12">&#x03BD;</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-12">&#x2026;</span> <span 
+class="cmsy-10x-x-120">&#x2264; </span><span 
+class="cmmi-12">&#x03BD;</span><sub><span 
+class="cmmi-8">n</span><span 
+class="cmsy-8">-</span><span 
+class="cmmi-8">k</span></sub> la suite
+complémentaire. Alors
+   <center class="math-display" >
+<img 
+src="source795x.png" alt="|---------------------------------------------|
+&#x22C6;(&#x03C9; &#x03BC;1 &#x2227; &#x03C9; &#x03BC;2 &#x2227; ...&#x03C9; &#x03BC;k) = ± &#x03C9; &#x03BD;1 &#x2227; &#x03C9;&#x03BD;2 &#x2227; ...&#x03C9;&#x03BD;n-k
+-----------------------------------------------  " class="math-display" ></center> où
+<span 
+class="cmsy-10x-x-120">± </span>désigne la signature de [<span 
+class="cmmi-12">&#x03BC;</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">&#x03BC;</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">&#x03BC;</span><sub><span 
+class="cmmi-8">k</span></sub><span 
+class="cmmi-12">&#x03BD;</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">&#x03BD;</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">&#x03BD;</span><sub><span 
+class="cmmi-8">n</span><span 
+class="cmsy-8">-</span><span 
+class="cmmi-8">k</span></sub>]. Ainsi
+   <center class="math-display" >
+<img 
+src="source796x.png" alt="|-------|
+-&#x22C6;1-=-&#x03F5;-|
+" class="math-display" ></center>
+<!--l. 3759--><p class="indent" >   Soit <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">&#x03F5;</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub><span 
+class="cmsy-10x-x-120">} </span>une base orthonormée de sens direct et <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">&#x03C9;</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmsy-10x-x-120">} </span>sa base duale,
+alors
+   <center class="math-display" >
+<img 
+src="source797x.png" alt="&#x03C9; &#x03BC;1 &#x2227; &#x03C9; &#x03BC;2 &#x2227; ...&#x03C9;&#x03BC;k &#x2227; &#x22C6;(&#x03C9;&#x03BD;1 &#x2227; &#x03C9;&#x03BD;2 &#x2227; ...&#x03C9; &#x03BD;n- k) = &#x03B4;&#x03BC;1&#x03BC;2...&#x03BC;k.&#x03F5;
+                                               &#x03BD;1&#x03BD;2...&#x03BD;k
+" class="math-display" ></center>
+<!--l. 3767--><p class="indent" >   Soit <span 
+class="cmmi-12">S </span><span 
+class="cmsy-10x-x-120">&#x2208; </span>&#x03A9;<sup><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-12">M</span>), alors, <span 
+class="cmmi-12">&#x22C6;</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">S </span>est le seul élément de &#x03A9;<sup><span 
+class="cmmi-8">n</span><span 
+class="cmsy-8">-</span><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-12">M</span>) tel que
+   <center class="math-display" >
+<img 
+src="source798x.png" alt="&#x2200;v1, v2,...,vn-k &#x2208; TM,  &#x22C6; S(v1,v2,...,vn-k)&#x03F5; = S &#x2227; v&#x266D;1 &#x2227; v&#x266D;2 &#x2227; ...&#x2227; v &#x266D;n- k  " class="math-display" ></center> où
+<span 
+class="cmmi-12">v</span><sup><span 
+class="cmmi-8">&#x266D;</span></sup> désigne la forme linéaire correspondant au vecteur <span 
+class="cmmi-12">v </span>via l&#8217;isomorphisme
+musical induit par la métrique.
+<!--l. 3777--><p class="indent" >   Explicitement, soit <span 
+class="cmmi-12">S </span>une <span 
+class="cmmi-12">k</span>-forme de composantes <span 
+class="cmmi-12">S</span><sub><span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmr-6">1</span></sub><span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmr-6">2</span></sub><span 
+class="cmmi-8">&#x2026;</span><span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmmi-6">k</span></sub></sub>. Son dual est la
+(<span 
+class="cmmi-12">n </span><span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">k</span>)-forme <span 
+class="cmmi-12">&#x22C6;S </span>de composantes
+   <center class="math-display" >
+<img 
+src="source799x.png" alt="|-------------------------------------|
+&#x22C6;S &#x03BC;   ...&#x03BC;n = 1-S&#x03BC;1&#x03BC;2...&#x03BC;k&#x03F5;&#x03BC;1&#x03BC;2...&#x03BC; &#x03BC;  ...&#x03BC;n|
+----k+1------k!---------------k-k+1-----   " class="math-display" ></center>
+                                                                          
+
+                                                                          
+Lorsque la métrique possède une signature (<span 
+class="cmmi-12">p,q</span>) (avec <span 
+class="cmmi-12">q </span>signes <span 
+class="cmsy-10x-x-120">- </span>et <span 
+class="cmmi-12">p </span>+ <span 
+class="cmmi-12">q </span>= <span 
+class="cmmi-12">n</span>),
+on voit que <span 
+class="cmmi-12">&#x22C6;&#x03F5; </span>= 1<span 
+class="cmmi-12">&#x2215;n</span>!<span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03F5;</span><sup><span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmr-6">1</span></sub><span 
+class="cmmi-8">&#x2026;</span><span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmmi-6">n</span></sub></sup><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03F5;</span><sub>
+<span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmr-6">1</span></sub><span 
+class="cmmi-8">&#x2026;</span><span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmmi-6">n</span></sub></sub> = (<span 
+class="cmsy-10x-x-120">-</span>1)<sup><span 
+class="cmmi-8">q</span></sup> puisque <span 
+class="cmmi-12">&#x03F5;</span><sup><span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmr-6">1</span></sub><span 
+class="cmmi-8">&#x2026;</span><span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmmi-6">n</span></sub></sup><span 
+class="cmmi-12">&#x03F5;</span><sub>
+<span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmr-6">1</span></sub><span 
+class="cmmi-8">&#x2026;</span><span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmmi-6">n</span></sub></sub> = (<span 
+class="cmsy-10x-x-120">-</span>1)<sup><span 
+class="cmmi-8">q</span></sup><span 
+class="cmmi-12">n</span>!.
+   <center class="math-display" >
+<img 
+src="source800x.png" alt="|-----------|
+|&#x22C6;&#x03F5; = (- 1 )q|
+------------
+" class="math-display" ></center>
+<!--l. 3794--><p class="indent" >   Notons que si <span 
+class="cmmi-12">&#x03C9; </span>est une <span 
+class="cmmi-12">n</span>-forme, et qu&#8217;il existe donc un nombre réel <span 
+class="cmmi-12">&#x03BB; </span>tel que
+<span 
+class="cmmi-12">&#x03C9; </span>= <span 
+class="cmmi-12">&#x03BB;&#x03F5;</span>, alors <span 
+class="cmmi-12">&#x22C6;</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03C9; </span>= (<span 
+class="cmsy-10x-x-120">-</span>1)<sup><span 
+class="cmmi-8">q</span></sup><span 
+class="cmmi-12">&#x03BB;</span>.
+<!--l. 3798--><p class="indent" >   On voit que <span 
+class="cmmi-12">&#x22C6;&#x22C6; </span>1 = (<span 
+class="cmsy-10x-x-120">-</span>1)<sup><span 
+class="cmmi-8">q</span></sup>1 et que <span 
+class="cmmi-12">&#x22C6;&#x22C6;&#x03F5; </span>= (<span 
+class="cmsy-10x-x-120">-</span>1)<sup><span 
+class="cmmi-8">q</span></sup><span 
+class="cmmi-12">&#x03F5;</span>. Plus généralement, pour une
+<span 
+class="cmmi-12">k</span>-forme <span 
+class="cmmi-12">S</span>,
+   <center class="math-display" >
+<img 
+src="source801x.png" alt="|------------k(n-k)----q--|
+-&#x22C6; &#x22C6;-S-=-(--1)----(--1)-S--  " class="math-display" ></center>
+L&#8217;opérateur <span 
+class="cmmi-12">&#x22C6;</span>, agissant sur &#x03A9;<sup><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-12">M</span>) est donc inversible, avec <span 
+class="cmmi-12">&#x22C6;</span><sup><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sup>, agissant sur
+&#x03A9;<sup><span 
+class="cmmi-8">n</span><span 
+class="cmsy-8">-</span><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-12">M</span>), donné par <span 
+class="cmmi-12">&#x22C6;</span><sup><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sup> = (<span 
+class="cmsy-10x-x-120">-</span>1)<sup><span 
+class="cmmi-8">k</span><span 
+class="cmr-8">(</span><span 
+class="cmmi-8">n</span><span 
+class="cmsy-8">-</span><span 
+class="cmmi-8">k</span><span 
+class="cmr-8">)+</span><span 
+class="cmmi-8">q</span></sup><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x22C6;</span>.
+<!--l. 3807--><p class="indent" >   Notons que, dans le cas d&#8217;une signature purement euclidienne (<span 
+class="cmmi-12">n, </span>0), il n&#8217;y a
+pas à ce préoccuper du signe supplémentaire (<span 
+class="cmsy-10x-x-120">-</span>1)<sup><span 
+class="cmmi-8">q</span></sup>.
+<!--l. 3809--><p class="indent" >   Pour des applications à la physique de l&#8217;espace-temps (signature (3<span 
+class="cmmi-12">, </span>1)), les
+formules suivantes sont particulièrement utiles<span class="frenchb-nbsp">&#x00A0;</span>:
+<!--l. 3812--><p class="indent" >   pour une 1-forme <span 
+class="cmmi-12">J</span>, <span 
+class="cmmi-12">&#x22C6;J</span><sub><span 
+class="cmmi-8">&#x03B1;&#x03B2;&#x03B3;</span></sub> = <span 
+class="cmmi-12">J</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmmi-12">&#x03F5;</span><sub>
+<span 
+class="cmmi-8">&#x03BC;&#x03B1;&#x03B2;&#x03B3;</span></sub> et <span 
+class="cmmi-12">&#x22C6; &#x22C6; J </span>= <span 
+class="cmmi-12">J</span>.
+<!--l. 3816--><p class="indent" >   pour une 2-forme <span 
+class="cmmi-12">F</span>, <span 
+class="cmmi-12">&#x22C6;F</span><sub><span 
+class="cmmi-8">&#x03B1;&#x03B2;</span></sub> = <span 
+class="cmr-8">1</span> 
+<span 
+class="cmr-8">2!</span><span 
+class="cmmi-12">F</span><sup><span 
+class="cmmi-8">&#x03BC;&#x03BD;</span></sup><span 
+class="cmmi-12">&#x03F5;</span><sub>
+<span 
+class="cmmi-8">&#x03BC;&#x03BD;&#x03B1;&#x03B2;</span></sub> et <span 
+class="cmmi-12">&#x22C6; &#x22C6; F </span>= <span 
+class="cmsy-10x-x-120">-</span><span 
+class="cmmi-12">F</span>.
+<!--l. 3820--><p class="indent" >   pour une 3-forme <span 
+class="cmmi-12">B</span>, <span 
+class="cmmi-12">&#x22C6;B</span><sub><span 
+class="cmmi-8">&#x03B1;</span></sub> = <span 
+class="cmr-8">1</span> 
+<span 
+class="cmr-8">3!</span><span 
+class="cmmi-12">B</span><sup><span 
+class="cmmi-8">&#x03BB;&#x03BC;&#x03BD;</span></sup><span 
+class="cmmi-12">&#x03F5;</span><sub>
+<span 
+class="cmmi-8">&#x03BB;&#x03BC;&#x03BD;&#x03B1;</span></sub> et <span 
+class="cmmi-12">&#x22C6; &#x22C6; B </span>= <span 
+class="cmmi-12">B</span>.
+<!--l. 3828--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x48-2250004.5.7"></a>Le produit <span 
+class="cmmi-12">&#x003C;&#x003C;,&#x003E;&#x003E; </span>dans l&#8217;espace des <span 
+class="cmmi-12">k</span>-formes</h5>
+<!--l. 3829--><p class="noindent" >Soient <span 
+class="cmmi-12">&#x03C9;,&#x03B7; </span><span 
+class="cmsy-10x-x-120">&#x2208; </span>&#x03A9;<sup><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-12">M</span>). On pose
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source802x.png" alt="&#x03C9; &#x2227; &#x22C6;&#x03B7; = &#x03B7; &#x2227; &#x22C6;&#x03C9; = &#x003C; &#x003C; &#x03C9;, &#x03B7; &#x003E; &#x003E; .&#x03F5;  " class="math-display" ></center>
+Notons que <span 
+class="cmmi-12">&#x003C;&#x003C; &#x03C9;,&#x03B7; &#x003E;&#x003E; </span>est une fonction sur <span 
+class="cmmi-12">M </span>et que <span 
+class="cmmi-12">&#x003C;&#x003C; &#x03C9;,&#x03B7; &#x003E;&#x003E;</span>= <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">&#x03C9;,&#x03B1;</span><span 
+class="cmsy-10x-x-120">} </span>où
+<span 
+class="cmmi-12">&#x03B1; </span>= <span 
+class="cmmi-12">&#x22C6;</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03B7;</span>.
+<!--l. 3836--><p class="indent" >   On en déduit un produit scalaire global dans &#x03A9;<sup><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-12">M</span>). Nous supposons
+maintenant que la variété <span 
+class="cmmi-12">M </span>est compacte. Soient <span 
+class="cmmi-12">&#x03C9;,&#x03B7; </span><span 
+class="cmsy-10x-x-120">&#x2208; </span>&#x03A9;<sup><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-12">M</span>). On
+pose
+   <center class="math-display" >
+<img 
+src="source803x.png" alt="        &#x222B;            &#x222B;
+(&#x03C9;,&#x03B7;) =     &#x03C9; &#x2227; &#x22C6;&#x03B7; =     &#x003C; &#x003C; &#x03C9;,&#x03B7; &#x003E; &#x003E; &#x03F5;
+          M           M  " class="math-display" ></center>
+Cette forme est bilinéaire symétrique et non dégénérée sur &#x03A9;<sup><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-12">M</span>).
+<!--l. 3845--><p class="indent" >   On démontre que <span 
+class="cmmi-12">&#x22C6; </span>est unitaire pour (<span 
+class="cmmi-12">.,.</span>)<span class="frenchb-nbsp">&#x00A0;</span>:
+   <center class="math-display" >
+<img 
+src="source804x.png" alt="(&#x22C6;&#x03C9;,&#x22C6; &#x03B7;) = (&#x03C9;,&#x03B7;)
+" class="math-display" ></center>
+                                                                          
+
+                                                                          
+<!--l. 3849--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x48-2260004.5.7"></a>La codifférentielle <span 
+class="cmmi-12">&#x03B4; </span>sur les formes</h5>
+<a 
+ id="dx48-226001"></a>
+<!--l. 3850--><p class="noindent" ><span 
+class="cmmi-12">&#x03B4; </span>: &#x03A9;<sup><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-12">M</span>)<img 
+src="source805x.png" alt="&#x21A6;&#x2192;"  class="mapsto" >&#x03A9;<sup><span 
+class="cmmi-8">k</span><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sup>(<span 
+class="cmmi-12">M</span>) est défini comme l&#8217;adjoint de <span 
+class="cmmi-12">d </span>pour le produit scalaire
+global, c&#8217;est à dire
+   <center class="math-display" >
+<img 
+src="source806x.png" alt="|-------------------------|
+|(&#x03B1;k,d&#x03B2;k -1) = (&#x03B4; &#x03B1;k,&#x03B2;k-1) |
+--------------------------  " class="math-display" ></center> En
+écrivant la définition et en intégrant par parties, on obtient l&#8217;expression de <span 
+class="cmmi-12">&#x03B4;</span>
+agissant sur une <span 
+class="cmmi-12">k</span>-forme <span 
+class="cmmi-12">&#x03B1;</span><sub><span 
+class="cmmi-8">k</span></sub> <span 
+class="cmsy-10x-x-120">&#x2208; </span>&#x03A9;<sup><span 
+class="cmmi-8">k</span></sup>(<span 
+class="cmmi-12">M</span>). Pour une variété de dimension <span 
+class="cmmi-12">n </span>munie
+d&#8217;une métrique de signature (<span 
+class="cmmi-12">p,q</span>), il vient<span class="frenchb-nbsp">&#x00A0;</span>:
+   <center class="math-display" >
+<img 
+src="source807x.png" alt="&#x03B4;&#x03B1;k = (- 1)nk+n+1(- 1)q &#x22C6; d &#x22C6; &#x03B1;k &#x2208; &#x03A9;k -1(M ).  " class="math-display" ></center> On
+en déduit immédiatement que
+   <center class="math-display" >
+<img 
+src="source808x.png" alt="&#x03B4;2 = 0  " class="math-display" ></center> Par
+ailleurs <span 
+class="cmmi-12">&#x03B4; </span>est nul sur les fonctions (sur &#x03A9;<sup><span 
+class="cmr-8">0</span></sup>(<span 
+class="cmmi-12">M</span>)).
+<!--l. 3873--><p class="indent" >   Notons également que
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source809x.png" alt="            k
+&#x22C6;&#x03B4;&#x03C9;k = (- 1) d &#x22C6; &#x03C9;k  " class="math-display" ></center> et
+que
+   <center class="math-display" >
+<img 
+src="source810x.png" alt="&#x03B4; &#x22C6; &#x03C9;k = (- 1)k+1 &#x22C6; d &#x03C9;k
+" class="math-display" ></center>
+<!--l. 3880--><p class="indent" >   Notons enfin qu&#8217;on peut définir <span 
+class="cmmi-12">&#x03B4; </span>même si <span 
+class="cmmi-12">M </span>n&#8217;est pas orientable. En effet, la
+définition est locale et changer l&#8217;orientation revient à changer <span 
+class="cmmi-12">&#x22C6; </span>en <span 
+class="cmsy-10x-x-120">-</span><span 
+class="cmmi-12">&#x22C6;</span>, de sorte
+que <span 
+class="cmmi-12">&#x03B4; </span>est inchangé.
+<!--l. 3884--><p class="indent" >   Le lecteur pourra vérifier que, relativement à un système de coordonnées
+locales <span 
+class="cmmi-12">x</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup>, la codifférentielle d&#8217;une <span 
+class="cmmi-12">k</span>-forme
+   <center class="math-display" >
+<img 
+src="source811x.png" alt="|----&#x2211;------------------------------------------|
+&#x03C9; =             &#x03C9; &#x03BC;1&#x03BC;2...&#x03BC; dx&#x03BC;1 &#x2227; dx &#x03BC;2 &#x2227; ...&#x2227; dx &#x03BC;k
+-------&#x03BC;1&#x2264;&#x03BC;2&#x2264;...&#x03BC;k--------k------------------------   " class="math-display" ></center>
+s&#8217;écrit
+   <center class="math-display" >
+<img 
+src="source812x.png" alt="|--------&#x03C1;&#x03BC;&#x2211;---------------------------&#x03BC;------&#x03BC;-----------&#x03BC;---|
+&#x03B4;&#x03C9;  = - g    &#x03BC;1&#x2264;&#x03BC;2&#x2264;...&#x03BC;k-1&#x03C9; &#x03BC;1&#x03BC;2...&#x03BC;k-1&#x03C1;,&#x03BC;dx 1 &#x2227; dx 2 &#x2227; ...&#x2227; dx k-1|
+---------------------------------------------------------------
+" class="math-display" ></center>
+<!--l. 3904--><p class="indent" >   Le lecteur pourra également vérifier qu&#8217;on peut remplacer les dérivées
+ordinaires par des dérivées covariantes dans la formule ci-dessus (remplacer la
+virgule par le point virgule) car, bien que <span 
+class="cmmi-12">&#x03C9;</span><sub><span 
+class="cmmi-8">&#x03C1;&#x03BC;</span><sub><span 
+class="cmr-6">1</span></sub><span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmr-6">2</span></sub><span 
+class="cmmi-8">&#x2026;</span><span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmmi-6">p</span><span 
+class="cmsy-6">-</span><span 
+class="cmr-6">1</span></sub><span 
+class="cmmi-8">,&#x03BC;</span></sub> soit en général différent de
+<span 
+class="cmmi-12">&#x03C9;</span><sub><span 
+class="cmmi-8">&#x03C1;&#x03BC;</span><sub><span 
+class="cmr-6">1</span></sub><span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmr-6">2</span></sub><span 
+class="cmmi-8">&#x2026;</span><span 
+class="cmmi-8">&#x03BC;</span><sub><span 
+class="cmmi-6">k</span><span 
+class="cmsy-6">-</span><span 
+class="cmr-6">1</span></sub><span 
+class="cmr-8">;</span><span 
+class="cmmi-8">&#x03BC;</span></sub>, tous les termes dépendant de la connexion disparaissent dans la
+somme.
+<!--l. 3911--><p class="indent" >   On peut considérer une <span 
+class="cmmi-12">k</span>-forme comme un tenseur covariant (particulier) c&#8217;est
+à dire comme une 0-forme à valeur dans le fibré (<span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M</span>)<sup><span 
+class="cmsy-8">&#x2297;</span><span 
+class="cmmi-8">k</span></sup>. On peut donc
+considérer la différentielle covariante <span 
+class="cmsy-10x-x-120">&#x2207;</span><span 
+class="cmmi-12">&#x03C9; </span>ainsi que la dérivée covariante <span 
+class="cmsy-10x-x-120">&#x2207;</span><sub><span 
+class="cmmi-8">v</span></sub><span 
+class="cmmi-12">&#x03C9; </span>dans
+la direction d&#8217;un vecteur <span 
+class="cmmi-12">v</span>. Soit <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub><span 
+class="cmsy-10x-x-120">} </span>un repère mobile orthonormée et <span 
+class="cmsy-10x-x-120">&#x2207; </span>la
+connexion de Levi-Civita, la formule précédente, donnant l&#8217;expression de <span 
+class="cmmi-12">&#x03B4;&#x03C9; </span>peut
+se re-écrire sous la forme <div class="eqnarray">
+   <center class="math-display" >
+<img 
+src="source813x.png" alt="&#x03B4;&#x03C9;(e&#x03BC;1,e&#x03BC;2,...,e&#x03BC;k-1) = - &#x03A3;&#x03BC;&#x2207; &#x03BC;&#x03C9; (e&#x03BC;1,e&#x03BC;2,...,e &#x03BC;k-1,e&#x03BC;)
+
+                     =  - &#x03A3;&#x03BC;&#x2207; &#x03C9; (e&#x03BC;1,e&#x03BC;2,...,e&#x03BC;k-1,e&#x03BC;,e&#x03BC;)
+" class="math-display" ></center>
+</div>
+<!--l. 3928--><p class="indent" >   Il est parfois commode d&#8217;utiliser un symbole <span 
+class="cmmi-12">Tr </span>(trace) qui contracte les deux
+derniers indices d&#8217;un tenseur donné à l&#8217;aide de la métrique (on suppose que ces
+deux derniers indices sont tous deux covariants ou tous deux contravariants,
+sinon, on n&#8217;a pas besoin de métrique). La relation précédente s&#8217;écrit
+alors
+   <center class="math-display" >
+<img 
+src="source814x.png" alt="&#x03B4;&#x03C9; =  - Tr&#x2207; &#x03C9;
+" class="math-display" ></center>
+<!--l. 3938--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x48-2270004.5.7"></a>La divergence <span 
+class="cmmi-12">div </span>sur les tenseurs quelconques</h5>
+<!--l. 3939--><p class="noindent" >La codifférentielle <span 
+class="cmmi-12">&#x03B4; </span>n&#8217;était définie que sur les formes extérieures, mais la formule
+<span 
+class="cmmi-12">&#x03B4;&#x03C9; </span>= <span 
+class="cmsy-10x-x-120">-</span><span 
+class="cmmi-12">Tr</span><span 
+class="cmsy-10x-x-120">&#x2207;</span><span 
+class="cmmi-12">&#x03C9; </span>a un sens pour des tenseurs quelconques. Soit <span 
+class="cmmi-12">T </span>un tenseur de rang
+quelconque. On pose
+   <center class="math-display" >
+<img 
+src="source815x.png" alt="divT =  Tr&#x2207;T  " class="math-display" ></center> En
+particulier, pour une forme, on a <span 
+class="cmmi-12">div</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03C9; </span>= <span 
+class="cmsy-10x-x-120">-</span><span 
+class="cmmi-12">&#x03B4;&#x03C9;</span>.
+<!--l. 3949--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x48-2280004.5.7"></a>Le laplacien de De Rham sur les formes</h5>
+<a 
+ id="dx48-228001"></a>
+<!--l. 3951--><p class="noindent" >On définit le laplacien de De Rham (encore appelé laplacien de Hodge ou
+opérateur de Beltrami) comme
+   <center class="math-display" >
+<img 
+src="source816x.png" alt="               2
+&#x0394;DR  =  (d + &#x03B4;) =  d&#x03B4; + &#x03B4;d  " class="math-display" ></center>
+Voici quelques unes de ses propriétés<span class="frenchb-nbsp">&#x00A0;</span>:
+<!--l. 3959--><p class="indent" >   &#x0394;<sub><span 
+class="cmmi-8">DR</span></sub><span style="margin-left:0.3em" class="thinspace"></span> est self adjoint pour (<span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">.</span><span style="margin-left:0.3em" class="thinspace"></span>)<span class="frenchb-nbsp">&#x00A0;</span>: (<span 
+class="cmmi-12">&#x03C9;, </span>&#x0394;<sub><span 
+class="cmmi-8">DR</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03B7;</span>) = (&#x0394;<sub><span 
+class="cmmi-8">DR</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03C9;,&#x03B7;</span>).
+<!--l. 3962--><p class="indent" >   &#x0394;<sub><span 
+class="cmmi-8">DR</span></sub><span style="margin-left:0.3em" class="thinspace"></span> est un opérateur positif (on suppose maintenant que <span 
+class="cmmi-12">M </span>est proprement
+riemannienne)<span class="frenchb-nbsp">&#x00A0;</span>: (<span 
+class="cmmi-12">&#x03C9;, </span>&#x0394;<sub><span 
+class="cmmi-8">DR</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03C9;</span>) <span 
+class="cmsy-10x-x-120">&#x2265; </span>0.
+                                                                          
+
+                                                                          
+<!--l. 3965--><p class="indent" >   On dit que <span 
+class="cmmi-12">&#x03C9; </span>est <span 
+class="cmsl-12">harmonique</span> <a 
+ id="dx48-228002"></a> si et seulement si &#x0394;<sub><span 
+class="cmmi-8">DR</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">&#x03C9; </span>= 0 c&#8217;est à dire si et
+seulement si <span 
+class="cmmi-12">&#x03C9; </span>est à la fois fermée (<span 
+class="cmmi-12">d&#x03C9; </span>= 0) et cofermée (<span 
+class="cmmi-12">&#x03B4;&#x03C9; </span>= 0). <span 
+class="cmsl-12">Th</span><span 
+class="cmsl-12">éor</span><span 
+class="cmsl-12">ème de</span>
+<span 
+class="cmsl-12">Hodge </span>(<span 
+class="cmmi-12">M </span>est supposée compacte)<span class="frenchb-nbsp">&#x00A0;</span>:
+   <center class="math-display" >
+<img 
+src="source817x.png" alt="        p                         p-1        p       p+1
+&#x2200;&#x03C9;p &#x2208; &#x03A9;  (M )&#x2203;!(&#x03B1;p-1,&#x03B1;p,&#x03B1;p+1 ) &#x2208; &#x03A9;   (M )&#x00D7; &#x03A9;  (M  )&#x00D7;&#x03A9;    (M )|&#x03C9;p = d&#x03B1;p -1+&#x03B1;p+  &#x03B4;&#x03B1;p+1" class="math-display" ></center>où
+<span 
+class="cmmi-12">&#x03B1;</span><sub><span 
+class="cmmi-8">p</span></sub> est harmonique. Il y a unicité du triplet (<span 
+class="cmmi-12">&#x03B1;</span><sub><span 
+class="cmmi-8">p</span><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">,&#x03B1;</span><sub><span 
+class="cmmi-8">p</span></sub><span 
+class="cmmi-12">,&#x03B1;</span><sub><span 
+class="cmmi-8">p</span><span 
+class="cmr-8">+1</span></sub>).
+<!--l. 3980--><p class="indent" >   Toute classe de cohomologie de De Rham <span 
+class="cmmi-12">H</span><sup><span 
+class="cmmi-8">p</span></sup> contient un unique représentant
+harmonique.
+<!--l. 3983--><p class="indent" >   Nous définissons un peu plus bas le laplacien usuel (naïf) qu&#8217;on notera &#x0394; sur
+les fonctions (<span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">&#x221E;</span></sup>(<span 
+class="cmmi-12">M</span>) = &#x03A9;<sup><span 
+class="cmr-8">0</span></sup>(<span 
+class="cmmi-12">M</span>)). Attention, il s&#8217;avère que le laplacien de
+De Rham sur les fonctions et le laplacien naïf diffèrent par un signe<span class="frenchb-nbsp">&#x00A0;</span>:
+&#x0394;<span 
+class="cmmi-12">f </span>= <span 
+class="cmsy-10x-x-120">-</span>&#x0394;<sub><span 
+class="cmmi-8">DR</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">f</span>.
+<!--l. 3988--><p class="indent" >   Au lieu de considérer des formes différentielles (éléments de &#x03A9;<sup><span 
+class="cmmi-8">p</span></sup>(<span 
+class="cmmi-12">M</span>)) on peut
+considérer des formes différentielles à valeur dans un fibré vectoriel (éléments de
+&#x03A9;<sup><span 
+class="cmmi-8">p</span></sup>(<span 
+class="cmmi-12">M,E</span>)). L&#8217;existence d&#8217;une métrique sur la base ainsi que d&#8217;un produit scalaire
+dans les fibres permet là encore, avec les mêmes hypothèses, de définir un produit
+scalaire global. On définit alors une codifférentielle covariante <span 
+class="cmmi-12">&#x03B4;</span><sup><span 
+class="cmsy-8">&#x2207;</span></sup> comme l&#8217;adjoint
+de la différentielle extérieure covariante <span 
+class="cmmi-12">d</span><sup><span 
+class="cmsy-8">&#x2207;</span></sup>. On définit ensuite un laplacien de De
+Rham
+   <center class="math-display" >
+<img 
+src="source818x.png" alt="|--&#x2207;-----&#x2207;--&#x2207;----&#x2207;--&#x2207;-|
+-&#x0394;-DR-=-d--&#x03B4;--+-&#x03B4;--d--| " class="math-display" ></center> et
+la théorie se généralise<span 
+class="cmmi-12">&#x2026;</span>
+<!--l. 4006--><p class="indent" >   <span 
+class="cmr-10x-x-109">Mentionnons l&#8217;existence du </span><span 
+class="cmsl-10x-x-109">laplacien de Lichnerowicz</span><a 
+ id="dx48-228003"></a> <span 
+class="cmr-10x-x-109">associ</span><span 
+class="cmr-10x-x-109">é </span><span 
+class="cmr-10x-x-109">à une m</span><span 
+class="cmr-10x-x-109">étrique </span><span 
+class="cmmi-10x-x-109">g </span><span 
+class="cmr-10x-x-109">et</span>
+<span 
+class="cmr-10x-x-109">agissant sur les tenseurs sym</span><span 
+class="cmr-10x-x-109">étriques 2 </span><span 
+class="cmsy-10x-x-109">&#x00D7; </span><span 
+class="cmr-10x-x-109">2</span><span class="frenchb-nbsp"><span 
+class="cmr-10x-x-109">&#x00A0;</span></span><span 
+class="cmr-10x-x-109">:</span>
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source819x.png" alt="&#x0394;Lh &#x03BC;&#x03BD; = &#x0394;h &#x03BC;&#x03BD; + &#x03C1;&#x03BB;h&#x03BB;&#x03BD; + &#x03C1;&#x03BB;h&#x03BC;&#x03BB; + 2g&#x03BB;&#x03BB;&#x2032;g&#x03C3;&#x03C3;&#x2032;g&#x03BD;&#x03BD;&#x2032;R &#x03BD;&#x2032;&#x2032; &#x2032;h&#x03BB;&#x03C3;
+                 &#x03BC;       &#x03BD;                   &#x03C3;&#x03BC;&#x03BB;  " class="math-display" ></center> <span 
+class="cmr-10x-x-109">A</span>
+<span 
+class="cmr-10x-x-109">titre d&#8217;exercice, on peut voir que ce dernier op</span><span 
+class="cmr-10x-x-109">érateur peut s&#8217;obtenir comme</span>
+<span 
+class="cmr-10x-x-109">somme pond</span><span 
+class="cmr-10x-x-109">ér</span><span 
+class="cmr-10x-x-109">ée &#x0394;</span><sub><span 
+class="cmmi-8">L</span></sub> <span 
+class="cmr-10x-x-109">= &#x0394;</span><sub><span 
+class="cmr-8">02</span></sub> <span 
+class="cmsy-10x-x-109">- </span><span 
+class="cmr-10x-x-109">&#x0394;</span><sub><span 
+class="cmr-8">01</span></sub> <span 
+class="cmsy-10x-x-109">- </span><span 
+class="cmr-10x-x-109">&#x0394;</span><span 
+class="cmsy-10x-x-109">&#x2032;</span><sub><span 
+class="cmr-8">01</span></sub> <span 
+class="cmr-10x-x-109">o</span><span 
+class="cmr-10x-x-109">ù les laplaciens g</span><span 
+class="cmr-10x-x-109">én</span><span 
+class="cmr-10x-x-109">éralis</span><span 
+class="cmr-10x-x-109">és &#x0394;</span><sub><span 
+class="cmmi-8">ij</span></sub> <span 
+class="cmr-10x-x-109">sont</span>
+<span 
+class="cmr-10x-x-109">eux-m</span><span 
+class="cmr-10x-x-109">êmes associ</span><span 
+class="cmr-10x-x-109">és aux diff</span><span 
+class="cmr-10x-x-109">érentielles covariantes g</span><span 
+class="cmr-10x-x-109">én</span><span 
+class="cmr-10x-x-109">éralis</span><span 
+class="cmr-10x-x-109">ées introduites en page</span>
+<a 
+href="sourcese29.html#x47-2040004.4.3"><span 
+class="cmr-10x-x-109">345</span><!--tex4ht:ref: sec:fancy-d --></a><span 
+class="cmr-10x-x-109">.</span>
+<!--l. 4021--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x48-2290004.5.7"></a>Hessiens et Laplaciens naïfs</h5>
+<!--l. 4022--><p class="noindent" >Nous avons consacré une section aux différentielles covariantes généralisées
+(section <a 
+href="sourcese27.html#x44-1750004.2.9">4.2.9<!--tex4ht:ref: sec:nabla-generalise --></a>). Nous avons vu, en particulier, que si <span 
+class="cmmi-12">&#x03BE; </span>est une 0-forme à valeurs
+dans un fibré vectoriel <span 
+class="cmmi-12">E</span>, on pouvait tout d&#8217;abord considérer <span 
+class="cmsy-10x-x-120">&#x2207;</span><span 
+class="cmmi-12">&#x03BE; </span>qui est un
+élément de &#x03A9;<sup><span 
+class="cmr-8">1</span></sup>(<span 
+class="cmmi-12">M,E</span>) puis identifier &#x03A9;<sup><span 
+class="cmr-8">1</span></sup>(<span 
+class="cmmi-12">M,E</span>) avec &#x03A9;<sup><span 
+class="cmr-8">0</span></sup>(<span 
+class="cmmi-12">M,E </span><span 
+class="cmsy-10x-x-120">&#x2297;</span><span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M</span>), ce qui nous
+autorise, dans la mesure où les fibrés <span 
+class="cmmi-12">E </span>et <span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M </span>sont tous deux équipés
+de connexion, à considérer l&#8217;objet <span 
+class="cmsy-10x-x-120">&#x2207;&#x2207;</span><span 
+class="cmmi-12">&#x03BE;</span>, qui sera donc un élément de
+&#x03A9;<sup><span 
+class="cmr-8">1</span></sup>(<span 
+class="cmmi-12">M,E </span><span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M</span>) qu&#8217;on peut identifier avec &#x03A9;<sup><span 
+class="cmr-8">0</span></sup>(<span 
+class="cmmi-12">M,E </span><span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M </span><span 
+class="cmsy-10x-x-120">&#x2297; </span><span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">*</span></sup><span 
+class="cmmi-12">M</span>). De façon
+générale, nous avons défini le <span 
+class="cmsl-12">hessien</span> <a 
+ id="dx48-229001"></a> de <span 
+class="cmmi-12">&#x03BE; </span>comme <span 
+class="cmmi-12">Hess</span>(<span 
+class="cmmi-12">&#x03BE;</span>) = <span 
+class="cmsy-10x-x-120">&#x2207;&#x2207;</span><span 
+class="cmmi-12">&#x03BE; </span>Dans le cas le
+plus simple où <span 
+class="cmmi-12">&#x03BE; </span>est une fonction scalaire <span 
+class="cmmi-12">f </span>et si nous choisissons la connexion de
+Levi-Civita, la torsion est nulle, auquel cas les dérivées covariantes secondes
+commutent (voir section <a 
+href="sourcese29.html#x47-2110004.4.8">4.4.8<!--tex4ht:ref: sec:ricci-id --></a>) et <span 
+class="cmmi-12">Hess</span>(<span 
+class="cmmi-12">f</span>) est une forme bilinéaire symétrique sur
+le fibré tangent.
+<!--l. 4042--><p class="indent" >   Plus généralement, soit <span 
+class="cmmi-12">&#x03BE; </span><span 
+class="cmsy-10x-x-120">&#x2208; </span>&#x03A9;<sup><span 
+class="cmr-8">0</span></sup>(<span 
+class="cmmi-12">M,E</span>), <span 
+class="cmmi-12">e</span><sub>
+<span 
+class="cmmi-8">i</span></sub> un repère local dans les fibres de <span 
+class="cmmi-12">E</span>
+et <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">&#x03B8;</span><sup><span 
+class="cmmi-8">&#x03B1;</span></sup><span 
+class="cmsy-10x-x-120">} </span>un corepère mobile sur <span 
+class="cmmi-12">M</span>. Nous avons calculé explicitement <span 
+class="cmmi-12">Hess</span>(<span 
+class="cmmi-12">&#x03BE;</span>) en
+section <a 
+href="sourcese29.html#x47-2110004.4.8">4.4.8<!--tex4ht:ref: sec:ricci-id --></a>. Le laplacien naïf sur &#x03A9;<sup><span 
+class="cmr-8">0</span></sup>(<span 
+class="cmmi-12">M,E</span>) (on dit souvent &#8220;laplacien brut&#8221;) est
+défini par l&#8217;égalité
+   <center class="math-display" >
+<img 
+src="source820x.png" alt="&#x0394; (&#x03BE;) = TrHess (&#x03BE;)  " class="math-display" ></center>
+Explicitement, on a
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source821x.png" alt="          &#x03B1;&#x03B2;  i
+&#x0394; (&#x03BE;) = eig   &#x03BE;;&#x03B1;&#x03B2;  " class="math-display" ></center>
+C&#8217;est encore un élément de &#x03A9;<sup><span 
+class="cmr-8">0</span></sup>(<span 
+class="cmmi-12">M,E</span>).
+<!--l. 4056--><p class="indent" >   Dans le cas particulier d&#8217;une fonction <span 
+class="cmmi-12">f</span>, et en utilisant un repère naturel, on
+obtient simplement
+   <center class="math-display" >
+<img 
+src="source822x.png" alt="                                  &#x2202;2f         &#x2202;f
+&#x0394; (f) = - &#x0394;DRf  = g &#x03BC;&#x03BD;f;&#x03BC;&#x03BD; = g&#x03BC;&#x03BD;[---&#x03BC;--&#x03BD;-- &#x0393; &#x03C1;&#x03BC;&#x03BD;--&#x03C1;-]
+                                &#x2202;x  &#x2202;x        &#x2202;x
+" class="math-display" ></center>
+<!--l. 4062--><p class="indent" >   En jouant avec les différentes sortes de différentielles covariantes généralisées,
+on peut définir plusieurs autres sortes de Laplaciens. On peut aussi trouver les
+formules reliant ces différents Laplaciens<span 
+class="cmmi-12">&#x2026;</span>
+<!--l. 4066--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x48-2300004.5.7"></a>Equations de Maxwell et équations de Yang-Mills</h5>
+<a 
+ id="dx48-230001"></a>
+<a 
+ id="dx48-230002"></a>
+<!--l. 4069--><p class="noindent" >Les équations de Maxwell décrivent la physique de l&#8217;electromagnétisme. Nous
+avons vu comment écrire la moitié de ces équations, en l&#8217;occurence, les équations
+&#8220;sans terme de source&#8221;, <span 
+class="cmmi-12">dF </span>= 0, qui résultent directement de la définition <span 
+class="cmmi-12">F </span>= <span 
+class="cmmi-12">dA</span>
+du champ electromagnétique <span 
+class="cmmi-12">F </span>en terme du potentiel electromagnétique <span 
+class="cmmi-12">A</span>. Ces
+équations, qui sont en quelque sorte des équations structurelles, n&#8217;utilisent pas
+la notion de métrique. A ce propos, si on souhaite écrire explicitement
+ces équations &#8220;avec des indices&#8221;, dans un repère naturel, on obtiendra
+indifféremment
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source823x.png" alt="F&#x03BC;&#x03BD;,&#x03C1; + F &#x03C1;&#x03BC;,&#x03BD; + F&#x03BD;&#x03C1;,&#x03BC; = F &#x03BC;&#x03BD;;&#x03C1; + F&#x03C1;&#x03BC;;&#x03BD; + F &#x03BD;&#x03C1;;&#x03BC; = 0  " class="math-display" ></center> en
+effet, les coefficients de la connexion linéaire se compensent dans la seconde
+équation, ce qui est <span 
+class="cmti-12">a priori </span>bien évident, du fait de la définition de <span 
+class="cmmi-12">F </span>en termes
+de <span 
+class="cmmi-12">A</span>, laquelle ne fait aucunement appel à la notion de connexion linéaire. De la
+même façon, dans un repère naturel,
+   <center class="math-display" >
+<img 
+src="source824x.png" alt="F &#x03BC;&#x03BD; = A&#x03BD;,&#x03BC; - A&#x03BC;,&#x03BD; = A&#x03BD;;&#x03BC; - A&#x03BC;;&#x03BD;  " class="math-display" ></center>
+Attention, dans un repère mobile <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">&#x03B8;</span><sup><span 
+class="cmmi-8">&#x03C1;</span></sup><span 
+class="cmsy-10x-x-120">}</span>, les valeurs de <span 
+class="cmmi-12">d&#x03B8;</span><sup><span 
+class="cmmi-8">&#x03C1;</span></sup> ne sont pas nulles
+puisque les fonctions de structure du repère ne sont pas nulles (voir section
+<a 
+href="sourcese6.html#x18-380001.6.3">1.6.3<!--tex4ht:ref: sec:mobileMaurerCartan --></a>)<span class="frenchb-nbsp">&#x00A0;</span>: les coefficients de la connexion linéaire se compensent comme auparavant,
+mais il faut tenir compte des fonctions de structure du repère (cela n&#8217;a rien à voir
+avec l&#8217;existence, ou non, d&#8217;un champ gravitationnel décrit par la métrique <span 
+class="cmmi-12">g</span>).
+Puisque <span 
+class="cmmi-12">F </span>= <span 
+class="cmmi-12">dA </span>= <span 
+class="cmr-8">1</span> 
+<span 
+class="cmr-8">2</span><span 
+class="cmmi-12">F</span><sub><span 
+class="cmmi-8">&#x03BC;&#x03BD;</span></sub><span 
+class="cmmi-12">&#x03B8;</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> <span 
+class="cmsy-10x-x-120">&#x2227; </span><span 
+class="cmmi-12">&#x03B8;</span><sup><span 
+class="cmmi-8">&#x03BD;</span></sup>, on obtient
+   <center class="math-display" >
+<img 
+src="source825x.png" alt="F&#x03BC;&#x03BD; = (A &#x03BD;,&#x03BC; - A &#x03BC;,&#x03BD;) - A&#x03C1;f&#x03BC;&#x03BD;&#x03C1;
+" class="math-display" ></center>
+<!--l. 4082--><p class="indent" >   Les charges électriques, quant à elles, sont les &#8220;sources&#8221; du champ et ces
+charges sont décrites par une 1-forme <span 
+class="cmmi-12">J </span>= <span 
+class="cmmi-12">J</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub><span 
+class="cmmi-12">dx</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> (le &#8220;vecteur courant&#8221;). Le
+couplage entre champ et charges doit être tel que toutes les équations de Maxwell
+soient vérifiées. En dimension 4 = 3 + 1 (physique de l&#8217;Espace-Temps) le dual de
+                                                                          
+
+                                                                          
+Hodge de <span 
+class="cmmi-12">J </span>est une 3-forme et les équations de Maxwell &#8220;avec sources&#8221;
+s&#8217;écrivent
+   <center class="math-display" >
+<img 
+src="source826x.png" alt="d &#x22C6; F = &#x22C6;J  " class="math-display" ></center> Ici,
+par contre, la métrique intervient explicitement (via l&#8217;opération <span 
+class="cmmi-12">&#x22C6;</span>). De manière
+explicite, ces équations s&#8217;écrivent
+   <center class="math-display" >
+<img 
+src="source827x.png" alt="F&#x03BC;&#x03BD;;&#x03BD; = J&#x03BC;  " class="math-display" ></center>
+Notons qu&#8217;à l&#8217;aide de la codifférentielle <span 
+class="cmmi-12">&#x03B4;</span>, les équations de Maxwell avec sources
+<span 
+class="cmmi-12">d &#x22C6; F </span>= <span 
+class="cmmi-12">&#x22C6;J </span>s&#8217;écrivent simplement <span 
+class="cmmi-12">&#x03B4;F </span>= <span 
+class="cmmi-12">J</span>.
+<!--l. 4085--><p class="indent" >   Le lecteur pourra bien entendu écrire les deux équations &#8220;quadridimensionelles&#8221; à
+l&#8217;aide des composantes <img 
+src="source828x.png" alt="-&#x2192;
+E"  class="mathpalette" > et <img 
+src="source829x.png" alt="-&#x2192;
+B"  class="mathpalette" > de <span 
+class="cmmi-12">F </span>(les champs électriques et magnétiques) et à
+l&#8217;aide des composantes <span 
+class="cmmi-12">&#x03C1; </span>(la charge) et <img 
+src="source830x.png" alt="-&#x2192;
+j"  class="mathpalette" > (le courant electrique tridimensionnel)
+de <span 
+class="cmmi-12">J </span>et redécouvrir ainsi les quatre équations de Maxwell habituelles. On rappelle
+que
+   <center class="math-display" >
+<img 
+src="source831x.png" alt="      (                   )
+      |  0  - Ex - Ey - Ez|
+F&#x03BC;&#x03BD; = | Ex   0    Bz  - By|
+      ( Ey  - Bz  0    Bx )
+        Ez  By   - Bx   0
+" class="math-display" ></center>
+<a 
+ id="dx48-230003"></a>
+<!--l. 4097--><p class="indent" >   En ce qui concerne les théories de jauge non abéliennes (par exemple la
+chromodynamique décrivant les interactions fortes élementaires entre quarks), le
+potentiel de jauge <span 
+class="cmmi-12">A </span>et la courbure <span 
+class="cmmi-12">F </span>sont maintenant des formes à valeurs
+matricielles (l&#8217;algèbre de Lie de <span 
+class="cmmi-12">SU</span>(3) dans le cas de la chromodynamique). Il en
+est de même du vecteur courant <span 
+class="cmmi-12">J</span>. Les équations de Yang-Mills &#8220;sans sources&#8221;
+s&#8217;écrivent
+   <center class="math-display" >
+<img 
+src="source832x.png" alt="|-------------------------------|
+DF   = dF  - F &#x2227; A +  A &#x2227; F =  0|
+---------------------------------  " class="math-display" ></center> Ce
+sont donc simplement les identités de Bianchi. Dans un repère naturel, et en
+utilisant des indices, notons que <div class="eqnarray">
+   <center class="math-display" >
+<img 
+src="source833x.png" alt="                  1           &#x03C1;     &#x03BC;     &#x03BD;
+F &#x2227;  A - A &#x2227; F  = --[F &#x03BC;&#x03BD;,A &#x03C1;]dx  &#x2227; dx  &#x2227; dx
+                  21
+                = --([F&#x03BD;&#x03C1;,A &#x03BC;] + [F&#x03BC;&#x03BD;,A &#x03C1;] + [F&#x03C1;&#x03BC;,A &#x03BD;])dx &#x03C1; &#x2227; dx &#x03BC; &#x2227; dx &#x03BD;
+                  3!
+" class="math-display" ></center>
+</div>et donc
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source834x.png" alt="|-----------------------------|
+|&#x2207; &#x03BC;F&#x03BD;&#x03C1; + &#x2207; &#x03BD;F&#x03C1;&#x03BC; + &#x2207; &#x03C1;F&#x03BC;&#x03BD; = 0 |
+------------------------------  " class="math-display" ></center>
+avec
+   <center class="math-display" >
+<img 
+src="source835x.png" alt="&#x2207; &#x03C1;F&#x03BC;&#x03BD; = &#x2202; &#x03C1;F &#x03BC;&#x03BD; + [A &#x03C1;,F&#x03BC;&#x03BD;]
+" class="math-display" ></center>
+<!--l. 4118--><p class="indent" >   Les équations de Yang-Mills &#8220;avec sources&#8221; s&#8217;écrivent
+   <center class="math-display" >
+<img 
+src="source836x.png" alt="|-----------|
+D--&#x22C6; F-=-&#x22C6;J--  " class="math-display" ></center>
+c&#8217;est à dire encore, si on utilise les indices,
+   <center class="math-display" >
+<img 
+src="source837x.png" alt="|----&#x03BC;&#x03BD;--------&#x03BC;&#x03BD;-----&#x03BC;-|
+-&#x2202;&#x03BD;F---+-[A-&#x03BD;,F--]-=-J---
+" class="math-display" ></center>
+                                                                          
+
+                                                                          
+<!--l. 4129--><p class="indent" >   Notons que, même lorsque <span 
+class="cmmi-12">J </span>= 0, c&#8217;est à dire dans &#8220;le vide&#8221;, l&#8217;ensemble des
+équations de Yang-Mills <span 
+class="cmmi-12">DF </span>= 0 et <span 
+class="cmmi-12">D &#x22C6; F </span>= 0 constitue un système d&#8217;équations
+différentielles hautement non trivial dont la discussion générale sort du cadre de
+cet ouvrage.
+<!--l. 4132--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">4.5.8   </span> <a 
+ id="x48-2310004.5.8"></a>Connexions spinorielles et opérateur de Dirac</h4>
+<!--l. 4133--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x48-2320004.5.8"></a>Complément sur l&#8217;algèbre de Lie du groupe <span 
+class="cmmi-12">Spin</span></h5>
+<!--l. 4134--><p class="noindent" >Soit <span 
+class="cmmi-12">P </span>= <span 
+class="cmmi-12">OFM </span>le fibré des repères orthonormés correspondant à une certaine
+métrique <span 
+class="cmmi-12">g </span>sur une variété orientée <span 
+class="cmmi-12">M</span>, <img 
+src="source838x.png" alt="P^"  class="widehat" > = <img 
+src="source839x.png" alt="O^"  class="widehat" ><span 
+class="cmmi-12">FM</span>, le fibré des repères spinoriels
+correspondant (on suppose qu&#8217;il existe &#8212; c&#8217;est à dire que la variété est spinorielle
+&#8212; et qu&#8217;il est unique &#8212; c&#8217;est à dire que la variété possède une seule structure
+spinorielle).
+<!--l. 4141--><p class="indent" >   Nos considérations sont valables pour une signature quelconque (<span 
+class="cmmi-12">p,q</span>) et on
+désignera par <span 
+class="cmmi-12">&#x03B7; </span>la forme diagonale de la métrique <span 
+class="cmmi-12">g</span>, c&#8217;est à dire la matrice
+donnant l&#8217;expression de la métrique <span 
+class="cmmi-12">g </span>dans un repère orthonormé, ainsi,
+<span 
+class="cmmi-12">&#x03B7;</span><sub><span 
+class="cmmi-8">ab</span></sub> = <span 
+class="cmsy-10x-x-120">±</span>1. Pour simplifier on posera <span 
+class="cmmi-12">Spin</span>(<span 
+class="cmmi-12">&#x03B7;</span>) = <span 
+class="cmmi-12">Spin</span>(<span 
+class="cmmi-12">p,q</span>). Rappelons que nous
+avons également une inclusion <span 
+class="cmmi-12">Spin</span><sup><span 
+class="cmsy-8">&#x2191;</span></sup>(<span 
+class="cmmi-12">&#x03B7;</span>) <span 
+class="cmsy-10x-x-120">&#x2282; </span><span 
+class="cmmi-12">Spin</span>(<span 
+class="cmmi-12">&#x03B7;</span>) et que l&#8217;existence d&#8217;une
+structure <span 
+class="cmmi-12">spin</span><sup><span 
+class="cmsy-8">&#x2191;</span></sup> sur une variété implique non seulement que <span 
+class="cmmi-12">M </span>est orientée
+mais encore orientée temporellement (le &#8220;temps&#8221; pouvant avoir plusieurs
+directions).
+<!--l. 4150--><p class="indent" >   Soit <span 
+class="cmmi-12">V </span>un espace vectoriel réel, complexe (ou même quaternionique) sur
+lequel est donnée une repésentation <span 
+class="cmmi-12">&#x03C1; </span>de l&#8217;algèbre de Clifford <span 
+class="cmmi-12">Cliff</span>(<span 
+class="cmmi-12">&#x03B7;</span>).
+On sait (voir la section consacrée aux groupes <span 
+class="cmmi-12">Spin</span>) que <span 
+class="cmmi-12">Spin</span>(<span 
+class="cmmi-12">&#x03B7;</span>) est un
+sous-ensemble de <span 
+class="cmmi-12">Cliff</span>(<span 
+class="cmmi-12">&#x03B7;</span>), on a donc ainsi automatiquement une représentation,
+encore notée <span 
+class="cmmi-12">&#x03C1;</span>, du groupe <span 
+class="cmmi-12">Spin</span>(<span 
+class="cmmi-12">&#x03B7;</span>). Nous pouvons également, dans le
+cas pair, parler de spineurs de Weyl (demi-spineurs) mais il n&#8217;est pas
+utile d&#8217;établir ici une distinction entre la droite et la gauche ni d&#8217;ailleurs
+de mentionner les propriétés de réalité des spineurs considérés. Nous
+travaillerons donc avec des spineurs définis comme section d&#8217;un fibré vectoriel
+<span 
+class="cmmi-12">SM </span>= <img 
+src="source840x.png" alt="P^"  class="widehat" > <span 
+class="cmsy-10x-x-120">&#x00D7;</span><sub><span 
+class="cmmi-8">Spin</span><span 
+class="cmr-8">(</span><span 
+class="cmmi-8">&#x03B7;</span><span 
+class="cmr-8">)</span></sub><span 
+class="cmmi-12">V </span>.
+<!--l. 4162--><p class="indent" >   On choisit un ensemble de générateurs <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">&#x03B3;</span><sub><span 
+class="cmmi-8">a</span></sub><span 
+class="cmsy-10x-x-120">} </span>de <span 
+class="cmmi-12">Cliff</span>(<span 
+class="cmmi-12">n</span>), avec
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source841x.png" alt="|------------------|
+|&#x03B3;a&#x03B3;b + &#x03B3;b&#x03B3;a = 2&#x03B7;ab|
+--------------------  " class="math-display" ></center>
+Soit <span 
+class="cmmi-12">g </span><span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="cmmi-12">Spin</span>(<span 
+class="cmmi-12">n</span>), on sait que <span 
+class="cmmi-12">&#x03C1;</span>(<span 
+class="cmmi-12">g</span>)<span 
+class="cmmi-12">&#x03B3;</span><sub><span 
+class="cmmi-8">a</span></sub><span 
+class="cmmi-12">&#x03C1;</span>(<span 
+class="cmmi-12">g</span><sup><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sup>) = <span 
+class="cmmi-12">&#x03B3;</span><sub>
+<span 
+class="cmmi-8">b</span></sub>&#x039B;(<span 
+class="cmmi-12">g</span>)<sub><span 
+class="cmmi-8">a</span></sub><sup><span 
+class="cmmi-8">b</span></sup><span 
+class="cmmi-12">, </span>où <span 
+class="cmmi-12">&#x03C1;</span>(<span 
+class="cmmi-12">g</span>) est la
+représentation du groupe <span 
+class="cmmi-12">Spin</span>(<span 
+class="cmmi-12">&#x03B7;</span>) et &#x039B; est celle du groupe orthogonal <span 
+class="cmmi-12">SO</span>(<span 
+class="cmmi-12">&#x03B7;</span>)
+correspondant (le groupe de Lorentz). Nous avons besoin de savoir écrire
+explicitement la représentation <span 
+class="cmmi-12">&#x03C1; </span>pour l&#8217;algèbre <span 
+class="cmmi-12">Lie</span>(<span 
+class="cmmi-12">SO</span>(<span 
+class="cmmi-12">&#x03B7;</span>)) = <span 
+class="cmmi-12">Lie</span>(<span 
+class="cmmi-12">Spin</span>(<span 
+class="cmmi-12">&#x03B7;</span>)). Soit
+<span 
+class="cmmi-12">M</span><sup><span 
+class="cmmi-8">ab</span></sup> l&#8217;ensemble des matrices antisymétriques en dimension <span 
+class="cmmi-12">n</span>, c&#8217;est à dire
+<span 
+class="cmmi-12">M</span><sup><span 
+class="cmmi-8">ab</span></sup> + <span 
+class="cmmi-12">M</span><sup><span 
+class="cmmi-8">ba</span></sup> = 0. On sait que <span 
+class="cmmi-12">Lie</span>(<span 
+class="cmmi-12">SO</span>(<span 
+class="cmmi-12">&#x03B7;</span>) est engendrée par les matrices <span 
+class="cmmi-12">M </span>du type
+<span 
+class="cmmi-12">M</span><sub><span 
+class="cmmi-8">ab</span></sub> = <span 
+class="cmmi-12">&#x03B7;</span><sub><span 
+class="cmmi-8">ac</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">M</span><sup><span 
+class="cmmi-8">cb</span></sup><span 
+class="cmmi-12">. </span>Notons encore
+   <center class="math-display" >
+<img 
+src="source842x.png" alt="        1-  ab         1-  ab
+&#x03C1;(M ) = 8 M   [&#x03B3;a, &#x03B3;b] = 2 M  &#x03A3;ab  " class="math-display" ></center>
+avec
+   <center class="math-display" >
+<img 
+src="source843x.png" alt="&#x03A3;   = 1&#x2215;4 [&#x03B3; ,&#x03B3; ]
+  ab       a   b  " class="math-display" ></center>
+On vérifie immédiatement que [<span 
+class="cmmi-12">&#x03C1;</span>(<span 
+class="cmmi-12">M</span>1)<span 
+class="cmmi-12">,&#x03C1;</span>(<span 
+class="cmmi-12">M</span>2)] = <span 
+class="cmmi-12">&#x03C1;</span>([<span 
+class="cmmi-12">M</span>1<span 
+class="cmmi-12">,M</span>2]) et que
+[<span 
+class="cmmi-12">&#x03C1;</span>(<span 
+class="cmmi-12">M</span>)<span 
+class="cmmi-12">,&#x03B3;</span><sub><span 
+class="cmmi-8">a</span></sub>] = <span 
+class="cmmi-12">&#x03B3;</span><sub><span 
+class="cmmi-8">b</span></sub><span 
+class="cmmi-12">M</span><sub><span 
+class="cmmi-8">a</span></sub><sup><span 
+class="cmmi-8">b</span></sup><span 
+class="cmmi-12">. </span>On voit donc que <span 
+class="cmmi-12">&#x03C1;</span>, défini comme ci-dessus, nous fournit la
+représentation de <span 
+class="cmmi-12">Lie</span>(<span 
+class="cmmi-12">Spin</span>(<span 
+class="cmmi-12">&#x03B7;</span>) cherchée.
+<!--l. 4186--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x48-2330004.5.8"></a>Connexion spinorielle</h5>
+                                                                          
+
+                                                                          
+<!--l. 4187--><p class="noindent" >Une <span 
+class="cmsl-12">connexion spinorielle </span>est une connexion principale sur le fibré <img 
+src="source844x.png" alt="^
+P"  class="widehat" >. Il existe une
+bijection entre l&#8217;ensemble des connexions sur le fibré <span 
+class="cmmi-12">P </span>des repères orthonormés
+et l&#8217;ensemble des connexion sur le fibré des repères spinoriels. En effet, si <span 
+class="cmmi-12">&#x03C9;</span>
+est une connexion sur <span 
+class="cmmi-12">P</span>, si <span 
+class="cmmi-12">&#x03BB; </span>désigne l&#8217;homomorphisme d&#8217;espaces fibrés
+<img 
+src="source845x.png" alt="^e"  class="widehat" > <span 
+class="cmsy-10x-x-120">&#x2208;</span><img 
+src="source846x.png" alt="P^"  class="widehat" > <span 
+class="cmsy-10x-x-120">&#x2192; </span><span 
+class="cmmi-12">e </span><span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="cmmi-12">P, </span>et si <span 
+class="cmmi-12">V</span> <sub><img 
+src="source847x.png" alt="^e"  class="widehat" > </sub> <span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="cmmi-12">T</span>(<img 
+src="source848x.png" alt="P^"  class="widehat" ><span 
+class="cmmi-12">,</span><img 
+src="source849x.png" alt="^e"  class="widehat" > ), on obtient une connexion <img 
+src="source850x.png" alt="^&#x03C9;"  class="widehat" > sur <img 
+src="source851x.png" alt="^P"  class="widehat" > en
+posant
+   <center class="math-display" >
+<img 
+src="source852x.png" alt="^&#x03C9;(V ^e) = &#x03C9; (Ve) avec  Ve = &#x03BB;*(V&#x02C6;e)  " class="math-display" ></center> La
+connexion métrique <span 
+class="cmmi-12">&#x03C9; </span>s&#8217;écrivait localement à l&#8217;aide de la forme &#x0393;, c&#8217;est à
+dire explicitement à l&#8217;aide de la matrice de connexion &#x0393;<sup><span 
+class="cmmi-8">a</span></sup><sub>
+<span 
+class="cmmi-8">b</span></sub> = &#x0393;<sup><span 
+class="cmmi-8">a</span></sup><sub>
+<span 
+class="cmmi-8">b&#x03BC;</span></sub><span 
+class="cmmi-12">dx</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup>. En
+utilisant la représentation trouvée précédemment pour <span 
+class="cmmi-12">Lie</span>(<span 
+class="cmmi-12">Spin</span>(<span 
+class="cmmi-12">&#x03B7;</span>)), nous
+obtenons
+   <center class="math-display" >
+<img 
+src="source853x.png" alt="^           1-ab
+&#x0393; = &#x03C1;(&#x0393; ) = 8&#x0393;  [&#x03B3;a,&#x03B3;b]  " class="math-display" ></center>
+Posons <span class="fbox"><span 
+class="cmmi-12">&#x03B3;</span><sup><span 
+class="cmmi-8">a</span></sup> = <span 
+class="cmmi-12">&#x03B7;</span><sup><span 
+class="cmmi-8">ab</span></sup><span 
+class="cmmi-12">&#x03B3;</span><sub>
+<span 
+class="cmmi-8">b</span></sub></span>, nous obtenons,
+   <center class="math-display" >
+<img 
+src="source854x.png" alt="|---------------------------|
+|^&#x0393; = 1&#x0393; ab[&#x03B3;a,&#x03B3;b] = 1&#x0393; ab&#x03B3;a&#x03B3;b |
+-----8-------------4---------  " class="math-display" ></center>
+                                                                          
+
+                                                                          
+L&#8217;opérateur de courbure peut être obtenu de la même façon. On part de
+l&#8217;opérateur de courbure écrit comme endomorphisme <span 
+class="cmmi-12">R </span>= (<span 
+class="cmmi-12">R</span><sup><span 
+class="cmmi-8">a</span></sup><sub>
+<span 
+class="cmmi-8">b</span></sub>) et on
+obtient<span class="frenchb-nbsp">&#x00A0;</span>:
+   <center class="math-display" >
+<img 
+src="source855x.png" alt="---------------
+|^   1     a b|
+R--=-4Rab-&#x03B3;-&#x03B3;--  " class="math-display" ></center>
+avec
+   <center class="math-display" >
+<img 
+src="source856x.png" alt="Rab = 1-Rab&#x03BC;&#x03BD;dx&#x03BC; &#x2227; dx&#x03BD;
+      2  " class="math-display" ></center> Si
+on décide de n&#8217;utiliser qu&#8217;un seul repère mobile orthonormé <span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">a</span></sub>, ainsi que le
+co-repère mobile correspondant <span 
+class="cmmi-12">e</span><sup><span 
+class="cmmi-8">a</span></sup>, il vient
+   <center class="math-display" >
+<img 
+src="source857x.png" alt="Rab = 1-Rabcdeced
+      2  " class="math-display" ></center>
+Enfin, mentionnons les deux formules bien utiles suivantes, donnant le
+tenseur de Ricci <span 
+class="cmmi-12">&#x03C1; </span>et la courbure scalaire <span 
+class="cmmi-12">&#x03C4;</span>. Elles s&#8217;obtiennent en utilisant
+simplement les relations de commutations des générateurs de l&#8217;algèbre de
+Clifford<span class="frenchb-nbsp">&#x00A0;</span>:
+                                                                          
+
+                                                                          
+   <center class="math-display" >
+<img 
+src="source858x.png" alt="Rabcd&#x03B3;d&#x03B3;a&#x03B3;b = 2&#x03C1;ce&#x03B3;e
+" class="math-display" ></center>
+   <center class="math-display" >
+<img 
+src="source859x.png" alt="      c d a b
+Rabcd&#x03B3; &#x03B3; &#x03B3; &#x03B3;  = - 2&#x03C4;
+" class="math-display" ></center>
+<!--l. 4231--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x48-2340004.5.8"></a>Dérivée covariante sur les champs de spineurs</h5>
+<!--l. 4232--><p class="noindent" >En vertu de l&#8217;étude générale sur les différentielles et dérivées covariantes, on voit
+immédiatement que si &#x03A8; est un champ de spineurs (une section du fibré vectoriel
+<span 
+class="cmmi-12">SM</span>), sa différentielle covariante est donnée par
+   <center class="math-display" >
+<img 
+src="source860x.png" alt="|-----------------------------------|
+|&#x2207; &#x03A8; = d &#x03A8; + ^&#x0393; &#x03A8; = d&#x03A8;  + 14&#x0393; ab&#x03B3;a&#x03B3;b &#x03A8; |
+------------------------------------  " class="math-display" ></center> La
+quantité <span 
+class="cmsy-10x-x-120">&#x2207;</span>&#x03A8; est un spineur-1-forme, et son évaluation, sur un vecteur tangent <span 
+class="cmmi-12">v </span>à
+<span 
+class="cmmi-12">M</span>, c&#8217;est à dire la dérivée covariante de &#x03A8; dans la direction <span 
+class="cmmi-12">v </span>est le champ de
+spineurs <span 
+class="cmsy-10x-x-120">&#x2207;</span><sub><span 
+class="cmmi-8">v</span></sub>&#x03A8; = <span 
+class="cmsy-10x-x-120">&#x2207;</span>&#x03A8;(<span 
+class="cmmi-12">v</span>). Un spineur pour lequel <span 
+class="cmsy-10x-x-120">&#x2207;</span>&#x03A8; = 0 est un <span 
+class="cmsl-12">spineur</span>
+<span 
+class="cmsl-12">parall</span><span 
+class="cmsl-12">èle</span>.
+                                                                          
+
+                                                                          
+<!--l. 4247--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x48-2350004.5.8"></a>L&#8217;opérateur de Dirac</h5>
+<!--l. 4248--><p class="noindent" >Soit (<span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">a</span></sub>) un repère mobile orthonormé (en général local), on peut construire les
+dérivées covariantes <span 
+class="cmsy-10x-x-120">&#x2207;</span><sub><span 
+class="cmmi-8">a</span></sub>&#x03A8; = <span 
+class="cmsy-10x-x-120">&#x2207;</span><sub><span 
+class="cmmi-8">e</span><sub><span 
+class="cmmi-6">a</span></sub></sub>&#x03A8; et on définit l&#8217;<span 
+class="cmsl-12">op</span><span 
+class="cmsl-12">érateur de Dirac </span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-44.png" alt="D" class="10-120x-x-44" /></span>
+par<span class="frenchb-nbsp">&#x00A0;</span>:
+   <center class="math-display" >
+<img 
+src="source861x.png" alt="|-------a-----|
+D-&#x03A8;--=-&#x03B3;-&#x2207;a-&#x03A8;--  " class="math-display" ></center> On
+voit que l&#8217;opérateur de Dirac transforme également les champs de spineurs en
+d&#8217;autres champ de spineurs. Ceux pour lesquels <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-44.png" alt="D" class="10-120x-x-44" /></span>&#x03A8; = 0 sont appelés <span 
+class="cmsl-12">spineurs</span>
+<span 
+class="cmsl-12">harmoniques </span>. Par ailleurs, le carré <img 
+src="source862x.png" alt="&#x0394;^"  class="widehat" > = <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-44.png" alt="D" class="10-120x-x-44" /></span><sup><span 
+class="cmr-8">2</span></sup> s&#8217;appelle le <span 
+class="cmsl-12">laplacien spinoriel </span>et on
+peut vérifier que sa relation avec le laplacien naïf <span 
+class="cmsy-10x-x-120">-</span><span 
+class="cmmi-12">&#x03B7;</span><sup><span 
+class="cmmi-8">ab</span></sup><span 
+class="cmsy-10x-x-120">&#x2207;</span><sub>
+<span 
+class="cmmi-8">a</span></sub><span 
+class="cmsy-10x-x-120">&#x2207;</span><sub><span 
+class="cmmi-8">b</span></sub> est donnée par la
+formule
+   <center class="math-display" >
+<img 
+src="source863x.png" alt="|---------------------|
+|^       ab        1  |
+-&#x0394;-=----&#x03B7;-&#x2207;a-&#x2207;b-+--4&#x03C4;-  " class="math-display" ></center> <span 
+class="cmmi-12">&#x03C4;</span>
+étant la courbure scalaire.
+<!--l. 4269--><p class="indent" >   L&#8217;opérateur de Dirac est sans doute l&#8217;opérateur différentiel le plus important
+de la géométrie (et de la physique<span class="frenchb-thinspace">&#x00A0;</span>!) Ne pouvant y consacrer plus de place ici,
+nous renvoyons le lecteur à des ouvrages (ou articles) spécialisés (le résumé qui
+précède s&#8217;inspire de <span class="cite">[<a 
+href="sourceli8.html#XRC-AJ">4</a>]</span>).
+<!--l. 4274--><p class="noindent" >
+   <h5 class="subsubsectionHead"><a 
+ id="x48-2360004.5.8"></a>Le fibré de Clifford</h5>
+                                                                          
+
+                                                                          
+<!--l. 4275--><p class="noindent" >On part du fibré principal <img 
+src="source864x.png" alt="^
+P"  class="widehat" > des repères spinoriels et on utilise l&#8217;action
+adjointe du groupe structural <span 
+class="cmmi-12">Spin</span>(<span 
+class="cmmi-12">&#x03B7;</span>) sur l&#8217;algèbre de Clifford <span 
+class="cmmi-12">Cliff</span>(<span 
+class="cmmi-12">&#x03B7;</span>)
+(voir plus haut) pour construire le fibré associé en algèbres de Clifford
+<span 
+class="cmmi-12">Cliff</span>(<span 
+class="cmmi-12">M</span>) = <img 
+src="source865x.png" alt="P^"  class="widehat" ><span 
+class="cmsy-10x-x-120">&#x00D7;</span><sub><span 
+class="cmmi-8">Spin</span><span 
+class="cmr-8">(</span><span 
+class="cmmi-8">&#x03B7;</span><span 
+class="cmr-8">)</span></sub><span 
+class="cmmi-12">Cliff</span>(<span 
+class="cmmi-12">&#x03B7;</span>)<span 
+class="cmmi-12">. </span>On peut définir une inclusion <span 
+class="cmmi-12">&#x03B3; </span>du fibré tangent
+<span 
+class="cmmi-12">TM </span>dans le fibré de Clifford <span 
+class="cmmi-12">Cliff</span>(<span 
+class="cmmi-12">M</span>) et on note <span 
+class="cmmi-12">&#x03B3;</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub> = <span 
+class="cmmi-12">&#x03B3;</span>(  <span 
+class="cmmi-8">&#x2202;</span>__
+<span 
+class="cmmi-8">&#x2202;x</span><sup><span 
+class="cmmi-6">&#x03BC;</span></sup>)<span 
+class="cmmi-12">. </span>Plus simplement,
+on peut considérer les <span 
+class="cmmi-12">&#x03B3;</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub> comme des &#8220;matrices gamma&#8221; dépendant du
+point <span 
+class="cmmi-12">x </span><span 
+class="cmsy-10x-x-120">&#x2208; </span><span 
+class="cmmi-12">M</span>. Soit <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">a</span></sub><span 
+class="cmsy-10x-x-120">} </span>un repère mobile orthonormé et <span 
+class="cmmi-12">&#x2202;</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub> un repère
+naturel, alors <span 
+class="cmmi-12">&#x2202;</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub> = <span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub><sup><span 
+class="cmmi-8">a</span></sup><span 
+class="cmmi-12">e</span><sub>
+<span 
+class="cmmi-8">a</span></sub>. On peut alors utiliser la matrice <span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub><sup><span 
+class="cmmi-8">a</span></sup> (qui dépend
+de <span 
+class="cmmi-12">x</span>) pour définir <span 
+class="cmmi-12">&#x03B3;</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub>(<span 
+class="cmmi-12">x</span>) = <span 
+class="cmmi-12">e</span><sub><span 
+class="cmmi-8">&#x03BC;</span></sub><sup><span 
+class="cmmi-8">a</span></sup>(<span 
+class="cmmi-12">x</span>)<span 
+class="cmmi-12">&#x03B3;</span><sub>
+<span 
+class="cmmi-8">a</span></sub><span 
+class="cmmi-12">. </span>En posant <span 
+class="cmmi-12">&#x03B3;</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> = <span 
+class="cmmi-12">g</span><sup><span 
+class="cmmi-8">&#x03BC;&#x03BD;</span></sup><span 
+class="cmmi-12">&#x03B3;</span><sub>
+<span 
+class="cmmi-8">&#x03BD;</span></sub>, on vérifie
+immédiatement que <span 
+class="cmmi-12">&#x03B3;</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmmi-12">&#x03B3;</span><sup><span 
+class="cmmi-8">&#x03BD;</span></sup> + <span 
+class="cmmi-12">&#x03B3;</span><sup><span 
+class="cmmi-8">&#x03BD;</span></sup><span 
+class="cmmi-12">&#x03B3;</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup> = 2<span 
+class="cmmi-12">g</span><sup><span 
+class="cmmi-8">&#x03BC;&#x03BD;</span></sup> et que l&#8217;opérateur de Dirac s&#8217;écrit
+<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-44.png" alt="D" class="10-120x-x-44" /> </span>= <span 
+class="cmmi-12">&#x03B3;</span><sup><span 
+class="cmmi-8">&#x03BC;</span></sup><span 
+class="cmsy-10x-x-120">&#x2207;</span><sub>
+<span 
+class="cmmi-8">&#x03BC;</span></sub><span 
+class="cmmi-12">.</span>
+<!--l. 4291--><p class="indent" >   Remarque<span class="frenchb-nbsp">&#x00A0;</span>: Il existe un sous-fibré de <span 
+class="cmmi-12">Cliff</span>(<span 
+class="cmmi-12">M</span>) dont les fibres sont des
+groupes spinoriels, puisque <span 
+class="cmmi-12">Spin</span>(<span 
+class="cmmi-12">&#x03B7;</span>) <span 
+class="cmsy-10x-x-120">&#x2282; </span><span 
+class="cmmi-12">Cliff</span>(<span 
+class="cmmi-12">&#x03B7;</span>). Ce sous-fibré ne coïncide pas
+avec le fibré principal <img 
+src="source866x.png" alt="^
+P"  class="widehat" > des repères spinoriels puisque l&#8217;action du groupe <span 
+class="cmmi-12">Spin</span>(<span 
+class="cmmi-12">&#x03B7;</span>)
+sur lui-même, définie par restriction, est l&#8217;action adjointe. On en déduit que le
+sous-fibré en question n&#8217;est autre que le fibré adjoint <span 
+class="cmmi-12">Ad</span><img 
+src="source867x.png" alt="^P"  class="widehat" >. C&#8217;est un fibré
+en groupes, mais il n&#8217;est pas principal. On sait que ses sections ne sont
+autres que les transformations de jauge du fibré principal <img 
+src="source868x.png" alt="^P"  class="widehat" > dont on est
+parti.
+<!--l. 4309--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">4.5.9   </span> <a 
+ id="x48-2370004.5.9"></a>Métriques sur les groupes et espaces homogènes</h4>
+<!--l. 4310--><p class="noindent" >Il n&#8217;entre pas dans nos intentions d&#8217;étudier ici ce vaste chapitre de la géométrie
+riemannienne. Nous voulons simplement attirer l&#8217;attention du lecteur sur le fait
+suivant<span class="frenchb-nbsp">&#x00A0;</span>: un groupe de Lie donné possède en général une infinité de métriques.
+Si, pour simplifier, le groupe est simple et compact, il existe une métrique
+particulièrement &#8220;symétrique&#8221; désignée généralement sous le nom de <span 
+class="cmsl-12">m</span><span 
+class="cmsl-12">étrique de</span>
+<span 
+class="cmsl-12">Killing</span> <a 
+ id="dx48-237001"></a>. Comme tous ses multiples, elle est bi-invariante, en ce sens que
+son groupe d&#8217;isométries est <span 
+class="cmmi-12">G </span><span 
+class="cmsy-10x-x-120">&#x00D7; </span><span 
+class="cmmi-12">G</span>. Par contre il existe des métriques
+invariantes par <span 
+class="cmmi-12">G </span><span 
+class="cmsy-10x-x-120">&#x00D7; </span>1, des métriques invariantes par 1 <span 
+class="cmsy-10x-x-120">&#x00D7; </span><span 
+class="cmmi-12">G</span>, des métriques
+invariantes par <span 
+class="cmmi-12">H </span><span 
+class="cmsy-10x-x-120">&#x00D7; </span><span 
+class="cmmi-12">K </span>où <span 
+class="cmmi-12">H </span>et <span 
+class="cmmi-12">K </span>sont des sous-groupes de <span 
+class="cmmi-12">G</span>, mais aussi
+des métriques n&#8217;ayant aucune isométrie particulière<span 
+class="cmmi-12">&#x2026;</span> Par ailleurs, il est
+intéressant de comparer la connexion riemannienne (sans torsion) induite par la
+métrique de Killing sur un groupe de Lie avec la connexion canonique
+définie à l&#8217;aide de la forme de Maurer Cartan (celle de gauche ou celle de
+droite) qui généralement a de la torsion mais est de courbure nulle (revoir
+l&#8217;équation de Maurer-Cartan sur les groupes de Lie). L&#8217;étude des métriques
+invariantes sur les espaces homogènes est également un chapitre important
+de la géométrie riemannienne, et là encore, nous renvoyons au traité
+                                                                          
+
+                                                                          
+<span class="cite">[<a 
+href="sourceli8.html#XKobayashi-Nomizu">9</a>]</span>.
+                                                                          
+
+                                                                          
+                                                                          
+
+                                                                          
+<!--l. 173--><p class="indent" >
+                                                                          
+
+                                                                          
+                                                                          
+
+                                                                          
+   <!--l. 2--><div class="crosslinks"><p class="noindent">[<a 
+href="sourcech5.html" >next</a>] [<a 
+href="sourcese29.html" >prev</a>] [<a 
+href="sourcese29.html#tailsourcese29.html" >prev-tail</a>] [<a 
+href="sourcese30.html" >front</a>] [<a 
+href="sourcech4.html#sourcese30.html" >up</a>] </p></div>
+<!--l. 2--><p class="indent" >   <a 
+ id="tailsourcese30.html"></a>   
+</body></html> 

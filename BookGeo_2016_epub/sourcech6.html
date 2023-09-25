@@ -1,0 +1,3637 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"><html xmlns="http://www.w3.org/1999/xhtml"  
+> 
+<head><title>6 Calcul differentiel pour alg`ebres non commutatives</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- xhtml,charset=utf-8,epub,html --> 
+<meta name="src" content="source.tex" /> 
+<link rel="stylesheet" type="text/css" href="source.css" /> 
+</head><body 
+>
+   <!--l. 2--><div class="crosslinks"><p class="noindent"></p></div>
+   <h2 class="chapterHead"><span class="titlemark">Chapitre 6</span><br /><a 
+ id="x16-2430006"></a>Calcul différentiel pour algèbres non commutatives</h2>
+   <h3 class="sectionHead"><span class="titlemark">6.1   </span> <a 
+ id="x16-2440006.1"></a>Remarques philosophico-mathématiques sur les espaces non
+commutatifs</h3>
+<!--l. 8--><p class="noindent" >Lorsqu&#x2019;on se donne un “espace” <span 
+class="cmmi-12">M </span>(techniquement, un ensemble dont
+les éléments sont surnommés “points”), on sait construire l&#x2019;algèbre
+des fonctions sur <span 
+class="cmmi-12">M </span>à valeurs réelles ou complexes. Cette algèbre
+est commutative puisque multiplication et addition sont définies
+ponctuellement comme suit<span class="frenchb-nbsp"> </span>: (<span 
+class="cmmi-12">fg</span>)[<span 
+class="cmmi-12">x</span>] = <span 
+class="cmmi-12">f</span>[<span 
+class="cmmi-12">x</span>]<span 
+class="cmmi-12">g</span>[<span 
+class="cmmi-12">x</span>] = <span 
+class="cmmi-12">g</span>[<span 
+class="cmmi-12">x</span>]<span 
+class="cmmi-12">f</span>[<span 
+class="cmmi-12">x</span>] = (<span 
+class="cmmi-12">gf</span>)[<span 
+class="cmmi-12">x</span>] et
+(<span 
+class="cmmi-12">f </span>+ <span 
+class="cmmi-12">g</span>)[<span 
+class="cmmi-12">x</span>] = <span 
+class="cmmi-12">f</span>[<span 
+class="cmmi-12">x</span>] + <span 
+class="cmmi-12">g</span>[<span 
+class="cmmi-12">x</span>] = <span 
+class="cmmi-12">g</span>[<span 
+class="cmmi-12">x</span>] + <span 
+class="cmmi-12">f</span>[<span 
+class="cmmi-12">x</span>] = (<span 
+class="cmmi-12">g </span>+ <span 
+class="cmmi-12">f</span>)[<span 
+class="cmmi-12">x</span>]. Lorsque notre espace <span 
+class="cmmi-12">M </span>est
+équipé d&#x2019;une structure topologique, on sait construire l&#x2019;algèbre <span 
+class="cmmi-12">C</span><sup><span 
+class="cmr-8">0</span></sup>(<span 
+class="cmmi-12">M</span>) des
+fonctions continues et lorsque <span 
+class="cmmi-12">M </span>est équipé d&#x2019;une structure différentiable, on sait
+construire l&#x2019;algèbre <span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M</span>) des fonctions différentiables.
+</p><!--l. 19--><p class="indent" >   Il est possible de complètement inverser cette démarche<span class="frenchb-nbsp"> </span>: en d&#x2019;autres termes,
+il est possible de partir d&#x2019;une algèbre <span 
+class="cmsy-10x-x-120">A </span>commutative, abstraitement définie, et de
+fabriquer une espace <span 
+class="cmmi-12">M</span>, tel que <span 
+class="cmsy-10x-x-120">A </span>s&#x2019;identifie avec l&#x2019;algèbre des fonctions sur <span 
+class="cmmi-12">M</span>.
+Nous allons maintenant préciser cette construction.
+</p><!--l. 25--><p class="indent" >   On se donne <span 
+class="cmsy-10x-x-120">A </span>une algèbre de Banach, c&#x2019;est à dire une algèbre associative sur
+<span 
+class="msbm-10x-x-120">ℂ</span>, munie d&#x2019;une norme <span 
+class="cmsy-10x-x-120">|</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmsy-10x-x-120">| </span>qui soit telle que <span 
+class="cmsy-10x-x-120">||</span><span 
+class="cmmi-12">fg</span><span 
+class="cmsy-10x-x-120">||≤||</span><span 
+class="cmmi-12">f</span><span 
+class="cmsy-10x-x-120">||</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmsy-10x-x-120">||</span><span 
+class="cmmi-12">g</span><span 
+class="cmsy-10x-x-120">|| </span>et telle que l&#x2019;espace
+vectoriel sous-jacent soit un espace de Banach (un espace vectoriel normé
+complet).
+</p><!--l. 31--><p class="indent" >   On appelle <span 
+class="cmsl-12">caract</span><span 
+class="cmsl-12">ère</span><a 
+ id="dx16-244001"></a> de <span 
+class="cmsy-10x-x-120">A </span>tout homomorphisme non nul de <span 
+class="cmsy-10x-x-120">A </span>vers le corps
+<span 
+class="msbm-10x-x-120">ℂ </span>des complexes. L&#x2019;ensemble des caractères <span 
+class="cmmi-12">M </span>s&#x2019;appelle le <span 
+class="cmsl-12">spectre </span>de
+<span 
+class="cmsy-10x-x-120">A</span>.
+</p><!--l. 36--><p class="indent" >   On suppose maintenant l&#x2019;algèbre <span 
+class="cmsy-10x-x-120">A </span><span 
+class="cmsl-12">commutative</span>. On appelle <span 
+class="cmsl-12">transformation</span>
+<span 
+class="cmsl-12">de Gelfand</span>  <a 
+ id="dx16-244002"></a>l&#x2019;application <span 
+class="cmsy-10x-x-120">ℱ </span>de <span 
+class="cmsy-10x-x-120">A </span>dans l&#x2019;algèbre commutative <span 
+class="cmmi-12">C</span><sup><span 
+class="cmr-8">0</span></sup>(<span 
+class="cmmi-12">M</span>) qui
+à <span 
+class="cmmi-12">f </span><span 
+class="cmsy-10x-x-120">∈A </span>associe <img 
+src="source873x.png" alt="ˆf"  class="circ"  /> <span 
+class="cmsy-10x-x-120">∈</span> <span 
+class="cmmi-12">C</span><sup><span 
+class="cmr-8">0</span></sup>(<span 
+class="cmmi-12">M</span>), défini, pour tout caractère <span 
+class="cmmi-12">x </span><span 
+class="cmsy-10x-x-120">∈ </span><span 
+class="cmmi-12">M </span>de <span 
+class="cmsy-10x-x-120">A</span>
+par
+</p>
+   <div class="math-display">
+<img 
+src="source874x.png" alt="|-----------|-
+fˆ(x-) =-x(f)--
+" class="math-display"  /></div>
+<!--l. 48--><p class="indent" >   Résultat (sans démonstration)<span class="frenchb-nbsp"> </span>: <span 
+class="cmsy-10x-x-120">ℱ </span>est un homomorphisme d&#x2019;algèbre de
+Banach commutative.
+</p><!--l. 51--><p class="indent" >   Encore quelques définitions<span class="frenchb-nbsp"> </span>:
+</p><!--l. 53--><p class="indent" >   Une algèbre de Banach involutive <a 
+ id="dx16-244003"></a>est une algèbre de Banach munie d&#x2019;une
+<span 
+class="cmsl-12">étoile </span>c&#x2019;est à dire une involution (<span 
+class="cmmi-12">f</span><sup><span 
+class="cmsy-8">∗∗</span></sup> = <span 
+class="cmmi-12">f</span>), anti-linéaire (<span 
+class="cmmi-12">λf</span>)<sup><span 
+class="cmsy-8">∗</span></sup> =<span class="overline"> <span 
+class="cmmi-12">λ</span></span><span 
+class="cmmi-12">f</span><sup><span 
+class="cmsy-8">∗</span></sup> (pour <span 
+class="cmmi-12">λ </span><span 
+class="cmsy-10x-x-120">∈ </span><span 
+class="msbm-10x-x-120">ℂ</span>)
+et anti-multiplicative ((<span 
+class="cmmi-12">fg</span>)<sup><span 
+class="cmsy-8">∗</span></sup> = <span 
+class="cmmi-12">g</span><sup><span 
+class="cmsy-8">∗</span></sup><span 
+class="cmmi-12">f</span><sup><span 
+class="cmsy-8">∗</span></sup>), telle que l&#x2019;étoile soit isométrique
+<span 
+class="cmsy-10x-x-120">||</span><span 
+class="cmmi-12">f</span><sup><span 
+class="cmsy-8">∗</span></sup><span 
+class="cmsy-10x-x-120">|| </span>= <span 
+class="cmsy-10x-x-120">||</span><span 
+class="cmmi-12">f</span><span 
+class="cmsy-10x-x-120">||</span>.
+</p><!--l. 60--><p class="indent" >   Une <span 
+class="cmmi-12">C </span><span 
+class="cmsl-12">- </span><span 
+class="cmsl-12">étoile alg</span><span 
+class="cmsl-12">èbre</span>, <a 
+ id="dx16-244004"></a>est une algèbre de Banach involutive telle que, <span 
+class="cmsy-10x-x-120">∀</span><span 
+class="cmmi-12">f </span><span 
+class="cmsy-10x-x-120">∈A</span>
+<span 
+class="cmsy-10x-x-120">||</span><span 
+class="cmmi-12">f</span><sup><span 
+class="cmsy-8">∗</span></sup><span 
+class="cmmi-12">f</span><span 
+class="cmsy-10x-x-120">|| </span>= <span 
+class="cmsy-10x-x-120">||</span><span 
+class="cmmi-12">f</span><sup><span 
+class="cmsy-8">∗</span></sup><span 
+class="cmsy-10x-x-120">||</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmsy-10x-x-120">||</span><span 
+class="cmmi-12">f</span><span 
+class="cmsy-10x-x-120">|| </span>= <span 
+class="cmsy-10x-x-120">||</span><span 
+class="cmmi-12">f</span><span 
+class="cmsy-10x-x-120">||</span><sup><span 
+class="cmr-8">2</span></sup>
+</p><!--l. 66--><p class="indent" >   Théorème de Gelfand (sans démonstration)<span class="frenchb-nbsp"> </span>: Lorsque <span 
+class="cmsy-10x-x-120">A </span>est une <span 
+class="cmmi-12">C</span>-étoile
+algèbre <span class="underline">commutative</span>, la transformation de Gelfand entre <span 
+class="cmsy-10x-x-120">A </span>et l&#x2019;algèbre <span 
+class="cmmi-12">C</span><sup><span 
+class="cmr-8">0</span></sup>(<span 
+class="cmmi-12">M</span>)
+des fonctions continues sur le spectre de <span 
+class="cmsy-10x-x-120">A </span>est un isomorphisme.
+</p><!--l. 71--><p class="indent" >   En fait, on peut préciser davantage<span class="frenchb-nbsp"> </span>: lorsque <span 
+class="cmsy-10x-x-120">A </span>est une <span 
+class="cmmi-12">C</span>-étoile algèbre
+commutative unitale (c&#x2019;est à dire avec unité), l&#x2019;espace <span 
+class="cmmi-12">M </span>est compact. D&#x2019;une
+certaine façon, rajouter une unité à une algèbre qui n&#x2019;en a pas revient à
+compactifier (via Alexandrov) son spectre.
+</p><!--l. 77--><p class="indent" >   Ce qui ressort de cette discussion, c&#x2019;est le fait que s&#x2019;intéresser à un espace (un
+ensemble de points) ou s&#x2019;intéresser à une algèbre commutative sont deux activités
+<span 
+class="cmti-12">grosso modo  </span>essentiellement équivalentes. En langage savant, on dit que la
+transformation de Gelfand <span 
+class="cmsy-10x-x-120">ℱ </span>permet de définir un foncteur réalisant une
+équivalence entre la catégorie des espaces topologiques (compacts) et celle des <span 
+class="msbm-10x-x-120">ℂ</span><sup><span 
+class="cmsy-8">∗</span></sup>
+algèbres commutatives (unitales).
+</p><!--l. 84--><p class="indent" >   Une algèbre non commutative ne peut pas être considérée comme une algèbre
+de fonctions (à valeurs réelles ou complexes) sur un espace, puisque l&#x2019;algèbre
+serait alors commutative. La “géométrie non commutative”, au sens le
+plus large du terme, consiste souvent à re-écrire les diverses propriétés
+géométriques des “espaces” dans le langage des algèbres commutatives, c&#x2019;est à
+dire sans utiliser la notion de point, puis à effacer, partout où cela est
+possible, le mot “‘commutatif”. Ce faisant, on invente alors une nouvelle
+géométrie, celle des algèbres non commutatives. Les espaces non commutatifs
+n&#x2019;existent donc pas, mais les algèbres qui les définissent, elles, existent bel et
+bien.
+</p><!--l. 96--><p class="indent" >   Du point de vue de la physique, il est pratique (et d&#x2019;usage courant<span class="frenchb-thinspace"> </span>!) de
+décrire notre environnement à l&#x2019;aide de points (pensez à la tête du voyageur à qui
+on dirait “Voyez-vous ce caractère de la <span 
+class="cmmi-12">C</span>-étoile algèbre <span 
+class="cmmi-12">C</span><sup><span 
+class="cmr-8">0</span></sup>(<span 
+class="cmmi-12">S</span><sup><span 
+class="cmr-8">2</span></sup>)<span class="frenchb-thinspace"> </span>?” au lieu de
+“Voyez-vous ce point à la surface de la Terre<span class="frenchb-thinspace"> </span>?”). Cela dit, les deux points de vue
+sont équivalents, et on passe d&#x2019;un point de vue à l&#x2019;autre à l&#x2019;aide de la superbe
+                                                                          
+
+                                                                          
+formule <img 
+src="source875x.png" alt=" ˆ
+f"  class="circ"  /> (<span 
+class="cmmi-12">x</span>) = <span 
+class="cmmi-12">x</span>(<span 
+class="cmmi-12">f</span>) sur laquelle il est bon de méditer…A ce sujet, nous invitons le
+lecteur à relire le paragraphe de l&#x2019;Introduction intitulé “Du classique au
+quantique”.
+</p><!--l. 107--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">6.2   </span> <a 
+ id="x16-2450006.2"></a>Calculs différentiels</h3>
+<!--l. 109--><p class="noindent" >
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">6.2.1   </span> <a 
+ id="x16-2460006.2.1"></a>Remarques</h4>
+<!--l. 110--><p class="noindent" >Dans le cadre commutatif, étant donné une variété <span 
+class="cmmi-12">M</span>, nous avons décrit, de
+façon détaillée, <span 
+class="cmsl-12">une </span>algèbre différentielle graduée, en l&#x2019;occurence, celle, notée
+Λ(<span 
+class="cmmi-12">M</span>) des formes différentielles<span class="frenchb-nbsp"> </span>: le “complexe de De Rham”. Cette algèbre
+est différentielle (puisque munie d&#x2019;une différentielle <span 
+class="cmmi-12">d</span>) et différentielle
+graduée puisque <span 
+class="cmmi-12">d </span>envoie Λ<sup><span 
+class="cmmi-8">p</span></sup>(<span 
+class="cmmi-12">M</span>) dans Λ<sup><span 
+class="cmmi-8">p</span><span 
+class="cmr-8">+1</span></sup>(<span 
+class="cmmi-12">M</span>). De plus, elle est telle que
+Λ<sup><span 
+class="cmr-8">0</span></sup>(<span 
+class="cmmi-12">M</span>) = <span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M</span>). Comme nous le verrons un peu plus bas, le lecteur devrait se
+garder de croire qu&#x2019;il s&#x2019;agit là de la seule possibilité.
+</p><!--l. 121--><p class="indent" >   Dans le cadre non commutatif, nous supposons donnée une algèbre
+associative <span 
+class="cmsy-10x-x-120">A</span>, unitale pour simplifier, mais non nécessairement commutative.
+<span 
+class="cmsy-10x-x-120">A </span>va remplacer, dans la construction, l&#x2019;algèbre commutative <span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M</span>),
+c&#x2019;est à dire, “philosophiquement”, l&#x2019;espace <span 
+class="cmmi-12">M </span>lui-même. On veut pouvoir
+associer à <span 
+class="cmsy-10x-x-120">A </span>une algèbre différentielle graduée Ω, qui coïncide avec <span 
+class="cmsy-10x-x-120">A </span>en
+degré zéro. Les éléments de Ω vont remplacer les formes différentielles
+usuelles. On pourrait dire que ce sont des <span 
+class="cmsl-12">formes diff</span><span 
+class="cmsl-12">érentielles quantiques</span>
+<a 
+ id="dx16-246001"></a>.
+</p><!--l. 132--><p class="indent" >   Nous cherchons à fabriquer une algèbre différentielle graduée qui, en degré
+zéro, coïncide avec <span 
+class="cmsy-10x-x-120">A</span>. En fait, il existe de nombreuses possibilités, chaque
+possibilité définit ce qu&#x2019;on appelle un <span 
+class="cmsl-12">calcul diff</span><span 
+class="cmsl-12">érentiel sur l&#x2019;alg</span><span 
+class="cmsl-12">èbre </span><span 
+class="cmsy-10x-x-120">A</span>.
+Cependant, une de ces possibilités est plus générale que les autres, en un sens que
+nous allons préciser. C&#x2019;est celle qu&#x2019;on désigne sous le nom d&#x2019;algèbre Ω<span 
+class="cmsy-10x-x-120">A </span>des
+<span 
+class="cmsl-12">formes universelles</span>.
+</p><!--l. 140--><p class="noindent" >
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">6.2.2   </span> <a 
+ id="x16-2470006.2.2"></a>L&#x2019;algèbre différentielle des formes universelles Ω<span 
+class="cmsy-10x-x-120">A</span></h4>
+                                                                          
+
+                                                                          
+<a 
+ id="dx16-247001"></a>
+<!--l. 144--><p class="noindent" >
+</p>
+   <h5 class="subsubsectionHead"><a 
+ id="x16-2480006.2.2"></a>Universalité</h5>
+<!--l. 144--><p class="noindent" >Soit <span 
+class="cmsy-10x-x-120">A </span>une algèbre associative unitale. On veut construire une algèbre
+différentielle <span 
+class="msbm-10x-x-120">ℤ</span>-graduée (Ω<span 
+class="cmsy-10x-x-120">A</span><span 
+class="cmmi-12">,δ</span>) qui soit “la plus générale possible”, et qui soit
+telle que Ω<span 
+class="cmsy-10x-x-120">A</span><sup><span 
+class="cmr-8">0</span></sup> = <span 
+class="cmsy-10x-x-120">A</span>. Etre “la plus générale possible” signifie que tout autre algèbre
+du même type pourra s&#x2019;obtenir à partir de celle-ci en imposant des relations
+supplémentaires. Techniquement, cela revient à dire que si (Ξ<span 
+class="cmmi-12">,d</span>) est une autre
+algèbre différentielle <span 
+class="msbm-10x-x-120">ℤ</span>-graduée, avec Ξ<sup><span 
+class="cmr-8">0</span></sup> = <span 
+class="cmsy-10x-x-120">A</span>, alors, c&#x2019;est qu&#x2019;il existe un
+morphisme <span 
+class="cmmi-12">α </span>(morphisme d&#x2019;algèbre différentielle graduée) de Ω<span 
+class="cmsy-10x-x-120">A </span><span 
+class="cmsl-12">sur </span>Ξ tel que
+l&#x2019;algèbre (Ξ<span 
+class="cmmi-12">,d</span>) apparaisse comme un quotient de l&#x2019;algèbre des formes universelles
+(Ω<span 
+class="cmsy-10x-x-120">A</span><span 
+class="cmmi-12">,δ</span>)<span class="frenchb-nbsp"> </span>:
+</p>
+   <div class="math-display">
+<img 
+src="source876x.png" alt="Ξ  = Ω A∕K  " class="math-display"  /></div> Ici,
+le noyau <span 
+class="cmmi-12">K </span>de <span 
+class="cmmi-12">α </span>est un idéal bilatère gradué différentiel de Ω<span 
+class="cmsy-10x-x-120">A </span>(idéal
+bilatère car Ω<span 
+class="cmsy-10x-x-120">A</span><span 
+class="cmmi-12">.K </span><span 
+class="cmsy-10x-x-120">⊂ </span><span 
+class="cmmi-12">K</span>, <span 
+class="cmmi-12">K.</span>Ω<span 
+class="cmsy-10x-x-120">A⊂ </span><span 
+class="cmmi-12">K </span>et différentiel car <span 
+class="cmmi-12">δK </span><span 
+class="cmsy-10x-x-120">⊂ </span><span 
+class="cmmi-12">K</span>). En
+d&#x2019;autres termes, (Ω<span 
+class="cmsy-10x-x-120">A</span><span 
+class="cmmi-12">,δ</span>) est un objet universel dans la catégorie des algèbres
+différentielles <span 
+class="msbm-10x-x-120">ℤ</span>-graduées et on pourrait écrire tout ceci à l&#x2019;aide de diagrammes
+commutatifs…
+<!--l. 169--><p class="noindent" >
+</p>
+   <h5 class="subsubsectionHead"><a 
+ id="x16-2490006.2.2"></a>Construction de Ω<span 
+class="cmsy-10x-x-120">A </span>par générateurs et relations</h5>
+<!--l. 170--><p class="noindent" >On part de <span 
+class="cmsy-10x-x-120">A</span>. Désignons les éléments de <span 
+class="cmsy-10x-x-120">A </span>par des symboles <span 
+class="cmmi-12">a</span><sub><span 
+class="cmmi-8">p</span></sub>. On introduit
+alors de <span 
+class="cmti-12">nouveaux </span>symboles qu&#x2019;on va désigner par <span 
+class="cmmi-12">δa</span><sub><span 
+class="cmmi-8">p</span></sub>. Attention, pour l&#x2019;instant, <span 
+class="cmmi-12">δ</span>
+n&#x2019;est pas (encore) un opérateur<span class="frenchb-nbsp"> </span>: le symbole <span 
+class="cmmi-12">δa</span><sub><span 
+class="cmmi-8">p</span></sub> doit être pris comme un tout<span class="frenchb-nbsp"> </span>:
+c&#x2019;est une copie de l&#x2019;élément <span 
+class="cmmi-12">a</span><sub><span 
+class="cmmi-8">p</span></sub>. L&#x2019;espace vectoriel engendré par les symboles <span 
+class="cmmi-12">δa</span><sub><span 
+class="cmmi-8">p</span></sub>
+est simplement une copie de l&#x2019;espace vectoriel <span 
+class="cmsy-10x-x-120">A</span>. Ensuite, on fabrique des <span 
+class="cmsl-12">mots</span>,
+                                                                          
+
+                                                                          
+en concaténant librement des éléments de <span 
+class="cmsy-10x-x-120">A </span>(donc des <span 
+class="cmmi-12">a</span><sub><span 
+class="cmmi-8">p</span></sub>) et des éléments du
+type <span 
+class="cmmi-12">δa</span><sub><span 
+class="cmmi-8">q</span></sub>. Ainsi <span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">δa</span><sub><span 
+class="cmr-8">1</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">2</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">3</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">δa</span><sub><span 
+class="cmr-8">4</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">δa</span><sub><span 
+class="cmr-8">5</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">6</span></sub> est un mot. On décide alors d&#x2019;additionner et de
+multiplier librement ces mots de façon à ce que la structure obtenue soit une
+algèbre. Jusque là, on n&#x2019;obtient rien de très palpitant<span class="frenchb-nbsp"> </span>: juste une algèbre “libre”
+engendrée par des symboles. Pour finir, on va imposer des relations<span class="frenchb-nbsp"> </span>: celles de
+<span 
+class="cmsy-10x-x-120">A</span>, tout d&#x2019;abord, mais surtout, les deux suivantes (pour tout <span 
+class="cmmi-12">a,b </span>dans
+<span 
+class="cmsy-10x-x-120">A</span>)<span class="frenchb-nbsp"> </span>:
+</p>
+   <div class="math-display">
+<img 
+src="source877x.png" alt="|-------------------|
+|δab = (δa)b + a(δb)|
+---------------------
+" class="math-display"  /></div>
+   <div class="math-display">
+<img 
+src="source878x.png" alt="|-----------------|
+-1lδa-=-δaetδ1l =-0-  " class="math-display"  /></div> La
+première relation identifie deux éléments, jusque là différents, de l&#x2019;algèbre libre.
+L&#x2019;ensemble obtenu est, par construction, une algèbre, qu&#x2019;on note Ω<span 
+class="cmsy-10x-x-120">A</span>. La dernière
+chose à faire consiste à introduire l&#x2019;opérateur noté <span 
+class="cmmi-12">δ</span>, défini pour tout élément <span 
+class="cmmi-12">a</span>
+de <span 
+class="cmsy-10x-x-120">A </span>par <span 
+class="cmmi-12">δ</span>(<span 
+class="cmmi-12">a</span>) = <span 
+class="cmmi-12">δa </span>et <span 
+class="cmmi-12">δδa </span>= 0. L&#x2019;algèbre obtenue devient ainsi une algèbre
+différentielle.
+<!--l. 205--><p class="indent" >   On pourrait, bien entendu, formaliser la construction ci-dessus, en terme
+d&#x2019;idéaux et de relations, mais, le résultat est, somme toute, très simple<span class="frenchb-nbsp"> </span>: on part
+des éléments <span 
+class="cmmi-12">a </span>de <span 
+class="cmsy-10x-x-120">A </span>et on introduit des différentielles <span 
+class="cmmi-12">δa </span>(attention, ce ne sont
+pas des éléments de <span 
+class="cmsy-10x-x-120">A</span>) de façon à ce que la règle de Leibniz (la règle de
+dérivation d&#x2019;un produit) soit vérifiée.
+</p><!--l. 212--><p class="indent" >   Les règles ci-dessus permettent de re-écrire n&#x2019;importe quel élément de Ω<span 
+class="cmsy-10x-x-120">A</span>
+sous la forme d&#x2019;une combinaison linéaire de termes du type <span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">δa</span><sub><span 
+class="cmr-8">1</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">δa</span><sub><span 
+class="cmr-8">2</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">…</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">δa</span><sub><span 
+class="cmmi-8">p</span></sub> où tous
+les <span 
+class="cmmi-12">a</span><sub><span 
+class="cmmi-8">i</span></sub> sont des éléments de <span 
+class="cmsy-10x-x-120">A </span>et où le seul élément qui n&#x2019;est pas différentié (<span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub>) se
+                                                                          
+
+                                                                          
+situe <span 
+class="cmti-12">à gauche</span>. En effet, par exemple </p><div class="eqnarray">
+   <div class="math-display">
+<img 
+src="source879x.png" alt="a0δa1 δa2a3 = a0δa1δ(a2a3) − a0δa1a2δa3
+            = a0δa1δ(a2a3) − a0δ(a1a2)δa3 + a0δa1δa2δa3
+" class="math-display"  /></div>
+</div>Cette remarque montre que Ω<span 
+class="cmsy-10x-x-120">A </span>= <span 
+class="cmex-10x-x-120">⊕</span>
+  <sub><span 
+class="cmmi-8">p</span><span 
+class="cmr-8">=0</span></sub><sup><span 
+class="cmsy-8">∞</span></sup>Ω<sup><span 
+class="cmmi-8">p</span></sup><span 
+class="cmsy-10x-x-120">A</span>, où Ω<sup><span 
+class="cmmi-8">p</span></sup><span 
+class="cmsy-10x-x-120">A </span>est l&#x2019;espace vectoriel
+engendré par les termes du type <span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">δa</span><sub><span 
+class="cmr-8">1</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">δa</span><sub><span 
+class="cmr-8">2</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">…</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">δa</span><sub><span 
+class="cmmi-8">p</span></sub>, avec <span 
+class="cmmi-12">a</span><sub><span 
+class="cmmi-8">i</span></sub> <span 
+class="cmsy-10x-x-120">∈A</span>. Ainsi, Ω<span 
+class="cmsy-10x-x-120">A </span>est donc
+bien <span 
+class="msbm-10x-x-120">ℤ</span>-graduée. Il est facile de vérifier, en utilisant les règles précédentes que,
+pour <span 
+class="cmmi-12">σ </span><span 
+class="cmsy-10x-x-120">∈ </span>Ω<sup><span 
+class="cmmi-8">p</span></sup><span 
+class="cmsy-10x-x-120">A </span>et <span 
+class="cmmi-12">τ </span><span 
+class="cmsy-10x-x-120">∈ </span>Ω<span 
+class="cmsy-10x-x-120">A</span>
+   <div class="math-display">
+<img 
+src="source880x.png" alt="|---------------------------|
+δ(σ τ) = δ(σ)τ + (− 1 )pσ δ(τ)
+-----------------------------
+" class="math-display"  /></div>
+<!--l. 242--><p class="indent" >   Le fait que l&#x2019;algèbre différentielle Ω<span 
+class="cmsy-10x-x-120">A </span>soit universelle vient du fait que, dans sa
+construction, nous n&#x2019;avons rien imposé d&#x2019;autre que la règle de Leibniz
+ainsi que les relations algébriques déjà présentes dans <span 
+class="cmsy-10x-x-120">A</span>. Tout autre
+algèbre différentielle construite sur <span 
+class="cmsy-10x-x-120">A </span>contiendra donc automatiquement des
+relations supplémentaires. Soit (Ξ<span 
+class="cmmi-12">,d</span>) une autre algèbre différentielle,
+également associée à <span 
+class="cmsy-10x-x-120">A</span>, on sait qu&#x2019;il doit alors exister un morphisme <span 
+class="cmmi-12">α </span>de Ω<span 
+class="cmsy-10x-x-120">A</span>
+dans Ξ, ce morphisme est simplement défini sur les éléments de base, par
+<span 
+class="cmmi-12">α</span>(<span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">δa</span><sub><span 
+class="cmr-8">1</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">δa</span><sub><span 
+class="cmr-8">2</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">…</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">δa</span><sub><span 
+class="cmmi-8">p</span></sub>) = <span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">da</span><sub><span 
+class="cmr-8">1</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">da</span><sub><span 
+class="cmr-8">2</span></sub><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">…</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">da</span><sub><span 
+class="cmmi-8">p</span></sub> et étendu par linéarité sur toute l&#x2019;algèbre
+Ξ.
+                                                                          
+
+                                                                          
+</p><!--l. 257--><p class="noindent" >
+</p>
+   <h5 class="subsubsectionHead"><a 
+ id="x16-2500006.2.2"></a>Construction explicite de Ω<span 
+class="cmsy-10x-x-120">A </span>par produit tensoriel</h5>
+<!--l. 257--><p class="noindent" >La construction précédente est simple et, en principe suffisante. Cela
+dit, il est agréable de pouvoir considérer <span 
+class="cmmi-12">δa </span>comme un objet construit
+concrètement “à partir” de <span 
+class="cmmi-12">a </span>et non comme un symbole abstrait. Voici donc une
+seconde construction de l&#x2019;algèbre des formes universelles qui répond à ce
+souci.
+</p><!--l. 263--><p class="indent" >   Soit <span 
+class="cmmi-12">m </span>: <span 
+class="cmsy-10x-x-120">A⊗A</span><img 
+src="source881x.png" alt="↦→"  class="mapsto"  /><span 
+class="cmsy-10x-x-120">A</span>, l&#x2019;opérateur de multiplication <span 
+class="cmmi-12">m</span>(<span 
+class="cmmi-12">a </span><span 
+class="cmsy-10x-x-120">⊗ </span><span 
+class="cmmi-12">b</span>) = <span 
+class="cmmi-12">ab</span>.
+</p><!--l. 266--><p class="indent" >   Posons Ω<sup><span 
+class="cmr-8">0</span></sup><span 
+class="cmsy-10x-x-120">A </span>= <span 
+class="cmsy-10x-x-120">A </span>On décide de noter (prenons <span 
+class="cmmi-12">a </span>et <span 
+class="cmmi-12">b </span>dans <span 
+class="cmsy-10x-x-120">A</span>)<span class="frenchb-nbsp"> </span>:
+</p>
+   <div class="math-display">
+<img 
+src="source882x.png" alt="|-----------------|
+δb-=-1l ⊗-b-−-b ⊗-1l  " class="math-display"  /></div>
+Ainsi, <span 
+class="cmmi-12">δb </span>apparait comme une sorte de différence discrète (nous verrons un peu
+plus loin comment, dans l&#x2019;exemple où <span 
+class="cmsy-10x-x-120">A </span>désigne une algèbre de fonctions sur une
+variété comment ceci est explicitement réalisé). Plus généralement, nous
+poserons<span class="frenchb-nbsp"> </span>:
+   <div class="math-display">
+<img 
+src="source883x.png" alt="|---------------------|
+-aδb-=-a-⊗-b-−-ab-⊗-1l-|
+" class="math-display"  /></div>
+<!--l. 283--><p class="indent" >   Soit Ω<sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmsy-10x-x-120">A </span>l&#x2019;espace vectoriel engendré par les éléments de <span 
+class="cmsy-10x-x-120">A</span><img 
+src="source884x.png" alt="↦→"  class="mapsto"  /><span 
+class="cmsy-10x-x-120">A </span>du type <span 
+class="cmmi-12">aδb</span>.
+Notons que <span 
+class="cmmi-12">aδb </span>appartient au noyau de l&#x2019;opérateur de multiplication
+<span 
+class="cmmi-12">m</span>(<span 
+class="cmmi-12">aδb</span>) = <span 
+class="cmmi-12">ab </span><span 
+class="cmsy-10x-x-120">− </span><span 
+class="cmmi-12">ab</span>1 l = 0. Plus généralement, il est évident que les éléments de
+<span 
+class="cmmi-12">Ker</span>(<span 
+class="cmmi-12">m</span>) sont des combinaisons linéaires d&#x2019;éléments de ce type. En d&#x2019;autres
+termes, on a
+                                                                          
+
+                                                                          
+</p>
+   <div class="math-display">
+<img 
+src="source885x.png" alt="Ω1 A =  Ker (m )
+" class="math-display"  /></div>
+<!--l. 291--><p class="indent" >   On pose alors
+</p>
+   <div class="math-display">
+<img 
+src="source886x.png" alt="  2      1       1
+Ω A  = Ω  A ⊗ A Ω A " class="math-display"  /></div> et
+plus généralement
+   <div class="math-display">
+<img 
+src="source887x.png" alt="ΩpA  = Ω1 A ⊗ A ⊗A ...⊗ A Ω1A " class="math-display"  /></div>
+Notons que Ω<sup><span 
+class="cmmi-8">p</span></sup><span 
+class="cmsy-10x-x-120">A </span>est inclus dans la (<span 
+class="cmmi-12">p </span>+ 1)-ième puissance tensorielle de <span 
+class="cmsy-10x-x-120">A </span>(bien
+noter cette translation d&#x2019;une unité<span class="frenchb-thinspace"> </span>!). Attention<span class="frenchb-nbsp"> </span>: le produit tensoriel est pris <span 
+class="cmti-12">au</span>
+<span 
+class="cmti-12">dessus de </span><span 
+class="cmsy-10x-x-120">A </span>et non pas au dessus du corps des scalaires<span class="frenchb-thinspace"> </span>! Cela signifie, en clair,
+la chose suivante<span class="frenchb-nbsp"> </span>: Considérons le produit de l&#x2019;élément (<span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span 
+class="cmmi-12">δa</span><sub><span 
+class="cmr-8">1</span></sub>) <span 
+class="cmsy-10x-x-120">∈ </span>Ω<sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmsy-10x-x-120">A⊂A⊗A</span>
+par l&#x2019;élément (<span 
+class="cmmi-12">δa</span><sub><span 
+class="cmr-8">2</span></sub>) <span 
+class="cmsy-10x-x-120">∈ </span>Ω<sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmsy-10x-x-120">A⊂A⊗A</span>. Ce produit, pris dans Ω<sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmsy-10x-x-120">A⊗ </span>Ω<sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmsy-10x-x-120">A </span>est
+l&#x2019;élément
+                                                                          
+
+                                                                          
+   <div class="math-display">
+<img 
+src="source888x.png" alt="(a0 ⊗ a1 − a0a1 ⊗ 1l) ⊗ (1l ⊗ a2 − a2 ⊗ 1)  " class="math-display"  /></div> de
+<span 
+class="cmsy-10x-x-120">A⊗A⊗A⊗A⊗A </span>tandis que le produit dans Ω<sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmsy-10x-x-120">A⊗</span><sub>
+<span 
+class="cmsy-8">A</span></sub>Ω<sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmsy-10x-x-120">A </span>est un élément de
+<span 
+class="cmsy-10x-x-120">A⊗A⊗A⊗A</span>, en l&#x2019;occurence, il s&#x2019;agit de <div class="eqnarray">
+   <div class="math-display">
+<img 
+src="source889x.png" alt="a0δa1δa2 = (a0 ⊗ a1 − a0a1 ⊗ 1l)(1l ⊗ a2 − a2 ⊗ 1l)
+         = a  ⊗ a  ⊗ a  − a a  ⊗ 1l ⊗ a −  a ⊗  a a ⊗  1l + a a ⊗ a  ⊗ 1l
+            0    1    2    0 1        2    0    1 2        0 1    2
+" class="math-display"  /></div>
+</div>L&#x2019;écriture explicite de <span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span 
+class="cmmi-12">δa</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">δa</span><sub><span 
+class="cmr-8">2</span></sub> en termes de produit tensoriels contient donc un
+unique terme <span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub> <span 
+class="cmsy-10x-x-120">⊗</span><span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">1</span></sub> <span 
+class="cmsy-10x-x-120">⊗</span><span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">2</span></sub> et une somme alternée d&#x2019;autres termes, chacun d&#x2019;entre
+eux contenant l&#x2019;unité de l&#x2019;algèbre ainsi qu&#x2019;un unique produit du type <span 
+class="cmmi-12">a</span><sub><span 
+class="cmmi-8">p</span></sub><span 
+class="cmmi-12">a</span><sub><span 
+class="cmmi-8">p</span><span 
+class="cmr-8">+1</span></sub>. On
+pourrait également partir de cette dernière écriture explicite pour définir
+l&#x2019;algèbre Ω<span 
+class="cmsy-10x-x-120">A</span>. Noter que la multiplication, lorsqu&#x2019;on écrit explicitement les
+éléments de cette algèbre en termes de produits tensoriels, s&#x2019;écrit explicitement
+en concaténant les différents termes et en effectuant la multiplication dans
+<span 
+class="cmsy-10x-x-120">A</span>.
+<!--l. 340--><p class="noindent" >
+</p>
+   <h5 class="subsubsectionHead"><a 
+ id="x16-2510006.2.2"></a>Formes universelles dans le cadre commutatif<span class="frenchb-nbsp"> </span>: le calcul différentiel non
+local</h5>
+<a 
+ id="dx16-251001"></a>
+<!--l. 342--><p class="noindent" >Soit <span 
+class="cmmi-12">M </span>une variété différentiable, ou même, un ensemble absolument quelconque.
+On peut alors construire l&#x2019;algèbre <span 
+class="cmti-12">commutative </span>des fonctions sur <span 
+class="cmmi-12">M </span>(bien
+entendu, lorsque <span 
+class="cmmi-12">M </span>est un espace topologique, ou une variété différentielle, on
+peut choisir les fonctions continues, les fonctions différentiables etc). Notons
+                                                                          
+
+                                                                          
+encore <span 
+class="cmsy-10x-x-120">A </span>cette algèbre, sans préciser davantage. La construction de Ω<span 
+class="cmsy-10x-x-120">A </span>reste
+valable, puisque nous n&#x2019;avons rien eu a supposer d&#x2019;autre que l&#x2019;associativité de
+l&#x2019;algèbre <span 
+class="cmsy-10x-x-120">A</span>. Considérons l&#x2019;élément
+</p>
+   <div class="math-display">
+<img 
+src="source890x.png" alt="                        1
+aδb = a ⊗ b − ab ⊗ 1l ∈ Ω A ⊂  A ⊗  A " class="math-display"  /></div>
+Puisque les éléments de <span 
+class="cmsy-10x-x-120">A </span>sont des fonctions sur <span 
+class="cmmi-12">M </span>(des fonctions d&#x2019;une variable
+<span 
+class="cmmi-12">x </span><span 
+class="cmsy-10x-x-120">∈ </span><span 
+class="cmmi-12">M</span>) les éléments de <span 
+class="cmsy-10x-x-120">A⊗A </span>sont des fonctions de <span 
+class="cmti-12">deux </span>variables<span class="frenchb-nbsp"> </span>:
+   <div class="math-display">
+<img 
+src="source891x.png" alt="|---------------------------------------------------|
+[aδb](x,y) = a(x)b(y) − a(x)b(x) = a(x)(b(y) − b(x))|
+-----------------------------------------------------  " class="math-display"  /></div>
+Cette fonction, comme, il se doit, s&#x2019;annulle lorsqu&#x2019;on pose <span 
+class="cmmi-12">x </span>= <span 
+class="cmmi-12">y</span>, puisque
+l&#x2019;opérateur de multiplication <span 
+class="cmmi-12">m</span>(<span 
+class="cmmi-12">a </span><span 
+class="cmsy-10x-x-120">⊗ </span><span 
+class="cmmi-12">b</span>) = <span 
+class="cmmi-12">ab</span>, dans le cas présent, peut
+s&#x2019;écrire sous la forme <span 
+class="cmmi-12">m</span>(<span 
+class="cmmi-12">a</span>(<span 
+class="cmmi-12">x</span>)<span 
+class="cmmi-12">b</span>(<span 
+class="cmmi-12">y</span>)) = <span 
+class="cmmi-12">a</span>(<span 
+class="cmmi-12">x</span>)<span 
+class="cmmi-12">b</span>(<span 
+class="cmmi-12">x</span>). Ainsi, Ω<sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmsy-10x-x-120">A </span>est constitué de
+l&#x2019;ensemble des fonctions de deux variables sur l&#x2019;espace <span 
+class="cmmi-12">M</span>, qui s&#x2019;annulent sur la
+diagonale.
+<!--l. 368--><p class="indent" >   Remarque<span class="frenchb-nbsp"> </span>: lorsque <span 
+class="cmmi-12">M </span>est discret, il est d&#x2019;usage d&#x2019;identifier, comme nous
+venons de le faire, l&#x2019;algèbre des fonctions <span 
+class="cmmi-12">Fun</span>(<span 
+class="cmmi-12">M </span><span 
+class="cmsy-10x-x-120">× </span><span 
+class="cmmi-12">M</span><span 
+class="cmmi-12">…</span> <span 
+class="cmsy-10x-x-120">× </span><span 
+class="cmmi-12">M</span>) du produit
+cartésien de l&#x2019;espace <span 
+class="cmmi-12">M </span>par lui-même avec l&#x2019;algèbre produit tensoriel
+<span 
+class="cmmi-12">Fun</span>(<span 
+class="cmmi-12">M</span>) <span 
+class="cmsy-10x-x-120">⊗ </span><span 
+class="cmmi-12">Fun</span>(<span 
+class="cmmi-12">M</span>) <span 
+class="cmsy-10x-x-120">⊗</span><span 
+class="cmmi-12">…</span><span 
+class="cmmi-12">Fun</span>(<span 
+class="cmmi-12">M</span>). Lorsque <span 
+class="cmmi-12">M </span>est un espace topologique (en
+particulier une variété), on n&#x2019;a, en général, qu&#x2019;une inclusion stricte de
+<span 
+class="cmmi-12">Fun</span>(<span 
+class="cmmi-12">M</span>) <span 
+class="cmsy-10x-x-120">⊗ </span><span 
+class="cmmi-12">Fun</span>(<span 
+class="cmmi-12">M</span>) <span 
+class="cmsy-10x-x-120">⊗</span><span 
+class="cmmi-12">…</span><span 
+class="cmmi-12">Fun</span>(<span 
+class="cmmi-12">M</span>) dans <span 
+class="cmmi-12">Fun</span>(<span 
+class="cmmi-12">M </span><span 
+class="cmsy-10x-x-120">× </span><span 
+class="cmmi-12">M</span><span 
+class="cmmi-12">…</span> <span 
+class="cmsy-10x-x-120">× </span><span 
+class="cmmi-12">M</span>), et il faudrait
+tenir compte de la topologie utilisée pour pouvoir préciser davantage.
+Nous ne tiendrons pas compte de cette subtilité topologique dans ce qui
+suit.
+</p><!--l. 380--><p class="indent" >   Considérons maintenant un élément de Ω<sup><span 
+class="cmr-8">2</span></sup><span 
+class="cmsy-10x-x-120">A</span><span class="frenchb-nbsp"> </span>:
+                                                                          
+
+                                                                          
+</p>
+   <div class="eqnarray">
+   <div class="math-display">
+<img 
+src="source892x.png" alt="         aδbδc = a ⊗ b ⊗ c − ab ⊗ 1l ⊗ c − a ⊗ bc ⊗ 1l + ab ⊗ c ⊗ 1l
+
+[aδbδc](x,y,z) = a (x)b(y )c(z) − a(x)b(x)c(z) − a(x)b(y)c(y) + a(x)b(x)c(y)
+               = a (x)[b(y) − b(x)][c(z) − c(y)]
+" class="math-display"  /></div>
+</div>
+<!--l. 390--><p class="indent" >   Cet élément peut donc s&#x2019;interpréter comme une fonction de trois
+variables, qui s&#x2019;annule lorsque <span 
+class="cmmi-12">x </span>= <span 
+class="cmmi-12">y </span>ou lorsque <span 
+class="cmmi-12">y </span>= <span 
+class="cmmi-12">z </span>(mais pas lorsque
+<span 
+class="cmmi-12">x </span>= <span 
+class="cmmi-12">z</span>).
+</p><!--l. 394--><p class="indent" >   Plus généralement, les élements de Ω<sup><span 
+class="cmmi-8">p</span></sup><span 
+class="cmsy-10x-x-120">A </span>peuvent être considérés comme des
+fonctions de <span 
+class="cmmi-12">p </span>+ 1 variables qui s&#x2019;annulent lorsque deux arguments successifs sont
+égaux.
+</p><!--l. 398--><p class="indent" >   On voit que <span 
+class="cmmi-12">δb </span>désigne bien ici la différence discrète <span 
+class="cmmi-12">b</span>(<span 
+class="cmmi-12">y</span>) <span 
+class="cmsy-10x-x-120">− </span><span 
+class="cmmi-12">b</span>(<span 
+class="cmmi-12">x</span>). Lorsque <span 
+class="cmmi-12">M</span>
+est une variété différentiable, on peut faire tendre <span 
+class="cmmi-12">y </span>vers <span 
+class="cmmi-12">x </span>et obtenir ainsi la
+forme différentielle usuelle <span 
+class="cmmi-12">db</span>(<span 
+class="cmmi-12">x</span>) =  <span 
+class="cmmi-8">∂b</span> _
+<span 
+class="cmmi-8">∂x</span><sup><span 
+class="cmmi-6">μ</span></sup><span 
+class="cmmi-12">dx</span><sup><span 
+class="cmmi-8">μ</span></sup>. La théorie générale s&#x2019;applique
+évidemment dans ce cas particulier<span class="frenchb-nbsp"> </span>: Ω<sup><span 
+class="cmmi-8">p</span></sup><span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M</span>) est une algèbre différentielle
+universelle mais il existe par ailleurs une algèbre de formes différentielles (Λ<span 
+class="cmmi-12">M,d</span>)
+que nous connaissons bien (le complexe de De Rham), il existe donc un
+morphisme <span 
+class="cmmi-12">α </span>de la première algèbre sur la seconde. Ce morphisme envoie
+<span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span 
+class="cmmi-12">δa</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">δa</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-12">…</span> (dans le cas présent <span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub>(<span 
+class="cmmi-12">x</span>)(<span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">1</span></sub>(<span 
+class="cmmi-12">y</span>) <span 
+class="cmsy-10x-x-120">− </span><span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">1</span></sub>(<span 
+class="cmmi-12">x</span>))(<span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">2</span></sub>(<span 
+class="cmmi-12">z</span>) <span 
+class="cmsy-10x-x-120">− </span><span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">2</span></sub>(<span 
+class="cmmi-12">y</span>))<span 
+class="cmmi-12">…</span>) sur la forme
+différentielle <span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span 
+class="cmmi-12">da</span><sub><span 
+class="cmr-8">1</span></sub> <span 
+class="cmsy-10x-x-120">∧ </span><span 
+class="cmmi-12">da</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-12">…</span>.
+</p><!--l. 411--><p class="indent" >   Notons que le noyau de ce morphisme est très gros. D&#x2019;une part, on sait que
+lorsque <span 
+class="cmmi-12">p &#x003E; dim</span>(<span 
+class="cmmi-12">M</span>), Λ<sup><span 
+class="cmmi-8">p</span></sup><span 
+class="cmmi-12">M </span>= 0, alors que Ω<sup><span 
+class="cmmi-8">p</span></sup><span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M</span>) n&#x2019;est jamais nul (quel que
+soit <span 
+class="cmmi-12">p</span>). Par ailleurs, même si <span 
+class="cmmi-12">p </span><span 
+class="cmsy-10x-x-120">≤ </span><span 
+class="cmmi-12">dim</span>(<span 
+class="cmmi-12">M</span>) il est facile de trouver des éléments de
+Ω<span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M</span>) qui s&#x2019;envoient sur zéro<span class="frenchb-nbsp"> </span>: par exemple, l&#x2019;élément <span 
+class="cmmi-12">a</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">δ</span>(<span 
+class="cmmi-12">bc</span>) <span 
+class="cmsy-10x-x-120">− </span><span 
+class="cmmi-12">ab</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">δc </span><span 
+class="cmsy-10x-x-120">− </span><span 
+class="cmmi-12">ca</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">δb</span>
+n&#x2019;est certainement pas nul dans Ω<sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M</span>), alors que <span 
+class="cmmi-12">a</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">d</span>(<span 
+class="cmmi-12">bc</span>) <span 
+class="cmsy-10x-x-120">−</span><span 
+class="cmmi-12">ab</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">dc</span><span 
+class="cmsy-10x-x-120">−</span><span 
+class="cmmi-12">cadb </span>est nul
+dans Λ<sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmmi-12">M</span>.
+</p><!--l. 422--><p class="noindent" >
+                                                                          
+
+                                                                          
+</p>
+   <h5 class="subsubsectionHead"><a 
+ id="x16-2520006.2.2"></a>L&#x2019;exemple de <span 
+class="msbm-10x-x-120">ℂ </span><span 
+class="cmsy-10x-x-120">⊕ </span><span 
+class="msbm-10x-x-120">ℂ</span></h5>
+<!--l. 424--><p class="noindent" >L&#x2019;exemple qui nous venons de considérer montre bien que cette algèbre
+différentielle de De Rham, dont nous avons l&#x2019;habitude, est loin d&#x2019;être la seule
+possible, même dans le cadre commutatif, lorsqu&#x2019;on veut définir un calcul
+différentiel. L&#x2019;inconvénient de l&#x2019;algèbre des formes universelles, c&#x2019;est qu&#x2019;elle est
+généralement très (trop) “grosse” et peu maniable. Cependant, il est des cas,
+même commutatifs, où l&#x2019;algèbre de De Rham n&#x2019;est pas utilisable — par exemple
+lorsque <span 
+class="cmmi-12">M </span>n&#x2019;est pas différentiable — et il est bien pratique de pouvoir faire
+appel à la dernière construction. Un autre cas interessant est celui d&#x2019;une
+variété <span 
+class="cmmi-12">M </span>qui n&#x2019;est pas connexe<span class="frenchb-nbsp"> </span>: on peut alors, bien sûr, faire du calcul
+différentiel “à la De Rham” sur chaque composante connexe, mais, ce faisant,
+on perd de l&#x2019;information, car les formes universelles non nulles du type
+<span 
+class="cmmi-12">aδb</span>[<span 
+class="cmmi-12">x,y</span>] où <span 
+class="cmmi-12">x </span>et <span 
+class="cmmi-12">y </span>appartiennent à deux composantes connexes distinctes
+n&#x2019;ont aucune correspondance dans l&#x2019;algèbre de De Rham. Pour illustrer ce
+phénomène, qui se trouve posséder une interprétation physique aussi bien
+inattendue que capitale, nous allons choisir l&#x2019;exemple d&#x2019;un espace non
+connexe extrêmement simple<span class="frenchb-nbsp"> </span>: celui fourni par la donnée de deux points.
+Dans ce cas, les 1-formes usuelles (celles de De Rham) n&#x2019;existent pas. Par
+contre, on va pouvoir construire et utiliser l&#x2019;algèbre des formes universelles
+Ω = Ω(<span 
+class="msbm-10x-x-120">ℂ </span><span 
+class="cmsy-10x-x-120">⊕ </span><span 
+class="msbm-10x-x-120">ℂ</span>).
+</p><!--l. 449--><p class="indent" >   Considérons donc un ensemble discret <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">L,R</span><span 
+class="cmsy-10x-x-120">} </span>constitué de deux éléments que
+nous désignons par les lettres <span 
+class="cmmi-12">L </span>et <span 
+class="cmmi-12">R </span>(penser a <span 
+class="cmti-12">Left </span>et <span 
+class="cmti-12">Right</span>). Soit <span 
+class="cmmi-12">x </span>la fonction
+coordonnée <span 
+class="cmmi-12">x</span>(<span 
+class="cmmi-12">L</span>) = 1<span 
+class="cmmi-12">,x</span>(<span 
+class="cmmi-12">R</span>) = 0 et <span 
+class="cmmi-12">y </span>la fonction coordonnée <span 
+class="cmmi-12">y</span>(<span 
+class="cmmi-12">L</span>) = 0<span 
+class="cmmi-12">,y</span>(<span 
+class="cmmi-12">R</span>) = 1.
+Remarque<span class="frenchb-nbsp"> </span>: <span 
+class="cmmi-12">xy </span>= <span 
+class="cmmi-12">yx </span>= 0, <span 
+class="cmmi-12">x</span><sup><span 
+class="cmr-8">2</span></sup> = <span 
+class="cmmi-12">x,y</span><sup><span 
+class="cmr-8">2</span></sup> = <span 
+class="cmmi-12">y </span>and <span 
+class="cmmi-12">x </span>+ <span 
+class="cmmi-12">y </span>= 1 l où 1 l est la fonction unité
+1l(<span 
+class="cmmi-12">L</span>) = 1<span 
+class="cmmi-12">,</span> 1 l(<span 
+class="cmmi-12">R</span>) = 1. Un élément quelconque de cette algèbre associative (et
+commutative) <span 
+class="cmsy-10x-x-120">A </span>engendrée par <span 
+class="cmmi-12">x </span>et <span 
+class="cmmi-12">y </span>peut s&#x2019;écrire <span 
+class="cmmi-12">λx </span>+ <span 
+class="cmmi-12">μy </span>(où <span 
+class="cmmi-12">λ </span>et <span 
+class="cmmi-12">μ </span>sont deux
+nombres complexes) et peut être représenté par une matrice diagonale
+<img 
+src="source893x.png" alt="(λ 0 )
+
+ 0 μ"  class="left" align="middle" /> . On peut écrire <span 
+class="cmsy-10x-x-120">A </span>= <span 
+class="msbm-10x-x-120">ℂ</span><span 
+class="cmmi-12">x </span><span 
+class="cmsy-10x-x-120">⊕ </span><span 
+class="msbm-10x-x-120">ℂ</span><span 
+class="cmmi-12">y</span>. L&#x2019;algèbre est donc isomorphe à
+<span 
+class="msbm-10x-x-120">ℂ </span><span 
+class="cmsy-10x-x-120">⊕ </span><span 
+class="msbm-10x-x-120">ℂ</span>. Nous introduisons maintenant deux symboles <span 
+class="cmmi-12">δx,δy</span>, ainsi qu&#x2019;une
+différentielle <span 
+class="cmmi-12">δ </span>qui satisfait à <span 
+class="cmmi-12">δ</span><sup><span 
+class="cmr-8">2</span></sup> = 0, qui doit satisfaire à <span 
+class="cmmi-12">δ</span>1 l = 0 et à la règle
+habituelle de dérivation d&#x2019;un produit (règle de Leibniz). Il est évident
+que Ω<sup><span 
+class="cmr-8">1</span></sup>, l&#x2019;espace des différentielles de degré 1 est engendré par les deux
+quantités indépendantes <span 
+class="cmmi-12">xδx </span>and <span 
+class="cmmi-12">yδy</span>. En effet, la relation <span 
+class="cmmi-12">x </span>+ <span 
+class="cmmi-12">y </span>= 1 l
+implique <span 
+class="cmmi-12">δx </span>+ <span 
+class="cmmi-12">δy </span>= 0<span class="frenchb-thinspace"> </span>; de plus, les relations <span 
+class="cmmi-12">x</span><sup><span 
+class="cmr-8">2</span></sup> = <span 
+class="cmmi-12">x </span>and <span 
+class="cmmi-12">y</span><sup><span 
+class="cmr-8">2</span></sup> = <span 
+class="cmmi-12">y </span>impliquent
+(<span 
+class="cmmi-12">δx</span>)<span 
+class="cmmi-12">x </span>+ <span 
+class="cmmi-12">x</span>(<span 
+class="cmmi-12">δx</span>) = (<span 
+class="cmmi-12">δx</span>), donc (<span 
+class="cmmi-12">δx</span>)<span 
+class="cmmi-12">x </span>= (1 l <span 
+class="cmsy-10x-x-120">− </span><span 
+class="cmmi-12">x</span>)<span 
+class="cmmi-12">δx </span>and (<span 
+class="cmmi-12">δy</span>)<span 
+class="cmmi-12">y </span>= (1 l <span 
+class="cmsy-10x-x-120">− </span><span 
+class="cmmi-12">y</span>)<span 
+class="cmmi-12">δy</span>. Ceci
+implique également, par exemple, <span 
+class="cmmi-12">δx </span>= 1 l<span 
+class="cmmi-12">δx </span>= <span 
+class="cmmi-12">xδx </span>+ <span 
+class="cmmi-12">yδx</span>, <span 
+class="cmmi-12">xδx </span>= <span 
+class="cmsy-10x-x-120">−</span><span 
+class="cmmi-12">xδy</span>,
+<span 
+class="cmmi-12">yδx </span>= (1 l <span 
+class="cmsy-10x-x-120">− </span><span 
+class="cmmi-12">x</span>)<span 
+class="cmmi-12">δx</span>, (<span 
+class="cmmi-12">δx</span>)<span 
+class="cmmi-12">x </span>= <span 
+class="cmmi-12">yδx </span>= <span 
+class="cmsy-10x-x-120">−</span><span 
+class="cmmi-12">yδy </span>etc . Plus généralement, désignons
+par Ω<sup><span 
+class="cmmi-8">p</span></sup>, l&#x2019;espace des différentielles de degré <span 
+class="cmmi-12">p</span><span class="frenchb-thinspace"> </span>; les relations ci-dessus
+montrent qu&#x2019;une base de cet espace vectoriel est fourni par les éléments
+                                                                          
+
+                                                                          
+<span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">xδxδx</span><span 
+class="cmmi-12">…</span><span 
+class="cmmi-12">δx,yδyδy</span><span 
+class="cmmi-12">…</span><span 
+class="cmmi-12">δy</span><span 
+class="cmsy-10x-x-120">}</span>. Posons Ω<sup><span 
+class="cmr-8">0</span></sup> = <span 
+class="cmsy-10x-x-120">A </span>et Ω = <span 
+class="cmex-10x-x-120">⊕</span><sub>
+<span 
+class="cmmi-8">p</span></sub>Ω<sup><span 
+class="cmmi-8">p</span></sup>. L&#x2019;espace Ω est une
+algèbre<span class="frenchb-nbsp"> </span>: on peut multiplier les formes librement, mais il faut tenir compte de la
+règle de Leibniz, par exemple <span 
+class="cmmi-12">x</span>(<span 
+class="cmmi-12">δx</span>)<span 
+class="cmmi-12">x</span>(<span 
+class="cmmi-12">δx</span>) = <span 
+class="cmmi-12">x</span>(1 l <span 
+class="cmsy-10x-x-120">−</span><span 
+class="cmmi-12">x</span>)(<span 
+class="cmmi-12">δx</span>)<sup><span 
+class="cmr-8">2</span></sup>. Attention<span class="frenchb-nbsp"> </span>: l&#x2019;algèbre Ω
+est de dimension infinie, comme il se doit puisque <span 
+class="cmmi-12">p </span>parcourt toutes les
+valeurs de 0 à l&#x2019;infini. Bien entendu, la différentielle <span 
+class="cmmi-12">δ </span>obéit à la règle de
+Leibniz lorsqu&#x2019;elle agit sur les éléments de <span 
+class="cmsy-10x-x-120">A </span>mais elle obéit à la règle de
+Leibniz graduée lorsqu&#x2019;elle agit sur les éléments de Ω, en l&#x2019;occurence
+<span 
+class="cmmi-12">δ</span>(<span 
+class="cmmi-12">ω</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">ω</span><sub><span 
+class="cmr-8">2</span></sub>) = <span 
+class="cmmi-12">δ</span>(<span 
+class="cmmi-12">ω</span><sub><span 
+class="cmr-8">1</span></sub>)<span 
+class="cmmi-12">ω</span><sub><span 
+class="cmr-8">2</span></sub> + (<span 
+class="cmsy-10x-x-120">−</span>1)<sup><span 
+class="cmmi-8">∂ω</span><sub><span 
+class="cmr-6">1</span></sub></sup><span 
+class="cmmi-12">ω</span><sub>
+<span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">δ</span>(<span 
+class="cmmi-12">ω</span><sub><span 
+class="cmr-8">2</span></sub>) où <span 
+class="cmmi-12">∂ω</span><sub><span 
+class="cmr-8">1</span></sub> désigne 0 ou 1 suivant que <span 
+class="cmmi-12">ω</span><sub><span 
+class="cmr-8">1</span></sub> est
+pair ou impair.
+</p><!--l. 493--><p class="indent" >   Dans le cas particulier de la géométrie d&#x2019;un ensemble à deux points, <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">L,R</span><span 
+class="cmsy-10x-x-120">}</span>
+nous retrouvons le fait qu&#x2019;un élément <span 
+class="cmmi-12">A </span>de Ω<sup><span 
+class="cmr-8">1</span></sup> considéré comme fonction de deux
+variables doit obéir aux contraintes <span 
+class="cmmi-12">A</span>(<span 
+class="cmmi-12">L,L</span>) = <span 
+class="cmmi-12">A</span>(<span 
+class="cmmi-12">R,R</span>) = 0 et peut donc être
+écrit comme une matrice 2 <span 
+class="cmsy-10x-x-120">× </span>2 indexée par <span 
+class="cmmi-12">L </span>et <span 
+class="cmmi-12">R </span>dont les éléments non
+diagonaux sont nuls (“matrice hors diagonale”). Un élement <span 
+class="cmmi-12">F </span>de Ω<sup><span 
+class="cmr-8">2</span></sup> peut être
+considéré comme fonction de trois variables obéissant aux contraintes
+<span 
+class="cmmi-12">F</span>(<span 
+class="cmmi-12">L,L,R</span>) = <span 
+class="cmmi-12">F</span>(<span 
+class="cmmi-12">R,R,L</span>) = <span 
+class="cmmi-12">F</span>(<span 
+class="cmmi-12">L,R,R</span>) = <span 
+class="cmmi-12">F</span>(<span 
+class="cmmi-12">R,L,L</span>) = <span 
+class="cmmi-12">F</span>(<span 
+class="cmmi-12">R,R,R</span>) = <span 
+class="cmmi-12">F</span>(<span 
+class="cmmi-12">L,L,L</span>) = 0.
+Les deux seules composantes non nulles sont donc <span 
+class="cmmi-12">F</span>(<span 
+class="cmmi-12">L,R,L</span>) and <span 
+class="cmmi-12">F</span>(<span 
+class="cmmi-12">R,L,R</span>). Le
+fait que <span 
+class="cmmi-12">dim</span>(Ω<sup><span 
+class="cmmi-8">p</span></sup>) = 2 pour tout <span 
+class="cmmi-12">p </span>suggère la possibilité d&#x2019;utiliser des matrices de
+taille fixe (en l&#x2019;occurence des matrices 2 <span 
+class="cmsy-10x-x-120">× </span>2) pour toutes valeurs de <span 
+class="cmmi-12">p</span>. Ceci ne
+serait pas le cas pour une géométrie à plus de deux points. En effet, on peut
+aisément généraliser la construction précédente, par exemple en partant de trois
+points au lieu de deux. Mais dans ce cas, Ω<sup><span 
+class="cmr-8">1</span></sup> est de dimension 6 et Ω<sup><span 
+class="cmr-8">2</span></sup> de
+dimension 12. Avec <span 
+class="cmmi-12">q </span>points, la dimension de Ω<sup><span 
+class="cmmi-8">p</span></sup> est <span 
+class="cmmi-12">q</span>(<span 
+class="cmmi-12">q </span><span 
+class="cmsy-10x-x-120">− </span>1)<sup><span 
+class="cmmi-8">p</span></sup>. Ce dernier résultat
+vient du fait que <span 
+class="cmmi-12">dim</span>(<span 
+class="cmsy-10x-x-120">A⊗A</span>) <span 
+class="cmsy-10x-x-120">− </span><span 
+class="cmmi-12">dim</span>(<span 
+class="cmmi-12">Ker</span>(<span 
+class="cmmi-12">m</span>)) = <span 
+class="cmmi-12">dim</span>(<span 
+class="cmsy-10x-x-120">A</span>). On a donc
+<span 
+class="cmmi-12">dim</span>(Ω<sup><span 
+class="cmr-8">1</span></sup>) = <span 
+class="cmmi-12">q</span><sup><span 
+class="cmr-8">2</span></sup> <span 
+class="cmsy-10x-x-120">− </span><span 
+class="cmmi-12">q</span>.
+</p><!--l. 517--><p class="indent" >   Pour revenir au cas de la géométrie à deux points, nous voyons qu&#x2019;il est
+possible de représenter <span 
+class="cmmi-12">λx</span>(<span 
+class="cmmi-12">δx</span>)<sup><span 
+class="cmr-8">2</span><span 
+class="cmmi-8">p</span></sup> + <span 
+class="cmmi-12">μy</span>(<span 
+class="cmmi-12">δy</span>)<sup><span 
+class="cmr-8">2</span><span 
+class="cmmi-8">p</span></sup> comme une matrice diagonale <img 
+src="source894x.png" alt="(    )
+  λ 0
+  0 μ"  class="left" align="middle" />
+et l&#x2019;élément <span 
+class="cmmi-12">αx</span>(<span 
+class="cmmi-12">δx</span>)<sup><span 
+class="cmr-8">2</span><span 
+class="cmmi-8">p</span><span 
+class="cmr-8">+1</span></sup> + <span 
+class="cmmi-12">βy</span>(<span 
+class="cmmi-12">δy</span>)<sup><span 
+class="cmr-8">2</span><span 
+class="cmmi-8">p</span><span 
+class="cmr-8">+1</span></sup> comme la matrice “hors” diagonale
+<img 
+src="source895x.png" alt="(     )
+  0 iα
+ iβ  0"  class="left" align="middle" /> Autrement dit nous pouvons représenter les formes paires par des
+matrices paires (i.e. diagonales) et les formes impaires par des matrices impaires
+(i.e. “hors” diagonales)<span class="frenchb-thinspace"> </span>; ceci est non seulement naturel mais obligatoire si on
+veut que la multiplication des matrices soit compatible avec la multiplication dans
+Ω. En effet, les relations
+                                                                          
+
+                                                                          
+</p>
+   <div class="math-display">
+<img 
+src="source896x.png" alt="x(δx)2px   = x(δx )2p
+x(δx)2py   = 0
+     2p+1
+x(δx)2p+1x = 0     2p+1
+x(δx)    y = x(δx )   " class="math-display"  /></div>
+montrent que cette représentation utilisant des matrices 2 <span 
+class="cmsy-10x-x-120">× </span>2 est effectivement un
+homomorphisme d&#x2019;algèbres <span 
+class="msbm-10x-x-120">ℤ</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmsy-10x-x-120">−</span>graduées, de Ω (gradué par la parité de <span 
+class="cmmi-12">p</span>) dans
+l&#x2019;algèbre des marices complexes 2 <span 
+class="cmsy-10x-x-120">× </span>2 (avec graduation <span 
+class="msbm-10x-x-120">ℤ</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmsy-10x-x-120">− </span>associée avec la
+décomposition d&#x2019;une matrice en une partie diagonale et hors diagonale). La
+présence du facteur <span 
+class="cmmi-12">i </span>dans les matrices hors diagonales représentant les éléments
+impairs est nécessaire pour que les deux types de produits soient compatibles.
+L&#x2019;algèbre Ω s&#x2019;obtient en effectuant la <span 
+class="cmti-12">somme directe  </span>des espaces vectoriels Ω<sup><span 
+class="cmmi-8">p</span></sup>.
+Comme on l&#x2019;a dit, l&#x2019;algèbre Ω est donc de dimension infinie mais si nous
+représentons toute l&#x2019;algèbre Ω à l&#x2019;aide de matrices 2 <span 
+class="cmsy-10x-x-120">× </span>2 agissant sur un espace
+vectoriel fixé de dimension 2, la <span 
+class="cmmi-12">p</span>-graduation est perdue et seule la graduation <span 
+class="msbm-10x-x-120">ℤ</span><sub><span 
+class="cmr-8">2</span></sub>
+est conservée.
+<!--l. 548--><p class="indent" >   Nous verrons un peu plus loin qu&#x2019;il est possible, en géométrie non
+commutative, de donner un sens à la notion de connexion. Dans le cas le plus
+simple, la forme de connexion <span 
+class="cmmi-12">A </span>n&#x2019;est autre qu&#x2019;une forme de degré 1 appartenant
+à une algèbre différentielle (Ξ<span 
+class="cmmi-12">,δ</span>) associée à l&#x2019;algèbre associative <span 
+class="cmsy-10x-x-120">A </span>choisie. On
+verra que la courbure <span 
+class="cmmi-12">F</span>, dans ce cas, peut également s&#x2019;écrire comme
+<span 
+class="cmmi-12">F </span>= <span 
+class="cmmi-12">δA </span>+ <span 
+class="cmmi-12">A</span><sup><span 
+class="cmr-8">2</span></sup>.
+</p><!--l. 556--><p class="indent" >   Dans le cas présent, Ξ = Ω. Une forme de degré 1 est un élément de Ω<sup><span 
+class="cmr-8">1</span></sup>.
+Prenons <span 
+class="cmmi-12">A </span>= (<span 
+class="cmmi-12">φ</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">xδx </span>+ <span class="bar-css"><span 
+class="cmmi-12">φ</span></span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">yδy</span>). La représentation matricielle de <span 
+class="cmmi-12">A </span>se lit
+donc
+</p>
+   <div class="math-display">
+<img 
+src="source897x.png" alt="     (      )
+       0  iφ
+A  =   i¯φ 0
+" class="math-display"  /></div> La courbure correspondante est alors <span 
+class="cmmi-12">F </span>= <span 
+class="cmmi-12">δA </span>+ <span 
+class="cmmi-12">A</span><sup><span 
+class="cmr-8">2</span></sup>, mais
+                                                                          
+
+                                                                          
+<span 
+class="cmmi-12">A</span><sup><span 
+class="cmr-8">2</span></sup>  = <span 
+class="cmsy-10x-x-120">−</span><span 
+class="cmmi-12">φ</span><span class="bar-css"><span 
+class="cmmi-12">φ</span></span><span 
+class="cmmi-12">x</span><sup><span 
+class="cmr-8">2</span></sup><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">δxδx </span><span 
+class="cmsy-10x-x-120">−</span><span class="bar-css"><span 
+class="cmmi-12">φ</span></span><span 
+class="cmmi-12">φ</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">y</span><sup><span 
+class="cmr-8">2</span></sup><span 
+class="cmmi-12">δyδy </span>= <span 
+class="cmsy-10x-x-120">−</span><span 
+class="cmmi-12">φ</span><span class="bar-css"><span 
+class="cmmi-12">φ</span></span><span 
+class="cmmi-12">x</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">δxδx </span><span 
+class="cmsy-10x-x-120">−</span><span class="bar-css"><span 
+class="cmmi-12">φ</span></span><span 
+class="cmmi-12">φ</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">yδyδy </span>et
+<span 
+class="cmmi-12">δA </span>= <span 
+class="cmmi-12">φδxδx </span>+ <span class="bar-css"><span 
+class="cmmi-12">φ</span></span><span 
+class="cmmi-12">δyδy </span>= (<span class="bar-css"><span 
+class="cmmi-12">φ</span></span> + <span 
+class="cmmi-12">φ</span>)(<span 
+class="cmmi-12">xδxδx </span>+ <span 
+class="cmmi-12">yδyδy</span>). <span 
+class="cmmi-12">F </span>peut donc s&#x2019;écrire
+aussi
+   <div class="math-display">
+<img 
+src="source898x.png" alt="                                     (                        )
+F =  (φ + ¯φ − φ ¯φ)(xδxδx +  yδyδy) =   φ + ¯φ − φ ¯φ      0
+                                            0      φ + φ¯− φ ¯φ " class="math-display"  /></div>
+Nous pouvons choisir un produit hermitien sur Ω en décidant que la base
+<span 
+class="cmmi-12">x</span>(<span 
+class="cmmi-12">δx</span>)<sup><span 
+class="cmmi-8">p</span></sup><span 
+class="cmmi-12">,y</span>(<span 
+class="cmmi-12">δy</span>)<sup><span 
+class="cmmi-8">q</span></sup> est orthonormale. Alors <span 
+class="cmsy-10x-x-120">|</span><span 
+class="cmmi-12">F</span><span 
+class="cmsy-10x-x-120">|</span><sup><span 
+class="cmr-8">2</span></sup> = <span class="bar-css"><span 
+class="cmmi-12">F</span></span><span 
+class="cmmi-12">F </span>= (<span 
+class="cmmi-12">φ </span>+ <span class="bar-css"><span 
+class="cmmi-12">φ</span></span> <span 
+class="cmsy-10x-x-120">− </span><span 
+class="cmmi-12">φ</span><span class="bar-css"><span 
+class="cmmi-12">φ</span></span>)<sup><span 
+class="cmr-8">2</span></sup>. Le lecteur
+familier des théories de jauge avec brisure de symmétrie reconnaitra ici un
+potentiel de Higgs <a 
+ id="dx16-252001"></a>translaté <span 
+class="cmmi-12">V </span>[<span 
+class="cmmi-12">ϕ</span>] = <span 
+class="cmsy-10x-x-120">|</span><span 
+class="cmmi-12">F</span><span 
+class="cmsy-10x-x-120">|</span><sup><span 
+class="cmr-8">2</span></sup>. (voir figure <a 
+href="#x16-2520021">6.1<!--tex4ht:ref: fig:Higgs --></a>). <hr class="figure" /><div class="figure" 
+>
+                                                                          
+
+                                                                          
+<a 
+ id="x16-2520021"></a>
+                                                                          
+
+                                                                          
+<!--l. 582--><p class="noindent" >
+</p>
+<div class="math-display">
+<img 
+src="source899x.png" alt="
+" class="math-display"  /></div>
+<br /> <div class="caption" 
+><span class="id"><span 
+class="cmcsc-10x-x-120">F<span 
+class="small-caps">i</span><span 
+class="small-caps">g</span><span 
+class="small-caps">u</span><span 
+class="small-caps">r</span><span 
+class="small-caps">e</span></span> 6.1: </span><span  
+class="content">Potentiel de Higgs <span 
+class="cmmi-12">V </span>[<span 
+class="cmmi-12">Re</span>(<span 
+class="cmmi-12">φ</span>)<span 
+class="cmmi-12">,Im</span>(<span 
+class="cmmi-12">φ</span>)]</span></div><!--tex4ht:label?: x16-2520021 -->
+                                                                          
+
+                                                                          
+   </div><hr class="endfigure" />
+<!--l. 589--><p class="indent" >   Notre calcul différentiel, dans le cas présent, est commutatif, puisque l&#x2019;algèbre
+des fonctions sur un espace à deux points est simplement l&#x2019;algèbre des matrices
+diagonales 2 <span 
+class="cmsy-10x-x-120">× </span>2 avec des coefficients complexes (ou réels) mais notre
+calcul différentiel est, en un sens, “non local” puisque la “distance” entre
+les deux points étiquetés par <span 
+class="cmmi-12">L </span>et <span 
+class="cmmi-12">R </span>ne peut pas tendre vers zéro…Le
+lecteur aura sans doute remarqué que ces résultats peuvent s&#x2019;interpréter en
+termes de champs de Higgs. Nous y reviendrons (exemple poursuivi en
+6.2.4).
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">6.2.3   </span> <a 
+ id="x16-2530006.2.3"></a>L&#x2019;algèbre différentielle Ω<sub><span 
+class="cmmi-8">Der</span></sub><span 
+class="cmsy-10x-x-120">A</span></h4>
+<a 
+ id="dx16-253001"></a>
+<!--l. 602--><p class="noindent" >
+</p>
+   <h5 class="subsubsectionHead"><a 
+ id="x16-2540006.2.3"></a>Rappel sur les dérivations d&#x2019;algèbre</h5>
+<!--l. 605--><p class="noindent" >Rappelons (relire 1.10.1) que
+</p>
+       <ul class="itemize1">
+       <li class="itemize"><span 
+class="cmmi-12">Der</span>(<span 
+class="cmsy-10x-x-120">A</span>) est une algèbre de Lie
+       </li>
+       <li class="itemize"><span 
+class="cmmi-12">Der</span>(<span 
+class="cmsy-10x-x-120">A</span>) n&#x2019;est pas un module sur <span 
+class="cmsy-10x-x-120">A</span>
+       </li>
+       <li class="itemize"><span 
+class="cmmi-12">Der</span>(<span 
+class="cmsy-10x-x-120">A</span>) est un module sur le centre de <span 
+class="cmsy-10x-x-120">A</span>
+       </li>
+       <li class="itemize"><span 
+class="cmmi-12">Int</span>(<span 
+class="cmsy-10x-x-120">A</span>) = <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">ad</span><sub><span 
+class="cmmi-8">a</span></sub><span 
+class="cmmi-12">∕a </span><span 
+class="cmsy-10x-x-120">∈ A} </span>avec <span 
+class="cmmi-12">ad</span><sub><span 
+class="cmmi-8">a</span></sub>(<span 
+class="cmmi-12">b</span>) = [<span 
+class="cmmi-12">a,b</span>] qu&#x2019;on appelle <span 
+class="cmsl-12">ensemble</span>
+       <span 
+class="cmsl-12">des d</span><span 
+class="cmsl-12">érivations int</span><span 
+class="cmsl-12">érieures </span>est un idéal d&#x2019;algèbre de Lie de <span 
+class="cmmi-12">Der</span><span 
+class="cmsy-10x-x-120">A </span>(en
+       effet soit <span 
+class="cmmi-12">X</span><sub><span 
+class="cmmi-8">a</span></sub> = <span 
+class="cmmi-12">ad</span><sub><span 
+class="cmmi-8">a</span></sub> <span 
+class="cmsy-10x-x-120">∈ </span><span 
+class="cmmi-12">Int</span><span 
+class="cmsy-10x-x-120">A </span>et <span 
+class="cmmi-12">Y </span><span 
+class="cmsy-10x-x-120">∈ </span><span 
+class="cmmi-12">Der</span><span 
+class="cmsy-10x-x-120">A</span>, alors [<span 
+class="cmmi-12">Y,X</span><sub><span 
+class="cmmi-8">a</span></sub>] = <span 
+class="cmmi-12">ad</span><sub><span 
+class="cmmi-8">Y </span><span 
+class="cmr-8">(</span><span 
+class="cmmi-8">a</span><span 
+class="cmr-8">)</span></sub> <span 
+class="cmsy-10x-x-120">∈A</span>).
+       </li>
+       <li class="itemize">On note <span 
+class="cmmi-12">Out</span><span 
+class="cmsy-10x-x-120">A </span>= <span 
+class="cmmi-12">Der</span><span 
+class="cmsy-10x-x-120">A</span><span 
+class="cmmi-12">∕Int</span><span 
+class="cmsy-10x-x-120">A</span></li></ul>
+<!--l. 624--><p class="noindent" >
+</p>
+   <h5 class="subsubsectionHead"><a 
+ id="x16-2550006.2.3"></a>Formes différentielles</h5>
+                                                                          
+
+                                                                          
+<!--l. 626--><p class="noindent" >Classiquement, une forme différentielle <span 
+class="cmmi-12">ω </span>est une <span 
+class="cmmi-12">n</span>-forme sur l&#x2019;algèbre de Lie des
+champs de vecteurs, antisymétrique, linéaire par rapport aux scalaires, bien
+sûr, mais aussi linéaire par rapport aux fonctions, et à valeur dans les
+fonctions.
+</p><!--l. 631--><p class="indent" >   On va définir ici les formes différentielles comme des objets qui soient des
+<span 
+class="cmmi-12">n</span>-formes sur l&#x2019;algèbre de Lie des dérivations de <span 
+class="cmsy-10x-x-120">A</span>, antisymétrique, linéaire par
+rapport au scalaires, bien sur, mais aussi linéaire par rapport au centre <span 
+class="cmsy-10x-x-120">Z</span>(<span 
+class="cmmi-12">A</span>) de
+<span 
+class="cmsy-10x-x-120">A </span>et à valeurs dans l&#x2019;algèbre <span 
+class="cmsy-10x-x-120">A</span>.
+</p><!--l. 637--><p class="indent" >   En d&#x2019;autres termes, on pose
+</p>
+   <div class="math-display">
+<img 
+src="source900x.png" alt="ΩnDer (A ) = CnZ(A)(Der A,A ) avec Ω0Der(A ) = A
+" class="math-display"  /></div>
+<!--l. 641--><p class="indent" >   Cette définition est due à <span class="cite">[<a 
+href="sourceli4.html#XMDV-cras">6</a>]</span>
+</p><!--l. 643--><p class="indent" >   C&#x2019;est une algèbre différentielle graduée avec un produit défini par
+</p><!--l. 645--><p class="indent" >
+</p>
+   <div class="math-display">
+<img 
+src="source901x.png" alt="                          ∑    (− 1)|σ|
+(αβ )(v1,v2,...,vm+n ) =        -------α(vσ1,vσ2,...,vσm)β (vσm+1,vσm+2,...,vσm+n)
+                        σ∈Sm+n  m!n!" class="math-display"  /></div>
+où <span 
+class="cmmi-12">α </span><span 
+class="cmsy-10x-x-120">∈</span><span class="underline">Ω</span><sub><span 
+class="cmmi-8">Der</span></sub><sup><span 
+class="cmmi-8">m</span></sup>(<span 
+class="cmsy-10x-x-120">A</span>) et <span 
+class="cmmi-12">β </span><span 
+class="cmsy-10x-x-120">∈</span><span class="underline">Ω</span><sub>
+<span 
+class="cmmi-8">Der</span></sub><sup><span 
+class="cmmi-8">n</span></sup>(<span 
+class="cmsy-10x-x-120">A</span>), et où <span 
+class="cmmi-12">d </span>est une différentielle définie
+comme suit<span class="frenchb-nbsp"> </span>: la forme différentielle <span 
+class="cmmi-12">dω </span>peut se définir directement par son
+action sur tout (<span 
+class="cmmi-12">k </span>+ 1)-uplet <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">v</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">,v</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">…</span><span 
+class="cmmi-12">,v</span><sub><span 
+class="cmmi-8">k</span><span 
+class="cmr-8">+1</span></sub><span 
+class="cmsy-10x-x-120">} </span>de dérivations, en posant
+<div class="eqnarray">
+                                                                          
+
+                                                                          
+   <div class="math-display">
+<img 
+src="source902x.png" alt="                      k∑+1
+dω (v1,v2,...,vk+1) =     (− 1)i+1vi[ω(v1,...,^vi,...,vk+1)]
+                      i=1
+                          ∑          i+j
+                      +         (− 1)   ω([vi,vj],v1,...,^vi,...,^vj,...,vk+1)
+                        i≤i≤j≤k+1
+" class="math-display"  /></div>
+</div>où le symbole <span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmex-10x-x-120">^</span> <span style="margin-left:0.3em" class="thinspace"></span>désigne l&#x2019;omission de l&#x2019;argument correspondant.
+<!--l. 674--><p class="indent" >   En particulier, pour une 1-forme <span 
+class="cmmi-12">da </span>(agissant sur la dérivation <span 
+class="cmmi-12">v</span>) on a
+simplement
+</p>
+   <div class="math-display">
+<img 
+src="source903x.png" alt="|-------------|
+|da(v) = v(a) |
+--------------
+" class="math-display"  /></div>
+<!--l. 682--><p class="indent" >   On peut immédiatement vérifier que <span 
+class="cmmi-12">d </span>est alors une dérivation graduée de
+degré 1 sur l&#x2019;algèbre <span class="underline">Ω</span><sub><span 
+class="cmmi-8">Der</span></sub>(<span 
+class="cmsy-10x-x-120">A</span>) et que <span 
+class="cmmi-12">d</span><sup><span 
+class="cmr-8">2</span></sup> = 0<span 
+class="cmmi-12">.</span>
+</p><!--l. 686--><p class="indent" >   Les définitions qui précèdent sont tout à fait naturelles puisque ce sont
+exactement les mêmes que pour les différentielles habituelles (rappelons encore
+une fois que, dans le cas usuel de la géométrie ”commutative”, les dérivations
+d&#x2019;algèbres <span 
+class="cmmi-12">v</span><sub><span 
+class="cmmi-8">k</span></sub> de l&#x2019;algèbre <span 
+class="cmsy-10x-x-120">A </span>= <span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M</span>) ne sont autres que les champs de
+vecteurs).
+</p><!--l. 694--><p class="noindent" >
+</p>
+   <h5 class="subsubsectionHead"><a 
+ id="x16-2560006.2.3"></a>Distinction entre <span class="underline">Ω</span><sub><span 
+class="cmmi-8">Der</span></sub> et Ω<sub><span 
+class="cmmi-8">Der</span></sub></h5>
+                                                                          
+
+                                                                          
+<!--l. 696--><p class="noindent" >En utilisant la règle de Leibniz, on voit qu&#x2019;un produit quelconque d&#x2019;éléments
+de <span 
+class="cmmi-12">a </span>et de différentielles (du type <span 
+class="cmmi-12">da</span>) peut se réordonner sous la forme
+d&#x2019;une somme de termes du type <span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span 
+class="cmmi-12">da</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">…</span><span 
+class="cmmi-12">da</span><sub><span 
+class="cmmi-8">n</span></sub>. Cela dit, il y a une petite
+subtilité<span class="frenchb-nbsp"> </span>: avec la définition que nous avons adoptée, il n&#x2019;est pas clair que tout
+élément de <span class="underline">Ω</span><sub><span 
+class="cmmi-8">Der</span></sub><span 
+class="cmsy-10x-x-120">A </span>puisse s&#x2019;écrire comme une somme <span 
+class="cmti-12">finie  </span>d&#x2019;éléments
+de ce type. Ceci conduit à introduire la définition suivante<span class="frenchb-nbsp"> </span>: on pose
+Ω<sub><span 
+class="cmmi-8">Der</span></sub><span 
+class="cmsy-10x-x-120">A </span>= <span 
+class="cmex-10x-x-120">⊕</span>
+  <sub><span 
+class="cmmi-8">n</span><span 
+class="cmr-8">=0</span></sub><sup><span 
+class="cmsy-8">∞</span></sup>Ω<sub>
+<span 
+class="cmmi-8">Der</span></sub><sup><span 
+class="cmmi-8">n</span></sup><span 
+class="cmsy-10x-x-120">A </span>où Ω<sub>
+<span 
+class="cmmi-8">Der</span></sub><sup><span 
+class="cmmi-8">n</span></sup><span 
+class="cmsy-10x-x-120">A </span>est le sous-espace vectoriel de <span class="underline">Ω<sub>
+<span 
+class="cmmi-8">Der</span></sub></span><sup><span 
+class="cmmi-8">n</span></sup><span 
+class="cmsy-10x-x-120">A</span>
+constitué des sommes finies du type <span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span 
+class="cmmi-12">da</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">…</span><span 
+class="cmmi-12">da</span><sub><span 
+class="cmmi-8">n</span></sub>. On démontre alors <span class="cite">[<a 
+href="sourceli4.html#XMDV-cras">6</a>]</span> que Ω<sub><span 
+class="cmmi-8">Der</span></sub><span 
+class="cmsy-10x-x-120">A</span>
+est la plus petite sous algèbre différentielle graduée de <span class="underline">Ω<sub><span 
+class="cmmi-8">Der</span></sub></span><span 
+class="cmsy-10x-x-120">A </span>contenant
+<span 
+class="cmsy-10x-x-120">A</span>.
+</p><!--l. 713--><p class="indent" >   En général, on peut oublier cette distinction entre <span class="underline">Ω</span><sub><span 
+class="cmmi-8">Der</span></sub> et Ω<sub><span 
+class="cmmi-8">Der</span></sub>. Dans le cas
+de la géométrie des variétés (variétés connexes ou réunion dénombrables de
+variétés connexes), on peut démontrer que les deux notions coïncident lorsque la
+variété <span 
+class="cmmi-12">M </span>est paracompacte. Cela qui revient à dire que la variété admet une
+base topogique dénombrable…(et dans ce cas elle admet également un atlas
+comprenant au plus une infinité dénombrable de cartes). Pour des variétés
+paracompactes, donc (hypothèse qu&#x2019;on fait presque toujours<span class="frenchb-thinspace"> </span>!), les deux notions
+coïncident et coïncident évidemment avec l&#x2019;algèbre des formes différentielles
+usuelles (ceci découlant immédiatement de l&#x2019;identité entre les définitions
+ci-dessus et celles qu&#x2019;on peut trouver en <a 
+href="sourcech1.html#x7-380001.6.2">1.6.2<!--tex4ht:ref: sec:diffext --></a>). Lorsque l&#x2019;algèbre <span 
+class="cmsy-10x-x-120">A </span>n&#x2019;est pas
+commutative, on aura également les deux possibilites<span class="frenchb-nbsp"> </span>: <span class="underline">Ω</span><sub><span 
+class="cmmi-8">Der</span></sub><span 
+class="cmsy-10x-x-120">A </span>et Ω<sub><span 
+class="cmmi-8">Der</span></sub><span 
+class="cmsy-10x-x-120">A </span>qui
+peuvent coïncider ou non. Le cas le moins “sauvage” est évidemment
+celui où les deux notions coïncident (analogue non commutatif du cas
+paracompact). Dans la suite de cette section, on supposera que c&#x2019;est le
+cas.
+</p><!--l. 732--><p class="noindent" >
+</p>
+   <h5 class="subsubsectionHead"><a 
+ id="x16-2570006.2.3"></a>Exemples</h5>
+       <ul class="itemize1">
+       <li class="itemize">Cas  des  variétés.  On  sait  déja  que  <span 
+class="cmsy-10x-x-120">A </span>=  <span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M</span>),  que  <span 
+class="cmmi-12">Der</span><span 
+class="cmsy-10x-x-120">A </span>=
+       Γ<span 
+class="cmmi-12">TM </span>(champs de vecteurs) et que Ω<sub><span 
+class="cmmi-8">Der</span></sub><span 
+class="cmsy-10x-x-120">A </span>= Λ<span 
+class="cmmi-12">M </span>= Γ<span 
+class="cmmi-12">T</span><sup><span 
+class="cmsy-8">∗</span></sup><span 
+class="cmmi-12">M </span>(formes
+       différentielles usuelles).
+       </li>
+       <li class="itemize">Cas des matrices.  <span 
+class="cmsy-10x-x-120">A </span>=  <span 
+class="cmmi-12">M</span>(<span 
+class="cmmi-12">n, </span><span 
+class="msbm-10x-x-120">ℂ</span>).  Il est bien connu que toutes les
+       dérivations de cette algèbre sont intérieures, c&#x2019;est à dire qu&#x2019;elles sont
+       obtenues en calculant des commutateurs avec une matrice donnée.
+       Cela dit, prendre un commutateur avec une matrice <span 
+class="cmmi-12">X </span>ou prendre
+                                                                          
+
+                                                                          
+       un commutateur avec une matrice <span 
+class="cmmi-12">X </span>+ <span 
+class="cmmi-12">k</span>1 l donne le même résultat.
+       On  peut  donc  décider  de  normaliser  en  fixant  la  trace  de  <span 
+class="cmmi-12">X  </span>à
+       zéro. L&#x2019;ensemble des matrices <span 
+class="cmmi-12">n </span><span 
+class="cmsy-10x-x-120">× </span><span 
+class="cmmi-12">n </span>de trace nulle coïncide, on le
+       sait (cf chapitre 2) avec l&#x2019;algèbre de Lie de <span 
+class="cmmi-12">SL</span>(<span 
+class="cmmi-12">n, </span><span 
+class="msbm-10x-x-120">ℂ</span>). On voit que
+       <span 
+class="cmmi-12">Der</span><span 
+class="cmsy-10x-x-120">A </span>=  <span 
+class="cmmi-12">Lie</span>(<span 
+class="cmmi-12">SL</span>(<span 
+class="cmmi-12">n, </span><span 
+class="msbm-10x-x-120">ℂ</span>)). Les éléments de Ω<sub><span 
+class="cmmi-8">Der</span></sub><sup><span 
+class="cmmi-8">n</span></sup><span 
+class="cmsy-10x-x-120">A </span>sont donc les <span 
+class="cmmi-12">n</span>
+       formes (antisymétriques) sur <span 
+class="cmmi-12">Lie</span>(<span 
+class="cmmi-12">SL</span>(<span 
+class="cmmi-12">n, </span><span 
+class="msbm-10x-x-120">ℂ</span>) à valeurs dans l&#x2019;algèbre <span 
+class="cmsy-10x-x-120">A</span>
+       elle-même, c&#x2019;est à dire dans <span 
+class="cmmi-12">M</span>(<span 
+class="cmmi-12">n, </span><span 
+class="msbm-10x-x-120">ℂ</span>). On peut finalement écrire
+       <div class="math-display">
+       <img 
+src="source904x.png" alt="Ω    M (n, ℂ) = M  (n, ℂ) ⊗ ∧ (Lie (SL (n,ℂ )))∗
+  Der
+       " class="math-display"  /></div>
+       </li>
+       <li class="itemize">Cas  des  matrices  à  éléments  fonctions  sur  une  variété.  On  prend
+       <span 
+class="cmsy-10x-x-120">A </span>= <span 
+class="cmmi-12">M</span>(<span 
+class="cmmi-12">n, </span><span 
+class="msbm-10x-x-120">ℂ</span>) <span 
+class="cmsy-10x-x-120">⊗ </span><span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M</span>). Nous ne détaillerons pas cet exemple (voir
+       <span class="cite">[<a 
+href="sourceli4.html#XMDV-cras">6</a>]</span>). Le résultat est assez intuitif et s&#x2019;obtient à partir des deux cas
+       précédents<span class="frenchb-nbsp"> </span>: <span 
+class="cmmi-12">Der</span><span 
+class="cmsy-10x-x-120">A </span>= <span 
+class="cmmi-12">Der</span>(<span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M</span>)) <span 
+class="cmsy-10x-x-120">⊗</span> 1 l <span 
+class="cmsy-10x-x-120">⊕ </span><span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M</span>) <span 
+class="cmsy-10x-x-120">⊗ </span><span 
+class="cmmi-12">Der</span>(<span 
+class="cmmi-12">M</span>(<span 
+class="cmmi-12">n, </span><span 
+class="msbm-10x-x-120">ℂ</span>))
+       et Ω<sub><span 
+class="cmmi-8">Der</span></sub>(<span 
+class="cmmi-12">M</span>(<span 
+class="cmmi-12">n, </span><span 
+class="msbm-10x-x-120">ℂ</span>) <span 
+class="cmsy-10x-x-120">⊗ </span><span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M</span>)) = Λ(<span 
+class="cmmi-12">M</span>) <span 
+class="cmsy-10x-x-120">⊗ </span>Ω<sub>
+<span 
+class="cmmi-8">Der</span></sub><span 
+class="cmmi-12">M</span>(<span 
+class="cmmi-12">n, </span><span 
+class="msbm-10x-x-120">ℂ</span>). Cet exemple
+       a  été  utilisé  pour  la  construction  de  certains  modèles  physiques
+       généralisant les théories de jauges usuelles (voir <span class="cite">[<a 
+href="sourceli4.html#XMDVKernerMadore">10</a>]</span>)
+       </li></ul>
+<!--l. 768--><p class="noindent" >Remarque<span class="frenchb-nbsp"> </span>: il existe des algèbres très simples qui n&#x2019;admettent pas de
+dérivations…par exemple l&#x2019;algèbre des nombres complexes<span class="frenchb-thinspace"> </span>! Dans ce cas, la
+construction qu&#x2019;on vient d&#x2019;exposer ne donne rien (bien que l&#x2019;algèbre des formes
+universelles soit néanmoins non triviale).
+</p><!--l. 775--><p class="noindent" >
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">6.2.4   </span> <a 
+ id="x16-2580006.2.4"></a>Algèbres différentielles pour espaces non connexes</h4>
+<a 
+ id="dx16-258001"></a>
+<!--l. 777--><p class="noindent" >Soient <span 
+class="cmsy-10x-x-120">A </span>et <span 
+class="cmsy-10x-x-120">ℬ </span>deux algèbres associatives (commutatives ou non). Il est
+certain que l&#x2019;algèbre des formes universelles pour l&#x2019;algèbre <span 
+class="cmsy-10x-x-120">A⊗ℬ </span>n&#x2019;est pas
+isomorphe au produit tensoriel gradué des algèbres universelles de <span 
+class="cmsy-10x-x-120">A </span>et <span 
+class="cmsy-10x-x-120">ℬ</span>
+séparément.
+                                                                          
+
+                                                                          
+</p>
+   <div class="math-display">
+<img 
+src="source905x.png" alt="Ω (A ⊗ ℬ ) ⁄= ΩA  ⊗ Ωℬ " class="math-display"  /></div> En
+effet, par exemple, Ω<sup><span 
+class="cmr-8">1</span></sup>(<span 
+class="cmsy-10x-x-120">A⊗ℬ</span>) <span 
+class="cmsy-10x-x-120">⊂A⊗ℬ⊗A⊗ℬ </span>alors que
+   <div class="math-display">
+<img 
+src="source906x.png" alt="(Ω A ⊗ Ω ℬ )1 = Ω0 A ⊗ Ω1 ℬ ⊕ Ω1 A ⊗ Ω0 ℬ ⊂  A ⊗ ℬ ⊗  ℬ ⊕ A ⊗  A ⊗ ℬ " class="math-display"  /></div>
+Cependant, Ω(<span 
+class="cmsy-10x-x-120">A⊗ℬ</span>) et Ω<span 
+class="cmsy-10x-x-120">A⊗ </span>Ω<span 
+class="cmsy-10x-x-120">ℬ </span>sont toutes deux des algèbres différentielles
+<span 
+class="msbm-10x-x-120">ℤ</span>-graduées dont le terme de degré zéro coïncide avec <span 
+class="cmsy-10x-x-120">A⊗ℬ</span>. La première étant
+universelle, il existe donc un morphisme surjectif de la première sur la
+seconde.
+<!--l. 803--><p class="indent" >   Supposons maintenant que qu&#x2019;on s&#x2019;intéresse à une variété non connexe
+obtenue comme réunion (disjointe) de plusieurs copies (deux pour simplifier)
+d&#x2019;une même variété connexe <span 
+class="cmmi-12">M</span>. On se retrouve donc dans la situation précédente
+avec <span 
+class="cmsy-10x-x-120">A </span>= <span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M</span>) et <span 
+class="cmsy-10x-x-120">ℬ </span>= <span 
+class="msbm-10x-x-120">ℂ </span><span 
+class="cmsy-10x-x-120">⊕ </span><span 
+class="msbm-10x-x-120">ℂ</span>. En effet <span 
+class="cmsy-10x-x-120">A⊗ℬ </span>= <span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M</span>) <span 
+class="cmsy-10x-x-120">⊕ </span><span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M</span>)<span 
+class="cmmi-12">. </span>L&#x2019;algèbre
+différentielle Ω(<span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M</span>)) <span 
+class="cmsy-10x-x-120">⊗ </span>Ω(<span 
+class="msbm-10x-x-120">ℂ </span><span 
+class="cmsy-10x-x-120">⊕ </span><span 
+class="msbm-10x-x-120">ℂ</span>) est encore peu commode à utiliser (on se
+souvient que les éléments de Ω(<span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M</span>)) sont des fonctions de plusieurs variables
+qui s&#x2019;annulent lorsque deux arguments successifs sont égaux). Par contre, rien
+ne nous interdit de remplacer cette dernière par l&#x2019;algèbres des formes
+différentielles usuelles Λ<span 
+class="cmmi-12">M</span>. On obtient ainsi le diagramme suivant, où
+chaque flèche désigne un morphisme surjectif d&#x2019;algèbres différentielles
+graduées<span class="frenchb-nbsp"> </span>:
+                                                                          
+
+                                                                          
+</p>
+   <div class="math-display">
+<img 
+src="source907x.png" alt="Ω (C∞ (M ) ⊕ C ∞(M  )) ↦→ Ω (C ∞ (M )) ⊗ Ω(ℂ ⊕  ℂ) ↦→  ΛM  ⊗  Ω(ℂ ⊕ ℂ )
+" class="math-display"  /></div>
+<!--l. 822--><p class="indent" >   L&#x2019;algèbre
+</p>
+   <div class="math-display">
+<img 
+src="source908x.png" alt="Ξ = ΛM   ⊗ Ω (ℂ  ⊕ ℂ)  " class="math-display"  /></div>
+produit tensoriel gradué du complexe de De Rham usuel par l&#x2019;algèbre des
+formes universelles sur l&#x2019;espace à deux points <span 
+class="msbm-10x-x-120">ℂ </span><span 
+class="cmsy-10x-x-120">⊕ </span><span 
+class="msbm-10x-x-120">ℂ</span>, constitue une algèbre
+différentielle intéressante à plus d&#x2019;un titre et très facile à utiliser. Elle
+a été étudiée dans <span class="cite">[<a 
+href="sourceli4.html#XCHS">12</a>]</span> et utilisée auparavant dans <span class="cite">[<a 
+href="sourceli4.html#XCEV">11</a>]</span>. Sa structure
+s&#x2019;obtient immédiatement à partir de notre étude de Ω(<span 
+class="msbm-10x-x-120">ℂ </span><span 
+class="cmsy-10x-x-120">⊕ </span><span 
+class="msbm-10x-x-120">ℂ</span>). On se
+souvient que Ω<sup><span 
+class="cmmi-8">p</span></sup>(<span 
+class="msbm-10x-x-120">ℂ </span><span 
+class="cmsy-10x-x-120">⊕ </span><span 
+class="msbm-10x-x-120">ℂ</span>) est toujours de dimension 2 et représentable, soit
+à l&#x2019;aide de matrices 2 <span 
+class="cmsy-10x-x-120">× </span>2 diagonales (lorsque <span 
+class="cmmi-12">p </span>est pair) soit à l&#x2019;aide
+de matrices 2 <span 
+class="cmsy-10x-x-120">× </span>2 hors diagonales (lorsque <span 
+class="cmmi-12">p </span>est impair). Les éléments
+de
+   <div class="math-display">
+<img 
+src="source909x.png" alt="      ∑n
+Ξn =      ΛpM  ⊗ Ωn −p(ℂ ⊕ ℂ )
+      p=0  " class="math-display"  /></div>
+peuvent donc s&#x2019;écrire à l&#x2019;aide de matrices 2 <span 
+class="cmsy-10x-x-120">× </span>2 dont les éléments sont des formes
+différentielles usuelles sur la variété <span 
+class="cmmi-12">M </span>(de degré <span 
+class="cmmi-12">p </span>variant de 0 à <span 
+class="cmmi-12">n</span>) et
+                                                                          
+
+                                                                          
+positionnées soit sur la diagonale (quand <span 
+class="cmmi-12">p </span>est pair) soit en dehors de la diagonale
+(lorsque <span 
+class="cmmi-12">p </span>est impair). Le produit dans Ξ s&#x2019;obtient immédiatement à
+partir du produit extérieur dans Λ<span 
+class="cmmi-12">M </span>et du produit déjà étudié dans
+Ω(<span 
+class="msbm-10x-x-120">ℂ </span><span 
+class="cmsy-10x-x-120">⊕ </span><span 
+class="msbm-10x-x-120">ℂ</span>).
+   <div class="math-display">
+<img 
+src="source910x.png" alt="(ρ ⊗ α)(σ ⊗ β) = (− 1)|α||σ|(ρ ∧ σ ) ⊗ (α β)  " class="math-display"  /></div> On
+peut finalement encore généraliser la construction précédente en remplaçant
+l&#x2019;algèbre des formes différentielles sur la variété <span 
+class="cmmi-12">M </span>par l&#x2019;algèbre des formes
+différentielles sur <span 
+class="cmmi-12">M </span>à valeurs dans l&#x2019;algèbre (associative) des matrices <span 
+class="cmmi-12">n </span><span 
+class="cmsy-10x-x-120">× </span><span 
+class="cmmi-12">n</span>
+complexes.
+<!--l. 850--><p class="indent" >   On pourrait ici continuer notre exemple des connexions sur <span 
+class="msbm-10x-x-120">ℂ </span><span 
+class="cmsy-10x-x-120">⊕ </span><span 
+class="msbm-10x-x-120">ℂ</span>, en
+choisissant cette fois-ci pour forme de connexion un élement quelconque de Ξ<sup><span 
+class="cmr-8">1</span></sup>. La
+norme carré de la courbure s&#x2019;interprète alors physiquement comme le lagrangien
+d&#x2019;un modèle de jauge <span 
+class="cmmi-12">U</span>(1) <span 
+class="cmsy-10x-x-120">× </span><span 
+class="cmmi-12">U</span>(1), avec potentiel de Higgs <a 
+ id="dx16-258002"></a>et symmétrie brisée.
+Un des deux champs de jauge devient massif (le boson <span 
+class="cmmi-12">Z</span><sub><span 
+class="cmr-8">0</span></sub>) et l&#x2019;autre reste sans
+masse (le photon).
+</p><!--l. 858--><p class="noindent" >
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">6.2.5   </span> <a 
+ id="x16-2590006.2.5"></a>L&#x2019;algèbre différentielle Ω<sub><span 
+class="cmmi-8">D</span></sub><span 
+class="cmsy-10x-x-120">A</span></h4>
+<a 
+ id="dx16-259001"></a>
+<!--l. 861--><p class="noindent" >La construction qui suit est un peu plus élaborée que les précédentes, en ce sens
+qu&#x2019;elle utilise un plus grand nombre d&#x2019;ingrédients. On a vu que la construction de
+l&#x2019;algèbre des formes différentielle universelle Ω(<span 
+class="cmsy-10x-x-120">A</span>) était possible, pour une algèbre
+associative quelconque <span 
+class="cmsy-10x-x-120">A</span>. L&#x2019;algèbre différentielle Ω<sub><span 
+class="cmmi-8">Der</span></sub>(<span 
+class="cmsy-10x-x-120">A</span>), quant à elle, fait jouer
+un rôle particulier aux dérivations de <span 
+class="cmsy-10x-x-120">A </span>(pour autand qu&#x2019;elles existent). L&#x2019;algèbre
+différentielle que nous allons présenter maintenant, et dont la construction est due
+à A. Connes, repose sur la donnée d&#x2019;un “triplet spectral”, donnée qui englobe,
+non seulement l&#x2019;algèbre associative <span 
+class="cmsy-10x-x-120">A </span>elle-même, mais également d&#x2019;autres
+données qui peuvent être considérées comme le codage d&#x2019;une structure
+riemannienne non commutative. Certains rappels et/ou constructions annexes
+sont nécessaires.
+                                                                          
+
+                                                                          
+</p><!--l. 876--><p class="indent" >   Dans l&#x2019;approche traditionnelle de la géométrie différentielle, on commence par
+se donner un espace <span 
+class="cmmi-12">M </span>(on peut alors parler de l&#x2019;algèbre des fonctions sur <span 
+class="cmmi-12">M</span>), on
+le munit tout d&#x2019;abord d&#x2019;une topologie (on peut alors parler de l&#x2019;algèbre <span 
+class="cmmi-12">C</span><sup><span 
+class="cmr-8">0</span></sup>(<span 
+class="cmmi-12">M</span>)
+des fonctions continues sur <span 
+class="cmmi-12">M</span>), puis d&#x2019;une structure différentiable (ce qui revient
+à choisir une sous-algèbre particulière <span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M</span>) incluse dans dans <span 
+class="cmmi-12">C</span><sup><span 
+class="cmr-8">0</span></sup>(<span 
+class="cmmi-12">M</span>)), puis
+d&#x2019;une structure riemannienne (choix d&#x2019;une métrique), puis d&#x2019;une structure
+spinorielle (si la variété le permet), on construit alors le fibré des spineurs, puis
+l&#x2019;opérateur de Dirac relatif à la métrique choisie et agissant sur les champs
+de spineurs (sections du fibré des spineurs). Dans le cas d&#x2019;une variété
+compacte et d&#x2019;une métrique proprement riemannienne, on peut alors
+fabriquer un produit scalaire global et un espace de spineurs (l&#x2019;espace <span 
+class="cmmi-12">L</span><sup><span 
+class="cmr-8">2</span></sup> des
+champs de spineurs de carré intégrable). Dans le cas où la variété est de
+dimension paire, on peut également décomposer cet espace de Hilbert en
+deux sous-espaces supplémentaires correspondant à des demi-spineurs
+de chiralités opposées, l&#x2019;opérateur de Dirac allant d&#x2019;un sous-espace à
+l&#x2019;autre (on rappelle que cet opérateur anti-commute avec l&#x2019;opérateur de
+chiralité).
+</p><!--l. 897--><p class="indent" >   Tout ceci est maintenant bien connu du lecteur (voir chapitres précédents).
+L&#x2019;approche “à la A. Connes” <span class="cite">[<a 
+href="sourceli4.html#XACbook">3</a>]</span> de la géométrie non commutative consiste
+à “renverser la vapeur” en écrivant tout ceci à l&#x2019;envers, et sous forme
+algébrique (en utilisant des algèbres commutatives), puis de promouvoir
+l&#x2019;essentiel de ces transcriptions au rang de définitions, en effaçant l&#x2019;adjectif
+“commutatif”.
+</p><!--l. 904--><p class="indent" >   La théorie se divise alors en deux<span class="frenchb-nbsp"> </span>: il existe un cas dit “pair” et un cas dit
+“impair”. Nous allons simplement ébaucher la discussion du cas pair, cas qui
+généralise au cas non commutatif la géométrie associée à la donnée d&#x2019;un
+opérateur de Dirac sur une variété de dimension paire. On se donne un
+triplet (<span 
+class="cmsy-10x-x-120">A</span><span 
+class="cmmi-12">,</span><span 
+class="cmsy-10x-x-120">ℋ</span><span 
+class="cmmi-12">,D</span>) possédant les propriétés suivantes<span class="frenchb-nbsp"> </span>: <span 
+class="cmsy-10x-x-120">ℋ </span>est un espace de
+Hilbert <span 
+class="msbm-10x-x-120">ℤ</span><sub><span 
+class="cmr-8">2</span></sub> gradué (l&#x2019;opérateur de graduation est alors appelé opérateur de
+chiralité), <span 
+class="cmsy-10x-x-120">A </span>est une algèbre associative munie d&#x2019;une involution (<span 
+class="cmsy-10x-x-120">∗</span>) et
+représentée fidèlement dans <span 
+class="cmsy-10x-x-120">ℋ</span>à l&#x2019;aide d&#x2019;opérateurs bornés pairs, et <span 
+class="cmmi-12">D </span>est
+un opérateur auto-adjoint tel que les commutateurs [<span 
+class="cmmi-12">D,a</span>]<span 
+class="cmmi-12">,a </span><span 
+class="cmsy-10x-x-120">∈A </span>soient
+bornés<span class="frenchb-thinspace"> </span>; on impose également à la résolvente (<span 
+class="cmmi-12">D </span>+ <span 
+class="cmmi-12">i</span>)<sup><span 
+class="cmsy-8">−</span><span 
+class="cmr-8">1</span></sup> d&#x2019;être un opérateur
+compact.
+</p><!--l. 919--><p class="indent" >   Un tel triplet est appelé <span 
+class="cmsl-12">triplet spectral</span> <a 
+ id="dx16-259002"></a>mais on pourrait peut-être, de façon
+plus imagée, le désigner sous le nom d&#x2019;<span 
+class="cmsl-12">espace riemannien quantique</span><a 
+ id="dx16-259003"></a>. Dans le cas
+de la géométrie commutative, <span 
+class="cmsy-10x-x-120">A </span>coïnciderait avec la complexifiée de l&#x2019;algèbre
+<span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M</span>), <span 
+class="cmsy-10x-x-120">ℋ </span>avec l&#x2019;espace de Hilbert <span 
+class="cmmi-12">L</span><sup><span 
+class="cmr-8">2</span></sup>(<span 
+class="cmsy-10x-x-120">S</span>) des champs de spineurs de carré
+intégrable, et <span 
+class="cmmi-12">D </span>avec l&#x2019;opérateur de Dirac lui-même.
+</p><!--l. 929--><p class="indent" >   Dans le cas classique (commutatif), si on n&#x2019;impose pas de propriété
+de compacité pour la résolvente de <span 
+class="cmmi-12">D</span>, l&#x2019;algèbre <span 
+class="cmsy-10x-x-120">A </span>(qui est telle que les
+                                                                          
+
+                                                                          
+commutateurs de ses éléments avec <span 
+class="cmmi-12">D </span>soient bornés) n&#x2019;est autre que l&#x2019;algèbre des
+fonctions Lipschitziennes sur <span 
+class="cmmi-12">M</span>, c&#x2019;est à dire celle dont les éléments sont tels que
+<span 
+class="cmsy-10x-x-120">|</span><span 
+class="cmmi-12">f</span>(<span 
+class="cmmi-12">x</span>) <span 
+class="cmsy-10x-x-120">− </span><span 
+class="cmmi-12">f</span>(<span 
+class="cmmi-12">y</span>)<span 
+class="cmsy-10x-x-120">|≤ </span><span 
+class="cmmi-12">c</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">d</span>(<span 
+class="cmmi-12">x,y</span>)<span 
+class="cmmi-12">,</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmsy-10x-x-120">∀</span><span 
+class="cmmi-12">x,y </span><span 
+class="cmsy-10x-x-120">∈ </span><span 
+class="cmmi-12">M</span>.
+</p><!--l. 936--><p class="indent" >   Dans ce cadre commutatif, il se trouve qu&#x2019;il est en fait possible de retrouver la
+distance riemannienne <span 
+class="cmmi-12">d</span>(<span 
+class="cmmi-12">x,y</span>) entre deux points quelconques <span 
+class="cmmi-12">x </span>et <span 
+class="cmmi-12">y </span>de <span 
+class="cmmi-12">M </span>à partir
+de ces données. En effet, on montre que
+</p>
+   <div class="math-display">
+<img 
+src="source911x.png" alt="d (x, y) = Sup {|f (x) − f(y)|,f ∈ A, |[D, f]| ≤ 1} " class="math-display"  /></div> Le
+concept de distance, qu&#x2019;on relie d&#x2019;habitude à un procédé de minimisation entre
+différents points est alors obtenu grâce à un procédé de maximisation pour les
+fonctions définies sur ces points.
+<!--l. 948--><p class="indent" >   Nous avons maintenant tout ce qu&#x2019;il nous faut pour construire l&#x2019;algèbre
+différentielle Ω<sub><span 
+class="cmmi-8">D</span></sub>(<span 
+class="cmsy-10x-x-120">A</span>). Nous savons déjà construire l&#x2019;algèbre des formes universelles
+Ω(<span 
+class="cmsy-10x-x-120">A</span>). Soit <span 
+class="cmmi-12">ω </span>= <span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span 
+class="cmmi-12">δa</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">δa</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-12">…</span><span 
+class="cmmi-12">δa</span><sub><span 
+class="cmmi-8">n</span></sub>, une <span 
+class="cmmi-12">n</span>-forme universelle (un élément de Ω<sup><span 
+class="cmmi-8">n</span></sup>(<span 
+class="cmsy-10x-x-120">A</span>)).
+Nous lui associons l&#x2019;opérateur borné
+</p>
+   <div class="math-display">
+<img 
+src="source912x.png" alt="|-------------------------------|
+π-[ω-] =-a0[D,-a1][D,-a2]...[D,-an]  " class="math-display"  /></div> Il
+est facile de vérifier que cette application est une représentation de l&#x2019;algèbre Ω(<span 
+class="cmsy-10x-x-120">A</span>)
+dans l&#x2019;algèbre des opérateurs bornés sur l&#x2019;espace de Hilbert <span 
+class="cmsy-10x-x-120">ℋ </span>(on se
+souvient que <span 
+class="cmsy-10x-x-120">A </span>est, par hypothèse, représenté dans <span 
+class="cmsy-10x-x-120">ℋ</span>). Ceci vient du
+fait que la dérivation d&#x2019;algébre <span 
+class="cmmi-12">d </span>est représentée par l&#x2019;opération [<span 
+class="cmmi-12">D,</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">.</span><span style="margin-left:0.3em" class="thinspace"></span>]
+qui est elle-même une dérivation. La première est de carré nul, mais ce
+n&#x2019;est malheureusement pas le cas de la seconde. En d&#x2019;autres termes, la
+                                                                          
+
+                                                                          
+représentation <span 
+class="cmmi-12">π </span>n&#x2019;est pas une représentation d&#x2019;algèbre <span 
+class="cmti-12">diff</span><span 
+class="cmti-12">érentielle</span>. Il est
+cependant facile de remédier à cela. Soit <span 
+class="cmmi-12">K </span>le noyau de <span 
+class="cmmi-12">π</span><span class="frenchb-thinspace"> </span>; c&#x2019;est un idéal
+de Ω(<span 
+class="cmsy-10x-x-120">A</span>), puisque <span 
+class="cmmi-12">π </span>est une représentation d&#x2019;algèbre. Mais <span 
+class="cmmi-12">K </span>n&#x2019;est pas
+en général un idéal différentiel<span class="frenchb-nbsp"> </span>: <span 
+class="cmmi-12">δK </span>n&#x2019;est pas dans <span 
+class="cmmi-12">K</span>. On pose alors
+<span 
+class="cmmi-12">J </span>= <span 
+class="cmmi-12">K </span><span 
+class="cmsy-10x-x-120">⊕ </span><span 
+class="cmmi-12">δK</span>. Par construction <span 
+class="cmmi-12">J </span>est alors un idéal différentiel. On pose
+alors
+   <div class="math-display">
+<img 
+src="source913x.png" alt="ΩD (A ) = Ω (A )∕J  " class="math-display"  /></div> Par
+construction, l&#x2019;algèbre obtenue Ω<sub><span 
+class="cmmi-8">D</span></sub>(<span 
+class="cmsy-10x-x-120">A</span>) est bien une algèbre différentielle. On peut
+finalement la regraduer en considérant les intersections de <span 
+class="cmmi-12">Ker</span>(<span 
+class="cmmi-12">π</span>) avec l&#x2019;algèbre
+universelle. La construction est donc achevée et on démontre que, dans le cas
+classique (où <span 
+class="cmsy-10x-x-120">A </span>= <span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M</span>)), l&#x2019;algèbre différentielle <span 
+class="msbm-10x-x-120">ℤ</span>-graduée Ω<sub>
+<span 
+class="cmmi-8">D</span></sub>(<span 
+class="cmsy-10x-x-120">A</span>) obtenue est
+isomorphe au complexe de De Rham Λ(<span 
+class="cmmi-12">M</span>), c&#x2019;est à dire à l&#x2019;algèbre des formes
+différentielles usuelles.
+<!--l. 983--><p class="indent" >   Nous n&#x2019;irons pas plus avant dans cette direction. Le lecteur interessé pourra
+consulter une litérature plus spécialisée. Cela dit, il est peut-être important de
+signaler ici que les constructions mathématiques présentées dans cette section —
+et même dans le présent chapitre — sont souvent récentes, ce qui signifie
+que les définitions et constructions proposées n&#x2019;ont peut être pas encore
+suffisemment bénéficié du mûrissement nécessaire. Cela ne signifie pas qu&#x2019;elles
+sont erronées mais elles n&#x2019;ont peut être pas atteint le même degré de
+stabilité temporelle que les autres concepts présentés auparavant dans cet
+ouvrage.
+</p><!--l. 994--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">6.3   </span> <a 
+ id="x16-2600006.3"></a>Excursion au pays des mathématiques non commutatives</h3>
+<!--l. 996--><p class="noindent" >
+</p>
+                                                                          
+
+                                                                          
+   <h4 class="subsectionHead"><span class="titlemark">6.3.1   </span> <a 
+ id="x16-2610006.3.1"></a>Remarques et présentation générale</h4>
+<!--l. 997--><p class="noindent" >En vertu de la dualité existant entre un espace <span 
+class="cmmi-12">M </span>et l&#x2019;algèbre commutative <span 
+class="cmmi-12">C</span>(<span 
+class="cmmi-12">M</span>)
+des fonctions sur cet espace (la correspondance précise a été donnée plus haut),
+on peut essayer de re-écrire toutes les mathématiques traitant des propriétés des
+“espaces” dans le langage purement algébrique de la théorie des algèbres
+commutatives. On peut essayer, également, de re-exprimer tous ces concepts
+d&#x2019;une façon qui ne fasse pas explicitement appel à la commutativité de l&#x2019;algèbre.
+Bien entendu, ce n&#x2019;est pas toujours possible, mais, lorsque c&#x2019;est le cas, on
+peut alors effacer l&#x2019;adjectif “commutatif” et promouvoir le concept en
+question au niveau (par exemple) d&#x2019;une définition, valable pour les algèbres
+non commutatives, en général. D&#x2019;une certaine façon, on pourrait voir les
+<span 
+class="cmsl-12">math</span><span 
+class="cmsl-12">ématiques non commutatives </span>simplement comme une étude des algèbres
+associatives non commutatives. Un tel point de vue ne correspondrait cependant
+pas à la démarche psychologique adoptée<span class="frenchb-nbsp"> </span>: c&#x2019;est en effet la géométrie ordinaire —
+plus précisemment la notion de point — qui est souvent choisie comme support de
+notre intuition<span class="frenchb-thinspace"> </span>; les thèmes qui intéressent la <span 
+class="cmsl-12">g</span><span 
+class="cmsl-12">éom</span><span 
+class="cmsl-12">étrie non commutative </span>sont
+précisemment les propriétés des algèbres non commutatives qui généralisent les
+propriétés des espaces “ordinaires”, même si les points n&#x2019;existent plus.
+De cette façon, on peut alors construire une théorie de la mesure non
+commutative, une topologie non commutative, un calcul différentiel pour
+les algèbres non commutatives (voir <span 
+class="cmti-12">supra</span>), une théorie des connexions,
+des espaces fibrés (non commutatifs) et même une généralisation de la
+théorie des groupes (la théorie des <span 
+class="cmsl-12">groupes quantiques</span>). Notre propos
+n&#x2019;est pas ici de détailler et d&#x2019;étudier toutes ces théories, mais simplement
+d&#x2019;illustrer les considérations qui précèdent et d&#x2019;effectuer un tour rapide
+de ce zoo non commutatif, en espérant que le lecteur aura plaisir à y
+retourner en consultant la littérature spécialisée. L&#x2019;ouvrage présent étant
+essentiellement dédié à l&#x2019;étude de certains aspects de la géométrie différentielle,
+nous avons décidé de consacrer néanmoins la section précédente à une
+étude un peu plus détaillée des notions relatives aux calculs différentiels
+non commutatifs. Pour le reste, notre étude ne sera guère plus qu&#x2019;une
+ébauche.
+</p><!--l. 1034--><p class="noindent" >
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">6.3.2   </span> <a 
+ id="x16-2620006.3.2"></a>Topologie non commutative et théorie de la mesure non commutative</h4>
+<!--l. 1036--><p class="noindent" >Nous avons déjà parlé de la transformation de Gelfand établissant une
+correspondance entre espaces topologiques compacts et <span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∗</span></sup>-algèbres commutatives
+unitales (l&#x2019;existence d&#x2019;une unité est liée à l&#x2019;hypothèse de compacité). On voit
+                                                                          
+
+                                                                          
+donc, en enlevant l&#x2019;adjectif “commutatif” que la topologie non commutative n&#x2019;est
+autre que l&#x2019;étude des <span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∗</span></sup>-algèbres non commutatives.
+</p><!--l. 1042--><p class="indent" >   Passons à la théorie de la mesure. Classiquement, au lieu de démarrer avec un
+espace topologique <span 
+class="cmmi-12">M</span>, on peut partir de l&#x2019;algèbre <span 
+class="cmmi-12">C</span>(<span 
+class="cmmi-12">M</span>) des fonctions continues
+sur <span 
+class="cmmi-12">M </span>et définir les mesures <a 
+ id="dx16-262001"></a>(positives) comme les formes linéaires continues
+(positives) sur l&#x2019;algèbre <span 
+class="cmmi-12">C</span>(<span 
+class="cmmi-12">M</span>), c&#x2019;est à dire comme des fonctionnelles <span 
+class="cmmi-12">μ </span>telles que
+<span 
+class="cmmi-12">μ</span>[<span class="overline"><span 
+class="cmmi-12">f</span></span><span 
+class="cmmi-12">f</span>] <span 
+class="cmsy-10x-x-120">≥ </span>0<span 
+class="cmmi-12">,</span><span 
+class="cmsy-10x-x-120">∀</span><span 
+class="cmmi-12">f </span><span 
+class="cmsy-10x-x-120">∈ </span><span 
+class="cmmi-12">C</span>(<span 
+class="cmmi-12">M</span>). La correspondance avec la notion élémentaire de mesure
+se fait grâce au théorème de Riesz, c&#x2019;est à dire en écrivant <span 
+class="cmmi-12">μ</span>[<span 
+class="cmmi-12">f</span>] = <span 
+class="cmex-10x-x-120">∫</span>
+  <sub><span 
+class="cmmi-8">X</span></sub><span 
+class="cmmi-12">f</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">dμ</span>. A
+partir de <span 
+class="cmmi-12">C</span>(<span 
+class="cmmi-12">M</span>), nous définissons les mesures<span class="frenchb-thinspace"> </span>; pour une mesure <span 
+class="cmmi-12">μ </span>donnéee, nous
+pouvons fabriquer l&#x2019;espace de Hilbert <span 
+class="cmsy-10x-x-120">ℋ </span>= <span 
+class="cmmi-12">L</span><sup><span 
+class="cmr-8">2</span></sup>(<span 
+class="cmmi-12">M,μ</span>) des fonctions de carré
+intégrable pour cette mesure. <span 
+class="cmmi-12">C</span>(<span 
+class="cmmi-12">M</span>) agit dans cet espace de Hilbert <span 
+class="cmsy-10x-x-120">ℋ </span>par
+multiplication<span class="frenchb-nbsp"> </span>: nous avons une représentation <span 
+class="cmmi-12">π </span>définie par <span 
+class="cmmi-12">π</span>(<span 
+class="cmmi-12">f</span>)<span 
+class="cmmi-12">g </span>= <span 
+class="cmmi-12">fg</span>, avec
+<span 
+class="cmmi-12">f </span><span 
+class="cmsy-10x-x-120">∈ </span><span 
+class="cmmi-12">C</span>(<span 
+class="cmmi-12">M</span>) et <span 
+class="cmmi-12">g </span><span 
+class="cmsy-10x-x-120">∈ℋ</span>. A partir de <span 
+class="cmsy-10x-x-120">ℋ</span>, nous pouvons fabriquer l&#x2019;algèbre
+<span 
+class="cmmi-12">L</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M,μ</span>) des fonctions mesurables essentiellement bornées sur <span 
+class="cmmi-12">M</span>. Soit <span 
+class="cmsy-10x-x-120">ℒ</span>(<span 
+class="cmmi-12">H</span>)
+l&#x2019;algèbre des opérateurs bornés sur <span 
+class="cmsy-10x-x-120">ℋ</span>. Rappelons que l&#x2019;algèbre <span 
+class="cmmi-12">L</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M,μ</span>)
+peut être construite comme le commutant de l&#x2019;action <span 
+class="cmmi-12">π </span>de <span 
+class="cmmi-12">C</span>(<span 
+class="cmmi-12">M</span>) dans
+<span 
+class="cmsy-10x-x-120">ℒ</span>(<span 
+class="cmmi-12">H</span>)<span 
+class="cmmi-12">.</span>
+</p>
+   <div class="math-display">
+<img 
+src="source914x.png" alt="  ∞
+L   (M,  μ) = {T ∈  ℒ(H )t.q.T π(f) = π (f )T,∀f ∈  C(M  )} " class="math-display"  /></div> La
+mesure <span 
+class="cmmi-12">μ </span>peut alors être étendue à l&#x2019;algèbre <span 
+class="cmmi-12">L</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M,μ</span>) tout entière. Cette
+dernière algèbre possède la propriété remarquable d&#x2019;être égale à son propre
+commutant dans <span 
+class="cmsy-10x-x-120">ℒ</span>(<span 
+class="cmmi-12">H</span>) (cette propriété caractérise précisemment un
+type de sous-algèbres de <span 
+class="cmsy-10x-x-120">ℒ</span>(<span 
+class="cmmi-12">H</span>) qu&#x2019;on appelle <span 
+class="cmsl-12">alg</span><span 
+class="cmsl-12">èbres de Von Neumann</span>
+<a 
+ id="dx16-262002"></a>).
+<!--l. 1071--><p class="indent" >   Tout ce qu&#x2019;on vient de rappeler figure — peut être dans un ordre différent —
+dans un cours standard de théorie de la mesure. Le trait essentiel, dans la
+présentation qui précède est de ne pas faire intervenir les points de l&#x2019;espace <span 
+class="cmmi-12">M</span>.
+En recopiant tout ceci, mais en effaçant l&#x2019;adjectif “commutatif”, on peut alors
+<span 
+class="cmti-12">inventer </span>une version non commutative de la théorie de la mesure…Soit dit en
+passant, les physiciens théoriciens ont inventé la plupart de ces différents
+concepts, dans le cadre de la mécanique statistique quantique, bien avant qu&#x2019;ils
+aient été formalisés par des mathématiciens<span class="frenchb-thinspace"> </span>! Reprenons donc rapidement ce qui
+                                                                          
+
+                                                                          
+précède, en partant d&#x2019;une <span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∗</span></sup>-algèbre non commutative <span 
+class="cmsy-10x-x-120">A</span>, remplaçant la donnée
+de <span 
+class="cmmi-12">C</span>(<span 
+class="cmmi-12">M</span>). On définit les <span 
+class="cmsl-12">états</span>  <a 
+ id="dx16-262003"></a>(ce sont précisemment des mesures non
+commutatives) <a 
+ id="dx16-262004"></a>comme ci-dessus<span class="frenchb-nbsp"> </span>: un état <span 
+class="cmmi-12">μ </span>est une forme linéaire positive
+continue sur <span 
+class="cmsy-10x-x-120">A</span>, c&#x2019;est à dire <span 
+class="cmmi-12">μ </span><span 
+class="cmsy-10x-x-120">∈A</span><sup><span 
+class="cmsy-8">∗</span></sup> et <span 
+class="cmmi-12">μ</span>[<span class="overline"><span 
+class="cmmi-12">f</span></span><span 
+class="cmmi-12">f</span>] <span 
+class="cmsy-10x-x-120">≥ </span>0<span 
+class="cmmi-12">,</span><span 
+class="cmsy-10x-x-120">∀</span><span 
+class="cmmi-12">f </span><span 
+class="cmsy-10x-x-120">∈A</span>. On peut supposer <span 
+class="cmmi-12">μ</span>
+normé<span class="frenchb-nbsp"> </span>: <span 
+class="cmmi-12">μ</span>[1 l] = 1. On construit alors un espace de Hilbert <span 
+class="cmsy-10x-x-120">ℋ </span>en définissant tout
+d&#x2019;abord le produit scalaire (<span 
+class="cmmi-12">f,g</span>) = <span 
+class="cmmi-12">μ</span>[<span 
+class="cmmi-12">f</span><sup><span 
+class="cmsy-8">∗</span></sup><span 
+class="cmmi-12">g</span>] sur l&#x2019;espace <span 
+class="cmsy-10x-x-120">A </span>lui-même (on n&#x2019;a alors
+qu&#x2019;une structure pre-Hilbertienne) puis en fabriquant l&#x2019;espace de Hilbert
+correspondant (complété et séparé). Cette construction bien connue porte le
+nom — en mathématiques non commutatives — de <span 
+class="cmsl-12">construction GNS</span>
+(Gelfand-Naimark-Segal)<a 
+ id="dx16-262005"></a>. Comme dans le cas commutatif, <span 
+class="cmsy-10x-x-120">A </span>agit dans <span 
+class="cmsy-10x-x-120">ℋ </span>par
+multiplication, ce qui fournit une représentation <span 
+class="cmmi-12">π </span>de <span 
+class="cmsy-10x-x-120">A </span>dans l&#x2019;espace des
+opérateurs bornés <span 
+class="cmsy-10x-x-120">ℒ</span>(<span 
+class="cmmi-12">H</span>). On considère alors <span 
+class="cmsy-10x-x-120">ℳ</span>, le <span 
+class="cmti-12">bi </span>-commutant de <span 
+class="cmsy-10x-x-120">A </span>dans
+<span 
+class="cmsy-10x-x-120">ℒ</span>(<span 
+class="cmmi-12">H</span>). Ce bi-commutant est une algèbre de Von Neumann (il est égal à
+son propre bi-commutant)<span class="frenchb-thinspace"> </span>; c&#x2019;est donc l&#x2019;analogue non commutatif de
+<span 
+class="cmmi-12">L</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M,μ</span>). <span class="footnote-mark"><a 
+href="source17.html#fn1x7"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x16-262006f1"></a> 
+Rappel<span class="frenchb-nbsp"> </span>: lorsque <span 
+class="cmsy-10x-x-120">A </span>est une algèbre d&#x2019;opérateurs, <span 
+class="cmsy-10x-x-120">A</span>, <span 
+class="cmsy-10x-x-120">A′ </span>et <span 
+class="cmsy-10x-x-120">A</span><span 
+class="cmsy-10x-x-120">′′</span> sont d&#x2019;ordinaire
+différents, mais <span 
+class="cmsy-10x-x-120">A′ </span>= <span 
+class="cmsy-10x-x-120">A</span><span 
+class="cmsy-10x-x-120">′′′</span>. La dernière étape consiste à étendre la définition de
+l&#x2019;état <span 
+class="cmmi-12">μ </span>à l&#x2019;algèbre de Von Neumann <span 
+class="cmsy-10x-x-120">ℳ </span>tout entière (on a évidemment
+<span 
+class="cmsy-10x-x-120">A⊂ℳ</span>).
+</p><!--l. 1112--><p class="indent" >   La théorie que l&#x2019;on vient d&#x2019;ébaucher est à la base de très nombreux
+développements, aussi bien en mathématiques (théorie des facteurs), qu&#x2019;en
+physique (mécanique quantique statistique des systèmes avec nombre fini ou infini
+de degrés de liberté). Notre but, comme nous l&#x2019;avions anoncé plus haut, n&#x2019;était
+que d&#x2019;attirer l&#x2019;attention du lecteur sur le parallèle évident existant entre ces deux
+théories<span class="frenchb-nbsp"> </span>: théorie de la mesure (en fait mesures de Radon) et théorie des algèbres
+de Von Neumann<span class="frenchb-thinspace"> </span>; l&#x2019;un étant en quelque sorte la généralisation non commutative
+de l&#x2019;autre.
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">6.3.3   </span> <a 
+ id="x16-2630006.3.3"></a>Calcul différentiel non commutatif</h4>
+<!--l. 1124--><p class="noindent" >Comme on l&#x2019;a vu en <a 
+href="#x16-2450006.2">6.2<!--tex4ht:ref: sec: calcdiffnoncom --></a>, étant donné une algèbre associative <span 
+class="cmsy-10x-x-120">A</span>, on peut toujours
+fabriquer une algèbre différentielle <span 
+class="msbm-10x-x-120">ℤ</span>-graduée qui coïncide avec <span 
+class="cmsy-10x-x-120">A </span>en degré 0. Le
+choix d&#x2019;une telle algèbre différentielle n&#x2019;est pas, en général, unique<span class="frenchb-nbsp"> </span>: on dit qu&#x2019;on
+fait alors le choix d&#x2019;un calcul différentiel pour l&#x2019;algèbre <span 
+class="cmsy-10x-x-120">A</span>. On peut faire
+un choix qui soit plus “général” que les autres (formes différentielles
+                                                                          
+
+                                                                          
+universelles). Les différentes algèbres différentielles possibles (les autres
+calculs différentiels associables à une algèbre associative donnée) sont des
+quotients de l&#x2019;algèbre des formes universelles. Nous renvoyons le lecteur à
+la section précédente pour une analyse plus détaillée de ces différents
+choix.
+</p><!--l. 1136--><p class="noindent" >
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">6.3.4   </span> <a 
+ id="x16-2640006.3.4"></a>Espaces fibrés non commutatifs et modules projectifs</h4>
+<!--l. 1138--><p class="noindent" >En géométrie différentielle ordinaire, un espace fibré principal peut être considéré
+comme un outil servant à la fabrication de fibrés associés, de la même façon que
+les groupes eux-mêmes servent à fabriquer des représentations. En géométrie
+non commutative, on pourrait, bien sur, tenter de généraliser dans un
+premier temps la structure de groupe elle-même (c&#x2019;est la théorie des <span 
+class="cmsl-12">groupes</span>
+<span 
+class="cmsl-12">quantiques</span>), puis la structure de fibré principal, et enfin celle de fibré
+associé. Ces généralisations existent. Cependant la définition et l&#x2019;étude des
+groupes quantiques (ou <span 
+class="cmsl-12">alg</span><span 
+class="cmsl-12">èbres de Hopf </span>) nous entrainerait trop loin. Nous
+préférons donc suivre ici une approche plus directe, qui n&#x2019;utilise pas cette
+notion.
+</p><!--l. 1153--><p class="indent" >   Nous partons de la constatation suivante<span class="frenchb-nbsp"> </span>: en géométrie différentielle
+ordinaire, l&#x2019;ensemble Γ<span 
+class="cmmi-12">E </span>des sections d&#x2019;un fibré associé <span 
+class="cmmi-12">E </span>(les <span 
+class="cmti-12">champs de</span>
+<span 
+class="cmti-12">mati</span><span 
+class="cmti-12">ère </span>de la physique) constitue un module sur l&#x2019;algèbre <span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M</span>) des
+fonctions sur la base. Par exemple, si <span 
+class="cmmi-12">x </span><span 
+class="cmsy-10x-x-120">∈ </span><span 
+class="cmmi-12">M</span><img 
+src="source915x.png" alt="↦→"  class="mapsto"  /><span 
+class="cmmi-12">V </span>(<span 
+class="cmmi-12">x</span>) <span 
+class="cmsy-10x-x-120">∈ </span>Γ<span 
+class="cmmi-12">E </span>est un champ de
+tenseurs (ou de spineurs …), et si <span 
+class="cmmi-12">x </span><span 
+class="cmsy-10x-x-120">∈ </span><span 
+class="cmmi-12">M</span><img 
+src="source916x.png" alt="↦→"  class="mapsto"  /><span 
+class="cmmi-12">f</span>(<span 
+class="cmmi-12">x</span>) <span 
+class="cmsy-10x-x-120">∈ </span><span 
+class="msbm-10x-x-120">ℝ </span>(ou <span 
+class="msbm-10x-x-120">ℂ</span>) est une fonction,
+alors [<span 
+class="cmmi-12">fV </span>](<span 
+class="cmmi-12">x</span>) = <span 
+class="cmmi-12">f</span>(<span 
+class="cmmi-12">x</span>)<span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">V </span>(<span 
+class="cmmi-12">x</span>) est aussi un champ de tenseurs (ou de spineurs
+etc…).
+</p><!--l. 1162--><p class="indent" >   Ce n&#x2019;est pas la notion d&#x2019;espace fibré vectoriel associé que nous allons
+généraliser, mais celle de l&#x2019;ensemble de ses sections. Etant donné une
+algèbre associative <span 
+class="cmsy-10x-x-120">A</span>, possiblement non commutative, nous allons donc
+considérer tout module Γ sur <span 
+class="cmsy-10x-x-120">A </span>comme l&#x2019;analogue non commutatif d&#x2019;un fibré
+vectoriel associé. En fait, dans le cas commutatif, les modules obtenus
+par construction de fibré associé sont d&#x2019;un type un peu particulier. On
+dit qu&#x2019;ils sont projectifs de type fini (théorème de Serre-Swann). Sans
+rentrer dans les détails, cela signifie la chose suivante. L&#x2019;ensemble des
+sections d&#x2019;un fibré vectoriel trivial dont la fibre type est de dimension
+<span 
+class="cmmi-12">n </span>est manifestement isomorphe au module (<span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M</span>))<sup><span 
+class="cmmi-8">n</span></sup>. Lorsque le fibré
+n&#x2019;est pas trivial, il suffit de se placer dans un espace un peu plus grand
+(c&#x2019;est à dire de rajouter un certain nombre de dimensions à la fibre) pour
+le trivialiser. Le fibré de départ est alors obtenu comme <span 
+class="cmmi-12">p</span>(<span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M</span>))<sup><span 
+class="cmmi-8">n</span></sup>,
+                                                                          
+
+                                                                          
+<span 
+class="cmmi-12">p </span>désignant un projecteur (<span 
+class="cmmi-12">p</span><sup><span 
+class="cmr-8">2</span></sup> = <span 
+class="cmmi-12">p</span>) de l&#x2019;algèbre des matrices <span 
+class="cmmi-12">n </span><span 
+class="cmsy-10x-x-120">× </span><span 
+class="cmmi-12">n </span>sur
+<span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">M</span>).
+</p><!--l. 1180--><p class="indent" >   Dans le cadre non commutatif, on remplacera donc la notion d&#x2019;“espace des
+sections d&#x2019;un fibré vectoriel” (physiquement l&#x2019;espace des champs de matière d&#x2019;un
+certain type) par la notion de module projectif fini sur une algèbre associative <span 
+class="cmsy-10x-x-120">A</span>.
+L&#x2019;espace vectoriel <span 
+class="cmmi-12">p</span><span 
+class="cmsy-10x-x-120">A</span><sup><span 
+class="cmmi-8">n</span></sup>, <span 
+class="cmmi-12">p </span>désignant un projecteur, est manifestement un module
+(à droite) sur <span 
+class="cmsy-10x-x-120">A</span>.
+</p><!--l. 1187--><p class="indent" >   Si <span 
+class="cmsy-10x-x-120">A </span>n&#x2019;est pas commutative, il faut évidemment faire la distinction entre les
+modules à droite et les modules à gauche.
+</p><!--l. 1190--><p class="indent" >   Notons, pour finir, qu&#x2019;un cas intéressant de module sur <span 
+class="cmsy-10x-x-120">A </span>est celui où
+on choisit un module particulier égal à l&#x2019;algèbre elle-même opérant sur
+elle-même par multiplication (c&#x2019;est l&#x2019;analogue non commutatif d&#x2019;un fibré en
+droites).
+</p><!--l. 1195--><p class="noindent" >
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">6.3.5   </span> <a 
+ id="x16-2650006.3.5"></a>Connections généralisées en geometrie non commutative</h4>
+<!--l. 1197--><p class="noindent" >Soit Ξ un calcul différentiel sur une algèbre <span 
+class="cmsy-10x-x-120">A</span>, c&#x2019;est à dire une algèbre
+différentielle <span 
+class="msbm-10x-x-120">ℤ</span>-graduée, avec Ξ<sup><span 
+class="cmr-8">0</span></sup> = <span 
+class="cmsy-10x-x-120">A</span>. Soit <span 
+class="cmsy-10x-x-120">ℳ </span>un module à droite sur <span 
+class="cmsy-10x-x-120">A</span>. Une
+différentielle covariante <span 
+class="cmsy-10x-x-120">∇ </span>sur <span 
+class="cmsy-10x-x-120">ℳ </span>est une application <span 
+class="cmsy-10x-x-120">ℳ⊗</span><sub><span 
+class="cmsy-8">A</span></sub>Ξ<sup><span 
+class="cmmi-8">p</span></sup><img 
+src="source917x.png" alt="↦→"  class="mapsto"  /><span 
+class="cmsy-10x-x-120">ℳ⊗</span><sub>
+<span 
+class="cmsy-8">A</span></sub>Ξ<sup><span 
+class="cmmi-8">p</span><span 
+class="cmr-8">+1</span></sup> telle
+que
+</p>
+   <div class="math-display">
+<img 
+src="source918x.png" alt="|-----------------------------|
+-∇-(ψλ-) =-(∇-ψ-)λ +-(− 1)sψd-λ  " class="math-display"  /></div>
+lorsque <span 
+class="cmmi-12">ψ </span><span 
+class="cmsy-10x-x-120">∈ℳ⊗</span><sub><span 
+class="cmsy-8">A</span></sub>Ξ<sup><span 
+class="cmmi-8">s</span></sup> et <span 
+class="cmmi-12">λ </span><span 
+class="cmsy-10x-x-120">∈ </span>Ξ<sup><span 
+class="cmmi-8">t</span></sup>. L&#x2019;opérateur <span 
+class="cmsy-10x-x-120">∇ </span>n&#x2019;est certainement pas linéaire par
+rapport à l&#x2019;algèbre <span 
+class="cmsy-10x-x-120">A </span>mais il est facile de constater que la courbure <span 
+class="cmsy-10x-x-120">∇</span><sup><span 
+class="cmr-8">2</span></sup> est un
+opérateur linéaire par rapport à <span 
+class="cmsy-10x-x-120">A</span>.
+<!--l. 1217--><p class="indent" >   Dans le cas particulier où l&#x2019;on choisit le module <span 
+class="cmsy-10x-x-120">ℳ </span>comme l&#x2019;algèbre <span 
+class="cmsy-10x-x-120">A</span>
+elle-même, toute 1-forme Ξ (tout élément de Ξ<sup><span 
+class="cmr-8">1</span></sup>) permet de définir une
+différentielle covariante<span class="frenchb-nbsp"> </span>: on pose simplement
+                                                                          
+
+                                                                          
+</p>
+   <div class="math-display">
+<img 
+src="source919x.png" alt="∇1l-=-ω-|
+---------  " class="math-display"  /></div> où
+1l est l&#x2019;unité de l&#x2019;algèbre <span 
+class="cmsy-10x-x-120">A</span>. Lorsque <span 
+class="cmmi-12">f </span><span 
+class="cmsy-10x-x-120">∈A</span>, on obtient
+   <div class="math-display">
+<img 
+src="source920x.png" alt="∇f  = ∇ (1lf) = (∇1l)f + 1ldf = df + ωf  " class="math-display"  /></div> De
+plus, <span 
+class="cmsy-10x-x-120">∇</span><sup><span 
+class="cmr-8">2</span></sup><span 
+class="cmmi-12">f </span>= <span 
+class="cmsy-10x-x-120">∇</span>(<span 
+class="cmmi-12">df </span>+ <span 
+class="cmmi-12">ωf</span>) = <span 
+class="cmmi-12">d</span><sup><span 
+class="cmr-8">2</span></sup><span 
+class="cmmi-12">f </span>+ <span 
+class="cmmi-12">ωdf </span>+ (<span 
+class="cmsy-10x-x-120">∇</span><span 
+class="cmmi-12">ω</span>)<span 
+class="cmmi-12">f </span><span 
+class="cmsy-10x-x-120">−</span><span 
+class="cmmi-12">ωdf </span>= (<span 
+class="cmsy-10x-x-120">∇</span><span 
+class="cmmi-12">ω</span>)<span 
+class="cmmi-12">f</span>. La courbure, dans
+ce cas, est égale à
+   <div class="math-display">
+<img 
+src="source921x.png" alt="ρ = ∇ ω = ∇1lω  = (∇1l)ω + 1ldω =  dω + ω2.
+" class="math-display"  /></div>
+<!--l. 1238--><p class="indent" >   Choisissons <span 
+class="cmmi-12">u</span>, un élément inversible de <span 
+class="cmsy-10x-x-120">A </span>et agissons avec <span 
+class="cmmi-12">d </span>sur l&#x2019;equation
+<span 
+class="cmmi-12">u</span><sup><span 
+class="cmsy-8">−</span><span 
+class="cmr-8">1</span></sup><span 
+class="cmmi-12">u </span>= 1 l. On obtient (utilisant le fait que <span 
+class="cmmi-12">d</span>1 l = 0) l&#x2019;equation
+</p>
+                                                                          
+
+                                                                          
+   <div class="math-display">
+<img 
+src="source922x.png" alt="du −1 = − u−1duu −1.
+" class="math-display"  /></div>
+<!--l. 1243--><p class="indent" >   Définissons également <span 
+class="cmmi-12">ω</span><span 
+class="cmsy-10x-x-120">′ </span>= <span 
+class="cmmi-12">u</span><sup><span 
+class="cmsy-8">−</span><span 
+class="cmr-8">1</span></sup><span 
+class="cmmi-12">ωu </span>+ <span 
+class="cmmi-12">u</span><sup><span 
+class="cmsy-8">−</span><span 
+class="cmr-8">1</span></sup><span 
+class="cmmi-12">du </span>et calculons la nouvelle courbure
+<span 
+class="cmmi-12">ρ</span><span 
+class="cmsy-10x-x-120">′ </span>= <span 
+class="cmmi-12">dω</span><span 
+class="cmsy-10x-x-120">′ </span>+ <span 
+class="cmmi-12">ω</span><span 
+class="cmsy-10x-x-120">′</span><sup><span 
+class="cmr-8">2</span></sup>. On obtient immédiatement <span 
+class="cmmi-12">ρ</span><span 
+class="cmsy-10x-x-120">′ </span>= <span 
+class="cmmi-12">u</span><sup><span 
+class="cmsy-8">−</span><span 
+class="cmr-8">1</span></sup>(<span 
+class="cmmi-12">dω </span>+ <span 
+class="cmmi-12">ω</span><sup><span 
+class="cmr-8">2</span></sup>)<span 
+class="cmmi-12">u </span>= <span 
+class="cmmi-12">u</span><sup><span 
+class="cmsy-8">−</span><span 
+class="cmr-8">1</span></sup><span 
+class="cmmi-12">ρu</span>
+où
+</p>
+   <div class="math-display">
+<img 
+src="source923x.png" alt="|-------------|
+-ρ-=-dω-+-ω2.-|  " class="math-display"  /></div>
+Ceci montre que les formules usuelles sont valables, sans qu&#x2019;il soit besoin de
+supposer la commutativité de l&#x2019;algèbre <span 
+class="cmsy-10x-x-120">A</span>.
+<!--l. 1254--><p class="indent" >   Remarque<span class="frenchb-nbsp"> </span>: Ici nous avons choisi un module <span 
+class="cmsy-10x-x-120">ℳ </span>(un ingrédient nécessaire pour
+construire n&#x2019;importe quelle théorie de jauge) égal à l&#x2019;algèbre <span 
+class="cmsy-10x-x-120">A </span>elle-même. Plus
+généralement, nous aurions pu choisir un module libre <span 
+class="cmsy-10x-x-120">A</span><sup><span 
+class="cmmi-8">n</span></sup>, ou même, un module
+projectif <span 
+class="cmmi-12">p</span><span 
+class="cmsy-10x-x-120">A</span><sup><span 
+class="cmmi-8">n</span></sup> sur <span 
+class="cmsy-10x-x-120">A</span>. Dans ce dernier cas, le formalisme précédent doit être
+légérement modifié. En effet, le projecteur <span 
+class="cmmi-12">p </span>va intervenir dans le calcul de la
+courbure (c&#x2019;est un peu comme si nous faisions de la géométrie différentielle
+classique de façon extrinsèque, en plongeant notre espace dans un espace “plus
+grand”). Comme toujours, la courbure est <span 
+class="cmmi-12">ρ </span>= <span 
+class="cmsy-10x-x-120">∇∇</span>. La différentielle covariante
+est
+</p>
+   <div class="math-display">
+<img 
+src="source924x.png" alt="∇  = pd + ω  " class="math-display"  /></div> où
+<span 
+class="cmmi-12">ω </span>est un élément de Ξ<sup><span 
+class="cmr-8">1</span></sup> tel que <span 
+class="cmmi-12">p</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">ω</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">p </span>= <span 
+class="cmmi-12">ω</span>. En effet, si <span 
+class="cmmi-12">X </span><span 
+class="cmsy-10x-x-120">∈ℳ</span>, <span 
+class="cmsy-10x-x-120">∇</span><span 
+class="cmmi-12">X </span>= <span 
+class="cmmi-12">p</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">dX </span>+ <span 
+class="cmmi-12">ω</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">X </span>et
+                                                                          
+
+                                                                          
+il est facile de vérifier que cela définit bien une connexion<span class="frenchb-nbsp"> </span>: prenons <span 
+class="cmmi-12">f </span><span 
+class="cmsy-10x-x-120">∈A</span>, alors
+<div class="eqnarray">
+   <div class="math-display">
+<img 
+src="source925x.png" alt="∇ (Xf ) =  pd(Xf ) + ωXf
+
+        =  p(dX )f + ωXf  + pXdf
+        =  ∇ (X )f + Xdf
+" class="math-display"  /></div>
+</div>Nous avons utilisé le fait que <span 
+class="cmmi-12">p</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">X </span>= <span 
+class="cmmi-12">X</span>. La courbure <span 
+class="cmmi-12">ρ </span>= <span 
+class="cmsy-10x-x-120">∇</span><sup><span 
+class="cmr-8">2</span></sup> se calcule alors
+comme suit<span class="frenchb-nbsp"> </span>: <div class="eqnarray">
+   <div class="math-display">
+<img 
+src="source926x.png" alt="∇2 (X ) = pd (pdX  +  ωX ) + ω(pdX  + ωX  )
+        = pd (pdX  +  ωX ) + ω(dX  + ωX )
+                        2                                2
+        = p(dp )dX  + pd  X + (dω2)X −  ω(dX ) + ωdX  +2ω  X
+        = p(dpdX  +  (d ω)X ) + ω X  = [pdpdp + dω + ω  ]X
+" class="math-display"  /></div>
+</div>Nous avons utilisé les propriétés <span 
+class="cmmi-12">ωp </span>= <span 
+class="cmmi-12">p</span>, <span 
+class="cmmi-12">dX </span>= <span 
+class="cmmi-12">d</span>(<span 
+class="cmmi-12">pX</span>) = (<span 
+class="cmmi-12">dp</span>)<span 
+class="cmmi-12">X </span>+ <span 
+class="cmmi-12">pdX </span>ainsi que
+<span 
+class="cmmi-12">p</span>(<span 
+class="cmmi-12">dp</span>)<span 
+class="cmmi-12">p </span>= <span 
+class="cmmi-12">pd</span>(<span 
+class="cmmi-12">p</span><sup><span 
+class="cmr-8">2)</span></sup> <span 
+class="cmsy-10x-x-120">−</span><span 
+class="cmmi-12">pdp </span>= 0, ce qui entraine <span 
+class="cmmi-12">pdpdX </span>= <span 
+class="cmmi-12">pdpdpX </span>+ <span 
+class="cmmi-12">p</span>(<span 
+class="cmmi-12">dp</span>)<span 
+class="cmmi-12">pX </span>= <span 
+class="cmmi-12">pdpdpX.</span>
+En conclusion, la courbure, dans le cas où le projecteur ne se réduit pas à
+l&#x2019;identité est égale à
+                                                                          
+
+                                                                          
+   <div class="math-display">
+<img 
+src="source927x.png" alt="|---------------------|
+|ρ = pdpdp + d ω + ω2 |
+----------------------   " class="math-display"  /></div> Il
+faut remarquer le fait que la courbure s&#x2019;obtient à partir de <span 
+class="cmsy-10x-x-120">∇</span><sup><span 
+class="cmr-8">2</span></sup> (ce qui en
+fait bien un opérateur linéaire par rapport aux éléments de <span 
+class="cmsy-10x-x-120">A</span>) et non
+pas en recopiant servilement la formule classique <span 
+class="cmmi-12">dω </span>+ <span 
+class="cmmi-12">ω</span><sup><span 
+class="cmr-8">2</span></sup>, ce qui serait
+faux<span class="frenchb-thinspace"> </span>!
+<!--l. 1297--><p class="noindent" >
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">6.3.6   </span> <a 
+ id="x16-2660006.3.6"></a>Cohomologie des espaces non commutatifs</h4>
+<!--l. 1299--><p class="noindent" >
+</p>
+   <h5 class="subsubsectionHead"><a 
+ id="x16-2670006.3.6"></a>La cohomologie de Hochschild</h5>
+<a 
+ id="dx16-267001"></a>
+       <ul class="itemize1">
+       <li class="itemize">Nous savons que la différentielle <span 
+class="cmmi-12">δ </span>sur Ω<span 
+class="cmsy-10x-x-120">A </span>est presque triviale, du
+       point de vue cohomologique. Le “presque” vient du fait que <span 
+class="cmmi-12">δ</span>1 l = 0 et
+       on rappelle qu&#x2019;il est nécessaire de supposer que <span 
+class="cmsy-10x-x-120">A </span>possède une unité
+       pour construire Ω<span 
+class="cmsy-10x-x-120">A </span>(on verra un peu plus loin comment faire si ce
+       n&#x2019;est pas le cas). Il est donc raisonnable de chercher à définir une
+       autre théorie cohomologique ou homologique qui se restreigne, dans
+       le cas classique, à celle déjà connue (celle de De Rham). En fait, nous
+       allons voir que ceci se fait en deux temps<span class="frenchb-nbsp"> </span>: on définit tout d&#x2019;abord
+       la <span 
+class="cmsl-12">cohomologie de Hochschild</span>, puis la <span 
+class="cmsl-12">cohomologie cyclique</span>, <a 
+ id="dx16-267002"></a>et c&#x2019;est
+       cette dernière qui va nous fournir un analogue non commutatif de la
+       cohomologie de De Rham.
+       </li>
+       <li class="itemize">Nous avons déjà mentionné le fait que, dans le cas classique (le cas
+       de la géométrie “commutative” usuelle où <span 
+class="cmsy-10x-x-120">A </span>= <span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">X</span>)), l&#x2019;algèbre
+       Ω<span 
+class="cmsy-10x-x-120">A </span>des formes universelles était “bien plus grande” que celle des
+                                                                          
+
+                                                                          
+       formes différentielles usuelles Λ(<span 
+class="cmmi-12">X</span>). Nous allons voir que, dans le cas
+       classique, il existe une façon purement (co)homologique de récupérer
+       l&#x2019;algèbre des formes différentielles usuelles, ou plutôt, en travaillant de
+       façon duale, l&#x2019;espace des courants de De Rham. Le but de cette section
+       est donc d&#x2019;ébaucher une construction qui conduise aux courants de
+       De Rham dans le cas usuel, mais qui soit, bien entendu, valable pour
+       une algèbre associative quelconque.
+       </li>
+       <li class="itemize">On  définit  l&#x2019;opérateur  co-bord  de  Hochschild  <span 
+class="cmmi-12">b  </span>(aussi  appelé
+       <span 
+class="cmsl-12">diff</span><span 
+class="cmsl-12">érentielle de Hochschild</span>) comme suit <a 
+ id="dx16-267003"></a><span class="frenchb-nbsp"> </span>:
+       <!--l. 1338--><p class="noindent" >Soit <span 
+class="cmmi-12">ϕ </span>une (<span 
+class="cmmi-12">n </span>+ 1)-forme linéaire <span 
+class="cmmi-12">ϕ</span>(<span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span 
+class="cmmi-12">,a</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">…</span><span 
+class="cmmi-12">,a</span><sub><span 
+class="cmmi-8">n</span></sub>) sur l&#x2019;algèbre <span 
+class="cmsy-10x-x-120">A</span>. Alors
+       </p><div class="eqnarray">
+       <div class="math-display">
+       <img 
+src="source928x.png" alt="                        n
+                       ∑
+[bϕ ](a0,a1,...,an+1 ) =    ϕ (a0,...,ajaj+1,...,an)+
+                       j=0
+                       (− 1 )n+1 ϕ(an+1a0,a1,...,an)
+       " class="math-display"  /></div>
+       </div>Par exemple, <div class="eqnarray">
+       <div class="math-display">
+       <img 
+src="source929x.png" alt="[bϕ](a0, a1,a2,a3] = ϕ(a0a1,a2,a3) − ϕ(a0,a1a2,a3) + ϕ(a0,a1,a2a3 )
+                    − ϕ (a3a0,a1,a2)
+       " class="math-display"  /></div>
+       </div>L&#x2019;étape suivante consiste à montrer que <span 
+class="cmmi-12">b</span><sup><span 
+class="cmr-8">2</span></sup> = 0<span 
+class="cmmi-12">, </span>ce qui est à la fois
+       immédiat, et pénible<span 
+class="cmmi-12">…</span>
+                                                                          
+
+                                                                          
+       <!--l. 1354--><p class="noindent" >Puisque nous avons un opérateur cobord (il est de carré nul et envoie bien
+       les <span 
+class="cmmi-12">n </span>formes dans les <span 
+class="cmmi-12">n </span>+ 1 formes), nous pouvons définir l&#x2019;espace des
+       cocycles de Hochschild <span 
+class="cmmi-12">Z</span><sup><span 
+class="cmmi-8">n</span></sup> = <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">ϕ </span><span 
+class="cmsy-10x-x-120">∈ </span><span 
+class="cmmi-12">C</span><sup><span 
+class="cmmi-8">n</span></sup><span 
+class="cmmi-12">∕bϕ </span>= 0<span 
+class="cmsy-10x-x-120">}</span><span 
+class="cmmi-12">, </span>l&#x2019;espace des cobords de
+       Hochschild <span 
+class="cmmi-12">B</span><sup><span 
+class="cmmi-8">n</span></sup> = <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">ϕ </span><span 
+class="cmsy-10x-x-120">∈ </span><span 
+class="cmmi-12">C</span><sup><span 
+class="cmmi-8">n</span></sup><span 
+class="cmmi-12">∕ϕ </span>= <span 
+class="cmmi-12">bψ</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">for</span><span style="margin-left:0.3em" class="thinspace"></span><span 
+class="cmmi-12">ψ </span><span 
+class="cmsy-10x-x-120">∈ </span><span 
+class="cmmi-12">C</span><sup><span 
+class="cmmi-8">n</span><span 
+class="cmsy-8">−</span><span 
+class="cmr-8">1</span></sup><span 
+class="cmsy-10x-x-120">} </span>et les groupes de
+       cohomologie (de Hochschild) correspondants <span 
+class="cmmi-12">H</span><sup><span 
+class="cmmi-8">n</span></sup> = <span 
+class="cmmi-12">Z</span><sup><span 
+class="cmmi-8">n</span></sup><span 
+class="cmmi-12">∕B</span><sup><span 
+class="cmmi-8">n</span></sup><span 
+class="cmmi-12">. </span>Ci-dessus, la
+       notation <span 
+class="cmmi-12">C</span><sup><span 
+class="cmmi-8">n</span></sup>, l&#x2019;espace des cochaines de Hochschild, désigne l&#x2019;espace des
+       formes <span 
+class="cmmi-12">n </span>+ 1 multilinéaires sur <span 
+class="cmsy-10x-x-120">A </span>(attention à la translation d&#x2019;une
+       unité).
+       </p><!--l. 1366--><p class="noindent" >Remarque terminologique<span class="frenchb-nbsp"> </span>: un lecteur curieux, qui chercherait la définition
+       de la cohomologie de Hochschild dans un ouvrage d&#x2019;algèbre homologique
+       pourrait être surpris car celle-ci fait d&#x2019;ordinaire référence au choix d&#x2019;un
+       certain bimodule. Ici, le bimodule en question n&#x2019;est autre que le dual de <span 
+class="cmsy-10x-x-120">A</span>.
+       Nous n&#x2019;avions pas besoin de mentionner ceci plus haut mais il
+       est bon de savoir que c&#x2019;est précisemment ce choix particulier de
+       bimodule (ainsi que l&#x2019;existence d&#x2019;un accouplement naturel entre <span 
+class="cmsy-10x-x-120">A</span>
+       et son dual <span 
+class="cmsy-10x-x-120">A</span><sup><span 
+class="cmsy-8">∗</span></sup>) qui est à l&#x2019;origine de la définition précédente de
+       <span 
+class="cmmi-12">b</span>.
+       </p></li>
+       <li class="itemize">Dans le cas classique (celui de la géométrie différentielle “commutative”
+       habituelle), nous savons que les courants de De Rham (voir <a 
+href="sourcech1.html#x7-520001.12.5">1.12.5<!--tex4ht:ref: sec: courants de De Rham --></a>) sont
+       définis comme distributions sur les formes différentielles de De Rham. En
+       d&#x2019;autres termes, si <span 
+class="cmmi-12">C </span>is un <span 
+class="cmmi-12">p</span>-courant et <span 
+class="cmmi-12">ω </span>est une <span 
+class="cmmi-12">p</span>-forme, alors<span 
+class="cmsy-10x-x-120">&#x2329;</span><span 
+class="cmmi-12">C,ω</span><span 
+class="cmsy-10x-x-120">&#x232A; </span>est
+       un nombre. Nous allons montrer qu&#x2019;il existe une correspondance entre
+       courants arbitraires et cocycles de Hochschild, dans le cas particulier des
+       2-formes, en laissant au lecteur le soin de généraliser cette propriété au cas
+       <span 
+class="cmmi-12">p &#x003E; </span>2<span 
+class="cmmi-12">.</span>
+       <!--l. 1389--><p class="noindent" >Des courants de De Rham aux cocycles de Hochschild<span class="frenchb-nbsp"> </span>: étant donné <span 
+class="cmmi-12">C</span>,
+       nous construisons <span 
+class="cmmi-12">ϕ</span>(<span 
+class="cmmi-12">f,g,h</span>) = <span 
+class="cmsy-10x-x-120">&#x2329;</span><span 
+class="cmmi-12">C,fdg </span><span 
+class="cmsy-10x-x-120">∧ </span><span 
+class="cmmi-12">dh</span><span 
+class="cmsy-10x-x-120">&#x232A;</span><span 
+class="cmmi-12">. </span>on peut alors vérifier que
+       <span 
+class="cmmi-12">bϕ </span>= 0<span 
+class="cmmi-12">.</span>
+       </p><!--l. 1393--><p class="noindent" >Des cocycles de Hochschild aux courants de De Rham<span class="frenchb-nbsp"> </span>: étant donné <span 
+class="cmmi-12">ϕ,</span>
+       nous construisons <span 
+class="cmsy-10x-x-120">&#x2329;</span><span 
+class="cmmi-12">C,fdg </span><span 
+class="cmsy-10x-x-120">∧ </span><span 
+class="cmmi-12">dh</span><span 
+class="cmsy-10x-x-120">&#x232A; </span>= <span 
+class="cmmi-12">ϕ</span>(<span 
+class="cmmi-12">f,g,h</span>) <span 
+class="cmsy-10x-x-120">− </span><span 
+class="cmmi-12">ϕ</span>(<span 
+class="cmmi-12">f,h,g</span>)<span 
+class="cmmi-12">.</span>
+       </p><!--l. 1396--><p class="noindent" >Les deux formules ci-dessus sont différentes car il n&#x2019;y a aucune raison de
+       supposer qu&#x2019;un cocycle de Hochschild donné <span 
+class="cmmi-12">ϕ </span>soit antisymétrique.
+       </p><!--l. 1399--><p class="noindent" >Si <span 
+class="cmmi-12">ϕ </span>est un cobord de Hochschild, il reste à vérifier que le courant
+       de De Rham correspondant s&#x2019;annule. Ceci est une conséquence
+       immédiate de la définition de <span 
+class="cmmi-12">b </span>et de l&#x2019;antisymmétrie du produit
+       extérieur.
+       </p><!--l. 1404--><p class="noindent" >De façon générale, le <span 
+class="cmmi-12">p</span>-ième groupe de cohomologie de Hochschild
+       coïncide avec l&#x2019;espace des courants de De Rham en degré <span 
+class="cmmi-12">p. </span>On peut en
+       particulier vérifier que la dimensionalité de l&#x2019;espace <span 
+class="cmmi-12">H</span><sup><span 
+class="cmmi-8">p</span></sup> est triviale
+       dès que <span 
+class="cmmi-12">p </span>est plus grand que la dimension de la variété <span 
+class="cmmi-12">X </span>elle -
+                                                                          
+
+                                                                          
+       même.
+       </p></li>
+       <li class="itemize">Il peut être intéressant de comparer l&#x2019;expression de [<span 
+class="cmmi-12">bϕ</span>](<span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span 
+class="cmmi-12">,a</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">,a</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-12">,a</span><sub><span 
+class="cmr-8">3</span></sub>] avec
+       le calcul de <span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span 
+class="cmmi-12">δ</span>(<span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">1</span></sub>)<span 
+class="cmmi-12">δ</span>(<span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">2</span></sub>)<span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">3</span></sub> effectué dans la section consacrée à la définition
+       de Ω<span 
+class="cmsy-10x-x-120">A </span>(<a 
+href="#x16-2490006.2.2">6.2.2<!--tex4ht:ref: sec: Omega --></a>). On voit que le fait de calculer <span 
+class="cmmi-12">bϕ </span>revient, dans cet exemple,
+       à évaluer <span 
+class="cmmi-12">ϕ </span>sur un type particulier de commutateurs (dans Ω<span 
+class="cmsy-10x-x-120">A</span>), en
+       l&#x2019;occurence <span 
+class="cmmi-12">ϕ</span>([<span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">0</span></sub><span 
+class="cmmi-12">δa</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">δa</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-12">,a</span><sub><span 
+class="cmr-8">3</span></sub>])<span 
+class="cmmi-12">.</span>
+       <!--l. 1421--><p class="noindent" >Cette remarque peut être généralisée, en ce sens qu&#x2019;on peut être tenté de
+       considérer les <span 
+class="cmmi-12">p </span>formes sur <span 
+class="cmsy-10x-x-120">A </span>comme des formes linéaires sur l&#x2019;algèbre Ω<span 
+class="cmsy-10x-x-120">A</span>
+       et de définir <span 
+class="cmmi-12">b </span>non pas sur les formes <span 
+class="cmmi-12">p</span>-linéaires sur <span 
+class="cmsy-10x-x-120">A </span>mais sur les formes
+       linéaires sur Ω<span 
+class="cmsy-10x-x-120">A</span>. En fait, on se heurte alors à un problème un peu subtil
+       lié au rôle particulier joué par l&#x2019;unité dans la construction de l&#x2019;algèbre des
+       formes universelles.
+       </p><!--l. 1430--><p class="noindent" >Notons <img 
+src="source930x.png" alt="˜A"  class="tilde"  /> l&#x2019;algèbre obtenue en rajoutant une unité 1 l à <span 
+class="cmsy-10x-x-120">A</span>, que celle-ci en
+       possède déjà une ou non. Les éléments de cette augmentation sont, par
+       définition, des paire (<span 
+class="cmmi-12">a,c</span>), avec <span 
+class="cmmi-12">a </span><span 
+class="cmsy-10x-x-120">∈A </span>et <span 
+class="cmmi-12">c </span><span 
+class="cmsy-10x-x-120">∈ </span><span 
+class="msbm-10x-x-120">ℂ</span>. La nouvelle unité est
+       1l = (0<span 
+class="cmmi-12">, </span>1). On identifie <span 
+class="cmmi-12">a </span><span 
+class="cmsy-10x-x-120">∈A </span>avec (<span 
+class="cmmi-12">a, </span>0) <span 
+class="cmsy-10x-x-120">∈</span><img 
+src="source931x.png" alt="A˜"  class="tilde"  /> . Les éléments (<span 
+class="cmmi-12">a,c</span>) de
+       l&#x2019;algèbre augmentée sont notés simplement <span 
+class="cmmi-12">a </span>+ <span 
+class="cmmi-12">c</span>1 l. La multiplication est
+       telle que (<span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">1</span></sub> + <span 
+class="cmmi-12">c</span><sub><span 
+class="cmr-8">1</span></sub>1 l)(<span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">2</span></sub> + <span 
+class="cmmi-12">c</span><sub><span 
+class="cmr-8">2</span></sub>1 l) = <span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">2</span></sub> + <span 
+class="cmmi-12">c</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">2</span></sub> + <span 
+class="cmmi-12">a</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">c</span><sub><span 
+class="cmr-8">2</span></sub> + <span 
+class="cmmi-12">c</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">c</span><sub><span 
+class="cmr-8">2</span></sub>1 l<span class="frenchb-thinspace"> </span>; elle doit donc
+       être formellement définie par
+       </p>
+       <div class="math-display">
+       <img 
+src="source932x.png" alt="(a1,c1)(a2,c2) = (a1a2 + c1a2 + a1c2,c1c2)  " class="math-display"  /></div>
+       Si <span 
+class="cmsy-10x-x-120">A </span>ne posséde pas d&#x2019;unité, il n&#x2019;y a pas de confusion possible. Si <span 
+class="cmsy-10x-x-120">A </span>en
+       posséde déjà une, nous la désignons par <span 
+class="cmmi-12">e </span>= (<span 
+class="cmmi-12">e, </span>0) et il est certain que <span 
+class="cmmi-12">e</span>
+       n&#x2019;est plus l&#x2019;unité de <img 
+src="source933x.png" alt="A˜"  class="tilde"  /> , mais seulement un projecteur (<span 
+class="cmmi-12">e</span><sup><span 
+class="cmr-8">2</span></sup> = <span 
+class="cmmi-12">e</span>). Notons que,
+       avec <span 
+class="cmmi-12">a </span><span 
+class="cmsy-10x-x-120">∈A </span>et <span 
+class="cmmi-12">c </span><span 
+class="cmsy-10x-x-120">∈ </span><span 
+class="msbm-10x-x-120">ℂ</span>, <span 
+class="cmmi-12">δ</span>(<span 
+class="cmmi-12">a </span>+ <span 
+class="cmmi-12">c</span>1 l) = <span 
+class="cmmi-12">δa </span>dans Ω<img 
+src="source934x.png" alt="A˜"  class="tilde"  /> . On peut donc identifier les
+       formes multilinéaires sur <span 
+class="cmsy-10x-x-120">A </span>avec certaines formes linéaires sur Ω<img 
+src="source935x.png" alt=" ˜
+A"  class="tilde"  /> , en
+       l&#x2019;occurence avec les formes <span 
+class="cmmi-12">ϕ </span>qui sont telles que <span 
+class="cmmi-12">ϕ</span>(1 l<span 
+class="cmmi-12">δa</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">δa</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-12">…</span><span 
+class="cmmi-12">δa</span><sub><span 
+class="cmmi-8">n</span></sub>) = 0 en
+       posant, pour <span 
+class="cmmi-12">a</span><sub><span 
+class="cmmi-8">i</span></sub> <span 
+class="cmsy-10x-x-120">∈A</span>
+                                                                          
+
+                                                                          
+       <div class="math-display">
+       <img 
+src="source936x.png" alt="ϕ(a0,a1,...,an ) = ϕ (a0δa1...δan )
+       " class="math-display"  /></div>
+       <!--l. 1455--><p class="noindent" >Grâce à cette identification, on peut effectuer toutes les constructions de
+       nature cohomologique en utilisant comme cochaines ce type particulier de
+       formes linéaires sur Ω<img 
+src="source937x.png" alt="˜
+A"  class="tilde"  /> plutôt que de faire appel à des formes
+       multilinéaires sur <span 
+class="cmsy-10x-x-120">A</span>. Nous n&#x2019;irons cependant pas plus loin dans cette
+       direction.
+</p>
+       </li></ul>
+<!--l. 1468--><p class="noindent" >
+</p>
+   <h5 class="subsubsectionHead"><a 
+ id="x16-2680006.3.6"></a>La cohomologie cyclique<span class="frenchb-nbsp"> </span>: une cohomologie de De Rham non commutative</h5>
+<a 
+ id="dx16-268001"></a>
+       <ul class="itemize1">
+       <li class="itemize">Dans le cas non commutatif, nous n&#x2019;avons pas encore présenté de
+       construction  qui  généralise  la  cohomologie  de  De  Rham  (section
+       <a 
+href="sourcech1.html#x7-490001.12.2">1.12.2<!--tex4ht:ref: sec: cohomologie de De Rham --></a>).   En   fait,   puisque   nous   travaillons   maintenant   sur   les
+       algèbres elle-mêmes (dans le cas commutatif on considère l&#x2019;algèbre
+       commutative  <span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">X</span>)  des  fonctions  et  non  pas  les  points  de  <span 
+class="cmmi-12">X</span>
+       eux-mêmes), c&#x2019;est d&#x2019;un analogue de l&#x2019;opérateur d&#x2019;homologie <span 
+class="cmmi-12">∂ </span>sur
+       les courants dont nous avons besoin. Rappelons que, classiquement,
+       cet opérateur agit sur les courants de De Rham de la façon suivante
+       (théorème de Stokes)<span class="frenchb-nbsp"> </span>:
+       <div class="math-display">
+       <img 
+src="source938x.png" alt="&#x2329;∂C, ω&#x232A; = &#x2329;C, dω&#x232A;,
+       " class="math-display"  /></div> Ici <span 
+class="cmmi-12">ω </span>est une forme différentielle quelconque sur <span 
+class="cmmi-12">X</span>.
+                                                                          
+
+                                                                          
+       </li>
+       <li class="itemize">La définition la plus simple (mais c&#x2019;est peut-être une question de goût)
+       est celle qui suit. On définit tout d&#x2019;abord la notion de cyclicité pour
+       une forme multilinéaire
+       <div class="math-display">
+       <img 
+src="source939x.png" alt="|----------------------------------------n----------------------|
+ϕ-est-cyclique-⇔--ϕ(a0,a1,...,an)-=-(−-1)-ϕ(an,a0,a1,...,an-−1).-
+       " class="math-display"  /></div> On fait alors la remarque suivante <span class="cite">[<a 
+href="sourceli4.html#XConnesIHES">2</a>]</span><span class="frenchb-nbsp"> </span>: Si <span 
+class="cmmi-12">ϕ </span>est cyclique, alors <span 
+class="cmmi-12">bϕ</span>
+       l&#x2019;est aussi.
+       <!--l. 1495--><p class="noindent" >Il devient alors naturel de considérer le sous complexe cyclique du
+       complexe de Hochschild, c&#x2019;est à dire de restreindre l&#x2019;opérateur <span 
+class="cmmi-12">b </span>(le
+       même que précédemment) aux cochaines de Hochschild cycliques. On
+       définit alors les espaces <span 
+class="cmmi-12">Z</span><sub><span 
+class="cmmi-8">λ</span></sub><sup><span 
+class="cmmi-8">n</span></sup><span 
+class="cmmi-12">, B</span><sub>
+<span 
+class="cmmi-8">λ</span></sub><sup><span 
+class="cmmi-8">n</span></sup> des cocycles et cobords cycliques,
+       ainsi que leurs quotients, les groupes de cohomologie cyclique <span 
+class="cmmi-12">H</span><sub><span 
+class="cmmi-8">λ</span></sub><sup><span 
+class="cmmi-8">n</span></sup><span 
+class="cmmi-12">.</span>
+       </p></li>
+       <li class="itemize">Dans le cadre classique, i.e. avec <span 
+class="cmsy-10x-x-120">A </span>= <span 
+class="cmmi-12">C</span><sup><span 
+class="cmsy-8">∞</span></sup>(<span 
+class="cmmi-12">X</span>)<span 
+class="cmmi-12">, </span>on montre <span class="cite">[<a 
+href="sourceli4.html#XConnesIHES">2</a>]</span> que
+       <div class="math-display">
+       <img 
+src="source940x.png" alt="  k
+H λ = Ker ∂ ⊕ Hk −2 ⊕ Hk −4...
+       " class="math-display"  /></div> où <span 
+class="cmmi-12">Ker∂ </span>est le noyau de l&#x2019;opérateur <span 
+class="cmmi-12">∂ </span>agissant dans l&#x2019;espace des
+       courants  de  De  Rham  de  degré  <span 
+class="cmmi-12">k </span>et  où  <span 
+class="cmmi-12">H</span><sub><span 
+class="cmmi-8">p</span></sub>  désigne  le  groupe  d&#x2019;
+       <span class="underline">homo</span>logie de degré <span 
+class="cmmi-12">p </span>(pour les courants).
+       <!--l. 1512--><p class="noindent" >Ainsi, nous n&#x2019;obtenons pas une correspondance bi-univoque entre les
+       groupes de cohomologie cyclique et les groupes d&#x2019;homologie de De
+       Rham<span class="frenchb-thinspace"> </span>;  néanmoins,  l&#x2019;information  contenue  est  la  même,  puisque,
+       en choisissant <span 
+class="cmmi-12">k </span>assez grand, les groupes de cohomologie cycliques
+       pairs ou impairs seront respectivement égaux à la somme directe des
+                                                                          
+
+                                                                          
+       groupes d&#x2019;homologie de De Rham (pairs ou impairs).
+       </p><!--l. 1519--><p class="noindent" >Ce résultat suggère qu&#x2019;il existe une façon canonique d&#x2019;envoyer <span 
+class="cmmi-12">H</span><sub><span 
+class="cmmi-8">λ</span></sub><sup><span 
+class="cmmi-8">p</span></sup>
+       dans  <span 
+class="cmmi-12">H</span><sub><span 
+class="cmmi-8">λ</span></sub><sup><span 
+class="cmmi-8">p</span><span 
+class="cmr-8">+2</span></sup><span 
+class="cmmi-12">,  </span>et  c&#x2019;est  effectivement  le  cas  (pour  une  algèbre  <span 
+class="cmsy-10x-x-120">A</span>
+       quelconque, d&#x2019;ailleurs). En fait, on peut démontrer un résultat encore
+       plus fort<span class="frenchb-nbsp"> </span>: pour toute algèbre, on peut définir un opérateur <span 
+class="cmmi-12">S, </span>souvent
+       désigné sous le nom de “opérateur de périodicité de Connes”, qui
+       envoie <span 
+class="cmmi-12">C</span><sub><span 
+class="cmmi-8">λ</span></sub><sup><span 
+class="cmmi-8">p</span></sup> dans <span 
+class="cmmi-12">C</span><sub>
+<span 
+class="cmmi-8">λ</span></sub><sup><span 
+class="cmmi-8">p</span><span 
+class="cmr-8">+2</span></sup>  – le symbole <span 
+class="cmmi-12">C</span><sub>
+<span 
+class="cmmi-8">λ</span></sub><sup><span 
+class="cmsy-8">∗</span></sup> se réferrant aux cochaines
+       cycliques.
+       </p></li>
+       <li class="itemize">Cette façon de définir la cohomologie cyclique (comme sous complexe
+       de celle de Hochschid), se fait donc sans qu&#x2019;il soit besoin d&#x2019;introduire
+       une généralisation non commutative de l&#x2019;opérateur <span 
+class="cmmi-12">∂</span>. Cela dit, un tel
+       opérateur existe (il est noté <span 
+class="cmmi-12">B</span><sub><span 
+class="cmr-8">0</span></sub>, ou <span 
+class="cmmi-12">B </span>— voir ci-dessous —) et on
+       peut aussi définir la cohomologie cyclique grâce à lui. La définition
+       de cette cohomologie, en utilisant les opérateurs en question, est un
+       peu plus subtile, et nous nous contenterons de donner la définition
+       des opérateurs <span 
+class="cmmi-12">B</span><sub><span 
+class="cmr-8">0</span></sub> et <span 
+class="cmmi-12">B</span>. Le lecteur interessé pourra consulter <span class="cite">[<a 
+href="sourceli4.html#XConnesIHES">2</a>]</span>, <span class="cite">[<a 
+href="sourceli4.html#XACbook">3</a>]</span>
+       et les références indiquées dans cet ouvrage.
+       </li>
+       <li class="itemize">
+       <!--l. 1544--><p class="noindent" >Outre l&#x2019;opérateur de périodicité déjà mentionné, <span 
+class="cmmi-12">S </span>: <span 
+class="cmmi-12">C</span><sub><span 
+class="cmmi-8">λ</span></sub><sup><span 
+class="cmmi-8">p</span></sup> <span 
+class="cmsy-10x-x-120">→ </span><span 
+class="cmmi-12">C</span><sub>
+<span 
+class="cmmi-8">λ</span></sub><sup><span 
+class="cmmi-8">p</span><span 
+class="cmr-8">+2</span></sup>,
+       on considère aussi les opérateurs suivants<span class="frenchb-nbsp"> </span>:
+</p>
+          <ul class="itemize2">
+          <li class="itemize">L&#x2019;opérateur d&#x2019;antisymétrisation cyclique. <div class="eqnarray">
+          <div class="math-display">
+          <img 
+src="source941x.png" alt="[Aϕ ](a0,a1,...,an) =  ϕ(a0,a1,...,an) + (− 1)nϕ(an,a0,...,an− 1)+
+                   +  ϕ(an−1,an,a0,...) + (− 1)nϕ (an−2,an−1,an, a0,a1,...) + ...
+          " class="math-display"  /></div>
+          </div>
+          </li>
+                                                                          
+
+                                                                          
+          <li class="itemize">L&#x2019;opérateur bord non antisymétrisé <span 
+class="cmmi-12">B</span><sub><span 
+class="cmr-8">0</span></sub> défini comme
+          <div class="math-display">
+          <img 
+src="source942x.png" alt="[B0ϕ ](a0,a1,...,an ) = ϕ (e,a0,...,an) − ϕ(a0,...,an,e)
+          " class="math-display"  /></div> Ici, <span 
+class="cmmi-12">e </span>désigne l&#x2019;unité de l&#x2019;algèbre <span 
+class="cmsy-10x-x-120">A </span>(et il faut effectivement supposer
+          que l&#x2019;algèbre est unitale).
+          </li>
+          <li class="itemize">L&#x2019;opérateur bord cyclique <span 
+class="cmmi-12">B </span>= <span 
+class="cmmi-12">AB</span><sub><span 
+class="cmr-8">0</span></sub><span 
+class="cmmi-12">. </span>(ou <span 
+class="cmsl-12">diff</span><span 
+class="cmsl-12">érentielle de Connes</span>).
+          <a 
+ id="dx16-268003"></a>
+          </li></ul>
+       <!--l. 1565--><p class="noindent" >On montre alors que <span 
+class="cmmi-12">B </span>envoie <span 
+class="cmmi-12">C</span><sup><span 
+class="cmmi-8">n</span></sup> sur <span 
+class="cmmi-12">C</span><sup><span 
+class="cmmi-8">n</span><span 
+class="cmsy-8">−</span><span 
+class="cmr-8">1</span></sup>, que <span 
+class="cmmi-12">B</span><sup><span 
+class="cmr-8">2</span></sup> = 0 et que
+       <span 
+class="cmmi-12">bB </span>+ <span 
+class="cmmi-12">Bb </span>= 0<span 
+class="cmmi-12">. </span>En utilisant ces deux dernières propriétés, ainsi que <span 
+class="cmmi-12">b</span><sup><span 
+class="cmr-8">2</span></sup> = 0,
+       on peut construire un bi-complexe (puisque <span 
+class="cmmi-12">b </span>and <span 
+class="cmmi-12">B </span>agissent dans des
+       directions opposées) à partir duquel on peut également définir la
+       cohomologie cyclique.
+       </p></li>
+       <li class="itemize">
+       <!--l. 1573--><p class="noindent" >En utilisant ce dernier bi-complexe on définit aussi la “cohomologie
+       cyclique entière” de la façon suivante. Les cocycles entiers sont des <span class="underline">suites</span>
+       (<span 
+class="cmmi-12">ϕ</span><sub><span 
+class="cmr-8">2</span><span 
+class="cmmi-8">n</span></sub>) ou (<span 
+class="cmmi-12">ϕ</span><sub><span 
+class="cmr-8">2</span><span 
+class="cmmi-8">n</span><span 
+class="cmr-8">+1</span></sub>) de fonctionnelles paires ou impaires <span 
+class="cmmi-12">ϕ </span>qui doivent
+       satisfaire à la contrainte suivante (nous ne l&#x2019;écrivons que pour le cas
+       impair)<span class="frenchb-nbsp"> </span>:
+       </p>
+       <div class="math-display">
+       <img 
+src="source943x.png" alt="bϕ2n− 1 + B ϕ2n+1 = 0.  " class="math-display"  /></div>
+       A l&#x2019;aide de tels cocycles (techniquement, il faut aussi supposer qu&#x2019;une
+       certaine condition de croissance est satisfaite), on peut définir des fonctions
+                                                                          
+
+                                                                          
+       entières sur l&#x2019;algèbre <span 
+class="cmsy-10x-x-120">A</span>,
+       <div class="math-display">
+       <img 
+src="source944x.png" alt="        ∑∞  (− 1)n
+Fϕ(x) =     ------ϕ2n(x, x,...,x).
+        n=0   n!
+       " class="math-display"  /></div>
+       <!--l. 1585--><p class="noindent" >La cohomologie cyclique entière fournit un formalisme approprié pour
+       l&#x2019;étude de certaines algèbres non commutatives de dimension infinie
+       apparaissant en théorie quantique des champs.
+</p>
+       </li></ul>
+<!--l. 1591--><p class="noindent" >
+</p>
+   <h4 class="subsectionHead"><span class="titlemark">6.3.7   </span> <a 
+ id="x16-2690006.3.7"></a> Remarque finale</h4>
+<!--l. 1592--><p class="noindent" >Comme nous l&#x2019;avons signalé plus haut, notre propos, dans cette dernière section
+était simplement d&#x2019;effectuer un tour rapide dans certains secteurs du zoo non
+commutatif, en espérant que le lecteur aura plaisir à y retourner en consultant la
+littérature spécialisée. Le présent ouvrage est en effet essentiellement dédié à
+l&#x2019;étude de plusieurs aspects de la géométrie différentielle<span class="frenchb-thinspace"> </span>; en l&#x2019;occurence, la
+théorie des connexions et des espaces fibrés. Cependant, la physique du
+vingtième siècle n&#x2019;est (n&#x2019;était<span class="frenchb-thinspace"> </span>!) pas seulement courbe<span class="frenchb-nbsp"> </span>: elle est (était) aussi
+quantique. Il eût donc été dommage de passer sous silence ces quelques
+développements récents — et passionnants — des mathématiques, qui
+généralisent les notions habituelles et quasi intuitives de la géométrie “ordinaire”
+(celle des espaces) au monde, encore un peu mystérieux, des espaces non
+commutatifs.
+                                                                          
+
+                                                                          
+</p>
+   <!--l. 1--><div class="crosslinks"><p class="noindent"></p></div>
+    
+</body></html> 

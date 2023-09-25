@@ -1,0 +1,197 @@
+\BOOKMARK [0][-]{chapter*.2}{Pr\351face}{}% 1
+\BOOKMARK [0][-]{chapter*.3}{Introduction}{}% 2
+\BOOKMARK [1][-]{section*.4}{Mod\350les math\351matiques et r\351alit\351}{chapter*.3}% 3
+\BOOKMARK [1][-]{section*.5}{Du classique au quantique}{chapter*.3}% 4
+\BOOKMARK [1][-]{section*.6}{Guide de lecture, autocritique et perspectives}{chapter*.3}% 5
+\BOOKMARK [0][-]{chapter*.9}{}{}% 6
+\BOOKMARK [0][-]{chapter.1}{Vari\351t\351s diff\351rentiables}{}% 7
+\BOOKMARK [1][-]{section.1.1}{Vari\351t\351s topologiques}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.1.1}{D\351finition}{section.1.1}% 9
+\BOOKMARK [2][-]{subsection.1.1.2}{Vari\351t\351s \340 bord}{section.1.1}% 10
+\BOOKMARK [2][-]{subsection.1.1.3}{Contre-exemples}{section.1.1}% 11
+\BOOKMARK [1][-]{section.1.2}{ Vari\351t\351s diff\351rentiables}{chapter.1}% 12
+\BOOKMARK [2][-]{subsection.1.2.1}{ Vari\351t\351s, cartes, atlas}{section.1.2}% 13
+\BOOKMARK [2][-]{subsection.1.2.2}{ Atlas maximal}{section.1.2}% 14
+\BOOKMARK [2][-]{subsection.1.2.3}{ Vari\351t\351s et calcul diff\351rentiel ``intrins\350que''}{section.1.2}% 15
+\BOOKMARK [1][-]{section.1.3}{Applications diff\351rentiables, \040diff\351omorphismes}{chapter.1}% 16
+\BOOKMARK [2][-]{subsection.1.3.1}{ D\351finition}{section.1.3}% 17
+\BOOKMARK [2][-]{subsection.1.3.2}{ Diff\351omorphismes et changements de coordonn\351es}{section.1.3}% 18
+\BOOKMARK [2][-]{subsection.1.3.3}{ Fonctions diff\351rentiables}{section.1.3}% 19
+\BOOKMARK [1][-]{section.1.4}{ Champs de vecteurs}{chapter.1}% 20
+\BOOKMARK [2][-]{subsection.1.4.1}{ Notions \351l\351mentaires et intuitives}{section.1.4}% 21
+\BOOKMARK [2][-]{subsection.1.4.2}{ Vecteurs, espace tangent et champs de vecteurs}{section.1.4}% 22
+\BOOKMARK [2][-]{subsection.1.4.3}{ R\350gle de Leibniz}{section.1.4}% 23
+\BOOKMARK [2][-]{subsection.1.4.4}{ Crochet de deux champs de vecteurs}{section.1.4}% 24
+\BOOKMARK [2][-]{subsection.1.4.5}{ Rep\350re naturel associ\351 \340 une carte}{section.1.4}% 25
+\BOOKMARK [2][-]{subsection.1.4.6}{ Changement de carte}{section.1.4}% 26
+\BOOKMARK [2][-]{subsection.1.4.7}{ Rep\350res mobiles \(rep\350res quelconques\)}{section.1.4}% 27
+\BOOKMARK [1][-]{section.1.5}{Tenseurs et formes ext\351rieures}{chapter.1}% 28
+\BOOKMARK [2][-]{subsection.1.5.1}{ Alg\350bre tensorielle d'un espace vectoriel}{section.1.5}% 29
+\BOOKMARK [2][-]{subsection.1.5.2}{ Alg\350bre ext\351rieure d'un espace vectoriel. Produit ext\351rieur}{section.1.5}% 30
+\BOOKMARK [2][-]{subsection.1.5.3}{ Produit int\351rieur d'une forme par un vecteur}{section.1.5}% 31
+\BOOKMARK [2][-]{subsection.1.5.4}{ Transformation du produit ext\351rieur et du produit int\351rieur par endomorphismes}{section.1.5}% 32
+\BOOKMARK [1][-]{section.1.6}{Formes diff\351rentielles}{chapter.1}% 33
+\BOOKMARK [2][-]{subsection.1.6.1}{D\351finition}{section.1.6}% 34
+\BOOKMARK [2][-]{subsection.1.6.2}{La diff\351rentielle ext\351rieure d}{section.1.6}% 35
+\BOOKMARK [2][-]{subsection.1.6.3}{L'\351quation de Maurer-Cartan pour un rep\350re mobile}{section.1.6}% 36
+\BOOKMARK [2][-]{subsection.1.6.4}{Produit int\351rieur d'une forme par un champ ou vecteurs}{section.1.6}% 37
+\BOOKMARK [1][-]{section.1.7}{Application tangente et cotangente}{chapter.1}% 38
+\BOOKMARK [1][-]{section.1.8}{D\351riv\351es de Lie}{chapter.1}% 39
+\BOOKMARK [1][-]{section.1.9}{Flots}{chapter.1}% 40
+\BOOKMARK [1][-]{section.1.10}{Orientation et int\351gration}{chapter.1}% 41
+\BOOKMARK [2][-]{subsection.1.10.1}{Orientation \205 Partition de l'unit\351}{section.1.10}% 42
+\BOOKMARK [1][-]{section.1.11}{Vari\351t\351s riemanniennes \(propri\351t\351s \351l\351mentaires\)}{chapter.1}% 43
+\BOOKMARK [1][-]{section.1.12}{Divers}{chapter.1}% 44
+\BOOKMARK [2][-]{subsection.1.12.1}{ Compl\351ments sur les d\351rivations d'alg\350bre}{section.1.12}% 45
+\BOOKMARK [2][-]{subsection.1.12.2}{Cohomologie de De Rham}{section.1.12}% 46
+\BOOKMARK [2][-]{subsection.1.12.3}{Homologie de De Rham}{section.1.12}% 47
+\BOOKMARK [2][-]{subsection.1.12.4}{Espace des p-vecteurs}{section.1.12}% 48
+\BOOKMARK [2][-]{subsection.1.12.5}{Espace des courants de De Rham}{section.1.12}% 49
+\BOOKMARK [2][-]{subsection.1.12.6}{Les alg\350bres de Fr\366licher \205 Nijenhuis et de Nijenhuis\205Richardson}{section.1.12}% 50
+\BOOKMARK [0][-]{chapter.2}{Groupes de Lie et espaces homog\350nes}{}% 51
+\BOOKMARK [1][-]{section.2.1}{G\351n\351ralit\351s sur les groupes de Lie}{chapter.2}% 52
+\BOOKMARK [2][-]{subsection.2.1.1}{G\351n\351ralit\351s et d\351finitions \351l\351mentaires}{section.2.1}% 53
+\BOOKMARK [2][-]{subsection.2.1.2}{Exemples \351l\351mentaires de groupes classiques}{section.2.1}% 54
+\BOOKMARK [1][-]{section.2.2}{G\351n\351ralit\351s sur les alg\350bres de Lie}{chapter.2}% 55
+\BOOKMARK [2][-]{subsection.2.2.1}{Application exponentielle et alg\350bres de Lie}{section.2.2}% 56
+\BOOKMARK [2][-]{subsection.2.2.2}{Correspondance entre groupes et alg\350bres de Lie}{section.2.2}% 57
+\BOOKMARK [2][-]{subsection.2.2.3}{Classification des groupes et alg\350bres de Lie. G\351n\351ralit\351s.}{section.2.2}% 58
+\BOOKMARK [2][-]{subsection.2.2.4}{Message}{section.2.2}% 59
+\BOOKMARK [1][-]{section.2.3}{Actions de groupes et repr\351sentations}{chapter.2}% 60
+\BOOKMARK [2][-]{subsection.2.3.1}{G\351n\351ralit\351s}{section.2.3}% 61
+\BOOKMARK [2][-]{subsection.2.3.2}{Groupe G op\351rant \340 gauche sur un ensemble E}{section.2.3}% 62
+\BOOKMARK [2][-]{subsection.2.3.3}{Action \340 droite \(anti-action\)}{section.2.3}% 63
+\BOOKMARK [2][-]{subsection.2.3.4}{Passage de la droite \340 la gauche \(et inversement\)}{section.2.3}% 64
+\BOOKMARK [2][-]{subsection.2.3.5}{Orbites, espace quotient}{section.2.3}% 65
+\BOOKMARK [2][-]{subsection.2.3.6}{Efficacit\351}{section.2.3}% 66
+\BOOKMARK [2][-]{subsection.2.3.7}{Libert\351 et stabilisateur}{section.2.3}% 67
+\BOOKMARK [2][-]{subsection.2.3.8}{Transitivit\351}{section.2.3}% 68
+\BOOKMARK [2][-]{subsection.2.3.9}{Action d'un sous-groupe H sur un groupe G, normalisateur, centralisateur}{section.2.3}% 69
+\BOOKMARK [2][-]{subsection.2.3.10}{Stratification}{section.2.3}% 70
+\BOOKMARK [2][-]{subsection.2.3.11}{Remarques}{section.2.3}% 71
+\BOOKMARK [1][-]{section.2.4}{Champs de vecteurs fondamentaux}{chapter.2}% 72
+\BOOKMARK [2][-]{subsection.2.4.1}{Cas d'un groupe de Lie agissant sur une vari\351t\351}{section.2.4}% 73
+\BOOKMARK [2][-]{subsection.2.4.2}{Exemple : le groupe euclidien agissant sur le plan R2}{section.2.4}% 74
+\BOOKMARK [2][-]{subsection.2.4.3}{Un cas particulier fondamental : le groupe G agissant sur lui-m\352me par translations \340 gauche et \340 droite}{section.2.4}% 75
+\BOOKMARK [2][-]{subsection.2.4.4}{L'action adjointe de G}{section.2.4}% 76
+\BOOKMARK [2][-]{subsection.2.4.5}{Exemple : l'alg\350bre de Lie du groupe euclidien}{section.2.4}% 77
+\BOOKMARK [2][-]{subsection.2.4.6}{Exemple : champs invariants sur SU\(2\)}{section.2.4}% 78
+\BOOKMARK [2][-]{subsection.2.4.7}{Une remarque sur les constantes de structure}{section.2.4}% 79
+\BOOKMARK [2][-]{subsection.2.4.8}{La forme de Maurer-Cartan}{section.2.4}% 80
+\BOOKMARK [1][-]{section.2.5}{Repr\351sentations}{chapter.2}% 81
+\BOOKMARK [1][-]{section.2.6}{Espaces homog\350nes}{chapter.2}% 82
+\BOOKMARK [1][-]{section.2.7}{Alg\350bres de Clifford et groupes Spin}{chapter.2}% 83
+\BOOKMARK [2][-]{subsection.2.7.1}{D\351finitions g\351n\351rales}{section.2.7}% 84
+\BOOKMARK [2][-]{subsection.2.7.2}{Le groupe Spin}{section.2.7}% 85
+\BOOKMARK [2][-]{subsection.2.7.3}{Structure des alg\350bres de Clifford r\351elles}{section.2.7}% 86
+\BOOKMARK [2][-]{subsection.2.7.4}{La structure des alg\350bres de Clifford complexes}{section.2.7}% 87
+\BOOKMARK [2][-]{subsection.2.7.5}{Type des repr\351sentations}{section.2.7}% 88
+\BOOKMARK [2][-]{subsection.2.7.6}{Spineurs}{section.2.7}% 89
+\BOOKMARK [0][-]{chapter.3}{Espaces Fibr\351s}{}% 90
+\BOOKMARK [1][-]{section.3.1}{G\351n\351ralit\351s}{chapter.3}% 91
+\BOOKMARK [2][-]{subsection.3.1.1}{Le langage des fibr\351s}{section.3.1}% 92
+\BOOKMARK [2][-]{subsection.3.1.2}{Fibrations. Fibr\351s diff\351rentiables localement triviaux}{section.3.1}% 93
+\BOOKMARK [1][-]{section.3.2}{Espaces fibr\351s principaux}{chapter.3}% 94
+\BOOKMARK [2][-]{subsection.3.2.1}{La structure d'espace fibr\351 principal}{section.3.2}% 95
+\BOOKMARK [2][-]{subsection.3.2.2}{Sections locales et trivialisations locales}{section.3.2}% 96
+\BOOKMARK [2][-]{subsection.3.2.3}{Exemple fondamental : le fibr\351 des rep\350res lin\351aires}{section.3.2}% 97
+\BOOKMARK [2][-]{subsection.3.2.4}{Sous-espace des vecteurs verticaux en un point z d'un espace fibr\351}{section.3.2}% 98
+\BOOKMARK [2][-]{subsection.3.2.5}{Fibr\351 principal trivial}{section.3.2}% 99
+\BOOKMARK [2][-]{subsection.3.2.6}{Formes basiques, invariantes et horizontales}{section.3.2}% 100
+\BOOKMARK [2][-]{subsection.3.2.7}{Exemples}{section.3.2}% 101
+\BOOKMARK [1][-]{section.3.3}{Fibr\351s associ\351s}{chapter.3}% 102
+\BOOKMARK [2][-]{subsection.3.3.1}{Introduction}{section.3.3}% 103
+\BOOKMARK [2][-]{subsection.3.3.2}{Espaces fibr\351s associ\351s g\351n\351raux}{section.3.3}% 104
+\BOOKMARK [2][-]{subsection.3.3.3}{Espaces fibr\351s en espaces homog\350nes, associ\351s \340 un fibr\351 principal de groupe structural G}{section.3.3}% 105
+\BOOKMARK [2][-]{subsection.3.3.4}{Fibration principale relative \340 un fibr\351 quotient}{section.3.3}% 106
+\BOOKMARK [2][-]{subsection.3.3.5}{Espaces fibr\351s en \203 espaces fibr\351s}{section.3.3}% 107
+\BOOKMARK [2][-]{subsection.3.3.6}{Le fibr\351 adjoint E=Ad \040P}{section.3.3}% 108
+\BOOKMARK [2][-]{subsection.3.3.7}{Le r\364le du normalisateur}{section.3.3}% 109
+\BOOKMARK [2][-]{subsection.3.3.8}{Les espaces fibr\351s vectoriels}{section.3.3}% 110
+\BOOKMARK [2][-]{subsection.3.3.9}{Trivialit\351 des fibr\351s vectoriels, vari\351t\351s parall\351lisables}{section.3.3}% 111
+\BOOKMARK [2][-]{subsection.3.3.10}{Sections de fibr\351s associ\351s et champs}{section.3.3}% 112
+\BOOKMARK [1][-]{section.3.4}{Elargissement et r\351duction}{chapter.3}% 113
+\BOOKMARK [2][-]{subsection.3.4.1}{D\351finitions}{section.3.4}% 114
+\BOOKMARK [2][-]{subsection.3.4.2}{Elargissement \(passage de H \340 G avec HG\)}{section.3.4}% 115
+\BOOKMARK [2][-]{subsection.3.4.3}{R\351duction \(passage de G \340 H avec HG\)}{section.3.4}% 116
+\BOOKMARK [1][-]{section.3.5}{Extension et quotient}{chapter.3}% 117
+\BOOKMARK [2][-]{subsection.3.5.1}{Extension \(passage de G \340 G"0362G avec G G"0362G"026A30C H\)}{section.3.5}% 118
+\BOOKMARK [2][-]{subsection.3.5.2}{Quotient \(passage de G \340 K avec K G"026A30C H, H sous-groupe distingu\351 de G\)}{section.3.5}% 119
+\BOOKMARK [1][-]{section.3.6}{Groupe des automorphismes. Groupe de jauge}{chapter.3}% 120
+\BOOKMARK [2][-]{subsection.3.6.1}{Remarque terminologique}{section.3.6}% 121
+\BOOKMARK [2][-]{subsection.3.6.2}{Automorphismes verticaux d'un espace fibr\351 principal \(d\351finition\)}{section.3.6}% 122
+\BOOKMARK [2][-]{subsection.3.6.3}{Ecriture locale des transformations de jauge}{section.3.6}% 123
+\BOOKMARK [2][-]{subsection.3.6.4}{Deux autres d\351finitions des transformations de jauge}{section.3.6}% 124
+\BOOKMARK [2][-]{subsection.3.6.5}{Automorphismes quelconques d'un espace fibr\351 principal}{section.3.6}% 125
+\BOOKMARK [2][-]{subsection.3.6.6}{Action des automorphismes sur les espaces fibr\351s associ\351s}{section.3.6}% 126
+\BOOKMARK [2][-]{subsection.3.6.7}{Le cas des espaces vectoriels \(un cas trivial mais instructif!\)}{section.3.6}% 127
+\BOOKMARK [0][-]{chapter.4}{Connexions}{}% 128
+\BOOKMARK [1][-]{section.4.1}{Connexions dans un fibr\351 principal}{chapter.4}% 129
+\BOOKMARK [2][-]{subsection.4.1.1}{Motivations}{section.4.1}% 130
+\BOOKMARK [2][-]{subsection.4.1.2}{Distributions horizontales \351quivariantes}{section.4.1}% 131
+\BOOKMARK [2][-]{subsection.4.1.3}{Rel\350vement horizontal}{section.4.1}% 132
+\BOOKMARK [2][-]{subsection.4.1.4}{Forme de connexion}{section.4.1}% 133
+\BOOKMARK [2][-]{subsection.4.1.5}{ Ecriture locale de la forme de connexion: le potentiel de jauge}{section.4.1}% 134
+\BOOKMARK [1][-]{section.4.2}{Connexions dans les fibr\351s vectoriels associ\351s}{chapter.4}% 135
+\BOOKMARK [2][-]{subsection.4.2.1}{Matrice de connexion Aij, coefficients de connexion Aij}{section.4.2}% 136
+\BOOKMARK [2][-]{subsection.4.2.2}{Diff\351rentielle covariante des sections , d\351riv\351e covariante , parall\351lisme}{section.4.2}% 137
+\BOOKMARK [2][-]{subsection.4.2.3}{Remarques concernant les notations}{section.4.2}% 138
+\BOOKMARK [2][-]{subsection.4.2.4}{Loi de transformation des coefficients de connexion}{section.4.2}% 139
+\BOOKMARK [2][-]{subsection.4.2.5}{D\351rivation covariante des sections du fibr\351 dual}{section.4.2}% 140
+\BOOKMARK [2][-]{subsection.4.2.6}{D\351rivation covariante dans les puissances tensorielles d'un fibr\351 vectoriel}{section.4.2}% 141
+\BOOKMARK [2][-]{subsection.4.2.7}{L'op\351rateur D}{section.4.2}% 142
+\BOOKMARK [2][-]{subsection.4.2.8}{Diff\351rentielle ext\351rieure covariante d}{section.4.2}% 143
+\BOOKMARK [2][-]{subsection.4.2.9}{Diff\351rentielles et d\351riv\351es covariantes g\351n\351ralis\351es }{section.4.2}% 144
+\BOOKMARK [1][-]{section.4.3}{Courbure}{chapter.4}% 145
+\BOOKMARK [2][-]{subsection.4.3.1}{Lin\351arit\351 de \(d\)2}{section.4.3}% 146
+\BOOKMARK [2][-]{subsection.4.3.2}{Expression de l'op\351rateur de courbure dans les fibr\351s vectoriels associes}{section.4.3}% 147
+\BOOKMARK [2][-]{subsection.4.3.3}{Equation de structure pour la courbure}{section.4.3}% 148
+\BOOKMARK [2][-]{subsection.4.3.4}{Identit\351 de Bianchi pour la courbure}{section.4.3}% 149
+\BOOKMARK [2][-]{subsection.4.3.5}{Transformation de jauge pour la courbure}{section.4.3}% 150
+\BOOKMARK [2][-]{subsection.4.3.6}{Forme de connexion, diff\351rentielle covariante et courbure dans les fibr\351s principaux \(compl\351ments\)}{section.4.3}% 151
+\BOOKMARK [2][-]{subsection.4.3.7}{Ecritures diverses de la courbure F \(r\351capitulatif\)}{section.4.3}% 152
+\BOOKMARK [2][-]{subsection.4.3.8}{Connexions et op\351rations de Cartan}{section.4.3}% 153
+\BOOKMARK [2][-]{subsection.4.3.9}{Groupe d'holonomie d'une connexion, fibr\351 d'holonomie}{section.4.3}% 154
+\BOOKMARK [2][-]{subsection.4.3.10}{R\351duction des connexions}{section.4.3}% 155
+\BOOKMARK [1][-]{section.4.4}{Cas particulier des connexions lin\351aires}{chapter.4}% 156
+\BOOKMARK [2][-]{subsection.4.4.1}{D\351finition et g\351n\351ralit\351s}{section.4.4}% 157
+\BOOKMARK [2][-]{subsection.4.4.2}{Potentiel de jauge et courbure des connexions lin\351aires}{section.4.4}% 158
+\BOOKMARK [2][-]{subsection.4.4.3}{Diff\351rentielle ext\351rieure covariante \(cas des connexions lin\351aires\)}{section.4.4}% 159
+\BOOKMARK [2][-]{subsection.4.4.4}{Forme canonique \(ou forme de soudure\)}{section.4.4}% 160
+\BOOKMARK [2][-]{subsection.4.4.5}{Torsion}{section.4.4}% 161
+\BOOKMARK [2][-]{subsection.4.4.6}{Equation de structure pour la torsion}{section.4.4}% 162
+\BOOKMARK [2][-]{subsection.4.4.7}{Identit\351s de Bianchi pour les connexions lin\351aires}{section.4.4}% 163
+\BOOKMARK [2][-]{subsection.4.4.8}{D\351riv\351es covariantes secondes, hessien et identit\351s de Ricci}{section.4.4}% 164
+\BOOKMARK [2][-]{subsection.4.4.9}{Tenseur de Ricci}{section.4.4}% 165
+\BOOKMARK [2][-]{subsection.4.4.10}{Courbes autoparall\350les}{section.4.4}% 166
+\BOOKMARK [2][-]{subsection.4.4.11}{Connexions lin\351aires sur les groupes et espaces homog\350nes}{section.4.4}% 167
+\BOOKMARK [1][-]{section.4.5}{Connexions m\351triques}{chapter.4}% 168
+\BOOKMARK [2][-]{subsection.4.5.1}{La m\351trique}{section.4.5}% 169
+\BOOKMARK [2][-]{subsection.4.5.2}{Compatibilit\351 avec la m\351trique}{section.4.5}% 170
+\BOOKMARK [2][-]{subsection.4.5.3}{Calcul des coefficients de connexion}{section.4.5}% 171
+\BOOKMARK [2][-]{subsection.4.5.4}{Compl\351ments sur le tenseur de Riemann. Propri\351t\351s de sym\351trie.}{section.4.5}% 172
+\BOOKMARK [2][-]{subsection.4.5.5}{Equation des g\351od\351siques}{section.4.5}% 173
+\BOOKMARK [2][-]{subsection.4.5.6}{Tenseur de Ricci, courbure scalaire et tenseur d'Einstein, courbures sectionelles}{section.4.5}% 174
+\BOOKMARK [2][-]{subsection.4.5.7}{Dualit\351 de Hodge et laplaciens}{section.4.5}% 175
+\BOOKMARK [2][-]{subsection.4.5.8}{Connexions spinorielles et op\351rateur de Dirac}{section.4.5}% 176
+\BOOKMARK [2][-]{subsection.4.5.9}{M\351triques sur les groupes et espaces homog\350nes}{section.4.5}% 177
+\BOOKMARK [0][-]{chapter.5}{Un saut dans l'infini}{}% 178
+\BOOKMARK [1][-]{subsection.5.0.1}{Action du groupe de jauge sur l'espace des connexions}{chapter.5}% 179
+\BOOKMARK [2][-]{subsection.5.0.2}{L'espace des orbites}{subsection.5.0.1}% 180
+\BOOKMARK [2][-]{subsection.5.0.3}{Conclusion}{subsection.5.0.1}% 181
+\BOOKMARK [0][-]{chapter.6}{Calcul diff\351rentiel pour alg\350bres non commutatives}{}% 182
+\BOOKMARK [1][-]{section.6.1}{Remarques philosophico-math\351matiques sur les espaces non commutatifs}{chapter.6}% 183
+\BOOKMARK [1][-]{section.6.2}{Calculs diff\351rentiels}{chapter.6}% 184
+\BOOKMARK [2][-]{subsection.6.2.1}{Remarques}{section.6.2}% 185
+\BOOKMARK [2][-]{subsection.6.2.2}{L'alg\350bre diff\351rentielle des formes universelles A}{section.6.2}% 186
+\BOOKMARK [2][-]{subsection.6.2.3}{L'alg\350bre diff\351rentielle DerA}{section.6.2}% 187
+\BOOKMARK [2][-]{subsection.6.2.4}{Alg\350bres diff\351rentielles pour espaces non connexes}{section.6.2}% 188
+\BOOKMARK [2][-]{subsection.6.2.5}{L'alg\350bre diff\351rentielle DA}{section.6.2}% 189
+\BOOKMARK [1][-]{section.6.3}{Excursion au pays des math\351matiques non commutatives}{chapter.6}% 190
+\BOOKMARK [2][-]{subsection.6.3.1}{Remarques et pr\351sentation g\351n\351rale}{section.6.3}% 191
+\BOOKMARK [2][-]{subsection.6.3.2}{Topologie non commutative et th\351orie de la mesure non commutative}{section.6.3}% 192
+\BOOKMARK [2][-]{subsection.6.3.3}{Calcul diff\351rentiel non commutatif}{section.6.3}% 193
+\BOOKMARK [2][-]{subsection.6.3.4}{Espaces fibr\351s non commutatifs et modules projectifs}{section.6.3}% 194
+\BOOKMARK [2][-]{subsection.6.3.5}{Connections g\351n\351ralis\351es en geometrie non commutative}{section.6.3}% 195
+\BOOKMARK [2][-]{subsection.6.3.6}{Cohomologie des espaces non commutatifs}{section.6.3}% 196
+\BOOKMARK [2][-]{subsection.6.3.7}{ Remarque finale}{section.6.3}% 197
