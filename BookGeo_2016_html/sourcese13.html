@@ -1,7 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
   "http://www.w3.org/TR/html4/loose.dtd">  
 <html > 
-<head><title>Generalites sur les groupes de Lie</title> 
+<head>
+<meta charset="UTF-8"><title>Generalites sur les groupes de Lie</title> 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
 <meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
@@ -17,33 +18,33 @@ href="sourcech2.html#tailsourcech2.html" >prev-tail</a>] [<a
 href="#tailsourcese13.html">tail</a>] [<a 
 href="sourcech2.html#sourcese13.html" >up</a>] </p></div>
    <h3 class="sectionHead"><span class="titlemark">2.1   </span> <a 
- id="x27-540002.1"></a>Généralités sur les groupes de Lie</h3>
+ id="x27-540002.1"></a>GÃ©nÃ©ralitÃ©s sur les groupes de Lie</h3>
 <!--l. 6--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">2.1.1   </span> <a 
- id="x27-550002.1.1"></a>Généralités et définitions élémentaires</h4>
-<!--l. 8--><p class="noindent" >Les groupes de Lie et les espaces homogènes fournissent une multitude d&#8217;exemples
-particulièrement simples de variétés différentiables et c&#8217;est une des raisons pour
+ id="x27-550002.1.1"></a>GÃ©nÃ©ralitÃ©s et dÃ©finitions Ã©lÃ©mentaires</h4>
+<!--l. 8--><p class="noindent" >Les groupes de Lie et les espaces homogÃ¨nes fournissent une multitude d&#8217;exemples
+particuliÃ¨rement simples de variÃ©tÃ©s diffÃ©rentiables et c&#8217;est une des raisons pour
 lesquelles nous leur consacrons une section de cet ouvrage. Une autre raison
-importante est que les groupes de Lie vont être utilisés comme &#8220;outils&#8221; dans les
+importante est que les groupes de Lie vont Ãªtre utilisÃ©s comme &#8220;outils&#8221; dans les
 chapitres suivants.
-<!--l. 17--><p class="indent" >   Chacun est censé être déjà familier avec la notion de structure de groupe.
+<!--l. 17--><p class="indent" >   Chacun est censÃ© Ãªtre dÃ©jÃ  familier avec la notion de structure de groupe.
 L&#8217;introduction aux groupes et leur utilisation dans toutes les branches de la
-physique est un thème présenté et étudié, suivant les années et les réformes de
-l&#8217;enseignement secondaire, entre la classe de quatrième et les années de Licence...
+physique est un thÃ¨me prÃ©sentÃ© et Ã©tudiÃ©, suivant les annÃ©es et les rÃ©formes de
+l&#8217;enseignement secondaire, entre la classe de quatriÃ¨me et les annÃ©es de Licence...
 Rappelons donc qu&#8217;un groupe est un ensemble (fini ou infini) muni d&#8217;une loi de
-composition interne associative, possédant un élément neutre, et tel que tout
-élément possède un symétrique pour la loi en question. Du point de vue du
-calcul, notons que, dans un groupe, il est toujours possible de résoudre une
-équation du premier degré (du type <span 
+composition interne associative, possÃ©dant un Ã©lÃ©ment neutre, et tel que tout
+Ã©lÃ©ment possÃ¨de un symÃ©trique pour la loi en question. Du point de vue du
+calcul, notons que, dans un groupe, il est toujours possible de rÃ©soudre une
+Ã©quation du premier degrÃ© (du type <span 
 class="cmmi-12">a</span><span style="margin-left:0.3em" class="thinspace"></span><span 
 class="cmmi-12">x </span>= <span 
-class="cmmi-12">b, </span>la solution étant <span 
+class="cmmi-12">b, </span>la solution Ã©tant <span 
 class="cmmi-12">x </span>= <span 
 class="cmmi-12">a</span><sup><span 
 class="cmsy-8">-</span><span 
 class="cmr-8">1</span></sup><span style="margin-left:0.3em" class="thinspace"></span><span 
 class="cmmi-12">b</span>). Les
-exemples les plus simples habituellement présentés aux élèves de nos lycées sont
+exemples les plus simples habituellement prÃ©sentÃ©s aux Ã©lÃ¨ves de nos lycÃ©es sont
 les suivants<span class="frenchb-nbsp">&#x00A0;</span>: Le groupe (Z Z<span 
 class="cmmi-12">, </span>+) des entiers relatifs, les groupes (additif et
 multiplicatif) de nombres rationnels (<span 
@@ -53,58 +54,58 @@ class="cmsy-10x-x-120">-{</span>0<span
 class="cmsy-10x-x-120">}</span><span 
 class="cmmi-12">,</span><span 
 class="cmsy-10x-x-120">&#x00D7;</span>) ainsi que leurs
-généralisations réelles et complexes, les groupes de congruence Z Z<sub><span 
+gÃ©nÃ©ralisations rÃ©elles et complexes, les groupes de congruence Z Z<sub><span 
 class="cmmi-8">p</span></sub> = Z Z<span 
 class="cmmi-12">&#x2215;p</span>Z Z, les
-groupes de symétrie des solides platoniques, les groupes de transformations
-linéaires, affines ou projectives et les groupes de substitutions. Les groupes ne
-sont pas nécessairement commutatifs, comme les derniers exemples le
-montrent clairement. Les groupes peuvent être finis (comme Z Z<span 
+groupes de symÃ©trie des solides platoniques, les groupes de transformations
+linÃ©aires, affines ou projectives et les groupes de substitutions. Les groupes ne
+sont pas nÃ©cessairement commutatifs, comme les derniers exemples le
+montrent clairement. Les groupes peuvent Ãªtre finis (comme Z Z<span 
 class="cmmi-12">&#x2215;p</span>Z Z),
 infinis mais discrets (comme Z Z) ou infinis et &#8220;continus&#8221; (comme I R ou
 comme le groupe <span 
 class="cmmi-12">U</span>(1) des rotations autour d&#8217;un axe). Regardons ce dernier
-exemple d&#8217;un peu plus près. Toute rotation autour d&#8217;un axe est parfaitement
-caractérisée par un angle <span 
+exemple d&#8217;un peu plus prÃ¨s. Toute rotation autour d&#8217;un axe est parfaitement
+caractÃ©risÃ©e par un angle <span 
 class="cmmi-12">&#x03B8; </span>compris entre 0 et 2<span 
-class="cmmi-12">&#x03C0;</span><span class="frenchb-thinspace">&#x00A0;</span>; de surcroît, les rotations
+class="cmmi-12">&#x03C0;</span><span class="frenchb-thinspace">&#x00A0;</span>; de surcroÃ®t, les rotations
                                                                           
 
                                                                           
 d&#8217;angle 0 et 2<span 
-class="cmmi-12">&#x03C0; </span>sont identiques. En d&#8217;autres termes, on peut considérer les
-rotations en question comme les différents points d&#8217;un cercle <span 
+class="cmmi-12">&#x03C0; </span>sont identiques. En d&#8217;autres termes, on peut considÃ©rer les
+rotations en question comme les diffÃ©rents points d&#8217;un cercle <span 
 class="cmmi-12">S</span><sup><span 
 class="cmr-8">1</span></sup> de rayon
-quelconque, l&#8217;élément neutre (c&#8217;est à dire la rotation d&#8217;angle nul) étant un
-point marqué de ce cercle <span 
+quelconque, l&#8217;Ã©lÃ©ment neutre (c&#8217;est Ã  dire la rotation d&#8217;angle nul) Ã©tant un
+point marquÃ© de ce cercle <span 
 class="cmmi-12">S</span><sup><span 
 class="cmr-8">1</span></sup>. Ceci nous fournit un image &#8220;visuelle&#8221; de
 ce groupe <span 
-class="cmmi-12">U</span>(1), image qui peut nous faire oublier momentanément la
-structure algébrique proprement dite de cet ensemble (un groupe) mais qui
-attire notre attention sur sa structure topologique ou même différentiable
-(un cercle). La notion de groupe de Lie généralise ce dernier exemple
-en juxtaposant de façon axiomatique la structure de groupe et celles de
-variété.
-<!--l. 75--><p class="indent" >   Par définition, un groupe de Lie <span 
-class="cmmi-12">G </span>est donc une variété différentiable
-munie d&#8217;une structure de groupe, de façon à ce que les deux
-structures soient compatibles, c&#8217;est à dire de façon à ce que la
+class="cmmi-12">U</span>(1), image qui peut nous faire oublier momentanÃ©ment la
+structure algÃ©brique proprement dite de cet ensemble (un groupe) mais qui
+attire notre attention sur sa structure topologique ou mÃªme diffÃ©rentiable
+(un cercle). La notion de groupe de Lie gÃ©nÃ©ralise ce dernier exemple
+en juxtaposant de faÃ§on axiomatique la structure de groupe et celles de
+variÃ©tÃ©.
+<!--l. 75--><p class="indent" >   Par dÃ©finition, un groupe de Lie <span 
+class="cmmi-12">G </span>est donc une variÃ©tÃ© diffÃ©rentiable
+munie d&#8217;une structure de groupe, de faÃ§on Ã  ce que les deux
+structures soient compatibles, c&#8217;est Ã  dire de faÃ§on Ã  ce que la
 multiplication <span class="footnote-mark"><a 
 href="source28.html#fn1x3"><sup class="textsuperscript">1</sup></a></span><a 
  id="x27-55001f1"></a> 
-et le passage à l&#8217;inverse soient des applications différentiables. Notons que la
+et le passage Ã  l&#8217;inverse soient des applications diffÃ©rentiables. Notons que la
 multiplication est une application de <span 
 class="cmmi-12">G</span><span 
 class="cmsy-10x-x-120">&#x00D7;</span><span 
 class="cmmi-12">G </span>dans <span 
-class="cmmi-12">G </span>alors que le passage à l&#8217;inverse
+class="cmmi-12">G </span>alors que le passage Ã  l&#8217;inverse
 est une application de <span 
 class="cmmi-12">G </span>dans <span 
-class="cmmi-12">G</span>. Le lecteur pourra visuellement se représenter un
-groupe de Lie comme un &#8220;patatoïde&#8221; avec multiplication (entre points) et origine
-marquée (voir <a 
+class="cmmi-12">G</span>. Le lecteur pourra visuellement se reprÃ©senter un
+groupe de Lie comme un &#8220;patatoÃ¯de&#8221; avec multiplication (entre points) et origine
+marquÃ©e (voir <a 
 href="#x27-550021">2.1<!--tex4ht:ref: fig:groupe-Lie --></a>).
 <!--l. 93--><p class="indent" >   <hr class="figure"><div class="figure" 
 >
@@ -134,20 +135,20 @@ class="content">Un groupe de Lie</span></div><!--tex4ht:label?: x27-550021 -->
 
                                                                           
 <!--l. 101--><p class="indent" >   </div><hr class="endfigure">
-<!--l. 104--><p class="indent" >   La dimension d&#8217;un groupe de Lie est, par définition, sa dimension en tant que
-variété (nous verrons de nombreux exemples un peu plus loin)<span class="frenchb-thinspace">&#x00A0;</span>; notons
-dès à présent que le groupe <span 
-class="cmmi-12">U</span>(1) présenté plus haut est de dimension
+<!--l. 104--><p class="indent" >   La dimension d&#8217;un groupe de Lie est, par dÃ©finition, sa dimension en tant que
+variÃ©tÃ© (nous verrons de nombreux exemples un peu plus loin)<span class="frenchb-thinspace">&#x00A0;</span>; notons
+dÃ¨s Ã  prÃ©sent que le groupe <span 
+class="cmmi-12">U</span>(1) prÃ©sentÃ© plus haut est de dimension
 1.
    <h4 class="subsectionHead"><span class="titlemark">2.1.2   </span> <a 
- id="x27-560002.1.2"></a>Exemples élémentaires de groupes classiques</h4>
-<!--l. 112--><p class="noindent" >On désigne par <span 
+ id="x27-560002.1.2"></a>Exemples Ã©lÃ©mentaires de groupes classiques</h4>
+<!--l. 112--><p class="noindent" >On dÃ©signe par <span 
 class="cmmi-12">M</span>(<span 
-class="cmmi-12">n,</span> lC) l&#8217;algèbre (de dimension complexe <span 
+class="cmmi-12">n,</span> lC) l&#8217;algÃ¨bre (de dimension complexe <span 
 class="cmmi-12">n</span><sup><span 
-class="cmr-8">2</span></sup>) des matrices carrées
+class="cmr-8">2</span></sup>) des matrices carrÃ©es
 d&#8217;ordre <span 
-class="cmmi-12">n </span>à coefficients complexes et par <span 
+class="cmmi-12">n </span>Ã  coefficients complexes et par <span 
 class="cmmi-12">a</span><sup><span 
 class="cmsy-8">&#8224;</span></sup> l&#8217;adjointe d&#8217;une matrice <span 
 class="cmmi-12">a</span>
@@ -161,12 +162,12 @@ class="cmmi-12">a</span><sup><span
 class="cmsy-8">&#8224;</span></sup> = (<span class="overline"><span 
 class="cmmi-12">a</span><sub>
 <span 
-class="cmmi-8">ji</span></sub></span>)). L&#8217;ensemble précédent n&#8217;est
+class="cmmi-8">ji</span></sub></span>)). L&#8217;ensemble prÃ©cÃ©dent n&#8217;est
 certes pas un groupe pour la loi de multiplication des matrices puisqu&#8217;il
-contient de nombreux éléments non inversibles (toutes les matrices de
-déterminant nul) mais il contient plusieurs sous-ensembles intéressants qui,
-eux, sont bien des groupes multiplicatifs, comme on pourra le vérifier
-aisément.
+contient de nombreux Ã©lÃ©ments non inversibles (toutes les matrices de
+dÃ©terminant nul) mais il contient plusieurs sous-ensembles intÃ©ressants qui,
+eux, sont bien des groupes multiplicatifs, comme on pourra le vÃ©rifier
+aisÃ©ment.
        <ul class="itemize1">
        <li class="itemize"><span 
 class="cmmi-12">GL</span>(<span 
@@ -181,7 +182,7 @@ class="cmsy-10x-x-120">|</span><span style="margin-left:0.3em" class="thinspace"
 class="cmmi-12">det</span><span style="margin-left:0.3em" class="thinspace"></span><span 
 class="cmmi-12">a</span><span 
 class="cmmi-12">&#x2260;</span>0<span 
-class="cmsy-10x-x-120">}</span>, le groupe linéaire complexe.
+class="cmsy-10x-x-120">}</span>, le groupe linÃ©aire complexe.
        </li>
        <li class="itemize"><span 
 class="cmmi-12">U</span>(<span 
@@ -213,10 +214,10 @@ class="cmsy-10x-x-120">|</span><span style="margin-left:0.3em" class="thinspace"
 class="cmmi-12">det</span><span style="margin-left:0.3em" class="thinspace"></span><span 
 class="cmmi-12">a </span>= 1<span 
 class="cmsy-10x-x-120">}</span>, le groupe unitaire unimodulaire,
-       aussi appelé groupe spécial unimodulaire.</li></ul>
-<!--l. 134--><p class="noindent" >Notons que les éléments de <span 
+       aussi appelÃ© groupe spÃ©cial unimodulaire.</li></ul>
+<!--l. 134--><p class="noindent" >Notons que les Ã©lÃ©ments de <span 
 class="cmmi-12">U</span>(<span 
-class="cmmi-12">n</span>) ont automatiquement un déterminant (un nombre
+class="cmmi-12">n</span>) ont automatiquement un dÃ©terminant (un nombre
 complexe) de module 1, puisque <span 
 class="cmmi-12">det</span><span style="margin-left:0.3em" class="thinspace"></span><span 
 class="cmmi-12">a</span><sup><span 
@@ -224,22 +225,22 @@ class="cmsy-8">&#8224;</span></sup> =<span class="overline"> <span
 class="cmmi-12">det</span><span style="margin-left:0.3em" class="thinspace"></span><span 
 class="cmmi-12">a</span></span> = 1<span 
 class="cmmi-12">&#x2215;det</span><span style="margin-left:0.3em" class="thinspace"></span><span 
-class="cmmi-12">a</span>, mais pas nécessairement
-égal à 1.
-<!--l. 140--><p class="indent" >   Les groupes précédents sont définis comme groupes de matrices<span class="frenchb-thinspace">&#x00A0;</span>; les entrées
-de ces matrices (les &#8220;éléments de matrice&#8221;) sont des nombres qui peuvent être
-réels mais sont généralement complexes. Si on impose à ces éléments de matrice
-d&#8217;être réels, on obtient de nouveaux groupes. Soit <span 
+class="cmmi-12">a</span>, mais pas nÃ©cessairement
+Ã©gal Ã  1.
+<!--l. 140--><p class="indent" >   Les groupes prÃ©cÃ©dents sont dÃ©finis comme groupes de matrices<span class="frenchb-thinspace">&#x00A0;</span>; les entrÃ©es
+de ces matrices (les &#8220;Ã©lÃ©ments de matrice&#8221;) sont des nombres qui peuvent Ãªtre
+rÃ©els mais sont gÃ©nÃ©ralement complexes. Si on impose Ã  ces Ã©lÃ©ments de matrice
+d&#8217;Ãªtre rÃ©els, on obtient de nouveaux groupes. Soit <span 
 class="cmmi-12">M</span>(<span 
-class="cmmi-12">n,</span> I R) l&#8217;algèbre (de
-dimension réelle <span 
+class="cmmi-12">n,</span> I R) l&#8217;algÃ¨bre (de
+dimension rÃ©elle <span 
 class="cmmi-12">n</span><sup><span 
-class="cmr-8">2</span></sup>) des matrices carrées d&#8217;ordre <span 
-class="cmmi-12">n </span>à coefficients réels. Cet
+class="cmr-8">2</span></sup>) des matrices carrÃ©es d&#8217;ordre <span 
+class="cmmi-12">n </span>Ã  coefficients rÃ©els. Cet
 ensemble, comme <span 
 class="cmmi-12">M</span>(<span 
-class="cmmi-12">n,</span> lC) est une algèbre associative mais n&#8217;est pas un groupe
-multiplicatif. On définit
+class="cmmi-12">n,</span> lC) est une algÃ¨bre associative mais n&#8217;est pas un groupe
+multiplicatif. On dÃ©finit
        <ul class="itemize1">
        <li class="itemize"><span 
 class="cmmi-12">GL</span>(<span 
@@ -248,7 +249,7 @@ class="cmmi-12">GL</span>(<span
 class="cmmi-12">n,</span> lC) <span 
 class="cmsy-10x-x-120">&#x2229; </span><span 
 class="cmmi-12">M</span>(<span 
-class="cmmi-12">n,</span> I R), le groupe linéaire réel.
+class="cmmi-12">n,</span> I R), le groupe linÃ©aire rÃ©el.
        </li>
        <li class="itemize"><span 
 class="cmmi-12">O</span>(<span 
@@ -257,7 +258,7 @@ class="cmmi-12">U</span>(<span
 class="cmmi-12">n,</span> lC) <span 
 class="cmsy-10x-x-120">&#x2229; </span><span 
 class="cmmi-12">M</span>(<span 
-class="cmmi-12">n,</span> I R), le groupe orthogonal, encore appelé
+class="cmmi-12">n,</span> I R), le groupe orthogonal, encore appelÃ©
        groupe des rotations.
        </li>
        <li class="itemize"><span 
@@ -267,19 +268,19 @@ class="cmmi-12">SU</span>(<span
 class="cmmi-12">n</span>) <span 
 class="cmsy-10x-x-120">&#x2229; </span><span 
 class="cmmi-12">M</span>(<span 
-class="cmmi-12">n,</span> I R), le groupe spécial orthogonal.</li></ul>
+class="cmmi-12">n,</span> I R), le groupe spÃ©cial orthogonal.</li></ul>
                                                                           
 
                                                                           
-<!--l. 158--><p class="noindent" >Les éléments du groupe unitaire ayant un déterminant de module 1, ceux de <span 
+<!--l. 158--><p class="noindent" >Les Ã©lÃ©ments du groupe unitaire ayant un dÃ©terminant de module 1, ceux de <span 
 class="cmmi-12">O</span>(<span 
 class="cmmi-12">n,</span> I R)
-auront un déterminant égal à <span 
-class="cmsy-10x-x-120">-</span>1 ou à 1<span class="frenchb-thinspace">&#x00A0;</span>; ceux pour lesquels il est précisément
-égal à 1 constituent le groupe <span 
+auront un dÃ©terminant Ã©gal Ã  <span 
+class="cmsy-10x-x-120">-</span>1 ou Ã  1<span class="frenchb-thinspace">&#x00A0;</span>; ceux pour lesquels il est prÃ©cisÃ©ment
+Ã©gal Ã  1 constituent le groupe <span 
 class="cmmi-12">SO</span>(<span 
-class="cmmi-12">n,</span> I R). On désigne par <img 
-src="source202x.png" alt="^a"  class="widetilde" > la transposée d&#8217;une
+class="cmmi-12">n,</span> I R). On dÃ©signe par <img 
+src="source202x.png" alt="^a"  class="widetilde" > la transposÃ©e d&#8217;une
 matrice <span 
 class="cmmi-12">a </span>de <span 
 class="cmmi-12">M</span>(<span 
