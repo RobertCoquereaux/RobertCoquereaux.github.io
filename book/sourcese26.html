@@ -1,7 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
   "http://www.w3.org/TR/html4/loose.dtd">  
 <html > 
-<head><title>Connexions dans un fibre principal</title> 
+<head>
+<meta charset="UTF-8"><title>Connexions dans un fibre principal</title> 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
 <meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
@@ -17,114 +18,114 @@ href="sourcech4.html#tailsourcech4.html" >prev-tail</a>] [<a
 href="#tailsourcese26.html">tail</a>] [<a 
 href="sourcech4.html#sourcese26.html" >up</a>] </p></div>
    <h3 class="sectionHead"><span class="titlemark">4.1   </span> <a 
- id="x43-1550004.1"></a>Connexions dans un fibré principal</h3>
+ id="x43-1550004.1"></a>Connexions dans un fibrÃ© principal</h3>
 <!--l. 5--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">4.1.1   </span> <a 
  id="x43-1560004.1.1"></a>Motivations</h4>
-<!--l. 7--><p class="noindent" >On veut donner un sens à l&#8217;idée de vouloir &#8220;garder un repère fixe&#8221; ou de
-&#8220;transporter son repère avec soi&#8221;<span class="frenchb-thinspace">&#x00A0;</span>; il s&#8217;agit là d&#8217;une notion intuitive qui n&#8217;a, <span 
+<!--l. 7--><p class="noindent" >On veut donner un sens Ã  l&#8217;idÃ©e de vouloir &#8220;garder un repÃ¨re fixe&#8221; ou de
+&#8220;transporter son repÃ¨re avec soi&#8221;<span class="frenchb-thinspace">&#x00A0;</span>; il s&#8217;agit lÃ  d&#8217;une notion intuitive qui n&#8217;a, <span 
 class="cmti-12">a</span>
 <span 
-class="cmti-12">priori</span>, pas de sens lorsqu&#8217;on se déplace sur une variété différentiable quelconque
-munie de sa seule structure de variété. Intuitivement, on souhaite disposer d&#8217;un
-moyen d&#8217;assujettir le déplacement d&#8217;un repère choisi (déplacement qui a donc lieu
-dans l&#8217;ensemble des repères) lorsqu&#8217;on déplace l&#8217;origine de ce repère dans l&#8217;espace
-qui nous intéresse. Puisque nous avons maintenant à notre disposition la notion
-d&#8217;espace fibré, nous nous plaçons dans le fibré des repères correspondant à une
-variété <span 
-class="cmmi-12">M </span>(la base du fibré en question) et nous souhaitons donc pouvoir disposer
-d&#8217;une méthode nous permettant d&#8217;associer, à tout chemin allant du point <span 
+class="cmti-12">priori</span>, pas de sens lorsqu&#8217;on se dÃ©place sur une variÃ©tÃ© diffÃ©rentiable quelconque
+munie de sa seule structure de variÃ©tÃ©. Intuitivement, on souhaite disposer d&#8217;un
+moyen d&#8217;assujettir le dÃ©placement d&#8217;un repÃ¨re choisi (dÃ©placement qui a donc lieu
+dans l&#8217;ensemble des repÃ¨res) lorsqu&#8217;on dÃ©place l&#8217;origine de ce repÃ¨re dans l&#8217;espace
+qui nous intÃ©resse. Puisque nous avons maintenant Ã  notre disposition la notion
+d&#8217;espace fibrÃ©, nous nous plaÃ§ons dans le fibrÃ© des repÃ¨res correspondant Ã  une
+variÃ©tÃ© <span 
+class="cmmi-12">M </span>(la base du fibrÃ© en question) et nous souhaitons donc pouvoir disposer
+d&#8217;une mÃ©thode nous permettant d&#8217;associer, Ã  tout chemin allant du point <span 
 class="cmsy-10x-x-120"><img 
 src="cmsy10-c-50.png" alt="P" class="10-120x-x-50" /> </span>au
 point <span 
 class="cmsy-10x-x-120"><img 
-src="cmsy10-c-51.png" alt="Q" class="10-120x-x-51" /> </span>sur la base, et à tout repère au point <span 
+src="cmsy10-c-51.png" alt="Q" class="10-120x-x-51" /> </span>sur la base, et Ã  tout repÃ¨re au point <span 
 class="cmsy-10x-x-120"><img 
 src="cmsy10-c-50.png" alt="P" class="10-120x-x-50" /></span>, un certain chemin dans
-l&#8217;espace des repères. Choisir d&#8217;une telle méthode revient précisément à
+l&#8217;espace des repÃ¨res. Choisir d&#8217;une telle mÃ©thode revient prÃ©cisÃ©ment Ã 
                                                                           
 
                                                                           
-choisir ce qu&#8217;on appelle une connexion dans le fibré principal des repères
-linéaires. Le mot &#8220;connexion&#8221; &#8211; en anglais &#8220;connection&#8221;&#8211; est bien choisi
+choisir ce qu&#8217;on appelle une connexion dans le fibrÃ© principal des repÃ¨res
+linÃ©aires. Le mot &#8220;connexion&#8221; &#8211; en anglais &#8220;connection&#8221;&#8211; est bien choisi
 puisqu&#8217;il nous permet effectivement de connecter (de comparer) des vecteurs
-(plus généralement des éléments d&#8217;un fibré associé) situés en des points
-différents de la variété. Le cas de l&#8217;espace affine <span 
+(plus gÃ©nÃ©ralement des Ã©lÃ©ments d&#8217;un fibrÃ© associÃ©) situÃ©s en des points
+diffÃ©rents de la variÃ©tÃ©. Le cas de l&#8217;espace affine <span 
 class="cmmi-12">R</span><sup><span 
-class="cmmi-8">n</span></sup> est très particulier
-puisqu&#8217;on peut disposer là de repères globaux permettant de comparer
-des vecteurs situés en des points différents<span class="frenchb-thinspace">&#x00A0;</span>; il existe d&#8217;autres variétés
-pour lesquelles cette propriété est également valable et où le choix d&#8217;un
-repère mobile global est possible<span class="frenchb-nbsp">&#x00A0;</span>: ce sont les variétés parallèlisables déjà
-mentionnées dans le chapitre précédent. Nous allons, dans un premier
-temps, définir la notion de connexion de façon infinitésimale, comme
-étant un moyen d&#8217;associer un déplacement infinitésimal dans l&#8217;espace des
-repères à un déplacement infinitésimal du point de base (c&#8217;est à dire du
-point où le repère est situé). En fait, la seule structure utilisée dans la
-définition de la notion de connexion est celle de fibré principal et tout ce
-qu&#8217;on écrira aura encore un sens si on remplace le fibré des repères par un
-fibré principal quelconque (cela dit, il est bien commode de visualiser les
-choses en utilisant des repères, nous nous permettrons donc d&#8217;utiliser
-le mot &#8220;repère&#8221; pour désigner un élément d&#8217;un espace fibré principal
+class="cmmi-8">n</span></sup> est trÃ¨s particulier
+puisqu&#8217;on peut disposer lÃ  de repÃ¨res globaux permettant de comparer
+des vecteurs situÃ©s en des points diffÃ©rents<span class="frenchb-thinspace">&#x00A0;</span>; il existe d&#8217;autres variÃ©tÃ©s
+pour lesquelles cette propriÃ©tÃ© est Ã©galement valable et oÃ¹ le choix d&#8217;un
+repÃ¨re mobile global est possible<span class="frenchb-nbsp">&#x00A0;</span>: ce sont les variÃ©tÃ©s parallÃ¨lisables dÃ©jÃ 
+mentionnÃ©es dans le chapitre prÃ©cÃ©dent. Nous allons, dans un premier
+temps, dÃ©finir la notion de connexion de faÃ§on infinitÃ©simale, comme
+Ã©tant un moyen d&#8217;associer un dÃ©placement infinitÃ©simal dans l&#8217;espace des
+repÃ¨res Ã  un dÃ©placement infinitÃ©simal du point de base (c&#8217;est Ã  dire du
+point oÃ¹ le repÃ¨re est situÃ©). En fait, la seule structure utilisÃ©e dans la
+dÃ©finition de la notion de connexion est celle de fibrÃ© principal et tout ce
+qu&#8217;on Ã©crira aura encore un sens si on remplace le fibrÃ© des repÃ¨res par un
+fibrÃ© principal quelconque (cela dit, il est bien commode de visualiser les
+choses en utilisant des repÃ¨res, nous nous permettrons donc d&#8217;utiliser
+le mot &#8220;repÃ¨re&#8221; pour dÃ©signer un Ã©lÃ©ment d&#8217;un espace fibrÃ© principal
 quelconque).
 <!--l. 62--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">4.1.2   </span> <a 
- id="x43-1570004.1.2"></a>Distributions horizontales équivariantes</h4>
+ id="x43-1570004.1.2"></a>Distributions horizontales Ã©quivariantes</h4>
 <!--l. 64--><p class="noindent" >Soit <span 
-class="cmmi-12">P </span>le fibré principal des repères linéaires de la variété <span 
+class="cmmi-12">P </span>le fibrÃ© principal des repÃ¨res linÃ©aires de la variÃ©tÃ© <span 
 class="cmmi-12">M</span>, avec groupe
 structural <span 
 class="cmmi-12">GL</span>(<span 
 class="cmmi-12">n</span>). Soit <span 
 class="cmmi-12">e </span><span 
 class="cmsy-10x-x-120">&#x2208; </span><span 
-class="cmmi-12">P </span>un repère au point <span 
+class="cmmi-12">P </span>un repÃ¨re au point <span 
 class="cmsy-10x-x-120"><img 
 src="cmsy10-c-50.png" alt="P" class="10-120x-x-50" />&#x2208; </span><span 
 class="cmmi-12">M </span>(attention <span 
-class="cmmi-12">e </span>ne désigne
-pas l&#8217;élément neutre de <span 
+class="cmmi-12">e </span>ne dÃ©signe
+pas l&#8217;Ã©lÃ©ment neutre de <span 
 class="cmmi-12">G</span><span class="frenchb-thinspace">&#x00A0;</span>!). L&#8217;espace tangent <span 
 class="cmmi-12">T</span>(<span 
-class="cmmi-12">P,e</span>), tangent à <span 
+class="cmmi-12">P,e</span>), tangent Ã  <span 
 class="cmmi-12">P </span>en <span 
 class="cmmi-12">e </span>est,
-intuitivement, l&#8217;ensemble des déplacements infinitésimaux de repères, issus du
-repère <span 
-class="cmmi-12">e</span>. Nous savons déjà nous déplacer dans la direction verticale puisque cela
-correspond à un déplacement infinitésimal induit par l&#8217;action du groupe <span 
+intuitivement, l&#8217;ensemble des dÃ©placements infinitÃ©simaux de repÃ¨res, issus du
+repÃ¨re <span 
+class="cmmi-12">e</span>. Nous savons dÃ©jÃ  nous dÃ©placer dans la direction verticale puisque cela
+correspond Ã  un dÃ©placement infinitÃ©simal induit par l&#8217;action du groupe <span 
 class="cmmi-12">GL</span>(<span 
 class="cmmi-12">n</span>)<span class="frenchb-nbsp">&#x00A0;</span>:
-on fait &#8220;tourner&#8221; le repère <span 
+on fait &#8220;tourner&#8221; le repÃ¨re <span 
 class="cmmi-12">e </span>sans faire bouger le point <span 
 class="cmsy-10x-x-120"><img 
 src="cmsy10-c-50.png" alt="P" class="10-120x-x-50" /></span>. Le sous espace vertical
 <span 
 class="cmmi-12">V </span>(<span 
-class="cmmi-12">P,e</span>) est donc déjà bien défini. Une connexion sera caractérisée par le choix
-d&#8217;un sous-espace supplémentaire à <span 
+class="cmmi-12">P,e</span>) est donc dÃ©jÃ  bien dÃ©fini. Une connexion sera caractÃ©risÃ©e par le choix
+d&#8217;un sous-espace supplÃ©mentaire Ã  <span 
 class="cmmi-12">V </span>(<span 
 class="cmmi-12">P,e</span>) dans <span 
 class="cmmi-12">T</span>(<span 
 class="cmmi-12">P,e</span>), sous-espace qui sera
-bien évidemment qualifié d&#8217;&#8220;horizontal&#8221; et noté <span 
+bien Ã©videmment qualifiÃ© d&#8217;&#8220;horizontal&#8221; et notÃ© <span 
 class="cmmi-12">H</span>(<span 
 class="cmmi-12">P,e</span>). Par ailleurs, on
-veut que ce choix puisse être effectué, de façon continue et différentiable,
-pour tout repère, c&#8217;est à dire en tout point <span 
+veut que ce choix puisse Ãªtre effectuÃ©, de faÃ§on continue et diffÃ©rentiable,
+pour tout repÃ¨re, c&#8217;est Ã  dire en tout point <span 
 class="cmmi-12">e </span>de <span 
 class="cmmi-12">P</span>. Enfin, on veut que ce
-choix soit également équivariant sous l&#8217;action du groupe structural<span class="frenchb-nbsp">&#x00A0;</span>: nous
+choix soit Ã©galement Ã©quivariant sous l&#8217;action du groupe structural<span class="frenchb-nbsp">&#x00A0;</span>: nous
 savons que <span 
 class="cmmi-12">GL</span>(<span 
-class="cmmi-12">n</span>) opère transitivement sur les fibres (par exemple sur les
-repères au point <span 
+class="cmmi-12">n</span>) opÃ¨re transitivement sur les fibres (par exemple sur les
+repÃ¨res au point <span 
 class="cmsy-10x-x-120"><img 
-src="cmsy10-c-50.png" alt="P" class="10-120x-x-50" /></span>), l&#8217;image du repère <span 
-class="cmmi-12">e </span>sous l&#8217;action d&#8217; un élément <span 
+src="cmsy10-c-50.png" alt="P" class="10-120x-x-50" /></span>), l&#8217;image du repÃ¨re <span 
+class="cmmi-12">e </span>sous l&#8217;action d&#8217; un Ã©lÃ©ment <span 
 class="cmmi-12">g </span>du
-groupe structural est un repère <span 
-class="cmmi-12">e.g </span>de la même fibre (<span 
+groupe structural est un repÃ¨re <span 
+class="cmmi-12">e.g </span>de la mÃªme fibre (<span 
 class="cmmi-12">R</span><sub><span 
 class="cmmi-8">g</span></sub>(<span 
 class="cmmi-12">e</span>) = <span 
@@ -162,11 +163,11 @@ class="cmmi-12">&#x2202;</span>(<span
 class="cmmi-12">ge</span>)<span 
 class="cmmi-12">&#x2215;&#x2202;e </span>= <span 
 class="cmmi-12">g</span>. La
-propriété d&#8217;équivariance requise signifie simplement ceci<span class="frenchb-nbsp">&#x00A0;</span>: on veut que le choix de
+propriÃ©tÃ© d&#8217;Ã©quivariance requise signifie simplement ceci<span class="frenchb-nbsp">&#x00A0;</span>: on veut que le choix de
 l&#8217;espace horizontal <span 
 class="cmmi-12">H</span>(<span 
 class="cmmi-12">P,e.g</span>) en <span 
-class="cmmi-12">e.g </span>puisse également être obtenu en utilisant
+class="cmmi-12">e.g </span>puisse Ã©galement Ãªtre obtenu en utilisant
 l&#8217;action du groupe structural sur les fibres, en d&#8217;autres termes on impose
 <span 
 class="cmmi-12">H</span>(<span 
@@ -174,20 +175,20 @@ class="cmmi-12">P,e.g</span>) = <span
 class="cmmi-12">H</span>(<span 
 class="cmmi-12">P,e</span>)<span 
 class="cmmi-12">.g</span>
-<!--l. 105--><p class="indent" >   Noter que la discussion qui précède ne dépend pas du type particulier de fibré
-principal considéré et le lecteur est invité à remplacer partout le groupe <span 
+<!--l. 105--><p class="indent" >   Noter que la discussion qui prÃ©cÃ¨de ne dÃ©pend pas du type particulier de fibrÃ©
+principal considÃ©rÃ© et le lecteur est invitÃ© Ã  remplacer partout le groupe <span 
 class="cmmi-12">GL</span>(<span 
 class="cmmi-12">n</span>)
-par un groupe de Lie quelconque (et le mot &#8220;repère&#8221; par les mots &#8220;élément
-du fibré principal <span 
+par un groupe de Lie quelconque (et le mot &#8220;repÃ¨re&#8221; par les mots &#8220;Ã©lÃ©ment
+du fibrÃ© principal <span 
 class="cmmi-12">P</span>&#8221;). Le choix, en tout point <span 
-class="cmmi-12">e </span>d&#8217;un fibré principal <span 
+class="cmmi-12">e </span>d&#8217;un fibrÃ© principal <span 
 class="cmmi-12">P</span>,
 d&#8217;un tel espace vectoriel <span 
 class="cmmi-12">H</span>(<span 
-class="cmmi-12">P,e</span>) supplémentaire à <span 
+class="cmmi-12">P,e</span>) supplÃ©mentaire Ã  <span 
 class="cmmi-12">V </span>(<span 
-class="cmmi-12">P,e</span>), c&#8217;est à dire,
+class="cmmi-12">P,e</span>), c&#8217;est Ã  dire,
 <span 
 class="cmmi-12">T</span>(<span 
 class="cmmi-12">P,e</span>) = <span 
@@ -195,56 +196,56 @@ class="cmmi-12">V </span>(<span
 class="cmmi-12">P,e</span>) <span 
 class="cmsy-10x-x-120">&#x2295;</span><span 
 class="cmmi-12">H</span>(<span 
-class="cmmi-12">P,e</span>), est désigné sous le nom de <span 
+class="cmmi-12">P,e</span>), est dÃ©signÃ© sous le nom de <span 
 class="cmsl-12">distribution horizontale</span> <a 
  id="dx43-157001"></a><span class="frenchb-thinspace">&#x00A0;</span>;
-noter que le sens de ce mot &#8220;distribution&#8221; n&#8217;a ici aucun rapport avec celui utilisé
-en théorie de la mesure (la théorie des distributions<span class="frenchb-thinspace">&#x00A0;</span>!). Notre première définition
+noter que le sens de ce mot &#8220;distribution&#8221; n&#8217;a ici aucun rapport avec celui utilisÃ©
+en thÃ©orie de la mesure (la thÃ©orie des distributions<span class="frenchb-thinspace">&#x00A0;</span>!). Notre premiÃ¨re dÃ©finition
 d&#8217;une <span 
 class="cmsl-12">connexion principale</span><a 
- id="dx43-157002"></a> est donc la suivante<span class="frenchb-nbsp">&#x00A0;</span>: c &#8217;est la donnée, dans un fibré
+ id="dx43-157002"></a> est donc la suivante<span class="frenchb-nbsp">&#x00A0;</span>: c &#8217;est la donnÃ©e, dans un fibrÃ©
 principal <span 
 class="cmmi-12">P</span>, d&#8217;une <span 
 class="cmsl-12">distribution horizontale </span><span 
-class="cmsl-12">équivariante</span><a 
+class="cmsl-12">Ã©quivariante</span><a 
  id="dx43-157003"></a> sous l&#8217;action du groupe
 structural.
 <!--l. 125--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">4.1.3   </span> <a 
- id="x43-1580004.1.3"></a>Relèvement horizontal</h4>
+ id="x43-1580004.1.3"></a>RelÃ¨vement horizontal</h4>
 <!--l. 127--><p class="noindent" >Soit <span 
 class="cmmi-12">P </span>= <span 
 class="cmmi-12">P</span>(<span 
-class="cmmi-12">M,G</span>) un fibré principal, on dispose donc d&#8217;une projection <span 
+class="cmmi-12">M,G</span>) un fibrÃ© principal, on dispose donc d&#8217;une projection <span 
 class="cmmi-12">&#x03C0; </span>: <span 
 class="cmmi-12">P </span><span 
 class="cmsy-10x-x-120">&#x2192; </span><span 
 class="cmmi-12">M</span>
-et donc également de son application tangente <span 
+et donc Ã©galement de son application tangente <span 
 class="cmmi-12">&#x03C0;</span><sub><span 
-class="cmsy-8">*</span></sub>. Cette application linéaire
+class="cmsy-8">*</span></sub>. Cette application linÃ©aire
 envoie l&#8217;espace tangent <span 
 class="cmmi-12">T</span>(<span 
 class="cmmi-12">P,e</span>) sur l&#8217;espace tangent <span 
 class="cmmi-12">T</span>(<span 
 class="cmmi-12">M,&#x03C0;</span>(<span 
 class="cmmi-12">e</span>))<span class="frenchb-thinspace">&#x00A0;</span>; en d&#8217;autres
-termes, elle nous permet d&#8217;associer, à tout déplacement infinitésimal d&#8217;un repère
+termes, elle nous permet d&#8217;associer, Ã  tout dÃ©placement infinitÃ©simal d&#8217;un repÃ¨re
 <span 
-class="cmmi-12">e </span>dans l&#8217;espace des repères, le déplacement infinitésimal correspondant du point
+class="cmmi-12">e </span>dans l&#8217;espace des repÃ¨res, le dÃ©placement infinitÃ©simal correspondant du point
 <span 
 class="cmmi-12">x </span>= <span 
 class="cmmi-12">&#x03C0;</span>(<span 
-class="cmmi-12">e</span>) dans la variété <span 
+class="cmmi-12">e</span>) dans la variÃ©tÃ© <span 
 class="cmmi-12">M </span>(<span 
-class="cmmi-12">x </span>est le point où le repère est centré). Comme nous
-l&#8217;avons remarqué à plusieurs reprises, étant donnée une application d&#8217;une variété
-dans une autre, nous pouvons faire &#8220;voyager&#8221; les vecteurs dans la même direction
+class="cmmi-12">x </span>est le point oÃ¹ le repÃ¨re est centrÃ©). Comme nous
+l&#8217;avons remarquÃ© Ã  plusieurs reprises, Ã©tant donnÃ©e une application d&#8217;une variÃ©tÃ©
+dans une autre, nous pouvons faire &#8220;voyager&#8221; les vecteurs dans la mÃªme direction
 &#8211;il s&#8217;agit d&#8217;un &#8220;<span 
-class="cmti-12">push-forward</span>&#8221;&#8211; et les formes dans la direction opposée
+class="cmti-12">push-forward</span>&#8221;&#8211; et les formes dans la direction opposÃ©e
 (&#8220;<span 
 class="cmti-12">pull-back</span>&#8221;)
-<!--l. 144--><p class="indent" >   De façon générale, soit <span 
+<!--l. 144--><p class="indent" >   De faÃ§on gÃ©nÃ©rale, soit <span 
 class="cmmi-12">&#x03B3;</span>(<span 
 class="cmmi-12">t</span>) une courbe dans <span 
 class="cmmi-12">M</span>, on dira qu&#8217;une courbe &#x0393;(<span 
@@ -252,20 +253,20 @@ class="cmmi-12">t</span>)
 dans <span 
 class="cmmi-12">P </span>est un <span 
 class="cmsl-12">rel</span><span 
-class="cmsl-12">èvement</span><a 
+class="cmsl-12">Ã¨vement</span><a 
  id="dx43-158001"></a> de <span 
 class="cmmi-12">&#x03B3;</span>(<span 
 class="cmmi-12">t</span>) si &#x0393; se projette sur <span 
 class="cmmi-12">&#x03B3; </span>(intuitivement &#8220;on&#8221; &#8211;un
-voyageur qui se promène sur <span 
-class="cmmi-12">M</span>&#8211; s&#8217;est choisi un repère mobile quelconque en tout
-point du chemin qu&#8217;il suit). Supposons maintenant que nous nous sommes donnés
-une connexion (au sens donné dans la sous section précédente) dans le
-fibré principal <span 
-class="cmmi-12">P</span>, nous savons donc définir l&#8217;horizontalité des vecteurs de
+voyageur qui se promÃ¨ne sur <span 
+class="cmmi-12">M</span>&#8211; s&#8217;est choisi un repÃ¨re mobile quelconque en tout
+point du chemin qu&#8217;il suit). Supposons maintenant que nous nous sommes donnÃ©s
+une connexion (au sens donnÃ© dans la sous section prÃ©cÃ©dente) dans le
+fibrÃ© principal <span 
+class="cmmi-12">P</span>, nous savons donc dÃ©finir l&#8217;horizontalitÃ© des vecteurs de
 <span 
-class="cmmi-12">TP</span><span class="frenchb-thinspace">&#x00A0;</span>; on dira qu&#8217;un relèvement est horizontal si les vecteurs tangents
-au relèvement sont horizontaux. Considérons une courbe <span 
+class="cmmi-12">TP</span><span class="frenchb-thinspace">&#x00A0;</span>; on dira qu&#8217;un relÃ¨vement est horizontal si les vecteurs tangents
+au relÃ¨vement sont horizontaux. ConsidÃ©rons une courbe <span 
 class="cmmi-12">&#x03B3;</span>(<span 
 class="cmmi-12">t</span>) dans <span 
 class="cmmi-12">M</span>
@@ -276,20 +277,20 @@ allant de <span
 class="cmsy-10x-x-120"><img 
 src="cmsy10-c-50.png" alt="P" class="10-120x-x-50" /></span><sub><span 
 class="cmr-8">0</span></sub> = <span 
-class="cmmi-12">&#x03B3;</span>(0) à <span 
+class="cmmi-12">&#x03B3;</span>(0) Ã  <span 
 class="cmsy-10x-x-120"><img 
 src="cmsy10-c-50.png" alt="P" class="10-120x-x-50" /></span><sub><span 
 class="cmr-8">1</span></sub> = <span 
-class="cmmi-12">&#x03B3;</span>(1) et son relèvement horizontal issu de
+class="cmmi-12">&#x03B3;</span>(1) et son relÃ¨vement horizontal issu de
 <span 
 class="cmmi-12">e</span><sub><span 
 class="cmr-8">0</span></sub> <span 
 class="cmsy-10x-x-120">&#x2208; </span><span 
-class="cmmi-12">P</span>, c&#8217;est à dire la courbe &#x0393;(<span 
+class="cmmi-12">P</span>, c&#8217;est Ã  dire la courbe &#x0393;(<span 
 class="cmmi-12">t</span>) dans <span 
-class="cmmi-12">P</span>. En utilisant les théorèmes
-habituels concernant les équations différentielles, on montre qu&#8217;il y a
-unicité du relèvement &#x0393; de <span 
+class="cmmi-12">P</span>. En utilisant les thÃ©orÃ¨mes
+habituels concernant les Ã©quations diffÃ©rentielles, on montre qu&#8217;il y a
+unicitÃ© du relÃ¨vement &#x0393; de <span 
 class="cmmi-12">&#x03B3; </span>issus de <span 
 class="cmmi-12">e</span><sub><span 
 class="cmr-8">0</span></sub>. On dira que <span 
@@ -297,52 +298,52 @@ class="cmmi-12">e</span><sub><span
 class="cmr-8">1</span></sub> = &#x0393;(1) est le
 <span 
 class="cmsl-12">transport</span><span 
-class="cmsl-12">é par parall</span><span 
-class="cmsl-12">élisme</span> <a 
+class="cmsl-12">Ã© par parall</span><span 
+class="cmsl-12">Ã©lisme</span> <a 
  id="dx43-158002"></a> de <span 
 class="cmmi-12">e</span><sub><span 
 class="cmr-8">0</span></sub> le long de <span 
-class="cmmi-12">&#x03B3; </span>par rapport à la connexion
+class="cmmi-12">&#x03B3; </span>par rapport Ã  la connexion
 choisie.
-<!--l. 171--><p class="indent" >   Nous définirons l&#8217;<span 
+<!--l. 171--><p class="indent" >   Nous dÃ©finirons l&#8217;<span 
 class="cmsl-12">application de rel</span><span 
-class="cmsl-12">èvement horizontal</span><a 
+class="cmsl-12">Ã¨vement horizontal</span><a 
  id="dx43-158003"></a> comme suit<span class="frenchb-nbsp">&#x00A0;</span>: soit <span 
 class="cmmi-12">x </span>un
 point de <span 
 class="cmmi-12">M </span>et <span 
-class="cmmi-12">e </span>un repère quelconque en <span 
-class="cmmi-12">x </span>(c&#8217;est à dire un élément de la
+class="cmmi-12">e </span>un repÃ¨re quelconque en <span 
+class="cmmi-12">x </span>(c&#8217;est Ã  dire un Ã©lÃ©ment de la
 fibre au dessus de <span 
 class="cmmi-12">x</span>), soit <span 
 class="cmmi-12">v</span><sub><span 
-class="cmmi-8">x</span></sub> un vecteur appartenant à l&#8217;espace tangent à
+class="cmmi-8">x</span></sub> un vecteur appartenant Ã  l&#8217;espace tangent Ã 
 <span 
 class="cmmi-12">M </span>en <span 
-class="cmmi-12">x</span>, on désignera par <span 
+class="cmmi-12">x</span>, on dÃ©signera par <span 
 class="cmmi-12">&#x03BB;</span><sub><span 
 class="cmmi-8">e</span></sub>(<span 
 class="cmmi-12">v</span><sub><span 
-class="cmmi-8">x</span></sub>) l&#8217;élément de l&#8217;espace tangent <span 
+class="cmmi-8">x</span></sub>) l&#8217;Ã©lÃ©ment de l&#8217;espace tangent <span 
 class="cmmi-12">T</span>(<span 
 class="cmmi-12">P,e</span>)
 qui, d&#8217;une part, est horizontal et qui, d&#8217;autre part, se projette sur <span 
 class="cmmi-12">v</span><sub><span 
 class="cmmi-8">x</span></sub>
-grâce à l&#8217;application <span 
+grÃ¢ce Ã  l&#8217;application <span 
 class="cmmi-12">&#x03C0;</span><sub><span 
-class="cmsy-8">*</span></sub>. Il est bien évident que ce vecteur est unique<span class="frenchb-nbsp">&#x00A0;</span>: Il
-suffit de choisir un relevé quelconque de <span 
+class="cmsy-8">*</span></sub>. Il est bien Ã©vident que ce vecteur est unique<span class="frenchb-nbsp">&#x00A0;</span>: Il
+suffit de choisir un relevÃ© quelconque de <span 
 class="cmmi-12">v</span><sub><span 
 class="cmmi-8">x</span></sub> en <span 
-class="cmmi-12">e </span>(c&#8217;est à dire un vecteur
+class="cmmi-12">e </span>(c&#8217;est Ã  dire un vecteur
 quelconque <span 
 class="cmmi-12">V</span> <sub><span 
 class="cmmi-8">e</span></sub> de <span 
 class="cmmi-12">T</span>(<span 
 class="cmmi-12">P,e</span>) qui se projette sur <span 
 class="cmmi-12">v</span><sub><span 
-class="cmmi-8">x</span></sub>, puis de le décomposer en une
+class="cmmi-8">x</span></sub>, puis de le dÃ©composer en une
 partie verticale <span 
 class="cmmi-12">V </span><sub><span 
 class="cmmi-8">e</span></sub><sup><span 
@@ -356,16 +357,16 @@ class="cmmi-12">&#x03BB;</span><sub>
 class="cmmi-8">e</span></sub>(<span 
 class="cmmi-12">v</span><sub><span 
 class="cmmi-8">x</span></sub>) (c&#8217;est le vecteur
-cherché) en utilisant la décomposition de <span 
+cherchÃ©) en utilisant la dÃ©composition de <span 
 class="cmmi-12">T</span>(<span 
 class="cmmi-12">P,e</span>) en deux sous-espaces
-supplémentaires.
-<!--l. 192--><p class="indent" >   La distribution horizontale n&#8217;étant pas quelconque (elle est équivariante<span class="frenchb-thinspace">&#x00A0;</span>!),
-l&#8217;application de relèvement horizontal n&#8217;est pas quelconque non plus<span class="frenchb-nbsp">&#x00A0;</span>: le relevé du
+supplÃ©mentaires.
+<!--l. 192--><p class="indent" >   La distribution horizontale n&#8217;Ã©tant pas quelconque (elle est Ã©quivariante<span class="frenchb-thinspace">&#x00A0;</span>!),
+l&#8217;application de relÃ¨vement horizontal n&#8217;est pas quelconque non plus<span class="frenchb-nbsp">&#x00A0;</span>: le relevÃ© du
 vecteur <span 
 class="cmmi-12">v </span>en <span 
-class="cmmi-12">eg </span>doit coïncider avec l&#8217;image, par l&#8217;application tangente du
-relevé de <span 
+class="cmmi-12">eg </span>doit coÃ¯ncider avec l&#8217;image, par l&#8217;application tangente du
+relevÃ© de <span 
 class="cmmi-12">v </span>en <span 
 class="cmmi-12">e</span>. En clair, <span 
 class="cmmi-12">&#x03BB;</span><sub><span 
@@ -377,23 +378,23 @@ class="cmsy-8">*</span></sub>(<span
 class="cmmi-12">&#x03BB;</span><sub><span 
 class="cmmi-8">e</span></sub>(<span 
 class="cmmi-12">v</span>))<span 
-class="cmmi-12">, </span>qu&#8217;on peut écrire plus
+class="cmmi-12">, </span>qu&#8217;on peut Ã©crire plus
 simplement
    <center class="math-display" >
 <img 
 src="source531x.png" alt="&#x03BB;eg(v ) = (&#x03BB;e (v )g )  " class="math-display" ></center> On
-vient de décrire la façon dont on peut, grâce à la donnée d&#8217;une connexion, relever
+vient de dÃ©crire la faÃ§on dont on peut, grÃ¢ce Ã  la donnÃ©e d&#8217;une connexion, relever
 les vecteurs tangents de <span 
-class="cmmi-12">M </span>à <span 
-class="cmmi-12">P</span>. Bien entendu, à condition de travailler
-de façon duale, on peut faire quelque chose d&#8217;analogue avec les formes
-différentielles. Plus précisément, le &#8220;pull-back&#8221; de la projection <span 
-class="cmmi-12">&#x03C0; </span>est défini
-sur les vecteurs cotangents à <span 
-class="cmmi-12">M </span>et à valeurs dans le fibré cotangent de
+class="cmmi-12">M </span>Ã  <span 
+class="cmmi-12">P</span>. Bien entendu, Ã  condition de travailler
+de faÃ§on duale, on peut faire quelque chose d&#8217;analogue avec les formes
+diffÃ©rentielles. Plus prÃ©cisÃ©ment, le &#8220;pull-back&#8221; de la projection <span 
+class="cmmi-12">&#x03C0; </span>est dÃ©fini
+sur les vecteurs cotangents Ã  <span 
+class="cmmi-12">M </span>et Ã  valeurs dans le fibrÃ© cotangent de
 <span 
-class="cmmi-12">P</span>. La donnée d&#8217;une connexion (et donc de l&#8217;application de relèvement
-horizontal) permet, à l&#8217;inverse, de projeter les formes de <span 
+class="cmmi-12">P</span>. La donnÃ©e d&#8217;une connexion (et donc de l&#8217;application de relÃ¨vement
+horizontal) permet, Ã  l&#8217;inverse, de projeter les formes de <span 
 class="cmmi-12">T</span><sup><span 
 class="cmsy-8">*</span></sup><span 
 class="cmmi-12">P </span>sur les formes de
@@ -401,7 +402,7 @@ class="cmmi-12">P </span>sur les formes de
 class="cmmi-12">T</span><sup><span 
 class="cmsy-8">*</span></sup><span 
 class="cmmi-12">M</span>.
-<!--l. 210--><p class="indent" >   Toute cette discussion peut être résumée à l&#8217;aide de la figure ci-dessous.
+<!--l. 210--><p class="indent" >   Toute cette discussion peut Ãªtre rÃ©sumÃ©e Ã  l&#8217;aide de la figure ci-dessous.
                                                                           
 
                                                                           
@@ -428,38 +429,38 @@ class="small-caps">g</span><span
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
 class="small-caps">e</span></span>&#x00A0;4.1: </span><span  
-class="content">Relèvement horizontal et connexion</span></div><!--tex4ht:label?: x43-1580041 -->
+class="content">RelÃ¨vement horizontal et connexion</span></div><!--tex4ht:label?: x43-1580041 -->
                                                                           
 
                                                                           
 <!--l. 220--><p class="indent" >   </div><hr class="endfigure">
    <h4 class="subsectionHead"><span class="titlemark">4.1.4   </span> <a 
  id="x43-1590004.1.4"></a>Forme de connexion</h4>
-<!--l. 224--><p class="noindent" >Il existe plusieurs façons de définir la notion de connexion et nous venons d&#8217;en
-mentionner deux (distribution horizontale équivariante et application de
-relèvement horizontal) dont l&#8217;interprétation géométrique est intuitive<span class="frenchb-thinspace">&#x00A0;</span>; en
-pratique, cependant, c&#8217;est une troisième méthode qui va nous permettre de
-traduire cette notion sous forme analytique. Nous supposons donc donnée
-sur l&#8217;espace fibré principal <span 
+<!--l. 224--><p class="noindent" >Il existe plusieurs faÃ§ons de dÃ©finir la notion de connexion et nous venons d&#8217;en
+mentionner deux (distribution horizontale Ã©quivariante et application de
+relÃ¨vement horizontal) dont l&#8217;interprÃ©tation gÃ©omÃ©trique est intuitive<span class="frenchb-thinspace">&#x00A0;</span>; en
+pratique, cependant, c&#8217;est une troisiÃ¨me mÃ©thode qui va nous permettre de
+traduire cette notion sous forme analytique. Nous supposons donc donnÃ©e
+sur l&#8217;espace fibrÃ© principal <span 
 class="cmmi-12">P </span>= <span 
 class="cmmi-12">P</span>(<span 
 class="cmmi-12">M,G</span>) une distribution horizontale
-équivariante. La <span 
+Ã©quivariante. La <span 
 class="cmsl-12">forme de connexion</span> <a 
  id="dx43-159001"></a> <span 
 class="cmmi-12">&#x03C9; </span>est une forme sur <span 
-class="cmmi-12">P </span>et à valeurs dans
-l&#8217;algèbre de Lie <span 
+class="cmmi-12">P </span>et Ã  valeurs dans
+l&#8217;algÃ¨bre de Lie <span 
 class="eufm-10x-x-120">&#x1D524; </span>du groupe structural (nous verrons que cette forme doit, en
-outre, être équivariante). Elle est définie comme suit. Soit <span 
-class="cmmi-12">e </span>un élément
+outre, Ãªtre Ã©quivariante). Elle est dÃ©finie comme suit. Soit <span 
+class="cmmi-12">e </span>un Ã©lÃ©ment
 de <span 
-class="cmmi-12">P </span>(un repère de <span 
+class="cmmi-12">P </span>(un repÃ¨re de <span 
 class="cmmi-12">M</span>), et <span 
 class="cmmi-12">X</span><sub><span 
 class="cmmi-8">&#x03B1;</span></sub> une base de <span 
 class="cmmi-12">Lie</span>(<span 
-class="cmmi-12">G</span>). Nous décomposons
+class="cmmi-12">G</span>). Nous dÃ©composons
 l&#8217;espace tangent <span 
 class="cmmi-12">T</span>(<span 
 class="cmmi-12">P,e</span>) en un sous espace vertical <span 
@@ -468,7 +469,7 @@ class="cmmi-8">v</span></sup>(<span
 class="cmmi-12">P,e</span>) = <span 
 class="cmmi-12">V </span>(<span 
 class="cmmi-12">P,e</span>)
-engendré par les champs fondamentaux <img 
+engendrÃ© par les champs fondamentaux <img 
 src="source533x.png" alt="X&#x02C6;"  class="circ" ><sub><span 
 class="cmmi-8">&#x03B1;</span></sub> et un sous espace horizontal
 <span 
@@ -476,7 +477,7 @@ class="cmmi-12">T</span><sup><span
 class="cmmi-8">h</span></sup>(<span 
 class="cmmi-12">P,e</span>) = <span 
 class="cmmi-12">H</span>(<span 
-class="cmmi-12">P,E</span>) défini par la donnée de la distribution horizontale. On
+class="cmmi-12">P,E</span>) dÃ©fini par la donnÃ©e de la distribution horizontale. On
 pose
 <!--l. 244--><p class="indent" >   <div class="eqnarray">
    <center class="math-display" >
@@ -486,7 +487,7 @@ src="source534x.png" alt="&#x03C9;e( &#x02C6;X &#x03B1;(e)) = X&#x03B1;
    Ker &#x03C9;e =  T (P, e)
 " class="math-display" ></center>
 </div>
-<!--l. 249--><p class="indent" >   Ainsi donc, on peut décomposer tout vecteur <span 
+<!--l. 249--><p class="indent" >   Ainsi donc, on peut dÃ©composer tout vecteur <span 
 class="cmmi-12">V </span><span 
 class="cmsy-10x-x-120">&#x2208; </span><span 
 class="cmmi-12">T</span>(<span 
@@ -515,62 +516,62 @@ class="cmmi-12">X</span><sub>
 <span 
 class="cmmi-8">&#x03B1;</span></sub>. La forme <span 
 class="cmmi-12">&#x03C9; </span>est donc
-bien définie. Sa signification est claire<span class="frenchb-nbsp">&#x00A0;</span>: si on effectue un déplacement
-infinitésimal du repère <span 
-class="cmmi-12">e </span>(sans changer l&#8217;origine), on associe à ce déplacement la
-rotation infinitésimale <span 
+bien dÃ©finie. Sa signification est claire<span class="frenchb-nbsp">&#x00A0;</span>: si on effectue un dÃ©placement
+infinitÃ©simal du repÃ¨re <span 
+class="cmmi-12">e </span>(sans changer l&#8217;origine), on associe Ã  ce dÃ©placement la
+rotation infinitÃ©simale <span 
 class="cmmi-12">V</span> <sup><span 
 class="cmmi-8">&#x03B1;</span></sup><span 
 class="cmmi-12">X</span><sub>
 <span 
 class="cmmi-8">&#x03B1;</span></sub> correspondante<span class="frenchb-thinspace">&#x00A0;</span>; si, au contraire, on effectue un
-déplacement infinitésimal du repère <span 
-class="cmmi-12">e </span>en déplaçant l&#8217;origine mais sans faire
-&#8220;tourner&#8221; le repère, on obtient <span 
+dÃ©placement infinitÃ©simal du repÃ¨re <span 
+class="cmmi-12">e </span>en dÃ©plaÃ§ant l&#8217;origine mais sans faire
+&#8220;tourner&#8221; le repÃ¨re, on obtient <span 
 class="cmmi-12">&#x03C9;</span>(<span 
-class="cmmi-12">V </span>) = 0. Bien évidemment, on peut analyser les
-choses différemment en décidant que la connexion est définie par la forme de
+class="cmmi-12">V </span>) = 0. Bien Ã©videmment, on peut analyser les
+choses diffÃ©remment en dÃ©cidant que la connexion est dÃ©finie par la forme de
                                                                           
 
                                                                           
 connexion <span 
-class="cmmi-12">&#x03C9;</span>, la rotation du repère <span 
-class="cmmi-12">e </span>lors d&#8217;un déplacement infinitésimal <span 
+class="cmmi-12">&#x03C9;</span>, la rotation du repÃ¨re <span 
+class="cmmi-12">e </span>lors d&#8217;un dÃ©placement infinitÃ©simal <span 
 class="cmmi-12">V</span>
-étant précisément mesurée par la rotation infinitésimale <span 
+Ã©tant prÃ©cisÃ©ment mesurÃ©e par la rotation infinitÃ©simale <span 
 class="cmmi-12">&#x03C9;</span>(<span 
 class="cmmi-12">V </span>) et ceci
-donne alors un sens au verbe &#8220;tourner&#8221;. La distribution horizontale étant
-équivariante, il s&#8217;ensuit que les noyaux de <span 
+donne alors un sens au verbe &#8220;tourner&#8221;. La distribution horizontale Ã©tant
+Ã©quivariante, il s&#8217;ensuit que les noyaux de <span 
 class="cmmi-12">&#x03C9; </span>en <span 
 class="cmmi-12">e </span>et en <span 
 class="cmmi-12">eg,g </span><span 
 class="cmsy-10x-x-120">&#x2208; </span><span 
-class="cmmi-12">G </span>sont reliés
+class="cmmi-12">G </span>sont reliÃ©s
 par
    <center class="math-display" >
 <img 
 src="source536x.png" alt="Ker &#x03C9;eg = (Ker  &#x03C9;e)g  " class="math-display" ></center> Ici
-encore, l&#8217;application tangente est simplement notée <span 
+encore, l&#8217;application tangente est simplement notÃ©e <span 
 class="cmmi-12">g</span>.
 <!--l. 273--><p class="indent" >   Nous reviendrons un peu plus loin (en <a 
-href="sourcese28.html#x46-1860004.3.6">4.3.6<!--tex4ht:ref: sec:connexions-principales-2 --></a>) sur la théorie des connexions
-dans les fibrés principaux mais nous allons, pour des raisons aussi bien
-pédagogiques (c&#8217;est plus simple<span class="frenchb-thinspace">&#x00A0;</span>!) que pratiques (on mène en général
-les calculs sur la base), passer à une expression locale de la forme de
-connexion, puis, à partir de là, développer la théorie dans les fibrés vectoriels
-associés.
+href="sourcese28.html#x46-1860004.3.6">4.3.6<!--tex4ht:ref: sec:connexions-principales-2 --></a>) sur la thÃ©orie des connexions
+dans les fibrÃ©s principaux mais nous allons, pour des raisons aussi bien
+pÃ©dagogiques (c&#8217;est plus simple<span class="frenchb-thinspace">&#x00A0;</span>!) que pratiques (on mÃ¨ne en gÃ©nÃ©ral
+les calculs sur la base), passer Ã  une expression locale de la forme de
+connexion, puis, Ã  partir de lÃ , dÃ©velopper la thÃ©orie dans les fibrÃ©s vectoriels
+associÃ©s.
 <!--l. 280--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">4.1.5   </span> <a 
  id="x43-1600004.1.5"></a> Ecriture locale de la forme de connexion<span class="frenchb-nbsp">&#x00A0;</span>: le potentiel de
 jauge</h4>
-<!--l. 282--><p class="noindent" >Le fait que tout fibré principal soit localement trivial va nous permettre -
-moyennant le choix d&#8217;une section locale - d&#8217;écrire la forme de connexion <span 
+<!--l. 282--><p class="noindent" >Le fait que tout fibrÃ© principal soit localement trivial va nous permettre -
+moyennant le choix d&#8217;une section locale - d&#8217;Ã©crire la forme de connexion <span 
 class="cmmi-12">&#x03C9;</span>, non
 pas comme une forme sur <span 
-class="cmmi-12">P </span>à valeurs dans <span 
+class="cmmi-12">P </span>Ã  valeurs dans <span 
 class="eufm-10x-x-120">&#x1D524; </span>mais comme une forme sur <span 
-class="cmmi-12">M </span>à
+class="cmmi-12">M </span>Ã 
 valeurs dans <span 
 class="eufm-10x-x-120">&#x1D524;</span>. Choisissons donc une section locale <span 
 class="cmmi-12">M</span><img 
@@ -580,24 +581,24 @@ class="cmmi-12">P </span>et notons
 class="cmmi-12">de </span>: <span 
 class="cmmi-12">TM</span><img 
 src="source538x.png" alt="&#x21A6;&#x2192;"  class="mapsto" ><span 
-class="cmmi-12">TP </span>l&#8217;application linéaire tangente. Rappelons que, si <span 
-class="cmmi-12">P </span>est un fibré de
-repères, la section locale <span 
+class="cmmi-12">TP </span>l&#8217;application linÃ©aire tangente. Rappelons que, si <span 
+class="cmmi-12">P </span>est un fibrÃ© de
+repÃ¨res, la section locale <span 
 class="cmmi-12">e</span>(<span 
-class="cmmi-12">x</span>) n&#8217;est autre qu&#8217;un repère mobile <span 
+class="cmmi-12">x</span>) n&#8217;est autre qu&#8217;un repÃ¨re mobile <span 
 class="cmmi-12">e</span>(<span 
 class="cmmi-12">x</span>) = (<span 
 class="cmmi-12">e</span><sub><span 
 class="cmmi-8">&#x03BC;</span></sub>(<span 
 class="cmmi-12">x</span>))
-défini dans le domaine d&#8217;un certain ouvert et que, dans le cas où <span 
-class="cmmi-12">P </span>désigne le
-fibré des repères d&#8217;un certain &#8220;espace interne&#8221; (terminologie utilisée en physique
-des particules) on dira plutôt que <span 
+dÃ©fini dans le domaine d&#8217;un certain ouvert et que, dans le cas oÃ¹ <span 
+class="cmmi-12">P </span>dÃ©signe le
+fibrÃ© des repÃ¨res d&#8217;un certain &#8220;espace interne&#8221; (terminologie utilisÃ©e en physique
+des particules) on dira plutÃ´t que <span 
 class="cmmi-12">e</span>(<span 
 class="cmmi-12">x</span>) est un choix de jauge. Supposons qu&#8217;on
-s&#8217;est fixé une connexion caractérisée par la forme de connexion <span 
-class="cmmi-12">&#x03C9;</span>, on défini le
+s&#8217;est fixÃ© une connexion caractÃ©risÃ©e par la forme de connexion <span 
+class="cmmi-12">&#x03C9;</span>, on dÃ©fini le
 <span 
 class="cmsl-12">potentiel de jauge</span> <a 
  id="dx43-160001"></a> <span 
@@ -608,16 +609,16 @@ class="cmmi-12">A</span>
    <center class="math-display" >
 <img 
 src="source539x.png" alt="|---------------------------|
-A-(v) =-&#x03C9;e(e*(v)),--v-&#x2208;-TM---  " class="math-display" ></center> où
+A-(v) =-&#x03C9;e(e*(v)),--v-&#x2208;-TM---  " class="math-display" ></center> oÃ¹
 <span 
 class="cmmi-12">e</span><sub><span 
 class="cmsy-8">*</span></sub> <span 
 class="cmsy-10x-x-120">&#x2261; </span><span 
-class="cmmi-12">de </span>désigne l&#8217;application tangente à la section locale <span 
+class="cmmi-12">de </span>dÃ©signe l&#8217;application tangente Ã  la section locale <span 
 class="cmmi-12">e</span>.
 <!--l. 306--><p class="indent" >   <span 
 class="cmmi-12">A </span>est donc une 1-forme sur <span 
-class="cmmi-12">M </span>à valeurs dans <span 
+class="cmmi-12">M </span>Ã  valeurs dans <span 
 class="eufm-10x-x-120">&#x1D524;</span>. Soit <span 
 class="cmsy-10x-x-120">{</span><span 
 class="cmmi-12">X</span><sub><span 
@@ -629,7 +630,7 @@ class="cmsy-10x-x-120">{</span><span
 class="cmmi-12">&#x2202;&#x2215;&#x2202;x</span><sup><span 
 class="cmmi-8">&#x03BC;</span></sup><span 
 class="cmsy-10x-x-120">} </span>une carte locale sur <span 
-class="cmmi-12">M</span>, on pourra écrire<span class="frenchb-nbsp">&#x00A0;</span>:
+class="cmmi-12">M</span>, on pourra Ã©crire<span class="frenchb-nbsp">&#x00A0;</span>:
    <center class="math-display" >
 <img 
 src="source540x.png" alt="|---------------|
@@ -639,13 +640,13 @@ src="source540x.png" alt="|---------------|
 <!--l. 314--><p class="indent" >   En fait, il faudrait noter cet objet <sup><span 
 class="cmmi-8">e</span></sup><span 
 class="cmmi-12">A </span>et non pas <span 
-class="cmmi-12">A </span>de façon à se rappeler du
-fait que la définition de <span 
-class="cmmi-12">A </span>dépend du choix de la section locale <span 
+class="cmmi-12">A </span>de faÃ§on Ã  se rappeler du
+fait que la dÃ©finition de <span 
+class="cmmi-12">A </span>dÃ©pend du choix de la section locale <span 
 class="cmmi-12">e </span>mais on omet
-généralement d&#8217;y faire référence. Par contre, il est très important de savoir
+gÃ©nÃ©ralement d&#8217;y faire rÃ©fÃ©rence. Par contre, il est trÃ¨s important de savoir
 comment se transforme <span 
-class="cmmi-12">A </span>lorsqu&#8217;on effectue un choix différent. Posant <span 
+class="cmmi-12">A </span>lorsqu&#8217;on effectue un choix diffÃ©rent. Posant <span 
 class="cmmi-12">A </span>= <sup><span 
 class="cmmi-8">e</span></sup><span 
 class="cmmi-12">A </span>et
@@ -667,43 +668,43 @@ class="cmmi-12">.</span>) : <span
 class="cmmi-12">M</span><img 
 src="source541x.png" alt="&#x21A6;&#x2192;"  class="mapsto" ><span 
 class="cmmi-12">G</span>, nous verrons un
-peu plus loin que la propriété d&#8217;équivariance de <span 
+peu plus loin que la propriÃ©tÃ© d&#8217;Ã©quivariance de <span 
 class="cmmi-12">&#x03C9; </span>se traduit pour <span 
 class="cmmi-12">A</span>, par la
-propriété suivante<span class="frenchb-nbsp">&#x00A0;</span>:
+propriÃ©tÃ© suivante<span class="frenchb-nbsp">&#x00A0;</span>:
    <center class="math-display" >
 <img 
 src="source542x.png" alt="|--------------------|
 |A &#x2032; = g -1Ag + g- 1dg
 ----------------------
 " class="math-display" ></center>
-<!--l. 327--><p class="indent" >   Pour finir, notons qu&#8217;en pratique les calculs sont effectués sur la base <span 
+<!--l. 327--><p class="indent" >   Pour finir, notons qu&#8217;en pratique les calculs sont effectuÃ©s sur la base <span 
 class="cmmi-12">M </span>et
-non sur le fibré <span 
-class="cmmi-12">P</span><span class="frenchb-thinspace">&#x00A0;</span>; en d&#8217;autres termes on préfère utiliser le potentiel de
+non sur le fibrÃ© <span 
+class="cmmi-12">P</span><span class="frenchb-thinspace">&#x00A0;</span>; en d&#8217;autres termes on prÃ©fÃ¨re utiliser le potentiel de
 jauge <span 
-class="cmmi-12">A </span>plutôt que la forme de connexion <span 
-class="cmmi-12">&#x03C9;</span>, quitte à devoir recoller les
+class="cmmi-12">A </span>plutÃ´t que la forme de connexion <span 
+class="cmmi-12">&#x03C9;</span>, quitte Ã  devoir recoller les
                                                                           
 
                                                                           
-morceaux puisque le fibré <span 
-class="cmmi-12">P </span>considéré n&#8217;est pas en général trivial et qu&#8217;il
-faut donc définir <span 
+morceaux puisque le fibrÃ© <span 
+class="cmmi-12">P </span>considÃ©rÃ© n&#8217;est pas en gÃ©nÃ©ral trivial et qu&#8217;il
+faut donc dÃ©finir <span 
 class="cmmi-12">A </span>sur toutes les cartes d&#8217;un atlas de <span 
 class="cmmi-12">M</span>. Le potentiel de
 jauge <span 
-class="cmmi-12">A </span>est quelquefois désigné sous le nom &#8220;pull back de la forme de
-connexion&#8221; et il possède des interprétations physiques variées, dépendant,
-bien sûr, de la nature du fibré principal <span 
+class="cmmi-12">A </span>est quelquefois dÃ©signÃ© sous le nom &#8220;pull back de la forme de
+connexion&#8221; et il possÃ¨de des interprÃ©tations physiques variÃ©es, dÃ©pendant,
+bien sÃ»r, de la nature du fibrÃ© principal <span 
 class="cmmi-12">P </span>(et donc du groupe structural
 <span 
-class="cmmi-12">G</span>). Citons quelques unes de ces interprétations ainsi que la terminologie
+class="cmmi-12">G</span>). Citons quelques unes de ces interprÃ©tations ainsi que la terminologie
 correspondantes<span class="frenchb-nbsp">&#x00A0;</span>:
 <!--l. 342--><p class="indent" >   <span 
 class="cmmi-12">G </span>= <span 
 class="cmmi-12">U</span>(1), <span 
-class="cmmi-12">A </span>est le potentiel électromagnétique (ou champ de photons)
+class="cmmi-12">A </span>est le potentiel Ã©lectromagnÃ©tique (ou champ de photons)
 <!--l. 345--><p class="indent" >   <span 
 class="cmmi-12">G </span>= <span 
 class="cmmi-12">SU</span>(3), <span 
@@ -713,24 +714,24 @@ class="cmmi-12">G </span>= <span
 class="cmmi-12">SU</span>(2) <span 
 class="cmsy-10x-x-120">&#x00D7; </span><span 
 class="cmmi-12">U</span>(1), <span 
-class="cmmi-12">A </span>est le potentiel du champ électro-faible (champ des
+class="cmmi-12">A </span>est le potentiel du champ Ã©lectro-faible (champ des
 bosons <span 
 class="cmmi-12">&#x03B3;</span>, <span 
 class="cmmi-12">W</span><sup><span 
-class="cmsy-8">±</span></sup> et <span 
+class="cmsy-8">Â±</span></sup> et <span 
 class="cmmi-12">Z</span>).
-<!--l. 351--><p class="indent" >   Dans le cas des théories gravitationnelles où <span 
-class="cmmi-12">G </span>désigne <span 
+<!--l. 351--><p class="indent" >   Dans le cas des thÃ©ories gravitationnelles oÃ¹ <span 
+class="cmmi-12">G </span>dÃ©signe <span 
 class="cmmi-12">GL</span>(<span 
 class="cmmi-12">n</span>) et plus
-généralement un groupe de changement de repères d&#8217;une variété de dimension <span 
+gÃ©nÃ©ralement un groupe de changement de repÃ¨res d&#8217;une variÃ©tÃ© de dimension <span 
 class="cmmi-12">n</span>,
-on parle plutôt de &#8220;symboles de Christoffel&#8221; pour désigner les composantes de <span 
+on parle plutÃ´t de &#8220;symboles de Christoffel&#8221; pour dÃ©signer les composantes de <span 
 class="cmmi-12">A</span><span class="frenchb-thinspace">&#x00A0;</span>;
-nous y reviendrons dans la section consacrée aux connexions linéaires.
+nous y reviendrons dans la section consacrÃ©e aux connexions linÃ©aires.
 <!--l. 359--><p class="indent" >   Le lecteur aura compris (chose qu&#8217;il sait sans doute depuis longtemps) que les
-potentiels de jauge -et la théorie des connexions en général - permettent
-de représenter mathématiquement toutes les forces fondamentales de la
+potentiels de jauge -et la thÃ©orie des connexions en gÃ©nÃ©ral - permettent
+de reprÃ©senter mathÃ©matiquement toutes les forces fondamentales de la
 physique.
                                                                           
 
